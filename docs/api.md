@@ -1,6 +1,6 @@
 # API reference
 
-One npm package provides two entry points: `pwa-instructions/react` displays installation instructions, and `pwa-instructions` provides guide data, detection and selection for any JavaScript framework. React is an optional peer dependency and is only needed for the React entry point. Package publication to npm is pending.
+One npm package provides two entry points: `pwa-instructions/react` displays installation instructions, and `pwa-instructions` provides guide data, detection and selection for any JavaScript framework. React is an optional peer dependency and is only needed for the React entry point. Install it with `npm install pwa-instructions`.
 
 ## React
 

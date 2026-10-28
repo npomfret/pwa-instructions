@@ -2,7 +2,17 @@
 
 Reusable instructions for installing web apps: one simple SVG and a matching text guide for each installation layout. The artwork is generic, with highlighted buttons and no host-app branding.
 
-[Try the React example](https://npomfret.github.io/pwa-instructions/) · [API reference](docs/api.md) · [Example source](examples/react)
+```sh
+npm install pwa-instructions
+```
+
+```jsx
+import { InstallInstructions } from 'pwa-instructions/react';
+
+<InstallInstructions siteUrl="https://your-domain.com" />
+```
+
+[API documentation](docs/api.md) · [Live example](https://npomfret.github.io/pwa-instructions/) · [Example source](examples/react)
 
 <img src="guides/ios/safari/iphone/layout-1/install.svg" width="280" alt="Four illustrated steps for iPhone Safari: open the Page Menu, tap Share, tap View More, then tap Add to Home Screen." />
 
@@ -14,17 +24,7 @@ Reusable instructions for installing web apps: one simple SVG and a matching tex
 | [`pwa-instructions/react`](packages/pwa-instructions/src/react) | Unstyled React components using the core. |
 | [`examples/react`](examples/react) | A client-only demo with guide selection, a domain preview and image/text choices. |
 
-One npm package contains both entry points. React is an optional peer dependency; plain JavaScript users do not need to install it. Future framework adapters can live beside `src/react` in the same package and consume the shared core. Publication to npm is pending.
-
-```jsx
-import { InstallInstructions } from 'pwa-instructions/react';
-
-<InstallInstructions
-  presentation="both"
-  siteUrl="https://your-domain.com"
-  fallback={<p>Choose a guide for your browser.</p>}
-/>
-```
+One npm package contains both entry points. React is an optional peer dependency; plain JavaScript users do not need to install it. Future framework adapters can live beside `src/react` in the same package and consume the shared core. Available on [npm](https://www.npmjs.com/package/pwa-instructions).
 
 Leave `guideId` out for automatic browser detection. Use `guideId="ios-safari-iphone-layout-1"` for explicit selection. For your own interface, call `selectGuide(detectBrowserEnvironment())` from the core and use the returned steps and illustration URL. The [API reference](docs/api.md) describes the props, defaults and selection results.
 
