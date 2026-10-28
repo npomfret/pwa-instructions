@@ -6,18 +6,18 @@ Reusable instructions for installing web apps: one simple SVG and a matching tex
 
 <img src="guides/ios/safari/iphone/layout-1/install.svg" width="280" alt="Four illustrated steps for iPhone Safari: open the Page Menu, tap Share, tap View More, then tap Add to Home Screen." />
 
-## Packages
+## Package
 
-| Package | Responsibility |
+| Entry point | Responsibility |
 | --- | --- |
-| [`@pwa-instructions/core`](packages/core) | Guide data, SVGs, text, browser detection and selection. No framework dependency. |
-| [`@pwa-instructions/react`](packages/react) | Unstyled React components using the core. |
+| [`pwa-instructions`](packages/pwa-instructions/src/core) | Guide data, SVGs, text, browser detection and selection. No framework dependency. |
+| [`pwa-instructions/react`](packages/pwa-instructions/src/react) | Unstyled React components using the core. |
 | [`examples/react`](examples/react) | A client-only demo with guide selection, a domain preview and image/text choices. |
 
-Future framework adapters can live beside React under `packages/` and consume the same core. Plain JavaScript apps can already use the core directly. These are the planned package names; publication to npm is pending.
+One npm package contains both entry points. React is an optional peer dependency; plain JavaScript users do not need to install it. Future framework adapters can live beside `src/react` in the same package and consume the shared core. Publication to npm is pending.
 
 ```jsx
-import { InstallInstructions } from '@pwa-instructions/react';
+import { InstallInstructions } from 'pwa-instructions/react';
 
 <InstallInstructions
   presentation="both"
@@ -37,7 +37,7 @@ npm ci
 npm run dev
 ```
 
-`npm run check` builds both packages and the example, checks its types, then runs tests serially with one worker. `npm run pack:packages` produces local npm archives. No original screenshots are included in the packages.
+`npm run check` builds the package and example, checks types, then runs tests serially with one worker. `npm run pack:package` produces one local npm archive. No original screenshots or TypeScript build caches are included. See [releasing](docs/releasing.md) for publication steps.
 
 The GitHub Actions workflow checks changes and deploys the example to GitHub Pages from `main`. The static output is `examples/react/dist/`.
 

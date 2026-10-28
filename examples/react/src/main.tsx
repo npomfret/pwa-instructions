@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
-import { detectBrowserEnvironment, guides, selectGuide } from "@pwa-instructions/core";
-import { InstallInstructions } from "@pwa-instructions/react";
-import type { Presentation } from "@pwa-instructions/react";
+import { detectBrowserEnvironment, guides, selectGuide } from "pwa-instructions";
+import { InstallInstructions } from "pwa-instructions/react";
+import type { Presentation } from "pwa-instructions/react";
 import "./style.css";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
   const [siteUrl, setSiteUrl] = useState("https://your-domain.com");
   const [presentation, setPresentation] = useState<Presentation>("both");
   const componentSnippet = [
-    'import { InstallInstructions } from "@pwa-instructions/react";',
+    'import { InstallInstructions } from "pwa-instructions/react";',
     '',
     '<InstallInstructions',
     ...(guideId ? [`  guideId={${JSON.stringify(guideId)}}`] : []),
@@ -27,7 +27,7 @@ function App() {
   ].join("\n");
   const coreSnippet = [
     'import { detectBrowserEnvironment, getIllustration, selectGuide }',
-    '  from "@pwa-instructions/core";',
+    '  from "pwa-instructions";',
     '',
     `const selection = selectGuide(detectBrowserEnvironment()${guideId ? `, { guideId: ${JSON.stringify(guideId)} }` : ""});`,
     'if (selection.guide) {',

@@ -2,11 +2,11 @@
 
 import { createElement as h, useEffect, useId, useState } from "react";
 import type { ReactNode } from "react";
-import { detectBrowserEnvironment, selectGuide, getIllustration } from "@pwa-instructions/core";
-import type { Environment, GuideSelection, InstallGuide, InstallStep, SelectionOptions } from "@pwa-instructions/core";
+import { detectBrowserEnvironment, selectGuide, getIllustration } from "../core/index.js";
+import type { Environment, GuideSelection, InstallGuide, InstallStep, SelectionOptions } from "../core/index.js";
 
-export { detectEnvironment, detectBrowserEnvironment, selectGuide, guides, getIllustration } from "@pwa-instructions/core";
-export type { Environment, GuideSelection, InstallGuide, InstallStep } from "@pwa-instructions/core";
+export { detectEnvironment, detectBrowserEnvironment, selectGuide, guides, getIllustration } from "../core/index.js";
+export type { Environment, GuideSelection, InstallGuide, InstallStep } from "../core/index.js";
 
 export type Presentation = "both" | "image" | "text";
 

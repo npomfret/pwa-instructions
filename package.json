@@ -16,7 +16,7 @@
     "dev": "npm run build:packages && npm run dev --workspace @pwa-instructions/example-react",
     "test": "node --test --test-concurrency=1 tests/*.test.mjs",
     "check": "npm run build && npm run typecheck --workspace @pwa-instructions/example-react && npm test",
-    "pack:packages": "npm run build:packages && npm pack --workspace @pwa-instructions/core --workspace @pwa-instructions/react"
+    "pack:package": "npm run build:packages && npm pack --workspace pwa-instructions"
   },
   "devDependencies": {
     "@types/node": "26.6.5",

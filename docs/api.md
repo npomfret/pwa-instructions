@@ -1,11 +1,11 @@
 # API reference
 
-`@pwa-instructions/react` displays installation instructions. `@pwa-instructions/core` provides the same guide data, detection and selection for any JavaScript framework. Package publication to npm is pending.
+One npm package provides two entry points: `pwa-instructions/react` displays installation instructions, and `pwa-instructions` provides guide data, detection and selection for any JavaScript framework. React is an optional peer dependency and is only needed for the React entry point. Package publication to npm is pending.
 
 ## React
 
 ```jsx
-import { InstallInstructions } from '@pwa-instructions/react';
+import { InstallInstructions } from 'pwa-instructions/react';
 
 <InstallInstructions
   siteUrl="https://your-domain.com"
@@ -39,7 +39,7 @@ Renders a known guide with no detection or selection. Its required `guide` prop 
 
 ## Framework-independent JavaScript
 
-Import these functions and data from `@pwa-instructions/core`. They are also re-exported by the React package.
+Import these functions and data from `pwa-instructions`. They are also re-exported by the React entry point.
 
 | Export | Purpose |
 | --- | --- |
@@ -84,6 +84,6 @@ Each `InstallGuide` contains its `id`, `title`, `label`, `language`, `platform`,
 
 Recorded version ranges have inclusive `min` and `max` values; `max: null` means no replacement has been recorded. Documentation drafts have `versions.documentationOnly: true`, with `os`, `browser`, `observedOS` and `observedBrowser` set to `null`. Their headings identify them as documentation drafts.
 
-SVG, Markdown and metadata files also ship under `@pwa-instructions/core/assets/<guide-id>/`. The package files live in `dist/assets/<guide-id>/`; copy an SVG to your own public directory when using `illustrationSrc`. Original reference screenshots are not included in the packages.
+SVG, Markdown and metadata files also ship under `pwa-instructions/assets/<guide-id>/`. The package files live in `dist/assets/<guide-id>/`; copy an SVG to your own public directory when using `illustrationSrc`. Original reference screenshots are not included in the packages.
 
-TypeScript types are exported alongside the APIs. See the [core declarations](../packages/core/src/types.ts) and [React props](../packages/react/src/index.ts) for the full shapes, and [guide authoring](authoring-guides.md) to add layouts or reuse steps.
+TypeScript types are exported alongside the APIs. See the [core declarations](../packages/pwa-instructions/src/core/types.ts) and [React props](../packages/pwa-instructions/src/react/index.ts) for the full shapes, and [guide authoring](authoring-guides.md) to add layouts or reuse steps.

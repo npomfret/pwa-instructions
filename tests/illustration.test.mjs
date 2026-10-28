@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { DOMParser } from '@xmldom/xmldom';
-import { getIllustration, guides } from '@pwa-instructions/core';
+import { getIllustration, guides } from 'pwa-instructions';
 const decode = illustration => decodeURIComponent(illustration.src.slice(illustration.src.indexOf(',') + 1));
 const domainTexts = illustration => Array.from(new DOMParser().parseFromString(decode(illustration), 'image/svg+xml').getElementsByTagName('text'))
   .filter(node => node.getAttribute('data-pwa-domain') === 'true');

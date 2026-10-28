@@ -10,8 +10,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@pwa-instructions/core": "0.1.0",
-    "@pwa-instructions/react": "0.1.0",
+    "pwa-instructions": "0.1.0",
     "react": "19.3.1",
     "react-dom": "19.3.1"
   }

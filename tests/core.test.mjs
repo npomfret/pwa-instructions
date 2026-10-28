@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { detectEnvironment, detectBrowserEnvironment, selectGuide, guides } from '@pwa-instructions/core';
+import { detectEnvironment, detectBrowserEnvironment, selectGuide, guides } from 'pwa-instructions';
 
 const safari = (version = 27, device = 'iPhone') => `Mozilla/5.0 (${device}; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/${version}.0 Mobile/15E148 Safari/604.1`;
 const detected = () => detectEnvironment({ userAgent: safari() });

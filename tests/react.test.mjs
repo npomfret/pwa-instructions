@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { createElement as h, act } from 'react';
 import { renderToStaticMarkup, renderToString } from 'react-dom/server';
 import { JSDOM } from 'jsdom';
-import { InstallInstructions, InstallGuideView, guides } from '@pwa-instructions/react';
+import { InstallInstructions, InstallGuideView, guides } from 'pwa-instructions/react';
 
 const id = guides[0].id;
 

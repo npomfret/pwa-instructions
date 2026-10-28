@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { DOMParser } from '@xmldom/xmldom';
 import { readFile } from 'node:fs/promises';
-import { guides } from '@pwa-instructions/core';
+import { guides } from 'pwa-instructions';
 
 const safari = guides.find(guide => guide.id === 'ios-safari-iphone-layout-1');
 const brave = guides.find(guide => guide.id === 'ios-brave-iphone-layout-1');
