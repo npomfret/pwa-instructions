@@ -1,16 +1,22 @@
 {
   "id": "ios-safari-page-menu",
-  "title": "Add a website to your Home Screen",
+  "title": "Add to Home Screen",
   "language": "en",
   "platform": "ios",
   "browser": "safari",
   "device": "iphone",
   "compatibility": {
     "status": "user-reported",
-    "osVersionRange": null,
-    "browserVersionRange": null,
+    "osVersionRange": {
+      "min": 27,
+      "max": null
+    },
+    "browserVersionRange": {
+      "min": 27,
+      "max": null
+    },
     "layout": "Page Menu \u2192 Share \u2192 View More \u2192 Add to Home Screen",
-    "note": "Source owner reports iOS 27 and Safari 27 on iPhone. Broader compatibility and automatic selection remain unverified.",
+    "note": "First observed on iOS 27 / Safari 27, as reported by the source owner. Reuse this layout for newer versions until a replacement is recorded; newer-version selection is a fallback, not fresh device verification.",
     "observedMajorVersions": {
       "ios": 27,
       "safari": 27
@@ -25,37 +31,37 @@
     {
       "id": "open-page-menu",
       "title": "Open the Page Menu",
-      "description": "Tap the Page Menu button beside the website address.",
+      "description": "Tap the Page Menu button on the left side of the website address bar. Its icon has three horizontal lines, with a shorter bottom line.",
       "illustrationFragment": "step-1"
     },
     {
       "id": "tap-share",
       "title": "Tap Share",
-      "description": "In the Page Menu, tap Share.",
+      "description": "In the Page Menu, tap Share. Its icon is a square with an arrow pointing upward.",
       "illustrationFragment": "step-2"
     },
     {
       "id": "view-more",
       "title": "Tap View More",
-      "description": "If the share sheet is collapsed, tap View More to reveal additional actions.",
+      "description": "If the share sheet is collapsed, tap View More, shown with a downward chevron, to reveal the remaining actions. If the action list is already visible, continue to step 4.",
       "optional": true,
       "illustrationFragment": "step-3"
     },
     {
       "id": "add-to-home-screen",
       "title": "Tap Add to Home Screen",
-      "description": "Find and tap Add to Home Screen in the expanded action list.",
+      "description": "In the expanded action list, find and tap Add to Home Screen. Its icon is a rounded square containing a plus sign.",
       "illustrationFragment": "step-4"
     }
   ],
   "completion": {
     "status": "not-shown-in-reference",
-    "description": "Follow the confirmation screen that appears to finish adding the app. The supplied screenshots stop before this screen; a matching illustration still needs verification."
+    "description": "Follow the confirmation screen to finish adding the app."
   },
   "status": "draft",
   "illustration": {
     "file": "install.svg",
-    "alt": "Four numbered iPhone illustrations showing Page Menu, Share, View More, and Add to Home Screen.",
+    "alt": "Four steps: tap Page Menu beside the address, tap Share, tap View More if needed, then tap Add to Home Screen.",
     "stepCount": 4
   },
   "textInstructions": "instructions.md"
