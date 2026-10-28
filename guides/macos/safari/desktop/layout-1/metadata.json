@@ -38,19 +38,22 @@
       "id": "open-file-menu",
       "title": "Open the File menu",
       "description": "Open the website in Safari. In the menu bar at the top of your Mac screen, click File.",
-      "illustrationFragment": "step-1"
+      "illustrationFragment": "step-1",
+      "uiLabel": "File"
     },
     {
       "id": "add-to-dock",
       "title": "Choose Add to Dock",
       "description": "In the File menu, click Add to Dock. Safari opens a confirmation dialog for this website.",
-      "illustrationFragment": "step-2"
+      "illustrationFragment": "step-2",
+      "uiLabel": "Add to Dock"
     },
     {
       "id": "confirm-add",
       "title": "Click Add",
       "description": "Keep or edit the app name, then click Add. A web app is saved to your Applications folder and added to the Dock.",
-      "illustrationFragment": "step-3"
+      "illustrationFragment": "step-3",
+      "uiLabel": "Add"
     }
   ],
   "intro": "Requires macOS Sonoma 14 or later. These illustrations show the File menu route; Safari also offers Add to Dock in its Share menu.",

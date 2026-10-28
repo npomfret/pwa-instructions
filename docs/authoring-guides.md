@@ -4,6 +4,8 @@ Keep one folder per distinct layout under `guides/<platform>/<browser>/<device>/
 
 The metadata is the source of structured instruction text. `npm run build:packages` regenerates every Markdown guide. Edit the metadata's step descriptions rather than the generated Markdown.
 
+The optional `uiLabel` field identifies the clickable label inside a step's plain-text title. For example, `Open the File menu` uses `uiLabel: "File"`. The build italicizes that phrase in the SVG heading and Markdown; React applies the same emphasis to its text heading. Reused steps inherit the label automatically. Menu items drawn inside the browser mockup retain their normal appearance.
+
 ## Reuse
 
 A step can reference another guide instead of copying its text:

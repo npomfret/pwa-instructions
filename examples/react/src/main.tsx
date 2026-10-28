@@ -46,7 +46,6 @@ function App() {
         <InstallInstructions environment={environment} guideId={guideId || undefined} siteUrl={siteUrl} presentation={presentation} className="installation-guide"
               fallback={<div className="empty-state"><h3>{selection.status === "installed" ? "Already on your Home Screen" : "More guides are on the way"}</h3><p>{selection.status === "installed" ? "This app is running in standalone mode." : "We do not have a matching guide for this browser yet. Choose an iPhone or Mac guide above to preview it."}</p></div>} />
       </div>
-      <div className="notes"><p><strong>One illustration. Every step in text.</strong><br />Read it, look at it, or use both.</p><p><strong>Small pieces. Your interface.</strong><br />Shared data, with React as the first adapter.</p></div>
     </main>
     <footer><p>Open source · MIT licensed</p><p><a href="https://github.com/npomfret/pwa-instructions/tree/main/examples/react">View example source ↗</a></p></footer>
   </>;

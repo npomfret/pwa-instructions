@@ -14,6 +14,22 @@ async function writeChanged(file, value) {
   if (old !== value) await writeFile(file, value);
 }
 
+function markdownTitle(step) {
+  return step.uiLabel ? step.title.replace(step.uiLabel, `*${step.uiLabel}*`) : step.title;
+}
+
+function styleTitle(doc, node, step) {
+  const offset = step.uiLabel ? step.title.indexOf(step.uiLabel) : -1;
+  node.textContent = "";
+  if (offset < 0) { node.textContent = step.title; return; }
+  node.appendChild(doc.createTextNode(step.title.slice(0, offset)));
+  const label = doc.createElementNS(ns, 'tspan');
+  label.setAttribute('font-style', 'italic');
+  label.textContent = step.uiLabel;
+  node.appendChild(label);
+  node.appendChild(doc.createTextNode(step.title.slice(offset + step.uiLabel.length)));
+}
+
 function scope(node, prefix) {
   for (const item of elements(node)) {
     if (item.hasAttribute('id')) item.setAttribute('id', prefix + item.getAttribute('id'));
@@ -93,7 +109,7 @@ export async function composeGuides(root, catalog) {
       panel.setAttribute('aria-labelledby', `step-${index + 1}-title`);
       const title = children(panel).find(item => item.tagName === 'text' && (item.getAttribute('id') ?? '').endsWith('-title'));
       const number = children(panel).find(item => item.tagName === 'text' && item.getAttribute('text-anchor') === 'middle');
-      if (title) { title.setAttribute('id', `step-${index + 1}-title`); title.textContent = step.title; }
+      if (title) { title.setAttribute('id', `step-${index + 1}-title`); styleTitle(doc, title, step); }
       if (number) number.textContent = String(index + 1);
       const { reuse, transitionBefore, ...plainStep } = step;
       steps.push({ ...plainStep, illustrationFragment: `step-${index + 1}` });
@@ -107,11 +123,11 @@ export async function composeGuides(root, catalog) {
       for (const child of children(svg)) if (child.tagName === 'rect' && child.getAttribute('width') === '400') child.setAttribute('height', String(height));
       byId(doc, 'title').textContent = data.title;
       byId(doc, 'description').textContent = data.illustration.alt;
-      svgText = new XMLSerializer().serializeToString(doc) + '\n';
-      await writeChanged(path.join(folder, data.illustration.file), svgText);
-    } else svgText = await readFile(path.join(folder, data.illustration.file), 'utf8');
+    }
+    svgText = new XMLSerializer().serializeToString(doc).trimEnd() + '\n';
+    await writeChanged(path.join(folder, data.illustration.file), svgText);
     const text = `# ${data.title}\n\n` + (data.intro ? data.intro + '\n\n' : '') +
-      steps.map((step, index) => `${index + 1}. **${step.title}.** ${step.description}`).join('\n') +
+      steps.map((step, index) => `${index + 1}. **${markdownTitle(step)}.** ${step.description}`).join('\n') +
       `\n\n${data.completion.description}\n\nIllustration: [${data.illustration.file}](${data.illustration.file}). The numbered steps match this text.\n\nVersion observations and source evidence: [metadata.json](metadata.json).\n`;
     await writeChanged(path.join(folder, data.textInstructions), text);
     const result = { ...record, steps, document: doc, svg: svgText, text };

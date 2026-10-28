@@ -28,6 +28,8 @@ export interface InstallStep {
   readonly id: string;
   readonly title: string;
   readonly description: string;
+  /** Exact clickable label within the plain-text title, displayed in italics. */
+  readonly uiLabel?: string;
   readonly optional?: boolean;
   readonly illustrationFragment: string;
 }

@@ -67,7 +67,7 @@ Guides currently cover iPhone Safari, iPhone Brave via Safari, iPhone Chrome, an
 
 Detection is a best-effort hint: browsers can disguise their identity. Safari 26+ freezes the OS version in its user-agent string, so the selector can use the Safari version when the real iOS version is hidden. [WebKit explains the change.](https://webkit.org/blog/17333/webkit-features-in-safari-26-0/) A manual choice should remain available.
 
-The React component detects after mounting, supports server rendering, and offers image, text or combined presentation. Its optional `siteUrl` prop puts your domain into the SVG address bars; the default is `example.com`. Paths, credentials and query strings are omitted. The illustration sits in its own figure container, separate from the controls and text. Guide images are self-contained data URLs by default; a hosted URL can be supplied where Content Security Policy requires one. Selection and rendering make no network requests.
+The React component detects after mounting, supports server rendering, and offers image, text or combined presentation. Its optional `siteUrl` prop puts your domain into the SVG address bars; the default is `example.com`. Paths, credentials and query strings are omitted. The illustration appears below a single descriptive heading, separate from the controls and text. Guide images are self-contained data URLs by default; a hosted URL can be supplied where Content Security Policy requires one. Selection and rendering make no network requests.
 
 ## Source references and future coverage
 

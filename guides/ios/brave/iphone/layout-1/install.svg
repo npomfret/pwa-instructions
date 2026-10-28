@@ -43,7 +43,7 @@
   <g id="step-1" transform="translate(28 100)" role="group" aria-labelledby="step-1-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb"/>
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">1</text>
-    <text id="step-1-title" x="48" y="25" class="step-title">Tap Share</text>
+    <text id="step-1-title" x="48" y="25" class="step-title">Tap <tspan font-style="italic">Share</tspan></text>
     <g transform="translate(-72 -30)">
       <use href="#phone"/>
       <rect x="90" y="131" width="236" height="33" rx="14" fill="white" stroke="#d7dadd"/>
@@ -60,7 +60,7 @@
   <g id="step-3" transform="translate(28 1080)" role="group" aria-labelledby="step-3-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb"/>
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">3</text>
-    <text id="step-3-title" x="48" y="25" class="step-title">Open in Safari</text>
+    <text id="step-3-title" x="48" y="25" class="step-title"><tspan font-style="italic">Open in Safari</tspan></text>
     <g transform="translate(-72 -30)">
       <use href="#phone"/>
       <rect x="83" y="126" width="250" height="337" rx="15" fill="white"/>
@@ -94,7 +94,7 @@
   </style><g id="step-2" transform="translate(28 590)" role="group" aria-labelledby="step-2-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb"/>
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">2</text>
-    <text id="step-2-title" x="48" y="25" class="shared-ios-safari-iphone-layout-1-step-title">Tap View More</text>
+    <text id="step-2-title" x="48" y="25" class="shared-ios-safari-iphone-layout-1-step-title">Tap <tspan font-style="italic">View More</tspan></text>
     <g transform="translate(-72 -30)">
       <use href="#shared-ios-safari-iphone-layout-1-phone"/>
       <rect x="83" y="250" width="250" height="213" rx="24" fill="white" stroke="#d7dadd"/>
@@ -115,7 +115,7 @@
   </g><g id="step-4" transform="translate(28 1640)" role="group" aria-labelledby="step-4-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb"/>
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">4</text>
-    <text id="step-4-title" x="48" y="25" class="shared-ios-safari-iphone-layout-1-step-title">Open the Page Menu</text>
+    <text id="step-4-title" x="48" y="25" class="shared-ios-safari-iphone-layout-1-step-title">Open the <tspan font-style="italic">Page Menu</tspan></text>
     <g transform="translate(-72 -30)">
       <use href="#shared-ios-safari-iphone-layout-1-phone"/>
       <rect x="90" y="420" width="236" height="38" rx="19" fill="white" stroke="#d7dadd"/>
@@ -129,7 +129,7 @@
   </g><text x="28" y="1605" class="step-title">Continue in Safari</text><g id="step-5" transform="translate(28 2130)" role="group" aria-labelledby="step-5-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb"/>
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">5</text>
-    <text id="step-5-title" x="48" y="25" class="shared-ios-safari-iphone-layout-1-step-title">Tap Share</text>
+    <text id="step-5-title" x="48" y="25" class="shared-ios-safari-iphone-layout-1-step-title">Tap <tspan font-style="italic">Share</tspan></text>
     <g transform="translate(-72 -30)">
       <use href="#shared-ios-safari-iphone-layout-1-phone"/>
       <rect x="105" y="199" width="206" height="249" rx="20" fill="white" stroke="#d7dadd"/>
@@ -145,7 +145,7 @@
   </g><g id="step-6" transform="translate(28 2620)" role="group" aria-labelledby="step-6-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb"/>
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">6</text>
-    <text id="step-6-title" x="48" y="25" class="shared-ios-safari-iphone-layout-1-step-title">Tap View More</text>
+    <text id="step-6-title" x="48" y="25" class="shared-ios-safari-iphone-layout-1-step-title">Tap <tspan font-style="italic">View More</tspan></text>
     <g transform="translate(-72 -30)">
       <use href="#shared-ios-safari-iphone-layout-1-phone"/>
       <rect x="83" y="250" width="250" height="213" rx="24" fill="white" stroke="#d7dadd"/>
@@ -166,7 +166,7 @@
   </g><g id="step-7" transform="translate(28 3110)" role="group" aria-labelledby="step-7-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb"/>
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">7</text>
-    <text id="step-7-title" x="48" y="25" class="shared-ios-safari-iphone-layout-1-step-title">Tap Add to Home Screen</text>
+    <text id="step-7-title" x="48" y="25" class="shared-ios-safari-iphone-layout-1-step-title">Tap <tspan font-style="italic">Add to Home Screen</tspan></text>
     <g transform="translate(-72 -30)">
       <use href="#shared-ios-safari-iphone-layout-1-phone"/>
       <rect x="83" y="126" width="250" height="337" rx="15" fill="white"/>

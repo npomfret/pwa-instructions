@@ -26,9 +26,7 @@ select, .site-url-input { width: 100%; min-height: 48px; padding: 10px 34px 10px
 .display-options button[aria-pressed="true"] { color: #244b3b; background: #edf3eb; border-color: #a6bba8; }
 .installation-guide > h2 { font-size: 21px; margin: 26px 0 15px; }
 .guide-output { margin-top: 32px; }
-.installation-guide figure { border: 1px solid #dce2da; border-radius: 12px; padding: 16px 10px; background: white; margin-bottom: 24px !important; }
-.installation-guide figcaption { font-size: 11px; font-weight: 650; letter-spacing: 1px; text-transform: uppercase; color: #68796a; margin: 0 6px 16px; }
-.installation-guide img { width: 100%; max-width: 600px; margin: 0 auto; background: white; }
+.installation-guide img { width: 100%; max-width: 600px; margin: 0 auto 24px; background: white; border: 1px solid #dce2da; border-radius: 12px; padding: 16px 10px; }
 [data-pwa-guide^="ios-"] img { max-width: 400px; }
 .installation-guide ol { margin: 0; padding-left: 24px; }
 .installation-guide li { padding-left: 6px; margin-bottom: 16px; font-size: 15px; line-height: 1.7; color: #56665c; }
@@ -37,8 +35,5 @@ select, .site-url-input { width: 100%; min-height: 48px; padding: 10px 34px 10px
 .empty-state { padding: 24px 0 2px; }
 .empty-state h3 { font-size: 17px; margin: 0 0 10px; }
 .empty-state p { font-size: 14px; line-height: 1.7; margin: 0; color: #637169; }
-.notes { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; padding: 22px 2px 0; }
-.notes p { font-size: 12px; color: #6d786e; line-height: 1.8; }
-.notes strong { color: #485e50; font-weight: 600; }
 footer { border-top: 1px solid #dce1d9; color: #738074; font-size: 12px; }
-@media (max-width: 520px) { .site-header, footer { padding: 20px; } main { padding: 40px 18px; } h1 { letter-spacing: -1.5px; } .intro { font-size: 16px; } .demo { padding: 20px 16px; } .notes { grid-template-columns: 1fr; gap: 0; } footer { flex-wrap: wrap; gap: 0; } }
+@media (max-width: 520px) { .site-header, footer { padding: 20px; } main { padding: 40px 18px; } h1 { letter-spacing: -1.5px; } .intro { font-size: 16px; } .demo { padding: 20px 16px; } footer { flex-wrap: wrap; gap: 0; } }

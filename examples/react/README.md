@@ -13,4 +13,4 @@ Open the local URL Vite prints. On desktop, choose **iPhone · Safari · Page Me
 
 `npm run build` from the root builds the packages and the example. The static site is `examples/react/dist/`; relative asset paths support GitHub project Pages. The Pages workflow publishes this directory.
 
-The Website URL field demonstrates the React package's `siteUrl` prop. The demo starts with `your-domain.com`; leaving the field blank uses the package default, `example.com`. The configuration card and Illustrated guide panel are separate containers with space between them, and switches guides without a reveal button.
+The Website URL field demonstrates the React package's `siteUrl` prop. The demo starts with `your-domain.com`; leaving the field blank uses the package default, `example.com`. The configuration card ends before the guide heading and image, with a clear gap. The example switches guides without a reveal button.

@@ -36,7 +36,8 @@
     {
       "id": "tap-share",
       "title": "Tap Share",
-      "description": "In Chrome, tap Share at the right end of the address bar at the top of the screen. Its icon is a square with an upward arrow."
+      "description": "In Chrome, tap Share at the right end of the address bar at the top of the screen. Its icon is a square with an upward arrow.",
+      "uiLabel": "Share"
     },
     {
       "reuse": {

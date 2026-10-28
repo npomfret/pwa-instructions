@@ -32,26 +32,30 @@
       "id": "open-page-menu",
       "title": "Open the Page Menu",
       "description": "Tap the Page Menu button on the left side of the website address bar. Its icon has three horizontal lines, with a shorter bottom line.",
-      "illustrationFragment": "step-1"
+      "illustrationFragment": "step-1",
+      "uiLabel": "Page Menu"
     },
     {
       "id": "tap-share",
       "title": "Tap Share",
       "description": "In the Page Menu, tap Share. Its icon is a square with an arrow pointing upward.",
-      "illustrationFragment": "step-2"
+      "illustrationFragment": "step-2",
+      "uiLabel": "Share"
     },
     {
       "id": "view-more",
       "title": "Tap View More",
       "description": "If the share sheet is collapsed, tap View More, shown with a downward chevron, to reveal the remaining actions. If the action list is already visible, continue to step 4.",
       "optional": true,
-      "illustrationFragment": "step-3"
+      "illustrationFragment": "step-3",
+      "uiLabel": "View More"
     },
     {
       "id": "add-to-home-screen",
       "title": "Tap Add to Home Screen",
       "description": "In the expanded action list, find and tap Add to Home Screen. Its icon is a rounded square containing a plus sign.",
-      "illustrationFragment": "step-4"
+      "illustrationFragment": "step-4",
+      "uiLabel": "Add to Home Screen"
     }
   ],
   "completion": {

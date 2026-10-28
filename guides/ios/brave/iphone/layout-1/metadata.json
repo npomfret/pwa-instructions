@@ -38,7 +38,8 @@
     {
       "id": "tap-share",
       "title": "Tap Share",
-      "description": "In Brave, tap Share in the bottom toolbar. Its icon is a square with an upward arrow. If the toolbar is hidden, tap the website address to reveal it."
+      "description": "In Brave, tap Share in the bottom toolbar. Its icon is a square with an upward arrow. If the toolbar is hidden, tap the website address to reveal it.",
+      "uiLabel": "Share"
     },
     {
       "reuse": {
@@ -50,7 +51,8 @@
     {
       "id": "open-in-safari",
       "title": "Open in Safari",
-      "description": "In the expanded share sheet, scroll down and tap Open in Safari. The website opens in Safari; perform all remaining steps there."
+      "description": "In the expanded share sheet, scroll down and tap Open in Safari. The website opens in Safari; perform all remaining steps there.",
+      "uiLabel": "Open in Safari"
     },
     {
       "reuse": {
