@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "platform": {
+    "name": "macos",
+    "majorVersion": 27,
+    "version": "27.0.1"
+  },
+  "browser": {
+    "name": "chrome",
+    "majorVersion": 156,
+    "version": "156.0.8078.73"
+  },
+  "device": "desktop",
+  "versionEvidence": {
+    "type": "local-application-and-system-version",
+    "recordedAt": "2026-10-28",
+    "note": "macOS version read with sw_vers; Chrome version read from the installed application Info.plist on the source owner’s Mac. Screenshots do not embed version numbers."
+  },
+  "source": "user-supplied screenshots",
+  "images": [
+    {
+      "file": "01-more-menu.png",
+      "order": 1,
+      "action": "Open the More menu",
+      "controlOwner": "browser"
+    },
+    {
+      "file": "02-cast-save-and-share.png",
+      "order": 2,
+      "action": "Choose Cast, save and share",
+      "controlOwner": "browser"
+    },
+    {
+      "file": "03-install-app.png",
+      "order": 3,
+      "action": "Choose Install",
+      "controlOwner": "browser"
+    },
+    {
+      "file": "04-next.png",
+      "order": 4,
+      "action": "Click Next",
+      "controlOwner": "browser"
+    },
+    {
+      "file": "05-confirm-install.png",
+      "order": 5,
+      "action": "Click Install",
+      "controlOwner": "browser"
+    },
+    {
+      "file": "06-show-in-finder.png",
+      "order": 6,
+      "action": "Click Show in Finder",
+      "controlOwner": "browser"
+    }
+  ],
+  "coverage": "Chrome menu through successful installation and Show in Finder. Owner also confirmed opening installed apps from chrome://apps.",
+  "privacy": "Original references include personal browser chrome and background content. Generic SVG artwork omits them."
+}

@@ -1,0 +1,80 @@
+{
+  "id": "macos-chrome-desktop-layout-1",
+  "title": "Install an app in Chrome",
+  "label": "Mac · Chrome · Install app",
+  "language": "en",
+  "platform": "macos",
+  "browser": "chrome",
+  "device": "desktop",
+  "layoutVersion": 1,
+  "compatibility": {
+    "status": "source-backed",
+    "osVersionRange": { "min": 27, "max": null },
+    "browserVersionRange": { "min": 156, "max": null },
+    "observedMajorVersions": { "macos": 27, "chrome": 156 },
+    "observedVersions": { "macos": "27.0.1", "chrome": "156.0.8078.73" },
+    "note": "The supplied screenshots show the installation flow. The current macOS version and installed Google Chrome application version were read locally on the source owner's Mac; the screenshots do not display version numbers. Newer releases reuse this layout until a replacement is recorded."
+  },
+  "evidence": {
+    "type": "screenshots-and-official-documentation",
+    "screenshots": "../../../../../source-images/macos-27/chrome-156/desktop/metadata.json",
+    "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DDesktop&hl=en",
+    "note": "The six screenshots establish the illustrated controls. The owner also confirmed reopening an installed app from chrome://apps. Show in Finder is the pictured completion route; Open tab in app is an alternative."
+  },
+  "steps": [
+    {
+      "id": "open-more-menu",
+      "title": "Open the More menu",
+      "uiLabel": "More",
+      "description": "Open the website in Chrome. Click the three vertical dots at the top-right of the Chrome window to open the More menu.",
+      "illustrationFragment": "step-1"
+    },
+    {
+      "id": "cast-save-and-share",
+      "title": "Choose Cast, save and share",
+      "uiLabel": "Cast, save and share",
+      "description": "In the More menu, choose Cast, save and share to open its submenu.",
+      "illustrationFragment": "step-2"
+    },
+    {
+      "id": "choose-install",
+      "title": "Choose Install",
+      "uiLabel": "Install",
+      "description": "In the submenu, click Install followed by the website or app name. Some sites label this Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.",
+      "illustrationFragment": "step-3"
+    },
+    {
+      "id": "continue-install",
+      "title": "Click Next",
+      "uiLabel": "Next",
+      "description": "In the Install app dialog, check the website name and domain, then click Next. If your Chrome version goes straight to the Install confirmation, continue to step 5.",
+      "illustrationFragment": "step-4"
+    },
+    {
+      "id": "confirm-install",
+      "title": "Click Install",
+      "uiLabel": "Install",
+      "description": "The next dialog shows the app being added to Chrome Apps. Click Install to confirm.",
+      "illustrationFragment": "step-5"
+    },
+    {
+      "id": "show-in-finder",
+      "title": "Click Show in Finder",
+      "uiLabel": "Show in Finder",
+      "description": "When Chrome says Successfully installed, click Show in Finder to locate the installed app. You can also choose Open tab in app to open the website in its app window immediately.",
+      "illustrationFragment": "step-6"
+    }
+  ],
+  "intro": "This guide follows the Chrome menu route shown in the reference screenshots. Some websites also offer an install icon in the address bar.",
+  "completion": {
+    "status": "user-confirmed-and-source-backed",
+    "description": "In Finder, double-click the app to open it. To reopen it later from Chrome, type chrome://apps in the address bar, press Return, then click the app. Installing does not require a Dock shortcut."
+  },
+  "illustration": {
+    "file": "install.svg",
+    "alt": "Six Mac Chrome steps: open the three-dot More menu, choose Cast, save and share, choose Install, click Next, click Install, then click Show in Finder.",
+    "stepCount": 6
+  },
+  "textInstructions": "instructions.md",
+  "status": "draft"
+}
