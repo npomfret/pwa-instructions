@@ -1,0 +1,59 @@
+{
+  "more": {
+    "en": "More"
+  },
+  "new-tab": {
+    "en": "New tab"
+  },
+  "history": {
+    "en": "History"
+  },
+  "downloads": {
+    "en": "Downloads"
+  },
+  "print": {
+    "en": "Print…"
+  },
+  "find-and-edit": {
+    "en": "Find and edit"
+  },
+  "cast-save-and-share": {
+    "en": "Cast, save and share"
+  },
+  "save-page-as": {
+    "en": "Save page as…"
+  },
+  "install-website": {
+    "en": "Install Website…"
+  },
+  "create-shortcut": {
+    "en": "Create shortcut…"
+  },
+  "copy-link": {
+    "en": "Copy link"
+  },
+  "install-app": {
+    "en": "Install app"
+  },
+  "install": {
+    "en": "Install"
+  },
+  "next": {
+    "en": "Next"
+  },
+  "cancel": {
+    "en": "Cancel"
+  },
+  "chrome-apps": {
+    "en": "Chrome Apps"
+  },
+  "successfully-installed": {
+    "en": "Successfully installed"
+  },
+  "show-in-finder": {
+    "en": "Show in Finder"
+  },
+  "open-tab-in-app": {
+    "en": "Open tab in app"
+  }
+}

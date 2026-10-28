@@ -28,12 +28,12 @@
     </g>
   </defs>
   <rect width="400" height="1570" fill="white" />
-  <text x="28" y="48" class="heading">Add to Home Screen</text>
-  <text x="28" y="76" class="subtitle">iPhone · Brave → Safari</text>
+  <text x="28" y="48" class="heading" data-i18n="guide:heading" data-max-width="372">Add to Home Screen</text>
+  <text x="28" y="76" class="subtitle" data-i18n="guide:subtitle" data-max-width="372">iPhone · Brave → Safari</text>
   <g id="step-1" transform="translate(28 100)" role="group" aria-labelledby="step-1-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb" />
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">1</text>
-    <text id="step-1-title" x="48" y="25" class="step-title">Tap Share</text>
+    <text id="step-1-title" x="48" y="25" class="step-title" data-i18n="step">Tap Share</text>
     <g transform="translate(-72 -30)">
       <use href="#phone" />
       <rect x="90" y="131" width="236" height="33" rx="14" fill="white" stroke="#d7dadd" />
@@ -49,29 +49,29 @@
   <g id="step-2" transform="translate(28 590)" role="group" aria-labelledby="step-2-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb" />
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">2</text>
-    <text id="step-2-title" x="48" y="25" class="step-title">Tap View More</text>
+    <text id="step-2-title" x="48" y="25" class="step-title" data-i18n="step">Tap View More</text>
   </g>
   <g id="step-3" transform="translate(28 1080)" role="group" aria-labelledby="step-3-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb" />
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">3</text>
-    <text id="step-3-title" x="48" y="25" class="step-title">Open in Safari</text>
+    <text id="step-3-title" x="48" y="25" class="step-title" data-i18n="step">Open in Safari</text>
     <g transform="translate(-72 -30)">
       <use href="#phone" />
       <rect x="83" y="126" width="250" height="337" rx="15" fill="white" />
-      <text x="103" y="159" class="label" style="fill:#687078">Website</text>
+      <text x="103" y="159" class="label" style="fill:#687078" data-i18n="label:website" data-max-width="215">Website</text>
       <text x="103" y="182" class="small" style="fill:#687078" data-pwa-domain="true" data-domain-width="170">example.com</text>
       <rect x="94" y="210" width="228" height="88" rx="15" fill="#f1f2f3" />
-      <text x="108" y="237" class="small" style="fill:#687078">Page Zoom</text>
+      <text x="108" y="237" class="small" style="fill:#687078" data-i18n="label:page-zoom" data-max-width="210">Page Zoom</text>
       <path d="M108 253h200" class="line" />
-      <text x="108" y="278" class="small" style="fill:#687078">Add to Favorites</text>
+      <text x="108" y="278" class="small" style="fill:#687078" data-i18n="label:add-to-favorites" data-max-width="210">Add to Favorites</text>
       <rect x="94" y="311" width="228" height="143" rx="15" fill="#f1f2f3" />
-      <text x="108" y="334" class="small" style="fill:#687078">Markup</text>
-      <text x="108" y="360" class="small" style="fill:#687078">Print</text>
-      <text x="108" y="386" class="small" style="fill:#687078">Add to New Quick Note</text>
+      <text x="108" y="334" class="small" style="fill:#687078" data-i18n="label:markup" data-max-width="210">Markup</text>
+      <text x="108" y="360" class="small" style="fill:#687078" data-i18n="label:print" data-max-width="210">Print</text>
+      <text x="108" y="386" class="small" style="fill:#687078" data-i18n="label:add-to-new-quick-note" data-max-width="210">Add to New Quick Note</text>
       <rect x="91" y="399" width="234" height="45" rx="10" class="target" />
       <circle cx="113" cy="421" r="10" class="icon" />
       <path d="m110 424 5-8-1 10-4-2" class="icon" />
-      <text x="136" y="427" class="label">Open in Safari</text>
+      <text x="136" y="427" class="label" data-i18n="label:open-in-safari" data-max-width="182">Open in Safari</text>
     </g>
   </g>
 </svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="2300" viewBox="0 0 600 2300" role="img" aria-labelledby="title description">
+  <title id="title" data-i18n="guide:svgTitle">Install an app in Windows Edge</title>
+  <desc id="description" data-i18n="guide:svgDesc">Documentation draft: schematic controls from current vendor instructions, not a verified device capture. Blue outlines identify the controls.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #202124; }
+    .heading { font-size: 28px; font-weight: 650; }
+    .subtitle { font-size: 16px; fill: #687078; }
+    .step-title { font-size: 23px; font-weight: 650; }
+    .label { font-size: 16px; }
+    .small { font-size: 14px; }
+    .muted { fill: #687078; }
+    .line { fill: none; stroke: #d7dadd; stroke-width: 2; stroke-linecap: round; }
+    .icon { fill: none; stroke: #687078; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .target { fill: #eef5ff; stroke: #2463eb; stroke-width: 3; }
+  </style>
+  <defs>
+    <g id="browser">
+      <rect x="0" y="58" width="544" height="330" rx="14" fill="white" stroke="#959ba2" stroke-width="2"/>
+      <path d="M1 72q0-13 13-13h516q13 0 13 13v20H1Z" fill="#f1f2f3"/>
+      <rect x="72" y="66" width="180" height="26" rx="7" fill="white"/>
+      <text x="87" y="84" class="small muted" data-i18n="label:website" data-max-width="413">Website</text>
+      <path d="M24 105l-7 7 7 7 M18 112h18" class="icon"/>
+      <rect x="60" y="99" width="425" height="28" rx="14" fill="#f1f2f3"/>
+      <text x="80" y="119" class="small muted" data-pwa-domain="true" data-domain-width="360">example.com</text>
+      <path d="M28 166h170 M28 190h460 M28 210h400" class="line"/>
+      <rect x="28" y="242" width="220" height="110" rx="9" fill="#f1f2f3"/>
+      <rect x="267" y="242" width="249" height="110" rx="9" fill="#f1f2f3"/>
+      <path d="M464 76h10 M488 71h10v10h-10Z M515 71l10 10m0-10-10 10" class="icon"/>
+      <circle cx="510" cy="113" r="2" fill="#687078"/>
+      <circle cx="516" cy="113" r="2" fill="#687078"/>
+      <circle cx="522" cy="113" r="2" fill="#687078"/>
+    </g>
+    <g id="dialog-background">
+      <use href="#browser"/>
+      <rect x="1" y="130" width="542" height="244" fill="#202124" opacity="0.12"/>
+    </g>
+    <g id="app-icon">
+      <rect width="40" height="40" rx="9" fill="#e2e5e9"/>
+      <path d="M10 12h20 M10 20h20 M10 28h12" class="line"/>
+    </g>
+  </defs>
+  <rect width="600" height="2300" fill="white"/>
+  <text x="28" y="48" class="heading" data-i18n="guide:heading" data-max-width="572">Install app</text>
+  <text x="28" y="76" class="subtitle" data-i18n="guide:subtitle" data-max-width="572">Windows · Edge</text>
+  <g id="step-1" transform="translate(28 100)" role="group" aria-labelledby="step-1-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb"/>
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">1</text>
+    <text x="48" y="25" class="step-title" id="step-1-title" data-i18n="step">Open <tspan font-style="italic">Settings and more</tspan></text>
+    <use href="#browser"/>
+    <rect x="500" y="96" width="32" height="34" rx="8" class="target"/>
+    <circle cx="510" cy="113" r="2"/>
+    <circle cx="516" cy="113" r="2"/>
+    <circle cx="522" cy="113" r="2"/>
+  </g>
+  <g id="step-2" transform="translate(28 540)" role="group" aria-labelledby="step-2-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb"/>
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">2</text>
+    <text x="48" y="25" class="step-title" id="step-2-title" data-i18n="step">Choose <tspan font-style="italic">More tools</tspan></text>
+    <use href="#browser"/>
+    <rect x="24" y="148" width="496" height="224" rx="10" fill="white" stroke="#d7dadd"/>
+    <text x="44" y="176" class="small muted" data-i18n="label:settings-and-more" data-max-width="456">Settings and more</text>
+    <path d="M48 207h180" class="line"/>
+    <path d="M48 249h180" class="line"/>
+    <rect x="36" y="270" width="472" height="38" rx="8" class="target"/>
+    <text x="48" y="296" class="label" data-i18n="label:more-tools" data-max-width="452">More tools</text>
+    <path d="M48 333h180" class="line"/>
+  </g>
+  <g id="step-3" transform="translate(28 980)" role="group" aria-labelledby="step-3-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb"/>
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">3</text>
+    <text x="48" y="25" class="step-title" id="step-3-title" data-i18n="step">Choose <tspan font-style="italic">Apps</tspan></text>
+    <use href="#browser"/>
+    <rect x="24" y="148" width="496" height="224" rx="10" fill="white" stroke="#d7dadd"/>
+    <text x="44" y="176" class="small muted" data-i18n="label:more-tools" data-max-width="456">More tools</text>
+    <path d="M48 207h180" class="line"/>
+    <rect x="36" y="228" width="472" height="38" rx="8" class="target"/>
+    <text x="48" y="254" class="label" data-i18n="label:apps" data-max-width="452">Apps</text>
+    <path d="M48 291h180" class="line"/>
+    <path d="M48 333h180" class="line"/>
+  </g>
+  <g id="step-4" transform="translate(28 1420)" role="group" aria-labelledby="step-4-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb"/>
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">4</text>
+    <text x="48" y="25" class="step-title" id="step-4-title" data-i18n="step">Choose <tspan font-style="italic">Install this site as an app</tspan></text>
+    <use href="#browser"/>
+    <rect x="24" y="148" width="496" height="224" rx="10" fill="white" stroke="#d7dadd"/>
+    <text x="44" y="176" class="small muted" data-i18n="label:apps" data-max-width="456">Apps</text>
+    <rect x="36" y="186" width="472" height="38" rx="8" class="target"/>
+    <text x="48" y="212" class="label" data-i18n="label:install-this-site-as-an-app" data-max-width="452">Install this site as an app</text>
+    <path d="M48 249h180" class="line"/>
+    <path d="M48 291h180" class="line"/>
+    <path d="M48 333h180" class="line"/>
+  </g>
+  <g id="step-5" transform="translate(28 1860)" role="group" aria-labelledby="step-5-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb"/>
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">5</text>
+    <text x="48" y="25" class="step-title" id="step-5-title" data-i18n="step">Click <tspan font-style="italic">Install</tspan></text>
+    <use href="#dialog-background"/>
+    <rect x="62" y="143" width="420" height="220" rx="15" fill="white" stroke="#d7dadd"/>
+    <text x="84" y="176" class="label" data-i18n="label:install-app" data-max-width="416">Install app</text>
+    <use href="#app-icon" transform="translate(84 206)"/>
+    <text x="138" y="222" class="label muted" data-i18n="label:website" data-max-width="362">Website</text>
+    <text x="138" y="246" class="small muted" data-pwa-domain="true" data-domain-width="310">example.com</text>
+    <text x="282" y="336" class="small muted" data-i18n="label:cancel" data-max-width="70">Cancel</text>
+    <rect x="359" y="311" width="101" height="38" rx="19" class="target"/>
+    <text x="409" y="336" class="label" text-anchor="middle" data-i18n="label:install" data-max-width="80">Install</text>
+  </g>
+</svg>

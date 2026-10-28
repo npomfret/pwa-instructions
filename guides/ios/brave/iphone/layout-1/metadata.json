@@ -60,6 +60,7 @@
         "stepId": "open-page-menu",
         "artwork": true
       },
+      "transitionId": "continue-in-safari",
       "transitionBefore": "Continue in Safari"
     },
     {

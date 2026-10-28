@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="1570" viewBox="0 0 400 1570" role="img" aria-labelledby="title description">
+  <title id="title" data-i18n="guide:svgTitle">Install an app in Android Chrome</title>
+  <desc id="description" data-i18n="guide:svgDesc">Documentation draft. Three steps: open More, tap Install and create shortcut, then tap Install. Complete any further prompts on your device.</desc>
+  <style>text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill:#202124; } .heading {font-size:27px;font-weight:650} .subtitle {font-size:16px;fill:#687078} .step-title {font-size:20px;font-weight:650} .label {font-size:16px} .small {font-size:14px} .muted {fill:#687078} .line {fill:none;stroke:#d7dadd;stroke-width:2;stroke-linecap:round} .target {fill:#eef5ff;stroke:#2463eb;stroke-width:3}</style>
+  <defs>
+    <g id="phone">
+      <rect x="0" y="58" width="300" height="392" rx="24" fill="white" stroke="#959ba2" stroke-width="2"/>
+      <path d="M1 82q0-23 23-23h252q23 0 23 23v70H1Z" fill="#f5f6f7"/>
+      <text x="18" y="83" class="small muted">9:41</text>
+      <rect x="16" y="99" width="228" height="35" rx="17" fill="#e9ecef"/>
+      <text x="29" y="122" class="small muted" data-pwa-domain="true" data-domain-width="200">example.com</text>
+      <circle cx="274" cy="108" r="2" fill="#687078"/>
+      <circle cx="274" cy="116" r="2" fill="#687078"/>
+      <circle cx="274" cy="124" r="2" fill="#687078"/>
+      <path d="M20 182h120" class="line"/>
+      <path d="M20 207h255" class="line"/>
+      <path d="M20 227h220" class="line"/>
+      <rect x="20" y="261" width="260" height="135" rx="8" fill="#f1f2f3"/>
+      <path d="M120 435h60" stroke="#b8bdc3" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </defs>
+  <rect width="400" height="1570" fill="white"/>
+  <text x="28" y="48" class="heading" data-i18n="guide:heading" data-max-width="372">Install app</text>
+  <text x="28" y="76" class="subtitle" data-i18n="guide:subtitle" data-max-width="372">Android · Chrome</text>
+  <g id="step-1" transform="translate(28 100)" role="group" aria-labelledby="step-1-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb"/>
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">1</text>
+    <text x="48" y="25" class="step-title" id="step-1-title" data-i18n="step">Open the <tspan font-style="italic">More</tspan> menu</text>
+    <use href="#phone"/>
+    <rect x="258" y="98" width="32" height="36" rx="8" class="target"/>
+    <circle cx="274" cy="108" r="2"/>
+    <circle cx="274" cy="116" r="2"/>
+    <circle cx="274" cy="124" r="2"/>
+  </g>
+  <g id="step-2" transform="translate(28 590)" role="group" aria-labelledby="step-2-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb"/>
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">2</text>
+    <text x="48" y="25" class="step-title" id="step-2-title" data-i18n="step">Tap <tspan font-style="italic">Install and create shortcut</tspan></text>
+    <use href="#phone"/>
+    <rect x="36" y="143" width="254" height="242" rx="12" fill="white" stroke="#d7dadd"/>
+    <path d="M54 173h120" class="line"/>
+    <path d="M54 210h120" class="line"/>
+    <path d="M54 247h120" class="line"/>
+    <rect x="44" y="274" width="238" height="65" rx="8" class="target"/>
+    <text x="58" y="300" class="label" data-i18n="label:install-and-create-shortcut" data-max-width="214" data-lines="2" data-line-height="23">Install and create</text>
+    <text x="58" y="323" class="label" data-i18n="follow">shortcut</text>
+    <path d="M54 363h140" class="line"/>
+  </g>
+  <g id="step-3" transform="translate(28 1080)" role="group" aria-labelledby="step-3-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb"/>
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">3</text>
+    <text x="48" y="25" class="step-title" id="step-3-title" data-i18n="step">Tap <tspan font-style="italic">Install</tspan></text>
+    <use href="#phone"/>
+    <rect x="18" y="254" width="264" height="167" rx="14" fill="white" stroke="#d7dadd"/>
+    <text x="36" y="285" class="label muted" data-i18n="label:install-and-create-shortcut" data-max-width="236">Install and create shortcut</text>
+    <rect x="28" y="305" width="244" height="44" rx="8" class="target"/>
+    <text x="46" y="333" class="label" data-i18n="label:install" data-max-width="226">Install</text>
+    <text x="46" y="385" class="label muted" data-i18n="label:create-shortcut" data-max-width="226">Create shortcut</text>
+  </g>
+</svg>

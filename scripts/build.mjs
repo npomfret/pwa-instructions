@@ -3,6 +3,8 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { composeGuides } from "./compose-guides.mjs";
+import { publishedLocales } from "./i18n.mjs";
+import { writeLocaleOutputs } from "./emit-locales.mjs";
 
 async function writeChanged(file, value) {
   let old;
@@ -49,6 +51,10 @@ const generated = path.join(packageRoot, "src/core/generated");
 await mkdir(generated, { recursive: true });
 await writeFile(path.join(generated, "guides.ts"),
   '/* Generated from catalog.json and guides/. Do not edit. */\nimport type { InstallGuide } from "../types.js";\nexport const guides: readonly InstallGuide[] = ' + JSON.stringify(guides, null, 2) + ';\n');
+// Only complete locales are built for publishing. Draft locales (and the en-XA pseudo-locale) are composed by tests alone.
+const locales = new Map();
+for (const tag of publishedLocales(catalog)) locales.set(tag, await composeGuides(root, catalog, tag));
+await writeLocaleOutputs({ catalog, locales, generated, assets: path.join(packageRoot, "dist/assets") });
 execFileSync(process.execPath, [path.join(root, "node_modules/typescript/bin/tsc"), "-b", "packages/pwa-instructions"], { cwd: root, stdio: "inherit" });
 for (const entry of catalog.guides) {
   const folder = path.dirname(path.join(root, entry.path));
@@ -61,4 +67,4 @@ for (const entry of catalog.guides) {
   for (const name of ["install.svg", "instructions.md", ...(data.artworkSource ? [data.artworkSource] : [])]) await cp(path.join(folder, name), path.join(target, name));
 }
 await cp(path.join(root, "LICENSE"), path.join(packageRoot, "LICENSE"));
-console.log(`Built pwa-instructions with core and React entry points and ${guides.length} guide(s).`);
+console.log(`Built pwa-instructions with core and React entry points, ${guides.length} guide(s) and ${locales.size} extra locale(s).`);

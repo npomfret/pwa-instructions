@@ -23,6 +23,10 @@
       "types": "./dist/react/index.d.ts",
       "import": "./dist/react/index.js"
     },
+    "./locales/*": {
+      "types": "./dist/core/generated/locales/*.d.ts",
+      "import": "./dist/core/generated/locales/*.js"
+    },
     "./assets/*": "./dist/assets/*"
   },
   "peerDependencies": {

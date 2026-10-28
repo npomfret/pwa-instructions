@@ -1,0 +1,41 @@
+{
+  "share": {
+    "en": "Share"
+  },
+  "view-more": {
+    "en": "View More"
+  },
+  "view-less": {
+    "en": "View Less"
+  },
+  "add-to-home-screen": {
+    "en": "Add to Home Screen"
+  },
+  "add-bookmark-to": {
+    "en": "Add Bookmark to…"
+  },
+  "find-on-page": {
+    "en": "Find on Page"
+  },
+  "add-to-reading-list": {
+    "en": "Add to Reading List"
+  },
+  "page-zoom": {
+    "en": "Page Zoom"
+  },
+  "add-to-favorites": {
+    "en": "Add to Favorites"
+  },
+  "markup": {
+    "en": "Markup"
+  },
+  "print": {
+    "en": "Print"
+  },
+  "add-to-new-quick-note": {
+    "en": "Add to New Quick Note"
+  },
+  "open-in-safari": {
+    "en": "Open in Safari"
+  }
+}

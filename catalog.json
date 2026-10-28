@@ -1,5 +1,8 @@
 {
   "schemaVersion": 1,
+  "locales": {
+    "en-XA": "draft"
+  },
   "guides": [
     {
       "id": "ios-safari-iphone-layout-1",
@@ -7,7 +10,12 @@
       "platform": "ios",
       "browser": "safari",
       "compatibilityStatus": "user-reported",
-      "status": "draft"
+      "status": "draft",
+      "labelSurfaces": [
+        "ios-safari",
+        "ios-share-sheet",
+        "placeholders"
+      ]
     },
     {
       "id": "ios-brave-iphone-layout-1",
@@ -15,7 +23,11 @@
       "platform": "ios",
       "browser": "brave",
       "compatibilityStatus": "user-reported",
-      "status": "draft"
+      "status": "draft",
+      "labelSurfaces": [
+        "ios-share-sheet",
+        "placeholders"
+      ]
     },
     {
       "id": "ios-chrome-iphone-layout-1",
@@ -23,7 +35,12 @@
       "platform": "ios",
       "browser": "chrome",
       "compatibilityStatus": "user-reported",
-      "status": "draft"
+      "status": "draft",
+      "labelSurfaces": [
+        "ios-chrome",
+        "ios-share-sheet",
+        "placeholders"
+      ]
     },
     {
       "id": "macos-safari-desktop-layout-1",
@@ -31,7 +48,12 @@
       "platform": "macos",
       "browser": "safari",
       "compatibilityStatus": "source-backed",
-      "status": "draft"
+      "status": "draft",
+      "labelSurfaces": [
+        "macos-safari",
+        "macos-menubar",
+        "placeholders"
+      ]
     },
     {
       "id": "macos-chrome-desktop-layout-1",
@@ -39,7 +61,11 @@
       "platform": "macos",
       "browser": "chrome",
       "compatibilityStatus": "source-backed",
-      "status": "draft"
+      "status": "draft",
+      "labelSurfaces": [
+        "chrome-desktop",
+        "placeholders"
+      ]
     },
     {
       "id": "android-chrome-android-layout-1",
@@ -47,7 +73,11 @@
       "platform": "android",
       "browser": "chrome",
       "compatibilityStatus": "documentation-only",
-      "status": "draft"
+      "status": "draft",
+      "labelSurfaces": [
+        "android-chrome",
+        "placeholders"
+      ]
     },
     {
       "id": "windows-chrome-desktop-layout-1",
@@ -55,7 +85,11 @@
       "platform": "windows",
       "browser": "chrome",
       "compatibilityStatus": "documentation-only",
-      "status": "draft"
+      "status": "draft",
+      "labelSurfaces": [
+        "chrome-desktop",
+        "placeholders"
+      ]
     },
     {
       "id": "windows-edge-desktop-layout-1",
@@ -63,7 +97,11 @@
       "platform": "windows",
       "browser": "edge",
       "compatibilityStatus": "documentation-only",
-      "status": "draft"
+      "status": "draft",
+      "labelSurfaces": [
+        "edge-desktop",
+        "placeholders"
+      ]
     }
   ]
 }

@@ -65,6 +65,17 @@ export interface InstallGuide {
   readonly text: string;
 }
 
+/** One guide's text in one locale: what a `pwa-instructions/locales/<tag>` module exports per guide id. */
+export interface LocalizedGuide {
+  readonly title: string;
+  readonly label: string;
+  readonly language: string;
+  readonly steps: readonly Pick<InstallStep, "id" | "title" | "description" | "uiLabel">[];
+  readonly completion: string;
+  readonly text: string;
+  readonly illustration: { readonly src: string; readonly alt: string };
+}
+
 export interface SelectionOptions {
   /** Explicit selection works on any device, including demos on desktop. */
   readonly guideId?: string;
