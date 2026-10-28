@@ -4,6 +4,8 @@ Reusable instructions for adding web apps to a Home Screen: one simple SVG and a
 
 [Try the React example](https://npomfret.github.io/pwa-instructions/) · [Example source](examples/react)
 
+<img src="guides/ios/safari/iphone/layout-1/install.svg" width="280" alt="Four illustrated steps for iPhone Safari: open the Page Menu, tap Share, tap View More, then tap Add to Home Screen." />
+
 ## Packages
 
 | Package | Responsibility |
@@ -70,7 +72,7 @@ The React component detects after mounting, supports server rendering, and offer
 
 Original references live under `source-images/<os>-<major>/<browser>-<major>/<device>/`, with a metadata file describing versions and ordered actions. [The first set](source-images/ios-27/safari-27/iphone/metadata.json) contains the four supplied screenshots. Originals contain app branding and share-sheet contacts; reusable artwork omits them.
 
-Future research includes Brave, Chrome, Android and earlier layouts. Browser-specific actions should be separated from shared OS actions as coverage grows. In this Safari example, Page Menu and Share lead into the iOS share sheet's View More and Add to Home Screen controls. The owner reports that Brave reaches those final two controls through a different browser entry sequence; that walkthrough still needs to be recorded. Shared-step composition is not yet implemented.
+Future coverage includes Brave, Chrome, Android and earlier layouts. Browser-specific actions should be separated from shared OS actions as coverage grows. In this Safari example, Page Menu and Share lead into the iOS share sheet's View More and Add to Home Screen controls. Brave on iOS needs a separate route: the owner found no Add to Home Screen action, and research supports handing off to Safari. See the [Brave iOS research note](docs/research/brave-ios.md) for evidence and remaining verification. Shared-step composition is not yet implemented.
 
 ## License
 
