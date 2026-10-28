@@ -1,5 +1,5 @@
 {
-  "id": "ios-safari-page-menu",
+  "id": "ios-safari-iphone-layout-1",
   "title": "Add to Home Screen",
   "language": "en",
   "platform": "ios",
@@ -25,7 +25,7 @@
   "evidence": {
     "type": "user-supplied-screenshots",
     "count": 4,
-    "metadata": "../../source-images/ios-27/safari-27/iphone/metadata.json"
+    "metadata": "../../../../../source-images/ios-27/safari-27/iphone/metadata.json"
   },
   "steps": [
     {
@@ -64,5 +64,6 @@
     "alt": "Four steps: tap Page Menu beside the address, tap Share, tap View More if needed, then tap Add to Home Screen.",
     "stepCount": 4
   },
-  "textInstructions": "instructions.md"
+  "textInstructions": "instructions.md",
+  "layoutVersion": 1
 }

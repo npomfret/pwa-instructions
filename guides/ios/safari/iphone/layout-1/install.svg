@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="400" height="2060" viewBox="0 0 400 2060" role="img" aria-labelledby="title description">
   <title id="title">Add to Home Screen in iPhone Safari: four steps</title>
-  <desc id="description">Four numbered steps for iPhone Safari: open the Page Menu, tap Share, tap View More, then tap Add to Home Screen. Orange curved arrows point to the blue-outlined controls. Full text instructions are supplied separately.</desc>
+  <desc id="description">Four numbered steps for iPhone Safari: open the Page Menu, tap Share, tap View More, then tap Add to Home Screen. Blue outlines identify the controls to tap. Full text instructions are supplied separately.</desc>
   <style>
     text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #202124; }
     .heading { font-size: 28px; font-weight: 650; }
@@ -26,9 +26,6 @@
     <g id="share-icon" class="icon">
       <path d="M10 17V2 M5 7l5-5 5 5 M5 12H2v17h16V12h-3" />
     </g>
-    <marker id="tap-arrow" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto" markerUnits="userSpaceOnUse">
-      <path d="M3 2L13 8L3 14" fill="none" stroke="#e87520" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-    </marker>
   </defs>
   <rect width="400" height="2060" fill="white" />
   <text x="28" y="48" class="heading">Add to Home Screen</text>
@@ -42,12 +39,11 @@
       <rect x="90" y="420" width="236" height="38" rx="19" fill="white" stroke="#d7dadd" />
       <rect x="98" y="421" width="40" height="36" rx="10" class="target" />
       <path d="M109 431h18 M109 438h18 M109 445h11" class="icon" />
-      <text x="149" y="444" class="small">example.com</text>
+      <text x="149" y="444" class="small" style="fill:#687078">example.com</text>
       <g transform="translate(289 426) scale(.75)" class="icon">
         <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8 M21 3v5h-5" />
       </g>
     </g>
-    <path d="M230 326C192 306 80 325 50 383" fill="none" stroke="#e87520" stroke-width="3" stroke-linecap="round" marker-end="url(#tap-arrow)" />
   </g>
   <g id="step-2" transform="translate(28 590)" role="group" aria-labelledby="step-2-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb" />
@@ -56,16 +52,15 @@
     <g transform="translate(-72 -30)">
       <use href="#phone" />
       <rect x="105" y="199" width="206" height="249" rx="20" fill="white" stroke="#d7dadd" />
-      <text x="125" y="233" class="label">Show Reader</text>
+      <text x="125" y="233" class="label" style="fill:#687078">Show Reader</text>
       <path d="M121 250h174" class="line" />
-      <text x="125" y="280" class="label">Summarise</text>
+      <text x="125" y="280" class="label" style="fill:#687078">Summarise</text>
       <rect x="115" y="299" width="186" height="50" rx="10" class="target" />
       <use href="#share-icon" x="130" y="308" />
       <text x="164" y="330" class="label">Share</text>
-      <text x="125" y="381" class="small">Add to Reading List</text>
+      <text x="125" y="381" class="small" style="fill:#687078">Add to Reading List</text>
       <path d="M125 410h152 M125 427h124" class="line" />
     </g>
-    <path d="M290 190C310 228 280 277 240 291" fill="none" stroke="#e87520" stroke-width="3" stroke-linecap="round" marker-end="url(#tap-arrow)" />
   </g>
   <g id="step-3" transform="translate(28 1080)" role="group" aria-labelledby="step-3-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb" />
@@ -75,8 +70,8 @@
       <use href="#phone" />
       <rect x="83" y="250" width="250" height="213" rx="24" fill="white" stroke="#d7dadd" />
       <rect x="100" y="269" width="30" height="30" rx="7" fill="#e9ecef" />
-      <text x="142" y="283" class="label">Website</text>
-      <text x="142" y="303" class="small" fill="#60656c">example.com</text>
+      <text x="142" y="283" class="label" style="fill:#687078">Website</text>
+      <text x="142" y="303" class="small" fill="#60656c" style="fill:#687078">example.com</text>
       <path d="M100 320h216" class="line" />
       <rect x="103" y="336" width="38" height="38" rx="11" fill="#e9ecef" />
       <rect x="159" y="336" width="38" height="38" rx="11" fill="#e9ecef" />
@@ -88,7 +83,6 @@
       <path d="m260 411 10 10 10-10" class="icon" />
       <text x="270" y="444" text-anchor="middle" class="small">View More</text>
     </g>
-    <path d="M295 312C316 331 304 375 259 389" fill="none" stroke="#e87520" stroke-width="3" stroke-linecap="round" marker-end="url(#tap-arrow)" />
   </g>
   <g id="step-4" transform="translate(28 1570)" role="group" aria-labelledby="step-4-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb" />
@@ -97,22 +91,21 @@
     <g transform="translate(-72 -30)">
       <use href="#phone" />
       <rect x="83" y="126" width="250" height="337" rx="15" fill="white" />
-      <text x="103" y="159" class="label">Website</text>
-      <text x="103" y="182" class="small">example.com</text>
+      <text x="103" y="159" class="label" style="fill:#687078">Website</text>
+      <text x="103" y="182" class="small" style="fill:#687078">example.com</text>
       <path d="M100 204h216" class="line" />
       <rect x="105" y="220" width="35" height="35" rx="10" fill="#e9ecef" />
       <rect x="163" y="220" width="35" height="35" rx="10" fill="#e9ecef" />
       <path d="m274 240 9-9 9 9" class="icon" />
-      <text x="283" y="270" text-anchor="middle" class="small">View Less</text>
+      <text x="283" y="270" text-anchor="middle" class="small" style="fill:#687078">View Less</text>
       <rect x="94" y="287" width="228" height="157" rx="15" fill="#f1f2f3" />
-      <text x="108" y="316" class="small">Add Bookmark to…</text>
+      <text x="108" y="316" class="small" style="fill:#687078">Add Bookmark to…</text>
       <path d="M108 333h200" class="line" />
-      <text x="108" y="361" class="small">Find on Page</text>
+      <text x="108" y="361" class="small" style="fill:#687078">Find on Page</text>
       <rect x="91" y="384" width="234" height="52" rx="10" class="target" />
       <rect x="102" y="400" width="18" height="21" rx="4" class="icon" />
       <path d="M106 410h10 M111 405v10" class="icon" />
       <text x="130" y="415" class="label">Add to Home Screen</text>
     </g>
-    <path d="M290 298C312 329 294 365 264 375" fill="none" stroke="#e87520" stroke-width="3" stroke-linecap="round" marker-end="url(#tap-arrow)" />
   </g>
 </svg>

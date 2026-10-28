@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "guides": [
     {
-      "id": "ios-safari-page-menu",
-      "path": "guides/ios-safari-page-menu/guide.json",
+      "id": "ios-safari-iphone-layout-1",
+      "path": "guides/ios/safari/iphone/layout-1/metadata.json",
       "platform": "ios",
       "browser": "safari",
       "compatibilityStatus": "user-reported",
