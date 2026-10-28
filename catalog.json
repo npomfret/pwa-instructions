@@ -32,6 +32,38 @@
       "browser": "safari",
       "compatibilityStatus": "source-backed",
       "status": "draft"
+    },
+    {
+      "id": "macos-chrome-desktop-layout-1",
+      "path": "guides/macos/chrome/desktop/layout-1/metadata.json",
+      "platform": "macos",
+      "browser": "chrome",
+      "compatibilityStatus": "source-backed",
+      "status": "draft"
+    },
+    {
+      "id": "android-chrome-android-layout-1",
+      "path": "guides/android/chrome/android/layout-1/metadata.json",
+      "platform": "android",
+      "browser": "chrome",
+      "compatibilityStatus": "documentation-only",
+      "status": "draft"
+    },
+    {
+      "id": "windows-chrome-desktop-layout-1",
+      "path": "guides/windows/chrome/desktop/layout-1/metadata.json",
+      "platform": "windows",
+      "browser": "chrome",
+      "compatibilityStatus": "documentation-only",
+      "status": "draft"
+    },
+    {
+      "id": "windows-edge-desktop-layout-1",
+      "path": "guides/windows/edge/desktop/layout-1/metadata.json",
+      "platform": "windows",
+      "browser": "edge",
+      "compatibilityStatus": "documentation-only",
+      "status": "draft"
     }
   ]
 }

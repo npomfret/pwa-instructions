@@ -1,0 +1,62 @@
+{
+  "id": "android-chrome-android-layout-1",
+  "title": "Install an app in Android Chrome",
+  "label": "Android · Chrome · Install app",
+  "language": "en",
+  "platform": "android",
+  "browser": "chrome",
+  "device": "android",
+  "layoutVersion": 1,
+  "compatibility": {
+    "status": "documentation-only",
+    "osVersionRange": null,
+    "browserVersionRange": null,
+    "observedMajorVersions": {
+      "android": null,
+      "chrome": null
+    },
+    "note": "Based on current vendor instructions. No device screenshots or tested OS/browser versions are available; version coverage is unconfirmed."
+  },
+  "evidence": {
+    "type": "official-documentation",
+    "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=en",
+    "reviewedAt": "2026-10-28",
+    "screenshots": false,
+    "note": "Original schematic artwork illustrates the documented controls, not an exact device capture."
+  },
+  "steps": [
+    {
+      "id": "open-more-menu",
+      "title": "Open the More menu",
+      "uiLabel": "More",
+      "description": "Open the website in Chrome. Tap the three vertical dots beside the address bar.",
+      "illustrationFragment": "step-1"
+    },
+    {
+      "id": "install-and-create-shortcut",
+      "title": "Tap Install and create shortcut",
+      "uiLabel": "Install and create shortcut",
+      "description": "Choose Install and create shortcut from the menu. Older Chrome layouts may call this Add to Home screen.",
+      "illustrationFragment": "step-2"
+    },
+    {
+      "id": "install-app",
+      "title": "Tap Install",
+      "uiLabel": "Install",
+      "description": "Choose Install. Complete the prompts Chrome displays to install the app. Create shortcut is a separate option that saves a link.",
+      "illustrationFragment": "step-3"
+    }
+  ],
+  "intro": "Use Chrome for Android. The illustrated menu labels follow Google’s current Android help, rather than its older Add to Home screen article. Documentation draft: not yet verified on a device; menu layout and confirmation prompts may vary.",
+  "completion": {
+    "status": "documentation-only",
+    "description": "After installation finishes, open the app from your Android launcher. Home screen placement depends on your launcher and its settings."
+  },
+  "illustration": {
+    "file": "install.svg",
+    "alt": "3 illustrated Android Chrome installation steps; blue outlines mark the documented controls.",
+    "stepCount": 3
+  },
+  "textInstructions": "instructions.md",
+  "status": "draft"
+}

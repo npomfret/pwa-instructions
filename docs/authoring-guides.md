@@ -34,6 +34,8 @@ Compatibility bounds are inclusive; `max: null` means reuse the latest known lay
 
 `minimumBrowserVersion` optionally supplies a more precise lower bound, currently 1.97 for Brave. Version components are compared numerically. `requiresKnownOSVersion` avoids selecting an OS-specific layout when a browser hides the OS identity. Manual guide selection is always available.
 
+When only official documentation is available, use compatibility status `documentation-only`, set both version ranges and both observed major versions to `null`, and record the source URL and review date in `evidence`. Do not infer browser or OS versions from the documentation's retrieval date. The build rejects version claims on these drafts. Selection returns `match: "documentation"` for the exact browser/platform/device, while a compatible recorded guide takes priority. React labels the guide as a documentation draft instead of showing invented version numbers.
+
 ## Checking changes
 
 Run `npm run check`. Tests run serially with one worker and check composition, SVG references, selection, and React rendering. Visually inspect the generated artwork at phone width, especially the highlighted control, the browser transition and the numbered steps. Keep personal content and site branding in original references only.

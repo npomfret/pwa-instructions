@@ -43,10 +43,12 @@ export interface InstallGuide {
   readonly browser: Browser;
   readonly device: Device;
   readonly versions: {
-    readonly os: MajorVersionRange;
-    readonly browser: MajorVersionRange;
-    readonly observedOS: number;
-    readonly observedBrowser: number;
+    /** null for documentation drafts whose version coverage is unverified. */
+    readonly os: MajorVersionRange | null;
+    readonly browser: MajorVersionRange | null;
+    readonly observedOS: number | null;
+    readonly observedBrowser: number | null;
+    readonly documentationOnly?: boolean;
     readonly minimumBrowserVersion?: string;
     readonly observedBrowserVersion?: string;
     readonly requiresKnownOSVersion?: boolean;
@@ -73,6 +75,6 @@ export interface GuideSelection {
   readonly status: "matched" | "unsupported" | "needs-selection" | "installed";
   readonly guide: InstallGuide | null;
   readonly environment: Environment | null;
-  readonly match: "manual" | "observed" | "browser-version" | "newer-version" | null;
+  readonly match: "manual" | "observed" | "browser-version" | "newer-version" | "documentation" | null;
   readonly reason: string;
 }

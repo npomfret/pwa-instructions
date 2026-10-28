@@ -33,6 +33,9 @@ function guideContext(guide: InstallGuide): string {
   const platform = { ios: "iOS", macos: "macOS", android: "Android", windows: "Windows", unknown: "OS" }[guide.platform];
   const browser = { safari: "Safari", chrome: "Chrome", brave: "Brave", firefox: "Firefox",
     edge: "Edge", opera: "Opera", samsung: "Samsung Internet", unknown: "Browser" }[guide.browser];
+  if (guide.versions.documentationOnly) {
+    return `${platform} · ${browser} · Documentation draft`;
+  }
   const browserVersion = guide.versions.minimumBrowserVersion ?? guide.versions.observedBrowser;
   return `${device} · ${platform} ${guide.versions.observedOS} · ${browser} ${browserVersion}`;
 }

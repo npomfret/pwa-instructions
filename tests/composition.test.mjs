@@ -48,3 +48,12 @@ test('shared Safari artwork is preserved in the composed Brave continuation', as
   assert.ok(svg.includes('shared-ios-safari-iphone-layout-1-phone'));
   assert.ok(!svg.includes('bbc.co.uk'));
 });
+
+test('Windows Chrome reuses common text while keeping its own confirmation and artwork', () => {
+  const mac = guides.find(guide => guide.id === 'macos-chrome-desktop-layout-1');
+  const windows = guides.find(guide => guide.id === 'windows-chrome-desktop-layout-1');
+  assert.deepEqual(windows.steps.slice(0, 3).map(step => step.description), mac.steps.slice(0, 3).map(step => step.description));
+  assert.equal(windows.steps.length, 4);
+  assert.ok(!decode(windows).includes('Show in Finder'));
+  assert.ok(!decode(windows).includes('Chrome Apps'));
+});

@@ -17,14 +17,20 @@ for (const entry of catalog.guides) {
   const size = svg.match(/viewBox="0 0 (\d+) (\d+)"/);
   if (!size) throw new Error(`Missing SVG viewBox: ${entry.id}`);
   const observed = data.compatibility.observedMajorVersions;
-  if (!data.compatibility.osVersionRange || !data.compatibility.browserVersionRange) {
+  const documentationOnly = data.compatibility.status === "documentation-only";
+  if (!documentationOnly && (!data.compatibility.osVersionRange || !data.compatibility.browserVersionRange)) {
     throw new Error(`Missing compatibility ranges: ${entry.id}`);
+  }
+  if (documentationOnly && (data.compatibility.osVersionRange !== null || data.compatibility.browserVersionRange !== null ||
+      observed[data.platform] !== null || observed[data.browser] !== null)) {
+    throw new Error(`Documentation draft must not claim observed versions or ranges: ${entry.id}`);
   }
   guides.push({
     id: data.id, title: data.title, label: data.label ?? data.title, language: data.language,
     platform: data.platform, browser: data.browser, device: data.device,
     versions: { os: data.compatibility.osVersionRange, browser: data.compatibility.browserVersionRange,
       observedOS: observed[data.platform], observedBrowser: observed[data.browser],
+      ...(documentationOnly ? { documentationOnly: true } : {}),
       minimumBrowserVersion: data.compatibility.minimumBrowserVersion,
       observedBrowserVersion: data.compatibility.observedVersions?.[data.browser],
       requiresKnownOSVersion: data.compatibility.requiresKnownOSVersion },

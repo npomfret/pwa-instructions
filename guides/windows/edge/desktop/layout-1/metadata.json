@@ -1,0 +1,76 @@
+{
+  "id": "windows-edge-desktop-layout-1",
+  "title": "Install an app in Windows Edge",
+  "label": "Windows · Edge · Install app",
+  "language": "en",
+  "platform": "windows",
+  "browser": "edge",
+  "device": "desktop",
+  "layoutVersion": 1,
+  "compatibility": {
+    "status": "documentation-only",
+    "osVersionRange": null,
+    "browserVersionRange": null,
+    "observedMajorVersions": {
+      "windows": null,
+      "edge": null
+    },
+    "note": "Based on current vendor instructions. No device screenshots or tested OS/browser versions are available; version coverage is unconfirmed."
+  },
+  "evidence": {
+    "type": "official-documentation",
+    "source": "https://support.microsoft.com/en-us/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+    "reviewedAt": "2026-10-28",
+    "screenshots": false,
+    "note": "Original schematic artwork illustrates the documented controls, not an exact device capture."
+  },
+  "steps": [
+    {
+      "id": "open-settings-menu",
+      "title": "Open Settings and more",
+      "uiLabel": "Settings and more",
+      "description": "Open the website in Microsoft Edge. Click the three horizontal dots at the top-right of the browser.",
+      "illustrationFragment": "step-1"
+    },
+    {
+      "id": "more-tools",
+      "title": "Choose More tools",
+      "uiLabel": "More tools",
+      "description": "Choose More tools from the menu.",
+      "illustrationFragment": "step-2"
+    },
+    {
+      "id": "apps",
+      "title": "Choose Apps",
+      "uiLabel": "Apps",
+      "description": "In More tools, choose Apps.",
+      "illustrationFragment": "step-3"
+    },
+    {
+      "id": "install-site",
+      "title": "Choose Install this site as an app",
+      "uiLabel": "Install this site as an app",
+      "description": "Choose Install this site as an app. For an installable PWA, Edge may instead offer Install app or an install icon in the address bar.",
+      "illustrationFragment": "step-4"
+    },
+    {
+      "reuse": {
+        "guideId": "windows-chrome-desktop-layout-1",
+        "stepId": "confirm-install",
+        "artwork": false
+      }
+    }
+  ],
+  "intro": "The menu route follows Microsoft’s current Edge help. Other Edge versions may place Apps directly in Settings and more. Documentation draft: not yet verified on a device; menu layout and confirmation prompts may vary.",
+  "completion": {
+    "status": "documentation-only",
+    "description": "To reopen it, enter edge://apps and click Open on the app’s card. Details offers Pin to taskbar, Pin to Start and Create Desktop shortcut."
+  },
+  "illustration": {
+    "file": "install.svg",
+    "alt": "5 illustrated Windows Edge installation steps; blue outlines mark the documented controls.",
+    "stepCount": 5
+  },
+  "textInstructions": "instructions.md",
+  "status": "draft"
+}

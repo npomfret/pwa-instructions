@@ -84,3 +84,16 @@ test('the optional siteUrl prop personalizes the bundled image without requiring
   assert.ok(other.includes('another.example'));
   assert.ok(!other.includes('crosswithyou.app'));
 });
+
+test('documentation drafts identify their evidence without invented version labels', () => {
+  for (const guide of guides.filter(guide => guide.versions.documentationOnly)) {
+    const html = renderToStaticMarkup(h(InstallGuideView, { guide }));
+    const dom = new JSDOM(html);
+    const heading = dom.window.document.querySelector('h2').textContent;
+    assert.ok(heading.includes('Documentation draft'));
+    assert.ok(!heading.includes('null'));
+    assert.ok(!heading.includes('undefined'));
+    assert.equal(dom.window.document.querySelectorAll('li').length, guide.steps.length);
+    dom.window.close();
+  }
+});

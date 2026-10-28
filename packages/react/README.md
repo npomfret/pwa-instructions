@@ -26,7 +26,7 @@ import { guides, InstallGuideView } from '@pwa-instructions/react';
 
 The component supplies semantic headings, an ordered list and image alternative text, with no global CSS. It shows instructions and does not initiate installation. The host app controls when and where to display it.
 
-Included guides cover iPhone Safari, Brave via Safari, Chrome, and Mac Safari. Browser detection is best effort; expose a manual choice where practical. The SVG and matching text are also usable without React through the core package.
+Included guides cover iPhone Safari, Brave via Safari, iPhone Chrome, Mac Safari, Mac Chrome, Android Chrome, Windows Chrome, and Windows Edge. Browser detection is best effort; expose a manual choice where practical. The SVG and matching text are also usable without React through the core package.
 
 MIT licensed. Source: https://github.com/npomfret/pwa-instructions
 
@@ -38,3 +38,5 @@ Pass `siteUrl="https://your-domain.com/path"` to `InstallInstructions` or `Insta
 Framework-independent code can use `getIllustration(guide, { siteUrl })` from the core. It returns a new illustration with the personalized `src` and alternative text. The shared guide remains unchanged. This option customizes bundled SVGs; an explicit `illustrationSrc` takes precedence. Colour customization is not implemented.
 
 The guide heading identifies the device, OS and browser using its reference versions, for example “Illustrated guide: iPhone · iOS 27 · Safari 27”. The action title remains inside the standalone SVG.
+
+Android Chrome and both Windows guides are documentation drafts. They have no claimed OS/browser versions or version bounds; those fields are `null`. The selector reports `match: "documentation"` and a verification note. A compatible recorded layout takes priority over an unversioned draft.

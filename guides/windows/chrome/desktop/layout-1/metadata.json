@@ -1,0 +1,69 @@
+{
+  "id": "windows-chrome-desktop-layout-1",
+  "title": "Install an app in Windows Chrome",
+  "label": "Windows · Chrome · Install app",
+  "language": "en",
+  "platform": "windows",
+  "browser": "chrome",
+  "device": "desktop",
+  "layoutVersion": 1,
+  "compatibility": {
+    "status": "documentation-only",
+    "osVersionRange": null,
+    "browserVersionRange": null,
+    "observedMajorVersions": {
+      "windows": null,
+      "chrome": null
+    },
+    "note": "Based on current vendor instructions. No device screenshots or tested OS/browser versions are available; version coverage is unconfirmed."
+  },
+  "evidence": {
+    "type": "official-documentation",
+    "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DDesktop&hl=en",
+    "reviewedAt": "2026-10-28",
+    "screenshots": false,
+    "note": "Original schematic artwork illustrates the documented controls, not an exact device capture."
+  },
+  "steps": [
+    {
+      "reuse": {
+        "guideId": "macos-chrome-desktop-layout-1",
+        "stepId": "open-more-menu",
+        "artwork": false
+      }
+    },
+    {
+      "reuse": {
+        "guideId": "macos-chrome-desktop-layout-1",
+        "stepId": "cast-save-and-share",
+        "artwork": false
+      }
+    },
+    {
+      "reuse": {
+        "guideId": "macos-chrome-desktop-layout-1",
+        "stepId": "choose-install",
+        "artwork": false
+      }
+    },
+    {
+      "id": "confirm-install",
+      "title": "Click Install",
+      "uiLabel": "Install",
+      "description": "Check the app name and website address, then click Install. Follow any further confirmation prompts.",
+      "illustrationFragment": "step-4"
+    }
+  ],
+  "intro": "Use the Chrome menu route, or the install icon in the address bar when the website offers one. Documentation draft: not yet verified on a device; menu layout and confirmation prompts may vary.",
+  "completion": {
+    "status": "documentation-only",
+    "description": "To reopen an installed app, enter chrome://apps in Chrome’s address bar and select the app."
+  },
+  "illustration": {
+    "file": "install.svg",
+    "alt": "4 illustrated Windows Chrome installation steps; blue outlines mark the documented controls.",
+    "stepCount": 4
+  },
+  "textInstructions": "instructions.md",
+  "status": "draft"
+}

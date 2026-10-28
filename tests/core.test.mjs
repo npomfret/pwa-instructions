@@ -114,3 +114,44 @@ test('Mac Safari 27.0.1 automatically selects the desktop guide', () => {
   assert.equal(result.guide.id, 'macos-safari-desktop-layout-1');
   assert.equal(result.guide.steps.at(-1).title, 'Click Add');
 });
+
+test('Mac Chrome selects its own recorded layout without substituting the iPhone flow', () => {
+  const ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/156.0.8078.73 Safari/537.36';
+  const selection = selectGuide(detectEnvironment({ userAgent: ua }));
+  assert.equal(selection.guide.id, 'macos-chrome-desktop-layout-1');
+  assert.equal(selection.match, 'browser-version');
+  assert.equal(selection.guide.steps.length, 6);
+  assert.ok(selection.guide.completion.includes('chrome://apps'));
+  assert.equal(selectGuide(detectEnvironment({ userAgent: ua.replace('156.0', '155.0') })).status, 'unsupported');
+});
+
+test('documentation drafts match the exact platform and browser without claiming tested versions', () => {
+  const cases = [
+    ['Mozilla/5.0 (Linux; Android 16; Device) AppleWebKit/537.36 Chrome/156.0.0.0 Mobile Safari/537.36', 'android-chrome-android-layout-1'],
+    ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/156.0.0.0 Safari/537.36', 'windows-chrome-desktop-layout-1'],
+    ['Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/156.0.0.0 Safari/537.36 Edg/156.0.0.0', 'windows-edge-desktop-layout-1'],
+  ];
+  for (const [userAgent, id] of cases) {
+    const selection = selectGuide(detectEnvironment({ userAgent }));
+    assert.equal(selection.guide.id, id);
+    assert.equal(selection.match, 'documentation');
+    assert.ok(selection.reason.includes('have not been verified'));
+    assert.equal(selection.guide.versions.observedOS, null);
+    assert.equal(selection.guide.versions.observedBrowser, null);
+    assert.equal(selection.guide.versions.os, null);
+    assert.equal(selection.guide.versions.browser, null);
+  }
+  const androidFirefox = detectEnvironment({ userAgent: 'Mozilla/5.0 (Android 16; Mobile; rv:156.0) Gecko/156.0 Firefox/156.0' });
+  assert.equal(selectGuide(androidFirefox).status, 'unsupported');
+});
+
+test('a recorded version match takes priority over an unversioned documentation draft', () => {
+  const environment = { platform: 'android', device: 'android', browser: 'chrome', osMajor: 16, browserMajor: 156, browserVersion: '156.0', standalone: false };
+  const draft = guides.find(guide => guide.id === 'android-chrome-android-layout-1');
+  const recorded = { ...draft, id: 'recorded-android-layout', versions: {
+    os: { min: 16, max: null }, browser: { min: 156, max: null }, observedOS: 16, observedBrowser: 156,
+  }};
+  assert.equal(selectGuide(environment, { guides: [draft, recorded] }).guide.id, recorded.id);
+  assert.equal(selectGuide({ ...environment, browserMajor: 155 }, { guides: [draft, recorded] }).match, 'documentation');
+  assert.equal(selectGuide({ ...environment, browserMajor: null }, { guides: [draft] }).match, 'documentation');
+});
