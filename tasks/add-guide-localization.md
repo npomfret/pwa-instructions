@@ -1,6 +1,6 @@
 # Localize install guides
 
-Status: planned; implementation not started. Decisions still open are listed at the end.
+Status: phases 0–4 are implemented. No real locale has shipped yet: the catalog lists only the `en-XA` draft pseudo-locale. The remaining work is the translations, sourcing and verifying the browser labels, and the per-locale visual review. Decisions still open are listed at the end.
 
 ## Issue
 
@@ -41,6 +41,8 @@ Add `locale?: string | readonly string[]` to `SelectionOptions` and `Illustratio
 Cheaper alternative: consumers filter `guides` by `language` through the existing `guides` option. Every consumer then reimplements fallback, ids are duplicated, and nobody can tell that a fallback happened.
 
 ### Browser UI language and page language
+
+**Status: reserved.** `browserLocale` is accepted by the API and React props but has no effect yet (Phase 2 left it so); prose, labels and SVG all follow `locale`.
 
 Add `browserLocale?`, defaulting to `locale`. Prose, completion text and SVG headings follow `locale` (the page). Quoted control names (`uiLabel`, menu items named in the prose, labels drawn in the mockups) follow `browserLocale`, because they must match what the device shows.
 
@@ -135,7 +137,7 @@ Files: `scripts/compose-guides.mjs`, `scripts/build.mjs`, a new `scripts/i18n.mj
 
 ### Phase 3: completeness checks in `npm run check`
 
-Add `scripts/check-locales.mjs`, run by the build. Each rule fails with a precise message:
+Implemented in `scripts/check-locales.mjs`, run by the build (`npm run check:locales` runs it alone), with tests in `tests/check-locales.test.mjs`. Rules marked "complete only" are warnings on a draft locale. Each rule fails with a precise message:
 
 1. Every shipped locale has a title and description for every step of every guide, after resolving reuse.
 2. Each translated string has the same `{label:*}` and `{step:*}` placeholders as the English string, and every label id exists.

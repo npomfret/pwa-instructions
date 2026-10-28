@@ -46,7 +46,7 @@ catalog.json                                                       "locales" sta
   "share": {
     "en": "Share",
     "es": "Compartir",
-    "_src": { "es": { "method": "device", "verified": "2026-10-01", "version": "iOS 26" } }
+    "_src": { "es": { "method": "device", "source": "capture:ios-26-es-001", "verified": "2026-10-01", "version": "iOS 26" } }
   }
 }
 ```
@@ -86,9 +86,29 @@ A guide lists the surfaces whose controls appear in its artwork as `labelSurface
 1. Use a canonical tag (`pt-BR`, `zh-Hans`) as the file name and add it to `catalog.json` `locales` as `draft`.
 2. Add the tag to every label the guides use, in each `labels/<surface>.json`, and to `labels/ui.json`.
 3. Write `locales/<tag>.json` for every guide, covering each step the guide authors.
-4. Record where each label came from in its `_src` entry: `method` (`device`, `chromium-xtb`, `vendor-docs`, ...), the `verified` date, and the OS and browser `version`. Copy the text the product shows; never machine-translate a label. Safari comes from a device or simulator set to the language, Chrome and Edge from Chromium's translation files and the product, Brave from its `Localizable.strings`, Android and Windows from AOSP resources and Microsoft terminology.
-5. Run `npm run build:packages`. A missing label, placeholder or key fails with a message naming it.
+4. Record where each label came from in its `_src` entry: `method` (`device`, `chromium-xtb`, `vendor-docs`, ...), `source` (a URL or a reference to the capture, not the screenshot), the `verified` date (`YYYY-MM-DD`), and the OS and browser `version`. Copy the text the product shows; never machine-translate a label. Safari comes from a device or simulator set to the language, Chrome and Edge from Chromium's translation files and the product, Brave from its `Localizable.strings`, Android and Windows from AOSP resources and Microsoft terminology.
+5. Run `npm run check:locales`, then `npm run build:packages`. A missing label, placeholder or key fails with a message naming the file, key and locale.
 6. Inspect each localized SVG at phone width for overflow, then change the status to `complete`.
+
+### Locale checks
+
+`scripts/check-locales.mjs` runs at the start of every build, so `npm run check` fails on any error. It checks every locale in the catalog, draft or complete. Rules marked "complete only" are errors for a `complete` locale and warnings for a `draft`; the rest are errors for both.
+
+| Rule | Checks |
+| --- | --- |
+| 1. Complete text (complete only) | Every guide has `title`, `label`, `completion`, `alt`, `intro` where English has one, a title and description for each step it authors, each `transitions` entry, and the SVG's `guide:*` keys. A reused step must have text in the guide that authors it, followed through any chain of reuse. The locale has every `ui` string. |
+| 2. Placeholders | A translation keeps every `{step:n}` of the English, names the label the English quotes as `uiLabel` (`{label:id}`), and uses only label ids in the guide's `labelSurfaces`. Nothing else in braces is allowed, and a label value keeps the placeholders of its English (`{host}`). |
+| 3. Labels resolve (complete only) | Every label a guide uses has text in the locale itself; there is no fallback to English. |
+| 4. SVG tags | Every `data-i18n` key in `install.source.svg` and `artwork.svg` has English text (a `label:*` key an English label equal to the node text) and, in a complete locale, a translation. Visible `text`, `title` and `desc` with no tag fail, except digits, the clock, `example.com`, `Safari` (the macOS app menu) and `data-pwa-domain` nodes. |
+| 5. Label sources (complete only) | Each non-English label value has `_src.<tag>` with `method`, `source`, `verified` (a past date) and `version`. English labels and the `ui` and `document` surfaces are exempt: English is the source text, and the others are this package's own strings, not browser strings. |
+| 6. Content | No empty strings or `TODO`. A string identical to English is a warning, unless it is a brand name. |
+| 7. Overflow | The estimated width of each tagged node against its `data-max-width` (times `data-lines`): a warning at 100%, an error at 130% (`OVERFLOW_WARN`, `OVERFLOW_FAIL`). `en-XA` is 35% longer by design, so it only warns. |
+| 8. Catalog agrees with files | A `locales/<tag>.json` or label locale that the catalog does not list is an orphan. A listed locale with no files fails when complete. |
+| 9. Tags | Tags in the catalog, file names and label files are canonical (`Intl.getCanonicalLocales`), and a file's optional `locale` field matches its name. |
+
+**Reading a failure.** Each line is `file: key [locale] message (rule N)`, for example `guides/ios/safari/iphone/layout-1/locales/es.json: steps.tap-share.title [es] lacks {label:share}, which the English has (rule 2)`. Open the file, find the key, and fix it for that locale. Warnings print one summary line (`Locale warnings: 27 (27 rule 7)`) with the full list in `tmp/check-locales.log`. For a width warning, shorten the text, or give the node more room (`data-max-width`, `data-lines`) and inspect the SVG.
+
+`npm run check:labels` is advisory: it lists labels whose `verified` date is over a year old and never fails the build. CI also fails when the committed English `install.svg` and `instructions.md` files are out of date, so run `npm run build:packages` and commit them after any change that affects English output.
 
 ## Matching
 

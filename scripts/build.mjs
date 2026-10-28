@@ -5,6 +5,7 @@ import { execFileSync } from "node:child_process";
 import { composeGuides } from "./compose-guides.mjs";
 import { loadLabels, publishedLocales } from "./i18n.mjs";
 import { writeLocaleOutputs } from "./emit-locales.mjs";
+import { checkLocales, reportLocaleChecks } from "./check-locales.mjs";
 
 async function writeChanged(file, value) {
   let old;
@@ -14,6 +15,9 @@ async function writeChanged(file, value) {
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const packageRoot = path.join(root, "packages/pwa-instructions");
+// Incomplete or inconsistent locale data stops the build before anything is composed or written.
+const checked = await checkLocales(root);
+if (!(await reportLocaleChecks(root, checked))) throw new Error(`Locale checks failed: ${checked.errors.length} error(s); see tmp/check-locales.log`);
 await rm(path.join(packageRoot, "dist"), { recursive: true, force: true });
 const catalog = JSON.parse(await readFile(path.join(root, "catalog.json"), "utf8"));
 const materialized = await composeGuides(root, catalog);

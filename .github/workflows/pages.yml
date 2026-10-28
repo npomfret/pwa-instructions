@@ -20,6 +20,8 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run check
+      - name: Committed English output is current
+        run: git diff --exit-code -- 'guides/**/install.svg' 'guides/**/instructions.md'
       - uses: actions/upload-pages-artifact@v3
         with:
           path: examples/react/dist

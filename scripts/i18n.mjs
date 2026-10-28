@@ -108,27 +108,30 @@ export function localeUI(labels, tag) {
 
 // --- Guide prose -----------------------------------------------------------------------------------------------
 
-const labelled = (english, uiLabel, resolver) => {
+export const labelled = (english, uiLabel, resolver) => {
   const id = uiLabel && resolver.idForEnglish(uiLabel);
   if (uiLabel && !id) throw new Error(`No label for "${uiLabel}"`);
   return id ? english.replace(new RegExp(`(?<!\\w)${escapePattern(uiLabel)}(?!\\w)`), `{label:${id}}`) : english;
 };
 
-/** Derive an en-XA locale file from a guide's English source, naming labels by placeholder as a translator would. */
-function pseudoLocale(data, resolver, document) {
+/**
+ * Derive a locale file from a guide's English source, naming labels by placeholder as a translator would. `transform`
+ * maps each English string; the default builds en-XA, and tests pass another to make a fixture locale.
+ */
+export function pseudoLocale(data, resolver, document, transform = pseudoLocalize) {
   const locale = {
-    title: pseudoLocalize(data.title), label: pseudoLocalize(data.label ?? data.title),
-    steps: {}, completion: pseudoLocalize(data.completion.description), alt: pseudoLocalize(data.illustration.alt), transitions: {},
+    title: transform(data.title), label: transform(data.label ?? data.title),
+    steps: {}, completion: transform(data.completion.description), alt: transform(data.illustration.alt), transitions: {},
   };
-  if (data.intro) locale.intro = pseudoLocalize(data.intro);
+  if (data.intro) locale.intro = transform(data.intro);
   for (const step of data.steps) {
-    if (step.id) locale.steps[step.id] = { title: pseudoLocalize(labelled(step.title, step.uiLabel, resolver)),
-      description: pseudoLocalize(labelled(step.description, step.uiLabel, resolver)) };
-    if (step.transitionId) locale.transitions[step.transitionId] = pseudoLocalize(step.transitionBefore);
+    if (step.id) locale.steps[step.id] = { title: transform(labelled(step.title, step.uiLabel, resolver)),
+      description: transform(labelled(step.description, step.uiLabel, resolver)) };
+    if (step.transitionId) locale.transitions[step.transitionId] = transform(step.transitionBefore);
   }
   for (const node of Array.from(document.getElementsByTagName('*'))) {
     const key = (node.getAttribute('data-i18n') ?? '').match(/^guide:(\w+)$/)?.[1];
-    if (key) locale[key] = pseudoLocalize(node.textContent);
+    if (key) locale[key] = transform(node.textContent);
   }
   return locale;
 }
@@ -152,7 +155,7 @@ export async function loadGuideLocale({ folder, data, tag, resolver, document })
 
 const CLASS_SIZES = { heading: 28, 'step-title': 23, label: 16, subtitle: 16, small: 14 };
 const BOLD_CLASSES = ['heading', 'step-title'];
-const fontOf = node => {
+export const fontOf = node => {
   const classes = (node.getAttribute('class') ?? '').split(/\s+/);
   const name = Object.keys(CLASS_SIZES).find(item => classes.includes(item));
   return { size: CLASS_SIZES[name] ?? 16, bold: BOLD_CLASSES.includes(name) };

@@ -14,6 +14,8 @@
     "build:example": "npm run build:packages && npm run build --workspace @pwa-instructions/example-react",
     "build": "npm run build:example",
     "dev": "npm run build:packages && npm run dev --workspace @pwa-instructions/example-react",
+    "check:locales": "node scripts/check-locales.mjs",
+    "check:labels": "node scripts/check-labels.mjs",
     "test": "node --test --test-concurrency=1 tests/*.test.mjs",
     "check": "npm run build && npm run typecheck --workspace @pwa-instructions/example-react && npm test",
     "pack:package": "npm run build:packages && npm pack --workspace pwa-instructions"
