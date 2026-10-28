@@ -1,8 +1,8 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
-import { DEFAULT_LOCALE, loadLabels, labelResolver, loadGuideLocale, localizeDocument, checkLabelTags,
-  stripLocalization, fillText } from './i18n.mjs';
+import { DEFAULT_LOCALE, loadLabels, labelResolver, labelled, loadGuideLocale, localizeDocument, checkLabelTags,
+  stripLocalization, fillText, usedLabelIds } from './i18n.mjs';
 
 const ns = 'http://www.w3.org/2000/svg';
 const children = node => Array.from(node.childNodes).filter(child => child.nodeType === 1);
@@ -18,6 +18,8 @@ const plainNumber = n => String(n);
 function markdownTitle(step) {
   return step.uiLabel ? step.title.replace(step.uiLabel, `*${step.uiLabel}*`) : step.title;
 }
+/** The same emphasis on a template title, where the control is still its first `{label:id}` placeholder. */
+const markdownTemplateTitle = step => step.title.replace(/\{label:[a-z0-9-]+\}/, placeholder => `*${placeholder}*`);
 
 function styleTitle(doc, node, step, fit) {
   const offset = step.uiLabel ? step.title.indexOf(step.uiLabel) : -1;
@@ -51,7 +53,10 @@ function scope(node, prefix) {
 /**
  * Reuse source panels and text, then return each guide's complete, standalone SVG and Markdown in `locale`.
  * Writes nothing. A guide's artwork is `artworkSource`, or `install.source.svg` when it is not composed from panels;
- * `install.svg` is always generated output.
+ * `install.svg` is always generated output. Each result also carries what the runtime needs to swap in another locale's
+ * control names: `templates` (the prose strings that name a label, with `{label:id}` kept), `labels` (the text of every
+ * label the templates and artwork use, by locale tag, this one and English) and `taggedSvg` (the artwork with its
+ * `label:*` tags kept).
  */
 export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
   const english = locale === DEFAULT_LOCALE;
@@ -75,6 +80,7 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
     const svg = doc.documentElement;
     // Labels, tagged text and prose all resolve here, in this guide's own surfaces, before any panel is imported elsewhere.
     const resolver = labelResolver(labels, surfaces, locale);
+    const lookups = [{ locale: resolver, english: labelResolver(labels, surfaces, DEFAULT_LOCALE) }];
     checkLabelTags(doc, labelResolver(labels, surfaces, DEFAULT_LOCALE), id);
     const strings = english ? null : await loadGuideLocale({ folder, data, tag: locale, resolver: labelResolver(labels, surfaces, DEFAULT_LOCALE), document: doc });
     if (strings) localizeDocument(doc, { tag: locale, resolver, locale: strings, guideId: id });
@@ -84,15 +90,19 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
       const { uiLabel, ...rest } = base;
       const control = resolver.firstLabel(entry.title);
       return { ...rest, ...(control === undefined ? {} : { uiLabel: control }),
-        title: resolver.fill(entry.title), description: resolver.fill(entry.description) };
+        title: resolver.fill(entry.title), description: resolver.fill(entry.description),
+        template: { title: entry.title, description: entry.description } };
     };
+    /** English steps get the template a translator would see: only the named control becomes a placeholder. */
+    const annotate = base => ({ ...base, template: { title: labelled(base.title, base.uiLabel, resolver), description: labelled(base.description, base.uiLabel, resolver) } });
     const imported = new Set();
     const steps = [];
+    const templates = [];
     const rawSteps = [];
     let transitionSpace = 0;
     for (let index = 0; index < data.steps.length; index++) {
       const raw = data.steps[index];
-      let step = english || !raw.id ? raw : localize(raw, strings.steps[raw.id]);
+      let step = !raw.id ? raw : english ? annotate(raw) : localize(raw, strings.steps[raw.id]);
       let panel = byId(doc, `step-${index + 1}`);
       if (raw.reuse) {
         const source = await resolve(raw.reuse.guideId);
@@ -103,7 +113,9 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
         // The source's rawSteps are already in this locale, so a reused step takes the source guide's translation.
         const override = strings?.overrides?.[raw.reuse.stepId];
         const base = override ? localize(sourceStep, override) : sourceStep;
-        step = { ...base, id: `${raw.reuse.guideId}-${sourceStep.id}`, description: renumber(base.description, offset, keepPlaceholder) };
+        step = { ...base, id: `${raw.reuse.guideId}-${sourceStep.id}`, description: renumber(base.description, offset, keepPlaceholder),
+          template: { title: base.template.title, description: renumber(base.template.description, offset, keepPlaceholder) } };
+        lookups.push(...source.lookups);
         if (raw.reuse.artwork) {
           const prefix = `shared-${raw.reuse.guideId}-`;
           if (!imported.has(raw.reuse.guideId)) {
@@ -145,10 +157,11 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
       if (number) number.textContent = String(index + 1);
       const { reuse, transitionBefore, transitionId, ...plainStep } = step;
       rawSteps.push({ ...plainStep, illustrationFragment: `step-${index + 1}` });
-      steps.push({ ...rawSteps[index], description: renumber(plainStep.description, 0, plainNumber) });
+      const { template, ...visible } = rawSteps[index];
+      steps.push({ ...visible, description: renumber(plainStep.description, 0, plainNumber) });
+      templates.push({ title: renumber(template.title, 0, plainNumber), description: renumber(template.description, 0, plainNumber) });
     }
     if (steps.length !== data.illustration.stepCount) throw new Error(`Step count mismatch: ${id}`);
-    let svgText;
     if (data.artworkSource) {
       const height = 100 + steps.length * 490 + transitionSpace;
       svg.setAttribute('height', String(height));
@@ -157,18 +170,40 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
       byId(doc, 'title').textContent = english ? data.title : strings.title;
       byId(doc, 'description').textContent = english ? data.illustration.alt : strings.alt;
     }
-    // The tagged document stays intact for guides that import its panels; the output copy has the markup removed.
-    const output = parse(new XMLSerializer().serializeToString(doc));
+    // The tagged document stays intact for guides that import its panels; the output copies have the markup removed, or
+    // for `taggedSvg` only the `label:*` tags kept.
+    const serialized = new XMLSerializer().serializeToString(doc);
+    const output = parse(serialized);
     stripLocalization(output);
-    svgText = new XMLSerializer().serializeToString(output).trimEnd() + '\n';
+    const svgText = new XMLSerializer().serializeToString(output).trimEnd() + '\n';
+    const tagged = parse(serialized);
+    stripLocalization(tagged, { keepLabels: true });
+    const taggedSvg = new XMLSerializer().serializeToString(tagged).trimEnd() + '\n';
     const localized = english ? { title: data.title, label: data.label ?? data.title, alt: data.illustration.alt, completion: data.completion.description }
       : { title: strings.title, label: strings.label, alt: strings.alt, completion: resolver.fill(strings.completion) };
     const introSource = english ? data.intro : strings.intro && resolver.fill(strings.intro);
     const intro = introSource ? renumber(introSource, 0, plainNumber) : '';
-    const text = `# ${localized.title}\n\n` + (intro ? intro + '\n\n' : '') +
-      steps.map((step, index) => `${index + 1}. **${markdownTitle(step)}.** ${step.description}`).join('\n') +
-      `\n\n${localized.completion}\n\n${documentLabels.get('illustration')} [${data.illustration.file}](${data.illustration.file}). ${documentLabels.get('steps-match')}\n\n${documentLabels.get('evidence')} [metadata.json](metadata.json).\n`;
-    const result = { ...record, steps, rawSteps, document: doc, svg: svgText, text, locale, localized };
+    const templateCompletion = english ? data.completion.description : strings.completion;
+    const templateIntro = (english ? data.intro : strings.intro) ?? '';
+    const markdown = (items, titleOf, completion, introText) => `# ${localized.title}\n\n` + (introText ? introText + '\n\n' : '') +
+      items.map((step, index) => `${index + 1}. **${titleOf(step)}.** ${step.description}`).join('\n') +
+      `\n\n${completion}\n\n${documentLabels.get('illustration')} [${data.illustration.file}](${data.illustration.file}). ${documentLabels.get('steps-match')}\n\n${documentLabels.get('evidence')} [metadata.json](metadata.json).\n`;
+    const text = markdown(steps, markdownTitle, localized.completion, intro);
+    const templateText = markdown(templates, markdownTemplateTitle, templateCompletion, renumber(templateIntro, 0, plainNumber));
+    // Only strings that name a label differ from their template, so only those are kept.
+    const named = Object.fromEntries(steps.flatMap((step, index) =>
+      templates[index].title !== step.title || templates[index].description !== step.description ? [[step.id, templates[index]]] : []));
+    const sparse = { ...(Object.keys(named).length ? { steps: named } : {}),
+      ...(templateCompletion !== localized.completion ? { completion: templateCompletion } : {}),
+      ...(templateText !== text ? { text: templateText } : {}) };
+    const ids = usedLabelIds([...templates.flatMap(item => [item.title, item.description]), templateCompletion, templateText], tagged);
+    const table = pick => Object.fromEntries(ids.map(id => {
+      const found = lookups.map(pick).find(item => item.has(id));
+      if (!found) throw new Error(`${data.id}: no label surface defines ${id}`);
+      return [id, found.get(id)];
+    }));
+    const labelTable = { ...(english ? {} : { [locale]: table(item => item.locale) }), [DEFAULT_LOCALE]: table(item => item.english) };
+    const result = { ...record, steps, rawSteps, lookups, document: doc, svg: svgText, taggedSvg, text, locale, localized, templates: sparse, labels: labelTable };
     visiting.delete(id);
     resolved.set(id, result);
     return result;

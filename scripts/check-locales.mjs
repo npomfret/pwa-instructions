@@ -16,7 +16,9 @@ import { DEFAULT_LOCALE, PSEUDO_LOCALE, estimateWidth, fontOf, labelResolver, la
  *     completion, alt, transitions, and the locale's `ui` strings.
  *  2. Translated strings carry the same {step:n} placeholders as English, any label the English names as a control, and
  *     only label ids the guide's labelSurfaces define.
- *  3. Complete only: every label a guide uses resolves for the locale, with no silent English fallback.
+ *  3. Complete only: every label a guide uses resolves for the locale, with no silent English fallback. This is also
+ *     what makes a locale module's label table complete: the table holds each label the guide's templates and artwork
+ *     tags name, including those of panels reused from another guide, which browserLocale substitutes at runtime.
  *  4. Source SVG data-i18n keys have English text and, in a complete locale, a translation; no visible text is untagged.
  *  5. Complete only: every non-English label value has a source record (_src).
  *  6. No empty strings or TODO markers; a string identical to English is a warning.
@@ -229,6 +231,12 @@ export async function checkLocales(root) {
           const text = origin && !pseudo ? await readText(origin.files.get(tag) ?? path.join(origin.folder, 'locales', `${tag}.json`)) : '{}';
           const own = text === null ? undefined : JSON.parse(text).steps?.[from.stepId];
           if (!pseudo && (!own?.title?.trim() || !own?.description?.trim())) report(soft, 1, file, `steps.${step.reuse.stepId}`, tag, `reuses ${from.guideId} step ${from.stepId}, which has no ${tag} title and description`);
+          if (step.reuse.artwork && origin && !pseudo) {
+            const originResolver = labelResolver(labels, origin.surfaces, tag);
+            for (const id of origin.labelIds) {
+              if (origin.english.has(id) && !resolves(originResolver, id)) report(soft, 3, file, `{label:${id}}`, tag, `in the artwork reused from ${origin.data.id} has no text in this locale and would fall back to English`);
+            }
+          }
           const override = locale.overrides?.[step.reuse.stepId];
           if (override) {
             const base = byId.get(step.reuse.guideId)?.data.steps.find(item => item.id === step.reuse.stepId);

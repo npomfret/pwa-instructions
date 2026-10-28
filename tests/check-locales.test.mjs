@@ -85,6 +85,13 @@ test('a missing top-level string, transition or ui string fails a complete local
   assert.ok(has(errors, 'labels/ui.json', 'heading', '[es]', 'has no ui string'));
 });
 
+test('a label drawn in artwork reused from another guide must resolve for a complete locale', async t => {
+  const dir = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ios-safari.json'), entries => { delete entries['show-reader'].es; delete entries['show-reader']._src.es; }) });
+  const { errors } = await checkLocales(dir);
+  assert.ok(has(errors, `${SAFARI}/locales/es.json`, '{label:show-reader}', 'fall back to English'));
+  assert.ok(has(errors, `${BRAVE}/locales/es.json`, '{label:show-reader}', 'artwork reused from ios-safari-iphone-layout-1'));
+});
+
 test('the same gaps in a draft locale are warnings, not errors', async t => {
   const dir = await withFixture(t, { status: 'draft', mutate: async dir => {
     await edit(path.join(dir, SAFARI, 'locales/es.json'), locale => { delete locale.steps['tap-share']; });

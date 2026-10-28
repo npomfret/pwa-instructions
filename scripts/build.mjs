@@ -58,7 +58,7 @@ await writeFile(path.join(generated, "guides.ts"),
 // Only complete locales are built for publishing. Draft locales (and the en-XA pseudo-locale) are composed by tests alone.
 const locales = new Map();
 for (const tag of publishedLocales(catalog)) locales.set(tag, await composeGuides(root, catalog, tag));
-await writeLocaleOutputs({ catalog, locales, generated, assets: path.join(packageRoot, "dist/assets"), labels: await loadLabels(root) });
+await writeLocaleOutputs({ catalog, locales, english: materialized, generated, assets: path.join(packageRoot, "dist/assets"), labels: await loadLabels(root) });
 execFileSync(process.execPath, [path.join(root, "node_modules/typescript/bin/tsc"), "-b", "packages/pwa-instructions"], { cwd: root, stdio: "inherit" });
 for (const entry of catalog.guides) {
   const folder = path.dirname(path.join(root, entry.path));

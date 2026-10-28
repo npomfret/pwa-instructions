@@ -60,6 +60,8 @@ const { guide, locale } = selectGuide(detectBrowserEnvironment(), { locale: 'es-
 
 A locale that is not registered, or lacks a guide, gives that whole guide in English with `fallback: true`; guides are never half translated. The React components take the same `locale` prop. See the [API reference](https://github.com/npomfret/pwa-instructions/blob/main/docs/api.md#localization) for resolution rules, `browserLocale` and `detectUILocale()`.
 
+The prose follows `locale`, but control names such as "Share" must match the user's browser. Pass `browserLocale: detectUILocale()` (after mounting) to take `uiLabel`, the quoted menu items and the artwork's labels from the browser's language; it defaults to `locale`. An English page with a non-English browser also needs `import en from 'pwa-instructions/locales/en'`. See [Localization](https://github.com/npomfret/pwa-instructions/blob/main/docs/api.md#localization).
+
 [API reference](https://github.com/npomfret/pwa-instructions/blob/main/docs/api.md) · [Live example](https://npomfret.github.io/pwa-instructions/) · [Source](https://github.com/npomfret/pwa-instructions)
 
 MIT licensed.

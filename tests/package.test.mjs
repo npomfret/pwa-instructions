@@ -36,6 +36,7 @@ test('one packed package supports a React-free core and the optional React entry
     // Locale modules are opt-in subpaths; none is complete yet, so none ships, and no draft or pseudo-locale leaks.
     assert.equal(manifest.exports['./locales/*'].import, './dist/core/generated/locales/*.js');
     assert.ok(files.every(file => !/en-XA/i.test(file)));
+    for (const expected of ['dist/core/generated/locales/en.js', 'dist/core/generated/locales/en.d.ts', 'dist/core/artwork.js', 'dist/core/fit.js']) assert.ok(files.includes(expected), expected);
     const types = await readFile(path.join(installed, 'dist/core/index.d.ts'), 'utf8');
     for (const name of ['resolveLocale', 'registerLocale', 'getGuideLocales', 'detectUILocale', 'LocalizedGuide', 'LocaleData']) assert.ok(types.includes(name), name);
 
@@ -52,6 +53,18 @@ test('one packed package supports a React-free core and the optional React entry
       assert.equal(fallback.guide.localeFallback, true);
       assert.equal(detectUILocale(), undefined);
       await assert.rejects(import('pwa-instructions/locales/es'), {code: 'ERR_MODULE_NOT_FOUND'});
+      // The opt-in English module resolves, carries the tagged artwork, templates and labels, and registers like any locale.
+      const english = (await import('pwa-instructions/locales/en')).default;
+      assert.deepEqual(Object.keys(english.guides).sort(), guides.map(guide => guide.id).sort());
+      const safari = english.guides['ios-safari-iphone-layout-1'];
+      assert.ok(decodeURIComponent(safari.illustration.src).includes('data-i18n="label:share"'));
+      assert.ok(safari.templates.steps && safari.labels.en.share === 'Share');
+      assert.ok(!guides[0].illustration.src.includes('data-i18n'));
+      registerLocale('en', english);
+      assert.deepEqual(getGuideLocales(guides[0]), ['en']);
+      const labelled = selectGuide(null, {guideId: guides[0].id, locale: 'en', browserLocale: 'es'});
+      assert.deepEqual(labelled.locale.browser, {requested: 'es', resolved: 'en', fallback: true});
+      assert.equal(labelled.guide.browserLocaleFallback, true);
       const environment = detectEnvironment({userAgent: 'Mozilla/5.0 (Macintosh) Version/27.0 Safari/605.1.15'});
       assert.equal(selectGuide(environment).guide.id, 'macos-safari-desktop-layout-1');
       assert.ok(import.meta.resolve('pwa-instructions/assets/ios-safari-iphone-layout-1/install.svg').endsWith('install.svg'));

@@ -1,5 +1,6 @@
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
+import { estimateWidth, fitText, fontOf as fontClass } from '../packages/pwa-instructions/src/core/fit.js';
 
 /*
  * Locale data lives next to the English source:
@@ -153,45 +154,16 @@ export async function loadGuideLocale({ folder, data, tag, resolver, document })
 
 // --- Text fitting ----------------------------------------------------------------------------------------------
 
-const CLASS_SIZES = { heading: 28, 'step-title': 23, label: 16, subtitle: 16, small: 14 };
-const BOLD_CLASSES = ['heading', 'step-title'];
-export const fontOf = node => {
-  const classes = (node.getAttribute('class') ?? '').split(/\s+/);
-  const name = Object.keys(CLASS_SIZES).find(item => classes.includes(item));
-  return { size: CLASS_SIZES[name] ?? 16, bold: BOLD_CLASSES.includes(name) };
-};
-
-/** Rough rendered width in user units: wide scripts take one em, narrow Latin glyphs about half. No font metrics here. */
-export function estimateWidth(text, size, bold = false) {
-  let em = 0;
-  for (const char of text) {
-    const code = char.codePointAt(0);
-    em += code >= 0x2e80 ? 1 : char === ' ' ? 0.28 : /[il.,:;'|!]/.test(char) ? 0.27 : /\p{Lu}/u.test(char) ? 0.66 : 0.54;
-  }
-  return em * size * (bold ? 1.06 : 1);
-}
-
-/** Break at spaces, and between wide characters, which have none. Returns null when more than `lines` lines are needed. */
-function wrap(tokens, size, bold, max, lines) {
-  const result = [[]];
-  let used = 0;
-  for (const token of tokens) {
-    const width = estimateWidth(token.text.trimEnd(), size, bold);
-    if (used + width > max && result[result.length - 1].length) { result.push([]); used = 0; }
-    result[result.length - 1].push(token);
-    used += estimateWidth(token.text, size, bold);
-  }
-  return result.length <= lines && result.every(line => estimateWidth(line.map(item => item.text).join('').trimEnd(), size, bold) <= max) ? result : null;
-}
-const tokenize = segments => segments.flatMap(({ text, italic }) => text.split(/(?<=\s)|(?<=[⺀-￿])/).filter(Boolean).map(part => ({ text: part, italic })));
+// The measuring and wrapping decisions live in the package (src/core/fit.js), so the runtime label substitution makes the same ones.
+export { estimateWidth };
+export const fontOf = node => fontClass(node.getAttribute('class') ?? '');
 
 /**
  * Fill `node` with `segments` ([{text, italic}]). A line that would overflow `max` wraps onto up to `lines` lines, one
  * `<tspan>` per line; failing that it is squeezed with `textLength`, which is the fallback for any single line.
  */
 export function fillText(doc, node, segments, { max, lines = 1, lineHeight = 0 } = {}) {
-  const { size, bold } = fontOf(node);
-  const plain = segments.map(item => item.text).join('');
+  const fit = fitText(segments, { ...fontOf(node), max, lines });
   node.textContent = '';
   const append = (parent, items) => items.forEach(({ text, italic }) => {
     if (!italic) { parent.appendChild(doc.createTextNode(text)); return; }
@@ -200,10 +172,8 @@ export function fillText(doc, node, segments, { max, lines = 1, lineHeight = 0 }
     span.textContent = text;
     parent.appendChild(span);
   });
-  if (!max || estimateWidth(plain, size, bold) <= max) { append(node, segments); return; }
-  const wrapped = lines > 1 ? wrap(tokenize(segments), size, bold, max, lines) : null;
-  if (wrapped) {
-    wrapped.forEach((line, index) => {
+  if (fit.lines.length > 1) {
+    fit.lines.forEach((line, index) => {
       const span = doc.createElementNS(ns, 'tspan');
       span.setAttribute('x', node.getAttribute('x') ?? '0');
       span.setAttribute('dy', index ? String(lineHeight) : '0');
@@ -212,9 +182,11 @@ export function fillText(doc, node, segments, { max, lines = 1, lineHeight = 0 }
     });
     return;
   }
-  append(node, segments);
-  node.setAttribute('textLength', String(max));
-  node.setAttribute('lengthAdjust', 'spacingAndGlyphs');
+  append(node, fit.lines[0]);
+  if (fit.squeeze) {
+    node.setAttribute('textLength', String(max));
+    node.setAttribute('lengthAdjust', 'spacingAndGlyphs');
+  }
 }
 
 // --- Document localization -------------------------------------------------------------------------------------
@@ -250,7 +222,24 @@ export function checkLabelTags(doc, resolver, guideId) {
   }
 }
 
-/** Remove the build-only attributes so the published SVG carries no localization markup. */
-export function stripLocalization(doc) {
-  for (const node of Array.from(doc.getElementsByTagName('*'))) for (const name of DATA_ATTRIBUTES) node.removeAttribute(name);
+/**
+ * Remove the build-only attributes so the published SVG carries no localization markup. `keepLabels` leaves them on the
+ * `label:*` nodes, which is what the runtime needs to swap in the browser's control names (src/core/artwork.ts).
+ */
+export function stripLocalization(doc, { keepLabels = false } = {}) {
+  for (const node of Array.from(doc.getElementsByTagName('*'))) {
+    if (keepLabels && (node.getAttribute('data-i18n') ?? '').startsWith('label:')) continue;
+    for (const name of DATA_ATTRIBUTES) node.removeAttribute(name);
+  }
+}
+
+/** The label ids named by `{label:id}` placeholders in `texts` and by `label:*` tags in `doc`. */
+export function usedLabelIds(texts, doc) {
+  const ids = new Set();
+  for (const text of texts) for (const [, id] of text.matchAll(PLACEHOLDER)) ids.add(id);
+  for (const node of Array.from(doc.getElementsByTagName('*'))) {
+    const key = node.getAttribute('data-i18n') ?? '';
+    if (key.startsWith('label:')) ids.add(key.slice('label:'.length));
+  }
+  return [...ids].sort();
 }

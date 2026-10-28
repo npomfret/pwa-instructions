@@ -122,5 +122,6 @@ test('draft locales are never published', async () => {
   // The built package has no trace of the pseudo-locale.
   const dist = path.join(root, 'packages/pwa-instructions/dist');
   for (const { id } of catalog.guides) assert.deepEqual((await readdir(path.join(dist, 'assets', id))).filter(name => /^en-XA$/i.test(name)), [], id);
-  await assert.rejects(readdir(path.join(dist, 'core/generated/locales')), { code: 'ENOENT' });
+  // Only the opt-in English module ships; it is not a draft and has no per-guide assets.
+  assert.deepEqual((await readdir(path.join(dist, 'core/generated/locales'))).sort(), ['en.d.ts', 'en.js']);
 });

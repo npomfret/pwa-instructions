@@ -1,4 +1,5 @@
-import { getLocaleUI, localizeGuide } from "./locale.js";
+import { escapeXML } from "./artwork.js";
+import { browserRequest, getLocaleUI, localizeGuide } from "./locale.js";
 import type { InstallGuide, LocaleOptions } from "./types.js";
 
 export interface IllustrationOptions extends LocaleOptions {
@@ -16,13 +17,11 @@ function displayHost(input: string | undefined): string | null {
   } catch { return null; }
 }
 
-const escapeXML = (value: string) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;")
-  .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&apos;");
-
 /** Personalize a copy of a bundled SVG, without changing the shared guide. */
 export function getIllustration(source: InstallGuide, options: IllustrationOptions = {}): InstallGuide["illustration"] {
-  // With a locale, personalize that locale's artwork; the "Website:" wording follows the language of the text it ends.
-  const guide = options.locale === undefined ? source : localizeGuide(source, options).guide;
+  // With a locale (or a browser locale that names other controls), personalize that artwork; the "Website:" wording
+  // follows the language of the text it ends.
+  const guide = options.locale === undefined && !browserRequest(options, source) ? source : localizeGuide(source, options).guide;
   const host = displayHost(options.siteUrl);
   if (!host || host === "example.com") return guide.illustration;
   const prefix = "data:image/svg+xml;charset=utf-8,";

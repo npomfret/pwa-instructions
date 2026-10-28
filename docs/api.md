@@ -29,7 +29,7 @@ All props are optional.
 | `environment` | Omitted | Detect in the browser. Supply an `Environment` object to use your own detection, or `null` to disable detection and wait for an explicit `guideId`. |
 | `guides` | Bundled guides | A custom array of `InstallGuide` objects used for automatic and explicit selection. |
 | `locale` | Omitted (English) | A BCP 47 tag, or tags in order of preference. Shows the guide, headings and image in that language when its data is registered; otherwise the whole guide is English. See [Localization](#localization). |
-| `browserLocale` | Omitted | The language of the browser or OS interface. Accepted and reserved; it does not change the output yet. |
+| `browserLocale` | Same as `locale` | The language of the browser or OS interface. It decides the control names (`uiLabel`, the menu items quoted in the text, the labels drawn in the artwork); `locale` still decides the prose. Pass `detectUILocale()` yourself; it is never read automatically. When it differs from the text's language the section gets `data-pwa-browser-locale`. See [Localization](#localization). |
 | `localeData` | Omitted | Locale data by tag, used with or instead of `registerLocale`. |
 | `className` | Omitted | CSS class on the rendered guide section. Components have no global stylesheet. |
 | `illustrationSrc` | Bundled SVG data URL | Override the image URL, for example when your Content Security Policy requires an image hosted on your own origin. This takes precedence over `siteUrl`; custom images are not personalized. |
@@ -68,7 +68,7 @@ An `Environment` contains `platform`, `browser`, `device`, `osMajor`, `browserMa
 
 ### Selection result
 
-The result contains `status`, `guide`, `match`, `reason` and `environment`. Check `guide` before rendering; it is `null` whenever no guide was selected. `reason` is an English sentence for developers and logs; do not show it to users. When you pass `locale`, the result also has `reasonCode`, a stable identifier to map to your own text (`guide-chosen`, `guide-not-found`, `needs-environment`, `installed`, `no-guide-for-browser`, `documentation-only`, `version-hidden`, `no-guide-for-version`, `os-hidden`, `os-ambiguous`, `newer-version`, `browser-version` or `version-match`), and `locale` (see below). Calls without `locale` return exactly the 0.1.0 object.
+The result contains `status`, `guide`, `match`, `reason` and `environment`. Check `guide` before rendering; it is `null` whenever no guide was selected. `reason` is an English sentence for developers and logs; do not show it to users. When you pass `locale`, the result also has `reasonCode`, a stable identifier to map to your own text (`guide-chosen`, `guide-not-found`, `needs-environment`, `installed`, `no-guide-for-browser`, `documentation-only`, `version-hidden`, `no-guide-for-version`, `os-hidden`, `os-ambiguous`, `newer-version`, `browser-version` or `version-match`), and `locale` (see below). Calls without `locale`, or with only a `browserLocale` that names the same locale, return exactly the 0.1.0 object.
 
 | `status` | Meaning |
 | --- | --- |
@@ -102,7 +102,7 @@ const selection = selectGuide(environment, { locale: detectUILocale() ?? 'en' })
 // selection.guide.language === 'es'; selection.locale: { requested: 'es-MX', resolved: 'es', fallback: false }
 ```
 
-You can skip registration and pass the same data per call: `{ locale: 'es', localeData: { es } }`. Data passed per call wins over registered data for the same tag. A module's default export is `LocaleData` (`{ guides, ui? }`); `guides` and `ui` are also named exports. Locale modules are published only for locales marked complete; none is complete yet.
+You can skip registration and pass the same data per call: `{ locale: 'es', localeData: { es } }`. Data passed per call wins over registered data for the same tag. A module's default export is `LocaleData` (`{ guides, ui? }`); `guides` and `ui` are also named exports. Locale modules are published only for locales marked complete; none is complete yet. The exception is the opt-in `en` module described below.
 
 `resolveLocale(requested, available)` returns `{ requested, resolved, fallback }`:
 
@@ -111,15 +111,40 @@ You can skip registration and pass the same data per call: `{ locale: 'es', loca
 - A script is never crossed. `zh-Hans` never serves `zh-Hant`; `zh-TW` finds `zh-Hant` but not a bare `zh`.
 - `requested` is the first tag asked for, in canonical form, or `null` when none was. `fallback` is `false` when the text is in the language asked for (`pt-BR` served by `pt` counts), and `true` when it is not, including when a later tag in an array was used.
 
-**Fallback is per guide.** A guide is either fully in the locale or fully English, never mixed. A locale serves a guide only if it has that guide and every one of its steps. When a locale is requested and a guide comes back in English, it has `localeFallback: true` and `requestedLocale`, so you can tell even if you keep only the guide. `GuideSelection.locale` and `reasonCode` appear only when `locale` is passed; this keeps calls without it identical to 0.1.0. `getGuideLocales(guide)` lists what can serve a guide, for building a language picker.
+**Fallback is per guide.** A guide is either fully in the locale or fully English, never mixed. A locale serves a guide only if it has that guide and every one of its steps. When a locale is requested and a guide comes back in English, it has `localeFallback: true` and `requestedLocale`, so you can tell even if you keep only the guide. `GuideSelection.locale` and `reasonCode` appear only when `locale` is passed (or a `browserLocale` for another locale than the page's); this keeps calls without it identical to 0.1.0. `getGuideLocales(guide)` lists what can serve a guide, for building a language picker.
 
-**Page language and browser language.** The names of controls in the steps ("Share", "Add to Home Screen") must match what the user's device shows. `detectUILocale()` returns the first of `navigator.languages`, which is a proxy for the browser's interface language and not a guarantee. It returns `undefined` on the server, so call it after mounting to keep hydration consistent. `browserLocale` is accepted by `selectGuide`, `getIllustration` and the React components so adding it later is not a breaking change, but today the guide is composed in `locale` alone and `browserLocale` has no effect.
+**Page language and browser language.** The names of controls in the steps ("Share", "Add to Home Screen") must match what the user's device shows. `detectUILocale()` returns the first of `navigator.languages`, which is a proxy for the browser's interface language and not a guarantee. It returns `undefined` on the server, so call it after mounting to keep hydration consistent. See the next paragraph for `browserLocale`, which sets the control names independently of the prose.
+
+**Browser locale.** Pass `browserLocale` when the page text and the user's browser are in different languages, so the guide says "Compartir" in Spanish prose only if that is what the user's Safari shows. The prose (step titles and descriptions, completion, intro, headings, alt text and Markdown) follows `locale`. The control names follow `browserLocale`, and it defaults to `locale`, so existing calls are unchanged.
+
+```js
+import { registerLocale, selectGuide, detectUILocale } from 'pwa-instructions';
+import es from 'pwa-instructions/locales/es';
+import en from 'pwa-instructions/locales/en'; // only for an English page with a non-English browser
+
+registerLocale('es', es);
+registerLocale('en', en);
+// After mounting: the page is English, the browser may be Spanish.
+const selection = selectGuide(environment, { locale: 'en', browserLocale: detectUILocale() });
+// selection.locale.browser: { requested: 'es-MX', resolved: 'es', fallback: false }
+```
+
+How it works:
+
+- Each locale module also carries each guide's prose with the `{label:id}` placeholders still in it, and a label table (id to text) for the browser locale and English. At runtime the page locale's templates are filled with the browser locale's labels, `uiLabel` is the first label in each step title, and the label text drawn in the artwork is replaced and fitted (wrapped or squeezed with `textLength`) the way the build fits it. Headings and step titles drawn in the artwork stay in the page language.
+- The browser locale is resolved with `resolveLocale` against the locales that have label data for the guide. If it has none, the page locale's labels are used.
+- `selection.locale.browser` is `{ requested, resolved, fallback }` and appears only when `browserLocale` was passed and differs from `locale`. `resolved` is the locale whose labels were used; `fallback` is `true` when no labels were found (or the page has no template data), and the guide then also has `browserLocaleFallback: true` and `requestedBrowserLocale`. A guide with substituted labels has `browserLanguage`.
+- An English page with a non-English browser needs the opt-in `pwa-instructions/locales/en` module, which carries the English templates and tagged English artwork. The bundled English guides and the published `install.svg` stay untagged and unchanged, so the module costs nothing unless you import it. Without it the English page keeps its own English control names, and the result reports `fallback: true`.
+- `getIllustration(guide, { browserLocale, siteUrl })` applies the same artwork substitution, together with the site URL, to a copy; the guide is not mutated. With only a `browserLocale`, the page is the language the guide is already in.
+- Locale modules are about a quarter larger because they carry the templates, label tables and tagged artwork; import only the locales you serve.
+
+React does not read `detectUILocale()` for you, so server and client output agree. Pass it after mounting, for example `const [browser, setBrowser] = useState(); useEffect(() => setBrowser(detectUILocale()), []);` and `<InstallInstructions locale="es" browserLocale={browser} />`. `detectUILocale()` is a proxy for the browser's interface language, not a guarantee.
 
 `getIllustration` with a `locale` uses that locale's artwork and replaces the English " Website: host." sentence on the alt text with the locale's own wording, so the alt text is not half translated. The React view's headings ("Text instructions", "Illustrated guide", "Documentation draft") and its device, platform and browser names also come from the locale data; without it they are the English defaults.
 
 ### Guide data and assets
 
-Each `InstallGuide` contains its `id`, `title`, `label`, `language`, `platform`, `browser`, `device`, `versions`, `illustration`, `steps`, `completion` and Markdown `text`, plus `localeFallback` and `requestedLocale` when a requested locale was not available. Each step has `id`, `title`, `description`, `illustrationFragment`, and optional `uiLabel` and `optional` fields. `uiLabel` identifies the clickable phrase emphasized in the title.
+Each `InstallGuide` contains its `id`, `title`, `label`, `language`, `platform`, `browser`, `device`, `versions`, `illustration`, `steps`, `completion` and Markdown `text`, plus `localeFallback` and `requestedLocale` when a requested locale was not available, and `browserLanguage`, `browserLocaleFallback` and `requestedBrowserLocale` when a `browserLocale` was applied or could not be. Each step has `id`, `title`, `description`, `illustrationFragment`, and optional `uiLabel` and `optional` fields. `uiLabel` identifies the clickable phrase emphasized in the title.
 
 Recorded version ranges have inclusive `min` and `max` values; `max: null` means no replacement has been recorded. Documentation drafts have `versions.documentationOnly: true`, with `os`, `browser`, `observedOS` and `observedBrowser` set to `null`. Their headings identify them as documentation drafts.
 

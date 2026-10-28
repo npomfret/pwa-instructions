@@ -67,6 +67,21 @@ export interface InstallGuide {
   readonly localeFallback?: boolean;
   /** The locale that was requested when `localeFallback` is true. */
   readonly requestedLocale?: string;
+  /** Set only when `browserLocale` supplied the control names (`uiLabel`, quoted menu items, artwork labels) in another locale than `language`. */
+  readonly browserLanguage?: string;
+  /** Set only when `browserLocale` was passed but had no labels for this guide, so the page locale's labels were kept. */
+  readonly browserLocaleFallback?: boolean;
+  /** The browser locale that was requested when `browserLocaleFallback` is true. */
+  readonly requestedBrowserLocale?: string;
+}
+
+/** The prose of one guide that names a browser control, with `{label:id}` placeholders still in it and `{step:n}` resolved. */
+export interface GuideTemplates {
+  /** Only the steps whose title or description names a label, by step id. */
+  readonly steps?: Readonly<Record<string, Pick<InstallStep, "title" | "description">>>;
+  readonly completion?: string;
+  /** The Markdown, where the control in a step title is `*{label:id}*`. */
+  readonly text?: string;
 }
 
 /** One guide's text in one locale: what a `pwa-instructions/locales/<tag>` module exports per guide id. */
@@ -77,7 +92,12 @@ export interface LocalizedGuide {
   readonly steps: readonly Pick<InstallStep, "id" | "title" | "description" | "uiLabel">[];
   readonly completion: string;
   readonly text: string;
+  /** The SVG keeps `data-i18n="label:id"` on the label nodes, so `browserLocale` can swap their text. */
   readonly illustration: { readonly src: string; readonly alt: string };
+  /** The same prose with its placeholders, for an English or localized page shown with another browser language. Absent when no string names a label. */
+  readonly templates?: GuideTemplates;
+  /** The text of every label the templates and artwork use, by locale tag: this locale's and English. */
+  readonly labels?: Readonly<Record<string, Readonly<Record<string, string>>>>;
 }
 
 /** The strings drawn around a guide, per locale: React headings, the illustration's "Website:" alt text, and names. */
@@ -106,8 +126,9 @@ export interface LocaleOptions {
   /** A BCP 47 tag, or tags in order of preference. Omit for English, exactly as 0.1.0. */
   readonly locale?: string | readonly string[];
   /**
-   * The language of the browser or OS interface, for the quoted control names. Accepted and reserved: the guides are
-   * composed in `locale`, and this does not change the output yet.
+   * The language of the browser or OS interface, for the control names: `uiLabel`, the menu items quoted in the text and
+   * the labels drawn in the artwork. The prose stays in `locale`. Defaults to `locale`. It needs the browser locale's
+   * labels (any `locales/<tag>` module with data for the guide) and, for an English page, the `locales/en` module.
    */
   readonly browserLocale?: string;
   /** Locale data by tag, used in addition to locales added with registerLocale. These win over registered data. */
@@ -128,6 +149,15 @@ export interface LocaleResolution {
   readonly fallback: boolean;
 }
 
+/** The resolution of `locale`, plus how `browserLocale` resolved when it was passed and names another locale. */
+export interface GuideLocaleResolution extends LocaleResolution {
+  /**
+   * `resolved` is the locale whose labels were used; `fallback` is true when the browser locale had no labels for the
+   * guide (or the page has no templates to fill), so the page locale's own labels are shown.
+   */
+  readonly browser?: LocaleResolution;
+}
+
 export type ReasonCode =
   | "guide-chosen" | "guide-not-found" | "needs-environment" | "installed" | "no-guide-for-browser"
   | "documentation-only" | "version-hidden" | "no-guide-for-version" | "os-hidden" | "os-ambiguous"
@@ -142,6 +172,6 @@ export interface GuideSelection {
   readonly reason: string;
   /** Present only when `locale` was passed, so a call without it returns exactly what 0.1.0 did. */
   readonly reasonCode?: ReasonCode;
-  /** Present only when `locale` was passed. */
-  readonly locale?: LocaleResolution;
+  /** Present only when `locale` was passed, or a `browserLocale` that differs from the page's locale. */
+  readonly locale?: GuideLocaleResolution;
 }

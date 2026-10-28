@@ -1,5 +1,5 @@
 import { guides as defaultGuides } from "./generated/guides.js";
-import { localizeGuide, resolveLocale, getRegisteredLocales } from "./locale.js";
+import { localizeGuide, resolveLocale, getRegisteredLocales, browserRequest } from "./locale.js";
 import type { Environment, GuideSelection, MajorVersionRange, ReasonCode, SelectionOptions } from "./types.js";
 
 const includes = (range: MajorVersionRange | null, value: number) =>
@@ -18,11 +18,12 @@ const compareVersions = (a: string, b: string) => {
 /** Selects the newest applicable layout; never substitutes another platform/browser. */
 export function selectGuide(environment: Environment | null, options: SelectionOptions = {}): GuideSelection {
   const guides = options.guides ?? defaultGuides;
-  // Localizing comes after selection, so matching never depends on the language. Without `locale` the result is 0.1.0's.
+  // Localizing comes after selection, so matching never depends on the language. Without `locale` or a different
+  // `browserLocale` the result is 0.1.0's.
   const result = (status: GuideSelection["status"], code: ReasonCode, reason: string,
     guide: GuideSelection["guide"] = null, match: GuideSelection["match"] = null): GuideSelection => {
     const selection = { status, reason, guide, match, environment };
-    if (options.locale === undefined) return selection;
+    if (options.locale === undefined && !browserRequest(options, guide ?? undefined)) return selection;
     if (!guide) return { ...selection, reasonCode: code, locale: resolveLocale(options.locale, getRegisteredLocales(options.localeData)) };
     const localized = localizeGuide(guide, options);
     return { ...selection, guide: localized.guide, reasonCode: code, locale: localized.locale };

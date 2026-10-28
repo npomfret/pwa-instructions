@@ -1,5 +1,6 @@
 import { guides as defaultGuides } from "./generated/guides.js";
-import type { InstallGuide, LocaleData, LocaleOptions, LocaleResolution, LocaleUI, LocalizedGuide } from "./types.js";
+import { substituteLabelsInSource } from "./artwork.js";
+import type { GuideLocaleResolution, InstallGuide, LocaleData, LocaleOptions, LocaleResolution, LocaleUI, LocalizedGuide } from "./types.js";
 
 const DEFAULT = "en";
 const registry = new Map<string, LocaleData>();
@@ -69,7 +70,7 @@ export const getRegisteredLocales = (localeData?: LocaleOptions["localeData"]): 
 
 /** The locales that can serve `guide`: `en` and every registered locale (or `localeData`) with complete data for it. */
 export function getGuideLocales(guide: InstallGuide, localeData?: LocaleOptions["localeData"]): string[] {
-  return [DEFAULT, ...[...merged(localeData)].filter(([, data]) => carries(data, guide)).map(([tag]) => tag)];
+  return [...new Set([DEFAULT, ...[...merged(localeData)].filter(([, data]) => carries(data, guide)).map(([tag]) => tag)])];
 }
 
 /** The browser's preferred language, `navigator.languages[0]`: a proxy for the UI language, not a guarantee. Undefined on the server. */
@@ -87,26 +88,94 @@ function mark(guide: InstallGuide, { requested, fallback }: LocaleResolution): I
   return guide.localeFallback === undefined && guide.requestedLocale === undefined ? guide : withoutFallback(guide);
 }
 
-/** The text of `guide` in the requested locale, or English with `localeFallback` set. Never changes `guide`. */
-export function localizeGuide(guide: InstallGuide, options: LocaleOptions = {}): { guide: InstallGuide; locale: LocaleResolution } {
-  const all = merged(options.localeData);
-  const locale = resolveLocale(options.locale, [...all].filter(([, data]) => carries(data, guide)).map(([tag]) => tag));
-  const { resolved } = locale;
-  if (resolved === guide.language) return { guide: mark(guide, locale), locale };
-  if (resolved === DEFAULT) {
-    // A guide passed in already localized goes back to its bundled English.
-    return { guide: mark(defaultGuides.find(item => item.id === guide.id) ?? guide, locale), locale };
-  }
-  const localized = carries(all.get(resolved)!, guide)!;
-  return { locale, guide: mark({
-    ...guide, title: localized.title, label: localized.label, language: localized.language,
-    steps: guide.steps.map(({ uiLabel: _english, ...step }) => {
-      const text = localized.steps.find(item => item.id === step.id)!;
-      return { ...step, title: text.title, description: text.description, ...(text.uiLabel ? { uiLabel: text.uiLabel } : {}) };
+const firstTag = (locale: LocaleOptions["locale"]): string | null => {
+  const raw = (typeof locale === "string" ? [locale] : locale ?? []).map(tag => tag.trim()).find(Boolean);
+  return raw ? canonical(raw) ?? raw : null;
+};
+
+/**
+ * The canonical `browserLocale` when one was passed and names another locale than the page's `locale`; otherwise null.
+ * An omitted `locale` means the language `guide` is in, which is English for a bundled guide.
+ */
+export function browserRequest({ locale, browserLocale }: LocaleOptions, guide?: InstallGuide): string | null {
+  const raw = browserLocale?.trim();
+  if (!raw) return null;
+  const tag = canonical(raw) ?? raw;
+  return tag === (firstTag(locale) ?? guide?.language ?? DEFAULT) ? null : tag;
+}
+
+const PLACEHOLDER = /\{label:([a-z0-9-]+)\}/g;
+const FIRST_LABEL = /\{label:([a-z0-9-]+)\}/;
+
+/**
+ * `page`'s control names from the browser locale: the page locale's templates with `{label:id}` filled from `labels`
+ * (the page's own `fallback` labels for an id the browser table lacks), `uiLabel` taken from the first label in each
+ * title, and the artwork's label nodes redrawn. Text outside the placeholders is the page's.
+ */
+function withBrowserLabels(page: InstallGuide, data: LocalizedGuide, labels: Readonly<Record<string, string>>,
+  fallback: Readonly<Record<string, string>> = {}): InstallGuide {
+  const templates = data.templates ?? {};
+  const label = (id: string) => labels[id] ?? fallback[id];
+  const fill = (text: string) => text.replace(PLACEHOLDER, (placeholder, id: string) => label(id) ?? placeholder);
+  return {
+    ...page,
+    steps: page.steps.map(step => {
+      const template = templates.steps?.[step.id];
+      if (!template) return step;
+      const control = FIRST_LABEL.exec(template.title)?.[1];
+      const uiLabel = control === undefined ? undefined : label(control);
+      return { ...step, title: fill(template.title), description: fill(template.description), ...(uiLabel === undefined ? {} : { uiLabel }) };
     }),
-    completion: localized.completion, text: localized.text,
-    illustration: { ...guide.illustration, src: localized.illustration.src, alt: localized.illustration.alt },
-  }, locale) };
+    completion: templates.completion === undefined ? page.completion : fill(templates.completion),
+    text: templates.text === undefined ? page.text : fill(templates.text),
+    illustration: { ...page.illustration, src: substituteLabelsInSource(data.illustration.src, label) },
+  };
+}
+
+/**
+ * The text of `guide` in the requested locale, or English with `localeFallback` set. Never changes `guide`. When
+ * `browserLocale` names another locale, the control names come from that locale's labels (see withBrowserLabels) and
+ * `locale.browser` says which labels were used.
+ */
+export function localizeGuide(guide: InstallGuide, given: LocaleOptions = {}): { guide: InstallGuide; locale: GuideLocaleResolution } {
+  // With only a browser locale, the page is the language the guide is already in.
+  const options = given.locale === undefined && given.browserLocale && guide.language !== DEFAULT ? { ...given, locale: guide.language } : given;
+  const all = merged(options.localeData);
+  const locale: GuideLocaleResolution = resolveLocale(options.locale, [...all].filter(([, data]) => carries(data, guide)).map(([tag]) => tag));
+  const { resolved } = locale;
+  let page: InstallGuide;
+  if (resolved === guide.language) page = guide;
+  // A guide passed in already localized goes back to its bundled English.
+  else if (resolved === DEFAULT) page = defaultGuides.find(item => item.id === guide.id) ?? guide;
+  else {
+    const localized = carries(all.get(resolved)!, guide)!;
+    page = {
+      ...guide, title: localized.title, label: localized.label, language: localized.language,
+      steps: guide.steps.map(({ uiLabel: _english, ...step }) => {
+        const text = localized.steps.find(item => item.id === step.id)!;
+        return { ...step, title: text.title, description: text.description, ...(text.uiLabel ? { uiLabel: text.uiLabel } : {}) };
+      }),
+      completion: localized.completion, text: localized.text,
+      illustration: { ...guide.illustration, src: localized.illustration.src, alt: localized.illustration.alt },
+    };
+  }
+  const requested = browserRequest(options, guide);
+  if (!requested) return { guide: mark(page, locale), locale };
+  // The browser locale may use any registered locale's labels for this guide, and the page's module also carries English.
+  const pageData = all.get(resolved)?.guides[guide.id];
+  const labelsOf = (tag: string) => all.get(tag)?.guides[guide.id]?.labels?.[tag] ?? pageData?.labels?.[tag];
+  const tags = new Set([...all.keys(), ...Object.keys(pageData?.labels ?? {})]);
+  const found = resolveLocale(requested, [...tags].filter(tag => labelsOf(tag)));
+  // Already the page's labels: nothing to substitute.
+  if (!found.fallback && found.resolved === resolved) return { guide: mark(page, locale), locale: { ...locale, browser: found } };
+  const labels = found.fallback ? undefined : labelsOf(found.resolved);
+  if (!labels || !pageData) {
+    // No labels to use, or no page templates to put them in: the page keeps its own, and the resolution says so.
+    const browser = { requested: found.requested, resolved, fallback: true };
+    return { guide: { ...mark(page, locale), browserLocaleFallback: true, requestedBrowserLocale: requested }, locale: { ...locale, browser } };
+  }
+  const substituted = withBrowserLabels(page, pageData, labels, labelsOf(resolved));
+  return { guide: { ...mark(substituted, locale), browserLanguage: found.resolved }, locale: { ...locale, browser: found } };
 }
 
 export const defaultUI: LocaleUI = {

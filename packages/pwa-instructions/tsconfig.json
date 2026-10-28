@@ -4,11 +4,13 @@
     "rootDir": "src",
     "outDir": "dist",
     "tsBuildInfoFile": "dist/build.tsbuildinfo",
+    "allowJs": true,
     "types": [
       "react"
     ]
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts",
+    "src/**/*.js"
   ]
 }

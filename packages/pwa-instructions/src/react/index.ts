@@ -3,6 +3,7 @@
 import { createElement as h, useEffect, useId, useState } from "react";
 import type { ReactNode } from "react";
 import { detectBrowserEnvironment, selectGuide, getIllustration, getLocaleUI, localizeGuide } from "../core/index.js";
+import { browserRequest } from "../core/locale.js";
 import type { Environment, GuideSelection, InstallGuide, InstallStep, LocaleOptions, LocaleUI, SelectionOptions } from "../core/index.js";
 
 export { detectEnvironment, detectBrowserEnvironment, selectGuide, guides, getIllustration } from "../core/index.js";
@@ -51,7 +52,7 @@ export function InstallGuideView({ guide: source, presentation = "both", classNa
   const documentLanguage = useDocumentLanguage();
   const options = { locale, browserLocale, localeData };
   // An English guide is localized here; one that is already in another language is shown as it is.
-  const guide = locale === undefined || source.language !== "en" ? source : localizeGuide(source, options).guide;
+  const guide = (locale === undefined && !browserRequest(options, source)) || source.language !== "en" ? source : localizeGuide(source, options).guide;
   // Headings follow the language of the guide text, so a fallback guide is not half translated.
   const ui = getLocaleUI(guide.language, localeData);
   const illustration = illustrationSrc ? guide.illustration : getIllustration(guide, { siteUrl, localeData });
@@ -60,7 +61,9 @@ export function InstallGuideView({ guide: source, presentation = "both", classNa
   const kind = presentation === "text" ? ui.textInstructions : ui.illustratedGuide;
   return h("section", { className, "aria-labelledby": headingId, "data-pwa-guide": guide.id,
     ...(marked ? { "data-pwa-locale": guide.language, "data-pwa-locale-fallback": guide.localeFallback ? "true" : undefined,
-      lang: documentLanguage === guide.language.toLowerCase() ? undefined : guide.language } : {}) },
+      lang: documentLanguage === guide.language.toLowerCase() ? undefined : guide.language } : {}),
+    // Only when the control names are in another locale than the text, so a page without browserLocale renders as before.
+    ...(guide.browserLanguage ? { "data-pwa-browser-locale": guide.browserLanguage } : {}) },
     h("h2", { id: headingId }, ui.heading.replace("{kind}", () => kind).replace("{context}", () => guideContext(guide, ui))),
     presentation !== "text" && h("img", {
       src: illustrationSrc ?? illustration.src, alt: illustration.alt,
