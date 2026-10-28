@@ -2,6 +2,8 @@
 
 Framework-independent instructions and SVG artwork for installing web apps. Includes browser detection and guide selection; no React dependency or runtime network requests.
 
+[API reference](https://github.com/npomfret/pwa-instructions/blob/main/docs/api.md) — function arguments, return values, selection states and guide data.
+
 ```js
 import { detectBrowserEnvironment, selectGuide, guides } from '@pwa-instructions/core';
 const result = selectGuide(detectBrowserEnvironment());

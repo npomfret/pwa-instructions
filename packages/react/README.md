@@ -2,6 +2,8 @@
 
 An accessible, unstyled React component that displays a matching installation guide. React is a peer dependency; guide data and selection live in `@pwa-instructions/core`.
 
+[API reference](https://github.com/npomfret/pwa-instructions/blob/main/docs/api.md) — props, defaults, automatic selection and domain customization.
+
 ```jsx
 import { InstallInstructions } from '@pwa-instructions/react';
 

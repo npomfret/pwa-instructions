@@ -2,7 +2,7 @@
 
 Reusable instructions for installing web apps: one simple SVG and a matching text guide for each installation layout. The artwork is generic, with highlighted buttons and no host-app branding.
 
-[Try the React example](https://npomfret.github.io/pwa-instructions/) · [Example source](examples/react)
+[Try the React example](https://npomfret.github.io/pwa-instructions/) · [API reference](docs/api.md) · [Example source](examples/react)
 
 <img src="guides/ios/safari/iphone/layout-1/install.svg" width="280" alt="Four illustrated steps for iPhone Safari: open the Page Menu, tap Share, tap View More, then tap Add to Home Screen." />
 
@@ -26,7 +26,7 @@ import { InstallInstructions } from '@pwa-instructions/react';
 />
 ```
 
-Use `guideId="ios-safari-iphone-layout-1"` for explicit selection. For your own interface, call `selectGuide(detectBrowserEnvironment())` from the core and use the returned steps and illustration URL. See each package's README for its API.
+Leave `guideId` out for automatic browser detection. Use `guideId="ios-safari-iphone-layout-1"` for explicit selection. For your own interface, call `selectGuide(detectBrowserEnvironment())` from the core and use the returned steps and illustration URL. The [API reference](docs/api.md) describes the props, defaults and selection results.
 
 ## Development
 
