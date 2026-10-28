@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="1320" viewBox="0 0 600 1320" role="img" aria-labelledby="title description">
+  <title id="title">Add a website to the Dock in Mac Safari</title>
+  <desc id="description">Three steps: open the File menu, choose Add to Dock, then click Add. Blue outlines identify the controls.</desc>
+  <style>
+    text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #202124; }
+    .heading { font-size: 28px; font-weight: 650; }
+    .subtitle { font-size: 16px; fill: #60656c; }
+    .step-title { font-size: 23px; font-weight: 650; }
+    .instruction { font-size: 17px; fill: #60656c; }
+    .label { font-size: 16px; }
+    .small { font-size: 14px; }
+    .icon { fill: none; stroke: #202124; stroke-width: 2.3; stroke-linecap: round; stroke-linejoin: round; }
+    .line { fill: none; stroke: #d7dadd; stroke-width: 2; stroke-linecap: round; }
+    .target { fill: #eef5ff; stroke: #2463eb; stroke-width: 3; }
+  </style>
+  <rect width="600" height="1320" fill="white" />
+  <text x="28" y="48" class="heading">Add to Dock</text>
+  <text x="28" y="76" class="subtitle">Mac · Safari</text>
+  <g id="step-1" transform="translate(28 100)" role="group" aria-labelledby="step-1-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb" />
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">1</text>
+    <text id="step-1-title" x="48" y="25" class="step-title">Open the File menu</text>
+    <g>
+      <rect x="0" y="58" width="544" height="300" rx="14" fill="white" stroke="#959ba2" stroke-width="2" />
+      <rect x="1" y="59" width="542" height="36" rx="12" fill="#f1f2f3" />
+      <text x="18" y="83" class="small" style="fill:#687078">Safari</text>
+      <text x="143" y="83" class="small" style="fill:#687078">Edit</text>
+      <text x="189" y="83" class="small" style="fill:#687078">View</text>
+      <rect x="100" y="108" width="344" height="28" rx="8" fill="#f1f2f3" />
+      <text x="272" y="128" text-anchor="middle" class="small" style="fill:#687078">example.com</text>
+      <path d="M28 174h220 M28 195h460 M28 212h400" class="line" />
+      <rect x="28" y="238" width="460" height="85" rx="8" fill="#f1f2f3" />
+      <rect x="85" y="63" width="43" height="28" rx="6" class="target" />
+      <text x="107" y="83" text-anchor="middle" class="small">File</text>
+    </g>
+  </g>
+  <g id="step-2" transform="translate(28 500)" role="group" aria-labelledby="step-2-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb" />
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">2</text>
+    <text id="step-2-title" x="48" y="25" class="step-title">Choose Add to Dock</text>
+    <g>
+      <rect x="0" y="58" width="544" height="300" rx="14" fill="white" stroke="#959ba2" stroke-width="2" />
+      <rect x="1" y="59" width="542" height="36" rx="12" fill="#f1f2f3" />
+      <text x="18" y="83" class="small" style="fill:#687078">Safari</text>
+      <text x="143" y="83" class="small" style="fill:#687078">Edit</text>
+      <text x="189" y="83" class="small" style="fill:#687078">View</text>
+      <rect x="100" y="108" width="344" height="28" rx="8" fill="#f1f2f3" />
+      <text x="272" y="128" text-anchor="middle" class="small" style="fill:#687078">example.com</text>
+      <path d="M28 174h220 M28 195h460 M28 212h400" class="line" />
+      <rect x="28" y="238" width="460" height="85" rx="8" fill="#f1f2f3" />
+      <text x="94" y="83" class="small" style="fill:#687078">File</text>
+      <rect x="84" y="97" width="245" height="205" rx="10" fill="white" stroke="#d7dadd" />
+      <text x="103" y="127" class="label" style="fill:#687078">New Window</text>
+      <text x="103" y="159" class="label" style="fill:#687078">New Tab</text>
+      <path d="M101 180h210" class="line" />
+      <text x="103" y="211" class="label" style="fill:#687078">Open Location…</text>
+      <rect x="92" y="244" width="229" height="42" rx="8" class="target" />
+      <text x="108" y="271" class="label">Add to Dock…</text>
+    </g>
+  </g>
+  <g id="step-3" transform="translate(28 900)" role="group" aria-labelledby="step-3-title">
+    <circle cx="18" cy="18" r="18" fill="#2463eb" />
+    <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">3</text>
+    <text id="step-3-title" x="48" y="25" class="step-title">Click Add</text>
+    <g>
+      <rect x="0" y="58" width="544" height="300" rx="14" fill="white" stroke="#959ba2" stroke-width="2" />
+      <rect x="1" y="59" width="542" height="36" rx="12" fill="#f1f2f3" />
+      <text x="18" y="83" class="small" style="fill:#687078">Safari</text>
+      <text x="143" y="83" class="small" style="fill:#687078">Edit</text>
+      <text x="189" y="83" class="small" style="fill:#687078">View</text>
+      <rect x="100" y="108" width="344" height="28" rx="8" fill="#f1f2f3" />
+      <text x="272" y="128" text-anchor="middle" class="small" style="fill:#687078">example.com</text>
+      <path d="M28 174h220 M28 195h460 M28 212h400" class="line" />
+      <rect x="28" y="238" width="460" height="85" rx="8" fill="#f1f2f3" />
+      <text x="94" y="83" class="small" style="fill:#687078">File</text>
+      <rect x="100" y="156" width="344" height="166" rx="15" fill="white" stroke="#d7dadd" />
+      <text x="122" y="187" class="label">Add to Dock</text>
+      <rect x="122" y="202" width="300" height="31" rx="6" fill="#f5f6f7" stroke="#d7dadd" />
+      <text x="132" y="223" class="small" style="fill:#687078">Website</text>
+      <text x="122" y="254" class="small" style="fill:#687078">example.com</text>
+      <text x="273" y="297" class="small" style="fill:#687078">Cancel</text>
+      <rect x="337" y="273" width="85" height="37" rx="8" class="target" />
+      <text x="379" y="297" text-anchor="middle" class="label">Add</text>
+    </g>
+  </g>
+</svg>

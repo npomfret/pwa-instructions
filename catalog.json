@@ -8,6 +8,30 @@
       "browser": "safari",
       "compatibilityStatus": "user-reported",
       "status": "draft"
+    },
+    {
+      "id": "ios-brave-iphone-layout-1",
+      "path": "guides/ios/brave/iphone/layout-1/metadata.json",
+      "platform": "ios",
+      "browser": "brave",
+      "compatibilityStatus": "user-reported",
+      "status": "draft"
+    },
+    {
+      "id": "ios-chrome-iphone-layout-1",
+      "path": "guides/ios/chrome/iphone/layout-1/metadata.json",
+      "platform": "ios",
+      "browser": "chrome",
+      "compatibilityStatus": "user-reported",
+      "status": "draft"
+    },
+    {
+      "id": "macos-safari-desktop-layout-1",
+      "path": "guides/macos/safari/desktop/layout-1/metadata.json",
+      "platform": "macos",
+      "browser": "safari",
+      "compatibilityStatus": "source-backed",
+      "status": "draft"
     }
   ]
 }

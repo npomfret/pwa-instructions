@@ -1,0 +1,68 @@
+{
+  "id": "ios-chrome-iphone-layout-1",
+  "title": "Add to Home Screen from Chrome",
+  "label": "iPhone \u00b7 Chrome",
+  "language": "en",
+  "platform": "ios",
+  "browser": "chrome",
+  "device": "iphone",
+  "layoutVersion": 1,
+  "compatibility": {
+    "status": "user-reported",
+    "osVersionRange": {
+      "min": 27,
+      "max": null
+    },
+    "browserVersionRange": {
+      "min": 157,
+      "max": null
+    },
+    "observedMajorVersions": {
+      "ios": 27,
+      "chrome": 157
+    },
+    "observedVersions": {
+      "ios": "27",
+      "chrome": "157.0.8103.24"
+    }
+  },
+  "evidence": {
+    "type": "user-supplied-screenshots",
+    "count": 3,
+    "metadata": "../../../../../source-images/ios-27/chrome-157/iphone/metadata.json"
+  },
+  "artworkSource": "artwork.svg",
+  "steps": [
+    {
+      "id": "tap-share",
+      "title": "Tap Share",
+      "description": "In Chrome, tap Share at the right end of the address bar at the top of the screen. Its icon is a square with an upward arrow."
+    },
+    {
+      "reuse": {
+        "guideId": "ios-safari-iphone-layout-1",
+        "stepId": "view-more",
+        "artwork": true
+      }
+    },
+    {
+      "reuse": {
+        "guideId": "ios-safari-iphone-layout-1",
+        "stepId": "add-to-home-screen",
+        "artwork": false
+      }
+    }
+  ],
+  "intro": "Use Chrome on your iPhone. These steps install directly from its share sheet.",
+  "completion": {
+    "status": "not-shown-in-reference",
+    "description": "Follow the confirmation screen to finish adding the app."
+  },
+  "illustration": {
+    "file": "install.svg",
+    "alt": "Three steps in iPhone Chrome: Share at the top right of the address bar, View More, then Add to Home Screen.",
+    "stepCount": 3
+  },
+  "textInstructions": "instructions.md",
+  "status": "draft"
+}

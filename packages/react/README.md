@@ -26,6 +26,6 @@ import { guides, InstallGuideView } from '@pwa-instructions/react';
 
 The component supplies semantic headings, an ordered list and image alternative text, with no global CSS. It shows instructions and does not initiate installation. The host app controls when and where to display it.
 
-Only the iPhone Safari Page Menu flow is currently included. Browser detection is best effort; expose a manual choice where practical. The SVG and matching text are also usable without React through the core package.
+Included guides cover iPhone Safari, Brave via Safari, Chrome, and Mac Safari. Browser detection is best effort; expose a manual choice where practical. The SVG and matching text are also usable without React through the core package.
 
 MIT licensed. Source: https://github.com/npomfret/pwa-instructions

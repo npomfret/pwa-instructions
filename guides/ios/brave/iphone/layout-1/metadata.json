@@ -1,0 +1,97 @@
+{
+  "id": "ios-brave-iphone-layout-1",
+  "title": "Add to Home Screen from Brave",
+  "label": "iPhone \u00b7 Brave \u2192 Safari",
+  "language": "en",
+  "platform": "ios",
+  "browser": "brave",
+  "device": "iphone",
+  "layoutVersion": 1,
+  "compatibility": {
+    "status": "user-reported",
+    "osVersionRange": {
+      "min": 27,
+      "max": null
+    },
+    "browserVersionRange": {
+      "min": 1,
+      "max": null
+    },
+    "observedMajorVersions": {
+      "ios": 27,
+      "brave": 1
+    },
+    "observedVersions": {
+      "ios": "27",
+      "brave": "1.97"
+    },
+    "minimumBrowserVersion": "1.97",
+    "requiresKnownOSVersion": true
+  },
+  "evidence": {
+    "type": "user-supplied-screenshots",
+    "count": 3,
+    "metadata": "../../../../../source-images/ios-27/brave-1/iphone/metadata.json"
+  },
+  "artworkSource": "artwork.svg",
+  "steps": [
+    {
+      "id": "tap-share",
+      "title": "Tap Share",
+      "description": "In Brave, tap Share in the bottom toolbar. Its icon is a square with an upward arrow. If the toolbar is hidden, tap the website address to reveal it."
+    },
+    {
+      "reuse": {
+        "guideId": "ios-safari-iphone-layout-1",
+        "stepId": "view-more",
+        "artwork": true
+      }
+    },
+    {
+      "id": "open-in-safari",
+      "title": "Open in Safari",
+      "description": "In the expanded share sheet, scroll down and tap Open in Safari. The website opens in Safari; perform all remaining steps there."
+    },
+    {
+      "reuse": {
+        "guideId": "ios-safari-iphone-layout-1",
+        "stepId": "open-page-menu",
+        "artwork": true
+      },
+      "transitionBefore": "Continue in Safari"
+    },
+    {
+      "reuse": {
+        "guideId": "ios-safari-iphone-layout-1",
+        "stepId": "tap-share",
+        "artwork": true
+      }
+    },
+    {
+      "reuse": {
+        "guideId": "ios-safari-iphone-layout-1",
+        "stepId": "view-more",
+        "artwork": true
+      }
+    },
+    {
+      "reuse": {
+        "guideId": "ios-safari-iphone-layout-1",
+        "stepId": "add-to-home-screen",
+        "artwork": true
+      }
+    }
+  ],
+  "intro": "Start in Brave. Step 3 opens the same website in Safari; steps 4\u20137 take place in Safari.",
+  "completion": {
+    "status": "not-shown-in-reference",
+    "description": "Follow the confirmation screen to finish adding the app."
+  },
+  "illustration": {
+    "file": "install.svg",
+    "alt": "Seven numbered steps: Share, View More and Open in Safari in Brave, followed by the four Safari installation steps.",
+    "stepCount": 7
+  },
+  "textInstructions": "instructions.md",
+  "status": "draft"
+}

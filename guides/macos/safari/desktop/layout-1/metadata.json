@@ -1,0 +1,68 @@
+{
+  "id": "macos-safari-desktop-layout-1",
+  "title": "Add to Dock in Safari",
+  "label": "Mac \u00b7 Safari \u00b7 Add to Dock",
+  "language": "en",
+  "platform": "macos",
+  "browser": "safari",
+  "device": "desktop",
+  "layoutVersion": 1,
+  "compatibility": {
+    "status": "source-backed",
+    "osVersionRange": {
+      "min": 14,
+      "max": null
+    },
+    "browserVersionRange": {
+      "min": 27,
+      "max": null
+    },
+    "observedMajorVersions": {
+      "macos": 27,
+      "safari": 27
+    },
+    "observedVersions": {
+      "macos": "27.0.1",
+      "safari": "27.0.1"
+    },
+    "note": "Owner uses macOS Golden Gate 27.0.1 / Safari 27.0.1. Apple documents Add to Dock on macOS 14 or newer; automatic selection begins at Safari 27, while earlier combinations remain available by manual choice."
+  },
+  "evidence": {
+    "type": "official-documentation-and-user-reported-versions",
+    "source": "https://support.apple.com/en-ie/104996",
+    "screenshots": false,
+    "note": "Schematic artwork based on Apple documentation, not device screenshots."
+  },
+  "steps": [
+    {
+      "id": "open-file-menu",
+      "title": "Open the File menu",
+      "description": "Open the website in Safari. In the menu bar at the top of your Mac screen, click File.",
+      "illustrationFragment": "step-1"
+    },
+    {
+      "id": "add-to-dock",
+      "title": "Choose Add to Dock",
+      "description": "In the File menu, click Add to Dock. Safari opens a confirmation dialog for this website.",
+      "illustrationFragment": "step-2"
+    },
+    {
+      "id": "confirm-add",
+      "title": "Click Add",
+      "description": "Keep or edit the app name, then click Add. A web app is saved to your Applications folder and added to the Dock.",
+      "illustrationFragment": "step-3"
+    }
+  ],
+  "intro": "Requires macOS Sonoma 14 or later. These illustrations show the File menu route; Safari also offers Add to Dock in its Share menu.",
+  "completion": {
+    "status": "source-backed",
+    "description": "Open the new app from your Dock."
+  },
+  "illustration": {
+    "file": "install.svg",
+    "alt": "Three Mac Safari steps: open File, choose Add to Dock, then click Add.",
+    "stepCount": 3
+  },
+  "textInstructions": "instructions.md",
+  "status": "draft"
+}

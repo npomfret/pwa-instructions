@@ -65,3 +65,18 @@ test('client hydration detects Safari and reveals the guide without mismatches',
     globalThis.IS_REACT_ACT_ENVIRONMENT = previous.act;
   }
 });
+
+
+test('the illustration has a separate semantic container and caption', () => {
+  const html = renderToStaticMarkup(h(InstallInstructions, { guideId: id }));
+  assert.ok(html.includes('<figure'));
+  assert.ok(html.includes('<figcaption>Illustrated guide</figcaption>'));
+  assert.ok(html.indexOf('</figure>') < html.indexOf('<ol>'));
+});
+
+test('Brave and Mac guides render all their own steps', () => {
+  for (const [guideId, count] of [['ios-brave-iphone-layout-1', 7], ['macos-safari-desktop-layout-1', 3]]) {
+    const html = renderToStaticMarkup(h(InstallInstructions, { guideId, presentation: 'text' }));
+    assert.equal((html.match(/<li>/g) ?? []).length, count);
+  }
+});

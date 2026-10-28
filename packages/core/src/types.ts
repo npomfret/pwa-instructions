@@ -8,6 +8,7 @@ export interface Environment {
   readonly device: Device;
   readonly osMajor: number | null;
   readonly browserMajor: number | null;
+  readonly browserVersion?: string | null;
   readonly standalone: boolean;
 }
 
@@ -34,6 +35,7 @@ export interface InstallStep {
 export interface InstallGuide {
   readonly id: string;
   readonly title: string;
+  readonly label: string;
   readonly language: string;
   readonly platform: Platform;
   readonly browser: Browser;
@@ -43,6 +45,9 @@ export interface InstallGuide {
     readonly browser: MajorVersionRange;
     readonly observedOS: number;
     readonly observedBrowser: number;
+    readonly minimumBrowserVersion?: string;
+    readonly observedBrowserVersion?: string;
+    readonly requiresKnownOSVersion?: boolean;
   };
   readonly illustration: {
     /** Self-contained SVG data URL; override when a site's CSP excludes data images. */

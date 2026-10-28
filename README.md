@@ -56,13 +56,13 @@ guides/
 
 [The first layout](guides/ios/safari/iphone/layout-1/metadata.json) records iOS 27 and Safari 27 on iPhone, as reported by the source owner. Its compatibility ranges begin there and remain open until another layout supersedes it. Newer versions reuse the latest applicable layout; this is reported as a fallback, not new device verification. Earlier versions are not assumed to match. Add another layout rather than replacing the old artwork when important controls change.
 
-`catalog.json` indexes the layouts. The build packages their metadata, SVGs and Markdown, and generates the data consumed by both core and React. Text is complete on its own, with the same step numbers as the SVG. The current flow stops at **Add to Home Screen**; the final confirmation is described in text but not illustrated.
+`catalog.json` indexes the layouts. The build packages their metadata, SVGs and Markdown, and generates the data consumed by both core and React. Text is complete on its own, with the same step numbers as the SVG. The iPhone flows stop at **Add to Home Screen**; their final confirmation is described in text but not illustrated. The Mac flow includes its Add confirmation.
 
-The SVG uses a single vertical column for phones. Its step titles are short, the target controls have blue outlines, and unrelated menu text is muted. Detailed descriptions stay in the Markdown file and structured step data.
+The iPhone SVGs use a single vertical column. Its step titles are short, the target controls have blue outlines, and unrelated menu text is muted. Detailed descriptions stay in the Markdown file and structured step data.
 
 ## Detection and manual selection
 
-The first guide covers the iPhone Safari Page Menu flow. Unsupported browsers and devices receive no substitute guide. The host app can supply an explicit guide ID or its own environment data.
+Guides currently cover iPhone Safari, iPhone Brave via Safari, iPhone Chrome, and Mac Safari. Unsupported browsers and devices receive no substitute guide. The host app can supply an explicit guide ID or its own environment data.
 
 Detection is a best-effort hint: browsers can disguise their identity. Safari 26+ freezes the OS version in its user-agent string, so the selector can use the Safari version when the real iOS version is hidden. [WebKit explains the change.](https://webkit.org/blog/17333/webkit-features-in-safari-26-0/) A manual choice should remain available.
 
@@ -72,7 +72,18 @@ The React component detects after mounting, supports server rendering, and offer
 
 Original references live under `source-images/<os>-<major>/<browser>-<major>/<device>/`, with a metadata file describing versions and ordered actions. [The first set](source-images/ios-27/safari-27/iphone/metadata.json) contains the four supplied screenshots. Originals contain app branding and share-sheet contacts; reusable artwork omits them.
 
-Future coverage includes Brave, Chrome, Android and earlier layouts. Browser-specific actions should be separated from shared OS actions as coverage grows. In this Safari example, Page Menu and Share lead into the iOS share sheet's View More and Add to Home Screen controls. Brave on iOS needs a separate route: the owner found no Add to Home Screen action, and research supports handing off to Safari. See the [Brave iOS research note](docs/research/brave-ios.md) for evidence and remaining verification. Shared-step composition is not yet implemented.
+Current reference versions are iOS 27 / Safari 27, Brave 1.97 and Chrome 157.0.8103.24, plus macOS Golden Gate 27.0.1 / Safari 27.0.1. The browser major version is normally sufficient for matching; Brave additionally records a 1.97 minimum because its major version remains 1 across many releases. If Brave hides the necessary browser or OS details, choose the guide manually.
+
+| Guide | Route | Steps |
+| --- | --- | --- |
+| iPhone Safari | Page Menu → Share → View More → Add to Home Screen | 4 |
+| iPhone Brave | Share → View More → Open in Safari, then the Safari sequence | 7 |
+| iPhone Chrome | Share in the top address bar → View More → Add to Home Screen | 3 |
+| Mac Safari | File → Add to Dock → Add | 3 |
+
+Brave and Chrome share identical step text and artwork by reference. Brave reuses the complete Safari continuation. Chrome keeps its own Add to Home Screen drawing because the item appears in a different menu group. The build assembles one standalone SVG and one Markdown document per journey, with consecutive numbering. See [authoring and reuse](docs/authoring-guides.md).
+
+The [Brave research note](docs/research/brave-ios.md) explains its Safari handoff. The Mac guide is based on [Apple's documented Add to Dock flow](https://support.apple.com/en-ie/104996); device versions were supplied by the owner, but Mac screenshots have not been supplied yet. Further coverage stays within Apple platforms for now; Android is deferred.
 
 ## License
 

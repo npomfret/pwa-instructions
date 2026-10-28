@@ -30,9 +30,9 @@ function App() {
         <label className="field-label" htmlFor="guide">Choose a guide</label>
         <select id="guide" value={guideId} onChange={event => { setGuideId(event.target.value); setOpen(false); }}>
           <option value="">Use my browser · {browserLabel}</option>
-          {guides.map(guide => <option key={guide.id} value={guide.id}>iPhone · Safari · Page Menu</option>)}
+          {guides.map(guide => <option key={guide.id} value={guide.id}>{guide.label}</option>)}
         </select>
-        <p className="selection-note">{guideId ? "Preview this guide on any device." : selection.guide ? "An iPhone Safari guide is available for your browser." : "The first guide covers iPhone Safari. Select it above to preview on any device."}</p>
+        <p className="selection-note">{guideId ? "Preview this guide on any device." : selection.guide ? "An installation guide is available for your browser." : "No guide matches this browser yet. Choose one above to preview the instructions."}</p>
         <button className="primary-button" type="button" aria-expanded={open} aria-controls="instructions" onClick={() => setOpen(!open)}>
           {open ? "Hide installation steps" : "Show installation steps"}<span aria-hidden="true">{open ? "−" : "+"}</span>
         </button>
@@ -43,7 +43,7 @@ function App() {
                 <button key={value} type="button" aria-pressed={presentation === value} onClick={() => setPresentation(value)}>{label}</button>)}
             </div>
             <InstallInstructions environment={environment} guideId={guideId || undefined} presentation={presentation} className="installation-guide"
-              fallback={<div className="empty-state"><h3>{selection.status === "installed" ? "Already on your Home Screen" : "More guides are on the way"}</h3><p>{selection.status === "installed" ? "This app is running in standalone mode." : "We do not have a matching guide for this browser yet. Choose iPhone · Safari above to try the example."}</p></div>} />
+              fallback={<div className="empty-state"><h3>{selection.status === "installed" ? "Already on your Home Screen" : "More guides are on the way"}</h3><p>{selection.status === "installed" ? "This app is running in standalone mode." : "We do not have a matching guide for this browser yet. Choose an iPhone or Mac guide above to preview it."}</p></div>} />
           </>}
         </div>
       </section>

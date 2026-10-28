@@ -27,7 +27,9 @@ select { width: 100%; min-height: 48px; padding: 10px 34px 10px 12px; border: 1p
 .display-options button { color: #596b60; border: 1px solid #dce2da; background: white; border-radius: 7px; padding: 8px 11px; cursor: pointer; font-size: 12px; }
 .display-options button[aria-pressed="true"] { color: #244b3b; background: #edf3eb; border-color: #a6bba8; }
 .installation-guide > h2 { font-size: 21px; margin: 26px 0 15px; }
-.installation-guide img { width: 100%; max-width: 480px; margin: 0 auto 24px; }
+.installation-guide figure { border: 1px solid #dce2da; border-radius: 12px; padding: 16px 10px; background: #fafbf8; margin-bottom: 24px !important; }
+.installation-guide figcaption { font-size: 11px; font-weight: 650; letter-spacing: 1px; text-transform: uppercase; color: #68796a; margin: 0 6px 16px; }
+.installation-guide img { width: 100%; max-width: 600px; margin: 0 auto; background: white; }
 .installation-guide ol { margin: 0; padding-left: 24px; }
 .installation-guide li { padding-left: 6px; margin-bottom: 16px; font-size: 15px; line-height: 1.7; color: #56665c; }
 .installation-guide strong { display: block; color: #263f30; }

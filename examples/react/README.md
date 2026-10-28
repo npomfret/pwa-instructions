@@ -9,6 +9,6 @@ npm install
 npm run dev
 ```
 
-Open the local URL Vite prints. On desktop, choose **iPhone · Safari · Page Menu**, then **Show installation steps**. On a supported iPhone Safari browser, automatic selection chooses that guide. The text/image controls demonstrate the alternative presentations.
+Open the local URL Vite prints. On desktop, choose **iPhone · Safari · Page Menu**, then **Show installation steps**. On a supported iPhone Safari browser, automatic selection chooses that guide. Other choices preview Brave via Safari, Chrome, and Mac Safari. Safari 27 on Mac automatically selects Add to Dock. The text/image controls demonstrate the alternative presentations.
 
 `npm run build` from the root builds the packages and the example. The static site is `examples/react/dist/`; relative asset paths support GitHub project Pages. The Pages workflow publishes this directory.

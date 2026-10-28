@@ -27,7 +27,7 @@ test('explicit major versions match the observed reference', () => {
 });
 
 test('Safari compatibility tokens do not override other browser identities', () => {
-  for (const [token, browser] of [['CriOS/150.0', 'chrome'], ['FxiOS/150.0', 'firefox'], ['EdgiOS/150.0', 'edge'], ['Brave/2.0', 'brave'], ['OPT/3.0', 'opera']]) {
+  for (const [token, browser] of [['CriOS/150.0', 'chrome'], ['FxiOS/150.0', 'firefox'], ['EdgiOS/150.0', 'edge'], ['Brave/1.96', 'brave'], ['OPT/3.0', 'opera']]) {
     const env = detectEnvironment({ userAgent: safari().replace('Version/27.0', token) });
     assert.equal(env.browser, browser);
     assert.equal(selectGuide(env).status, 'unsupported');
@@ -43,7 +43,7 @@ test('iPad desktop mode and desktop Safari do not select an iPhone guide', () =>
   const ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Version/27.0 Safari/605.1.15';
   assert.equal(detectEnvironment({ userAgent: ua, maxTouchPoints: 5 }).device, 'ipad');
   assert.equal(selectGuide(detectEnvironment({ userAgent: ua, maxTouchPoints: 5 })).status, 'unsupported');
-  assert.equal(selectGuide(detectEnvironment({ userAgent: ua })).status, 'unsupported');
+  assert.equal(selectGuide(detectEnvironment({ userAgent: ua })).guide.id, 'macos-safari-desktop-layout-1');
 });
 
 test('unrecorded older layouts are not silently substituted', () => {
@@ -88,4 +88,29 @@ test('packaged artwork and text match the canonical source and have four anchors
   for (const step of guide.steps) assert.ok(svg.includes(`id="${step.illustrationFragment}"`));
   assert.equal(guide.text, await readFile(new URL('../guides/ios/safari/iphone/layout-1/instructions.md', import.meta.url), 'utf8'));
   assert.equal((guide.text.match(/^\d\. /gm) ?? []).length, guide.steps.length);
+});
+
+
+test('Chrome 157 uses its direct iPhone guide and older iOS does not get the new sheet', () => {
+  const ua = 'Mozilla/5.0 (iPhone; CPU iPhone OS 27_0 like Mac OS X) AppleWebKit/605.1.15 CriOS/157.0.8103.24 Mobile/15E148 Safari/604.1';
+  const env = detectEnvironment({ userAgent: ua });
+  assert.equal(env.browserVersion, '157.0.8103.24');
+  assert.equal(selectGuide(env).guide.id, 'ios-chrome-iphone-layout-1');
+  assert.equal(selectGuide(detectEnvironment({ userAgent: ua.replace('27_0', '18_7') })).status, 'unsupported');
+});
+
+test('Brave version bounds are numeric and hidden version details require a manual choice', () => {
+  const base = { ...detected(), browser: 'brave', browserMajor: 1, osMajor: 27 };
+  assert.equal(selectGuide({ ...base, browserVersion: '1.96' }).status, 'unsupported');
+  assert.equal(selectGuide({ ...base, browserVersion: '1.97' }).guide.id, 'ios-brave-iphone-layout-1');
+  assert.equal(selectGuide({ ...base, browserVersion: '1.100' }).match, 'newer-version');
+  assert.equal(selectGuide({ ...base, browserVersion: '1' }).status, 'needs-selection');
+  assert.equal(selectGuide({ ...base, browserVersion: '1.97', osMajor: null }).status, 'needs-selection');
+});
+
+test('Mac Safari 27.0.1 automatically selects the desktop guide', () => {
+  const env = detectEnvironment({ userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Version/27.0.1 Safari/605.1.15' });
+  const result = selectGuide(env);
+  assert.equal(result.guide.id, 'macos-safari-desktop-layout-1');
+  assert.equal(result.guide.steps.at(-1).title, 'Click Add');
 });

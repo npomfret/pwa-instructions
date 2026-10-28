@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "platform": {
+    "name": "ios",
+    "majorVersion": 27
+  },
+  "browser": {
+    "name": "chrome",
+    "majorVersion": 157,
+    "version": "157.0.8103.24"
+  },
+  "device": "iphone",
+  "versionEvidence": {
+    "type": "user-reported",
+    "note": "Versions identified by the source owner; original screenshots verify the controls shown."
+  },
+  "source": "user-supplied screenshots",
+  "images": [
+    {
+      "file": "01-share.jpg",
+      "order": 1,
+      "action": "Tap Share",
+      "controlOwner": "browser"
+    },
+    {
+      "file": "02-view-more.jpg",
+      "order": 2,
+      "action": "Tap View More",
+      "controlOwner": "os"
+    },
+    {
+      "file": "03-add-to-home-screen.jpg",
+      "order": 3,
+      "action": "Tap Add to Home Screen",
+      "controlOwner": "os"
+    }
+  ],
+  "coverage": "Share through Add to Home Screen; confirmation screen not shown.",
+  "privacy": "Original references include app branding, share-sheet contacts and notifications. Generic SVGs omit them.",
+  "releaseSource": "https://chromereleases.googleblog.com/2026/10/chrome-stable-for-ios-update_01149650302.html"
+}

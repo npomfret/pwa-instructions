@@ -14,7 +14,7 @@ The mainline Brave share-sheet implementation inspected during this research sup
 
 ## Device observation
 
-The owner reports that Brave exposes Share after tapping the address bar, with one fewer browser-menu step than Safari. Its native-looking share sheet has **Open in Safari**, but no **Add to Home Screen**. The exact Brave version and reference screenshots have not been supplied, so this is not yet a versioned installation guide.
+The owner reports that Brave exposes Share after tapping the address bar, with one fewer browser-menu step than Safari. Its native-looking share sheet has **Open in Safari**, but no **Add to Home Screen**. The owner subsequently supplied three reference screenshots and identified Brave 1.97 on iOS 27. They are stored in [the Brave reference set](../../source-images/ios-27/brave-1/iphone/metadata.json).
 
 A shared iOS sheet does not imply that every browser supplies the same actions.
 
@@ -27,4 +27,4 @@ A shared iOS sheet does not imply that every browser supplies the same actions.
 
 This route installs the web app through Safari. It does not preserve Brave Shields in the installed standalone app.
 
-Before adding a Brave guide to the runtime catalog, record its major browser version and screenshots of the handoff. Keep the browser transition explicit and reuse the Safari steps after that transition. Do not infer Chrome, Firefox or other iOS browser support from Brave's behavior.
+The runtime catalog now contains a [seven-step Brave guide](../../guides/ios/brave/iphone/layout-1/metadata.json). Its browser transition is explicit and the Safari steps are reused after it. The guide requires sufficient version information for automatic matching; manual selection works when Brave obscures its identity. Chrome has a separate, directly installable guide based on its own screenshots.

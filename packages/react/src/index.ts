@@ -23,11 +23,13 @@ export function InstallGuideView({ guide, presentation = "both", className, illu
   const headingId = useId();
   return h("section", { className, "aria-labelledby": headingId, "data-pwa-guide": guide.id },
     h("h2", { id: headingId }, guide.title),
-    presentation !== "text" && h("img", {
+    presentation !== "text" && h("figure", { "data-pwa-illustration": true, style: { margin: 0 } },
+      h("figcaption", null, "Illustrated guide"),
+      h("img", {
       src: illustrationSrc ?? guide.illustration.src, alt: guide.illustration.alt,
       width: guide.illustration.width, height: guide.illustration.height,
       style: { display: "block", maxWidth: "100%", height: "auto" },
-    }),
+    })),
     presentation !== "image" && h("ol", null, guide.steps.map(step =>
       h("li", { key: step.id }, h("strong", null, step.title), " ", step.description))),
     h("p", null, guide.completion),
