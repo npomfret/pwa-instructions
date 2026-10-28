@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 
@@ -8,11 +8,10 @@ const elements = node => [node, ...Array.from(node.getElementsByTagName('*'))];
 const byId = (doc, id) => Array.from(doc.getElementsByTagName('*')).find(node => node.getAttribute('id') === id);
 const parse = text => new DOMParser().parseFromString(text, 'image/svg+xml');
 
-async function writeChanged(file, value) {
-  let old;
-  try { old = await readFile(file, 'utf8'); } catch (error) { if (error.code !== 'ENOENT') throw error; }
-  if (old !== value) await writeFile(file, value);
-}
+/** Replace `{step:n}` placeholders with step numbers shifted by `offset`. */
+const renumber = (text, offset, render) => text.replace(/\{step:(\d+)\}/g, (_, n) => render(Number(n) + offset));
+const keepPlaceholder = n => `{step:${n}}`;
+const plainNumber = n => String(n);
 
 function markdownTitle(step) {
   return step.uiLabel ? step.title.replace(step.uiLabel, `*${step.uiLabel}*`) : step.title;
@@ -40,8 +39,9 @@ function scope(node, prefix) {
   return node;
 }
 
-/** Reuse source panels and text, then emit a complete, standalone SVG and Markdown. */
-export async function composeGuides(root, catalog) {
+/** Reuse source panels and text, then return each guide's complete, standalone SVG and Markdown. Writes nothing. */
+export async function composeGuides(root, catalog, locale = 'en') {
+  if (locale !== 'en') throw new Error(`Unsupported locale: ${locale}`);
   const records = new Map();
   for (const entry of catalog.guides) {
     const file = path.join(root, entry.path);
@@ -60,6 +60,7 @@ export async function composeGuides(root, catalog) {
     const svg = doc.documentElement;
     const imported = new Set();
     const steps = [];
+    const rawSteps = [];
     let transitionSpace = 0;
     for (let index = 0; index < data.steps.length; index++) {
       const raw = data.steps[index];
@@ -67,12 +68,12 @@ export async function composeGuides(root, catalog) {
       let panel = byId(doc, `step-${index + 1}`);
       if (raw.reuse) {
         const source = await resolve(raw.reuse.guideId);
-        const sourceIndex = source.steps.findIndex(item => item.id === raw.reuse.stepId);
+        const sourceIndex = source.rawSteps.findIndex(item => item.id === raw.reuse.stepId);
         if (sourceIndex < 0) throw new Error(`Missing reusable step ${raw.reuse.stepId}`);
         const offset = index - sourceIndex;
-        const sourceStep = source.steps[sourceIndex];
+        const sourceStep = source.rawSteps[sourceIndex];
         step = { ...sourceStep, id: `${raw.reuse.guideId}-${sourceStep.id}`,
-          description: sourceStep.description.replace(/step (\d+)/gi, (_, n) => `step ${Number(n) + offset}`) };
+          description: renumber(sourceStep.description, offset, keepPlaceholder) };
         if (raw.reuse.artwork) {
           const prefix = `shared-${raw.reuse.guideId}-`;
           if (!imported.has(raw.reuse.guideId)) {
@@ -112,7 +113,8 @@ export async function composeGuides(root, catalog) {
       if (title) { title.setAttribute('id', `step-${index + 1}-title`); styleTitle(doc, title, step); }
       if (number) number.textContent = String(index + 1);
       const { reuse, transitionBefore, ...plainStep } = step;
-      steps.push({ ...plainStep, illustrationFragment: `step-${index + 1}` });
+      rawSteps.push({ ...plainStep, illustrationFragment: `step-${index + 1}` });
+      steps.push({ ...rawSteps[index], description: renumber(plainStep.description, 0, plainNumber) });
     }
     if (steps.length !== data.illustration.stepCount) throw new Error(`Step count mismatch: ${id}`);
     let svgText;
@@ -125,12 +127,11 @@ export async function composeGuides(root, catalog) {
       byId(doc, 'description').textContent = data.illustration.alt;
     }
     svgText = new XMLSerializer().serializeToString(doc).trimEnd() + '\n';
-    await writeChanged(path.join(folder, data.illustration.file), svgText);
-    const text = `# ${data.title}\n\n` + (data.intro ? data.intro + '\n\n' : '') +
+    const intro = data.intro ? renumber(data.intro, 0, plainNumber) : '';
+    const text = `# ${data.title}\n\n` + (intro ? intro + '\n\n' : '') +
       steps.map((step, index) => `${index + 1}. **${markdownTitle(step)}.** ${step.description}`).join('\n') +
       `\n\n${data.completion.description}\n\nIllustration: [${data.illustration.file}](${data.illustration.file}). The numbered steps match this text.\n\nVersion observations and source evidence: [metadata.json](metadata.json).\n`;
-    await writeChanged(path.join(folder, data.textInstructions), text);
-    const result = { ...record, steps, document: doc, svg: svgText, text };
+    const result = { ...record, steps, rawSteps, document: doc, svg: svgText, text };
     visiting.delete(id);
     resolved.set(id, result);
     return result;

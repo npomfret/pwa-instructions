@@ -84,7 +84,7 @@
       }
     }
   ],
-  "intro": "Start in Brave. Step 3 opens the same website in Safari; steps 4\u20137 take place in Safari.",
+  "intro": "Start in Brave. Step {step:3} opens the same website in Safari; steps {step:4}\u2013{step:7} take place in Safari.",
   "completion": {
     "status": "not-shown-in-reference",
     "description": "Follow the confirmation screen to finish adding the app."

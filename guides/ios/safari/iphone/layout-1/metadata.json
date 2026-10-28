@@ -45,7 +45,7 @@
     {
       "id": "view-more",
       "title": "Tap View More",
-      "description": "If the share sheet is collapsed, tap View More, shown with a downward chevron, to reveal the remaining actions. If the action list is already visible, continue to step 4.",
+      "description": "If the share sheet is collapsed, tap View More, shown with a downward chevron, to reveal the remaining actions. If the action list is already visible, continue to step {step:4}.",
       "optional": true,
       "illustrationFragment": "step-3",
       "uiLabel": "View More"

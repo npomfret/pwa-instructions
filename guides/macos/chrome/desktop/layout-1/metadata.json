@@ -47,7 +47,7 @@
       "id": "continue-install",
       "title": "Click Next",
       "uiLabel": "Next",
-      "description": "In the Install app dialog, check the website name and domain, then click Next. If your Chrome version goes straight to the Install confirmation, continue to step 5.",
+      "description": "In the Install app dialog, check the website name and domain, then click Next. If your Chrome version goes straight to the Install confirmation, continue to step {step:5}.",
       "illustrationFragment": "step-4"
     },
     {
