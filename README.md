@@ -12,7 +12,7 @@ Reusable instructions for adding web apps to a Home Screen: one simple SVG and a
 | --- | --- |
 | [`@pwa-instructions/core`](packages/core) | Guide data, SVGs, text, browser detection and selection. No framework dependency. |
 | [`@pwa-instructions/react`](packages/react) | Unstyled React components using the core. |
-| [`examples/react`](examples/react) | A client-only demo with a reveal button and image/text display choices. |
+| [`examples/react`](examples/react) | A client-only demo with guide selection, a domain preview and image/text choices. |
 
 Future framework adapters can live beside React under `packages/` and consume the same core. Plain JavaScript apps can already use the core directly. These are the planned package names; publication to npm is pending.
 
@@ -21,6 +21,7 @@ import { InstallInstructions } from '@pwa-instructions/react';
 
 <InstallInstructions
   presentation="both"
+  siteUrl="https://your-domain.com"
   fallback={<p>Choose a guide for your browser.</p>}
 />
 ```
@@ -66,7 +67,7 @@ Guides currently cover iPhone Safari, iPhone Brave via Safari, iPhone Chrome, an
 
 Detection is a best-effort hint: browsers can disguise their identity. Safari 26+ freezes the OS version in its user-agent string, so the selector can use the Safari version when the real iOS version is hidden. [WebKit explains the change.](https://webkit.org/blog/17333/webkit-features-in-safari-26-0/) A manual choice should remain available.
 
-The React component detects after mounting, supports server rendering, and offers image, text or combined presentation. Guide images are self-contained data URLs by default; a hosted URL can be supplied where Content Security Policy requires one. Selection and rendering make no network requests.
+The React component detects after mounting, supports server rendering, and offers image, text or combined presentation. Its optional `siteUrl` prop puts your domain into the SVG address bars; the default is `example.com`. Paths, credentials and query strings are omitted. The illustration sits in its own figure container, separate from the controls and text. Guide images are self-contained data URLs by default; a hosted URL can be supplied where Content Security Policy requires one. Selection and rendering make no network requests.
 
 ## Source references and future coverage
 

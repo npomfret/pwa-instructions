@@ -9,7 +9,7 @@ import "./style.css";
 function App() {
   const [environment, setEnvironment] = useState<Environment | null>(null);
   const [guideId, setGuideId] = useState("");
-  const [open, setOpen] = useState(false);
+  const [siteUrl, setSiteUrl] = useState("https://your-domain.com");
   const [presentation, setPresentation] = useState<Presentation>("both");
   useEffect(() => { setEnvironment(detectBrowserEnvironment()); }, []);
   const selection = selectGuide(environment, { guideId: guideId || undefined });
@@ -28,25 +28,24 @@ function App() {
       <section className="demo" aria-labelledby="try-title">
         <div className="demo-heading"><span className="status-dot" aria-hidden="true" /><h2 id="try-title">Try the installation guide</h2></div>
         <label className="field-label" htmlFor="guide">Choose a guide</label>
-        <select id="guide" value={guideId} onChange={event => { setGuideId(event.target.value); setOpen(false); }}>
+        <select id="guide" value={guideId} onChange={event => setGuideId(event.target.value)}>
           <option value="">Use my browser · {browserLabel}</option>
           {guides.map(guide => <option key={guide.id} value={guide.id}>{guide.label}</option>)}
         </select>
         <p className="selection-note">{guideId ? "Preview this guide on any device." : selection.guide ? "An installation guide is available for your browser." : "No guide matches this browser yet. Choose one above to preview the instructions."}</p>
-        <button className="primary-button" type="button" aria-expanded={open} aria-controls="instructions" onClick={() => setOpen(!open)}>
-          {open ? "Hide installation steps" : "Show installation steps"}<span aria-hidden="true">{open ? "−" : "+"}</span>
-        </button>
-        <div id="instructions" hidden={!open}>
-          {open && <>
-            <div className="display-options" role="group" aria-label="Instruction format">
+        <label className="field-label site-url-label" htmlFor="site-url">Website URL (optional)</label>
+        <input id="site-url" className="site-url-input" type="text" inputMode="url" autoComplete="off" spellCheck={false}
+          placeholder="https://example.com" value={siteUrl} onChange={event => setSiteUrl(event.target.value)} aria-describedby="site-url-help" />
+        <p id="site-url-help" className="selection-note">Show your domain in the illustration. Leave blank to use example.com.</p>
+        <div className="display-options" role="group" aria-label="Instruction format">
               {([["both", "Image + text"], ["text", "Text only"], ["image", "Image only"]] as const).map(([value, label]) =>
                 <button key={value} type="button" aria-pressed={presentation === value} onClick={() => setPresentation(value)}>{label}</button>)}
-            </div>
-            <InstallInstructions environment={environment} guideId={guideId || undefined} presentation={presentation} className="installation-guide"
-              fallback={<div className="empty-state"><h3>{selection.status === "installed" ? "Already on your Home Screen" : "More guides are on the way"}</h3><p>{selection.status === "installed" ? "This app is running in standalone mode." : "We do not have a matching guide for this browser yet. Choose an iPhone or Mac guide above to preview it."}</p></div>} />
-          </>}
         </div>
       </section>
+      <div className="guide-output" id="instructions">
+        <InstallInstructions environment={environment} guideId={guideId || undefined} siteUrl={siteUrl} presentation={presentation} className="installation-guide"
+              fallback={<div className="empty-state"><h3>{selection.status === "installed" ? "Already on your Home Screen" : "More guides are on the way"}</h3><p>{selection.status === "installed" ? "This app is running in standalone mode." : "We do not have a matching guide for this browser yet. Choose an iPhone or Mac guide above to preview it."}</p></div>} />
+      </div>
       <div className="notes"><p><strong>One illustration. Every step in text.</strong><br />Read it, look at it, or use both.</p><p><strong>Small pieces. Your interface.</strong><br />Shared data, with React as the first adapter.</p></div>
     </main>
     <footer><p>Open source · MIT licensed</p><p><a href="https://github.com/npomfret/pwa-instructions/tree/main/examples/react">View example source ↗</a></p></footer>

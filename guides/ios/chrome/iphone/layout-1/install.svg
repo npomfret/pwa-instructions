@@ -47,7 +47,7 @@
     <g transform="translate(-72 -30)">
       <use href="#phone"/>
       <rect x="86" y="126" width="244" height="43" rx="18" fill="white" stroke="#d7dadd"/>
-      <text x="177" y="153" text-anchor="middle" class="small" style="fill:#687078">example.com</text>
+      <text x="177" y="153" text-anchor="middle" class="small" style="fill:#687078" data-pwa-domain="true" data-domain-width="180">example.com</text>
       <rect x="282" y="128" width="42" height="39" rx="10" class="target"/>
       <use href="#share-icon" x="293" y="132"/>
       <rect x="84" y="415" width="248" height="45" rx="10" fill="white"/>
@@ -64,7 +64,7 @@
       <use href="#phone"/>
       <rect x="83" y="126" width="250" height="337" rx="15" fill="white"/>
       <text x="103" y="159" class="label" style="fill:#687078">Website</text>
-      <text x="103" y="182" class="small" style="fill:#687078">example.com</text>
+      <text x="103" y="182" class="small" style="fill:#687078" data-pwa-domain="true" data-domain-width="170">example.com</text>
       <rect x="94" y="211" width="228" height="139" rx="15" fill="#f1f2f3"/>
       <text x="108" y="236" class="small" style="fill:#687078">Add to bookmarks</text>
       <text x="108" y="262" class="small" style="fill:#687078">Create a QR code</text>
@@ -99,7 +99,7 @@
       <rect x="83" y="250" width="250" height="213" rx="24" fill="white" stroke="#d7dadd"/>
       <rect x="100" y="269" width="30" height="30" rx="7" fill="#e9ecef"/>
       <text x="142" y="283" class="shared-ios-safari-iphone-layout-1-label" style="fill:#687078">Website</text>
-      <text x="142" y="303" class="shared-ios-safari-iphone-layout-1-small" fill="#60656c" style="fill:#687078">example.com</text>
+      <text x="142" y="303" class="shared-ios-safari-iphone-layout-1-small" fill="#60656c" style="fill:#687078" data-pwa-domain="true" data-domain-width="170">example.com</text>
       <path d="M100 320h216" class="shared-ios-safari-iphone-layout-1-line"/>
       <rect x="103" y="336" width="38" height="38" rx="11" fill="#e9ecef"/>
       <rect x="159" y="336" width="38" height="38" rx="11" fill="#e9ecef"/>

@@ -27,7 +27,7 @@
       <text x="143" y="83" class="small" style="fill:#687078">Edit</text>
       <text x="189" y="83" class="small" style="fill:#687078">View</text>
       <rect x="100" y="108" width="344" height="28" rx="8" fill="#f1f2f3" />
-      <text x="272" y="128" text-anchor="middle" class="small" style="fill:#687078">example.com</text>
+      <text x="272" y="128" text-anchor="middle" class="small" style="fill:#687078" data-pwa-domain="true" data-domain-width="260">example.com</text>
       <path d="M28 174h220 M28 195h460 M28 212h400" class="line" />
       <rect x="28" y="238" width="460" height="85" rx="8" fill="#f1f2f3" />
       <rect x="85" y="63" width="43" height="28" rx="6" class="target" />
@@ -45,7 +45,7 @@
       <text x="143" y="83" class="small" style="fill:#687078">Edit</text>
       <text x="189" y="83" class="small" style="fill:#687078">View</text>
       <rect x="100" y="108" width="344" height="28" rx="8" fill="#f1f2f3" />
-      <text x="272" y="128" text-anchor="middle" class="small" style="fill:#687078">example.com</text>
+      <text x="272" y="128" text-anchor="middle" class="small" style="fill:#687078" data-pwa-domain="true" data-domain-width="260">example.com</text>
       <path d="M28 174h220 M28 195h460 M28 212h400" class="line" />
       <rect x="28" y="238" width="460" height="85" rx="8" fill="#f1f2f3" />
       <text x="94" y="83" class="small" style="fill:#687078">File</text>
@@ -69,7 +69,7 @@
       <text x="143" y="83" class="small" style="fill:#687078">Edit</text>
       <text x="189" y="83" class="small" style="fill:#687078">View</text>
       <rect x="100" y="108" width="344" height="28" rx="8" fill="#f1f2f3" />
-      <text x="272" y="128" text-anchor="middle" class="small" style="fill:#687078">example.com</text>
+      <text x="272" y="128" text-anchor="middle" class="small" style="fill:#687078" data-pwa-domain="true" data-domain-width="260">example.com</text>
       <path d="M28 174h220 M28 195h460 M28 212h400" class="line" />
       <rect x="28" y="238" width="460" height="85" rx="8" fill="#f1f2f3" />
       <text x="94" y="83" class="small" style="fill:#687078">File</text>
@@ -77,7 +77,7 @@
       <text x="122" y="187" class="label">Add to Dock</text>
       <rect x="122" y="202" width="300" height="31" rx="6" fill="#f5f6f7" stroke="#d7dadd" />
       <text x="132" y="223" class="small" style="fill:#687078">Website</text>
-      <text x="122" y="254" class="small" style="fill:#687078">example.com</text>
+      <text x="122" y="254" class="small" style="fill:#687078" data-pwa-domain="true" data-domain-width="260">example.com</text>
       <text x="273" y="297" class="small" style="fill:#687078">Cancel</text>
       <rect x="337" y="273" width="85" height="37" rx="8" class="target" />
       <text x="379" y="297" text-anchor="middle" class="label">Add</text>

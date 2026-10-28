@@ -80,3 +80,14 @@ test('Brave and Mac guides render all their own steps', () => {
     assert.equal((html.match(/<li>/g) ?? []).length, count);
   }
 });
+
+
+test('the optional siteUrl prop personalizes the bundled image without requiring a custom component', () => {
+  const html = renderToStaticMarkup(h(InstallInstructions, { guideId: id, siteUrl: 'https://crosswithyou.app/play' }));
+  assert.ok(html.includes('crosswithyou.app'));
+  assert.ok(html.includes('Website: crosswithyou.app.'));
+  assert.ok(!html.includes('crosswithyou.app/play'));
+  const other = renderToStaticMarkup(h(InstallGuideView, { guide: guides[0], siteUrl: 'another.example' }));
+  assert.ok(other.includes('another.example'));
+  assert.ok(!other.includes('crosswithyou.app'));
+});

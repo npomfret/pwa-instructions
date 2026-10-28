@@ -39,7 +39,7 @@
       <rect x="90" y="420" width="236" height="38" rx="19" fill="white" stroke="#d7dadd" />
       <rect x="98" y="421" width="40" height="36" rx="10" class="target" />
       <path d="M109 431h18 M109 438h18 M109 445h11" class="icon" />
-      <text x="149" y="444" class="small" style="fill:#687078">example.com</text>
+      <text x="149" y="444" class="small" style="fill:#687078" data-pwa-domain="true" data-domain-width="125">example.com</text>
       <g transform="translate(289 426) scale(.75)" class="icon">
         <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8 M21 3v5h-5" />
       </g>
@@ -71,7 +71,7 @@
       <rect x="83" y="250" width="250" height="213" rx="24" fill="white" stroke="#d7dadd" />
       <rect x="100" y="269" width="30" height="30" rx="7" fill="#e9ecef" />
       <text x="142" y="283" class="label" style="fill:#687078">Website</text>
-      <text x="142" y="303" class="small" fill="#60656c" style="fill:#687078">example.com</text>
+      <text x="142" y="303" class="small" fill="#60656c" style="fill:#687078" data-pwa-domain="true" data-domain-width="170">example.com</text>
       <path d="M100 320h216" class="line" />
       <rect x="103" y="336" width="38" height="38" rx="11" fill="#e9ecef" />
       <rect x="159" y="336" width="38" height="38" rx="11" fill="#e9ecef" />
@@ -92,7 +92,7 @@
       <use href="#phone" />
       <rect x="83" y="126" width="250" height="337" rx="15" fill="white" />
       <text x="103" y="159" class="label" style="fill:#687078">Website</text>
-      <text x="103" y="182" class="small" style="fill:#687078">example.com</text>
+      <text x="103" y="182" class="small" style="fill:#687078" data-pwa-domain="true" data-domain-width="170">example.com</text>
       <path d="M100 204h216" class="line" />
       <rect x="105" y="220" width="35" height="35" rx="10" fill="#e9ecef" />
       <rect x="163" y="220" width="35" height="35" rx="10" fill="#e9ecef" />

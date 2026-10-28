@@ -29,3 +29,10 @@ The component supplies semantic headings, an ordered list and image alternative 
 Included guides cover iPhone Safari, Brave via Safari, Chrome, and Mac Safari. Browser detection is best effort; expose a manual choice where practical. The SVG and matching text are also usable without React through the core package.
 
 MIT licensed. Source: https://github.com/npomfret/pwa-instructions
+
+
+## Customize the displayed domain
+
+Pass `siteUrl="https://your-domain.com/path"` to `InstallInstructions` or `InstallGuideView` in React. The SVG displays only `your-domain.com`; it does not navigate there. Leaving the option empty uses `example.com`. Invalid URLs also use the default. Long domains are fitted inside the address bar.
+
+Framework-independent code can use `getIllustration(guide, { siteUrl })` from the core. It returns a new illustration with the personalized `src` and alternative text. The shared guide remains unchanged. This option customizes bundled SVGs; an explicit `illustrationSrc` takes precedence. Colour customization is not implemented.
