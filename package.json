@@ -1,0 +1,31 @@
+{
+  "name": "pwa-instructions-workspace",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "build:packages": "node scripts/build.mjs",
+    "build:example": "npm run build:packages && npm run build --workspace @pwa-instructions/example-react",
+    "build": "npm run build:example",
+    "dev": "npm run build:packages && npm run dev --workspace @pwa-instructions/example-react",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "check": "npm run build && npm run typecheck --workspace @pwa-instructions/example-react && npm test",
+    "pack:packages": "npm run build:packages && npm pack --workspace @pwa-instructions/core --workspace @pwa-instructions/react"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "jsdom": "30.1.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
+  }
+}
