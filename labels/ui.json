@@ -1,0 +1,74 @@
+{
+  "text-instructions": {
+    "en": "Text instructions"
+  },
+  "illustrated-guide": {
+    "en": "Illustrated guide"
+  },
+  "documentation-draft": {
+    "en": "Documentation draft"
+  },
+  "heading": {
+    "en": "{kind}: {context}"
+  },
+  "website": {
+    "en": "Website: {host}."
+  },
+  "device-iphone": {
+    "en": "iPhone"
+  },
+  "device-ipad": {
+    "en": "iPad"
+  },
+  "device-android": {
+    "en": "Android device"
+  },
+  "device-desktop-mac": {
+    "en": "Mac"
+  },
+  "device-desktop": {
+    "en": "Desktop"
+  },
+  "device-unknown": {
+    "en": "Device"
+  },
+  "platform-ios": {
+    "en": "iOS"
+  },
+  "platform-macos": {
+    "en": "macOS"
+  },
+  "platform-android": {
+    "en": "Android"
+  },
+  "platform-windows": {
+    "en": "Windows"
+  },
+  "platform-unknown": {
+    "en": "OS"
+  },
+  "browser-safari": {
+    "en": "Safari"
+  },
+  "browser-chrome": {
+    "en": "Chrome"
+  },
+  "browser-brave": {
+    "en": "Brave"
+  },
+  "browser-firefox": {
+    "en": "Firefox"
+  },
+  "browser-edge": {
+    "en": "Edge"
+  },
+  "browser-opera": {
+    "en": "Opera"
+  },
+  "browser-samsung": {
+    "en": "Samsung Internet"
+  },
+  "browser-unknown": {
+    "en": "Browser"
+  }
+}

@@ -3,7 +3,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { composeGuides } from "./compose-guides.mjs";
-import { publishedLocales } from "./i18n.mjs";
+import { loadLabels, publishedLocales } from "./i18n.mjs";
 import { writeLocaleOutputs } from "./emit-locales.mjs";
 
 async function writeChanged(file, value) {
@@ -54,7 +54,7 @@ await writeFile(path.join(generated, "guides.ts"),
 // Only complete locales are built for publishing. Draft locales (and the en-XA pseudo-locale) are composed by tests alone.
 const locales = new Map();
 for (const tag of publishedLocales(catalog)) locales.set(tag, await composeGuides(root, catalog, tag));
-await writeLocaleOutputs({ catalog, locales, generated, assets: path.join(packageRoot, "dist/assets") });
+await writeLocaleOutputs({ catalog, locales, generated, assets: path.join(packageRoot, "dist/assets"), labels: await loadLabels(root) });
 execFileSync(process.execPath, [path.join(root, "node_modules/typescript/bin/tsc"), "-b", "packages/pwa-instructions"], { cwd: root, stdio: "inherit" });
 for (const entry of catalog.guides) {
   const folder = path.dirname(path.join(root, entry.path));

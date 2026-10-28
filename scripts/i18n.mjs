@@ -88,6 +88,24 @@ export function labelResolver(labels, surfaces, tag) {
   return { get, fill, firstLabel, idForEnglish, has: id => index.has(id) };
 }
 
+// --- Interface strings -----------------------------------------------------------------------------------------
+
+/**
+ * The strings the React view and getIllustration draw around a guide, from the `ui` surface: headings, the alt-text
+ * "Website:" sentence, and device, platform and browser names. Shaped as the `LocaleUI` type in src/core/types.ts.
+ */
+export function localeUI(labels, tag) {
+  const { get } = labelResolver(labels, ['ui'], tag);
+  const group = (prefix, names) => Object.fromEntries(names.map(name => [name, get(`${prefix}-${name}`)]));
+  return {
+    textInstructions: get('text-instructions'), illustratedGuide: get('illustrated-guide'), documentationDraft: get('documentation-draft'),
+    heading: get('heading'), website: get('website'),
+    devices: group('device', ['iphone', 'ipad', 'android', 'desktop-mac', 'desktop', 'unknown']),
+    platforms: group('platform', ['ios', 'macos', 'android', 'windows', 'unknown']),
+    browsers: group('browser', ['safari', 'chrome', 'brave', 'firefox', 'edge', 'opera', 'samsung', 'unknown']),
+  };
+}
+
 // --- Guide prose -----------------------------------------------------------------------------------------------
 
 const labelled = (english, uiLabel, resolver) => {

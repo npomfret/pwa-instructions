@@ -28,6 +28,21 @@ One npm package contains both entry points. React is an optional peer dependency
 
 Leave `guideId` out for automatic browser detection. Use `guideId="ios-safari-iphone-layout-1"` for explicit selection. For your own interface, call `selectGuide(detectBrowserEnvironment())` from the core and use the returned steps and illustration URL. The [API reference](docs/api.md) describes the props, defaults and selection results.
 
+## Localization
+
+Guides are English unless you ask for a locale. Locale data is opt-in, so you only bundle what you use:
+
+```js
+import { registerLocale, selectGuide, detectBrowserEnvironment } from 'pwa-instructions';
+import es from 'pwa-instructions/locales/es';
+
+registerLocale('es', es);
+const { guide, locale } = selectGuide(detectBrowserEnvironment(), { locale: 'es-MX' });
+// locale: { requested: 'es-MX', resolved: 'es', fallback: false }
+```
+
+A locale that is not registered, or lacks a guide, gives that whole guide in English with `fallback: true`; guides are never half translated. The React components take the same `locale` prop. See the [API reference](docs/api.md#localization) for resolution rules, `browserLocale` and `detectUILocale()`.
+
 ## Development
 
 Requires Node.js 22.12 or newer.

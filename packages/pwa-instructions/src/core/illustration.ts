@@ -1,6 +1,7 @@
-import type { InstallGuide } from "./types.js";
+import { getLocaleUI, localizeGuide } from "./locale.js";
+import type { InstallGuide, LocaleOptions } from "./types.js";
 
-export interface IllustrationOptions {
+export interface IllustrationOptions extends LocaleOptions {
   /** A full http(s) URL or bare domain. Only its host is displayed. */
   siteUrl?: string;
 }
@@ -19,7 +20,9 @@ const escapeXML = (value: string) => value.replaceAll("&", "&amp;").replaceAll("
   .replaceAll(">", "&gt;").replaceAll('"', "&quot;").replaceAll("'", "&apos;");
 
 /** Personalize a copy of a bundled SVG, without changing the shared guide. */
-export function getIllustration(guide: InstallGuide, options: IllustrationOptions = {}): InstallGuide["illustration"] {
+export function getIllustration(source: InstallGuide, options: IllustrationOptions = {}): InstallGuide["illustration"] {
+  // With a locale, personalize that locale's artwork; the "Website:" wording follows the language of the text it ends.
+  const guide = options.locale === undefined ? source : localizeGuide(source, options).guide;
   const host = displayHost(options.siteUrl);
   if (!host || host === "example.com") return guide.illustration;
   const prefix = "data:image/svg+xml;charset=utf-8,";
@@ -33,6 +36,6 @@ export function getIllustration(guide: InstallGuide, options: IllustrationOption
     });
   return { ...guide.illustration,
     src: prefix + encodeURIComponent(customized),
-    alt: `${guide.illustration.alt} Website: ${host}.`,
+    alt: `${guide.illustration.alt} ${getLocaleUI(guide.language, options.localeData).website.replace("{host}", () => host)}`,
   };
 }

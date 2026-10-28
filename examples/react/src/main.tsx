@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { createRoot } from "react-dom/client";
-import { detectBrowserEnvironment, guides, selectGuide } from "pwa-instructions";
+import { detectBrowserEnvironment, getGuideLocales, guides, selectGuide } from "pwa-instructions";
+// To offer a language, import its data and register it before rendering:
+//   import es from "pwa-instructions/locales/es";
+//   registerLocale("es", es);
+// No locale is published yet, and the en-XA test locale is deliberately not shipped, so this picker lists English only.
 import { InstallInstructions } from "pwa-instructions/react";
 import type { Presentation } from "pwa-instructions/react";
 import "./style.css";
@@ -14,6 +18,8 @@ function App() {
     return (match ?? sameBrowser ?? guides[0]).id;
   });
   const [siteUrl, setSiteUrl] = useState("https://your-domain.com");
+  const [locale, setLocale] = useState("en");
+  const locales = getGuideLocales(guides.find(guide => guide.id === guideId) ?? guides[0]);
   const [presentation, setPresentation] = useState<Presentation>("both");
   const componentSnippet = [
     'import { InstallInstructions } from "pwa-instructions/react";',
@@ -21,6 +27,7 @@ function App() {
     '<InstallInstructions',
     ...(guideId ? [`  guideId={${JSON.stringify(guideId)}}`] : []),
     `  siteUrl={${JSON.stringify(siteUrl)}}`,
+    ...(locale === "en" ? [] : [`  locale=${JSON.stringify(locale)}`]),
     `  presentation="${presentation}"`,
     '  fallback={<p>No instructions for this browser yet.</p>}',
     '/>',
@@ -48,6 +55,10 @@ function App() {
         <select id="guide" value={guideId} onChange={event => setGuideId(event.target.value)}>
           {guides.map(guide => <option key={guide.id} value={guide.id}>{guide.label}</option>)}
         </select>
+        <label className="field-label site-url-label" htmlFor="locale">Language</label>
+        <select id="locale" value={locales.includes(locale) ? locale : "en"} onChange={event => setLocale(event.target.value)}>
+          {locales.map(tag => <option key={tag} value={tag}>{new Intl.DisplayNames([tag], { type: "language" }).of(tag) ?? tag}</option>)}
+        </select>
         <label className="field-label site-url-label" htmlFor="site-url">Website URL (optional)</label>
         <input id="site-url" className="site-url-input" type="text" inputMode="url" autoComplete="off" spellCheck={false}
           placeholder="https://example.com" value={siteUrl} onChange={event => setSiteUrl(event.target.value)} />
@@ -57,7 +68,7 @@ function App() {
         </div>
       </section>
       <div className="guide-output" id="instructions">
-        <InstallInstructions guideId={guideId} siteUrl={siteUrl} presentation={presentation} className="installation-guide"
+        <InstallInstructions guideId={guideId} siteUrl={siteUrl} locale={locale} presentation={presentation} className="installation-guide"
           fallback={<p className="empty-state">No instructions available.</p>} />
       </div>
       <section className="integration" aria-label="Integration code">

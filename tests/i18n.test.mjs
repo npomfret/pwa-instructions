@@ -6,13 +6,14 @@ import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { composeGuides } from '../scripts/compose-guides.mjs';
-import { pseudoLocalize, publishedLocales } from '../scripts/i18n.mjs';
+import { loadLabels, pseudoLocalize, publishedLocales } from '../scripts/i18n.mjs';
 import { writeLocaleOutputs } from '../scripts/emit-locales.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const catalog = JSON.parse(await readFile(path.join(root, 'catalog.json'), 'utf8'));
 const english = await composeGuides(root, catalog);
 const pseudo = await composeGuides(root, catalog, 'en-XA');
+const labels = await loadLabels(root);
 const parse = svg => new DOMParser().parseFromString(svg, 'image/svg+xml');
 // Text that is deliberately never translated: step numbers, the placeholder domain and clock, and the Safari app-menu name.
 const untranslated = /^(\d+|example\.com|9:41|Safari)$/;
@@ -108,13 +109,13 @@ test('draft locales are never published', async () => {
   const temporary = await mkdtemp(path.join(tmpdir(), 'pwa-instructions-locales-'));
   try {
     // Only what the build passes in is written; with no complete locale, nothing is.
-    await writeLocaleOutputs({ catalog, locales: new Map(), generated: path.join(temporary, 'generated'), assets: path.join(temporary, 'assets') });
+    await writeLocaleOutputs({ catalog, locales: new Map(), generated: path.join(temporary, 'generated'), assets: path.join(temporary, 'assets'), labels });
     await assert.rejects(readdir(path.join(temporary, 'assets')), { code: 'ENOENT' });
     // A published locale gets a module and per-guide assets.
-    await writeLocaleOutputs({ catalog, locales: new Map([['xx', pseudo]]), generated: path.join(temporary, 'generated'), assets: path.join(temporary, 'assets') });
-    const source = await readFile(path.join(temporary, 'generated/locales/xx.ts'), 'utf8');
+    await writeLocaleOutputs({ catalog, locales: new Map([['en-XA', pseudo]]), generated: path.join(temporary, 'generated'), assets: path.join(temporary, 'assets'), labels });
+    const source = await readFile(path.join(temporary, 'generated/locales/en-XA.ts'), 'utf8');
     assert.ok(source.includes('"ios-brave-iphone-layout-1"') && source.includes('data:image/svg+xml'));
-    assert.ok((await readdir(path.join(temporary, 'assets/ios-brave-iphone-layout-1/xx'))).includes('install.svg'));
+    assert.ok((await readdir(path.join(temporary, 'assets/ios-brave-iphone-layout-1/en-XA'))).includes('install.svg'));
   } finally {
     await rm(temporary, { recursive: true, force: true });
   }

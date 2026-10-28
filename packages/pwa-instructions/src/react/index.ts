@@ -2,15 +2,15 @@
 
 import { createElement as h, useEffect, useId, useState } from "react";
 import type { ReactNode } from "react";
-import { detectBrowserEnvironment, selectGuide, getIllustration } from "../core/index.js";
-import type { Environment, GuideSelection, InstallGuide, InstallStep, SelectionOptions } from "../core/index.js";
+import { detectBrowserEnvironment, selectGuide, getIllustration, getLocaleUI, localizeGuide } from "../core/index.js";
+import type { Environment, GuideSelection, InstallGuide, InstallStep, LocaleOptions, LocaleUI, SelectionOptions } from "../core/index.js";
 
 export { detectEnvironment, detectBrowserEnvironment, selectGuide, guides, getIllustration } from "../core/index.js";
 export type { Environment, GuideSelection, InstallGuide, InstallStep } from "../core/index.js";
 
 export type Presentation = "both" | "image" | "text";
 
-export interface InstallGuideViewProps {
+export interface InstallGuideViewProps extends LocaleOptions {
   guide: InstallGuide;
   presentation?: Presentation;
   className?: string;
@@ -27,25 +27,41 @@ function stepTitle(step: InstallStep): ReactNode {
     step.title.slice(offset + step.uiLabel.length)];
 }
 
-function guideContext(guide: InstallGuide): string {
-  const device = { iphone: "iPhone", ipad: "iPad", android: "Android device",
-    desktop: guide.platform === "macos" ? "Mac" : "Desktop", unknown: "Device" }[guide.device];
-  const platform = { ios: "iOS", macos: "macOS", android: "Android", windows: "Windows", unknown: "OS" }[guide.platform];
-  const browser = { safari: "Safari", chrome: "Chrome", brave: "Brave", firefox: "Firefox",
-    edge: "Edge", opera: "Opera", samsung: "Samsung Internet", unknown: "Browser" }[guide.browser];
+function guideContext(guide: InstallGuide, ui: LocaleUI): string {
+  const device = ui.devices[guide.device === "desktop" && guide.platform === "macos" ? "desktop-mac" : guide.device];
+  const platform = ui.platforms[guide.platform];
+  const browser = ui.browsers[guide.browser];
   if (guide.versions.documentationOnly) {
-    return `${platform} · ${browser} · Documentation draft`;
+    return `${platform} · ${browser} · ${ui.documentationDraft}`;
   }
   const browserVersion = guide.versions.minimumBrowserVersion ?? guide.versions.observedBrowser;
   return `${device} · ${platform} ${guide.versions.observedOS} · ${browser} ${browserVersion}`;
 }
 
+/** The page's own `lang`, read after mounting so server output and initial hydration agree. */
+function useDocumentLanguage(): string | null {
+  const [language, setLanguage] = useState<string | null>(null);
+  useEffect(() => setLanguage(document.documentElement.lang.trim().toLowerCase()), []);
+  return language;
+}
+
 /** Present a known guide with no browser detection or imposed styles. */
-export function InstallGuideView({ guide, presentation = "both", className, illustrationSrc, siteUrl }: InstallGuideViewProps) {
+export function InstallGuideView({ guide: source, presentation = "both", className, illustrationSrc, siteUrl, locale, browserLocale, localeData }: InstallGuideViewProps) {
   const headingId = useId();
-  const illustration = illustrationSrc ? guide.illustration : getIllustration(guide, { siteUrl });
-  return h("section", { className, "aria-labelledby": headingId, "data-pwa-guide": guide.id },
-    h("h2", { id: headingId }, `${presentation === "text" ? "Text instructions" : "Illustrated guide"}: ${guideContext(guide)}`),
+  const documentLanguage = useDocumentLanguage();
+  const options = { locale, browserLocale, localeData };
+  // An English guide is localized here; one that is already in another language is shown as it is.
+  const guide = locale === undefined || source.language !== "en" ? source : localizeGuide(source, options).guide;
+  // Headings follow the language of the guide text, so a fallback guide is not half translated.
+  const ui = getLocaleUI(guide.language, localeData);
+  const illustration = illustrationSrc ? guide.illustration : getIllustration(guide, { siteUrl, localeData });
+  // English output with no locale is 0.1.0's: the language is marked only when one was asked for or the text is not English.
+  const marked = locale !== undefined || guide.language !== "en";
+  const kind = presentation === "text" ? ui.textInstructions : ui.illustratedGuide;
+  return h("section", { className, "aria-labelledby": headingId, "data-pwa-guide": guide.id,
+    ...(marked ? { "data-pwa-locale": guide.language, "data-pwa-locale-fallback": guide.localeFallback ? "true" : undefined,
+      lang: documentLanguage === guide.language.toLowerCase() ? undefined : guide.language } : {}) },
+    h("h2", { id: headingId }, ui.heading.replace("{kind}", () => kind).replace("{context}", () => guideContext(guide, ui))),
     presentation !== "text" && h("img", {
       src: illustrationSrc ?? illustration.src, alt: illustration.alt,
       width: guide.illustration.width, height: guide.illustration.height,
@@ -69,13 +85,13 @@ export interface InstallInstructionsProps extends SelectionOptions {
 }
 
 /** Detect after mounting, so server output and initial hydration agree. */
-export function InstallInstructions({ environment, guideId, guides, fallback = null, ...viewProps }: InstallInstructionsProps) {
+export function InstallInstructions({ environment, guideId, guides, locale, browserLocale, localeData, fallback = null, ...viewProps }: InstallInstructionsProps) {
   const [detected, setDetected] = useState<Environment | null>(null);
   useEffect(() => {
     if (environment === undefined && guideId === undefined) setDetected(detectBrowserEnvironment());
   }, [environment, guideId]);
-  const selection = selectGuide(environment === undefined ? detected : environment, { guideId, guides });
+  const selection = selectGuide(environment === undefined ? detected : environment, { guideId, guides, locale, browserLocale, localeData });
   if (!selection.guide) return h("div", { "data-pwa-status": selection.status },
     typeof fallback === "function" ? fallback(selection) : fallback);
-  return h(InstallGuideView, { ...viewProps, guide: selection.guide });
+  return h(InstallGuideView, { ...viewProps, guide: selection.guide, locale, browserLocale, localeData });
 }

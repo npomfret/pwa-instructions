@@ -63,6 +63,10 @@ export interface InstallGuide {
   readonly steps: readonly InstallStep[];
   readonly completion: string;
   readonly text: string;
+  /** Set only when a locale was requested and this guide is English instead. See `GuideSelection.locale`. */
+  readonly localeFallback?: boolean;
+  /** The locale that was requested when `localeFallback` is true. */
+  readonly requestedLocale?: string;
 }
 
 /** One guide's text in one locale: what a `pwa-instructions/locales/<tag>` module exports per guide id. */
@@ -76,16 +80,68 @@ export interface LocalizedGuide {
   readonly illustration: { readonly src: string; readonly alt: string };
 }
 
-export interface SelectionOptions {
+/** The strings drawn around a guide, per locale: React headings, the illustration's "Website:" alt text, and names. */
+export interface LocaleUI {
+  readonly textInstructions: string;
+  readonly illustratedGuide: string;
+  readonly documentationDraft: string;
+  /** "{kind}: {context}": the heading template. `kind` is textInstructions or illustratedGuide. */
+  readonly heading: string;
+  /** "Website: {host}.": appended to the illustration alt text when a site URL is shown. */
+  readonly website: string;
+  /** Keyed by Device, with `desktop-mac` for a desktop Mac. */
+  readonly devices: Readonly<Record<Device | "desktop-mac", string>>;
+  readonly platforms: Readonly<Record<Platform, string>>;
+  readonly browsers: Readonly<Record<Browser, string>>;
+}
+
+/** A locale's data: what a `pwa-instructions/locales/<tag>` module exports by default. */
+export interface LocaleData {
+  readonly guides: Readonly<Record<string, LocalizedGuide>>;
+  /** Without it the English interface strings are used. */
+  readonly ui?: LocaleUI;
+}
+
+export interface LocaleOptions {
+  /** A BCP 47 tag, or tags in order of preference. Omit for English, exactly as 0.1.0. */
+  readonly locale?: string | readonly string[];
+  /**
+   * The language of the browser or OS interface, for the quoted control names. Accepted and reserved: the guides are
+   * composed in `locale`, and this does not change the output yet.
+   */
+  readonly browserLocale?: string;
+  /** Locale data by tag, used in addition to locales added with registerLocale. These win over registered data. */
+  readonly localeData?: Readonly<Record<string, LocaleData>>;
+}
+
+export interface SelectionOptions extends LocaleOptions {
   /** Explicit selection works on any device, including demos on desktop. */
   readonly guideId?: string;
   readonly guides?: readonly InstallGuide[];
 }
+
+/** What localization did. `fallback` is true when the content is not in the requested language. */
+export interface LocaleResolution {
+  /** The first requested tag, canonicalized; null when no locale was requested. */
+  readonly requested: string | null;
+  readonly resolved: string;
+  readonly fallback: boolean;
+}
+
+export type ReasonCode =
+  | "guide-chosen" | "guide-not-found" | "needs-environment" | "installed" | "no-guide-for-browser"
+  | "documentation-only" | "version-hidden" | "no-guide-for-version" | "os-hidden" | "os-ambiguous"
+  | "newer-version" | "browser-version" | "version-match";
 
 export interface GuideSelection {
   readonly status: "matched" | "unsupported" | "needs-selection" | "installed";
   readonly guide: InstallGuide | null;
   readonly environment: Environment | null;
   readonly match: "manual" | "observed" | "browser-version" | "newer-version" | "documentation" | null;
+  /** English, for developers and logs. Show `reasonCode` through your own strings instead. */
   readonly reason: string;
+  /** Present only when `locale` was passed, so a call without it returns exactly what 0.1.0 did. */
+  readonly reasonCode?: ReasonCode;
+  /** Present only when `locale` was passed. */
+  readonly locale?: LocaleResolution;
 }
