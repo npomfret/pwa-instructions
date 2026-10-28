@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "platform": {
+    "name": "ios",
+    "majorVersion": 27
+  },
+  "browser": {
+    "name": "safari",
+    "majorVersion": 27
+  },
+  "device": "iphone",
+  "versionEvidence": {
+    "type": "user-reported",
+    "note": "Owner identified iOS 27 and Safari 27 during setup. Only major versions are recorded; these tags do not establish compatibility with other versions."
+  },
+  "source": "user-supplied screenshots",
+  "images": [
+    {
+      "file": "01-page-menu.jpg",
+      "order": 1,
+      "action": "Open the Page Menu",
+      "controlOwner": "browser"
+    },
+    {
+      "file": "02-share.jpg",
+      "order": 2,
+      "action": "Tap Share",
+      "controlOwner": "browser"
+    },
+    {
+      "file": "03-view-more.jpg",
+      "order": 3,
+      "action": "Tap View More",
+      "controlOwner": "os"
+    },
+    {
+      "file": "04-add-to-home-screen.jpg",
+      "order": 4,
+      "action": "Tap Add to Home Screen",
+      "controlOwner": "os"
+    }
+  ],
+  "coverage": "Screenshots stop at Add to Home Screen; the final confirmation screen is not included.",
+  "privacy": "Original screenshots include site branding and share-sheet contacts. Retained as source references at the owner\u2019s request; use generic redrawings for reusable assets."
+}
