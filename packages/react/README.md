@@ -36,3 +36,5 @@ MIT licensed. Source: https://github.com/npomfret/pwa-instructions
 Pass `siteUrl="https://your-domain.com/path"` to `InstallInstructions` or `InstallGuideView` in React. The SVG displays only `your-domain.com`; it does not navigate there. Leaving the option empty uses `example.com`. Invalid URLs also use the default. Long domains are fitted inside the address bar.
 
 Framework-independent code can use `getIllustration(guide, { siteUrl })` from the core. It returns a new illustration with the personalized `src` and alternative text. The shared guide remains unchanged. This option customizes bundled SVGs; an explicit `illustrationSrc` takes precedence. Colour customization is not implemented.
+
+The guide heading identifies the device, OS and browser using its reference versions, for example “Illustrated guide: iPhone · iOS 27 · Safari 27”. The action title remains inside the standalone SVG.

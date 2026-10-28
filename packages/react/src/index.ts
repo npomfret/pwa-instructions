@@ -27,12 +27,22 @@ function stepTitle(step: InstallStep): ReactNode {
     step.title.slice(offset + step.uiLabel.length)];
 }
 
+function guideContext(guide: InstallGuide): string {
+  const device = { iphone: "iPhone", ipad: "iPad", android: "Android device",
+    desktop: guide.platform === "macos" ? "Mac" : "Desktop", unknown: "Device" }[guide.device];
+  const platform = { ios: "iOS", macos: "macOS", android: "Android", windows: "Windows", unknown: "OS" }[guide.platform];
+  const browser = { safari: "Safari", chrome: "Chrome", brave: "Brave", firefox: "Firefox",
+    edge: "Edge", opera: "Opera", samsung: "Samsung Internet", unknown: "Browser" }[guide.browser];
+  const browserVersion = guide.versions.minimumBrowserVersion ?? guide.versions.observedBrowser;
+  return `${device} · ${platform} ${guide.versions.observedOS} · ${browser} ${browserVersion}`;
+}
+
 /** Present a known guide with no browser detection or imposed styles. */
 export function InstallGuideView({ guide, presentation = "both", className, illustrationSrc, siteUrl }: InstallGuideViewProps) {
   const headingId = useId();
   const illustration = illustrationSrc ? guide.illustration : getIllustration(guide, { siteUrl });
   return h("section", { className, "aria-labelledby": headingId, "data-pwa-guide": guide.id },
-    h("h2", { id: headingId }, presentation === "text" ? guide.title : `Illustrated guide: ${guide.title}`),
+    h("h2", { id: headingId }, `${presentation === "text" ? "Text instructions" : "Illustrated guide"}: ${guideContext(guide)}`),
     presentation !== "text" && h("img", {
       src: illustrationSrc ?? illustration.src, alt: illustration.alt,
       width: guide.illustration.width, height: guide.illustration.height,
