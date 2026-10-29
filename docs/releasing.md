@@ -21,3 +21,12 @@ It asks you to confirm each step. Then confirm the registry version with `npm vi
 Published versions cannot be replaced with different contents. Make a new version for later changes. Package files are explicitly limited to compiled JavaScript, declarations, guide assets, the README and the licence; reference screenshots, build caches and the release configuration are excluded.
 
 See npm's [publishing guide](https://docs.npmjs.com/creating-and-publishing-unscoped-public-packages/) and [authentication requirements](https://docs.npmjs.com/requiring-2fa-for-package-publishing-and-settings-modification/).
+
+## Changes since 0.1.0
+
+Take the next release notes from this list, then clear it.
+
+- **React:** `InstallInstructions` and `InstallGuideView` no longer render the `<h2>` ("Illustrated guide: ...", "Text instructions: ...", "Documentation draft") or its `aria-labelledby`, nor the `<p>` with `guide.completion`. They render the image and the numbered steps. Add your own heading and closing text; `guide.completion` and `guide.title` are still on the guide. Documentation-only guides are identified by `selection.match === "documentation"` and `guide.versions.documentationOnly`.
+- **`instructions.md`:** now the title, the intro and the numbered steps only. The completion sentence and the lines linking `install.svg` and `metadata.json` are gone. `completion` stays in the guide data and `metadata.json`.
+- **SVG header hidden by default:** the heading and subtitle at the top of each SVG are not drawn in `install.svg`, `dist/assets`, the bundled guides or the locale modules. The `viewBox` now starts at `y=72` and `illustration.width`/`height` describe the cropped image (72 shorter). Opt back in with `getIllustration(guide, { header: true })` or `illustrationHeader` on the components; the header text is carried as `illustration.header`.
+- **Interface strings:** `LocaleUI` is now `{ website }`. `textInstructions`, `illustratedGuide`, `documentationDraft`, `heading`, `devices`, `platforms` and `browsers` are removed, as are the Markdown template strings in the locale data.

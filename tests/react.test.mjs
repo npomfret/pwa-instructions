@@ -11,9 +11,8 @@ test('React renders the illustration and all numbered text steps', () => {
   const html = renderToStaticMarkup(h(InstallInstructions, { guideId: id }));
   assert.equal((html.match(/<li>/g) ?? []).length, 4);
   assert.ok(html.includes('<img'));
-  assert.ok(html.includes('aria-labelledby='));
   assert.ok(html.includes('alt="Four steps:'));
-  assert.ok(html.includes('width="400" height="2060"'));
+  assert.ok(html.includes('width="400" height="1988"'));
 });
 
 test('text and image presentations work independently', () => {
@@ -23,7 +22,7 @@ test('text and image presentations work independently', () => {
   const image = renderToStaticMarkup(h(InstallInstructions, { guideId: id, presentation: 'image' }));
   assert.ok(image.includes('<img'));
   assert.ok(!image.includes('<ol>'));
-  assert.ok(image.includes('confirmation screen'));
+  assert.ok(!image.includes('confirmation screen'));
 });
 
 test('the host can override the image URL and style the wrapper', () => {
@@ -85,15 +84,25 @@ test('the optional siteUrl prop personalizes the bundled image without requiring
   assert.ok(!other.includes('crosswithyou.app'));
 });
 
-test('documentation drafts identify their evidence without invented version labels', () => {
-  for (const guide of guides.filter(guide => guide.versions.documentationOnly)) {
-    const html = renderToStaticMarkup(h(InstallGuideView, { guide }));
-    const dom = new JSDOM(html);
-    const heading = dom.window.document.querySelector('h2').textContent;
-    assert.ok(heading.includes('Documentation draft'));
-    assert.ok(!heading.includes('null'));
-    assert.ok(!heading.includes('undefined'));
-    assert.equal(dom.window.document.querySelectorAll('li').length, guide.steps.length);
-    dom.window.close();
+test('the components render only the image and the steps: no heading, no completion, no aria-labelledby', () => {
+  for (const guide of guides) {
+    for (const html of [renderToStaticMarkup(h(InstallGuideView, { guide })), renderToStaticMarkup(h(InstallInstructions, { guideId: guide.id }))]) {
+      const section = new JSDOM(html).window.document.querySelector('section');
+      assert.equal(section.getAttribute('data-pwa-guide'), guide.id);
+      assert.equal(section.querySelector('h2'), null, guide.id);
+      assert.equal(section.querySelector('p'), null, guide.id);
+      assert.equal(section.hasAttribute('aria-labelledby'), false);
+      assert.deepEqual(Array.from(section.children).map(node => node.tagName), ['IMG', 'OL']);
+      assert.ok(!html.includes(guide.completion));
+      assert.equal(section.querySelectorAll('li').length, guide.steps.length);
+    }
+  }
+});
+
+test('documentation drafts are identified by the data, not by a heading', () => {
+  const drafts = guides.filter(guide => guide.versions.documentationOnly);
+  assert.ok(drafts.length > 0);
+  for (const guide of drafts) {
+    assert.ok(!renderToStaticMarkup(h(InstallGuideView, { guide })).includes('Documentation draft'));
   }
 });

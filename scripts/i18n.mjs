@@ -11,7 +11,6 @@ import { estimateWidth, fitText, fontOf as fontClass } from '../packages/pwa-ins
  * control shares one translation. A guide lists the surfaces whose controls appear in its own artwork as
  * `labelSurfaces` in catalog.json, and `{label:id}` and `data-i18n="label:id"` resolve against that list only.
  * A reused step resolves in its source guide's surfaces, because its text and panel were authored there.
- * The `document` surface holds the Markdown template strings and is available to every guide.
  */
 
 export const DEFAULT_LOCALE = 'en';
@@ -69,8 +68,11 @@ export function pseudoLocalize(text) {
 
 // --- Labels ----------------------------------------------------------------------------------------------------
 
-/** Resolve label ids for one guide: `surfaces` are searched together, and an id found twice is an error. */
-export function labelResolver(labels, surfaces, tag) {
+/**
+ * Resolve label ids for one guide: `surfaces` are searched together, and an id found twice is an error. A label with no
+ * text for `tag` is an error too, unless `lenient` is set, which shows its English text; that is for the demo's draft locales.
+ */
+export function labelResolver(labels, surfaces, tag, { lenient = false } = {}) {
   const index = new Map();
   for (const surface of surfaces) {
     const entries = labels.get(surface);
@@ -86,6 +88,7 @@ export function labelResolver(labels, surfaces, tag) {
     if (tag === DEFAULT_LOCALE || found.entry[tag] !== undefined) return found.entry[tag];
     if (LABEL_VARIANTS[tag]) return found.entry[LABEL_VARIANTS[tag]];
     if (tag === PSEUDO_LOCALE) return pseudoLocalize(found.entry.en);
+    if (lenient) return found.entry.en;
     throw new Error(`Label ${id} (${found.surface}) has no ${tag} text`);
   };
   const fill = text => text.replace(PLACEHOLDER, (_, id) => get(id));
@@ -99,19 +102,12 @@ export function labelResolver(labels, surfaces, tag) {
 // --- Interface strings -----------------------------------------------------------------------------------------
 
 /**
- * The strings the React view and getIllustration draw around a guide, from the `ui` surface: headings, the alt-text
- * "Website:" sentence, and device, platform and browser names. Shaped as the `LocaleUI` type in src/core/types.ts.
+ * The strings getIllustration draws around a guide, from the `ui` surface: the alt-text "Website:" sentence. Shaped as
+ * the `LocaleUI` type in src/core/types.ts.
  */
 export function localeUI(labels, tag) {
   const { get } = labelResolver(labels, ['ui'], tag);
-  const group = (prefix, names) => Object.fromEntries(names.map(name => [name, get(`${prefix}-${name}`)]));
-  return {
-    textInstructions: get('text-instructions'), illustratedGuide: get('illustrated-guide'), documentationDraft: get('documentation-draft'),
-    heading: get('heading'), website: get('website'),
-    devices: group('device', ['iphone', 'ipad', 'android', 'desktop-mac', 'desktop', 'unknown']),
-    platforms: group('platform', ['ios', 'macos', 'android', 'windows', 'unknown']),
-    browsers: group('browser', ['safari', 'chrome', 'brave', 'firefox', 'edge', 'opera', 'samsung', 'unknown']),
-  };
+  return { website: get('website') };
 }
 
 // --- Guide prose -----------------------------------------------------------------------------------------------

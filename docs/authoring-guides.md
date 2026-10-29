@@ -1,10 +1,10 @@
 # Authoring installation guides
 
-Keep one folder per distinct layout under `guides/<platform>/<browser>/<device>/layout-N/`. The folder contains `metadata.json`, the artwork source (`install.source.svg`, or `artwork.svg` for composed guides), the generated `install.svg` and readable `instructions.md`. **Edit `install.source.svg`, not `install.svg`:** the build writes `install.svg` from it, byte-identical to the source in English. Keep exact captured versions in reference metadata under `source-images/`; layout names stay independent of browser releases.
+Keep one folder per distinct layout under `guides/<platform>/<browser>/<device>/layout-N/`. The folder contains `metadata.json`, the artwork source (`install.source.svg`, or `artwork.svg` for composed guides), the generated `install.svg` and readable `instructions.md`. **Edit `install.source.svg`, not `install.svg`:** the build writes `install.svg` from it, without the heading and subtitle (see below). Keep exact captured versions in reference metadata under `source-images/`; layout names stay independent of browser releases.
 
-The metadata is the source of structured instruction text. `npm run build:packages` regenerates every Markdown guide. Edit the metadata's step descriptions rather than the generated Markdown.
+The metadata is the source of structured instruction text. `npm run build:packages` regenerates every Markdown guide. Edit the metadata's step descriptions rather than the generated Markdown. The Markdown is the title, the intro where there is one, and the numbered steps, ending after the last step. The `completion` text is guide data and is not in it, and nor are links to the SVG or `metadata.json`.
 
-The optional `uiLabel` field identifies the clickable label inside a step's plain-text title. For example, `Open the File menu` uses `uiLabel: "File"`. The build italicizes that phrase in the SVG heading and Markdown; React applies the same emphasis to its text heading. Reused steps inherit the label automatically. Menu items drawn inside the browser mockup retain their normal appearance.
+The optional `uiLabel` field identifies the clickable label inside a step's plain-text title. For example, `Open the File menu` uses `uiLabel: "File"`. The build italicizes that phrase in the SVG step title and Markdown; React applies the same emphasis in its step list. Reused steps inherit the label automatically. Menu items drawn inside the browser mockup retain their normal appearance.
 
 ## Reuse
 
@@ -24,6 +24,8 @@ A step can reference another guide instead of copying its text:
 
 Composed guides specify `artworkSource: "artwork.svg"`. This source contains their original panels and placeholders for shared panels. Edit this file rather than the generated `install.svg`. The composer imports referenced artwork and definitions, gives IDs and styles separate names, and updates both visual numbering and textual cross-references. A `transitionBefore` string adds a browser-transition heading before a step, as in Brave's Safari handoff. Give that step a stable `transitionId` too (Brave uses `continue-in-safari`); translations look the heading up by it.
 
+**The header.** Every source SVG keeps its heading and subtitle at the top (`data-i18n="guide:heading"` and `"guide:subtitle"`, drawn at `y=48` and `y=76`), and the first step starts at `y=100`. The build does not publish them: the output SVGs omit those two nodes and crop the `viewBox` to start at `y=72` (`HEADER_CROP` in `scripts/compose-guides.mjs`), which leaves a 28-unit margin above step 1 as at the sides, and `width`, `height` and `illustration.height` are 72 less. The localized markup of the two nodes is stored as `illustration.header` in the guide data and the locale modules, and `getIllustration(guide, { header: true })` puts it back (`restoreHeader` in `src/core/artwork.ts`). Keep new sources to this layout: a heading and subtitle with those two tags, nothing else above `y=72`, and step 1 at `y=100`.
+
 The output remains one independent SVG and one text document. Consumers do not need to resolve references or load extra images. The core's guide data contains the flattened steps. The npm assets also retain metadata and authoring artwork.
 
 Reused artwork must depict the same relevant control and placement. A common OS share sheet can still contain different menu groups. Chrome therefore reuses View More but keeps its own final action panel. Brave reuses all four Safari panels after Open in Safari.
@@ -35,7 +37,7 @@ English stays the source of truth in `metadata.json` and the source SVG. Everyth
 ```text
 guides/<platform>/<browser>/<device>/layout-N/locales/<tag>.json   this guide's own prose for the locale
 labels/<surface>.json                                              browser and OS strings, by label id then locale
-labels/ui.json                                                     interface strings: headings, names, "Website:"
+labels/ui.json                                                     interface strings: "Website:"
 catalog.json                                                       "locales" statuses; "labelSurfaces" per guide
 ```
 
@@ -51,7 +53,7 @@ catalog.json                                                       "locales" sta
 }
 ```
 
-A guide lists the surfaces whose controls appear in its artwork as `labelSurfaces` in `catalog.json`. Label ids resolve in those surfaces only, an id may not appear in two of them, and the `document` surface (the Markdown template strings) is always available. A reused step resolves in its source guide's surfaces.
+A guide lists the surfaces whose controls appear in its artwork as `labelSurfaces` in `catalog.json`. Label ids resolve in those surfaces only, an id may not appear in two of them. A reused step resolves in its source guide's surfaces.
 
 **Label tables.** Each published `pwa-instructions/locales/<tag>` module carries, per guide, a label table: the text in that locale and in English of every label the guide's prose templates (`{label:id}`) and its artwork tags (`data-i18n="label:id"`) use, including the labels of panels reused from another guide. At runtime `browserLocale` fills the page locale's templates from the browser locale's table and swaps the artwork's label nodes, which keep their `data-i18n`, `data-max-width` and `data-lines` in the module's SVG (the SVG written to `dist/assets` stays untagged). A label that is missing from a locale therefore breaks the guide for browsers in that language; rule 3 below covers it. English has its own opt-in `locales/en` module, built from the same tables.
 
@@ -72,7 +74,7 @@ A guide lists the surfaces whose controls appear in its artwork as `labelSurface
 
 Source an `en-US` value from the product's own US text: Chromium's `.grd` or `.grdp` source strings (those are en-US; the en-GB `.xtb` confirms the British `en`), Apple's US support pages and user guides, Microsoft's US docs, or AOSP and Google's US help. If you cannot confirm a label's US text, leave the variant out; never guess. `_src.en` may record where the British value was confirmed (rule 5 does not require it). The English build writes the `en-US` label table into the `locales/en` module, for the guides where at least one label differs.
 
-**Prose.** `locales/<tag>.json` holds `title`, `label`, `completion`, `alt` and, when the English has one, `intro`; `steps` keyed by step `id` with `title` and `description`; `transitions` keyed by `transitionId`; and the SVG's `heading`, `subtitle`, `svgTitle` and `svgDesc`. Use `{label:id}` for a control name and `{step:n}` for a step number, so sentences can be reordered. The build derives each step's `uiLabel` from its title's first `{label:*}`, so the italics survive. A reused step takes its translation from its source guide in the same locale; the reusing guide lists only the steps it authors.
+**Prose.** `locales/<tag>.json` holds `title`, `label`, `completion`, `alt` and, when the English has one, `intro`; `steps` keyed by step `id` with `title` and `description`; `transitions` keyed by `transitionId`; and the SVG's `heading`, `subtitle`, `svgTitle` and `svgDesc`. `heading` and `subtitle` are the opt-in image header; they are still required. Use `{label:id}` for a control name and `{step:n}` for a step number, so sentences can be reordered. The build derives each step's `uiLabel` from its title's first `{label:*}`, so the italics survive. A reused step takes its translation from its source guide in the same locale; the reusing guide lists only the steps it authors.
 
 ```json
 {
@@ -115,11 +117,11 @@ Source an `en-US` value from the product's own US text: Chromium's `.grd` or `.g
 
 | Rule | Checks |
 | --- | --- |
-| 1. Complete text (complete only) | Every guide has `title`, `label`, `completion`, `alt`, `intro` where English has one, a title and description for each step it authors, each `transitions` entry, and the SVG's `guide:*` keys. A reused step must have text in the guide that authors it, followed through any chain of reuse. The locale has every `ui` string. |
+| 1. Complete text (complete only) | Every guide has `title`, `label`, `completion`, `alt`, `intro` where English has one, a title and description for each step it authors, each `transitions` entry, and the SVG's `guide:*` keys. A reused step must have text in the guide that authors it, followed through any chain of reuse. The locale has the `ui` string (`website`). |
 | 2. Placeholders | A translation keeps every `{step:n}` of the English, names the label the English quotes as `uiLabel` (`{label:id}`), and uses only label ids in the guide's `labelSurfaces`. Nothing else in braces is allowed, and a label value keeps the placeholders of its English (`{host}`). |
 | 3. Labels resolve (complete only) | Every label a guide uses has text in the locale itself; there is no fallback to English. This includes the labels drawn in panels reused from another guide, so the locale module's label table is complete. |
 | 4. SVG tags | Every `data-i18n` key in `install.source.svg` and `artwork.svg` has English text (a `label:*` key an English label equal to the node text) and, in a complete locale, a translation. Visible `text`, `title` and `desc` with no tag fail, except digits, the clock, `example.com`, `Safari` (the macOS app menu) and `data-pwa-domain` nodes. |
-| 5. Label sources (complete only) | Each non-English label value has `_src.<tag>` with `method`, `source`, `verified` (a past date) and `version`. English labels and the `ui` and `document` surfaces are exempt: English is the source text, and the others are this package's own strings, not browser strings. An `en-US` value always needs its source, as an error, because it is a claim about what a US browser shows. |
+| 5. Label sources (complete only) | Each non-English label value has `_src.<tag>` with `method`, `source`, `verified` (a past date) and `version`. English labels and the `ui` surface are exempt: English is the source text, and `ui` is this package's own string, not a browser string. An `en-US` value always needs its source, as an error, because it is a claim about what a US browser shows. |
 | 6. Content | No empty strings or `TODO`. A string identical to English is a warning, unless it is a brand name; so is an `en-US` value equal to `en`, which should be left out. |
 | 7. Overflow | The estimated width of each tagged node against its `data-max-width` (times `data-lines`): a warning at 100%, an error at 130% in a complete locale (`OVERFLOW_WARN`, `OVERFLOW_FAIL`). A draft only warns past 130%, because a sourced label cannot be shortened: give it room in the artwork before marking the locale complete. |
 | 8. Catalog agrees with files | A `locales/<tag>.json` or label locale that the catalog does not list is an orphan, except a label-only variant such as `en-US`. A listed locale with no files fails when complete. |

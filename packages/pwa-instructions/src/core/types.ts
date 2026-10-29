@@ -57,8 +57,11 @@ export interface InstallGuide {
     /** Self-contained SVG data URL; override when a site's CSP excludes data images. */
     readonly src: string;
     readonly alt: string;
+    /** Of the image as `src` draws it, without its header. */
     readonly width: number;
     readonly height: number;
+    /** The SVG markup of the artwork's heading and subtitle, which `src` leaves out. `getIllustration(guide, { header: true })` puts it back. */
+    readonly header?: string;
   };
   readonly steps: readonly InstallStep[];
   readonly completion: string;
@@ -93,26 +96,17 @@ export interface LocalizedGuide {
   readonly completion: string;
   readonly text: string;
   /** The SVG keeps `data-i18n="label:id"` on the label nodes, so `browserLocale` can swap their text. */
-  readonly illustration: { readonly src: string; readonly alt: string };
+  readonly illustration: { readonly src: string; readonly alt: string; /** The localized heading and subtitle; see `InstallGuide.illustration.header`. */ readonly header?: string };
   /** The same prose with its placeholders, for an English or localized page shown with another browser language. Absent when no string names a label. */
   readonly templates?: GuideTemplates;
   /** The text of every label the templates and artwork use, by locale tag: this locale's and English. */
   readonly labels?: Readonly<Record<string, Readonly<Record<string, string>>>>;
 }
 
-/** The strings drawn around a guide, per locale: React headings, the illustration's "Website:" alt text, and names. */
+/** The strings getIllustration draws around a guide, per locale. */
 export interface LocaleUI {
-  readonly textInstructions: string;
-  readonly illustratedGuide: string;
-  readonly documentationDraft: string;
-  /** "{kind}: {context}": the heading template. `kind` is textInstructions or illustratedGuide. */
-  readonly heading: string;
   /** "Website: {host}.": appended to the illustration alt text when a site URL is shown. */
   readonly website: string;
-  /** Keyed by Device, with `desktop-mac` for a desktop Mac. */
-  readonly devices: Readonly<Record<Device | "desktop-mac", string>>;
-  readonly platforms: Readonly<Record<Platform, string>>;
-  readonly browsers: Readonly<Record<Browser, string>>;
 }
 
 /** A locale's data: what a `pwa-instructions/locales/<tag>` module exports by default. */

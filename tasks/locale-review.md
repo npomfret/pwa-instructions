@@ -9,7 +9,7 @@ Eight draft locales are in (es, fr, de, pt-BR, it, ja, ko, zh-Hans). None is com
 3. Whether right-to-left locales (`ar`, `he`) are in scope; their mockups would need mirroring.
 4. Who does the per-locale visual review of the artwork before a locale is marked complete. The overflow check is an estimate.
 
-Labels counted below are the 61 browser and OS labels in `labels/*.json` other than `ui` and `document` (all eight locales have all 24 `ui` and 3 `document` strings, unsourced by design).
+Labels counted below are the 61 browser and OS labels in `labels/*.json` other than `ui` (all eight locales have the one `ui` string, `website`, unsourced by design).
 
 ## Missing in every locale
 

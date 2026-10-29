@@ -6,9 +6,3 @@ Use the Chrome menu route, or the install icon in the address bar when the websi
 2. **Choose *Cast, save and share*.** In the More menu, choose Cast, save and share to open its submenu.
 3. **Choose *Install*.** In the submenu, click Install followed by the website or app name. Some sites label this Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.
 4. **Click *Install*.** Check the app name and website address, then click Install. Follow any further confirmation prompts.
-
-To reopen an installed app, enter chrome://apps in Chrome’s address bar and select the app.
-
-Illustration: [install.svg](install.svg). The numbered steps match this text.
-
-Version observations and source evidence: [metadata.json](metadata.json).

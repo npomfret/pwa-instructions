@@ -10,6 +10,37 @@ const elements = node => [node, ...Array.from(node.getElementsByTagName('*'))];
 const byId = (doc, id) => Array.from(doc.getElementsByTagName('*')).find(node => node.getAttribute('id') === id);
 const parse = text => new DOMParser().parseFromString(text, 'image/svg+xml');
 
+/**
+ * The band at the top of every source SVG holds the heading and subtitle (`data-i18n="guide:heading"` and
+ * `"guide:subtitle"`). The first step always starts at y=100, so the published artwork is cropped to start at y=72, which
+ * leaves the 28 units of margin the sides have. The header text is carried separately, and the runtime restores it by
+ * moving the viewBox back to y=0 (src/core/artwork.ts).
+ */
+const HEADER_CROP = 72;
+const isHeader = node => /^guide:(heading|subtitle)$/.test(node.getAttribute('data-i18n') ?? '');
+
+/**
+ * Take the header out of `doc` and crop the viewBox and size to match. `strip` removes the build-only attributes first,
+ * so the returned markup is what the runtime inserts as it is. Returns '' and leaves `doc` alone when it has no header.
+ */
+function takeHeader(doc, strip) {
+  const nodes = Array.from(doc.getElementsByTagName('text')).filter(isHeader);
+  strip();
+  if (!nodes.length) return '';
+  const markup = nodes.map(node => new XMLSerializer().serializeToString(node).replace(/ xmlns="[^"]*"/, '')).join('');
+  for (const node of nodes) {
+    // The indentation before the node goes with it, so the SVG has no blank lines where the header was.
+    const before = node.previousSibling;
+    if (before?.nodeType === 3 && !before.data.trim()) node.parentNode.removeChild(before);
+    node.parentNode.removeChild(node);
+  }
+  const svg = doc.documentElement;
+  const [x, y, width, height] = svg.getAttribute('viewBox').split(/\s+/).map(Number);
+  svg.setAttribute('viewBox', `${x} ${y + HEADER_CROP} ${width} ${height - HEADER_CROP}`);
+  svg.setAttribute('height', String(height - HEADER_CROP));
+  return markup;
+}
+
 /** Replace `{step:n}` placeholders with step numbers shifted by `offset`. */
 const renumber = (text, offset, render) => text.replace(/\{step:(\d+)\}/g, (_, n) => render(Number(n) + offset));
 const keepPlaceholder = n => `{step:${n}}`;
@@ -61,13 +92,15 @@ function scope(node, prefix) {
 
 /**
  * Reuse source panels and text, then return each guide's complete, standalone SVG and Markdown in `locale`.
- * Writes nothing. A guide's artwork is `artworkSource`, or `install.source.svg` when it is not composed from panels;
- * `install.svg` is always generated output. Each result also carries what the runtime needs to swap in another locale's
+ * Writes nothing. `lenient` shows English for a label the locale lacks, instead of failing (draft locales for the demo).
+ * A guide's artwork is `artworkSource`, or `install.source.svg` when it is not composed from panels; `install.svg` is
+ * always generated output. Each result also carries what the runtime needs to swap in another locale's
  * control names: `templates` (the prose strings that name a label, with `{label:id}` kept), `labels` (the text of every
  * label the templates and artwork use, by locale tag: this one, English, and any label-only variant that differs from
- * English) and `taggedSvg` (the artwork with its `label:*` tags kept).
+ * English), `taggedSvg` (the artwork with its `label:*` tags kept) and `header` (the markup of the heading and subtitle,
+ * which `svg` and `taggedSvg` leave out).
  */
-export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
+export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE, { lenient = false } = {}) {
   const english = locale === DEFAULT_LOCALE;
   const labels = await loadLabels(root);
   const records = new Map();
@@ -75,7 +108,6 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
     const file = path.join(root, entry.path);
     records.set(entry.id, { data: JSON.parse(await readFile(file, 'utf8')), folder: path.dirname(file), surfaces: entry.labelSurfaces ?? [] });
   }
-  const documentLabels = labelResolver(labels, ['document'], locale);
   const resolved = new Map();
   const visiting = new Set();
   async function resolve(id) {
@@ -88,7 +120,7 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
     const doc = parse(await readFile(path.join(folder, data.artworkSource ?? 'install.source.svg'), 'utf8'));
     const svg = doc.documentElement;
     // Labels, tagged text and prose all resolve here, in this guide's own surfaces, before any panel is imported elsewhere.
-    const resolver = labelResolver(labels, surfaces, locale);
+    const resolver = labelResolver(labels, surfaces, locale, { lenient });
     const lookups = [{ locale: resolver, english: labelResolver(labels, surfaces, DEFAULT_LOCALE),
       variants: Object.fromEntries(Object.keys(LABEL_VARIANTS).map(tag => [tag, labelResolver(labels, surfaces, tag)])) }];
     checkLabelTags(doc, labelResolver(labels, surfaces, DEFAULT_LOCALE), id);
@@ -183,11 +215,12 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
     // The tagged document stays intact for guides that import its panels; the output copies have the markup removed, or
     // for `taggedSvg` only the `label:*` tags kept.
     const serialized = new XMLSerializer().serializeToString(doc);
+    // Neither copy draws the header: `header` is its markup, for the runtime to put back (getIllustration, `header: true`).
     const output = parse(serialized);
-    stripLocalization(output);
+    const header = takeHeader(output, () => stripLocalization(output));
     const svgText = new XMLSerializer().serializeToString(output).trimEnd() + '\n';
     const tagged = parse(serialized);
-    stripLocalization(tagged, { keepLabels: true });
+    takeHeader(tagged, () => stripLocalization(tagged, { keepLabels: true }));
     const taggedSvg = new XMLSerializer().serializeToString(tagged).trimEnd() + '\n';
     const localized = english ? { title: data.title, label: data.label ?? data.title, alt: data.illustration.alt, completion: data.completion.description }
       : { title: strings.title, label: strings.label, alt: strings.alt, completion: resolver.fill(strings.completion) };
@@ -195,11 +228,11 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
     const intro = introSource ? renumber(introSource, 0, plainNumber) : '';
     const templateCompletion = english ? data.completion.description : strings.completion;
     const templateIntro = (english ? data.intro : strings.intro) ?? '';
-    const markdown = (items, titleOf, completion, introText) => `# ${localized.title}\n\n` + (introText ? introText + '\n\n' : '') +
-      items.map((step, index) => `${index + 1}. **${titleOf(step)}.** ${step.description}`).join('\n') +
-      `\n\n${completion}\n\n${documentLabels.get('illustration')} [${data.illustration.file}](${data.illustration.file}). ${documentLabels.get('steps-match')}\n\n${documentLabels.get('evidence')} [metadata.json](metadata.json).\n`;
-    const text = markdown(steps, markdownTitle, localized.completion, intro);
-    const templateText = markdown(templates, markdownTemplateTitle, templateCompletion, renumber(templateIntro, 0, plainNumber));
+    // The Markdown is the title, the intro and the steps; the completion sentence is data for the consumer to place.
+    const markdown = (items, titleOf, introText) => `# ${localized.title}\n\n` + (introText ? introText + '\n\n' : '') +
+      items.map((step, index) => `${index + 1}. **${titleOf(step)}.** ${step.description}`).join('\n') + '\n';
+    const text = markdown(steps, markdownTitle, intro);
+    const templateText = markdown(templates, markdownTemplateTitle, renumber(templateIntro, 0, plainNumber));
     // Only strings that name a label differ from their template, so only those are kept.
     const named = Object.fromEntries(steps.flatMap((step, index) =>
       templates[index].title !== step.title || templates[index].description !== step.description ? [[step.id, templates[index]]] : []));
@@ -221,7 +254,7 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
         if (ids.some(id => variant[id] !== labelTable[DEFAULT_LOCALE][id])) labelTable[tag] = variant;
       }
     }
-    const result = { ...record, steps, rawSteps, lookups, document: doc, svg: svgText, taggedSvg, text, locale, localized, templates: sparse, labels: labelTable };
+    const result = { ...record, steps, rawSteps, lookups, document: doc, svg: svgText, taggedSvg, header, text, locale, localized, templates: sparse, labels: labelTable };
     visiting.delete(id);
     resolved.set(id, result);
     return result;

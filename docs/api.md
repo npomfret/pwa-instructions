@@ -14,6 +14,8 @@ import { InstallInstructions } from 'pwa-instructions/react';
 />
 ```
 
+The components render the image and the numbered steps, and nothing else: no heading and no closing sentence. Add your own around them, so the page's wording and markup stay yours. `guide.title`, `guide.label` and `guide.completion` (the closing sentence, in the guide's language) are on the guide, which `selectGuide` returns. A guide based on vendor documentation, with versions unverified, is identified in the data: `selection.match === "documentation"` and `guide.versions.documentationOnly === true`.
+
 Automatic selection is the default: **leave `guideId` out**. Detection runs after mounting, so server rendering and initial hydration agree. The component displays the fallback while detection is pending or no guide is selected. It displays instructions; it does not install the app or open a browser's installation prompt.
 
 ### `InstallInstructions` props
@@ -24,21 +26,22 @@ All props are optional.
 | --- | --- | --- |
 | `guideId` | Omitted | Automatically detect and select a guide. Supply a real guide ID, such as `ios-safari-iphone-layout-1`, to force that guide on any device. There is no special `"auto"` ID. An explicit ID takes precedence over detection and `environment`. |
 | `siteUrl` | `example.com` | Display your domain in the bundled SVG. Accepts an HTTP(S) URL or bare domain. Displays the host, including a port when present, and omits credentials, paths, queries and fragments. Blank or invalid input uses the default. |
-| `presentation` | `"both"` | `"both"`: SVG and numbered text. `"image"`: SVG. `"text"`: numbered text. All three keep the guide heading and completion note. |
+| `presentation` | `"both"` | `"both"`: SVG and numbered text. `"image"`: SVG. `"text"`: numbered text. |
 | `fallback` | `null` | A React node, or a function receiving the selection result, rendered when no guide is available. Use the function to distinguish pending selection, unsupported browsers and an app already running in standalone mode. |
 | `environment` | Omitted | Detect in the browser. Supply an `Environment` object to use your own detection, or `null` to disable detection and wait for an explicit `guideId`. |
 | `guides` | Bundled guides | A custom array of `InstallGuide` objects used for automatic and explicit selection. |
-| `locale` | Omitted (English) | A BCP 47 tag, or tags in order of preference. Shows the guide, headings and image in that language when its data is registered; otherwise the whole guide is English. See [Localization](#localization). |
+| `locale` | Omitted (English) | A BCP 47 tag, or tags in order of preference. Shows the guide and image in that language when its data is registered; otherwise the whole guide is English. See [Localization](#localization). |
 | `browserLocale` | Same as `locale` | A tag, or tags in order of preference, for the language of the browser or OS interface. It decides the control names (`uiLabel`, the menu items quoted in the text, the labels drawn in the artwork); `locale` still decides the prose. Pass `detectUILocale()` yourself; it is never read automatically. When it differs from the text's language the section gets `data-pwa-browser-locale`. See [Localization](#localization). |
 | `localeData` | Omitted | Locale data by tag, used with or instead of `registerLocale`. |
 | `className` | Omitted | CSS class on the rendered guide section. Components have no global stylesheet. |
-| `illustrationSrc` | Bundled SVG data URL | Override the image URL, for example when your Content Security Policy requires an image hosted on your own origin. This takes precedence over `siteUrl`; custom images are not personalized. |
+| `illustrationHeader` | `false` | Draw the heading and subtitle ("Add to Home Screen", "iPhone · Safari") at the top of the bundled image, in the guide's language. By default the image starts at the first step. See [The image header](#the-image-header). |
+| `illustrationSrc` | Bundled SVG data URL | Override the image URL, for example when your Content Security Policy requires an image hosted on your own origin. This takes precedence over `siteUrl` and `illustrationHeader`; custom images are not personalized. |
 
 Use the exported `guides` array to build a manual selector. Its items have stable `id` values and readable `label` values. Retain a manual choice where practical because browsers can hide their identity or versions.
 
 ### `InstallGuideView`
 
-Renders a known guide with no detection or selection. Its required `guide` prop is an `InstallGuide` object. It also accepts `presentation`, `siteUrl`, `className`, `illustrationSrc`, `locale`, `browserLocale` and `localeData` with the same defaults and behavior above. An English guide is localized by `locale`; a guide already in another language, such as one returned by `selectGuide` with a locale, is shown as it is.
+Renders a known guide with no detection or selection. Its required `guide` prop is an `InstallGuide` object. It also accepts `presentation`, `siteUrl`, `illustrationHeader`, `className`, `illustrationSrc`, `locale`, `browserLocale` and `localeData` with the same defaults and behavior above. An English guide is localized by `locale`; a guide already in another language, such as one returned by `selectGuide` with a locale, is shown as it is.
 
 When a locale is requested, or the guide is not English, the section carries `data-pwa-locale` (the language of the text shown) and `lang`, which is left off when it equals the page's `<html lang>`. A guide shown in English because the locale is missing also has `data-pwa-locale-fallback="true"`. Without a locale, the markup is the same as in 0.1.0.
 
@@ -51,13 +54,13 @@ Import these functions and data from `pwa-instructions`. They are also re-export
 | `detectBrowserEnvironment()` | Read browser hints and standalone mode. Returns an `Environment`, or `null` outside the browser. Safe to import and call on a server. |
 | `detectEnvironment({ userAgent?, maxTouchPoints?, standalone? })` | Pure detection from supplied hints, useful for server code or your own detection inputs. Omitted hints default to an empty user agent, no touch points and `standalone: false`. |
 | `selectGuide(environment, { guideId?, guides?, locale?, browserLocale?, localeData? } = {})` | Select the appropriate guide. An explicit `guideId` bypasses automatic matching, including the standalone check. An unknown ID returns no guide. With `locale`, the selected guide is localized. |
-| `getIllustration(guide, { siteUrl?, locale?, browserLocale?, localeData? } = {})` | Return the illustration with a customized domain. Returns `{ src, alt, width, height }` without mutating the guide. Externally hosted illustrations are returned unchanged. With `locale`, the artwork and alt text are that locale's. |
+| `getIllustration(guide, { siteUrl?, header?, locale?, browserLocale?, localeData? } = {})` | Return the illustration with a customized domain. Returns `{ src, alt, width, height, header? }` without mutating the guide. Externally hosted illustrations are returned unchanged. With `locale`, the artwork and alt text are that locale's. With `header: true`, the heading and subtitle are drawn, and `height` is the taller image's. |
 | `resolveLocale(requested, available)` | Pick the tag to use. See [Localization](#localization). |
 | `registerLocale(tag, data)` | Make a locale's data available to every call. |
 | `getGuideLocales(guide, localeData?)` | The tags that can serve a guide: `"en"` plus every registered locale with data for it. |
 | `detectUILocale()` | `navigator.languages[0]`, or `undefined` on the server. |
 | `localizeGuide(guide, { locale?, localeData? })` | The localization `selectGuide` applies, for a guide you already hold. Returns `{ guide, locale }`. |
-| `getLocaleUI(locale?, localeData?)` | The interface strings (headings, device, platform and browser names) for a locale. |
+| `getLocaleUI(locale?, localeData?)` | The interface strings for a locale: `{ website }`, the alt-text sentence "Website: {host}." |
 | `guides` | Readonly array of bundled guide data. Use it for your own controls, rendering or explicit selection. |
 
 The automatic selection call is `selectGuide(detectBrowserEnvironment())`. Detection, selection and domain customization make no network requests.
@@ -141,13 +144,18 @@ How it works:
 
 React does not read `detectUILocale()` for you, so server and client output agree. Pass it after mounting, for example `const [browser, setBrowser] = useState(); useEffect(() => setBrowser(detectUILocale()), []);` and `<InstallInstructions locale="es" browserLocale={browser} />`. `detectUILocale()` is a proxy for the browser's interface language, not a guarantee.
 
-`getIllustration` with a `locale` uses that locale's artwork and replaces the English " Website: host." sentence on the alt text with the locale's own wording, so the alt text is not half translated. The React view's headings ("Text instructions", "Illustrated guide", "Documentation draft") and its device, platform and browser names also come from the locale data; without it they are the English defaults.
+`getIllustration` with a `locale` uses that locale's artwork and replaces the English " Website: host." sentence on the alt text with the locale's own wording, so the alt text is not half translated. The components draw no text of their own, so the only interface string is that alt-text sentence, `getLocaleUI(locale).website`.
 
 ### Guide data and assets
 
 Each `InstallGuide` contains its `id`, `title`, `label`, `language`, `platform`, `browser`, `device`, `versions`, `illustration`, `steps`, `completion` and Markdown `text`, plus `localeFallback` and `requestedLocale` when a requested locale was not available, and `browserLanguage`, `browserLocaleFallback` and `requestedBrowserLocale` when a `browserLocale` was applied or could not be. Each step has `id`, `title`, `description`, `illustrationFragment`, and optional `uiLabel` and `optional` fields. `uiLabel` identifies the clickable phrase emphasized in the title.
 
-Recorded version ranges have inclusive `min` and `max` values; `max: null` means no replacement has been recorded. Documentation drafts have `versions.documentationOnly: true`, with `os`, `browser`, `observedOS` and `observedBrowser` set to `null`. Their headings identify them as documentation drafts.
+### The image header
+
+Each bundled SVG used to start with a heading and subtitle band. It is off by default: the SVG, in the guide data, in the locale modules and in `dist/assets`, starts at the first step, with a `viewBox` that begins at `y=72` (`0 72 400 1988`), and `illustration.width` and `height` describe that cropped image. The heading and subtitle are carried beside it as `illustration.header`, ready-made SVG text in the guide's language. `getIllustration(guide, { header: true })` and the `illustrationHeader` prop put them back: the `viewBox` returns to `y=0`, `height` grows by 72, and the text is added to a copy. `illustration.width` and `height` of the guide itself do not change, so use the `getIllustration` result's `height` when you draw the taller image. `header: true` has no effect on an image you host yourself (`illustrationSrc`) or on a guide without `illustration.header`. The raw files in `dist/assets` have no header and there is no with-header variant; use the API when you want it.
+Recorded version ranges have inclusive `min` and `max` values; `max: null` means no replacement has been recorded. Documentation drafts have `versions.documentationOnly: true`, with `os`, `browser`, `observedOS` and `observedBrowser` set to `null`; if you want to label them, do it from that flag or from `selection.match === "documentation"`.
+
+The Markdown `text` is the title, the intro where there is one, and the numbered steps. It ends after the last step; `completion` is separate data.
 
 SVG, Markdown and metadata files also ship under `pwa-instructions/assets/<guide-id>/`. The package files live in `dist/assets/<guide-id>/`; copy an SVG to your own public directory when using `illustrationSrc`. Original reference screenshots are not included in the packages.
 

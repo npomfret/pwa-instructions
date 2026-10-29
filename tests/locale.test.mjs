@@ -175,24 +175,18 @@ test('detectUILocale is safe on the server and reads navigator.languages[0] in a
   }
 });
 
-test('React without a locale renders as 0.1.0: no language markup, English headings', () => {
+test('React without a locale renders as 0.1.0 did, apart from the heading and completion: no language markup', () => {
   const html = renderToStaticMarkup(h(InstallInstructions, { guideId: id }));
   assert.ok(!/lang=|data-pwa-locale/.test(html.replace(/<img[^>]*>/, '')));
-  assert.match(html, /<h2 id="[^"]*">Illustrated guide: iPhone · iOS 27 · Safari 27/);
-  assert.match(renderToStaticMarkup(h(InstallGuideView, { guide, presentation: 'text' })), /<h2 id="[^"]*">Text instructions: /);
-  const draft = guides.find(item => item.versions.documentationOnly);
-  assert.match(renderToStaticMarkup(h(InstallGuideView, { guide: draft })), /<h2 id="[^"]*">Illustrated guide: \w+ · \w+ · Documentation draft/);
 });
 
-test('React renders localized headings, lang, data-pwa-locale and an italic localized label', () => {
+test('React renders localized steps, lang, data-pwa-locale and an italic localized label', () => {
   const html = renderToStaticMarkup(h(InstallInstructions, { guideId: id, locale: 'en-XA', localeData, siteUrl: 'my-app.example', presentation: 'text' }));
   const section = new JSDOM(html).window.document.querySelector('section');
   assert.equal(section.getAttribute('lang'), 'en-XA');
   assert.equal(section.getAttribute('data-pwa-locale'), 'en-XA');
   assert.equal(section.hasAttribute('data-pwa-locale-fallback'), false);
-  assert.equal(section.querySelector('h2').textContent, xa.ui.heading.replace('{kind}', xa.ui.textInstructions)
-    .replace('{context}', `${xa.ui.devices.iphone} · ${xa.ui.platforms.ios} 27 · ${xa.ui.browsers.safari} 27`));
-  assert.ok(!section.querySelector('h2').textContent.includes('Text instructions'));
+  assert.equal(section.querySelector('h2'), null);
   const steps = Array.from(section.querySelectorAll('li'));
   assert.equal(steps.length, guide.steps.length);
   const labelled = xa.guides[id].steps.filter(step => step.uiLabel);
@@ -203,7 +197,6 @@ test('React renders localized headings, lang, data-pwa-locale and an italic loca
     assert.equal(strong.textContent, step.title);
   }
   const illustrated = renderToStaticMarkup(h(InstallInstructions, { guideId: id, locale: 'en-XA', localeData, siteUrl: 'my-app.example' }));
-  assert.ok(illustrated.includes(xa.ui.illustratedGuide));
   assert.ok(illustrated.includes(xa.ui.website.replace('{host}', 'my-app.example')));
 });
 
@@ -213,12 +206,11 @@ test('React marks a fallback guide as English, and InstallGuideView localizes an
   assert.equal(section.getAttribute('lang'), 'en');
   assert.equal(section.getAttribute('data-pwa-locale'), 'en');
   assert.equal(section.getAttribute('data-pwa-locale-fallback'), 'true');
-  assert.ok(section.querySelector('h2').textContent.startsWith('Text instructions: '));
   const view = renderToStaticMarkup(h(InstallGuideView, { guide, locale: 'en-XA', localeData, presentation: 'text' }));
-  assert.ok(view.includes('data-pwa-locale="en-XA"') && view.includes(xa.guides[id].completion));
-  // A guide that is already localized is shown as it is, with the heading strings of its own language.
+  assert.ok(view.includes('data-pwa-locale="en-XA"') && !view.includes(xa.guides[id].completion));
+  // A guide that is already localized is shown as it is.
   const localized = selectGuide(null, { guideId: id, locale: 'en-XA', localeData }).guide;
-  assert.ok(renderToStaticMarkup(h(InstallGuideView, { guide: localized, localeData })).includes(xa.ui.illustratedGuide));
+  assert.ok(renderToStaticMarkup(h(InstallGuideView, { guide: localized, localeData })).includes('data-pwa-locale="en-XA"'));
   // On the server nothing is detected, and the fallback still receives the selection with its locale.
   assert.ok(renderToString(h(InstallInstructions, { locale: 'en-XA', localeData, fallback: selection => h('p', null, selection.locale.resolved) })).includes('<p>en-XA</p>'));
 });

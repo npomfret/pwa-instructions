@@ -19,4 +19,6 @@ The page contains preview controls, the rendered guide, and React/core code snip
 
 The dropdown contains only the eight concrete guides. Browser detection selects the initial option; if no version-specific match is available, the demo previews the guide for that browser/device or falls back to the first guide. This preview choice does not change the core selector's compatibility rules.
 
-Android and Windows preview headings identify their documentation-only status. They use current vendor menu labels without displaying unverified version numbers.
+The component renders only the image and the steps, so the demo adds the guide title above it and the completion sentence below it from the guide data. Android and Windows guides use current vendor menu labels without displaying unverified version numbers; they are documentation-only (`guide.versions.documentationOnly`).
+
+The page-language and browser-language pickers (`locale` and `browserLocale`) list English, the en-US label variant, the eight draft locales and the en-XA pseudo-locale. Every language except English is an unreviewed draft, and the demo says so. Draft and en-XA modules are not published: `npm run build:packages` writes them to `examples/react/src/generated/` (gitignored) and the demo loads them lazily. A label a draft lacks appears in English there. The checkbox turns on `illustrationHeader`.

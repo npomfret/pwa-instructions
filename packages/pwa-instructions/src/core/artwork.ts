@@ -69,3 +69,21 @@ export function substituteLabelsInSource(src: string, labels: (id: string) => st
   if (!src.startsWith(PREFIX)) return src;
   return PREFIX + encodeURIComponent(substituteLabels(decodeURIComponent(src.slice(PREFIX.length)), labels));
 }
+
+const SVG_TAG = /<svg\b[^>]*>/;
+const VIEW_BOX = /\sviewBox="(-?[\d.]+) (-?[\d.]+) ([\d.]+) ([\d.]+)"/;
+
+/**
+ * Put the heading and subtitle back into a published SVG, which starts below them: the viewBox moves up to y=0 and the
+ * height grows by the same amount, and `header` (the markup the build kept) is drawn last. `height` is the new height;
+ * null when the SVG has no viewBox to move.
+ */
+export function restoreHeader(svg: string, header: string): { svg: string; height: number } | null {
+  const tag = SVG_TAG.exec(svg)?.[0];
+  const box = tag === undefined ? null : VIEW_BOX.exec(tag);
+  if (tag === undefined || !box) return null;
+  const [, x, y, width, height] = box;
+  const grown = Number(height) + Number(y);
+  const opening = tag.replace(VIEW_BOX, ` viewBox="${x} 0 ${width} ${grown}"`).replace(/(\sheight=")[\d.]+"/, `$1${grown}"`);
+  return { svg: svg.replace(tag, () => opening).replace(/<\/svg>\s*$/, () => `${header}</svg>\n`), height: grown };
+}

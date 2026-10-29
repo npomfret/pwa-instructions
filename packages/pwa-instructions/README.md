@@ -20,7 +20,7 @@ import { InstallInstructions } from 'pwa-instructions/react';
 />
 ```
 
-Leave `guideId` out for automatic browser selection. Supply a guide ID to choose explicitly. `presentation` accepts `"both"`, `"image"` or `"text"`. The optional `siteUrl` displays your domain in the SVG; it defaults to `example.com`.
+Leave `guideId` out for automatic browser selection. Supply a guide ID to choose explicitly. `presentation` accepts `"both"`, `"image"` or `"text"`. The optional `siteUrl` displays your domain in the SVG; it defaults to `example.com`. The component renders only the image and the numbered steps; add your own heading and closing text (`guide.completion`). `illustrationHeader` (and `getIllustration(guide, { header: true })`) draws the heading and subtitle in the image, which are hidden by default.
 
 The component displays instructions and does not initiate installation. Detection runs after mounting and supports server rendering. Components have no global stylesheet; use `className` to style the guide section.
 

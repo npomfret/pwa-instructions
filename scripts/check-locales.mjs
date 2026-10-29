@@ -37,10 +37,10 @@ export const OVERFLOW_FAIL = 1.3;
 /**
  * Rule 5 applies to labels a browser or OS shows. English labels are exempt: they are the source strings, captured once
  * from the screenshots under source-images/ and checked against the artwork by checkLabelTags, so no per-label record
- * exists to demand. The `ui` and `document` surfaces are this package's own interface and template text, not browser
- * strings, so they have no browser to source them from either.
+ * exists to demand. The `ui` surface is this package's own interface text, not browser
+ * strings, so it has no browser to source it from either.
  */
-const UNSOURCED_SURFACES = new Set(['ui', 'document']);
+const UNSOURCED_SURFACES = new Set(['ui']);
 /** The fields a `_src` record needs: how the text was obtained, where (URL or capture reference), when, and on what. */
 const SOURCE_FIELDS = ['method', 'source', 'verified', 'version'];
 /** Product names that are never translated, so being identical to English is expected (rule 6). */

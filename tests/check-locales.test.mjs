@@ -36,7 +36,7 @@ async function withFixture(t, { status = 'complete', mutate } = {}) {
   for (const [surface, entries] of labels) {
     for (const entry of Object.values(entries)) {
       entry.es = translate(entry.en);
-      if (!['ui', 'document'].includes(surface)) entry._src = { ...entry._src, es: SOURCE };
+      if (surface !== 'ui') entry._src = { ...entry._src, es: SOURCE };
     }
     await writeJSON(path.join(dir, 'labels', `${surface}.json`), entries);
   }
@@ -78,12 +78,12 @@ test('a missing step fails, and a missing Safari step also fails the Brave guide
 test('a missing top-level string, transition or ui string fails a complete locale', async t => {
   const dir = await withFixture(t, { mutate: async dir => {
     await edit(path.join(dir, BRAVE, 'locales/es.json'), locale => { delete locale.completion; delete locale.transitions['continue-in-safari']; });
-    await edit(path.join(dir, 'labels/ui.json'), ui => { delete ui.heading.es; });
+    await edit(path.join(dir, 'labels/ui.json'), ui => { delete ui.website.es; });
   } });
   const { errors } = await checkLocales(dir);
   assert.ok(has(errors, `${BRAVE}/locales/es.json`, 'completion', 'is missing'));
   assert.ok(has(errors, 'transitions.continue-in-safari', 'is missing'));
-  assert.ok(has(errors, 'labels/ui.json', 'heading', '[es]', 'has no ui string'));
+  assert.ok(has(errors, 'labels/ui.json', 'website', '[es]', 'has no ui string'));
 });
 
 test('a label drawn in artwork reused from another guide must resolve for a complete locale', async t => {
@@ -208,7 +208,7 @@ test('empty strings and TODO markers fail; a string identical to English only wa
 });
 
 test('brand names identical to English do not warn', async t => {
-  const dir = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ui.json'), ui => { ui['browser-safari'].es = 'Safari'; }) });
+  const dir = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ui.json'), ui => { ui['browser-safari'] = Object.fromEntries(Object.keys(ui.website).map(tag => [tag, 'Safari'])); }) });
   assert.ok(!has((await checkLocales(dir)).warnings, 'browser-safari'));
 });
 

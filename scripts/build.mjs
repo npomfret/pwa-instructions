@@ -23,10 +23,11 @@ const catalog = JSON.parse(await readFile(path.join(root, "catalog.json"), "utf8
 const materialized = await composeGuides(root, catalog);
 const guides = [];
 for (const entry of catalog.guides) {
-  const { data, folder, svg, text, steps } = materialized.get(entry.id);
+  const { data, folder, svg, header, text, steps } = materialized.get(entry.id);
   await writeChanged(path.join(folder, data.illustration.file), svg);
   await writeChanged(path.join(folder, data.textInstructions), text);
-  const size = svg.match(/viewBox="0 0 (\d+) (\d+)"/);
+  // The published SVG has no header, so its viewBox starts below it; width and height are those of the cropped artwork.
+  const size = svg.match(/viewBox="0 \d+ (\d+) (\d+)"/);
   if (!size) throw new Error(`Missing SVG viewBox: ${entry.id}`);
   const observed = data.compatibility.observedMajorVersions;
   const documentationOnly = data.compatibility.status === "documentation-only";
@@ -47,7 +48,7 @@ for (const entry of catalog.guides) {
       observedBrowserVersion: data.compatibility.observedVersions?.[data.browser],
       requiresKnownOSVersion: data.compatibility.requiresKnownOSVersion },
     illustration: { src: `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`,
-      alt: data.illustration.alt, width: Number(size[1]), height: Number(size[2]) },
+      alt: data.illustration.alt, width: Number(size[1]), height: Number(size[2]), ...(header ? { header } : {}) },
     steps, completion: data.completion.description, text,
   });
 }
@@ -58,7 +59,11 @@ await writeFile(path.join(generated, "guides.ts"),
 // Only complete locales are built for publishing. Draft locales (and the en-XA pseudo-locale) are composed by tests alone.
 const locales = new Map();
 for (const tag of publishedLocales(catalog)) locales.set(tag, await composeGuides(root, catalog, tag));
-await writeLocaleOutputs({ catalog, locales, english: materialized, generated, assets: path.join(packageRoot, "dist/assets"), labels: await loadLabels(root) });
+// The demo also lists the draft locales and en-XA. They are written under the example (gitignored), never into the package.
+const demoLocales = new Map();
+for (const tag of Object.keys(catalog.locales ?? {})) if (!locales.has(tag)) demoLocales.set(tag, await composeGuides(root, catalog, tag, { lenient: true }));
+await writeLocaleOutputs({ catalog, locales, english: materialized, generated, assets: path.join(packageRoot, "dist/assets"), labels: await loadLabels(root),
+  demo: { folder: path.join(root, "examples/react/src/generated/locales"), locales: demoLocales } });
 execFileSync(process.execPath, [path.join(root, "node_modules/typescript/bin/tsc"), "-b", "packages/pwa-instructions"], { cwd: root, stdio: "inherit" });
 for (const entry of catalog.guides) {
   const folder = path.dirname(path.join(root, entry.path));

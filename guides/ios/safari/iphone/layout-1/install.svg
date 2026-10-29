@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="400" height="2060" viewBox="0 0 400 2060" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="1988" viewBox="0 72 400 1988" role="img" aria-labelledby="title description">
   <title id="title">Add to Home Screen in iPhone Safari: four steps</title>
   <desc id="description">Four numbered steps for iPhone Safari: open the Page Menu, tap Share, tap View More, then tap Add to Home Screen. Blue outlines identify the controls to tap. Full text instructions are supplied separately.</desc>
   <style>
@@ -28,8 +28,6 @@
     </g>
   </defs>
   <rect width="400" height="2060" fill="white"/>
-  <text x="28" y="48" class="heading">Add to Home Screen</text>
-  <text x="28" y="76" class="subtitle">iPhone · Safari</text>
   <g id="step-1" transform="translate(28 100)" role="group" aria-labelledby="step-1-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb"/>
     <text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">1</text>

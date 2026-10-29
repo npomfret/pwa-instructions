@@ -1,13 +1,46 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import type { ReactNode } from "react";
 import { createRoot } from "react-dom/client";
-import { detectBrowserEnvironment, getGuideLocales, guides, selectGuide } from "pwa-instructions";
-// To offer a language, import its data and register it before rendering:
-//   import es from "pwa-instructions/locales/es";
-//   registerLocale("es", es);
-// No locale is published yet, and the en-XA test locale is deliberately not shipped, so this picker lists English only.
+import { detectBrowserEnvironment, guides, selectGuide } from "pwa-instructions";
+import type { LocaleData } from "pwa-instructions";
 import { InstallInstructions } from "pwa-instructions/react";
 import type { Presentation } from "pwa-instructions/react";
 import "./style.css";
+
+// Published locales are imported from "pwa-instructions/locales/<tag>". No locale is published yet except the English
+// module, which carries the en-US labels; the drafts and en-XA below are generated for this demo only (npm run build:packages
+// writes them to src/generated/, which is not committed or published).
+type Loader = () => Promise<{ default: LocaleData }>;
+const drafts = import.meta.glob<{ default: LocaleData }>("./generated/locales/*.ts");
+const loaders: Record<string, Loader> = { en: () => import("pwa-instructions/locales/en") };
+for (const [file, load] of Object.entries(drafts)) loaders[/([^/]+)\.ts$/.exec(file)![1]] = load;
+
+const TAGS = ["en", "en-US", "es", "fr", "de", "pt-BR", "it", "ja", "ko", "zh-Hans", "en-XA"];
+const SPECIAL: Record<string, string> = { en: "English (British, the default)", "en-US": "English (US labels)", "en-XA": "Pseudo-locale (en-XA, for testing)" };
+const nameOf = (tag: string) => SPECIAL[tag] ?? `${new Intl.DisplayNames(["en"], { type: "language" }).of(tag) ?? tag} (draft)`;
+
+/** Locale data for the tags in use. English is always loaded: it carries the en-US labels and the templates for browserLocale. */
+function useLocaleData(tags: string[]): Record<string, LocaleData> {
+  const [data, setData] = useState<Record<string, LocaleData>>({});
+  const key = tags.join(",");
+  useEffect(() => {
+    for (const tag of key.split(",")) {
+      if (data[tag] || !loaders[tag]) continue;
+      void loaders[tag]().then(module => setData(current => ({ ...current, [tag]: module.default })));
+    }
+  }, [key, data]);
+  return data;
+}
+
+function LocaleSelect({ id, label, value, onChange, children }: { id: string; label: string; value: string; onChange: (value: string) => void; children?: ReactNode }) {
+  return <>
+    <label className="field-label site-url-label" htmlFor={id}>{label}</label>
+    <select id={id} value={value} onChange={event => onChange(event.target.value)}>
+      {children}
+      {TAGS.map(tag => <option key={tag} value={tag}>{nameOf(tag)}</option>)}
+    </select>
+  </>;
+}
 
 function App() {
   const [guideId, setGuideId] = useState(() => {
@@ -19,7 +52,13 @@ function App() {
   });
   const [siteUrl, setSiteUrl] = useState("https://your-domain.com");
   const [locale, setLocale] = useState("en");
-  const locales = getGuideLocales(guides.find(guide => guide.id === guideId) ?? guides[0]);
+  // "" means the browser's language is the page's.
+  const [browser, setBrowser] = useState("");
+  const [header, setHeader] = useState(false);
+  const localeData = useLocaleData(["en", locale, browser].filter(Boolean));
+  const browserLocale = browser || undefined;
+  // The component renders the image and the steps; this page adds its own title and closing sentence from the guide data.
+  const guide = selectGuide(null, { guideId, locale, browserLocale, localeData }).guide;
   const [presentation, setPresentation] = useState<Presentation>("both");
   const componentSnippet = [
     'import { InstallInstructions } from "pwa-instructions/react";',
@@ -28,6 +67,8 @@ function App() {
     ...(guideId ? [`  guideId={${JSON.stringify(guideId)}}`] : []),
     `  siteUrl={${JSON.stringify(siteUrl)}}`,
     ...(locale === "en" ? [] : [`  locale=${JSON.stringify(locale)}`]),
+    ...(browserLocale ? [`  browserLocale=${JSON.stringify(browserLocale)}`] : []),
+    ...(header ? ["  illustrationHeader"] : []),
     `  presentation="${presentation}"`,
     '  fallback={<p>No instructions for this browser yet.</p>}',
     '/>',
@@ -40,6 +81,7 @@ function App() {
     'if (selection.guide) {',
     '  const illustration = getIllustration(selection.guide, {',
     `    siteUrl: ${JSON.stringify(siteUrl)},`,
+    ...(header ? ["    header: true,"] : []),
     '  });',
     '  // Use illustration.src and selection.guide.steps in your own UI.',
     '}',
@@ -55,21 +97,28 @@ function App() {
         <select id="guide" value={guideId} onChange={event => setGuideId(event.target.value)}>
           {guides.map(guide => <option key={guide.id} value={guide.id}>{guide.label}</option>)}
         </select>
-        <label className="field-label site-url-label" htmlFor="locale">Language</label>
-        <select id="locale" value={locales.includes(locale) ? locale : "en"} onChange={event => setLocale(event.target.value)}>
-          {locales.map(tag => <option key={tag} value={tag}>{new Intl.DisplayNames([tag], { type: "language" }).of(tag) ?? tag}</option>)}
-        </select>
+        <LocaleSelect id="locale" label="Page language (locale)" value={locale} onChange={setLocale} />
+        <LocaleSelect id="browser-locale" label="Browser language (browserLocale)" value={browser} onChange={setBrowser}>
+          <option value="">Same as the page language</option>
+        </LocaleSelect>
+        <p className="draft-note" role="note">Every language except English is an unreviewed draft translation, shown here only to
+          preview the feature. Labels a draft does not have yet appear in English.</p>
         <label className="field-label site-url-label" htmlFor="site-url">Website URL (optional)</label>
         <input id="site-url" className="site-url-input" type="text" inputMode="url" autoComplete="off" spellCheck={false}
           placeholder="https://example.com" value={siteUrl} onChange={event => setSiteUrl(event.target.value)} />
         <div className="display-options" role="group" aria-label="Instruction format">
-              {([["both", "Image + text"], ["text", "Text only"], ["image", "Image only"]] as const).map(([value, label]) =>
-                <button key={value} type="button" aria-pressed={presentation === value} onClick={() => setPresentation(value)}>{label}</button>)}
+          {([["both", "Image + text"], ["text", "Text only"], ["image", "Image only"]] as const).map(([value, label]) =>
+            <button key={value} type="button" aria-pressed={presentation === value} onClick={() => setPresentation(value)}>{label}</button>)}
         </div>
+        <label className="toggle"><input type="checkbox" checked={header} onChange={event => setHeader(event.target.checked)} /> Show the heading and subtitle
+          in the image (<code>illustrationHeader</code>)</label>
       </section>
       <div className="guide-output" id="instructions">
-        <InstallInstructions guideId={guideId} siteUrl={siteUrl} locale={locale} presentation={presentation} className="installation-guide"
+        {guide && <h2>{guide.title}</h2>}
+        <InstallInstructions guideId={guideId} siteUrl={siteUrl} locale={locale} browserLocale={browserLocale} localeData={localeData}
+          illustrationHeader={header} presentation={presentation} className="installation-guide"
           fallback={<p className="empty-state">No instructions available.</p>} />
+        {guide && presentation !== "image" && <p>{guide.completion}</p>}
       </div>
       <section className="integration" aria-label="Integration code">
         <h2>React</h2>

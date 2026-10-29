@@ -166,7 +166,7 @@ export function localizeGuide(guide: InstallGuide, given: LocaleOptions = {}): {
         return { ...step, title: text.title, description: text.description, ...(text.uiLabel ? { uiLabel: text.uiLabel } : {}) };
       }),
       completion: localized.completion, text: localized.text,
-      illustration: { ...guide.illustration, src: localized.illustration.src, alt: localized.illustration.alt },
+      illustration: { ...guide.illustration, src: localized.illustration.src, alt: localized.illustration.alt, header: localized.illustration.header },
     };
   }
   const requested = browserRequest(options, guide);
@@ -195,14 +195,7 @@ export function localizeGuide(guide: InstallGuide, given: LocaleOptions = {}): {
   return { guide: { ...mark(substituted, locale), browserLanguage: found.resolved }, locale: { ...locale, browser: found } };
 }
 
-export const defaultUI: LocaleUI = {
-  textInstructions: "Text instructions", illustratedGuide: "Illustrated guide", documentationDraft: "Documentation draft",
-  heading: "{kind}: {context}", website: "Website: {host}.",
-  devices: { iphone: "iPhone", ipad: "iPad", android: "Android device", "desktop-mac": "Mac", desktop: "Desktop", unknown: "Device" },
-  platforms: { ios: "iOS", macos: "macOS", android: "Android", windows: "Windows", unknown: "OS" },
-  browsers: { safari: "Safari", chrome: "Chrome", brave: "Brave", firefox: "Firefox", edge: "Edge", opera: "Opera",
-    samsung: "Samsung Internet", unknown: "Browser" },
-};
+export const defaultUI: LocaleUI = { website: "Website: {host}." };
 
 /** Interface strings for `locale`: registered data first, then English. Resolution is per locale, never per string. */
 export function getLocaleUI(locale?: string | readonly string[], localeData?: LocaleOptions["localeData"]): LocaleUI {

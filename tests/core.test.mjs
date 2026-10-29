@@ -83,7 +83,7 @@ test('packaged artwork and text match the canonical source and have four anchors
   const source = await readFile(new URL('../guides/ios/safari/iphone/layout-1/install.svg', import.meta.url), 'utf8');
   assert.equal(svg, source);
   assert.equal(guide.illustration.width, 400);
-  assert.equal(guide.illustration.height, 2060);
+  assert.equal(guide.illustration.height, 1988);
   assert.equal(guide.steps.length, 4);
   for (const step of guide.steps) assert.ok(svg.includes(`id="${step.illustrationFragment}"`));
   assert.equal(guide.text, await readFile(new URL('../guides/ios/safari/iphone/layout-1/instructions.md', import.meta.url), 'utf8'));

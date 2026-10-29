@@ -5,9 +5,3 @@ Use Chrome for Android. The illustrated menu labels follow Google’s current An
 1. **Open the *More* menu.** Open the website in Chrome. Tap the three vertical dots beside the address bar.
 2. **Tap *Install and create shortcut*.** Choose Install and create shortcut from the menu. Older Chrome layouts may call this Add to Home screen.
 3. **Tap *Install*.** Choose Install. Complete the prompts Chrome displays to install the app. Create shortcut is a separate option that saves a link.
-
-After installation finishes, open the app from your Android launcher. Home screen placement depends on your launcher and its settings.
-
-Illustration: [install.svg](install.svg). The numbered steps match this text.
-
-Version observations and source evidence: [metadata.json](metadata.json).
