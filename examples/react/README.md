@@ -19,6 +19,6 @@ The page contains preview controls, the rendered guide, and React/core code snip
 
 The dropdown contains only the eight concrete guides. Browser detection selects the initial option; if no version-specific match is available, the demo previews the guide for that browser/device or falls back to the first guide. This preview choice does not change the core selector's compatibility rules.
 
-The component renders only the image and the steps, so the demo adds the guide title above it and the completion sentence below it from the guide data. Android and Windows guides use current vendor menu labels without displaying unverified version numbers; they are documentation-only (`guide.versions.documentationOnly`).
+The demo shows exactly what the component renders: the image and the numbered steps, nothing else. Android and Windows guides use current vendor menu labels without displaying unverified version numbers; they are documentation-only (`guide.versions.documentationOnly`).
 
 The page-language and browser-language pickers (`locale` and `browserLocale`) list English, the en-US label variant, the eight complete locales (es, fr, de, pt-BR, it, ja, ko, zh-Hans) and the en-XA pseudo-locale. The complete locales load lazily from the published `pwa-instructions/locales/<tag>` modules, as a consuming app would. en-XA is a test locale and is not published: `npm run build:packages` writes its module to `examples/react/src/generated/` (gitignored). The checkbox turns on `illustrationHeader`.

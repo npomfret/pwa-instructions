@@ -67,8 +67,6 @@ function App() {
   const [header, setHeader] = useState(false);
   const localeData = useLocaleData(["en", locale, browser].filter(Boolean));
   const browserLocale = browser || undefined;
-  // The component renders the image and the steps; this page adds its own title and closing sentence from the guide data.
-  const guide = selectGuide(null, { guideId, locale, browserLocale, localeData }).guide;
   const [presentation, setPresentation] = useState<Presentation>("both");
   const componentSnippet = [
     'import { InstallInstructions } from "pwa-instructions/react";',
@@ -122,11 +120,9 @@ function App() {
           in the image (<code>illustrationHeader</code>)</label>
       </section>
       <div className="guide-output" id="instructions">
-        {guide && <h2>{guide.title}</h2>}
         <InstallInstructions guideId={guideId} siteUrl={siteUrl} locale={locale} browserLocale={browserLocale} localeData={localeData}
           illustrationHeader={header} presentation={presentation} className="installation-guide"
           fallback={<p className="empty-state">No instructions available.</p>} />
-        {guide && presentation !== "image" && <p>{guide.completion}</p>}
       </div>
       <section className="integration" aria-label="Integration code">
         <h2>React</h2>
