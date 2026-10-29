@@ -101,8 +101,8 @@
     <use href="#app-icon" transform="translate(84 206)"/>
     <text x="138" y="222" class="label muted" data-i18n="label:website" data-max-width="362">Website</text>
     <text x="138" y="246" class="small muted" data-pwa-domain="true" data-domain-width="310">example.com</text>
-    <text x="282" y="336" class="small muted" data-i18n="label:cancel" data-max-width="70">Cancel</text>
-    <rect x="359" y="311" width="101" height="38" rx="19" class="target"/>
-    <text x="409" y="336" class="label" text-anchor="middle" data-i18n="label:install" data-max-width="80">Install</text>
+    <text x="282" y="336" class="small muted" data-i18n="label:cancel" data-before-pill="1" data-max-width="70">Cancel</text>
+    <rect x="359" y="311" width="101" height="38" rx="19" class="target" data-pill="350 486"/>
+    <text x="409" y="336" class="label" text-anchor="middle" data-i18n="label:install" data-max-width="130">Install</text>
   </g>
 </svg>

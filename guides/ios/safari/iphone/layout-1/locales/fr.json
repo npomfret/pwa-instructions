@@ -4,7 +4,7 @@
   "heading": "Ajouter à l’écran d’accueil",
   "subtitle": "iPhone · Safari",
   "svgTitle": "Ajouter à l’écran d’accueil dans Safari sur iPhone : quatre étapes",
-  "svgDesc": "Quatre étapes numérotées pour Safari sur iPhone : ouvrez le {label:page-menu}, touchez {label:share}, touchez {label:view-more}, puis touchez {label:add-to-home-screen}. Des contours bleus signalent les commandes à toucher. Les instructions écrites sont fournies séparément.",
+  "svgDesc": "Quatre étapes numérotées pour Safari sur iPhone : ouvrez le Menu de la page, touchez Partager, touchez Afficher plus, puis touchez Sur l’écran d’accueil. Des contours bleus signalent les commandes à toucher. Les instructions écrites sont fournies séparément.",
   "steps": {
     "open-page-menu": {
       "title": "Ouvrez le {label:page-menu}",
@@ -24,6 +24,6 @@
     }
   },
   "completion": "Suivez l’écran de confirmation pour terminer l’ajout de l’app.",
-  "alt": "Quatre étapes : touchez le menu de la page à côté de l’adresse, touchez Partager, touchez Afficher plus si nécessaire, puis touchez Sur l’écran d’accueil.",
+  "alt": "Quatre étapes : touchez Menu de la page à côté de l’adresse, touchez Partager, touchez Afficher plus si nécessaire, puis touchez Sur l’écran d’accueil.",
   "transitions": {}
 }

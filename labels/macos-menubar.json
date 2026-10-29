@@ -2,6 +2,13 @@
   "file": {
     "en": "File",
     "es": "Archivo",
+    "fr": "Fichier",
+    "de": "Ablage",
+    "pt-BR": "Arquivo",
+    "it": "File",
+    "ja": "ファイル",
+    "ko": "파일",
+    "zh-Hans": "文件",
     "_src": {
       "es": {
         "method": "vendor-docs",
@@ -59,21 +66,87 @@
         "version": "macOS (current Apple guide)",
         "deviceChecked": false
       }
-    },
-    "fr": "Fichier",
-    "de": "Ablage",
-    "pt-BR": "Arquivo",
-    "it": "File",
-    "ja": "ファイル",
-    "ko": "파일",
-    "zh-Hans": "文件"
+    }
   },
   "edit": {
-    "en": "Edit"
+    "en": "Edit",
+    "es": "Edición",
+    "fr": "Édition",
+    "de": "Bearbeiten",
+    "pt-BR": "Editar",
+    "it": "Modifica",
+    "ja": "編集",
+    "ko": "편집",
+    "zh-Hans": "编辑",
+    "_src": {
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "model-translation",
+        "source": "model knowledge of the de UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "model-translation",
+        "source": "model knowledge of the zh-Hans UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      }
+    }
   },
   "view": {
     "en": "View",
     "es": "Visualización",
+    "de": "Darstellung",
+    "pt-BR": "Visualizar",
+    "it": "Vista",
+    "ja": "表示",
+    "ko": "보기",
+    "zh-Hans": "显示",
+    "fr": "Présentation",
     "_src": {
       "es": {
         "method": "vendor-docs",
@@ -123,13 +196,14 @@
         "verified": "2026-10-29",
         "version": "macOS (current Apple guide)",
         "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "de": "Darstellung",
-    "pt-BR": "Visualizar",
-    "it": "Vista",
-    "ja": "表示",
-    "ko": "보기",
-    "zh-Hans": "显示"
+    }
   }
 }

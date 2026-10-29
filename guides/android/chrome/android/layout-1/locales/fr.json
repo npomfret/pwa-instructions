@@ -4,7 +4,7 @@
   "heading": "Installer l’appli",
   "subtitle": "Android · Chrome",
   "svgTitle": "Installer une appli dans Chrome sur Android",
-  "svgDesc": "Brouillon de documentation. Trois étapes : ouvrez {label:more}, appuyez sur {label:install-and-create-shortcut}, puis appuyez sur {label:install}. Suivez les éventuelles autres instructions affichées sur votre appareil.",
+  "svgDesc": "Brouillon de documentation. Trois étapes : ouvrez Plus, appuyez sur Installer et créer un raccourci, puis appuyez sur Installer. Suivez les éventuelles autres instructions affichées sur votre appareil.",
   "intro": "Utilisez Chrome pour Android. Les libellés de menu illustrés suivent l’aide Google actuelle pour Android, et non son ancien article « Ajouter à l’écran d’accueil ». Brouillon de documentation : non vérifié sur un appareil ; la disposition du menu et les invites de confirmation peuvent varier.",
   "steps": {
     "open-more-menu": {

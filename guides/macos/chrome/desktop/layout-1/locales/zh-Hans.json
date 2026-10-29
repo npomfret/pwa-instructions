@@ -2,7 +2,7 @@
   "title": "在 Chrome 中安装应用",
   "label": "Mac · Chrome · 安装应用",
   "intro": "本指南按参考截图中所示的 Chrome 菜单路径操作。某些网站还会在地址栏中提供安装图标。",
-  "completion": "在 Finder 中，双击该应用即可打开。日后如需再次从 Chrome 打开它，请在地址栏中输入 chrome://apps，按下 Return 键，然后点击该应用。安装应用无需创建程序坞快捷方式。",
+  "completion": "在 Finder 中，双击该应用即可打开。日后如需再次从 Chrome 打开它，请在地址栏中输入 chrome://apps，按下 回车键，然后点击该应用。安装应用无需创建程序坞快捷方式。",
   "alt": "Mac 版 Chrome 的六个步骤：打开三点“更多”菜单，选择“投放、保存和分享”，选择“安装”，点击“下一步”，点击“安装”，然后点击“在 Finder 中显示”。",
   "steps": {
     "open-more-menu": {

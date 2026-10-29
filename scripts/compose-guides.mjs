@@ -92,7 +92,7 @@ function scope(node, prefix) {
 
 /**
  * Reuse source panels and text, then return each guide's complete, standalone SVG and Markdown in `locale`.
- * Writes nothing. `lenient` shows English for a label the locale lacks, instead of failing (draft locales for the demo).
+ * Writes nothing; a label the locale lacks is an error.
  * A guide's artwork is `artworkSource`, or `install.source.svg` when it is not composed from panels; `install.svg` is
  * always generated output. Each result also carries what the runtime needs to swap in another locale's
  * control names: `templates` (the prose strings that name a label, with `{label:id}` kept), `labels` (the text of every
@@ -100,7 +100,7 @@ function scope(node, prefix) {
  * English), `taggedSvg` (the artwork with its `label:*` tags kept) and `header` (the markup of the heading and subtitle,
  * which `svg` and `taggedSvg` leave out).
  */
-export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE, { lenient = false } = {}) {
+export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
   const english = locale === DEFAULT_LOCALE;
   const labels = await loadLabels(root);
   const records = new Map();
@@ -120,7 +120,7 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE, { le
     const doc = parse(await readFile(path.join(folder, data.artworkSource ?? 'install.source.svg'), 'utf8'));
     const svg = doc.documentElement;
     // Labels, tagged text and prose all resolve here, in this guide's own surfaces, before any panel is imported elsewhere.
-    const resolver = labelResolver(labels, surfaces, locale, { lenient });
+    const resolver = labelResolver(labels, surfaces, locale);
     const lookups = [{ locale: resolver, english: labelResolver(labels, surfaces, DEFAULT_LOCALE),
       variants: Object.fromEntries(Object.keys(LABEL_VARIANTS).map(tag => [tag, labelResolver(labels, surfaces, tag)])) }];
     checkLabelTags(doc, labelResolver(labels, surfaces, DEFAULT_LOCALE), id);

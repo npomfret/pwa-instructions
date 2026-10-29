@@ -47,7 +47,7 @@ SVGs are self-contained data URLs. Where Content Security Policy requires a host
 
 ## Localization
 
-Guides are English unless you ask for a locale. Locale data is opt-in, so you only bundle what you use:
+Guides are English unless you ask for a locale. Eight complete translations are published: `es`, `fr`, `de`, `pt-BR`, `it`, `ja`, `ko` and `zh-Hans`, covering every guide, the artwork and the control names. Locale data is opt-in, so you only bundle what you use:
 
 ```js
 import { registerLocale, selectGuide, detectBrowserEnvironment } from 'pwa-instructions';

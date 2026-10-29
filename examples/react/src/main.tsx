@@ -7,17 +7,27 @@ import { InstallInstructions } from "pwa-instructions/react";
 import type { Presentation } from "pwa-instructions/react";
 import "./style.css";
 
-// Published locales are imported from "pwa-instructions/locales/<tag>". No locale is published yet except the English
-// module, which carries the en-US labels; the drafts and en-XA below are generated for this demo only (npm run build:packages
-// writes them to src/generated/, which is not committed or published).
+// The English module (which carries the en-US labels) and the eight complete locales are the published
+// "pwa-instructions/locales/<tag>" modules. en-XA, the test pseudo-locale, is generated for this demo only (npm run
+// build:packages writes it to src/generated/, which is not committed or published).
 type Loader = () => Promise<{ default: LocaleData }>;
-const drafts = import.meta.glob<{ default: LocaleData }>("./generated/locales/*.ts");
-const loaders: Record<string, Loader> = { en: () => import("pwa-instructions/locales/en") };
-for (const [file, load] of Object.entries(drafts)) loaders[/([^/]+)\.ts$/.exec(file)![1]] = load;
+const pseudo = import.meta.glob<{ default: LocaleData }>("./generated/locales/*.ts");
+const loaders: Record<string, Loader> = {
+  en: () => import("pwa-instructions/locales/en"),
+  es: () => import("pwa-instructions/locales/es"),
+  fr: () => import("pwa-instructions/locales/fr"),
+  de: () => import("pwa-instructions/locales/de"),
+  "pt-BR": () => import("pwa-instructions/locales/pt-BR"),
+  it: () => import("pwa-instructions/locales/it"),
+  ja: () => import("pwa-instructions/locales/ja"),
+  ko: () => import("pwa-instructions/locales/ko"),
+  "zh-Hans": () => import("pwa-instructions/locales/zh-Hans"),
+};
+for (const [file, load] of Object.entries(pseudo)) loaders[/([^/]+)\.ts$/.exec(file)![1]] = load;
 
 const TAGS = ["en", "en-US", "es", "fr", "de", "pt-BR", "it", "ja", "ko", "zh-Hans", "en-XA"];
 const SPECIAL: Record<string, string> = { en: "English (British, the default)", "en-US": "English (US labels)", "en-XA": "Pseudo-locale (en-XA, for testing)" };
-const nameOf = (tag: string) => SPECIAL[tag] ?? `${new Intl.DisplayNames(["en"], { type: "language" }).of(tag) ?? tag} (draft)`;
+const nameOf = (tag: string) => SPECIAL[tag] ?? `${new Intl.DisplayNames(["en"], { type: "language" }).of(tag) ?? tag}`;
 
 /** Locale data for the tags in use. English is always loaded: it carries the en-US labels and the templates for browserLocale. */
 function useLocaleData(tags: string[]): Record<string, LocaleData> {
@@ -101,8 +111,6 @@ function App() {
         <LocaleSelect id="browser-locale" label="Browser language (browserLocale)" value={browser} onChange={setBrowser}>
           <option value="">Same as the page language</option>
         </LocaleSelect>
-        <p className="draft-note" role="note">Every language except English is an unreviewed draft translation, shown here only to
-          preview the feature. Labels a draft does not have yet appear in English.</p>
         <label className="field-label site-url-label" htmlFor="site-url">Website URL (optional)</label>
         <input id="site-url" className="site-url-input" type="text" inputMode="url" autoComplete="off" spellCheck={false}
           placeholder="https://example.com" value={siteUrl} onChange={event => setSiteUrl(event.target.value)} />

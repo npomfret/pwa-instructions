@@ -4,7 +4,7 @@
   "heading": "Ajouter au Dock",
   "subtitle": "Mac · Safari",
   "svgTitle": "Ajouter un site web au Dock dans Safari sur Mac",
-  "svgDesc": "Trois étapes : ouvrez le menu {label:file}, choisissez {label:add-to-dock}, puis cliquez sur {label:add}. Des contours bleus signalent les commandes.",
+  "svgDesc": "Trois étapes : ouvrez le menu Fichier, choisissez Ajouter au Dock, puis cliquez sur Ajouter. Des contours bleus signalent les commandes.",
   "intro": "Nécessite macOS Sonoma 14 ou version ultérieure. Ces illustrations montrent le chemin par le menu {label:file} ; Safari propose aussi {label:add-to-dock} dans son menu Partager.",
   "steps": {
     "open-file-menu": {

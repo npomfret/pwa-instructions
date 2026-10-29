@@ -2,6 +2,13 @@
   "new-window": {
     "en": "New Window",
     "de": "Neues Fenster",
+    "pt-BR": "Nova Janela",
+    "it": "Nuova finestra",
+    "ja": "新規ウインドウ",
+    "zh-Hans": "新建窗口",
+    "es": "Nueva ventana",
+    "fr": "Nouvelle fenêtre",
+    "ko": "새로운 윈도우",
     "_src": {
       "de": {
         "method": "vendor-docs",
@@ -37,16 +44,40 @@
         "verified": "2026-10-29",
         "version": "macOS (current Apple guide)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "pt-BR": "Nova Janela",
-    "it": "Nuova finestra",
-    "ja": "新規ウインドウ",
-    "zh-Hans": "新建窗口"
+    }
   },
   "new-tab": {
     "en": "New Tab",
     "de": "Neuer Tab",
+    "zh-Hans": "新建标签页",
+    "es": "Nueva pestaña",
+    "fr": "Nouvel onglet",
+    "pt-BR": "Nova Aba",
+    "it": "Nuova scheda",
+    "ja": "新規タブ",
+    "ko": "새로운 탭",
     "_src": {
       "de": {
         "method": "vendor-docs",
@@ -61,16 +92,130 @@
         "verified": "2026-10-29",
         "version": "macOS (current Apple guide)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "zh-Hans": "新建标签页"
+    }
   },
   "open-location": {
-    "en": "Open Location…"
+    "en": "Open Location…",
+    "es": "Abrir ubicación…",
+    "fr": "Ouvrir l’adresse…",
+    "de": "Adresse öffnen …",
+    "pt-BR": "Abrir Local…",
+    "it": "Apri posizione…",
+    "ja": "場所を開く…",
+    "ko": "위치 열기…",
+    "zh-Hans": "打开位置…",
+    "_src": {
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "model-translation",
+        "source": "model knowledge of the de UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "model-translation",
+        "source": "model knowledge of the zh-Hans UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      }
+    }
   },
   "add-to-dock-item": {
     "en": "Add to Dock…",
     "fr": "Ajouter au Dock",
+    "de": "Zum Dock hinzufügen",
+    "it": "Aggiungi al Dock",
+    "ja": "Dockに追加",
+    "zh-Hans": "添加到程序坞",
+    "es": "Añadir al Dock…",
+    "pt-BR": "Adicionar ao Dock…",
+    "ko": "Dock에 추가…",
     "_src": {
       "fr": {
         "method": "vendor-docs",
@@ -109,88 +254,40 @@
         "version": "macOS (current Apple guide)",
         "deviceChecked": false,
         "note": "Apple quotes it without the trailing \"…\" that the English label has; text copied exactly from the source."
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "de": "Zum Dock hinzufügen",
-    "it": "Aggiungi al Dock",
-    "ja": "Dockに追加",
-    "zh-Hans": "添加到程序坞"
+    }
   },
   "add-to-dock": {
     "en": "Add to Dock",
     "es": "Añadir al Dock",
-    "_src": {
-      "es": {
-        "method": "vendor-docs",
-        "source": "https://support.apple.com/es-es/104996",
-        "verified": "2026-10-29",
-        "version": "macOS 14 or later",
-        "deviceChecked": false
-      },
-      "fr": {
-        "method": "vendor-docs",
-        "source": "https://support.apple.com/fr-fr/104996",
-        "verified": "2026-10-29",
-        "version": "macOS Sonoma 14 or later",
-        "deviceChecked": false
-      },
-      "de": {
-        "method": "vendor-docs",
-        "source": "https://support.apple.com/de-de/104996",
-        "verified": "2026-10-29",
-        "version": "macOS 14+",
-        "deviceChecked": false
-      },
-      "pt-BR": {
-        "method": "vendor-docs",
-        "source": "https://support.apple.com/pt-br/104996",
-        "verified": "2026-10-29",
-        "version": "macOS 27 / Safari 27",
-        "deviceChecked": false
-      },
-      "it": {
-        "method": "vendor-docs",
-        "source": "https://support.apple.com/it-it/104996",
-        "verified": "2026-10-29",
-        "version": "macOS 27",
-        "deviceChecked": false
-      },
-      "ja": {
-        "method": "vendor-docs",
-        "source": "https://support.apple.com/ja-jp/104996",
-        "verified": "2026-10-29",
-        "version": "macOS 27",
-        "deviceChecked": false
-      },
-      "ko": {
-        "method": "vendor-docs",
-        "source": "https://support.apple.com/ko-kr/104996",
-        "verified": "2026-10-29",
-        "version": "macOS 14 or later (Safari user guide, current)",
-        "deviceChecked": false
-      },
-      "zh-Hans": {
-        "method": "vendor-docs",
-        "source": "https://support.apple.com/zh-cn/guide/safari/ibrw9e991864/mac",
-        "verified": "2026-10-29",
-        "version": "macOS (current Apple guide)",
-        "deviceChecked": false
-      }
-    },
     "fr": "Ajouter au Dock",
     "de": "Zum Dock hinzufügen",
     "pt-BR": "Adicionar ao Dock",
     "it": "Aggiungi al Dock",
     "ja": "Dockに追加",
     "ko": "Dock에 추가",
-    "zh-Hans": "添加到程序坞"
-  },
-  "cancel": {
-    "en": "Cancel"
-  },
-  "add": {
-    "en": "Add",
-    "es": "Añadir",
+    "zh-Hans": "添加到程序坞",
     "_src": {
       "es": {
         "method": "vendor-docs",
@@ -248,13 +345,144 @@
         "version": "macOS (current Apple guide)",
         "deviceChecked": false
       }
-    },
+    }
+  },
+  "cancel": {
+    "en": "Cancel",
+    "es": "Cancelar",
+    "fr": "Annuler",
+    "de": "Abbrechen",
+    "pt-BR": "Cancelar",
+    "it": "Annulla",
+    "ja": "キャンセル",
+    "ko": "취소",
+    "zh-Hans": "取消",
+    "_src": {
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "model-translation",
+        "source": "model knowledge of the de UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "model-translation",
+        "source": "model knowledge of the zh-Hans UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      }
+    }
+  },
+  "add": {
+    "en": "Add",
+    "es": "Añadir",
     "fr": "Ajouter",
     "de": "Hinzufügen",
     "pt-BR": "Adicionar",
     "it": "Aggiungi",
     "ja": "追加",
     "ko": "추가",
-    "zh-Hans": "添加"
+    "zh-Hans": "添加",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-es/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14+",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27 / Safari 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later (Safari user guide, current)",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/safari/ibrw9e991864/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current Apple guide)",
+        "deviceChecked": false
+      }
+    }
   }
 }

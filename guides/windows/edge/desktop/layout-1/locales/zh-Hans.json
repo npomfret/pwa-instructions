@@ -1,7 +1,7 @@
 {
   "title": "在 Windows 版 Edge 中安装应用",
   "label": "Windows · Edge · 安装应用",
-  "intro": "此菜单路径参照 Microsoft 当前的 Edge 帮助。在其他 Edge 版本中，“应用”可能直接位于“{label:settings-and-more}”中。文档草稿：尚未在设备上验证；菜单布局和确认提示可能有所不同。",
+  "intro": "此菜单路径参照 Microsoft 当前的 Edge 帮助。在其他 Edge 版本中，“{label:apps}”可能直接位于“{label:settings-and-more}”中。文档草稿：尚未在设备上验证；菜单布局和确认提示可能有所不同。",
   "completion": "如需再次打开，请输入 edge://apps，然后点击应用卡片上的“打开”。在“详细信息”中，可以选择“固定到任务栏”、“固定到‘开始’屏幕”和“创建桌面快捷方式”。",
   "alt": "共 5 个 Windows 版 Edge 安装步骤图示；蓝色轮廓标出文档中提到的控件。",
   "steps": {

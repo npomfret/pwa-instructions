@@ -9,6 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const require = createRequire(import.meta.url);
+const LOCALES = ['es', 'fr', 'de', 'pt-BR', 'it', 'ja', 'ko', 'zh-Hans'];
 
 test('one packed package supports a React-free core and the optional React entry point', async () => {
   const temporary = await mkdtemp(path.join(tmpdir(), 'pwa-instructions-package-'));
@@ -33,10 +34,11 @@ test('one packed package supports a React-free core and the optional React entry
     assert.equal(manifest.name, 'pwa-instructions');
     assert.equal(manifest.peerDependenciesMeta.react.optional, true);
     assert.equal(manifest.dependencies, undefined);
-    // Locale modules are opt-in subpaths; none is complete yet, so none ships, and no draft or pseudo-locale leaks.
+    // Locale modules are opt-in subpaths: English and the eight catalog locales ship, and the pseudo-locale does not.
     assert.equal(manifest.exports['./locales/*'].import, './dist/core/generated/locales/*.js');
     assert.ok(files.every(file => !/en-XA/i.test(file)));
-    for (const expected of ['dist/core/generated/locales/en.js', 'dist/core/generated/locales/en.d.ts', 'dist/core/artwork.js', 'dist/core/fit.js']) assert.ok(files.includes(expected), expected);
+    for (const expected of ['dist/core/generated/locales/en.js', 'dist/core/generated/locales/en.d.ts', 'dist/core/artwork.js', 'dist/core/fit.js',
+      ...LOCALES.flatMap(tag => [`dist/core/generated/locales/${tag}.js`, `dist/core/generated/locales/${tag}.d.ts`, `dist/assets/ios-safari-iphone-layout-1/${tag}/install.svg`])]) assert.ok(files.includes(expected), expected);
     const types = await readFile(path.join(installed, 'dist/core/index.d.ts'), 'utf8');
     for (const name of ['resolveLocale', 'registerLocale', 'getGuideLocales', 'detectUILocale', 'LocalizedGuide', 'LocaleData']) assert.ok(types.includes(name), name);
 
@@ -52,7 +54,18 @@ test('one packed package supports a React-free core and the optional React entry
       assert.deepEqual(fallback.locale, {requested: 'es', resolved: 'en', fallback: true});
       assert.equal(fallback.guide.localeFallback, true);
       assert.equal(detectUILocale(), undefined);
-      await assert.rejects(import('pwa-instructions/locales/es'), {code: 'ERR_MODULE_NOT_FOUND'});
+      await assert.rejects(import('pwa-instructions/locales/en-XA'), {code: 'ERR_MODULE_NOT_FOUND'});
+      // A published locale renders its guide in its own language, with its own labels.
+      const spanish = (await import('pwa-instructions/locales/es')).default;
+      assert.deepEqual(getGuideLocales(guides[0], {es: spanish}), ['en', 'es']);
+      const macos = selectGuide(null, {guideId: 'macos-safari-desktop-layout-1', locale: 'es', localeData: {es: spanish}});
+      assert.deepEqual(macos.locale, {requested: 'es', resolved: 'es', fallback: false});
+      assert.equal(macos.guide.language, 'es');
+      assert.equal(macos.guide.steps[0].title, 'Abre el menú Archivo');
+      assert.equal(macos.guide.steps[0].uiLabel, 'Archivo');
+      const drawn = decodeURIComponent(macos.guide.illustration.src);
+      for (const word of ['Archivo', 'Edición', 'Visualización']) assert.ok(drawn.includes('>' + word + '<'), word);
+      assert.ok(!drawn.includes('>View<') && !drawn.includes('>Edit<'));
       // The opt-in English module resolves, carries the tagged artwork, templates and labels, and registers like any locale.
       const english = (await import('pwa-instructions/locales/en')).default;
       assert.deepEqual(Object.keys(english.guides).sort(), guides.map(guide => guide.id).sort());

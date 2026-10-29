@@ -20,18 +20,16 @@ const readJSON = async file => JSON.parse(await readFile(file, 'utf8'));
 const writeJSON = (file, value) => writeFile(file, JSON.stringify(value, null, 2) + '\n');
 
 /**
- * A temporary copy of the real sources plus a complete, valid "es" fixture locale built from the English. Each test
+ * A temporary copy of the real sources plus a valid "es" fixture locale built from the English. Each test
  * breaks one thing in the copy; the repository's own data is never touched.
  */
-async function withFixture(t, { status = 'complete', mutate } = {}) {
+async function withFixture(t, { mutate } = {}) {
   const dir = await mkdtemp(path.join(tmpdir(), 'pwa-instructions-check-'));
   t.after(() => rm(dir, { recursive: true, force: true }));
   await cp(path.join(root, 'catalog.json'), path.join(dir, 'catalog.json'));
   await cp(path.join(root, 'labels'), path.join(dir, 'labels'), { recursive: true });
   await cp(path.join(root, 'guides'), path.join(dir, 'guides'), { recursive: true });
   const catalog = await readJSON(path.join(dir, 'catalog.json'));
-  catalog.locales.es = status;
-  await writeJSON(path.join(dir, 'catalog.json'), catalog);
   const labels = await loadLabels(dir);
   for (const [surface, entries] of labels) {
     for (const entry of Object.values(entries)) {
@@ -62,7 +60,7 @@ test('the repository passes every error rule, and en-XA only warns about overflo
   assert.ok(pseudo.length > 0 && pseudo.every(item => item.rule === 7));
 });
 
-test('a complete fixture locale passes with no errors; English labels need no source', async t => {
+test('a fixture locale passes with no errors; English labels need no source', async t => {
   const dir = await withFixture(t);
   const { errors } = await checkLocales(dir);
   assert.deepEqual(texts(errors), []);
@@ -75,7 +73,7 @@ test('a missing step fails, and a missing Safari step also fails the Brave guide
   assert.ok(has(errors, `${BRAVE}/locales/es.json`, 'steps.tap-share', 'reuses ios-safari-iphone-layout-1 step tap-share'));
 });
 
-test('a missing top-level string, transition or ui string fails a complete locale', async t => {
+test('a missing top-level string, transition or ui string fails a locale', async t => {
   const dir = await withFixture(t, { mutate: async dir => {
     await edit(path.join(dir, BRAVE, 'locales/es.json'), locale => { delete locale.completion; delete locale.transitions['continue-in-safari']; });
     await edit(path.join(dir, 'labels/ui.json'), ui => { delete ui.website.es; });
@@ -86,23 +84,11 @@ test('a missing top-level string, transition or ui string fails a complete local
   assert.ok(has(errors, 'labels/ui.json', 'website', '[es]', 'has no ui string'));
 });
 
-test('a label drawn in artwork reused from another guide must resolve for a complete locale', async t => {
+test('a label drawn in artwork reused from another guide must resolve for a locale', async t => {
   const dir = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ios-safari.json'), entries => { delete entries['show-reader'].es; delete entries['show-reader']._src.es; }) });
   const { errors } = await checkLocales(dir);
   assert.ok(has(errors, `${SAFARI}/locales/es.json`, '{label:show-reader}', 'fall back to English'));
   assert.ok(has(errors, `${BRAVE}/locales/es.json`, '{label:show-reader}', 'artwork reused from ios-safari-iphone-layout-1'));
-});
-
-test('the same gaps in a draft locale are warnings, not errors', async t => {
-  const dir = await withFixture(t, { status: 'draft', mutate: async dir => {
-    await edit(path.join(dir, SAFARI, 'locales/es.json'), locale => { delete locale.steps['tap-share']; });
-    await edit(path.join(dir, 'labels/ios-safari.json'), entries => { delete entries['page-menu']._src.es; delete entries['show-reader'].es; });
-  } });
-  const { errors, warnings } = await checkLocales(dir);
-  assert.deepEqual(texts(errors), []);
-  assert.ok(has(warnings, 'steps.tap-share.title', 'is missing'));
-  assert.ok(has(warnings, 'page-menu._src.es', 'no source record'));
-  assert.ok(has(warnings, '{label:show-reader}', 'fall back to English'));
 });
 
 test('a placeholder mismatch fails: a lost label, a changed step number and an unknown label id', async t => {
@@ -135,17 +121,15 @@ test('an orphan locale file fails, as does a label locale the catalog does not l
   assert.ok(has(errors, 'labels/ios-safari.json', 'page-menu', '[sv]', 'orphan'));
 });
 
-test('a listed locale with no files fails when complete and warns when draft', async t => {
-  const complete = await withFixture(t, { mutate: async dir => edit(path.join(dir, 'catalog.json'), catalog => { catalog.locales.nl = 'complete'; catalog.locales.sv = 'draft'; }) });
-  const { errors, warnings } = await checkLocales(complete);
-  assert.ok(has(errors, 'catalog.json', 'locales.nl', 'no locale file or label exists'));
-  assert.ok(has(warnings, 'locales.sv', 'no locale file or label exists'));
+test('a listed locale with no files fails', async t => {
+  const dir = await withFixture(t, { mutate: async dir => edit(path.join(dir, 'catalog.json'), catalog => { catalog.locales.push('nl'); }) });
+  assert.ok(has((await checkLocales(dir)).errors, 'catalog.json', 'locales.nl', 'no locale file or label exists'));
 });
 
 test('tags must be canonical and file names must be the tag', async t => {
   const dir = await withFixture(t, { mutate: async dir => {
     await writeJSON(path.join(dir, SAFARI, 'locales/pt_br.json'), {});
-    await edit(path.join(dir, 'catalog.json'), catalog => { catalog.locales['pt_br'] = 'draft'; });
+    await edit(path.join(dir, 'catalog.json'), catalog => { catalog.locales.push('pt_br'); });
     await edit(path.join(dir, BRAVE, 'locales/es.json'), locale => { locale.locale = 'fr'; });
   } });
   const { errors } = await checkLocales(dir);
@@ -154,7 +138,7 @@ test('tags must be canonical and file names must be the tag', async t => {
   assert.ok(has(errors, `${BRAVE}/locales/es.json`, 'locale', 'says "fr" but the file is es.json'));
 });
 
-test('a label with no source in a complete locale fails, and so does an incomplete or future-dated one', async t => {
+test('a label with no source fails, and so does an incomplete or future-dated one', async t => {
   const dir = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ios-safari.json'), entries => {
     delete entries['page-menu']._src.es;
     entries['show-reader']._src.es = { method: 'device', verified: '2026-10-01', version: 'iOS 27' };
@@ -166,7 +150,7 @@ test('a label with no source in a complete locale fails, and so does an incomple
   assert.ok(has(errors, 'summarise._src.es', 'expected a past YYYY-MM-DD'));
 });
 
-test('a label used by a complete locale but missing from it is a silent-fallback error', async t => {
+test('a label used by a locale but missing from it is a silent-fallback error', async t => {
   const dir = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ios-share-sheet.json'), entries => { delete entries.share.es; }) });
   const { errors } = await checkLocales(dir);
   assert.ok(has(errors, `${SAFARI}/locales/es.json`, '{label:share}', '[es]', 'fall back to English'));
@@ -222,10 +206,6 @@ test('an overflowing label warns at 100% and fails at 130% of its data-max-width
   assert.ok(has(warned.warnings, 'install.source.svg', 'label:view-more', '[es]', 'of its 100-unit width', 'warn threshold 100%'));
   assert.ok(!has(warned.errors, 'label:view-more'));
   assert.ok(has((await checkLocales(fail)).errors, 'install.source.svg', 'label:view-more', '[es]', 'fails at 130%'));
-  const draft = await withFixture(t, { status: 'draft', mutate: dir => edit(path.join(dir, 'labels/ios-share-sheet.json'), entries => { entries['view-more'].es = 'Ver muchas más opciones disponibles'; }) });
-  const drafted = await checkLocales(draft);
-  assert.ok(!has(drafted.errors, 'label:view-more'));
-  assert.ok(has(drafted.warnings, 'install.source.svg', 'label:view-more', '[es]', 'fail threshold 130%'));
 });
 
 test('staleLabels lists labels verified more than a year ago, oldest first', async () => {
@@ -238,11 +218,11 @@ test('staleLabels lists labels verified more than a year ago, oldest first', asy
   assert.deepEqual(staleLabels(await loadLabels(root), new Date('2026-10-28')), []);
 });
 
-test('en-US is a label-only variant: no prose, status or catalog entry is needed, and it is never an orphan', async () => {
+test('en-US is a label-only variant: no prose or catalog entry is needed, and it is never an orphan', async () => {
   const { errors, warnings } = await checkLocales(root);
   const labels = await loadLabels(root);
   assert.equal(labels.get('ios-safari').summarise['en-US'], 'Summarize');
-  assert.ok(!('en-US' in (await readJSON(path.join(root, 'catalog.json'))).locales));
+  assert.ok(!(await readJSON(path.join(root, 'catalog.json'))).locales.includes('en-US'));
   assert.ok(!has(errors, 'en-US') && !has(warnings, 'en-US'));
 });
 

@@ -8,26 +8,27 @@ import { DEFAULT_LOCALE, LABEL_VARIANTS, PSEUDO_LOCALE, estimateWidth, fontOf, l
  * Completeness checks for locale data, run by the build (so `npm run check` fails on any error) and on their own:
  *   node scripts/check-locales.mjs [--help]
  *
- * Every catalog locale is checked, draft or complete. Rules marked "complete only" report as errors for a `complete`
- * locale and as warnings for a `draft`; every other rule is an error either way. The build's own loaders (loadGuideLocale,
- * labelResolver, checkLabelTags) still throw on the first problem they meet when composing; this reports all of them at once.
+ * Every locale listed in catalog.json is checked, and every rule is an error: a listed locale is published. The en-XA
+ * pseudo-locale is checked too, as the test of the pipeline, but it is not in the catalog and its overflow only warns (it is
+ * 35% longer by design). The build's own loaders (loadGuideLocale, labelResolver, checkLabelTags) still throw on the first
+ * problem they meet when composing; this reports all of them at once.
  *
- *  1. Complete only: every guide has a title and description for each step (reuse resolved), plus title, label, intro,
+ *  1. Every guide has a title and description for each step (reuse resolved), plus title, label, intro,
  *     completion, alt, transitions, and the locale's `ui` strings.
  *  2. Translated strings carry the same {step:n} placeholders as English, any label the English names as a control, and
  *     only label ids the guide's labelSurfaces define.
- *  3. Complete only: every label a guide uses resolves for the locale, with no silent English fallback. This is also
+ *  3. Every label a guide uses resolves for the locale, with no silent English fallback. This is also
  *     what makes a locale module's label table complete: the table holds each label the guide's templates and artwork
  *     tags name, including those of panels reused from another guide, which browserLocale substitutes at runtime.
- *  4. Source SVG data-i18n keys have English text and, in a complete locale, a translation; no visible text is untagged.
- *  5. Complete only: every non-English label value has a source record (_src).
+ *  4. Source SVG data-i18n keys have English text and a translation in every locale; no visible text is untagged.
+ *  5. Every non-English label value has a source record (_src).
  *  6. No empty strings or TODO markers; a string identical to English is a warning.
- *  7. Estimated width against data-max-width: warn at OVERFLOW_WARN, fail at OVERFLOW_FAIL.
- *  8. The catalog `locales` list and the locale files present agree; an unlisted file is an orphan.
+ *  7. Estimated width against data-max-width: warn at OVERFLOW_WARN, fail at OVERFLOW_FAIL (en-XA only warns).
+ *  8. The catalog `locales` list (plain tags) and the locale files present agree; an unlisted file is an orphan.
  *  9. Tags are canonical and each file name is its tag.
  *
- * Label-only variants (LABEL_VARIANTS, `en-US`) are not catalog locales: no prose, status or completeness rules apply, and
- * they are never orphans. Their label values still get rules 2 and 6, and rule 5 as an error: a value that differs from
+ * Label-only variants (LABEL_VARIANTS, `en-US`) are not catalog locales: no prose files or completeness rules apply, and
+ * they are never orphans. Their label values still get rules 2, 5 and 6: a value that differs from
  * its base is a claim about what another browser shows, so it needs a source. Labels without a value inherit the base.
  */
 
@@ -63,20 +64,17 @@ export async function checkLocales(root) {
   const errors = [];
   const warnings = [];
   const rel = file => path.relative(root, file);
-  /** Record a problem; `soft` ones (complete-only rules) are warnings on a draft locale. */
   const report = (list, rule, file, key, tag, message) => list.push({ rule, text: `${rel(file)}: ${key} [${tag}] ${message} (rule ${rule})` });
-  const completeOnly = (statuses, tag) => (statuses[tag] === 'complete' ? errors : warnings);
 
   const catalogFile = path.join(root, 'catalog.json');
   const catalog = JSON.parse(await readFile(catalogFile, 'utf8'));
-  const statuses = catalog.locales ?? {};
-  const tags = Object.keys(statuses).filter(tag => tag !== DEFAULT_LOCALE);
+  const listedTags = catalog.locales ?? [];
+  const tags = [...listedTags.filter(tag => tag !== DEFAULT_LOCALE), PSEUDO_LOCALE];
   const labels = await loadLabels(root);
 
-  // --- Rules 8 and 9: tags, statuses and the files that exist ---------------------------------------------------
+  // --- Rules 8 and 9: tags and the files that exist ---------------------------------------------------
   for (const tag of tags) {
     if (!canonical(tag)) report(errors, 9, catalogFile, `locales.${tag}`, tag, 'is not a canonical locale tag');
-    if (!['draft', 'complete'].includes(statuses[tag])) report(errors, 8, catalogFile, `locales.${tag}`, tag, `has status "${statuses[tag]}", expected draft or complete`);
   }
   const records = [];
   for (const entry of catalog.guides) {
@@ -95,7 +93,7 @@ export async function checkLocales(root) {
     const tag = item.name.slice(0, -'.json'.length);
     if (!canonical(tag)) report(errors, 9, file, 'file name', tag, 'is not a canonical locale tag');
     if (!guideFolders.has(path.dirname(item.parentPath))) report(errors, 8, file, 'file', tag, 'belongs to no guide in catalog.json');
-    else if (!(tag in statuses)) report(errors, 8, file, 'file', tag, 'is an orphan: catalog.json "locales" does not list it');
+    else if (!listedTags.includes(tag)) report(errors, 8, file, 'file', tag, 'is an orphan: catalog.json "locales" does not list it');
     else records.find(record => record.folder === path.dirname(item.parentPath)).files.set(tag, file);
     listed.add(tag);
   }
@@ -105,13 +103,13 @@ export async function checkLocales(root) {
       for (const tag of new Set([...Object.keys(entry), ...Object.keys(entry._src ?? {})].filter(key => key !== DEFAULT_LOCALE && key !== '_src'))) {
         if (!canonical(tag)) report(errors, 9, file, id, tag, 'is not a canonical locale tag');
         else if (tag in LABEL_VARIANTS) continue;
-        else if (!(tag in statuses)) report(errors, 8, file, id, tag, 'is an orphan: catalog.json "locales" does not list it');
+        else if (!listedTags.includes(tag)) report(errors, 8, file, id, tag, 'is an orphan: catalog.json "locales" does not list it');
         listed.add(tag);
       }
     }
   }
   for (const tag of tags.filter(item => item !== PSEUDO_LOCALE && !listed.has(item))) {
-    report(completeOnly(statuses, tag), 8, catalogFile, `locales.${tag}`, tag, 'is listed but no locale file or label exists for it');
+    report(errors, 8, catalogFile, `locales.${tag}`, tag, 'is listed but no locale file or label exists for it');
   }
 
   // --- Rule 4, per guide: the source SVG's keys and untagged text ----------------------------------------------
@@ -168,7 +166,6 @@ export async function checkLocales(root) {
 
   // --- Per locale ------------------------------------------------------------------------------------------------
   for (const tag of tags) {
-    const soft = completeOnly(statuses, tag);
     const pseudo = tag === PSEUDO_LOCALE;
 
     // Labels (rules 2, 5, 6): every non-English value in this locale.
@@ -185,16 +182,16 @@ export async function checkLocales(root) {
         if (!UNSOURCED_SURFACES.has(surface)) {
           const source = entry._src?.[tag];
           const missing = source ? SOURCE_FIELDS.filter(field => typeof source[field] !== 'string' || !source[field].trim()) : SOURCE_FIELDS;
-          if (!source) report(soft, 5, file, `${id}._src.${tag}`, tag, `has no source record (needs ${SOURCE_FIELDS.join(', ')})`);
-          else if (missing.length) report(soft, 5, file, `${id}._src.${tag}`, tag, `source record lacks ${missing.join(', ')}`);
-          else if (!(Date.parse(source.verified) <= Date.now()) || !/^\d{4}-\d{2}-\d{2}$/.test(source.verified)) report(soft, 5, file, `${id}._src.${tag}`, tag, `has verified date "${source.verified}", expected a past YYYY-MM-DD`);
+          if (!source) report(errors, 5, file, `${id}._src.${tag}`, tag, `has no source record (needs ${SOURCE_FIELDS.join(', ')})`);
+          else if (missing.length) report(errors, 5, file, `${id}._src.${tag}`, tag, `source record lacks ${missing.join(', ')}`);
+          else if (!(Date.parse(source.verified) <= Date.now()) || !/^\d{4}-\d{2}-\d{2}$/.test(source.verified)) report(errors, 5, file, `${id}._src.${tag}`, tag, `has verified date "${source.verified}", expected a past YYYY-MM-DD`);
         }
       }
     }
     // Rule 1: the interface strings.
     if (!pseudo) {
       for (const id of Object.keys(labels.get('ui') ?? {})) {
-        if (labels.get('ui')[id][tag] === undefined) report(soft, 1, path.join(root, 'labels/ui.json'), id, tag, 'has no ui string');
+        if (labels.get('ui')[id][tag] === undefined) report(errors, 1, path.join(root, 'labels/ui.json'), id, tag, 'has no ui string');
       }
     }
 
@@ -206,7 +203,7 @@ export async function checkLocales(root) {
         try { locale = await loadGuideLocale({ folder, data, tag, resolver: english, document }); } catch (error) { report(errors, 1, file, 'en-XA', tag, error.message); continue; }
       } else {
         const text = await readText(file);
-        if (text === null) { report(soft, 1, file, 'file', tag, `is missing for ${data.id}`); continue; }
+        if (text === null) { report(errors, 1, file, 'file', tag, `is missing for ${data.id}`); continue; }
         try { locale = JSON.parse(text); } catch (error) { report(errors, 1, file, 'JSON', tag, `does not parse: ${error.message}`); continue; }
         if (locale.locale !== undefined && locale.locale !== tag) report(errors, 9, file, 'locale', tag, `says "${locale.locale}" but the file is ${tag}.json`);
         for (const [key, text] of strings(locale)) {
@@ -219,7 +216,7 @@ export async function checkLocales(root) {
 
       /** Rules 1, 2 and 6 for one string: present, placeholders agree with English, and it is not just English. */
       const checkString = (key, englishText, value, { uiLabel, required = true } = {}) => {
-        if (typeof value !== 'string' || !value.trim()) { if (required) report(soft, 1, file, key, tag, 'is missing'); return; }
+        if (typeof value !== 'string' || !value.trim()) { if (required) report(errors, 1, file, key, tag, 'is missing'); return; }
         let want;
         try { want = tokens(uiLabel ? labelled(englishText, uiLabel, english) : englishText); } catch (error) { report(errors, 2, file, key, tag, error.message); return; }
         const have = tokens(value);
@@ -255,11 +252,11 @@ export async function checkLocales(root) {
           const origin = byId.get(from.guideId);
           const text = origin && !pseudo ? await readText(origin.files.get(tag) ?? path.join(origin.folder, 'locales', `${tag}.json`)) : '{}';
           const own = text === null ? undefined : JSON.parse(text).steps?.[from.stepId];
-          if (!pseudo && (!own?.title?.trim() || !own?.description?.trim())) report(soft, 1, file, `steps.${step.reuse.stepId}`, tag, `reuses ${from.guideId} step ${from.stepId}, which has no ${tag} title and description`);
+          if (!pseudo && (!own?.title?.trim() || !own?.description?.trim())) report(errors, 1, file, `steps.${step.reuse.stepId}`, tag, `reuses ${from.guideId} step ${from.stepId}, which has no ${tag} title and description`);
           if (step.reuse.artwork && origin && !pseudo) {
             const originResolver = labelResolver(labels, origin.surfaces, tag);
             for (const id of origin.labelIds) {
-              if (origin.english.has(id) && !resolves(originResolver, id)) report(soft, 3, file, `{label:${id}}`, tag, `in the artwork reused from ${origin.data.id} has no text in this locale and would fall back to English`);
+              if (origin.english.has(id) && !resolves(originResolver, id)) report(errors, 3, file, `{label:${id}}`, tag, `in the artwork reused from ${origin.data.id} has no text in this locale and would fall back to English`);
             }
           }
           const override = locale.overrides?.[step.reuse.stepId];
@@ -276,7 +273,7 @@ export async function checkLocales(root) {
       // Rule 3: every label used resolves in this locale itself.
       for (const id of used) {
         if (english.has(id) && !pseudo && !resolves(resolver, id)) {
-          report(soft, 3, file, `{label:${id}}`, tag, 'has no text in this locale and would fall back to English');
+          report(errors, 3, file, `{label:${id}}`, tag, 'has no text in this locale and would fall back to English');
         }
       }
 
@@ -298,9 +295,8 @@ export async function checkLocales(root) {
         const { size, bold } = fontOf(node);
         const ratio = estimateWidth(text, size, bold) / max;
         const detail = `"${text}" is about ${pct(ratio)} of its ${max}-unit width`;
-        // Past the limit only a complete locale fails: a draft's sourced label cannot be shortened, so the artwork's room for
-        // it is fixed before the locale ships. en-XA, 35% longer by design, is a draft and so only warns.
-        if (ratio >= OVERFLOW_FAIL && statuses[tag] === 'complete') report(errors, 7, source, key, tag, `${detail} (fails at ${pct(OVERFLOW_FAIL)})`);
+        // Past the limit a locale fails: a sourced label cannot be shortened, so the artwork gives it room. en-XA, 35% longer by design, only warns.
+        if (ratio >= OVERFLOW_FAIL && !pseudo) report(errors, 7, source, key, tag, `${detail} (fails at ${pct(OVERFLOW_FAIL)})`);
         else if (ratio >= OVERFLOW_WARN) report(warnings, 7, source, key, tag, `${detail} (${ratio >= OVERFLOW_FAIL ? 'fail' : 'warn'} threshold ${pct(ratio >= OVERFLOW_FAIL ? OVERFLOW_FAIL : OVERFLOW_WARN)})`);
       }
     }
@@ -326,7 +322,7 @@ const HELP = `Check that locale data is complete and consistent.
 
 Usage: node scripts/check-locales.mjs [--help]
 
-Checks every locale in catalog.json (draft or complete) against the guides, labels and source SVGs. Errors go to
+Checks every locale in catalog.json (plus the en-XA pseudo-locale) against the guides, labels and source SVGs. Errors go to
 stderr and exit 1; warnings print one summary line, with detail in tmp/check-locales.log. Exit 0 means no errors,
 2 means a bad argument. The build runs this before composing anything.
 

@@ -2,6 +2,13 @@
   "page-menu": {
     "en": "Page Menu",
     "fr": "Menu de la page",
+    "de": "Seitenmenü",
+    "pt-BR": "Menu da Página",
+    "it": "menu Pagina",
+    "ko": "페이지 메뉴",
+    "zh-Hans": "页面菜单",
+    "es": "Menú de página",
+    "ja": "ページメニュー",
     "_src": {
       "fr": {
         "method": "vendor-docs",
@@ -45,17 +52,33 @@
         "verified": "2026-10-29",
         "version": "iOS 27",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "de": "Seitenmenü",
-    "pt-BR": "Menu da Página",
-    "it": "menu Pagina",
-    "ko": "페이지 메뉴",
-    "zh-Hans": "页面菜单"
+    }
   },
   "show-reader": {
     "en": "Show Reader",
     "fr": "Afficher le lecteur",
+    "de": "Reader einblenden",
+    "pt-BR": "Mostrar Leitor",
+    "it": "Mostra modalità Lettura",
+    "ja": "リーダーを表示",
+    "ko": "읽기 도구 보기",
+    "zh-Hans": "显示阅读器",
+    "es": "Mostrar Lector",
     "_src": {
       "fr": {
         "method": "vendor-docs",
@@ -106,18 +129,27 @@
         "verified": "2026-10-29",
         "version": "iOS 27",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "de": "Reader einblenden",
-    "pt-BR": "Mostrar Leitor",
-    "it": "Mostra modalità Lettura",
-    "ja": "リーダーを表示",
-    "ko": "읽기 도구 보기",
-    "zh-Hans": "显示阅读器"
+    }
   },
   "summarise": {
     "en": "Summarise",
     "en-US": "Summarize",
+    "fr": "Résumer",
+    "de": "Zusammenfassen",
+    "pt-BR": "Resumir",
+    "it": "Riassumi",
+    "ja": "要約",
+    "ko": "요약",
+    "es": "Resumir",
+    "zh-Hans": "摘要",
     "_src": {
       "en-US": {
         "method": "support-page",
@@ -169,13 +201,21 @@
         "verified": "2026-10-29",
         "version": "iOS 27",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "model-translation",
+        "source": "model knowledge of the zh-Hans UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "fr": "Résumer",
-    "de": "Zusammenfassen",
-    "pt-BR": "Resumir",
-    "it": "Riassumi",
-    "ja": "要約",
-    "ko": "요약"
+    }
   }
 }

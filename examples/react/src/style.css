@@ -19,7 +19,6 @@ select, .site-url-input { width: 100%; min-height: 48px; padding: 10px 34px 10px
 .display-options button[aria-pressed="true"] { color: #244b3b; background: #edf3eb; border-color: #a6bba8; }
 .guide-output > h2 { font-size: 21px; margin: 26px 0 15px; }
 .guide-output { margin-top: 32px; }
-.draft-note { margin: 16px 0 0; padding: 10px 12px; border-radius: 8px; background: #fff6e0; border: 1px solid #ecd9a4; color: #5c4a14; font-size: 13px; line-height: 1.5; }
 .toggle { display: block; margin-top: 18px; font-size: 13px; color: #56665c; }
 .installation-guide img { width: 100%; max-width: 600px; margin: 0 auto 24px; background: white; border: 1px solid #dce2da; border-radius: 12px; padding: 16px 10px; }
 [data-pwa-guide^="ios-"] img { max-width: 400px; }

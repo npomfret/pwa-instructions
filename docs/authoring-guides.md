@@ -100,31 +100,43 @@ Source an `en-US` value from the product's own US text: Chromium's `.grd` or `.g
 
 `data-pwa-domain` and `data-domain-width` are separate: they mark the address-bar domain that `siteUrl` replaces. The `data-i18n`, `data-max-width`, `data-lines` and `data-line-height` attributes are removed from the published SVG; imported panels keep their tags through the id and class scoping.
 
-**Statuses.** `catalog.json` `locales` maps each tag to `draft` or `complete`. Only `complete` locales are built into `pwa-instructions/locales/<tag>` and `dist/assets/<id>/<tag>/`. A `draft` is for translators working in the repo, and the build ignores it. `en-XA` is a draft pseudo-locale (accented, about 35% longer, bracketed) that tests compose in memory to exercise the pipeline; never mark it complete.
+**Which locales ship.** `catalog.json` `locales` is the list of tags (`es`, `fr`, `de`, `pt-BR`, `it`, `ja`, `ko`, `zh-Hans`). Every listed locale is checked strictly, built into `pwa-instructions/locales/<tag>` and `dist/assets/<id>/<tag>/`, and published. `en-XA` is not in the catalog: it is a test-only pseudo-locale (accented, about 35% longer, bracketed) that the tests compose in memory to exercise the pipeline, and that the build writes for the demo only. It is never published.
+
+**Room for localized text.** The English artwork spaces some items by their English text. The localization path re-spaces them (the English output is untouched), driven by hints in the source SVG that no published SVG keeps:
+
+| Attribute | Meaning |
+| --- | --- |
+| `data-flow="1\|2\|3"` | A macOS menu bar item (File, Edit, View). Each is placed after the previous item's localized text, and its `data-max-width` becomes its own slot. |
+| `data-flow-box` | The highlight `<rect>` around the File item, sized to the localized File text. |
+| `data-pill="L R"` | A button `<rect>` whose label is the next `<text>`. Buttons sharing the value form a row that keeps its right edge and grows left to `L`, sharing the width if it cannot fit within `L` to `R`. |
+| `data-before-pill` | Left-aligned text (Cancel) that must end before its button row starts. |
+| `data-bounds="L R"` | Centered text that must stay within `L` to `R`. |
+
+`data-max-width` on these nodes is the room the layout really has, so it is larger than the English text needs.
 
 **Adding a locale.**
 
-1. Use a canonical tag (`pt-BR`, `zh-Hans`) as the file name and add it to `catalog.json` `locales` as `draft`.
+1. Use a canonical tag (`pt-BR`, `zh-Hans`) as the file name. Add it to `catalog.json` `locales` once its files exist: a listed locale is built, published and checked strictly.
 2. Add the tag to every label the guides use, in each `labels/<surface>.json`, and to `labels/ui.json`.
 3. Write `locales/<tag>.json` for every guide, covering each step the guide authors.
 4. Record where each label came from in its `_src` entry: `method` (`device`, `chromium-xtb`, `vendor-docs`, ...), `source` (a URL or a reference to the capture, not the screenshot), the `verified` date (`YYYY-MM-DD`), and the OS and browser `version`. Copy the text the product shows; never machine-translate a label. Safari comes from a device or simulator set to the language, Chrome and Edge from Chromium's translation files and the product, Brave from its `Localizable.strings`, Android and Windows from AOSP resources and Microsoft terminology.
 5. Run `npm run check:locales`, then `npm run build:packages`. A missing label, placeholder or key fails with a message naming the file, key and locale.
-6. Inspect each localized SVG at phone width for overflow, then change the status to `complete`.
+6. Inspect each localized SVG at phone width for overflow, and give any label that needs more room space in the artwork (see above) rather than shortening it.
 
 ### Locale checks
 
-`scripts/check-locales.mjs` runs at the start of every build, so `npm run check` fails on any error. It checks every locale in the catalog, draft or complete. Rules marked "complete only" are errors for a `complete` locale and warnings for a `draft`; the rest are errors for both.
+`scripts/check-locales.mjs` runs at the start of every build, so `npm run check` fails on any error. It checks every locale in the catalog, and the `en-XA` pseudo-locale as a test of the pipeline. Every rule is an error, except that `en-XA` only warns about overflow (it is 35% longer by design).
 
 | Rule | Checks |
 | --- | --- |
-| 1. Complete text (complete only) | Every guide has `title`, `label`, `completion`, `alt`, `intro` where English has one, a title and description for each step it authors, each `transitions` entry, and the SVG's `guide:*` keys. A reused step must have text in the guide that authors it, followed through any chain of reuse. The locale has the `ui` string (`website`). |
+| 1. Complete text | Every guide has `title`, `label`, `completion`, `alt`, `intro` where English has one, a title and description for each step it authors, each `transitions` entry, and the SVG's `guide:*` keys. A reused step must have text in the guide that authors it, followed through any chain of reuse. The locale has the `ui` string (`website`). |
 | 2. Placeholders | A translation keeps every `{step:n}` of the English, names the label the English quotes as `uiLabel` (`{label:id}`), and uses only label ids in the guide's `labelSurfaces`. Nothing else in braces is allowed, and a label value keeps the placeholders of its English (`{host}`). |
-| 3. Labels resolve (complete only) | Every label a guide uses has text in the locale itself; there is no fallback to English. This includes the labels drawn in panels reused from another guide, so the locale module's label table is complete. |
-| 4. SVG tags | Every `data-i18n` key in `install.source.svg` and `artwork.svg` has English text (a `label:*` key an English label equal to the node text) and, in a complete locale, a translation. Visible `text`, `title` and `desc` with no tag fail, except digits, the clock, `example.com`, `Safari` (the macOS app menu) and `data-pwa-domain` nodes. |
-| 5. Label sources (complete only) | Each non-English label value has `_src.<tag>` with `method`, `source`, `verified` (a past date) and `version`. English labels and the `ui` surface are exempt: English is the source text, and `ui` is this package's own string, not a browser string. An `en-US` value always needs its source, as an error, because it is a claim about what a US browser shows. |
+| 3. Labels resolve | Every label a guide uses has text in the locale itself; there is no fallback to English. This includes the labels drawn in panels reused from another guide, so the locale module's label table is complete. |
+| 4. SVG tags | Every `data-i18n` key in `install.source.svg` and `artwork.svg` has English text (a `label:*` key an English label equal to the node text) and a translation in every locale. Visible `text`, `title` and `desc` with no tag fail, except digits, the clock, `example.com`, `Safari` (the macOS app menu) and `data-pwa-domain` nodes. |
+| 5. Label sources | Each non-English label value has `_src.<tag>` with `method`, `source`, `verified` (a past date) and `version`. English labels and the `ui` surface are exempt: English is the source text, and `ui` is this package's own string, not a browser string. An `en-US` value always needs its source, as an error, because it is a claim about what a US browser shows. |
 | 6. Content | No empty strings or `TODO`. A string identical to English is a warning, unless it is a brand name; so is an `en-US` value equal to `en`, which should be left out. |
-| 7. Overflow | The estimated width of each tagged node against its `data-max-width` (times `data-lines`): a warning at 100%, an error at 130% in a complete locale (`OVERFLOW_WARN`, `OVERFLOW_FAIL`). A draft only warns past 130%, because a sourced label cannot be shortened: give it room in the artwork before marking the locale complete. |
-| 8. Catalog agrees with files | A `locales/<tag>.json` or label locale that the catalog does not list is an orphan, except a label-only variant such as `en-US`. A listed locale with no files fails when complete. |
+| 7. Overflow | The estimated width of each tagged node against its `data-max-width` (times `data-lines`): a warning at 100%, an error at 130% (`OVERFLOW_WARN`, `OVERFLOW_FAIL`). A sourced label cannot be shortened, so give it room in the artwork. |
+| 8. Catalog agrees with files | A `locales/<tag>.json` or label locale that the catalog does not list is an orphan, except a label-only variant such as `en-US`. A listed locale with no files fails. |
 | 9. Tags | Tags in the catalog, file names and label files are canonical (`Intl.getCanonicalLocales`), and a file's optional `locale` field matches its name. |
 
 **Reading a failure.** Each line is `file: key [locale] message (rule N)`, for example `guides/ios/safari/iphone/layout-1/locales/es.json: steps.tap-share.title [es] lacks {label:share}, which the English has (rule 2)`. Open the file, find the key, and fix it for that locale. Warnings print one summary line (`Locale warnings: 27 (27 rule 7)`) with the full list in `tmp/check-locales.log`. For a width warning, shorten the text, or give the node more room (`data-max-width`, `data-lines`) and inspect the SVG.

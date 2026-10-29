@@ -4,7 +4,7 @@
   "heading": "Installer l’appli",
   "subtitle": "Mac · Chrome",
   "svgTitle": "Installer une appli dans Chrome sur Mac",
-  "svgDesc": "Six étapes : ouvrez {label:more}, choisissez {label:cast-save-and-share}, choisissez {label:install}, cliquez sur {label:next}, cliquez sur {label:install}, puis sur {label:show-in-finder}. Des contours bleus signalent les commandes.",
+  "svgDesc": "Six étapes : ouvrez Plus, choisissez Caster, enregistrer et partager, choisissez Installer, cliquez sur Suivant, cliquez sur Installer, puis sur Afficher dans le Finder. Des contours bleus signalent les commandes.",
   "intro": "Ce guide suit le chemin par le menu Chrome présenté dans les captures d’écran de référence. Certains sites web proposent aussi une icône d’installation dans la barre d’adresse.",
   "steps": {
     "open-more-menu": {

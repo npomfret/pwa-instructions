@@ -3,7 +3,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { composeGuides } from "./compose-guides.mjs";
-import { loadLabels, publishedLocales } from "./i18n.mjs";
+import { PSEUDO_LOCALE, loadLabels } from "./i18n.mjs";
 import { writeLocaleOutputs } from "./emit-locales.mjs";
 import { checkLocales, reportLocaleChecks } from "./check-locales.mjs";
 
@@ -56,12 +56,11 @@ const generated = path.join(packageRoot, "src/core/generated");
 await mkdir(generated, { recursive: true });
 await writeFile(path.join(generated, "guides.ts"),
   '/* Generated from catalog.json and guides/. Do not edit. */\nimport type { InstallGuide } from "../types.js";\nexport const guides: readonly InstallGuide[] = ' + JSON.stringify(guides, null, 2) + ';\n');
-// Only complete locales are built for publishing. Draft locales (and the en-XA pseudo-locale) are composed by tests alone.
+// Every locale in the catalog is built for publishing. The en-XA pseudo-locale is composed by tests, and for the demo below.
 const locales = new Map();
-for (const tag of publishedLocales(catalog)) locales.set(tag, await composeGuides(root, catalog, tag));
-// The demo also lists the draft locales and en-XA. They are written under the example (gitignored), never into the package.
-const demoLocales = new Map();
-for (const tag of Object.keys(catalog.locales ?? {})) if (!locales.has(tag)) demoLocales.set(tag, await composeGuides(root, catalog, tag, { lenient: true }));
+for (const tag of catalog.locales) locales.set(tag, await composeGuides(root, catalog, tag));
+// The demo takes the catalog locales from the published modules; only en-XA is written under the example (gitignored), never into the package.
+const demoLocales = new Map([[PSEUDO_LOCALE, await composeGuides(root, catalog, PSEUDO_LOCALE)]]);
 await writeLocaleOutputs({ catalog, locales, english: materialized, generated, assets: path.join(packageRoot, "dist/assets"), labels: await loadLabels(root),
   demo: { folder: path.join(root, "examples/react/src/generated/locales"), locales: demoLocales } });
 execFileSync(process.execPath, [path.join(root, "node_modules/typescript/bin/tsc"), "-b", "packages/pwa-instructions"], { cwd: root, stdio: "inherit" });

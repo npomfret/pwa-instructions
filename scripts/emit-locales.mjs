@@ -32,10 +32,10 @@ export function localeModuleSource(tag, catalog, composed, ui, types = '../../ty
 
 /**
  * Write the generated module for each `{tag: composed}` locale and its per-guide assets. Only the tags passed in are
- * written, so the caller decides what is published; draft locales are never passed. `english` is the composed English
+ * written, so the caller decides what is published; en-XA is never passed. `english` is the composed English
  * guides, written as the opt-in `locales/en` module (tagged artwork and templates for an English page with another
  * browser language); it has no assets, because install.svg and instructions.md already are the English ones.
- * `demo` is `{ folder, locales }`: modules for the example app only (draft locales and en-XA), written without assets.
+ * `demo` is `{ folder, locales }`: modules for the example app only (en-XA), written without assets.
  */
 export async function writeLocaleOutputs({ catalog, locales, english, generated, assets, labels, demo }) {
   await rm(path.join(generated, 'locales'), { recursive: true, force: true });
@@ -51,7 +51,7 @@ export async function writeLocaleOutputs({ catalog, locales, english, generated,
       await writeFile(path.join(target, 'instructions.md'), composed.get(id).text);
     }
   }
-  // The demo may also show draft locales. They go to its own folder, never to the package or its assets.
+  // The demo also shows the en-XA pseudo-locale. It goes to its own folder, never to the package or its assets.
   if (demo) {
     await rm(demo.folder, { recursive: true, force: true });
     await mkdir(demo.folder, { recursive: true });

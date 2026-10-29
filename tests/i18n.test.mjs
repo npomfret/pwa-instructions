@@ -6,7 +6,7 @@ import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { composeGuides } from '../scripts/compose-guides.mjs';
-import { loadLabels, pseudoLocalize, publishedLocales } from '../scripts/i18n.mjs';
+import { loadLabels, pseudoLocalize } from '../scripts/i18n.mjs';
 import { writeLocaleOutputs } from '../scripts/emit-locales.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -18,8 +18,8 @@ const parse = svg => new DOMParser().parseFromString(svg, 'image/svg+xml');
 // Text that is deliberately never translated: step numbers, the placeholder domain and clock, and the Safari app-menu name.
 const untranslated = /^(\d+|example\.com|9:41|Safari)$/;
 
-test('en-XA is a draft locale and composes every guide', () => {
-  assert.equal(catalog.locales['en-XA'], 'draft');
+test('en-XA is a test-only pseudo-locale, not a catalog locale, and composes every guide', () => {
+  assert.ok(Array.isArray(catalog.locales) && !catalog.locales.includes('en-XA'));
   assert.equal(pseudo.size, catalog.guides.length);
   for (const { id } of catalog.guides) {
     const guide = pseudo.get(id);
@@ -103,15 +103,14 @@ test('English output carries no localization markup, which stays in the working 
   assert.ok(imported.length > 5);
 });
 
-test('draft locales are never published', async () => {
-  assert.deepEqual(publishedLocales({ locales: { 'en-XA': 'draft', es: 'complete', fr: 'draft', en: 'complete' } }), ['es']);
-  assert.deepEqual(publishedLocales(catalog), []);
+test('the catalog locales are published and the pseudo-locale is not', async () => {
+  assert.deepEqual(catalog.locales, ['es', 'fr', 'de', 'pt-BR', 'it', 'ja', 'ko', 'zh-Hans']);
   const temporary = await mkdtemp(path.join(tmpdir(), 'pwa-instructions-locales-'));
   try {
-    // Only what the build passes in is written; with no complete locale, nothing is.
+    // Only what the build passes in is written; with no locale passed, nothing is.
     await writeLocaleOutputs({ catalog, locales: new Map(), generated: path.join(temporary, 'generated'), assets: path.join(temporary, 'assets'), labels });
     await assert.rejects(readdir(path.join(temporary, 'assets')), { code: 'ENOENT' });
-    // A published locale gets a module and per-guide assets.
+    // A locale passed in gets a module and per-guide assets.
     await writeLocaleOutputs({ catalog, locales: new Map([['en-XA', pseudo]]), generated: path.join(temporary, 'generated'), assets: path.join(temporary, 'assets'), labels });
     const source = await readFile(path.join(temporary, 'generated/locales/en-XA.ts'), 'utf8');
     assert.ok(source.includes('"ios-brave-iphone-layout-1"') && source.includes('data:image/svg+xml'));
@@ -122,6 +121,8 @@ test('draft locales are never published', async () => {
   // The built package has no trace of the pseudo-locale.
   const dist = path.join(root, 'packages/pwa-instructions/dist');
   for (const { id } of catalog.guides) assert.deepEqual((await readdir(path.join(dist, 'assets', id))).filter(name => /^en-XA$/i.test(name)), [], id);
-  // Only the opt-in English module ships; it is not a draft and has no per-guide assets.
-  assert.deepEqual((await readdir(path.join(dist, 'core/generated/locales'))).sort(), ['en.d.ts', 'en.js']);
+  // The opt-in English module and one module per catalog locale ship; English has no per-guide assets.
+  assert.deepEqual((await readdir(path.join(dist, 'core/generated/locales'))).sort(),
+    ['en', ...catalog.locales].sort().flatMap(tag => [`${tag}.d.ts`, `${tag}.js`]).sort());
+  for (const tag of catalog.locales) for (const { id } of catalog.guides) assert.deepEqual((await readdir(path.join(dist, 'assets', id, tag))).sort(), ['install.svg', 'instructions.md'], `${id} ${tag}`);
 });

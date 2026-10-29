@@ -14,7 +14,7 @@ import { estimateWidth, fitText, fontOf as fontClass } from '../packages/pwa-ins
  */
 
 export const DEFAULT_LOCALE = 'en';
-/** Pseudo-locale for tests: accented, about 35% longer, bracketed, and generated from English. Never published. */
+/** Pseudo-locale for tests: accented, about 35% longer, bracketed, and generated from English. Not a catalog locale: never published. */
 export const PSEUDO_LOCALE = 'en-XA';
 /**
  * Label-only variants: a tag that overrides the labels whose text differs and inherits every other label (and all prose)
@@ -23,16 +23,13 @@ export const PSEUDO_LOCALE = 'en-XA';
  */
 export const LABEL_VARIANTS = { 'en-US': DEFAULT_LOCALE };
 const DATA_ATTRIBUTES = ['data-i18n', 'data-max-width', 'data-lines', 'data-line-height'];
+/** Layout hints for localized text (see flowLayout). Build-only: English output ignores them, and no published SVG keeps them. */
+const FLOW_ATTRIBUTES = ['data-flow', 'data-flow-box', 'data-pill', 'data-bounds', 'data-before-pill'];
 const PLACEHOLDER = /\{label:([a-z0-9-]+)\}/g;
 const ns = 'http://www.w3.org/2000/svg';
 
 const escapePattern = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const exists = async file => readFile(file, 'utf8').then(text => text, error => { if (error.code === 'ENOENT') return null; throw error; });
-
-/** Locales the build publishes: complete ones only. Draft locales exist for tests and translators. */
-export function publishedLocales(catalog) {
-  return Object.entries(catalog.locales ?? {}).filter(([tag, status]) => tag !== DEFAULT_LOCALE && status === 'complete').map(([tag]) => tag);
-}
 
 export async function loadLabels(root) {
   const folder = path.join(root, 'labels');
@@ -70,9 +67,9 @@ export function pseudoLocalize(text) {
 
 /**
  * Resolve label ids for one guide: `surfaces` are searched together, and an id found twice is an error. A label with no
- * text for `tag` is an error too, unless `lenient` is set, which shows its English text; that is for the demo's draft locales.
+ * text for `tag` is an error too: there is no silent English fallback.
  */
-export function labelResolver(labels, surfaces, tag, { lenient = false } = {}) {
+export function labelResolver(labels, surfaces, tag) {
   const index = new Map();
   for (const surface of surfaces) {
     const entries = labels.get(surface);
@@ -88,7 +85,6 @@ export function labelResolver(labels, surfaces, tag, { lenient = false } = {}) {
     if (tag === DEFAULT_LOCALE || found.entry[tag] !== undefined) return found.entry[tag];
     if (LABEL_VARIANTS[tag]) return found.entry[LABEL_VARIANTS[tag]];
     if (tag === PSEUDO_LOCALE) return pseudoLocalize(found.entry.en);
-    if (lenient) return found.entry.en;
     throw new Error(`Label ${id} (${found.surface}) has no ${tag} text`);
   };
   const fill = text => text.replace(PLACEHOLDER, (_, id) => get(id));
@@ -215,6 +211,85 @@ export function localizeDocument(doc, { tag, resolver, locale, guideId }) {
     fillText(doc, node, [{ text }], { max: Number(node.getAttribute('data-max-width')) || 0,
       lines: Number(node.getAttribute('data-lines')) || 1, lineHeight: Number(node.getAttribute('data-line-height')) || 0 });
   }
+  flowLayout(doc);
+}
+
+// --- Layout that follows the localized text ----------------------------------------------------------------------
+
+/** Estimated rendered width of `node`'s text, with 10% in hand because the estimate is rough. */
+const measured = node => {
+  const { size, bold } = fontOf(node);
+  return Math.ceil(estimateWidth(node.textContent, size, bold) * 1.1);
+};
+const elementAfter = node => { let next = node.nextSibling; while (next && next.nodeType !== 1) next = next.nextSibling; return next; };
+const rounded = value => String(Math.round(value * 10) / 10);
+
+/**
+ * Give localized text the room it needs, where the English artwork spaces things by the English text. Only the
+ * localization path does this, so the English artwork is untouched. Three hints in the source SVG:
+ *   data-flow="1|2|3" + data-flow-box   macOS menu bar items: File (with its highlight box), Edit, View, each placed after the
+ *                                       previous one's text. The box is sized to the File text. Each item's data-max-width
+ *                                       becomes its own slot, so a label swapped in at runtime is squeezed rather than overlapped.
+ *   data-pill="L R" on a <rect>         a button drawn as a rect with its label as the next <text>. Pills sharing the value form a
+ *                                       row that keeps its right edge and grows left to L; if the row cannot fit between L and R
+ *                                       the pills share the width.
+ *   data-before-pill on a <text>        left-aligned text (Cancel) that must end 14 units before its pill row starts.
+ *   data-bounds="L R" on a <text>       centered text that must stay inside L..R.
+ */
+function flowLayout(doc) {
+  const all = Array.from(doc.getElementsByTagName('*'));
+  const menus = new Map();
+  for (const node of all.filter(item => item.hasAttribute('data-flow'))) menus.set(node.parentNode, [...(menus.get(node.parentNode) ?? []), node]);
+  for (const items of menus.values()) {
+    const [file, edit, view] = ['1', '2', '3'].map(rank => items.find(item => item.getAttribute('data-flow') === rank));
+    const [fileWidth, editWidth, viewWidth] = [file, edit, view].map(measured);
+    const box = Array.from(file.parentNode.childNodes).find(item => item.nodeType === 1 && item.hasAttribute('data-flow-box'));
+    // The English File text starts at x=94 inside a box that begins at x=85; Edit follows the box by 15, View follows Edit by 24.
+    if (box) { box.setAttribute('width', rounded(fileWidth + 18)); file.setAttribute('x', rounded(94 + fileWidth / 2)); } else file.setAttribute('x', '94');
+    const editX = 94 + fileWidth + 9 + 15;
+    const viewX = editX + editWidth + 24;
+    edit.setAttribute('x', rounded(editX));
+    view.setAttribute('x', rounded(viewX));
+    for (const [node, width] of [[file, fileWidth], [edit, editWidth + 12], [view, viewWidth + 12]]) node.setAttribute('data-max-width', String(width));
+  }
+  const rows = new Map();
+  for (const rect of all.filter(item => item.hasAttribute('data-pill'))) {
+    const key = rect.getAttribute('data-pill');
+    const row = rows.get(rect.parentNode) ?? new Map();
+    rows.set(rect.parentNode, row.set(key, [...(row.get(key) ?? []), rect]));
+  }
+  for (const row of rows.values()) {
+    for (const [bounds, rects] of row) {
+      const [left, right] = bounds.split(/\s+/).map(Number);
+      const gap = 12;
+      const pills = rects.map(rect => ({ rect, text: elementAfter(rect), width: Number(rect.getAttribute('width')) }));
+      const textWidth = pills.map(pill => measured(pill.text));
+      const edge = Math.max(...pills.map(pill => Number(pill.rect.getAttribute('x')) + pill.width));
+      let widths = pills.map((pill, index) => Math.max(pill.width, textWidth[index] + 32));
+      const total = list => list.reduce((sum, width) => sum + width, 0) + gap * (list.length - 1);
+      let start = edge - total(widths);
+      if (start < left) {
+        start = left;
+        if (total(widths) > right - left) widths = textWidth.map(width => width + 16);
+        if (total(widths) > right - left) { const scale = (right - left - gap * (widths.length - 1)) / (total(widths) - gap * (widths.length - 1)); widths = widths.map(width => width * scale); }
+      }
+      for (const node of Array.from(pills[0].rect.parentNode.childNodes).filter(item => item.nodeType === 1 && item.hasAttribute('data-before-pill'))) {
+        node.setAttribute('x', rounded(Math.min(Number(node.getAttribute('x')), start - 14 - measured(node))));
+      }
+      pills.forEach((pill, index) => {
+        pill.rect.setAttribute('x', rounded(start));
+        pill.rect.setAttribute('width', rounded(widths[index]));
+        pill.text.setAttribute('x', rounded(start + widths[index] / 2));
+        pill.text.setAttribute('data-max-width', String(Math.floor(widths[index] - 16)));
+        start += widths[index] + gap;
+      });
+    }
+  }
+  for (const node of all.filter(item => item.hasAttribute('data-bounds'))) {
+    const [left, right] = node.getAttribute('data-bounds').split(/\s+/).map(Number);
+    const half = Math.min(measured(node), Number(node.getAttribute('data-max-width')) || Infinity) / 2;
+    node.setAttribute('x', rounded(Math.min(Math.max(Number(node.getAttribute('x')), left + half), right - half)));
+  }
 }
 
 /** Check each tagged label's English text equals its dictionary entry, so the English build and the dictionary cannot drift. */
@@ -232,6 +307,7 @@ export function checkLabelTags(doc, resolver, guideId) {
  */
 export function stripLocalization(doc, { keepLabels = false } = {}) {
   for (const node of Array.from(doc.getElementsByTagName('*'))) {
+    for (const name of FLOW_ATTRIBUTES) node.removeAttribute(name);
     const key = node.getAttribute('data-i18n') ?? '';
     // A step title that names a control is kept whole: the runtime redraws it with the browser's label (artwork.ts).
     if (keepLabels && (key.startsWith('label:') || (key === 'step' && node.hasAttribute('data-max-width')))) continue;

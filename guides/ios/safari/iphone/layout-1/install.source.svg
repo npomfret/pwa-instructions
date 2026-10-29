@@ -97,7 +97,7 @@
       <rect x="105" y="220" width="35" height="35" rx="10" fill="#e9ecef"/>
       <rect x="163" y="220" width="35" height="35" rx="10" fill="#e9ecef"/>
       <path d="m274 240 9-9 9 9" class="icon"/>
-      <text x="283" y="270" text-anchor="middle" class="small" style="fill:#687078" data-i18n="label:view-less" data-max-width="80">View Less</text>
+      <text x="283" y="270" text-anchor="middle" class="small" style="fill:#687078" data-i18n="label:view-less" data-bounds="210 316" data-max-width="106">View Less</text>
       <rect x="94" y="287" width="228" height="157" rx="15" fill="#f1f2f3"/>
       <text x="108" y="316" class="small" style="fill:#687078" data-i18n="label:add-bookmark-to" data-max-width="210">Add Bookmark to…</text>
       <path d="M108 333h200" class="line"/>

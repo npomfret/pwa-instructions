@@ -1,16 +1,6 @@
 {
   "schemaVersion": 1,
-  "locales": {
-    "en-XA": "draft",
-    "es": "draft",
-    "fr": "draft",
-    "de": "draft",
-    "pt-BR": "draft",
-    "it": "draft",
-    "ja": "draft",
-    "ko": "draft",
-    "zh-Hans": "draft"
-  },
+  "locales": ["es", "fr", "de", "pt-BR", "it", "ja", "ko", "zh-Hans"],
   "guides": [
     {
       "id": "ios-safari-iphone-layout-1",

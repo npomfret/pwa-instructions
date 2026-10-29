@@ -105,7 +105,7 @@ const selection = selectGuide(environment, { locale: detectUILocale() ?? 'en' })
 // selection.guide.language === 'es'; selection.locale: { requested: 'es-MX', resolved: 'es', fallback: false }
 ```
 
-You can skip registration and pass the same data per call: `{ locale: 'es', localeData: { es } }`. Data passed per call wins over registered data for the same tag. A module's default export is `LocaleData` (`{ guides, ui? }`); `guides` and `ui` are also named exports. Locale modules are published only for locales marked complete; none is complete yet. The exception is the opt-in `en` module described below.
+You can skip registration and pass the same data per call: `{ locale: 'es', localeData: { es } }`. Data passed per call wins over registered data for the same tag. A module's default export is `LocaleData` (`{ guides, ui? }`); `guides` and `ui` are also named exports. Eight locale modules are published: `es`, `fr`, `de`, `pt-BR`, `it`, `ja`, `ko` and `zh-Hans`, plus the opt-in `en` module described below. The `en-XA` pseudo-locale is a test tool and is not published.
 
 `resolveLocale(requested, available)` returns `{ requested, resolved, fallback }`:
 

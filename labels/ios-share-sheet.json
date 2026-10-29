@@ -2,6 +2,13 @@
   "share": {
     "en": "Share",
     "fr": "Partager",
+    "de": "Teilen",
+    "pt-BR": "Compartilhar",
+    "it": "Condividi",
+    "ja": "共有",
+    "ko": "공유",
+    "zh-Hans": "共享",
+    "es": "Compartir",
     "_src": {
       "fr": {
         "method": "vendor-docs",
@@ -51,18 +58,26 @@
         "verified": "2026-10-29",
         "version": "iOS 27",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "de": "Teilen",
-    "pt-BR": "Compartilhar",
-    "it": "Condividi",
-    "ja": "共有",
-    "ko": "공유",
-    "zh-Hans": "共享"
+    }
   },
   "view-more": {
     "en": "View More",
     "zh-Hans": "查看更多",
+    "es": "Ver más",
+    "fr": "Afficher plus",
+    "de": "Mehr anzeigen",
+    "pt-BR": "Ver Mais",
+    "it": "Mostra altro",
+    "ja": "さらに表示",
+    "ko": "더 보기",
     "_src": {
       "zh-Hans": {
         "method": "vendor-docs",
@@ -70,15 +85,137 @@
         "verified": "2026-10-29",
         "version": "iPadOS 27 (same share sheet as iOS)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "model-translation",
+        "source": "model knowledge of the de UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
     }
   },
   "view-less": {
-    "en": "View Less"
+    "en": "View Less",
+    "es": "Ver menos",
+    "fr": "Afficher moins",
+    "de": "Weniger anzeigen",
+    "pt-BR": "Ver Menos",
+    "it": "Mostra meno",
+    "ja": "表示を減らす",
+    "ko": "덜 보기",
+    "zh-Hans": "查看更少",
+    "_src": {
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "model-translation",
+        "source": "model knowledge of the de UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "model-translation",
+        "source": "model knowledge of the zh-Hans UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      }
+    }
   },
   "add-to-home-screen": {
     "en": "Add to Home Screen",
     "es": "Añadir a pantalla de inicio",
+    "fr": "Sur l’écran d’accueil",
+    "de": "Zu Home-Bildschirm hinzufügen",
+    "pt-BR": "Adicionar à Tela de Início",
+    "it": "Aggiungi alla schermata Home",
+    "ja": "ホーム画面に追加",
+    "ko": "홈 화면에 추가",
+    "zh-Hans": "添加到主屏幕",
     "_src": {
       "es": {
         "method": "vendor-docs",
@@ -136,18 +273,18 @@
         "version": "iOS 27",
         "deviceChecked": false
       }
-    },
-    "fr": "Sur l’écran d’accueil",
-    "de": "Zu Home-Bildschirm hinzufügen",
-    "pt-BR": "Adicionar à Tela de Início",
-    "it": "Aggiungi alla schermata Home",
-    "ja": "ホーム画面に追加",
-    "ko": "홈 화면에 추가",
-    "zh-Hans": "添加到主屏幕"
+    }
   },
   "add-bookmark-to": {
     "en": "Add Bookmark to…",
     "es": "Añadir marcador a",
+    "fr": "Ajouter un signet à",
+    "de": "Lesezeichen hinzufügen zu …",
+    "pt-BR": "Adicionar Favorito a",
+    "it": "Aggiungi segnalibro a",
+    "ja": "ブックマークの追加先",
+    "zh-Hans": "将书签添加至",
+    "ko": "북마크 추가 위치",
     "_src": {
       "es": {
         "method": "vendor-docs",
@@ -201,18 +338,26 @@
         "version": "iOS 27",
         "deviceChecked": false,
         "note": "Apple quotes it without the trailing \"…\" that the English label has; text copied exactly from the source."
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "fr": "Ajouter un signet à",
-    "de": "Lesezeichen hinzufügen zu …",
-    "pt-BR": "Adicionar Favorito a",
-    "it": "Aggiungi segnalibro a",
-    "ja": "ブックマークの追加先",
-    "zh-Hans": "将书签添加至"
+    }
   },
   "find-on-page": {
     "en": "Find on Page",
     "de": "Auf Seite suchen",
+    "es": "Buscar en la página",
+    "fr": "Rechercher sur la page",
+    "pt-BR": "Buscar na Página",
+    "it": "Trova nella pagina",
+    "ja": "ページ内を検索",
+    "ko": "페이지에서 찾기",
+    "zh-Hans": "在页面上查找",
     "_src": {
       "de": {
         "method": "vendor-docs",
@@ -221,12 +366,68 @@
         "version": "iOS 15 guide (older)",
         "deviceChecked": false,
         "note": "Older Apple guide wording (\"Share > Auf Seite suchen\"); also at guide/iphone/iph6297b394b/15.0/ios/15.0. Not re-confirmed for iOS 27."
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "model-translation",
+        "source": "model knowledge of the zh-Hans UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
     }
   },
   "add-to-reading-list": {
     "en": "Add to Reading List",
     "es": "Añadir a la lista de lectura",
+    "fr": "Ajouter à la liste de lecture",
+    "de": "Zur Leseliste hinzufügen",
+    "pt-BR": "Adicionar à Lista de Leitura",
+    "it": "Aggiungi a Elenco lettura",
+    "ja": "リーディングリストに追加",
+    "ko": "읽기 목록에 추가",
+    "zh-Hans": "添加到阅读列表",
     "_src": {
       "es": {
         "method": "vendor-docs",
@@ -284,18 +485,18 @@
         "version": "iOS 27",
         "deviceChecked": false
       }
-    },
-    "fr": "Ajouter à la liste de lecture",
-    "de": "Zur Leseliste hinzufügen",
-    "pt-BR": "Adicionar à Lista de Leitura",
-    "it": "Aggiungi a Elenco lettura",
-    "ja": "リーディングリストに追加",
-    "ko": "읽기 목록에 추가",
-    "zh-Hans": "添加到阅读列表"
+    }
   },
   "page-zoom": {
     "en": "Page Zoom",
     "fr": "Zoom de la page",
+    "de": "Seitenzoom",
+    "pt-BR": "Zoom da Página",
+    "it": "Zoom pagina",
+    "ko": "페이지 확대/축소",
+    "zh-Hans": "页面缩放",
+    "es": "Zoom de la página",
+    "ja": "ページのズーム",
     "_src": {
       "fr": {
         "method": "vendor-docs",
@@ -338,17 +539,33 @@
         "verified": "2026-10-29",
         "version": "iOS 27",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "de": "Seitenzoom",
-    "pt-BR": "Zoom da Página",
-    "it": "Zoom pagina",
-    "ko": "페이지 확대/축소",
-    "zh-Hans": "页面缩放"
+    }
   },
   "add-to-favorites": {
     "en": "Add to Favorites",
     "zh-Hans": "添加到个人收藏",
+    "es": "Añadir a favoritos",
+    "fr": "Ajouter aux favoris",
+    "de": "Zu Favoriten hinzufügen",
+    "pt-BR": "Adicionar aos Favoritos",
+    "it": "Aggiungi ai preferiti",
+    "ja": "お気に入りに追加",
+    "ko": "즐겨찾기에 추가",
     "_src": {
       "zh-Hans": {
         "method": "vendor-docs",
@@ -356,12 +573,68 @@
         "verified": "2026-10-29",
         "version": "iPadOS 27 (same share sheet as iOS)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "model-translation",
+        "source": "model knowledge of the de UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
     }
   },
   "markup": {
     "en": "Markup",
     "fr": "Annoter",
+    "de": "Markierung",
+    "pt-BR": "Marcação",
+    "it": "Modifica",
+    "ja": "マークアップ",
+    "ko": "마크업",
+    "zh-Hans": "标记",
+    "es": "Marcación",
     "_src": {
       "fr": {
         "method": "vendor-docs",
@@ -412,18 +685,26 @@
         "verified": "2026-10-29",
         "version": "iOS 27",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "de": "Markierung",
-    "pt-BR": "Marcação",
-    "it": "Modifica",
-    "ja": "マークアップ",
-    "ko": "마크업",
-    "zh-Hans": "标记"
+    }
   },
   "print": {
     "en": "Print",
     "de": "Drucken",
+    "zh-Hans": "打印",
+    "es": "Imprimir",
+    "fr": "Imprimer",
+    "pt-BR": "Imprimir",
+    "it": "Stampa",
+    "ja": "プリント",
+    "ko": "프린트",
     "_src": {
       "de": {
         "method": "vendor-docs",
@@ -439,13 +720,61 @@
         "verified": "2026-10-29",
         "version": "iOS 27",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    },
-    "zh-Hans": "打印"
+    }
   },
   "add-to-new-quick-note": {
     "en": "Add to New Quick Note",
     "de": "Zu Schnellnotiz hinzufügen",
+    "es": "Añadir a nota rápida nueva",
+    "fr": "Ajouter à une nouvelle note rapide",
+    "pt-BR": "Adicionar a Nova Nota Rápida",
+    "it": "Aggiungi a nuova nota veloce",
+    "ja": "新規クイックメモに追加",
+    "ko": "새로운 빠른 메모에 추가",
+    "zh-Hans": "添加到新快速备忘录",
     "_src": {
       "de": {
         "method": "vendor-docs",
@@ -454,18 +783,123 @@
         "version": "iOS 27",
         "deviceChecked": false,
         "note": "Apple's German wording differs from the English mockup label \"Add to New Quick Note\"; this is the documented German action name."
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "model-translation",
+        "source": "model knowledge of the ja UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "model-translation",
+        "source": "model knowledge of the zh-Hans UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
     }
   },
   "open-in-safari": {
     "en": "Open in Safari",
     "ja": "Safariで開く",
+    "es": "Abrir en Safari",
+    "fr": "Ouvrir dans Safari",
+    "de": "In Safari öffnen",
+    "pt-BR": "Abrir no Safari",
+    "it": "Apri in Safari",
+    "ko": "Safari에서 열기",
+    "zh-Hans": "在 Safari 浏览器中打开",
     "_src": {
       "ja": {
         "method": "vendor-docs",
         "source": "https://support.apple.com/ja-jp/104996",
         "verified": "2026-10-29",
         "version": "macOS 27 (page text; same Apple term used on iOS)",
+        "deviceChecked": false
+      },
+      "es": {
+        "method": "model-translation",
+        "source": "model knowledge of the es UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "model-translation",
+        "source": "model knowledge of the de UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-BR UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "model-translation",
+        "source": "model knowledge of the it UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "model-translation",
+        "source": "model knowledge of the ko UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "model-translation",
+        "source": "model knowledge of the zh-Hans UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
         "deviceChecked": false
       }
     }
