@@ -1,0 +1,26 @@
+{
+  "title": "在 Safari 浏览器中添加到程序坞",
+  "label": "Mac · Safari 浏览器 · 添加到程序坞",
+  "intro": "需要 macOS Sonoma 14 或更高版本。这些插图展示的是“{label:file}”菜单路径；Safari 浏览器也可在其“共享”菜单中提供“{label:add-to-dock}”。",
+  "completion": "从程序坞中打开新的 App。",
+  "alt": "Mac 版 Safari 浏览器的三个步骤：打开“文件”菜单，选取“添加到程序坞”，然后点按“添加”。",
+  "steps": {
+    "open-file-menu": {
+      "title": "打开“{label:file}”菜单",
+      "description": "在 Safari 浏览器中打开网站。在 Mac 屏幕顶部的菜单栏中，点按“{label:file}”。"
+    },
+    "add-to-dock": {
+      "title": "选取“{label:add-to-dock}”",
+      "description": "在“{label:file}”菜单中，点按“{label:add-to-dock}”。Safari 浏览器会为此网站打开一个确认对话框。"
+    },
+    "confirm-add": {
+      "title": "点按“{label:add}”",
+      "description": "保留或修改 App 名称，然后点按“{label:add}”。网页 App 会存储到“应用程序”文件夹，并添加到程序坞。"
+    }
+  },
+  "transitions": {},
+  "heading": "添加到程序坞",
+  "subtitle": "Mac · Safari 浏览器",
+  "svgTitle": "在 Mac 版 Safari 浏览器中将网站添加到程序坞",
+  "svgDesc": "三个步骤：打开“文件”菜单，选取“添加到程序坞”，然后点按“添加”。蓝色轮廓标出相应的控件。"
+}

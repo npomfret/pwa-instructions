@@ -1,0 +1,30 @@
+{
+  "title": "App in Edge unter Windows installieren",
+  "label": "Windows · Edge · App installieren",
+  "intro": "Der Menüweg folgt der aktuellen Edge-Hilfe von Microsoft. In anderen Edge-Versionen befindet sich „{label:apps}“ eventuell direkt unter „{label:settings-and-more}“. Dokumentationsentwurf: noch nicht auf einem Gerät geprüft; Menüaufbau und Bestätigungsdialoge können abweichen.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "{label:settings-and-more} öffnen",
+      "description": "Öffne die Website in Microsoft Edge. Klicke oben rechts im Browser auf die drei waagerechten Punkte."
+    },
+    "more-tools": {
+      "title": "{label:more-tools} auswählen",
+      "description": "Wähle im Menü {label:more-tools}."
+    },
+    "apps": {
+      "title": "{label:apps} auswählen",
+      "description": "Wähle unter „Weitere Tools“ den Eintrag {label:apps}."
+    },
+    "install-site": {
+      "title": "{label:install-this-site-as-an-app} auswählen",
+      "description": "Wähle {label:install-this-site-as-an-app}. Bei einer installierbaren PWA bietet Edge stattdessen eventuell „App installieren“ oder ein Installationssymbol in der Adressleiste an."
+    }
+  },
+  "completion": "Um die App erneut zu öffnen, gib edge://apps ein und klicke auf der Karte der App auf „Öffnen“. Unter „Details“ findest du „An Taskleiste anheften“, „An Startmenü anheften“ und „Desktopverknüpfung erstellen“.",
+  "alt": "5 illustrierte Installationsschritte in Edge unter Windows; blaue Umrandungen markieren die beschriebenen Bedienelemente.",
+  "transitions": {},
+  "heading": "App installieren",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "App in Edge unter Windows installieren",
+  "svgDesc": "Dokumentationsentwurf: schematische Bedienelemente nach der aktuellen Anleitung des Herstellers, keine geprüfte Geräteaufnahme. Blaue Umrandungen markieren die Bedienelemente."
+}

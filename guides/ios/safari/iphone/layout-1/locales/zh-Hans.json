@@ -1,0 +1,29 @@
+{
+  "title": "添加到主屏幕",
+  "label": "iPhone · Safari 浏览器 · 添加到主屏幕",
+  "completion": "按照确认屏幕上的提示完成 App 的添加。",
+  "alt": "共四步：轻点地址旁边的“页面菜单”，轻点“共享”，如有需要轻点“查看更多”，然后轻点“添加到主屏幕”。",
+  "steps": {
+    "open-page-menu": {
+      "title": "打开“{label:page-menu}”",
+      "description": "轻点网站地址栏左侧的“{label:page-menu}”按钮。其图标为三条横线，最下面一条较短。"
+    },
+    "tap-share": {
+      "title": "轻点“{label:share}”",
+      "description": "在“{label:page-menu}”中，轻点“{label:share}”。其图标是一个带向上箭头的方框。"
+    },
+    "view-more": {
+      "title": "轻点“{label:view-more}”",
+      "description": "如果共享菜单处于收起状态，请轻点“{label:view-more}”（带向下 V 形的按钮）以显示其余操作。如果操作列表已经显示，请直接继续第 {step:4} 步。"
+    },
+    "add-to-home-screen": {
+      "title": "轻点“{label:add-to-home-screen}”",
+      "description": "在展开的操作列表中，找到并轻点“{label:add-to-home-screen}”。其图标是一个带加号的圆角方框。"
+    }
+  },
+  "transitions": {},
+  "heading": "添加到主屏幕",
+  "subtitle": "iPhone · Safari 浏览器",
+  "svgTitle": "在 iPhone 版 Safari 浏览器中添加到主屏幕：四个步骤",
+  "svgDesc": "适用于 iPhone 版 Safari 浏览器的四个编号步骤：打开“页面菜单”，轻点“共享”，轻点“查看更多”，然后轻点“添加到主屏幕”。蓝色轮廓标出需要轻点的控件。完整的文字说明另行提供。"
+}

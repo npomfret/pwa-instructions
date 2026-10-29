@@ -1,0 +1,16 @@
+{
+  "title": "Chromeからホーム画面に追加",
+  "label": "iPhone · Chrome · ホーム画面に追加",
+  "intro": "iPhoneのChromeを使います。以下の手順では、共有シートから直接インストールします。",
+  "steps": {
+    "tap-share": {
+      "title": "「{label:share}」をタップ",
+      "description": "Chromeで、画面上部のアドレスバーの右端にある「{label:share}」をタップします。アイコンは、上向きの矢印が付いた四角形です。"
+    }
+  },
+  "completion": "確認画面の指示に従って、アプリの追加を完了します。",
+  "alt": "iPhoneのChromeでの3つの手順: アドレスバーの右上にある「共有」、「さらに表示」、「ホーム画面に追加」の順にタップします。",
+  "transitions": {},
+  "heading": "ホーム画面に追加",
+  "subtitle": "iPhone · Chrome"
+}

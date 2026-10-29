@@ -1,41 +1,473 @@
 {
   "share": {
-    "en": "Share"
+    "en": "Share",
+    "fr": "Partager",
+    "_src": {
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/guide/iphone/iph42ab2f3a7/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iphea86e5236/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/iphone/iph42ab2f3a7/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/iphone/iphea86e5236/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/guide/iphone/iphea86e5236/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/guide/iphone/iph42ab2f3a7/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/iphone/iphea86e5236/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      }
+    },
+    "de": "Teilen",
+    "pt-BR": "Compartilhar",
+    "it": "Condividi",
+    "ja": "共有",
+    "ko": "공유",
+    "zh-Hans": "共享"
   },
   "view-more": {
-    "en": "View More"
+    "en": "View More",
+    "zh-Hans": "查看更多",
+    "_src": {
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/ipad/ipad14143b15/ipados",
+        "verified": "2026-10-29",
+        "version": "iPadOS 27 (same share sheet as iOS)",
+        "deviceChecked": false
+      }
+    }
   },
   "view-less": {
     "en": "View Less"
   },
   "add-to-home-screen": {
-    "en": "Add to Home Screen"
+    "en": "Add to Home Screen",
+    "es": "Añadir a pantalla de inicio",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-es/guide/iphone/iphea86e5236/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/guide/iphone/iph42ab2f3a7/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iphea86e5236/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/iphone/iph42ab2f3a7/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/iphone/iphea86e5236/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/guide/iphone/iphea86e5236/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/guide/iphone/iphea86e5236/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/iphone/iphea86e5236/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      }
+    },
+    "fr": "Sur l’écran d’accueil",
+    "de": "Zu Home-Bildschirm hinzufügen",
+    "pt-BR": "Adicionar à Tela de Início",
+    "it": "Aggiungi alla schermata Home",
+    "ja": "ホーム画面に追加",
+    "ko": "홈 화면에 추가",
+    "zh-Hans": "添加到主屏幕"
   },
   "add-bookmark-to": {
-    "en": "Add Bookmark to…"
+    "en": "Add Bookmark to…",
+    "es": "Añadir marcador a",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-es/guide/iphone/iph42ab2f3a7/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/guide/iphone/iph42ab2f3a7/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide (quoted without the ellipsis)",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iph42ab2f3a7/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple writes a space before the ellipsis."
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/iphone/iph42ab2f3a7/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple quotes it without the trailing ellipsis the English label has"
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/iphone/iph42ab2f3a7/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple quotes it without the trailing \"…\" that the English label has; text copied exactly from the source."
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/guide/iphone/iph42ab2f3a7/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/iphone/iph42ab2f3a7/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple quotes it without the trailing \"…\" that the English label has; text copied exactly from the source."
+      }
+    },
+    "fr": "Ajouter un signet à",
+    "de": "Lesezeichen hinzufügen zu …",
+    "pt-BR": "Adicionar Favorito a",
+    "it": "Aggiungi segnalibro a",
+    "ja": "ブックマークの追加先",
+    "zh-Hans": "将书签添加至"
   },
   "find-on-page": {
-    "en": "Find on Page"
+    "en": "Find on Page",
+    "de": "Auf Seite suchen",
+    "_src": {
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/ipod-touch/iph6297b394b/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 15 guide (older)",
+        "deviceChecked": false,
+        "note": "Older Apple guide wording (\"Share > Auf Seite suchen\"); also at guide/iphone/iph6297b394b/15.0/ios/15.0. Not re-confirmed for iOS 27."
+      }
+    }
   },
   "add-to-reading-list": {
-    "en": "Add to Reading List"
+    "en": "Add to Reading List",
+    "es": "Añadir a la lista de lectura",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-es/guide/iphone/iph1a4721132/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/guide/iphone/iph1a4721132/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iph1a4721132/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/iphone/iph1a4721132/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/iphone/iph1a4721132/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/guide/iphone/iph1a4721132/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/guide/iphone/iph1a4721132/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/iphone/iph1a4721132/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      }
+    },
+    "fr": "Ajouter à la liste de lecture",
+    "de": "Zur Leseliste hinzufügen",
+    "pt-BR": "Adicionar à Lista de Leitura",
+    "it": "Aggiungi a Elenco lettura",
+    "ja": "リーディングリストに追加",
+    "ko": "읽기 목록에 추가",
+    "zh-Hans": "添加到阅读列表"
   },
   "page-zoom": {
-    "en": "Page Zoom"
+    "en": "Page Zoom",
+    "fr": "Zoom de la page",
+    "_src": {
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/guide/iphone/iph7778f2888/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      }
+    },
+    "de": "Seitenzoom",
+    "pt-BR": "Zoom da Página",
+    "it": "Zoom pagina",
+    "ko": "페이지 확대/축소",
+    "zh-Hans": "页面缩放"
   },
   "add-to-favorites": {
-    "en": "Add to Favorites"
+    "en": "Add to Favorites",
+    "zh-Hans": "添加到个人收藏",
+    "_src": {
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/ipad/ipad14143b15/ipados",
+        "verified": "2026-10-29",
+        "version": "iPadOS 27 (same share sheet as iOS)",
+        "deviceChecked": false
+      }
+    }
   },
   "markup": {
-    "en": "Markup"
+    "en": "Markup",
+    "fr": "Annoter",
+    "_src": {
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/guide/iphone/iphfd5b616b5/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide (Annoter button)",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iphfd5b616b5/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/iphone/iphfd5b616b5/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/iphone/iphfd5b616b5/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple Italian steps: Condividi, then \"Tocca Modifica\" to annotate the page (English: Markup). Verify against the device."
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/guide/iphone/iphfd5b616b5/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/guide/iphone/iphfd5b616b5/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/iphone/iphfd5b616b5/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      }
+    },
+    "de": "Markierung",
+    "pt-BR": "Marcação",
+    "it": "Modifica",
+    "ja": "マークアップ",
+    "ko": "마크업",
+    "zh-Hans": "标记"
   },
   "print": {
-    "en": "Print"
+    "en": "Print",
+    "de": "Drucken",
+    "_src": {
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iphdf551cfa2/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Notes share menu item; assumed identical in the Safari share sheet."
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/iphone/iph1ac0b04b/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      }
+    },
+    "zh-Hans": "打印"
   },
   "add-to-new-quick-note": {
-    "en": "Add to New Quick Note"
+    "en": "Add to New Quick Note",
+    "de": "Zu Schnellnotiz hinzufügen",
+    "_src": {
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iph5084c0387/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple's German wording differs from the English mockup label \"Add to New Quick Note\"; this is the documented German action name."
+      }
+    }
   },
   "open-in-safari": {
-    "en": "Open in Safari"
+    "en": "Open in Safari",
+    "ja": "Safariで開く",
+    "_src": {
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27 (page text; same Apple term used on iOS)",
+        "deviceChecked": false
+      }
+    }
   }
 }

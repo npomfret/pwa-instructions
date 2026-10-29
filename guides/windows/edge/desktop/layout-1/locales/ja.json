@@ -1,0 +1,30 @@
+{
+  "title": "WindowsのEdgeでアプリをインストール",
+  "label": "Windows · Edge · アプリをインストール",
+  "intro": "このメニューの手順は、Microsoftの最新のEdgeヘルプに基づいています。Edgeのバージョンによっては、「{label:apps}」が「{label:settings-and-more}」の直下に表示される場合があります。ドキュメントに基づく草案です。端末では未確認のため、メニューの構成や確認画面は異なる場合があります。",
+  "steps": {
+    "open-settings-menu": {
+      "title": "「{label:settings-and-more}」を開く",
+      "description": "Microsoft Edgeでウェブサイトを開きます。ブラウザーの右上にある横に並んだ3つの点をクリックします。"
+    },
+    "more-tools": {
+      "title": "「{label:more-tools}」を選択",
+      "description": "メニューから「{label:more-tools}」を選択します。"
+    },
+    "apps": {
+      "title": "「{label:apps}」を選択",
+      "description": "「{label:more-tools}」で「{label:apps}」を選択します。"
+    },
+    "install-site": {
+      "title": "「{label:install-this-site-as-an-app}」を選択",
+      "description": "「{label:install-this-site-as-an-app}」を選択します。インストール可能なPWAの場合は、代わりに「{label:install-app}」やアドレスバーのインストール用アイコンが表示されることがあります。"
+    }
+  },
+  "completion": "アプリを開き直すには、edge://apps を開き、アプリのカードで「開く」をクリックします。「詳細」では、「タスクバーにピン留めする」、「スタートにピン留めする」、「デスクトップ ショートカットを作成する」を選択できます。",
+  "alt": "WindowsのEdgeでの5つのインストール手順の図。青い枠線は、ドキュメントに記載されているコントロールを示しています。",
+  "transitions": {},
+  "heading": "アプリをインストール",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "WindowsのEdgeでアプリをインストールする",
+  "svgDesc": "ドキュメントに基づく草案です。公式の手順に基づく概略的なコントロールの図であり、端末で確認したキャプチャではありません。青い枠線はコントロールを示しています。"
+}

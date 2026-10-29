@@ -1,0 +1,30 @@
+{
+  "title": "Installare un’app in Edge su Windows",
+  "label": "Windows · Edge · Installa app",
+  "intro": "Il percorso dal menu segue la guida attuale di Microsoft per Edge. In altre versioni di Edge, {label:apps} può trovarsi direttamente in {label:settings-and-more}. Bozza dalla documentazione: non ancora verificata su un dispositivo; il layout del menu e le richieste di conferma possono variare.",
+  "completion": "Per riaprirla, inserisci edge://apps e fai clic su Apri nella scheda dell’app. Dettagli offre Aggiungi alla barra delle applicazioni, Aggiungi a Start e Crea collegamento sul desktop.",
+  "alt": "5 passaggi illustrati per installare un’app in Edge su Windows; i contorni blu indicano i controlli descritti nella documentazione.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Apri {label:settings-and-more}",
+      "description": "Apri il sito web in Microsoft Edge. Fai clic sui tre puntini orizzontali in alto a destra nel browser."
+    },
+    "more-tools": {
+      "title": "Scegli {label:more-tools}",
+      "description": "Scegli {label:more-tools} dal menu."
+    },
+    "apps": {
+      "title": "Scegli {label:apps}",
+      "description": "In Altri strumenti, scegli {label:apps}."
+    },
+    "install-site": {
+      "title": "Scegli {label:install-this-site-as-an-app}",
+      "description": "Scegli {label:install-this-site-as-an-app}. Per una PWA installabile, Edge può invece offrire {label:install-app} o un’icona di installazione nella barra degli indirizzi."
+    }
+  },
+  "transitions": {},
+  "heading": "Installa app",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Installare un’app in Edge su Windows",
+  "svgDesc": "Bozza dalla documentazione: controlli schematici tratti dalle istruzioni attuali del produttore, non da un dispositivo verificato. I contorni blu indicano i controlli."
+}

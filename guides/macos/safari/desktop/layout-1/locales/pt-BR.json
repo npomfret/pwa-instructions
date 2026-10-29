@@ -1,0 +1,26 @@
+{
+  "title": "Adicionar ao Dock no Safari",
+  "label": "Mac · Safari · Adicionar ao Dock",
+  "steps": {
+    "open-file-menu": {
+      "title": "Abra o menu {label:file}",
+      "description": "Abra o site no Safari. Na barra de menus, na parte superior da tela do Mac, clique em {label:file}."
+    },
+    "add-to-dock": {
+      "title": "Escolha {label:add-to-dock}",
+      "description": "No menu {label:file}, clique em {label:add-to-dock}. O Safari abre uma caixa de diálogo de confirmação para este site."
+    },
+    "confirm-add": {
+      "title": "Clique em {label:add}",
+      "description": "Mantenha ou edite o nome do app e clique em {label:add}. O app da web é salvo na pasta Aplicativos e adicionado ao Dock."
+    }
+  },
+  "intro": "Requer o macOS Sonoma 14 ou posterior. Estas ilustrações mostram o caminho pelo menu {label:file}; o Safari também oferece {label:add-to-dock} no menu Compartilhar.",
+  "completion": "Abra o novo app pelo Dock.",
+  "alt": "Três etapas no Safari do Mac: abra Arquivo, escolha Adicionar ao Dock e depois clique em Adicionar.",
+  "transitions": {},
+  "heading": "Adicionar ao Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Adicionar um site ao Dock no Safari do Mac",
+  "svgDesc": "Três etapas: abra o menu Arquivo, escolha Adicionar ao Dock e depois clique em Adicionar. Contornos azuis identificam os controles."
+}

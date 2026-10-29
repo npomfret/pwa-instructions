@@ -1,0 +1,18 @@
+{
+  "title": "在 Windows 版 Chrome 中安装应用",
+  "label": "Windows · Chrome · 安装应用",
+  "intro": "请使用 Chrome 菜单路径；如果网站提供了安装图标，也可以使用地址栏中的安装图标。文档草稿：尚未在设备上验证；菜单布局和确认提示可能有所不同。",
+  "completion": "如需再次打开已安装的应用，请在 Chrome 的地址栏中输入 chrome://apps，然后选择该应用。",
+  "alt": "共 4 个 Windows 版 Chrome 安装步骤图示；蓝色轮廓标出文档中提到的控件。",
+  "steps": {
+    "confirm-install": {
+      "title": "点击“{label:install}”",
+      "description": "核对应用名称和网站地址，然后点击“{label:install}”。按照后续出现的确认提示操作。"
+    }
+  },
+  "transitions": {},
+  "heading": "安装应用",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "在 Windows 版 Chrome 中安装应用",
+  "svgDesc": "文档草稿：示意性控件来自当前的厂商说明，并非经过验证的设备截图。蓝色轮廓标出相应的控件。"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "App in Chrome unter Windows installieren",
+  "label": "Windows · Chrome · App installieren",
+  "intro": "Verwende den Weg über das Chrome-Menü oder das Installationssymbol in der Adressleiste, sofern die Website eines anbietet. Dokumentationsentwurf: noch nicht auf einem Gerät geprüft; Menüaufbau und Bestätigungsdialoge können abweichen.",
+  "steps": {
+    "confirm-install": {
+      "title": "Auf {label:install} klicken",
+      "description": "Prüfe den App-Namen und die Adresse der Website und klicke dann auf {label:install}. Folge gegebenenfalls weiteren Bestätigungsaufforderungen."
+    }
+  },
+  "completion": "Um eine installierte App erneut zu öffnen, gib chrome://apps in die Adressleiste von Chrome ein und wähle die App aus.",
+  "alt": "4 illustrierte Installationsschritte in Chrome unter Windows; blaue Umrandungen markieren die beschriebenen Bedienelemente.",
+  "transitions": {},
+  "heading": "App installieren",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "App in Chrome unter Windows installieren",
+  "svgDesc": "Dokumentationsentwurf: schematische Bedienelemente nach der aktuellen Anleitung des Herstellers, keine geprüfte Geräteaufnahme. Blaue Umrandungen markieren die Bedienelemente."
+}

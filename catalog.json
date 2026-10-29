@@ -1,7 +1,15 @@
 {
   "schemaVersion": 1,
   "locales": {
-    "en-XA": "draft"
+    "en-XA": "draft",
+    "es": "draft",
+    "fr": "draft",
+    "de": "draft",
+    "pt-BR": "draft",
+    "it": "draft",
+    "ja": "draft",
+    "ko": "draft",
+    "zh-Hans": "draft"
   },
   "guides": [
     {

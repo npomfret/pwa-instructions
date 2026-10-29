@@ -1,0 +1,30 @@
+{
+  "title": "Windows Edge에서 앱 설치",
+  "label": "Windows · Edge · 앱 설치",
+  "steps": {
+    "open-settings-menu": {
+      "title": "{label:settings-and-more} 열기",
+      "description": "Microsoft Edge에서 웹사이트를 엽니다. 브라우저 오른쪽 상단의 가로 점 세 개를 클릭하세요."
+    },
+    "more-tools": {
+      "title": "{label:more-tools} 선택하기",
+      "description": "메뉴에서 {label:more-tools} 항목을 선택하세요."
+    },
+    "apps": {
+      "title": "{label:apps} 선택하기",
+      "description": "{label:more-tools} 메뉴에서 {label:apps} 항목을 선택하세요."
+    },
+    "install-site": {
+      "title": "{label:install-this-site-as-an-app} 선택하기",
+      "description": "{label:install-this-site-as-an-app} 항목을 선택하세요. 설치 가능한 PWA의 경우 Edge가 대신 {label:install-app} 항목이나 주소 표시줄의 설치 아이콘을 제공할 수 있습니다."
+    }
+  },
+  "intro": "이 메뉴 경로는 Microsoft의 최신 Edge 도움말을 따릅니다. 다른 Edge 버전에서는 앱이 설정 및 기타 메뉴에 바로 있을 수 있습니다. 문서 초안: 아직 기기에서 확인되지 않았으며, 메뉴 구성과 확인 메시지는 다를 수 있습니다.",
+  "completion": "앱을 다시 열려면 edge://apps를 입력하고 앱 카드에서 열기를 클릭하세요. 세부 정보에서 작업 표시줄에 고정, 시작 화면에 고정, 바탕 화면 바로 가기 만들기를 사용할 수 있습니다.",
+  "alt": "Windows Edge 설치 단계를 보여 주는 다섯 개의 그림. 파란색 윤곽선은 안내된 컨트롤을 나타냅니다.",
+  "transitions": {},
+  "heading": "앱 설치",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Windows Edge에서 앱 설치",
+  "svgDesc": "문서 초안: 공급업체 안내를 바탕으로 한 개략적 컨트롤이며, 확인된 기기 캡처가 아닙니다. 파란색 윤곽선은 해당 컨트롤을 나타냅니다."
+}

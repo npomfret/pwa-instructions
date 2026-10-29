@@ -1,0 +1,18 @@
+{
+  "title": "Installer une appli dans Chrome sur Windows",
+  "label": "Windows · Chrome · Installer l’appli",
+  "heading": "Installer l’appli",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Installer une appli dans Chrome sur Windows",
+  "svgDesc": "Brouillon de documentation : commandes schématiques tirées des instructions actuelles de l’éditeur, et non d’une capture sur un appareil vérifié. Des contours bleus signalent les commandes.",
+  "intro": "Utilisez le chemin par le menu Chrome, ou l’icône d’installation de la barre d’adresse lorsque le site web en propose une. Brouillon de documentation : non vérifié sur un appareil ; la disposition du menu et les invites de confirmation peuvent varier.",
+  "steps": {
+    "confirm-install": {
+      "title": "Cliquez sur {label:install}",
+      "description": "Vérifiez le nom de l’appli et l’adresse du site web, puis cliquez sur {label:install}. Suivez les éventuelles autres invites de confirmation."
+    }
+  },
+  "completion": "Pour rouvrir une appli installée, saisissez chrome://apps dans la barre d’adresse de Chrome, puis sélectionnez l’appli.",
+  "alt": "4 étapes illustrées d’installation dans Chrome sur Windows ; des contours bleus signalent les commandes décrites dans la documentation.",
+  "transitions": {}
+}

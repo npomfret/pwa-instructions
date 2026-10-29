@@ -1,6 +1,73 @@
 {
   "more": {
-    "en": "More"
+    "en": "More",
+    "es": "Más",
+    "_src": {
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_CONTENT_CONTEXT_MORE_APPS, id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 6042308850641462728, IDS_BOOKMARKS_EDIT_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 6042308850641462728, IDS_CONTENT_CONTEXT_MORE_APPS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Same text as \"Mehr\" in Google's German Chrome help: https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DDesktop&hl=de"
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DDesktop&hl=pt-BR",
+        "verified": "2026-10-29",
+        "version": "Chrome (desktop), current help",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DDesktop&hl=ja",
+        "verified": "2026-10-29",
+        "version": "Chrome help (ja), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?hl=ko&co=GENIE.Platform%3DDesktop",
+        "verified": "2026-10-29",
+        "version": "Chrome help page, current",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?hl=zh-Hans&co=GENIE.Platform%3DDesktop",
+        "verified": "2026-10-29",
+        "version": "Chrome help (current)",
+        "deviceChecked": false
+      }
+    },
+    "fr": "Plus",
+    "de": "Mehr",
+    "pt-BR": "Mais",
+    "it": "Altro",
+    "ja": "その他",
+    "ko": "더보기",
+    "zh-Hans": "更多"
   },
   "new-tab": {
     "en": "New tab",
@@ -12,8 +79,74 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_TOOLTIP_NEW_TAB, id 5233638681132016545)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 5233638681132016545, IDS_TOOLTIP_NEW_TAB)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 4200983522494130825, IDS_NEW_TAB)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Mnemonic ampersand removed."
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#5233638681132016545",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 4200983522494130825)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 4200983522494130825)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_NEW_TAB_MAC \"New Tab\", id 7554791636758816595)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 4200983522494130825",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_NEW_TAB, mnemonic (&T) removed"
       }
-    }
+    },
+    "es": "Nueva pestaña",
+    "fr": "Nouvel onglet",
+    "de": "Neuer Tab",
+    "pt-BR": "Nova guia",
+    "it": "Nuova scheda",
+    "ja": "新しいタブ",
+    "ko": "새 탭",
+    "zh-Hans": "打开新的标签页"
   },
   "history": {
     "en": "History",
@@ -25,8 +158,74 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_HISTORY_MENU_MAC, id 6636258750460740634)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 4756388243121344051, IDS_HISTORY_MENU, accelerator & removed)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 4756388243121344051, IDS_HISTORY_MENU)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Mnemonic ampersand removed."
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#6636258750460740634",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 4756388243121344051)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 4756388243121344051)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_HISTORY_MENU_MAC \"History\", id 6636258750460740634)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 4756388243121344051",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_HISTORY_MENU, mnemonic removed"
       }
-    }
+    },
+    "es": "Historial",
+    "fr": "Historique",
+    "de": "Verlauf",
+    "pt-BR": "Histórico",
+    "it": "Cronologia",
+    "ja": "履歴",
+    "ko": "방문 기록",
+    "zh-Hans": "历史记录"
   },
   "downloads": {
     "en": "Downloads",
@@ -38,8 +237,74 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_SHOW_DOWNLOADS_MAC, id 4759238208242260848)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 4759238208242260848, IDS_SHOW_DOWNLOADS_MAC)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 7861215335140947162, IDS_SHOW_DOWNLOADS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Mnemonic ampersand removed."
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#4759238208242260848",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 7861215335140947162)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 7861215335140947162)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_SHOW_DOWNLOADS_MAC \"Downloads\", id 4759238208242260848)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 7861215335140947162",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_SHOW_DOWNLOADS, mnemonic removed"
       }
-    }
+    },
+    "es": "Descargas",
+    "fr": "Téléchargements",
+    "de": "Downloads",
+    "pt-BR": "Downloads",
+    "it": "Download",
+    "ja": "ダウンロード",
+    "ko": "다운로드",
+    "zh-Hans": "下载内容"
   },
   "print": {
     "en": "Print…",
@@ -51,8 +316,78 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_CONTENT_CONTEXT_PRINT, id 1175364870820465910)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Text copied exactly: Chromium ends it with three full stops \"...\", while the English label uses the single character \"…\". Mnemonic & removed."
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 1175364870820465910, IDS_CONTENT_CONTEXT_PRINT, accelerator & removed, ... written as the ellipsis character)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Text copied exactly: Chromium ends it with three full stops \"...\", while the English label uses the single character \"…\". Mnemonic & removed."
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 1175364870820465910, IDS_CONTENT_CONTEXT_PRINT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Message is the context-menu one, assumed identical to the app menu item. Text copied exactly: Chromium ends it with three full stops \"...\", while the English label uses the single character \"…\". Mnemonic & removed."
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#1175364870820465910",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_PRINT/IDS_CONTENT_CONTEXT_PRINT \"&Print...\" with accelerator removed; xtb uses three dots."
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 1175364870820465910)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 1175364870820465910)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Text copied exactly: Chromium ends it with three full stops \"...\", while the English label uses the single character \"…\". Mnemonic & removed."
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_CONTENT_CONTEXT_PRINT \"&Print...\" (mnemonic suffix removed; source has no ellipsis), id 1175364870820465910)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 1175364870820465910",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_CONTENT_CONTEXT_PRINT text \"&Print...\" (same message as the app menu Print); Text copied exactly: Chromium ends it with three full stops \"...\", while the English label uses the single character \"…\". Mnemonic & removed."
       }
-    }
+    },
+    "es": "Imprimir...",
+    "fr": "Imprimer...",
+    "de": "Drucken...",
+    "pt-BR": "Imprimir...",
+    "it": "Stampa...",
+    "ja": "印刷...",
+    "ko": "인쇄",
+    "zh-Hans": "打印..."
   },
   "find-and-edit": {
     "en": "Find and edit",
@@ -64,8 +399,74 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_FIND_AND_EDIT_MENU, id 5340787663756381836)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 5340787663756381836, IDS_FIND_AND_EDIT_MENU, accelerator & removed)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 5340787663756381836, IDS_FIND_AND_EDIT_MENU)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Mnemonic ampersand removed."
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#5340787663756381836",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 5340787663756381836)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 5340787663756381836)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_FIND_AND_EDIT_MENU \"&Find and edit\" (mnemonic suffix (&F) removed), id 5340787663756381836)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 5340787663756381836",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_FIND_AND_EDIT_MENU, mnemonic removed"
       }
-    }
+    },
+    "es": "Buscar y editar",
+    "fr": "Rechercher et modifier",
+    "de": "Suchen und bearbeiten",
+    "pt-BR": "Localizar e editar",
+    "it": "Trova e modifica",
+    "ja": "検索と編集",
+    "ko": "찾기 및 수정하기",
+    "zh-Hans": "查找和修改"
   },
   "cast-save-and-share": {
     "en": "Cast, save and share",
@@ -86,8 +487,75 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_CAST_SAVE_AND_SHARE_MENU, id 1913749768968678106)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 1913749768968678106, IDS_CAST_SAVE_AND_SHARE_MENU)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 1913749768968678106, IDS_CAST_SAVE_AND_SHARE_MENU)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "English source is \"Cast, save, and share\"; matches the German help page https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DDesktop&hl=de"
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#1913749768968678106",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Also quoted in https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DDesktop&hl=pt-BR. Chromium English is \"Cast, save, and share\" (Oxford comma); repo English omits the comma."
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 1913749768968678106)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 1913749768968678106)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_CAST_SAVE_AND_SHARE_MENU \"Cast, save, and share\", id 1913749768968678106)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 1913749768968678106",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_CAST_SAVE_AND_SHARE_MENU; English there is \"Cast, save, and share\"."
       }
-    }
+    },
+    "es": "Enviar, guardar y compartir",
+    "fr": "Caster, enregistrer et partager",
+    "de": "Streamen, speichern und teilen",
+    "pt-BR": "Transmitir, salvar e compartilhar",
+    "it": "Trasmetti, salva e condividi",
+    "ja": "キャスト、保存、共有",
+    "ko": "캐스팅, 저장, 공유",
+    "zh-Hans": "投放、保存和分享"
   },
   "save-page-as": {
     "en": "Save page as…",
@@ -99,11 +567,153 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_SAVE_PAGE, id 3712897371525859903)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Text copied exactly: Chromium ends it with three full stops \"...\", while the English label uses the single character \"…\". Mnemonic & removed."
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 3519938335881974273, IDS_SHARING_HUB_SAVE_PAGE_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 3712897371525859903, IDS_SAVE_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Text copied exactly: Chromium ends it with three full stops \"...\", while the English label uses the single character \"…\". Mnemonic & removed."
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#3519938335881974273",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 3712897371525859903)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 3712897371525859903)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Text copied exactly: Chromium ends it with three full stops \"...\", while the English label uses the single character \"…\". Mnemonic & removed."
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_SAVE_PAGE_MAC \"Save Page As...\", id 4780321648949301421)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 3712897371525859903",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_SAVE_PAGE, Text copied exactly: Chromium ends it with three full stops \"...\", while the English label uses the single character \"…\". Mnemonic & removed."
       }
-    }
+    },
+    "es": "Guardar página como...",
+    "fr": "Enregistrer la page sous…",
+    "de": "Seite speichern unter...",
+    "pt-BR": "Salvar página como…",
+    "it": "Salva pagina come...",
+    "ja": "名前を付けてページを保存...",
+    "ko": "페이지를 다른 이름으로 저장...",
+    "zh-Hans": "网页另存为..."
   },
   "install-website": {
-    "en": "Install Website…"
+    "en": "Install Website…",
+    "fr": "Installer Site web…",
+    "_src": {
+      "fr": {
+        "method": "chromium-xtb-template",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 7144856456372460176, IDS_INSTALL_TO_OS_LAUNCH_SURFACE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium template \"&Installer <APP>…\" with <APP> filled by the placeholders.website word \"Site web\"; mnemonic & removed. Chrome shows \"Install <site name>…\" (source-images/macos-27/chrome-156/desktop/03-install-app.png)."
+      },
+      "de": {
+        "method": "chromium-xtb-template",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 7144856456372460176, IDS_INSTALL_TO_OS_LAUNCH_SURFACE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium template \"<APP> &installieren…\" with <APP> filled by the placeholders.website word \"Website\"; mnemonic & removed. Chrome shows \"Install <site name>…\" (source-images/macos-27/chrome-156/desktop/03-install-app.png)."
+      },
+      "pt-BR": {
+        "method": "chromium-xtb-template",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb (message id 7144856456372460176, IDS_INSTALL_TO_OS_LAUNCH_SURFACE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium template \"&Instalar <APP>…\" with <APP> filled by the placeholders.website word \"Site\"; mnemonic & removed. Chrome shows \"Install <site name>…\" (source-images/macos-27/chrome-156/desktop/03-install-app.png)."
+      },
+      "it": {
+        "method": "chromium-xtb-template",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 7144856456372460176, IDS_INSTALL_TO_OS_LAUNCH_SURFACE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium template \"&Installa <APP>…\" with <APP> filled by the placeholders.website word \"Sito web\"; mnemonic & removed. Chrome shows \"Install <site name>…\" (source-images/macos-27/chrome-156/desktop/03-install-app.png)."
+      },
+      "ja": {
+        "method": "chromium-xtb-template",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 7144856456372460176, IDS_INSTALL_TO_OS_LAUNCH_SURFACE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium template \"<APP> をインストール(&I)...\" with <APP> filled by the placeholders.website word \"ウェブサイト\"; mnemonic & removed. Chromium ends the ja template with \"...\", copied as is. Chrome shows \"Install <site name>…\" (source-images/macos-27/chrome-156/desktop/03-install-app.png)."
+      },
+      "ko": {
+        "method": "chromium-xtb-template",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (message id 7144856456372460176, IDS_INSTALL_TO_OS_LAUNCH_SURFACE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium template \"<APP> 설치(&I)…\" with <APP> filled by the placeholders.website word \"웹사이트\"; mnemonic & removed. Chrome shows \"Install <site name>…\" (source-images/macos-27/chrome-156/desktop/03-install-app.png)."
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb-template",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb (message id 7144856456372460176, IDS_INSTALL_TO_OS_LAUNCH_SURFACE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium template \"安装“<APP>”(&I)…\" with <APP> filled by the placeholders.website word \"网站\"; mnemonic & removed. Chrome shows \"Install <site name>…\" (source-images/macos-27/chrome-156/desktop/03-install-app.png)."
+      },
+      "es": {
+        "method": "chromium-xtb-template",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message id 7144856456372460176, IDS_INSTALL_TO_OS_LAUNCH_SURFACE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium template \"&Instalar <APP>…\" with <APP> filled by the placeholders.website word \"Sitio web\"; mnemonic & removed. Chrome shows \"Install <site name>…\" (source-images/macos-27/chrome-156/desktop/03-install-app.png)."
+      }
+    },
+    "de": "Website installieren…",
+    "pt-BR": "Instalar Site…",
+    "it": "Installa Sito web…",
+    "ja": "ウェブサイト をインストール...",
+    "ko": "웹사이트 설치…",
+    "zh-Hans": "安装“网站”…",
+    "es": "Instalar Sitio web…"
   },
   "create-shortcut": {
     "en": "Create shortcut…",
@@ -115,8 +725,75 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_ADD_TO_OS_LAUNCH_SURFACE, id 4895799941222633551)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 4895799941222633551, IDS_ADD_TO_OS_LAUNCH_SURFACE, accelerator & removed)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 4895799941222633551, IDS_ADD_TO_OS_LAUNCH_SURFACE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Mnemonic ampersand removed."
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#4895799941222633551",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 4895799941222633551)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 4895799941222633551)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Text copied exactly: Chromium ends it with three full stops \"...\", while the English label uses the single character \"…\". Mnemonic & removed."
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_ADD_TO_OS_LAUNCH_SURFACE \"Create &shortcut...\" (mnemonic suffix removed), id 4895799941222633551)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 4895799941222633551",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_ADD_TO_OS_LAUNCH_SURFACE, mnemonic removed"
       }
-    }
+    },
+    "es": "Crear acceso directo…",
+    "fr": "Créer un raccourci…",
+    "de": "Verknüpfung erstellen…",
+    "pt-BR": "Criar atalho…",
+    "it": "Crea scorciatoia…",
+    "ja": "ショートカットを作成...",
+    "ko": "바로가기 만들기...",
+    "zh-Hans": "创建快捷方式…"
   },
   "copy-link": {
     "en": "Copy link",
@@ -128,8 +805,73 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_SHARING_HUB_COPY_LINK_LABEL, id 3987993985790029246)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 3987993985790029246, IDS_SHARING_HUB_COPY_LINK_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 3987993985790029246, IDS_SHARING_HUB_COPY_LINK_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#3987993985790029246",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 3987993985790029246)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 2436385001956947090)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_SHARING_HUB_COPY_LINK_LABEL \"Copy link\", id 3987993985790029246)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 2436385001956947090",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_APP_MENU_COPY_LINK, mnemonic removed"
       }
-    }
+    },
+    "es": "Copiar enlace",
+    "fr": "Copier lien",
+    "de": "Link kopieren",
+    "pt-BR": "Copiar link",
+    "it": "Copia link",
+    "ja": "リンクをコピー",
+    "ko": "링크 복사",
+    "zh-Hans": "复制链接"
   },
   "install-app": {
     "en": "Install app",
@@ -141,8 +883,73 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_INSTALL_PWA_DIALOG_TITLE, id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#6540174167103635041",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_INSTALL_PWA_DIALOG_TITLE \"Install app\", id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 6540174167103635041",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_INSTALL_PWA_DIALOG_TITLE"
       }
-    }
+    },
+    "es": "Instalar aplicación",
+    "fr": "Installer l'appli",
+    "de": "App installieren",
+    "pt-BR": "Instale o app",
+    "it": "Installa app",
+    "ja": "アプリのインストール",
+    "ko": "앱 설치",
+    "zh-Hans": "安装应用"
   },
   "install": {
     "en": "Install",
@@ -154,8 +961,73 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_INSTALL_PWA_BUTTON_LABEL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#3789841737615482174",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_INSTALL_PWA_BUTTON_LABEL \"Install\", id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 3789841737615482174",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_INSTALL_PWA_BUTTON_LABEL"
       }
-    }
+    },
+    "es": "Instalar",
+    "fr": "Installer",
+    "de": "Installieren",
+    "pt-BR": "Instalar",
+    "it": "Installa",
+    "ja": "インストール",
+    "ko": "설치",
+    "zh-Hans": "安装"
   },
   "next": {
     "en": "Next",
@@ -167,11 +1039,144 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_WEB_APP_INSTALL_FLOW_NEXT, id 1201402288615127009)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 1201402288615127009, IDS_WEB_APP_INSTALL_FLOW_NEXT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 1201402288615127009, IDS_WEB_APP_INSTALL_FLOW_NEXT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#1201402288615127009",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 1201402288615127009)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 1201402288615127009)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_WEB_APP_INSTALL_FLOW_NEXT \"Next\", id 1201402288615127009)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 1201402288615127009",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_WEB_APP_INSTALL_FLOW_NEXT"
       }
-    }
+    },
+    "es": "Siguiente",
+    "fr": "Suivant",
+    "de": "Weiter",
+    "pt-BR": "Avançar",
+    "it": "Avanti",
+    "ja": "次へ",
+    "ko": "다음",
+    "zh-Hans": "下一步"
   },
   "cancel": {
-    "en": "Cancel"
+    "en": "Cancel",
+    "es": "Cancelar",
+    "_src": {
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_DOWNLOAD_LINK_CANCEL, id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 7658239707568436148, IDS_DOWNLOAD_LINK_CANCEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 7658239707568436148, IDS_CONTENT_CONTEXT_SPELLING_BUBBLE_DISABLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Generic Cancel message shared across Chrome dialogs."
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#7658239707568436148",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_DOWNLOAD_LINK_CANCEL \"Cancel\", id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 7658239707568436148",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_DOWNLOAD_LINK_CANCEL and others"
+      }
+    },
+    "fr": "Annuler",
+    "de": "Abbrechen",
+    "pt-BR": "Cancelar",
+    "it": "Annulla",
+    "ja": "キャンセル",
+    "ko": "취소",
+    "zh-Hans": "取消"
   },
   "chrome-apps": {
     "en": "Chrome Apps",
@@ -183,8 +1188,75 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_EXTENSIONS_APPS_TITLE, id 3149510190863420837)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 5876691914815078365, IDS_WEB_APP_INSTALL_CHROME_APPS_LOCATION: template \"Applications Chrome > <APP_NAME>\", first part only)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 5876691914815078365, IDS_WEB_APP_INSTALL_CHROME_APPS_LOCATION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Message is \"Chrome-Apps > {APP_NAME}\"; only the first part is used."
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#5876691914815078365",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Fragment of IDS_WEB_APP_INSTALL_CHROME_APPS_LOCATION \"Apps do Chrome > APP_NAME\""
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 3149510190863420837)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/google_chrome_strings_ja.xtb (message id 3149510190863420837)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_APP_SHORTCUTS_SUBDIR_NAME \"Chrome Apps\", id 3149510190863420837)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 5876691914815078365",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_WEB_APP_INSTALL_CHROME_APPS_LOCATION \"Chrome Apps > APP_NAME\": the first segment only."
       }
-    }
+    },
+    "es": "Aplicaciones de Chrome",
+    "fr": "Applications Chrome",
+    "de": "Chrome-Apps",
+    "pt-BR": "Apps do Chrome",
+    "it": "Applicazioni Chrome",
+    "ja": "Chrome アプリ",
+    "ko": "Chrome 앱",
+    "zh-Hans": "Chrome 应用"
   },
   "successfully-installed": {
     "en": "Successfully installed",
@@ -196,8 +1268,73 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_WEB_APP_INSTALL_SUCCESS_TITLE, id 3576324189521867626)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 3576324189521867626, IDS_WEB_APP_INSTALL_SUCCESS_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 3576324189521867626, IDS_WEB_APP_INSTALL_SUCCESS_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#3576324189521867626",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 3576324189521867626)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 3576324189521867626)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_WEB_APP_INSTALL_SUCCESS_TITLE \"Successfully installed\", id 3576324189521867626)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 3576324189521867626",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_WEB_APP_INSTALL_SUCCESS_TITLE"
       }
-    }
+    },
+    "es": "Se ha instalado correctamente",
+    "fr": "L'application a bien été installée.",
+    "de": "Installation war erfolgreich",
+    "pt-BR": "Instalação concluída",
+    "it": "Installata",
+    "ja": "インストールが完了しました",
+    "ko": "설치되었습니다.",
+    "zh-Hans": "已成功安装"
   },
   "show-in-finder": {
     "en": "Show in Finder",
@@ -209,8 +1346,73 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_DOWNLOAD_LINK_SHOW, id 1581962803218266616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 1581962803218266616, IDS_DOWNLOAD_LINK_SHOW)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 1581962803218266616, IDS_DOWNLOAD_LINK_SHOW)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#1581962803218266616",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 1581962803218266616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 1581962803218266616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_DOWNLOAD_LINK_SHOW \"Show in Finder\" (same English string; the install-dialog button was not located separately), id 1581962803218266616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 1581962803218266616",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_DOWNLOAD_LINK_SHOW (macOS)"
       }
-    }
+    },
+    "es": "Mostrar en Finder",
+    "fr": "Afficher dans le Finder",
+    "de": "Im Finder anzeigen",
+    "pt-BR": "Mostrar no Finder",
+    "it": "Mostra nel Finder",
+    "ja": "Finder で表示",
+    "ko": "Finder에서 보기",
+    "zh-Hans": "在 Finder 中显示"
   },
   "open-tab-in-app": {
     "en": "Open tab in app",
@@ -222,7 +1424,72 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_WEB_APP_INSTALL_SUCCESS_OPEN_APP, id 157005186601751931)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 157005186601751931, IDS_WEB_APP_INSTALL_SUCCESS_OPEN_APP)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 157005186601751931, IDS_WEB_APP_INSTALL_SUCCESS_OPEN_APP)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#157005186601751931",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 157005186601751931)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 157005186601751931)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_WEB_APP_INSTALL_SUCCESS_OPEN_APP \"Open tab in app\", id 157005186601751931)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 157005186601751931",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_WEB_APP_INSTALL_SUCCESS_OPEN_APP"
       }
-    }
+    },
+    "es": "Abrir pestaña en la aplicación",
+    "fr": "Ouvrir l'onglet dans l'appli",
+    "de": "Tab in App öffnen",
+    "pt-BR": "Abrir guia no app",
+    "it": "Apri scheda nell'app",
+    "ja": "アプリでタブを開く",
+    "ko": "앱에서 탭 열기",
+    "zh-Hans": "在应用中打开标签页"
   }
 }

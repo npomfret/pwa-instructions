@@ -1,0 +1,26 @@
+{
+  "title": "Instalar um app no Chrome para Android",
+  "label": "Android · Chrome · Instalar app",
+  "steps": {
+    "open-more-menu": {
+      "title": "Abra o menu {label:more}",
+      "description": "Abra o site no Chrome. Toque nos três pontos verticais ao lado da barra de endereço."
+    },
+    "install-and-create-shortcut": {
+      "title": "Toque em {label:install-and-create-shortcut}",
+      "description": "Escolha {label:install-and-create-shortcut} no menu. Em layouts mais antigos do Chrome, essa opção pode se chamar Adicionar à tela inicial."
+    },
+    "install-app": {
+      "title": "Toque em {label:install}",
+      "description": "Escolha {label:install}. Siga as instruções exibidas pelo Chrome para instalar o app. {label:create-shortcut} é uma opção separada, que apenas salva um link."
+    }
+  },
+  "intro": "Use o Chrome para Android. Os rótulos de menu ilustrados seguem a ajuda atual do Google para Android, e não o artigo mais antigo sobre Adicionar à tela inicial. Rascunho de documentação: ainda não verificado em um dispositivo; o layout do menu e as solicitações de confirmação podem variar.",
+  "completion": "Quando a instalação terminar, abra o app pelo iniciador do Android. A posição na tela inicial depende do iniciador e das configurações dele.",
+  "alt": "Três etapas ilustradas de instalação no Chrome para Android; contornos azuis marcam os controles documentados.",
+  "transitions": {},
+  "heading": "Instalar app",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Instalar um app no Chrome para Android",
+  "svgDesc": "Rascunho de documentação. Três etapas: abra Mais, toque em Instalar e criar atalho e depois toque em Instalar. Conclua as demais solicitações no seu dispositivo."
+}

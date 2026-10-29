@@ -298,8 +298,9 @@ export async function checkLocales(root) {
         const { size, bold } = fontOf(node);
         const ratio = estimateWidth(text, size, bold) / max;
         const detail = `"${text}" is about ${pct(ratio)} of its ${max}-unit width`;
-        // en-XA is 35% longer by design to expose tight spots, so past the limit it can only warn.
-        if (ratio >= OVERFLOW_FAIL && !pseudo) report(errors, 7, source, key, tag, `${detail} (fails at ${pct(OVERFLOW_FAIL)})`);
+        // Past the limit only a complete locale fails: a draft's sourced label cannot be shortened, so the artwork's room for
+        // it is fixed before the locale ships. en-XA, 35% longer by design, is a draft and so only warns.
+        if (ratio >= OVERFLOW_FAIL && statuses[tag] === 'complete') report(errors, 7, source, key, tag, `${detail} (fails at ${pct(OVERFLOW_FAIL)})`);
         else if (ratio >= OVERFLOW_WARN) report(warnings, 7, source, key, tag, `${detail} (${ratio >= OVERFLOW_FAIL ? 'fail' : 'warn'} threshold ${pct(ratio >= OVERFLOW_FAIL ? OVERFLOW_FAIL : OVERFLOW_WARN)})`);
       }
     }

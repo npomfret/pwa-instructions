@@ -1,0 +1,26 @@
+{
+  "title": "Safari에서 Dock에 추가",
+  "label": "Mac · Safari · Dock에 추가",
+  "steps": {
+    "open-file-menu": {
+      "title": "{label:file} 메뉴 열기",
+      "description": "Safari에서 웹사이트를 엽니다. Mac 화면 상단의 메뉴 막대에서 {label:file} 메뉴를 클릭하세요."
+    },
+    "add-to-dock": {
+      "title": "{label:add-to-dock} 선택하기",
+      "description": "{label:file} 메뉴에서 {label:add-to-dock} 항목을 클릭하세요. Safari에 이 웹사이트의 확인 대화상자가 열립니다."
+    },
+    "confirm-add": {
+      "title": "{label:add} 클릭하기",
+      "description": "앱 이름을 그대로 두거나 수정한 다음 {label:add} 버튼을 클릭하세요. 웹 앱이 응용 프로그램 폴더에 저장되고 Dock에 추가됩니다."
+    }
+  },
+  "intro": "macOS Sonoma 14 이상이 필요합니다. 이 그림은 {label:file} 메뉴를 사용하는 방법을 보여 주며, Safari의 공유 메뉴에서도 {label:add-to-dock}를 사용할 수 있습니다.",
+  "completion": "Dock에서 새 앱을 여세요.",
+  "alt": "Mac Safari의 세 단계: 파일을 열고, Dock에 추가를 선택한 다음, 추가를 클릭합니다.",
+  "transitions": {},
+  "heading": "Dock에 추가",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Mac Safari에서 웹사이트를 Dock에 추가",
+  "svgDesc": "세 단계: 파일 메뉴 열기, Dock에 추가 선택하기, 추가 클릭하기. 파란색 윤곽선은 해당 컨트롤을 나타냅니다."
+}

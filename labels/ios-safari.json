@@ -1,9 +1,119 @@
 {
   "page-menu": {
-    "en": "Page Menu"
+    "en": "Page Menu",
+    "fr": "Menu de la page",
+    "_src": {
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/guide/iphone/iph7778f2888/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple writes it in running text as \"menu Pagina\" (\"il pulsante del menu Pagina\")."
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      }
+    },
+    "de": "Seitenmenü",
+    "pt-BR": "Menu da Página",
+    "it": "menu Pagina",
+    "ko": "페이지 메뉴",
+    "zh-Hans": "页面菜单"
   },
   "show-reader": {
-    "en": "Show Reader"
+    "en": "Show Reader",
+    "fr": "Afficher le lecteur",
+    "_src": {
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/iphone/iphdc30e3b86/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple Italian names Reader \"modalità Lettura\"."
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/guide/iphone/iphdc30e3b86/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      }
+    },
+    "de": "Reader einblenden",
+    "pt-BR": "Mostrar Leitor",
+    "it": "Mostra modalità Lettura",
+    "ja": "リーダーを表示",
+    "ko": "읽기 도구 보기",
+    "zh-Hans": "显示阅读器"
   },
   "summarise": {
     "en": "Summarise",
@@ -16,7 +126,56 @@
         "verified": "2026-10-29",
         "version": "iOS 27 (iPhone User Guide)",
         "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/guide/iphone/iph6297b394b/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide (Résumer, Safari page menu)",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "English source is \"Summarise\" (Apple Intelligence)."
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/iphone/iph1fbef4daa/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/guide/iphone/iph1fbef4daa/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
       }
-    }
+    },
+    "fr": "Résumer",
+    "de": "Zusammenfassen",
+    "pt-BR": "Resumir",
+    "it": "Riassumi",
+    "ja": "要約",
+    "ko": "요약"
   }
 }

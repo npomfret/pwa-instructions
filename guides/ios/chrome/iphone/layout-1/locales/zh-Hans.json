@@ -1,0 +1,16 @@
+{
+  "title": "从 Chrome 添加到主屏幕",
+  "label": "iPhone · Chrome · 添加到主屏幕",
+  "intro": "在 iPhone 上使用 Chrome。以下步骤直接通过其共享菜单进行安装。",
+  "completion": "按照确认屏幕上的提示完成 App 的添加。",
+  "alt": "iPhone 版 Chrome 中的三个步骤：轻点地址栏右上方的“共享”，轻点“查看更多”，然后轻点“添加到主屏幕”。",
+  "steps": {
+    "tap-share": {
+      "title": "轻点“{label:share}”",
+      "description": "在 Chrome 中，轻点屏幕顶部地址栏右端的“{label:share}”。其图标是一个带向上箭头的方框。"
+    }
+  },
+  "transitions": {},
+  "heading": "添加到主屏幕",
+  "subtitle": "iPhone · Chrome"
+}

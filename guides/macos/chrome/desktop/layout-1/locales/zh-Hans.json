@@ -1,0 +1,38 @@
+{
+  "title": "在 Chrome 中安装应用",
+  "label": "Mac · Chrome · 安装应用",
+  "intro": "本指南按参考截图中所示的 Chrome 菜单路径操作。某些网站还会在地址栏中提供安装图标。",
+  "completion": "在 Finder 中，双击该应用即可打开。日后如需再次从 Chrome 打开它，请在地址栏中输入 chrome://apps，按下 Return 键，然后点击该应用。安装应用无需创建程序坞快捷方式。",
+  "alt": "Mac 版 Chrome 的六个步骤：打开三点“更多”菜单，选择“投放、保存和分享”，选择“安装”，点击“下一步”，点击“安装”，然后点击“在 Finder 中显示”。",
+  "steps": {
+    "open-more-menu": {
+      "title": "打开“{label:more}”菜单",
+      "description": "在 Chrome 中打开网站。点击 Chrome 窗口右上角的三个竖点，打开“{label:more}”菜单。"
+    },
+    "cast-save-and-share": {
+      "title": "选择“{label:cast-save-and-share}”",
+      "description": "在“{label:more}”菜单中，选择“{label:cast-save-and-share}”以打开其子菜单。"
+    },
+    "choose-install": {
+      "title": "选择“{label:install}”",
+      "description": "在子菜单中，点击“{label:install}”及其后的网站或应用名称。某些网站会将此项标为“将网页作为应用安装”。请选择“{label:create-shortcut}”上方的安装操作；“{label:create-shortcut}”是另一项独立命令。"
+    },
+    "continue-install": {
+      "title": "点击“{label:next}”",
+      "description": "在“{label:install-app}”对话框中，核对网站名称和网域，然后点击“{label:next}”。如果您的 Chrome 版本直接显示“{label:install}”确认对话框，请继续第 {step:5} 步。"
+    },
+    "confirm-install": {
+      "title": "点击“{label:install}”",
+      "description": "下一个对话框会显示应用将被添加到“{label:chrome-apps}”。点击“{label:install}”进行确认。"
+    },
+    "show-in-finder": {
+      "title": "点击“{label:show-in-finder}”",
+      "description": "当 Chrome 显示“{label:successfully-installed}”时，点击“{label:show-in-finder}”以找到已安装的应用。您也可以选择“{label:open-tab-in-app}”，立即在应用窗口中打开该网站。"
+    }
+  },
+  "transitions": {},
+  "heading": "安装应用",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "在 Mac 版 Chrome 中安装应用",
+  "svgDesc": "六个步骤：打开“更多”，选择“投放、保存和分享”，选择“安装”，点击“下一步”，点击“安装”，然后点击“在 Finder 中显示”。蓝色轮廓标出相应的控件。"
+}

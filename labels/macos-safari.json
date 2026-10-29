@@ -1,23 +1,260 @@
 {
   "new-window": {
-    "en": "New Window"
+    "en": "New Window",
+    "de": "Neues Fenster",
+    "_src": {
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/safari/ibrw1069/27.0/mac/27",
+        "verified": "2026-10-29",
+        "version": "Safari 27 / macOS 27",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/safari/ibrwf3a9e7d6/27.0/mac/27",
+        "verified": "2026-10-29",
+        "version": "macOS 27 / Safari 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/safari/ibrw1069/mac",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/guide/safari/ibrw1069/27.0/mac/27",
+        "verified": "2026-10-29",
+        "version": "macOS 27 / Safari 27",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/mac-help-cn/mchlp2262/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current Apple guide)",
+        "deviceChecked": false
+      }
+    },
+    "pt-BR": "Nova Janela",
+    "it": "Nuova finestra",
+    "ja": "新規ウインドウ",
+    "zh-Hans": "新建窗口"
   },
   "new-tab": {
-    "en": "New Tab"
+    "en": "New Tab",
+    "de": "Neuer Tab",
+    "_src": {
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/mac-help/mchla4695cce/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current, de-de)",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/mac-help-cn/mchla4695cce/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current Apple guide)",
+        "deviceChecked": false
+      }
+    },
+    "zh-Hans": "新建标签页"
   },
   "open-location": {
     "en": "Open Location…"
   },
   "add-to-dock-item": {
-    "en": "Add to Dock…"
+    "en": "Add to Dock…",
+    "fr": "Ajouter au Dock",
+    "_src": {
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later (quoted without the ellipsis)",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14+",
+        "deviceChecked": false,
+        "note": "Apple's page writes the menu item without the trailing ellipsis the English label has."
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false,
+        "note": "Apple quotes it without the trailing \"…\" that the English label has; text copied exactly from the source."
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/safari/ibrw9e991864/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current Apple guide)",
+        "deviceChecked": false,
+        "note": "Apple quotes it without the trailing \"…\" that the English label has; text copied exactly from the source."
+      }
+    },
+    "de": "Zum Dock hinzufügen",
+    "it": "Aggiungi al Dock",
+    "ja": "Dockに追加",
+    "zh-Hans": "添加到程序坞"
   },
   "add-to-dock": {
-    "en": "Add to Dock"
+    "en": "Add to Dock",
+    "es": "Añadir al Dock",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-es/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14+",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27 / Safari 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later (Safari user guide, current)",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/safari/ibrw9e991864/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current Apple guide)",
+        "deviceChecked": false
+      }
+    },
+    "fr": "Ajouter au Dock",
+    "de": "Zum Dock hinzufügen",
+    "pt-BR": "Adicionar ao Dock",
+    "it": "Aggiungi al Dock",
+    "ja": "Dockに追加",
+    "ko": "Dock에 추가",
+    "zh-Hans": "添加到程序坞"
   },
   "cancel": {
     "en": "Cancel"
   },
   "add": {
-    "en": "Add"
+    "en": "Add",
+    "es": "Añadir",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-es/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14+",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27 / Safari 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later (Safari user guide, current)",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/safari/ibrw9e991864/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current Apple guide)",
+        "deviceChecked": false
+      }
+    },
+    "fr": "Ajouter",
+    "de": "Hinzufügen",
+    "pt-BR": "Adicionar",
+    "it": "Aggiungi",
+    "ja": "追加",
+    "ko": "추가",
+    "zh-Hans": "添加"
   }
 }

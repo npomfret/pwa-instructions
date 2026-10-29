@@ -1,0 +1,15 @@
+{
+  "title": "Añadir a pantalla de inicio desde Chrome",
+  "label": "iPhone · Chrome · Añadir a pantalla de inicio",
+  "intro": "Usa Chrome en el iPhone. Estos pasos instalan la app directamente desde su hoja para compartir.",
+  "steps": {
+    "tap-share": {
+      "title": "Toca {label:share}",
+      "description": "En Chrome, toca {label:share} en el extremo derecho de la barra de direcciones, en la parte superior de la pantalla. Su icono es un cuadrado con una flecha hacia arriba."
+    }
+  },
+  "completion": "Sigue la pantalla de confirmación para terminar de añadir la app.",
+  "alt": "Tres pasos en Chrome para iPhone: Compartir en la parte superior derecha de la barra de direcciones, ver más y, por último, Añadir a pantalla de inicio.",
+  "heading": "Añadir a pantalla de inicio",
+  "subtitle": "iPhone · Chrome"
+}

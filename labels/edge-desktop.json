@@ -1,23 +1,435 @@
 {
   "settings-and-more": {
-    "en": "Settings and more"
+    "en": "Settings and more",
+    "es": "Configuración y más",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/es-es/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/fr-FR/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/de-de/edge/install-manage-or-uninstall-apps-in-microsoft-edge ; https://learn.microsoft.com/de-de/microsoft-edge/progressive-web-apps/ux",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, de-de)",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/pt-br/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/it-it/topic/installare-gestire-o-disinstallare-app-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current support article)",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ja-jp/topic/microsoft-edge-%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-%E7%AE%A1%E7%90%86-%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A2%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current)",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ko-kr/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge help page, current (machine-translated page)",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-cn/microsoft-edge/view-and-delete-browser-history-in-microsoft-edge-00cf7943-a9e1-975a-a33d-ac10ce454ca4",
+        "verified": "2026-10-29",
+        "version": "Edge help (current)",
+        "deviceChecked": false,
+        "note": "Another Microsoft zh-cn page writes 设置和更多; this page is the cleaner quote."
+      }
+    },
+    "fr": "Paramètres et plus encore",
+    "de": "Einstellungen und mehr",
+    "pt-BR": "Configurações e muito mais",
+    "it": "Impostazioni e altro",
+    "ja": "設定など",
+    "ko": "설정 등",
+    "zh-Hans": "设置及更多"
   },
   "more-tools": {
-    "en": "More tools"
+    "en": "More tools",
+    "es": "Más herramientas",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/es-es/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/fr-FR/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/de-de/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, de-de)",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/pt-br/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/it-it/topic/installare-gestire-o-disinstallare-app-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current support article)",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ja-jp/topic/microsoft-edge-%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-%E7%AE%A1%E7%90%86-%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A2%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current)",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ko-kr/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge help page, current (machine-translated page)",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-cn/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Edge help (current)",
+        "deviceChecked": false
+      }
+    },
+    "fr": "Autres outils",
+    "de": "Weitere Tools",
+    "pt-BR": "Mais ferramentas",
+    "it": "Altri strumenti",
+    "ja": "その他のツール",
+    "ko": "추가 도구",
+    "zh-Hans": "更多工具"
   },
   "apps": {
-    "en": "Apps"
+    "en": "Apps",
+    "es": "Aplicaciones",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/es-es/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/fr-FR/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/de-de/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, de-de)",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/pt-br/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/it-it/topic/installare-gestire-o-disinstallare-app-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current support article)",
+        "deviceChecked": false,
+        "note": "This article writes Applicazioni; other Microsoft Italian pages write App for the same submenu."
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ja-jp/topic/microsoft-edge-%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-%E7%AE%A1%E7%90%86-%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A2%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current)",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-cn/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Edge help (current)",
+        "deviceChecked": false,
+        "note": "Microsoft warns that this page is machine-translated; the Edge UI may say 应用."
+      }
+    },
+    "fr": "Apps",
+    "de": "Apps",
+    "pt-BR": "Aplicativos",
+    "it": "Applicazioni",
+    "ja": "アプリ",
+    "zh-Hans": "应用程序"
   },
   "install-this-site-as-an-app": {
-    "en": "Install this site as an app"
+    "en": "Install this site as an app",
+    "es": "Instala este sitio como una aplicación",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/es-es/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/fr-FR/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.speech.com/hc/de/articles/22487169128092--SpeechLive-als-Progressive-Web-Application-PWA-hinzuf%C3%BCgen",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (version not stated)",
+        "deviceChecked": false,
+        "note": "Third-party German support article quoting the Edge menu item; Microsoft's own German page is machine translated (\"Installieren Sie diese Website als App\"). Verify on a device."
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/pt-br/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/it-it/topic/installare-gestire-o-disinstallare-app-in-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current support article)",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ja-jp/topic/microsoft-edge-%E3%81%A7%E3%82%A2%E3%83%97%E3%83%AA%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB-%E7%AE%A1%E7%90%86-%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A2%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current)",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-cn/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Edge help (current)",
+        "deviceChecked": false,
+        "note": "Machine-translated page; the UI wording may differ slightly."
+      }
+    },
+    "fr": "Installez ce site en tant qu’application",
+    "de": "Diese Website als App installieren",
+    "pt-BR": "Instale este site como um aplicativo",
+    "it": "Installa questo sito come app",
+    "ja": "このサイトをアプリとしてインストールします",
+    "zh-Hans": "将此站点安装为应用"
   },
   "install-app": {
-    "en": "Install app"
+    "en": "Install app",
+    "es": "Instalar aplicación",
+    "_src": {
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_INSTALL_PWA_DIALOG_TITLE, id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; Edge's install dialog is Chromium-based but not confirmed in Edge."
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; text taken from the Chromium install dialog string, not an Edge-specific page."
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_INSTALL_PWA_DIALOG_TITLE \"Install app\" (Chromium dialog, shared with Edge), id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 6540174167103635041",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string IDS_INSTALL_PWA_DIALOG_TITLE; Edge shares the Chromium install dialog but this was not read from Edge itself."
+      }
+    },
+    "de": "App installieren",
+    "it": "Installa app",
+    "ja": "アプリのインストール",
+    "ko": "앱 설치",
+    "zh-Hans": "安装应用"
   },
   "cancel": {
-    "en": "Cancel"
+    "en": "Cancel",
+    "es": "Cancelar",
+    "_src": {
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_DOWNLOAD_LINK_CANCEL, id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 7658239707568436148, IDS_CONTENT_CONTEXT_SPELLING_BUBBLE_DISABLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Generic Chromium Cancel; not confirmed in Edge."
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; text taken from the Chromium install dialog string, not an Edge-specific page."
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_DOWNLOAD_LINK_CANCEL \"Cancel\" (Chromium dialog, shared with Edge), id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 7658239707568436148",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; not read from Edge itself."
+      }
+    },
+    "de": "Abbrechen",
+    "it": "Annulla",
+    "ja": "キャンセル",
+    "ko": "취소",
+    "zh-Hans": "取消"
   },
   "install": {
-    "en": "Install"
+    "en": "Install",
+    "es": "Instalar",
+    "_src": {
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_INSTALL_PWA_BUTTON_LABEL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_de.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; not confirmed in Edge."
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; text taken from the Chromium install dialog string, not an Edge-specific page."
+      },
+      "ja": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ja.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ko.xtb (IDS_INSTALL_PWA_BUTTON_LABEL \"Install\" (Chromium dialog, shared with Edge), id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-CN.xtb message id 3789841737615482174",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string IDS_INSTALL_PWA_BUTTON_LABEL; not read from Edge itself."
+      }
+    },
+    "de": "Installieren",
+    "it": "Installa",
+    "ja": "インストール",
+    "ko": "설치",
+    "zh-Hans": "安装"
   }
 }

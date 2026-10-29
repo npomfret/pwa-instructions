@@ -1,0 +1,26 @@
+{
+  "title": "AndroidのChromeでアプリをインストール",
+  "label": "Android · Chrome · アプリをインストール",
+  "intro": "Android版Chromeを使います。図に示すメニュー名は、以前の「ホーム画面に追加」の記事ではなく、Googleの最新のAndroidヘルプに基づいています。ドキュメントに基づく草案です。端末では未確認のため、メニューの構成や確認画面は異なる場合があります。",
+  "steps": {
+    "open-more-menu": {
+      "title": "「{label:more}」メニューを開く",
+      "description": "Chromeでウェブサイトを開きます。アドレスバーの横にある縦に並んだ3つの点をタップします。"
+    },
+    "install-and-create-shortcut": {
+      "title": "「{label:install-and-create-shortcut}」をタップ",
+      "description": "メニューから「{label:install-and-create-shortcut}」を選択します。以前のバージョンのChromeでは、この項目が「ホーム画面に追加」と表示される場合があります。"
+    },
+    "install-app": {
+      "title": "「{label:install}」をタップ",
+      "description": "「{label:install}」を選択します。Chromeに表示される指示に従って、アプリのインストールを完了します。「{label:create-shortcut}」は、リンクを保存する別のオプションです。"
+    }
+  },
+  "completion": "インストールが完了したら、Androidのランチャーからアプリを開きます。ホーム画面での配置は、ランチャーとその設定によって異なります。",
+  "alt": "AndroidのChromeでの3つのインストール手順の図。青い枠線は、ドキュメントに記載されているコントロールを示しています。",
+  "transitions": {},
+  "heading": "アプリをインストール",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "AndroidのChromeでアプリをインストールする",
+  "svgDesc": "ドキュメントに基づく草案です。3つの手順: 「その他」を開き、「インストールしてショートカットを作成」をタップして、「インストール」をタップします。画面に表示されるその他の指示にも従ってください。"
+}

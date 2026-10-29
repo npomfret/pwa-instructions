@@ -1,0 +1,16 @@
+{
+  "title": "Chrome에서 홈 화면에 추가",
+  "label": "iPhone · Chrome · 홈 화면에 추가",
+  "steps": {
+    "tap-share": {
+      "title": "{label:share} 탭하기",
+      "description": "Chrome에서 화면 상단 주소 표시줄의 오른쪽 끝에 있는 {label:share} 버튼을 탭하세요. 아이콘은 위쪽 화살표가 있는 사각형입니다."
+    }
+  },
+  "intro": "iPhone에서 Chrome을 사용하세요. 이 단계들은 Chrome의 공유 시트에서 바로 설치합니다.",
+  "completion": "확인 화면의 안내에 따라 추가를 완료하세요.",
+  "alt": "iPhone Chrome의 세 단계: 주소 표시줄 오른쪽 위의 공유, 더 보기, 홈 화면에 추가 순으로 탭합니다.",
+  "transitions": {},
+  "heading": "홈 화면에 추가",
+  "subtitle": "iPhone · Chrome"
+}

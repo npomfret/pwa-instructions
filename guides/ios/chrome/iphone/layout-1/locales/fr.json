@@ -1,0 +1,16 @@
+{
+  "title": "Ajouter à l’écran d’accueil depuis Chrome",
+  "label": "iPhone · Chrome · Ajouter à l’écran d’accueil",
+  "heading": "Ajouter à l’écran d’accueil",
+  "subtitle": "iPhone · Chrome",
+  "intro": "Utilisez Chrome sur votre iPhone. Ces étapes permettent d’installer l’app directement depuis sa feuille de partage.",
+  "steps": {
+    "tap-share": {
+      "title": "Touchez {label:share}",
+      "description": "Dans Chrome, touchez {label:share} à l’extrémité droite de la barre d’adresse, en haut de l’écran. Son icône est un carré surmonté d’une flèche pointant vers le haut."
+    }
+  },
+  "completion": "Suivez l’écran de confirmation pour terminer l’ajout de l’app.",
+  "alt": "Trois étapes dans Chrome sur iPhone : Partager en haut à droite de la barre d’adresse, Afficher plus, puis Sur l’écran d’accueil.",
+  "transitions": {}
+}

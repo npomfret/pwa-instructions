@@ -1,0 +1,22 @@
+{
+  "title": "Braveからホーム画面に追加",
+  "label": "iPhone · Brave → Safari · ホーム画面に追加",
+  "intro": "Braveで始めます。手順{step:3}で同じウェブサイトがSafariで開きます。手順{step:4}～{step:7}はSafariで行います。",
+  "steps": {
+    "tap-share": {
+      "title": "「{label:share}」をタップ",
+      "description": "Braveで、下部のツールバーにある「{label:share}」をタップします。アイコンは、上向きの矢印が付いた四角形です。ツールバーが表示されていない場合は、ウェブサイトのアドレスをタップして表示します。"
+    },
+    "open-in-safari": {
+      "title": "「{label:open-in-safari}」をタップ",
+      "description": "展開された共有シートで、下にスクロールして「{label:open-in-safari}」をタップします。ウェブサイトがSafariで開くので、以降の手順はすべてSafariで行います。"
+    }
+  },
+  "completion": "確認画面の指示に従って、アプリの追加を完了します。",
+  "alt": "7つの番号付き手順: Braveで「共有」、「さらに表示」、「Safariで開く」を行い、続けてSafariでの4つのインストール手順を行います。",
+  "transitions": {
+    "continue-in-safari": "Safariで続ける"
+  },
+  "heading": "ホーム画面に追加",
+  "subtitle": "iPhone · Brave → Safari"
+}

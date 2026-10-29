@@ -1,0 +1,22 @@
+{
+  "title": "Von Brave zu Home-Bildschirm hinzufügen",
+  "label": "iPhone · Brave → Safari · Zu Home-Bildschirm hinzufügen",
+  "intro": "Beginne in Brave. In Schritt {step:3} wird dieselbe Website in Safari geöffnet; die Schritte {step:4} bis {step:7} finden in Safari statt.",
+  "steps": {
+    "tap-share": {
+      "title": "Auf {label:share} tippen",
+      "description": "Tippe in Brave in der unteren Symbolleiste auf {label:share}. Das Symbol ist ein Quadrat mit einem nach oben zeigenden Pfeil. Ist die Symbolleiste ausgeblendet, tippe auf die Adresse der Website, um sie einzublenden."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Scrolle im erweiterten Menü „Teilen“ nach unten und tippe auf {label:open-in-safari}. Die Website wird in Safari geöffnet; führe alle weiteren Schritte dort aus."
+    }
+  },
+  "completion": "Folge den Anweisungen auf dem Bestätigungsbildschirm, um das Hinzufügen der App abzuschließen.",
+  "alt": "Sieben nummerierte Schritte: „Teilen“, „Mehr anzeigen“ und „In Safari öffnen“ in Brave, danach die vier Installationsschritte in Safari.",
+  "transitions": {
+    "continue-in-safari": "In Safari fortfahren"
+  },
+  "heading": "Zu Home-Bildschirm hinzufügen",
+  "subtitle": "iPhone · Brave → Safari"
+}

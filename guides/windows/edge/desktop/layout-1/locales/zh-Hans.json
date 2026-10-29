@@ -1,0 +1,30 @@
+{
+  "title": "在 Windows 版 Edge 中安装应用",
+  "label": "Windows · Edge · 安装应用",
+  "intro": "此菜单路径参照 Microsoft 当前的 Edge 帮助。在其他 Edge 版本中，“应用”可能直接位于“{label:settings-and-more}”中。文档草稿：尚未在设备上验证；菜单布局和确认提示可能有所不同。",
+  "completion": "如需再次打开，请输入 edge://apps，然后点击应用卡片上的“打开”。在“详细信息”中，可以选择“固定到任务栏”、“固定到‘开始’屏幕”和“创建桌面快捷方式”。",
+  "alt": "共 5 个 Windows 版 Edge 安装步骤图示；蓝色轮廓标出文档中提到的控件。",
+  "steps": {
+    "open-settings-menu": {
+      "title": "打开“{label:settings-and-more}”",
+      "description": "在 Microsoft Edge 中打开网站。选择浏览器右上角的三个横点。"
+    },
+    "more-tools": {
+      "title": "选择“{label:more-tools}”",
+      "description": "从菜单中选择“{label:more-tools}”。"
+    },
+    "apps": {
+      "title": "选择“{label:apps}”",
+      "description": "在“{label:more-tools}”中，选择“{label:apps}”。"
+    },
+    "install-site": {
+      "title": "选择“{label:install-this-site-as-an-app}”",
+      "description": "选择“{label:install-this-site-as-an-app}”。对于可安装的 PWA，Edge 可能会改为提供“{label:install-app}”，或在地址栏中显示安装图标。"
+    }
+  },
+  "transitions": {},
+  "heading": "安装应用",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "在 Windows 版 Edge 中安装应用",
+  "svgDesc": "文档草稿：示意性控件来自当前的厂商说明，并非经过验证的设备截图。蓝色轮廓标出相应的控件。"
+}

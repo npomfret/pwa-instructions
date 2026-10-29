@@ -1,0 +1,26 @@
+{
+  "title": "在 Android 版 Chrome 中安装应用",
+  "label": "Android · Chrome · 安装应用",
+  "intro": "请使用 Android 版 Chrome。图示中的菜单标签依据 Google 当前的 Android 帮助，而非较早的“添加到主屏幕”文章。文档草稿：尚未在设备上验证；菜单布局和确认提示可能有所不同。",
+  "completion": "安装完成后，从 Android 启动器中打开该应用。主屏幕上的放置位置取决于您的启动器及其设置。",
+  "alt": "共 3 个 Android 版 Chrome 安装步骤图示；蓝色轮廓标出文档中提到的控件。",
+  "steps": {
+    "open-more-menu": {
+      "title": "打开“{label:more}”菜单",
+      "description": "在 Chrome 中打开网站。点按地址栏旁边的三个竖点。"
+    },
+    "install-and-create-shortcut": {
+      "title": "点按“{label:install-and-create-shortcut}”",
+      "description": "从菜单中选择“{label:install-and-create-shortcut}”。较旧的 Chrome 布局可能将此项称为“添加到主屏幕”。"
+    },
+    "install-app": {
+      "title": "点按“{label:install}”",
+      "description": "选择“{label:install}”。按照 Chrome 显示的提示完成应用安装。“{label:create-shortcut}”是另一个选项，只会保存一个链接。"
+    }
+  },
+  "transitions": {},
+  "heading": "安装应用",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "在 Android 版 Chrome 中安装应用",
+  "svgDesc": "文档草稿。共三个步骤：打开“更多”，点按“安装并创建快捷方式”，然后点按“安装”。请按设备上的提示完成后续操作。"
+}

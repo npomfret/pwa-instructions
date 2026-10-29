@@ -1,0 +1,16 @@
+{
+  "title": "Adicionar à Tela de Início a partir do Chrome",
+  "label": "iPhone · Chrome · Adicionar à Tela de Início",
+  "steps": {
+    "tap-share": {
+      "title": "Toque em {label:share}",
+      "description": "No Chrome, toque em {label:share} na extremidade direita da barra de endereço, na parte superior da tela. O ícone é um quadrado com uma seta apontando para cima."
+    }
+  },
+  "intro": "Use o Chrome no iPhone. Estas etapas fazem a instalação diretamente pela planilha de compartilhamento.",
+  "completion": "Siga a tela de confirmação para concluir a adição do app.",
+  "alt": "Três etapas no Chrome do iPhone: Compartilhar no canto superior direito da barra de endereço, Ver Mais e depois Adicionar à Tela de Início.",
+  "transitions": {},
+  "heading": "Adicionar à Tela de Início",
+  "subtitle": "iPhone · Chrome"
+}

@@ -40,7 +40,7 @@ test('pseudo-localization lengthens text by about 35% and keeps placeholders', (
 });
 
 test('a locale with no translation files is rejected', async () => {
-  await assert.rejects(composeGuides(root, catalog, 'fr'), /no fr translation/);
+  await assert.rejects(composeGuides(root, catalog, 'nl'), /no nl translation/);
 });
 
 test('reused Brave steps take Safari\'s en-XA text, renumbered', () => {

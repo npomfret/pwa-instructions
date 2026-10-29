@@ -1,0 +1,29 @@
+{
+  "title": "Adicionar à Tela de Início",
+  "label": "iPhone · Safari · Adicionar à Tela de Início",
+  "steps": {
+    "open-page-menu": {
+      "title": "Abra o {label:page-menu}",
+      "description": "Toque no botão {label:page-menu}, no lado esquerdo da barra de endereço do site. O ícone tem três linhas horizontais, com a linha de baixo mais curta."
+    },
+    "tap-share": {
+      "title": "Toque em {label:share}",
+      "description": "No {label:page-menu}, toque em {label:share}. O ícone é um quadrado com uma seta apontando para cima."
+    },
+    "view-more": {
+      "title": "Toque em {label:view-more}",
+      "description": "Se a planilha de compartilhamento estiver recolhida, toque em {label:view-more}, indicado por uma seta para baixo, para mostrar as demais ações. Se a lista de ações já estiver visível, continue na etapa {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Toque em {label:add-to-home-screen}",
+      "description": "Na lista de ações expandida, localize e toque em {label:add-to-home-screen}. O ícone é um quadrado arredondado com um sinal de mais."
+    }
+  },
+  "completion": "Siga a tela de confirmação para concluir a adição do app.",
+  "alt": "Quatro etapas: toque em Menu da Página ao lado do endereço, toque em Compartilhar, toque em Ver Mais, se necessário, e depois toque em Adicionar à Tela de Início.",
+  "transitions": {},
+  "heading": "Adicionar à Tela de Início",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Adicionar à Tela de Início no Safari do iPhone: quatro etapas",
+  "svgDesc": "Quatro etapas numeradas no Safari do iPhone: abra o Menu da Página, toque em Compartilhar, toque em Ver Mais e depois toque em Adicionar à Tela de Início. Contornos azuis identificam os controles em que tocar. As instruções completas em texto são fornecidas separadamente."
+}

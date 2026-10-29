@@ -1,0 +1,26 @@
+{
+  "title": "Android Chrome에서 앱 설치",
+  "label": "Android · Chrome · 앱 설치",
+  "steps": {
+    "open-more-menu": {
+      "title": "{label:more} 메뉴 열기",
+      "description": "Chrome에서 웹사이트를 엽니다. 주소 표시줄 옆의 세로 점 세 개를 탭하세요."
+    },
+    "install-and-create-shortcut": {
+      "title": "{label:install-and-create-shortcut} 탭하기",
+      "description": "메뉴에서 {label:install-and-create-shortcut} 항목을 선택하세요. 이전 Chrome 레이아웃에서는 홈 화면에 추가로 표시될 수 있습니다."
+    },
+    "install-app": {
+      "title": "{label:install} 탭하기",
+      "description": "{label:install} 항목을 선택하세요. Chrome에 표시되는 안내에 따라 앱 설치를 완료하세요. {label:create-shortcut} 항목은 링크를 저장하는 별도의 옵션입니다."
+    }
+  },
+  "intro": "Android용 Chrome을 사용하세요. 그림의 메뉴 이름은 이전의 홈 화면에 추가 문서가 아닌 Google의 최신 Android 도움말을 따릅니다. 문서 초안: 아직 기기에서 확인되지 않았으며, 메뉴 구성과 확인 메시지는 다를 수 있습니다.",
+  "completion": "설치가 끝나면 Android 런처에서 앱을 여세요. 홈 화면 배치는 런처와 설정에 따라 다릅니다.",
+  "alt": "Android Chrome 설치 단계를 보여 주는 세 개의 그림. 파란색 윤곽선은 안내된 컨트롤을 나타냅니다.",
+  "transitions": {},
+  "heading": "앱 설치",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Android Chrome에서 앱 설치",
+  "svgDesc": "문서 초안. 세 단계: 더보기 열기, 설치 및 바로가기 만들기 탭하기, 설치 탭하기. 기기에 표시되는 추가 안내를 끝까지 따르세요."
+}

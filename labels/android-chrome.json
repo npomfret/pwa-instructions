@@ -1,6 +1,73 @@
 {
   "more": {
-    "en": "More"
+    "en": "More",
+    "es": "Más",
+    "_src": {
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es.xtb (message IDS_CONTENT_CONTEXT_MORE_APPS, id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 6042308850641462728, IDS_BOOKMARKS_EDIT_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_de.xtb (message id 6042308850641462728, IDS_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Same string as the Mehr label in Google's German Chrome help (https://support.google.com/chrome/answer/9658361?hl=de)."
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=pt-BR",
+        "verified": "2026-10-29",
+        "version": "Chrome (Android), current help",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=ja",
+        "verified": "2026-10-29",
+        "version": "Chrome help (ja), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?hl=ko&co=GENIE.Platform%3DAndroid",
+        "verified": "2026-10-29",
+        "version": "Chrome help page, current",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?hl=zh-Hans&co=GENIE.Platform%3DAndroid",
+        "verified": "2026-10-29",
+        "version": "Chrome help (current)",
+        "deviceChecked": false
+      }
+    },
+    "fr": "Plus",
+    "de": "Mehr",
+    "pt-BR": "Mais",
+    "it": "Altro",
+    "ja": "その他",
+    "ko": "더보기",
+    "zh-Hans": "更多"
   },
   "install-and-create-shortcut": {
     "en": "Install and create shortcut",
@@ -12,8 +79,72 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_es.xtb (message IDS_MENU_INSTALL_CREATE_SHORTCUT, id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=fr",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=de",
+        "verified": "2026-10-29",
+        "version": "Google Chrome-Hilfe (de), Android",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=pt-BR",
+        "verified": "2026-10-29",
+        "version": "Chrome (Android), current help",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_it.xtb (message id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=ja",
+        "verified": "2026-10-29",
+        "version": "Chrome help (ja), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ko.xtb (IDS_MENU_INSTALL_CREATE_SHORTCUT \"Install and create shortcut\", id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?hl=zh-Hans&co=GENIE.Platform%3DAndroid",
+        "verified": "2026-10-29",
+        "version": "Chrome help (current)",
+        "deviceChecked": false
       }
-    }
+    },
+    "es": "Instalar y crear acceso directo",
+    "fr": "Installer et créer un raccourci",
+    "de": "Installieren und Verknüpfung erstellen",
+    "pt-BR": "Instalar e criar atalho",
+    "it": "Installa e crea scorciatoia",
+    "ja": "インストールしてショートカットを作成",
+    "ko": "설치 및 바로가기 만들기",
+    "zh-Hans": "安装并创建快捷方式"
   },
   "install": {
     "en": "Install",
@@ -25,8 +156,72 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_es.xtb (message IDS_APP_BANNER_INSTALL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=de",
+        "verified": "2026-10-29",
+        "version": "Google Chrome-Hilfe (de), Android",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=pt-BR",
+        "verified": "2026-10-29",
+        "version": "Chrome (Android), current help",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_it.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=ja",
+        "verified": "2026-10-29",
+        "version": "Chrome help (ja), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ko.xtb (IDS_APP_BANNER_INSTALL \"Install\", id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?hl=zh-Hans&co=GENIE.Platform%3DAndroid",
+        "verified": "2026-10-29",
+        "version": "Chrome help (current)",
+        "deviceChecked": false
       }
-    }
+    },
+    "es": "Instalar",
+    "fr": "Installer",
+    "de": "Installieren",
+    "pt-BR": "Instalar",
+    "it": "Installa",
+    "ja": "インストール",
+    "ko": "설치",
+    "zh-Hans": "安装"
   },
   "create-shortcut": {
     "en": "Create shortcut",
@@ -38,7 +233,64 @@
         "verified": "2026-10-29",
         "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
         "deviceChecked": false
+      },
+      "es": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_es.xtb (message IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT, id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr.xtb (message id 204914487372604757, IDS_APP_HOME_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/15085120?co=GENIE.Platform%3DAndroid&hl=de",
+        "verified": "2026-10-29",
+        "version": "Google Chrome-Hilfe (de), Android",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-BR.xtb#204914487372604757",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_APP_HOME_CREATE_SHORTCUT (desktop app home); not confirmed as the Android menu string"
+      },
+      "it": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_it.xtb (message id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ko.xtb (IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT \"Create shortcut\", id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/15085120?hl=zh-Hans&co=GENIE.Platform%3DAndroid",
+        "verified": "2026-10-29",
+        "version": "Chrome help (current)",
+        "deviceChecked": false
       }
-    }
+    },
+    "es": "Crear acceso directo",
+    "fr": "Créer un raccourci",
+    "de": "Verknüpfung erstellen",
+    "pt-BR": "Criar atalho",
+    "it": "Crea scorciatoia",
+    "ko": "바로가기 만들기",
+    "zh-Hans": "创建快捷方式"
   }
 }

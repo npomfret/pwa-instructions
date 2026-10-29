@@ -1,0 +1,18 @@
+{
+  "title": "Windows Chrome에서 앱 설치",
+  "label": "Windows · Chrome · 앱 설치",
+  "steps": {
+    "confirm-install": {
+      "title": "{label:install} 클릭하기",
+      "description": "앱 이름과 웹사이트 주소를 확인한 다음 {label:install} 버튼을 클릭하세요. 추가 확인 메시지가 나타나면 안내에 따르세요."
+    }
+  },
+  "intro": "Chrome 메뉴를 사용하거나, 웹사이트에 설치 아이콘이 있으면 주소 표시줄의 아이콘을 사용하세요. 문서 초안: 아직 기기에서 확인되지 않았으며, 메뉴 구성과 확인 메시지는 다를 수 있습니다.",
+  "completion": "설치된 앱을 다시 열려면 Chrome 주소 표시줄에 chrome://apps를 입력하고 앱을 선택하세요.",
+  "alt": "Windows Chrome 설치 단계를 보여 주는 네 개의 그림. 파란색 윤곽선은 안내된 컨트롤을 나타냅니다.",
+  "transitions": {},
+  "heading": "앱 설치",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Windows Chrome에서 앱 설치",
+  "svgDesc": "문서 초안: 공급업체 안내를 바탕으로 한 개략적 컨트롤이며, 확인된 기기 캡처가 아닙니다. 파란색 윤곽선은 해당 컨트롤을 나타냅니다."
+}

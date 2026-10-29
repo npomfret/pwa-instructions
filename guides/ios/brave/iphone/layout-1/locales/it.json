@@ -1,0 +1,22 @@
+{
+  "title": "Aggiungere alla schermata Home da Brave",
+  "label": "iPhone · Brave → Safari · Aggiungi alla schermata Home",
+  "intro": "Inizia da Brave. Il passaggio {step:3} apre lo stesso sito web in Safari; i passaggi da {step:4} a {step:7} si svolgono in Safari.",
+  "completion": "Segui la schermata di conferma per completare l’aggiunta dell’app.",
+  "alt": "Sette passaggi numerati: Condividi, Mostra altro e Apri in Safari in Brave, seguiti dai quattro passaggi di installazione in Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Tocca {label:share}",
+      "description": "In Brave, tocca {label:share} nella barra degli strumenti in basso. La sua icona è un quadrato con una freccia rivolta verso l’alto. Se la barra degli strumenti è nascosta, tocca l’indirizzo del sito web per mostrarla."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Nel foglio di condivisione espanso, scorri verso il basso e tocca {label:open-in-safari}. Il sito web si apre in Safari; esegui tutti i passaggi restanti lì."
+    }
+  },
+  "transitions": {
+    "continue-in-safari": "Continua in Safari"
+  },
+  "heading": "Aggiungi alla schermata Home",
+  "subtitle": "iPhone · Brave → Safari"
+}

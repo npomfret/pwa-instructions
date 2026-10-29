@@ -1,0 +1,16 @@
+{
+  "title": "Von Chrome zu Home-Bildschirm hinzufügen",
+  "label": "iPhone · Chrome · Zu Home-Bildschirm hinzufügen",
+  "intro": "Verwende Chrome auf deinem iPhone. Diese Schritte installieren die App direkt über das Menü „Teilen“ des Browsers.",
+  "steps": {
+    "tap-share": {
+      "title": "Auf {label:share} tippen",
+      "description": "Tippe in Chrome oben auf dem Bildschirm am rechten Ende der Adressleiste auf {label:share}. Das Symbol ist ein Quadrat mit einem nach oben zeigenden Pfeil."
+    }
+  },
+  "completion": "Folge den Anweisungen auf dem Bestätigungsbildschirm, um das Hinzufügen der App abzuschließen.",
+  "alt": "Drei Schritte in Chrome auf dem iPhone: „Teilen“ oben rechts in der Adressleiste, „Mehr anzeigen“ und dann „Zu Home-Bildschirm hinzufügen“.",
+  "transitions": {},
+  "heading": "Zu Home-Bildschirm hinzufügen",
+  "subtitle": "iPhone · Chrome"
+}

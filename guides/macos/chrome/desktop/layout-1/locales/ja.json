@@ -1,0 +1,38 @@
+{
+  "title": "Chromeでアプリをインストール",
+  "label": "Mac · Chrome · アプリをインストール",
+  "intro": "このガイドでは、参考スクリーンショットに示されているChromeのメニューを使う方法を説明します。ウェブサイトによっては、アドレスバーにもインストール用のアイコンが表示されます。",
+  "steps": {
+    "open-more-menu": {
+      "title": "「{label:more}」メニューを開く",
+      "description": "Chromeでウェブサイトを開きます。Chromeウィンドウの右上にある縦に並んだ3つの点をクリックして、「{label:more}」メニューを開きます。"
+    },
+    "cast-save-and-share": {
+      "title": "「{label:cast-save-and-share}」を選択",
+      "description": "「{label:more}」メニューで「{label:cast-save-and-share}」を選択して、サブメニューを開きます。"
+    },
+    "choose-install": {
+      "title": "「{label:install}」を選択",
+      "description": "サブメニューで、「{label:install}」にウェブサイト名またはアプリ名が続く項目をクリックします。サイトによっては、この項目が「ページをアプリとしてインストール」と表示されます。「{label:create-shortcut}」の上にあるインストール用の項目を選択してください。「{label:create-shortcut}」は別のコマンドです。"
+    },
+    "continue-install": {
+      "title": "「{label:next}」をクリック",
+      "description": "「{label:install-app}」ダイアログでウェブサイト名とドメインを確認し、「{label:next}」をクリックします。お使いのバージョンのChromeで「{label:install}」の確認画面がすぐに表示される場合は、手順{step:5}に進みます。"
+    },
+    "confirm-install": {
+      "title": "「{label:install}」をクリック",
+      "description": "次のダイアログに、アプリが「{label:chrome-apps}」に追加されることが表示されます。「{label:install}」をクリックして確定します。"
+    },
+    "show-in-finder": {
+      "title": "「{label:show-in-finder}」をクリック",
+      "description": "「{label:successfully-installed}」と表示されたら、「{label:show-in-finder}」をクリックして、インストールされたアプリの場所を表示します。「{label:open-tab-in-app}」を選択すると、ウェブサイトがすぐにアプリのウィンドウで開きます。"
+    }
+  },
+  "completion": "Finderでアプリをダブルクリックして開きます。あとでChromeから開き直すには、アドレスバーに chrome://apps と入力して Return キーを押し、アプリをクリックします。インストールにDockのショートカットは必要ありません。",
+  "alt": "MacのChromeでの6つの手順: 3つの点の「その他」メニューを開き、「キャスト、保存、共有」を選択し、「インストール」を選択し、「次へ」をクリックし、「インストール」をクリックして、「Finder で表示」をクリックします。",
+  "transitions": {},
+  "heading": "アプリをインストール",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "MacのChromeでアプリをインストールする",
+  "svgDesc": "6つの手順: 「その他」を開き、「キャスト、保存、共有」を選択し、「インストール」を選択し、「次へ」をクリックし、「インストール」をクリックして、「Finder で表示」をクリックします。青い枠線はコントロールを示しています。"
+}

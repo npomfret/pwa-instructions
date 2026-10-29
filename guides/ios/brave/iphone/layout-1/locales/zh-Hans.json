@@ -1,0 +1,22 @@
+{
+  "title": "从 Brave 添加到主屏幕",
+  "label": "iPhone · Brave → Safari 浏览器 · 添加到主屏幕",
+  "intro": "从 Brave 开始。第 {step:3} 步会在 Safari 浏览器中打开同一网站；第 {step:4}–{step:7} 步在 Safari 浏览器中进行。",
+  "completion": "按照确认屏幕上的提示完成 App 的添加。",
+  "alt": "共七个编号步骤：先在 Brave 中轻点“共享”“查看更多”和“在 Safari 浏览器中打开”，然后是 Safari 浏览器中的四个安装步骤。",
+  "steps": {
+    "tap-share": {
+      "title": "轻点“{label:share}”",
+      "description": "在 Brave 中，轻点底部工具栏中的“{label:share}”。其图标是一个带向上箭头的方框。如果工具栏已隐藏，请轻点网站地址以将其显示。"
+    },
+    "open-in-safari": {
+      "title": "轻点“{label:open-in-safari}”",
+      "description": "在展开的共享菜单中，向下滚动并轻点“{label:open-in-safari}”。该网站会在 Safari 浏览器中打开；请在 Safari 浏览器中完成其余所有步骤。"
+    }
+  },
+  "transitions": {
+    "continue-in-safari": "在 Safari 浏览器中继续"
+  },
+  "heading": "添加到主屏幕",
+  "subtitle": "iPhone · Brave → Safari 浏览器"
+}

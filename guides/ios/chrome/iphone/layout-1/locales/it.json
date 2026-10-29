@@ -1,0 +1,16 @@
+{
+  "title": "Aggiungere alla schermata Home da Chrome",
+  "label": "iPhone · Chrome · Aggiungi alla schermata Home",
+  "intro": "Usa Chrome su iPhone. Questi passaggi installano l’app direttamente dal foglio di condivisione.",
+  "completion": "Segui la schermata di conferma per completare l’aggiunta dell’app.",
+  "alt": "Tre passaggi in Chrome per iPhone: Condividi in alto a destra nella barra degli indirizzi, Mostra altro, poi Aggiungi alla schermata Home.",
+  "steps": {
+    "tap-share": {
+      "title": "Tocca {label:share}",
+      "description": "In Chrome, tocca {label:share} all’estremità destra della barra degli indirizzi, nella parte superiore dello schermo. La sua icona è un quadrato con una freccia rivolta verso l’alto."
+    }
+  },
+  "transitions": {},
+  "heading": "Aggiungi alla schermata Home",
+  "subtitle": "iPhone · Chrome"
+}

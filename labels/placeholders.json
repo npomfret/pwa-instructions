@@ -1,5 +1,71 @@
 {
   "website": {
-    "en": "Website"
+    "en": "Website",
+    "es": "Sitio web",
+    "fr": "Site web",
+    "de": "Website",
+    "_src": {
+      "de": {
+        "method": "author-translation",
+        "source": "n/a: generic noun standing in for a site name in \"Install <site name>…\"; the translation author's own word, not a product string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "author-translation",
+        "source": "n/a: generic noun standing in for a site name in \"Install <site name>…\"; the translation author's own word, not a product string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "author-translation",
+        "source": "n/a: generic noun standing in for a site name in \"Install <site name>…\"; the translation author's own word, not a product string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "author-translation",
+        "source": "n/a: generic noun standing in for a site name in \"Install <site name>…\"; the translation author's own word, not a product string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "author-translation",
+        "source": "n/a: generic noun standing in for a site name in \"Install <site name>…\"; the translation author's own word, not a product string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "author-translation",
+        "source": "n/a: generic noun standing in for a site name in \"Install <site name>…\"; the translation author's own word, not a product string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "es": {
+        "method": "author-translation",
+        "source": "n/a: generic noun standing in for a site name in \"Install <site name>…\"; the translation author's own word, not a product string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "author-translation",
+        "source": "n/a: generic noun standing in for a site name in \"Install <site name>…\"; the translation author's own word, not a product string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      }
+    },
+    "pt-BR": "Site",
+    "it": "Sito web",
+    "ja": "ウェブサイト",
+    "ko": "웹사이트",
+    "zh-Hans": "网站"
   }
 }

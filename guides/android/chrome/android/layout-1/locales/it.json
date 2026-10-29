@@ -1,0 +1,26 @@
+{
+  "title": "Installare un’app in Chrome per Android",
+  "label": "Android · Chrome · Installa app",
+  "intro": "Usa Chrome per Android. Le voci di menu illustrate seguono la guida attuale di Google per Android, non il vecchio articolo su Aggiungi alla schermata Home. Bozza dalla documentazione: non ancora verificata su un dispositivo; il layout del menu e le richieste di conferma possono variare.",
+  "completion": "Al termine dell’installazione, apri l’app dal launcher di Android. La posizione nella schermata Home dipende dal launcher e dalle sue impostazioni.",
+  "alt": "3 passaggi illustrati per installare un’app in Chrome per Android; i contorni blu indicano i controlli descritti nella documentazione.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Apri il menu {label:more}",
+      "description": "Apri il sito web in Chrome. Tocca i tre puntini verticali accanto alla barra degli indirizzi."
+    },
+    "install-and-create-shortcut": {
+      "title": "Tocca {label:install-and-create-shortcut}",
+      "description": "Scegli {label:install-and-create-shortcut} dal menu. Nelle versioni meno recenti di Chrome questa voce può chiamarsi Aggiungi a schermata Home."
+    },
+    "install-app": {
+      "title": "Tocca {label:install}",
+      "description": "Scegli {label:install}. Completa le richieste mostrate da Chrome per installare l’app. {label:create-shortcut} è un’opzione separata che salva solo un link."
+    }
+  },
+  "transitions": {},
+  "heading": "Installa app",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Installare un’app in Chrome per Android",
+  "svgDesc": "Bozza dalla documentazione. Tre passaggi: apri Altro, tocca Installa e crea scorciatoia, poi tocca Installa. Completa le eventuali richieste successive sul dispositivo."
+}

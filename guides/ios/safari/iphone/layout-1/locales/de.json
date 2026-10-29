@@ -1,0 +1,29 @@
+{
+  "title": "Zu Home-Bildschirm hinzufügen",
+  "label": "iPhone · Safari · Zu Home-Bildschirm hinzufügen",
+  "steps": {
+    "open-page-menu": {
+      "title": "{label:page-menu} öffnen",
+      "description": "Tippe links in der Adressleiste der Website auf die Taste „{label:page-menu}“. Ihr Symbol zeigt drei waagerechte Linien, von denen die unterste kürzer ist."
+    },
+    "tap-share": {
+      "title": "Auf {label:share} tippen",
+      "description": "Tippe im Seitenmenü auf {label:share}. Das Symbol ist ein Quadrat mit einem nach oben zeigenden Pfeil."
+    },
+    "view-more": {
+      "title": "Auf {label:view-more} tippen",
+      "description": "Wenn das Menü „Teilen“ eingeklappt ist, tippe auf {label:view-more} (mit einem Chevron nach unten), um die übrigen Aktionen anzuzeigen. Ist die Aktionsliste bereits sichtbar, fahre mit Schritt {step:4} fort."
+    },
+    "add-to-home-screen": {
+      "title": "Auf {label:add-to-home-screen} tippen",
+      "description": "Suche in der erweiterten Aktionsliste nach {label:add-to-home-screen} und tippe darauf. Das Symbol ist ein abgerundetes Quadrat mit einem Pluszeichen."
+    }
+  },
+  "completion": "Folge den Anweisungen auf dem Bestätigungsbildschirm, um das Hinzufügen der App abzuschließen.",
+  "alt": "Vier Schritte: Auf „Seitenmenü“ neben der Adresse tippen, auf „Teilen“ tippen, bei Bedarf auf „Mehr anzeigen“ tippen und dann auf „Zu Home-Bildschirm hinzufügen“ tippen.",
+  "transitions": {},
+  "heading": "Zu Home-Bildschirm hinzufügen",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Zu Home-Bildschirm hinzufügen in Safari auf dem iPhone: vier Schritte",
+  "svgDesc": "Vier nummerierte Schritte für Safari auf dem iPhone: Seitenmenü öffnen, auf „Teilen“ tippen, auf „Mehr anzeigen“ tippen und dann auf „Zu Home-Bildschirm hinzufügen“ tippen. Blaue Umrandungen markieren die Bedienelemente, auf die du tippen sollst. Die vollständige Textanleitung wird separat bereitgestellt."
+}

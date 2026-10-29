@@ -1,11 +1,135 @@
 {
   "file": {
-    "en": "File"
+    "en": "File",
+    "es": "Archivo",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-es/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later",
+        "deviceChecked": false
+      },
+      "fr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-fr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14+ (page for Sonoma and later)",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27 / Safari 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later (Safari user guide, current)",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/104996",
+        "verified": "2026-10-29",
+        "version": "macOS (current Apple guide)",
+        "deviceChecked": false
+      }
+    },
+    "fr": "Fichier",
+    "de": "Ablage",
+    "pt-BR": "Arquivo",
+    "it": "File",
+    "ja": "ファイル",
+    "ko": "파일",
+    "zh-Hans": "文件"
   },
   "edit": {
     "en": "Edit"
   },
   "view": {
-    "en": "View"
+    "en": "View",
+    "es": "Visualización",
+    "_src": {
+      "es": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-es/guide/safari/cpsh003/mac",
+        "verified": "2026-10-29",
+        "version": "Safari guide, current",
+        "deviceChecked": false
+      },
+      "de": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/de-de/guide/safari/cpsh003/27.0/mac/27",
+        "verified": "2026-10-29",
+        "version": "Safari 27 / macOS 27",
+        "deviceChecked": false
+      },
+      "pt-BR": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-br/guide/safari/ibrw1012/27.0/mac/27",
+        "verified": "2026-10-29",
+        "version": "macOS 27 / Safari 27",
+        "deviceChecked": false
+      },
+      "it": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/it-it/guide/safari/ibrw1075/mac",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ja": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ja-jp/guide/safari/ibrw1069/27.0/mac/27",
+        "verified": "2026-10-29",
+        "version": "macOS 27 / Safari 27",
+        "deviceChecked": false
+      },
+      "ko": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ko-kr/guide/safari/ibrw1012/mac",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later (Safari user guide, current)",
+        "deviceChecked": false
+      },
+      "zh-Hans": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-cn/guide/safari/cpsh003/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current Apple guide)",
+        "deviceChecked": false
+      }
+    },
+    "de": "Darstellung",
+    "pt-BR": "Visualizar",
+    "it": "Vista",
+    "ja": "表示",
+    "ko": "보기",
+    "zh-Hans": "显示"
   }
 }

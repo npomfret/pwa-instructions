@@ -1,0 +1,22 @@
+{
+  "title": "Brave에서 홈 화면에 추가",
+  "label": "iPhone · Brave → Safari · 홈 화면에 추가",
+  "steps": {
+    "tap-share": {
+      "title": "{label:share} 탭하기",
+      "description": "Brave에서 하단 도구 막대의 {label:share} 버튼을 탭하세요. 아이콘은 위쪽 화살표가 있는 사각형입니다. 도구 막대가 숨겨져 있으면 웹사이트 주소를 탭하여 표시하세요."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "펼쳐진 공유 시트에서 아래로 스크롤하여 {label:open-in-safari} 항목을 탭하세요. 웹사이트가 Safari에서 열리며, 나머지 단계는 모두 Safari에서 진행합니다."
+    }
+  },
+  "intro": "Brave에서 시작하세요. {step:3}단계에서 같은 웹사이트가 Safari에서 열리며, {step:4}~{step:7}단계는 Safari에서 진행합니다.",
+  "completion": "확인 화면의 안내에 따라 추가를 완료하세요.",
+  "alt": "번호가 매겨진 일곱 단계: Brave에서 공유, 더 보기, Safari에서 열기를 거친 다음, Safari에서 설치하는 네 단계가 이어집니다.",
+  "transitions": {
+    "continue-in-safari": "Safari에서 계속하기"
+  },
+  "heading": "홈 화면에 추가",
+  "subtitle": "iPhone · Brave → Safari"
+}

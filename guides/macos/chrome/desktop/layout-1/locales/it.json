@@ -1,0 +1,38 @@
+{
+  "title": "Installare un’app in Chrome",
+  "label": "Mac · Chrome · Installa app",
+  "intro": "Questa guida segue il percorso dal menu di Chrome mostrato negli screenshot di riferimento. Alcuni siti web offrono anche un’icona di installazione nella barra degli indirizzi.",
+  "completion": "Nel Finder, fai doppio clic sull’app per aprirla. Per riaprirla in seguito da Chrome, digita chrome://apps nella barra degli indirizzi, premi Invio, poi fai clic sull’app. Per l’installazione non serve un collegamento nel Dock.",
+  "alt": "Sei passaggi in Chrome su Mac: apri il menu Altro con i tre puntini, scegli Trasmetti, salva e condividi, scegli Installa, fai clic su Avanti, fai clic su Installa, poi su Mostra nel Finder.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Apri il menu {label:more}",
+      "description": "Apri il sito web in Chrome. Fai clic sui tre puntini verticali in alto a destra nella finestra di Chrome per aprire il menu {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Scegli {label:cast-save-and-share}",
+      "description": "Nel menu Altro, scegli {label:cast-save-and-share} per aprire il relativo sottomenu."
+    },
+    "choose-install": {
+      "title": "Scegli {label:install}",
+      "description": "Nel sottomenu, fai clic su {label:install} seguito dal nome del sito web o dell’app. Alcuni siti chiamano questa voce Installa pagina come app. Scegli l’azione di installazione sopra {label:create-shortcut}, che è un comando separato."
+    },
+    "continue-install": {
+      "title": "Fai clic su {label:next}",
+      "description": "Nella finestra di dialogo Installa app, controlla il nome e il dominio del sito web, poi fai clic su {label:next}. Se la tua versione di Chrome passa direttamente alla conferma dell’installazione, continua con il passaggio {step:5}."
+    },
+    "confirm-install": {
+      "title": "Fai clic su {label:install}",
+      "description": "La finestra successiva mostra l’app che viene aggiunta a {label:chrome-apps}. Fai clic su {label:install} per confermare."
+    },
+    "show-in-finder": {
+      "title": "Fai clic su {label:show-in-finder}",
+      "description": "Quando Chrome mostra {label:successfully-installed}, fai clic su {label:show-in-finder} per individuare l’app installata. Puoi anche scegliere {label:open-tab-in-app} per aprire subito il sito web nella finestra dell’app."
+    }
+  },
+  "transitions": {},
+  "heading": "Installa app",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Installare un’app in Chrome su Mac",
+  "svgDesc": "Sei passaggi: apri Altro, scegli Trasmetti, salva e condividi, scegli Installa, fai clic su Avanti, fai clic su Installa, poi su Mostra nel Finder. I contorni blu indicano i controlli."
+}

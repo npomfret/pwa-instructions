@@ -1,0 +1,29 @@
+{
+  "title": "홈 화면에 추가",
+  "label": "iPhone · Safari · 홈 화면에 추가",
+  "steps": {
+    "open-page-menu": {
+      "title": "{label:page-menu} 열기",
+      "description": "웹사이트 주소 표시줄 왼쪽에 있는 {label:page-menu} 버튼을 탭하세요. 아이콘은 가로선 세 줄이며, 맨 아래 줄이 더 짧습니다."
+    },
+    "tap-share": {
+      "title": "{label:share} 탭하기",
+      "description": "메뉴에서 {label:share} 항목을 탭하세요. 아이콘은 위쪽 화살표가 있는 사각형입니다."
+    },
+    "view-more": {
+      "title": "{label:view-more} 탭하기",
+      "description": "공유 시트가 접혀 있으면 아래쪽 쉐브론으로 표시된 {label:view-more} 버튼을 탭하여 나머지 동작을 표시하세요. 동작 목록이 이미 보이면 {step:4}단계로 넘어가세요."
+    },
+    "add-to-home-screen": {
+      "title": "{label:add-to-home-screen} 탭하기",
+      "description": "펼쳐진 동작 목록에서 {label:add-to-home-screen} 항목을 찾아 탭하세요. 아이콘은 더하기 기호가 있는 둥근 사각형입니다."
+    }
+  },
+  "completion": "확인 화면의 안내에 따라 추가를 완료하세요.",
+  "alt": "네 단계: 주소 옆의 페이지 메뉴를 탭하고, 공유를 탭하고, 필요하면 더 보기를 탭한 다음, 홈 화면에 추가를 탭합니다.",
+  "transitions": {},
+  "heading": "홈 화면에 추가",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "iPhone Safari에서 홈 화면에 추가: 네 단계",
+  "svgDesc": "iPhone Safari의 번호가 매겨진 네 단계: 페이지 메뉴 열기, 공유 탭하기, 더 보기 탭하기, 홈 화면에 추가 탭하기. 파란색 윤곽선은 탭할 컨트롤을 나타냅니다. 전체 텍스트 안내는 별도로 제공됩니다."
+}

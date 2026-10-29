@@ -1,0 +1,29 @@
+{
+  "title": "ホーム画面に追加",
+  "label": "iPhone · Safari · ホーム画面に追加",
+  "steps": {
+    "open-page-menu": {
+      "title": "「{label:page-menu}」を開く",
+      "description": "ウェブサイトのアドレスバーの左側にある「{label:page-menu}」ボタンをタップします。アイコンは3本の横線で、一番下の線が短くなっています。"
+    },
+    "tap-share": {
+      "title": "「{label:share}」をタップ",
+      "description": "「{label:page-menu}」で「{label:share}」をタップします。アイコンは、上向きの矢印が付いた四角形です。"
+    },
+    "view-more": {
+      "title": "「{label:view-more}」をタップ",
+      "description": "共有シートが折りたたまれている場合は、下向きのシェブロンが付いた「{label:view-more}」をタップして、残りのアクションを表示します。アクションのリストがすでに表示されている場合は、手順{step:4}に進みます。"
+    },
+    "add-to-home-screen": {
+      "title": "「{label:add-to-home-screen}」をタップ",
+      "description": "展開されたアクションのリストで「{label:add-to-home-screen}」を探してタップします。アイコンは、プラス記号が入った角丸の四角形です。"
+    }
+  },
+  "completion": "確認画面の指示に従って、アプリの追加を完了します。",
+  "alt": "4つの手順: アドレスの横にある「ページメニュー」をタップし、「共有」をタップし、必要に応じて「さらに表示」をタップして、「ホーム画面に追加」をタップします。",
+  "transitions": {},
+  "heading": "ホーム画面に追加",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "iPhoneのSafariでホーム画面に追加: 4つの手順",
+  "svgDesc": "iPhoneのSafariでの4つの番号付き手順: 「ページメニュー」を開き、「共有」をタップし、「さらに表示」をタップして、「ホーム画面に追加」をタップします。青い枠線はタップするコントロールを示しています。テキストでの手順は別に用意されています。"
+}

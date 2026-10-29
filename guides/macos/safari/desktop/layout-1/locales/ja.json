@@ -1,0 +1,26 @@
+{
+  "title": "SafariでDockに追加",
+  "label": "Mac · Safari · Dockに追加",
+  "intro": "macOS Sonoma 14以降が必要です。ここでは「{label:file}」メニューを使う方法を示しています。SafariではSafariの共有メニューからも「{label:add-to-dock}」を選択できます。",
+  "steps": {
+    "open-file-menu": {
+      "title": "「{label:file}」メニューを開く",
+      "description": "Safariでウェブサイトを開きます。Macの画面上部にあるメニューバーで「{label:file}」をクリックします。"
+    },
+    "add-to-dock": {
+      "title": "「{label:add-to-dock}」を選択",
+      "description": "「{label:file}」メニューで「{label:add-to-dock}」をクリックします。Safariにこのウェブサイト用の確認ダイアログが表示されます。"
+    },
+    "confirm-add": {
+      "title": "「{label:add}」をクリック",
+      "description": "アプリ名はそのままでも編集してもかまいません。続けて「{label:add}」をクリックします。Webアプリは「アプリケーション」フォルダに保存され、Dockに追加されます。"
+    }
+  },
+  "completion": "Dockから新しいアプリを開きます。",
+  "alt": "MacのSafariでの3つの手順: 「ファイル」を開き、「Dockに追加」を選択して、「追加」をクリックします。",
+  "transitions": {},
+  "heading": "Dockに追加",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "MacのSafariでウェブサイトをDockに追加する",
+  "svgDesc": "3つの手順: 「ファイル」メニューを開き、「Dockに追加」を選択して、「追加」をクリックします。青い枠線はコントロールを示しています。"
+}

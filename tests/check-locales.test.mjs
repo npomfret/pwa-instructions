@@ -58,7 +58,8 @@ const has = (list, ...parts) => texts(list).some(text => parts.every(part => tex
 test('the repository passes every error rule, and en-XA only warns about overflow', async () => {
   const { errors, warnings } = await checkLocales(root);
   assert.deepEqual(texts(errors), []);
-  assert.ok(warnings.length > 0 && warnings.every(item => item.rule === 7 && item.text.includes('[en-XA]')));
+  const pseudo = warnings.filter(item => item.text.includes('[en-XA]'));
+  assert.ok(pseudo.length > 0 && pseudo.every(item => item.rule === 7));
 });
 
 test('a complete fixture locale passes with no errors; English labels need no source', async t => {
@@ -126,19 +127,19 @@ test('a label value whose placeholders differ from English fails', async t => {
 
 test('an orphan locale file fails, as does a label locale the catalog does not list', async t => {
   const dir = await withFixture(t, { mutate: async dir => {
-    await writeJSON(path.join(dir, SAFARI, 'locales/fr.json'), {});
-    await edit(path.join(dir, 'labels/ios-safari.json'), entries => { entries['page-menu'].de = 'Seitenmenü'; });
+    await writeJSON(path.join(dir, SAFARI, 'locales/nl.json'), {});
+    await edit(path.join(dir, 'labels/ios-safari.json'), entries => { entries['page-menu'].sv = 'Sidmeny'; });
   } });
   const { errors } = await checkLocales(dir);
-  assert.ok(has(errors, `${SAFARI}/locales/fr.json`, '[fr]', 'orphan'));
-  assert.ok(has(errors, 'labels/ios-safari.json', 'page-menu', '[de]', 'orphan'));
+  assert.ok(has(errors, `${SAFARI}/locales/nl.json`, '[nl]', 'orphan'));
+  assert.ok(has(errors, 'labels/ios-safari.json', 'page-menu', '[sv]', 'orphan'));
 });
 
 test('a listed locale with no files fails when complete and warns when draft', async t => {
-  const complete = await withFixture(t, { mutate: async dir => edit(path.join(dir, 'catalog.json'), catalog => { catalog.locales.fr = 'complete'; catalog.locales.de = 'draft'; }) });
+  const complete = await withFixture(t, { mutate: async dir => edit(path.join(dir, 'catalog.json'), catalog => { catalog.locales.nl = 'complete'; catalog.locales.sv = 'draft'; }) });
   const { errors, warnings } = await checkLocales(complete);
-  assert.ok(has(errors, 'catalog.json', 'locales.fr', 'no locale file or label exists'));
-  assert.ok(has(warnings, 'locales.de', 'no locale file or label exists'));
+  assert.ok(has(errors, 'catalog.json', 'locales.nl', 'no locale file or label exists'));
+  assert.ok(has(warnings, 'locales.sv', 'no locale file or label exists'));
 });
 
 test('tags must be canonical and file names must be the tag', async t => {
@@ -221,6 +222,10 @@ test('an overflowing label warns at 100% and fails at 130% of its data-max-width
   assert.ok(has(warned.warnings, 'install.source.svg', 'label:view-more', '[es]', 'of its 100-unit width', 'warn threshold 100%'));
   assert.ok(!has(warned.errors, 'label:view-more'));
   assert.ok(has((await checkLocales(fail)).errors, 'install.source.svg', 'label:view-more', '[es]', 'fails at 130%'));
+  const draft = await withFixture(t, { status: 'draft', mutate: dir => edit(path.join(dir, 'labels/ios-share-sheet.json'), entries => { entries['view-more'].es = 'Ver muchas más opciones disponibles'; }) });
+  const drafted = await checkLocales(draft);
+  assert.ok(!has(drafted.errors, 'label:view-more'));
+  assert.ok(has(drafted.warnings, 'install.source.svg', 'label:view-more', '[es]', 'fail threshold 130%'));
 });
 
 test('staleLabels lists labels verified more than a year ago, oldest first', async () => {

@@ -1,0 +1,38 @@
+{
+  "title": "Chrome에서 앱 설치",
+  "label": "Mac · Chrome · 앱 설치",
+  "steps": {
+    "open-more-menu": {
+      "title": "{label:more} 메뉴 열기",
+      "description": "Chrome에서 웹사이트를 엽니다. Chrome 창 오른쪽 상단의 세로 점 세 개를 클릭하여 {label:more} 메뉴를 여세요."
+    },
+    "cast-save-and-share": {
+      "title": "{label:cast-save-and-share} 선택하기",
+      "description": "{label:more} 메뉴에서 {label:cast-save-and-share} 항목을 선택하여 하위 메뉴를 여세요."
+    },
+    "choose-install": {
+      "title": "{label:install} 선택하기",
+      "description": "하위 메뉴에서 {label:install} 뒤에 웹사이트 또는 앱 이름이 표시된 항목을 클릭하세요. 일부 사이트에서는 이 항목이 페이지를 앱으로 설치로 표시됩니다. {label:create-shortcut} 위에 있는 설치 항목을 선택하세요. {label:create-shortcut} 항목은 링크를 저장하는 별도의 명령입니다."
+    },
+    "continue-install": {
+      "title": "{label:next} 클릭하기",
+      "description": "{label:install-app} 대화상자에서 웹사이트 이름과 도메인을 확인한 다음 {label:next} 버튼을 클릭하세요. 사용 중인 Chrome 버전에서 바로 설치 확인 단계로 넘어가면 {step:5}단계로 이동하세요."
+    },
+    "confirm-install": {
+      "title": "{label:install} 클릭하기",
+      "description": "다음 대화상자에는 앱이 {label:chrome-apps}에 추가되는 내용이 표시됩니다. {label:install} 버튼을 클릭하여 확인하세요."
+    },
+    "show-in-finder": {
+      "title": "{label:show-in-finder} 클릭하기",
+      "description": "Chrome에 {label:successfully-installed} 메시지가 표시되면 {label:show-in-finder} 버튼을 클릭하여 설치된 앱의 위치를 확인하세요. {label:open-tab-in-app} 버튼을 선택하면 웹사이트를 앱 창에서 바로 열 수도 있습니다."
+    }
+  },
+  "intro": "이 가이드는 참조 스크린샷에 나온 Chrome 메뉴 방식을 따릅니다. 일부 웹사이트는 주소 표시줄에 설치 아이콘도 제공합니다.",
+  "completion": "Finder에서 앱을 더블클릭하여 여세요. 나중에 Chrome에서 다시 열려면 주소 표시줄에 chrome://apps를 입력하고 Return 키를 누른 다음 앱을 클릭하세요. 설치할 때 Dock 바로가기는 필요하지 않습니다.",
+  "alt": "Mac Chrome의 여섯 단계: 세로 점 세 개 더보기 메뉴 열기, 전송·저장·공유 선택, 설치 선택, 다음 클릭, 설치 클릭, Finder에서 보기 클릭.",
+  "transitions": {},
+  "heading": "앱 설치",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Mac Chrome에서 앱 설치",
+  "svgDesc": "여섯 단계: 더보기 열기, 전송·저장·공유 선택, 설치 선택, 다음 클릭, 설치 클릭, Finder에서 보기. 파란색 윤곽선은 해당 컨트롤을 나타냅니다."
+}

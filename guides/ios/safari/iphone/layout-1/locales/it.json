@@ -1,0 +1,29 @@
+{
+  "title": "Aggiungere alla schermata Home",
+  "label": "iPhone · Safari · Aggiungi alla schermata Home",
+  "completion": "Segui la schermata di conferma per completare l’aggiunta dell’app.",
+  "alt": "Quattro passaggi: tocca il menu Pagina accanto all’indirizzo, tocca Condividi, tocca Mostra altro se necessario, poi tocca Aggiungi alla schermata Home.",
+  "steps": {
+    "open-page-menu": {
+      "title": "Apri il {label:page-menu}",
+      "description": "Tocca il pulsante del {label:page-menu} sul lato sinistro della barra degli indirizzi del sito web. La sua icona ha tre linee orizzontali, con quella in basso più corta."
+    },
+    "tap-share": {
+      "title": "Tocca {label:share}",
+      "description": "Nel menu Pagina, tocca {label:share}. La sua icona è un quadrato con una freccia rivolta verso l’alto."
+    },
+    "view-more": {
+      "title": "Tocca {label:view-more}",
+      "description": "Se il foglio di condivisione è compresso, tocca {label:view-more}, indicato da un chevron rivolto verso il basso, per mostrare le altre azioni. Se l’elenco delle azioni è già visibile, passa al passaggio {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Tocca {label:add-to-home-screen}",
+      "description": "Nell’elenco delle azioni espanso, trova e tocca {label:add-to-home-screen}. La sua icona è un quadrato arrotondato con un segno più."
+    }
+  },
+  "transitions": {},
+  "heading": "Aggiungi alla schermata Home",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Aggiungere alla schermata Home in Safari su iPhone: quattro passaggi",
+  "svgDesc": "Quattro passaggi numerati per Safari su iPhone: apri il menu Pagina, tocca Condividi, tocca Mostra altro, poi tocca Aggiungi alla schermata Home. I contorni blu indicano i controlli da toccare. Le istruzioni complete in formato testo sono fornite a parte."
+}

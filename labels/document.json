@@ -1,11 +1,35 @@
 {
   "illustration": {
-    "en": "Illustration:"
+    "en": "Illustration:",
+    "es": "Ilustración:",
+    "fr": "Illustration :",
+    "de": "Illustration:",
+    "pt-BR": "Ilustração:",
+    "it": "Illustrazione:",
+    "ja": "図：",
+    "ko": "그림:",
+    "zh-Hans": "插图："
   },
   "steps-match": {
-    "en": "The numbered steps match this text."
+    "en": "The numbered steps match this text.",
+    "es": "Los pasos numerados coinciden con este texto.",
+    "fr": "Les étapes numérotées correspondent à ce texte.",
+    "de": "Die nummerierten Schritte entsprechen diesem Text.",
+    "pt-BR": "As etapas numeradas correspondem a este texto.",
+    "it": "I passaggi numerati corrispondono a questo testo.",
+    "ja": "図の番号付きの手順は、このテキストと対応しています。",
+    "ko": "번호가 매겨진 단계는 이 텍스트와 일치합니다.",
+    "zh-Hans": "插图中的编号步骤与本文字说明一一对应。"
   },
   "evidence": {
-    "en": "Version observations and source evidence:"
+    "en": "Version observations and source evidence:",
+    "es": "Observaciones de versión y fuentes:",
+    "fr": "Observations de version et sources :",
+    "de": "Versionsbeobachtungen und Quellennachweise:",
+    "pt-BR": "Observações de versão e evidências de origem:",
+    "it": "Versioni osservate e fonti:",
+    "ja": "バージョンの確認結果と情報源：",
+    "ko": "버전 관찰 내용 및 근거 자료:",
+    "zh-Hans": "版本观察与来源依据："
   }
 }

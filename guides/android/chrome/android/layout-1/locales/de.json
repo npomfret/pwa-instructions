@@ -1,0 +1,26 @@
+{
+  "title": "App in Chrome für Android installieren",
+  "label": "Android · Chrome · App installieren",
+  "intro": "Verwende Chrome für Android. Die abgebildeten Menübezeichnungen folgen der aktuellen Android-Hilfe von Google und nicht dem älteren Artikel zu „Zum Startbildschirm hinzufügen“. Dokumentationsentwurf: noch nicht auf einem Gerät geprüft; Menüaufbau und Bestätigungsdialoge können abweichen.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Menü {label:more} öffnen",
+      "description": "Öffne die Website in Chrome. Tippe rechts neben der Adressleiste auf die drei vertikalen Punkte."
+    },
+    "install-and-create-shortcut": {
+      "title": "Auf {label:install-and-create-shortcut} tippen",
+      "description": "Wähle im Menü {label:install-and-create-shortcut}. In älteren Chrome-Versionen heißt dieser Eintrag eventuell „Zum Startbildschirm hinzufügen“."
+    },
+    "install-app": {
+      "title": "Auf {label:install} tippen",
+      "description": "Wähle {label:install}. Folge den Anweisungen von Chrome, um die App zu installieren. {label:create-shortcut} ist eine eigene Option, die nur einen Link sichert."
+    }
+  },
+  "completion": "Öffne die App nach der Installation über den Launcher deines Android-Geräts. Wo sie auf dem Startbildschirm erscheint, hängt von deinem Launcher und dessen Einstellungen ab.",
+  "alt": "3 illustrierte Installationsschritte in Chrome für Android; blaue Umrandungen markieren die beschriebenen Bedienelemente.",
+  "transitions": {},
+  "heading": "App installieren",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "App in Chrome für Android installieren",
+  "svgDesc": "Dokumentationsentwurf. Drei Schritte: Menü „Mehr“ öffnen, auf „Installieren und Verknüpfung erstellen“ tippen und dann auf „Installieren“ tippen. Führe auf deinem Gerät alle weiteren Anweisungen aus."
+}
