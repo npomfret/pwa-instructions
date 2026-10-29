@@ -1,0 +1,22 @@
+{
+  "$schema": "https://unpkg.com/release-it@21.1.1/schema/release-it.json",
+  "git": {
+    "requireBranch": "main",
+    "requireCleanWorkingDir": true,
+    "requireUpstream": true,
+    "commitMessage": "release: pwa-instructions ${version}",
+    "tagName": "v${version}",
+    "tagAnnotation": "Release pwa-instructions ${version}",
+    "push": true
+  },
+  "npm": {
+    "publish": true
+  },
+  "github": {
+    "release": false
+  },
+  "hooks": {
+    "before:init": "cd ../.. && npm run check",
+    "after:bump": "cd ../.. && npm pkg set dependencies.pwa-instructions=${version} --workspace @pwa-instructions/example-react && npm install --package-lock-only --ignore-scripts --no-audit --no-fund && git add examples/react/package.json package-lock.json"
+  }
+}

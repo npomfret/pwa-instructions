@@ -2,13 +2,22 @@
 
 Publish one public package from your personal npm account. No organisation is required. The main entry point contains detection and guide data; `/react` adds the optional React components.
 
-1. Run `npm login` and complete the browser sign-in. `npm whoami` confirms the account.
-2. Update the version in `packages/pwa-instructions/package.json` and the example's dependency, then refresh `package-lock.json` with `npm install`.
-3. Ensure the preceding CI run and any local test run have finished. Run `npm run check`; tests use one worker and include checking the packed entry points.
-4. Commit and push the release source. Run `npm run pack:package` to build the npm archive. Inspect its contents with `tar -tzf pwa-instructions-<version>.tgz`.
-5. Publish the checked archive with `npm publish ./pwa-instructions-<version>.tgz --access public`. Complete npm's authentication challenge yourself when prompted.
-6. Confirm the registry version with `npm view pwa-instructions version`. Check that a fresh consumer can install the version and import both `pwa-instructions` and `pwa-instructions/react` when React is present.
+Releases use [release-it](https://github.com/release-it/release-it), configured in `packages/pwa-instructions/.release-it.json`.
 
-Published versions cannot be replaced with different contents. Make a new version for later changes. Package files are explicitly limited to compiled JavaScript, declarations, guide assets, the README and the licence; reference screenshots and build caches are excluded.
+1. Run `npm login` and complete the browser sign-in. `npm whoami` confirms the account.
+2. Make sure no other build or test run is in progress, and that `main` is pushed and clean.
+3. Run `npm run release -- <increment>`, where `<increment>` is `patch`, `minor`, `major` or an exact version such as `0.2.0`. Add `--dry-run` first to see every step without changing anything.
+
+The release:
+
+1. Checks that you are logged in to npm and allowed to publish, that the new version is not on the registry yet, that you are on `main` with a clean working tree, and that the branch has an upstream.
+2. Runs `npm run check` (build, typecheck and tests, including checks of the packed entry points). A failure stops the release before anything changes.
+3. Sets the new version in `packages/pwa-instructions/package.json` and in the example's dependency, and refreshes `package-lock.json`.
+4. Commits `release: pwa-instructions <version>`, creates the annotated tag `v<version>`, and pushes both.
+5. Runs `npm publish`. When npm asks for a one-time password or browser authentication, complete it yourself.
+
+It asks you to confirm each step. Then confirm the registry version with `npm view pwa-instructions version`, and check that a fresh consumer can install it and import both `pwa-instructions` and `pwa-instructions/react` when React is present.
+
+Published versions cannot be replaced with different contents. Make a new version for later changes. Package files are explicitly limited to compiled JavaScript, declarations, guide assets, the README and the licence; reference screenshots, build caches and the release configuration are excluded.
 
 See npm's [publishing guide](https://docs.npmjs.com/creating-and-publishing-unscoped-public-packages/) and [authentication requirements](https://docs.npmjs.com/requiring-2fa-for-package-publishing-and-settings-modification/).
