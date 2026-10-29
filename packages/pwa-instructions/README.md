@@ -6,6 +6,8 @@ Reusable PWA installation guides: browser detection, structured text and simple 
 npm install pwa-instructions
 ```
 
+<img src="https://raw.githubusercontent.com/npomfret/pwa-instructions/main/guides/ios/safari/iphone/layout-1/install.svg" width="280" alt="Four illustrated steps for iPhone Safari: open the Page Menu, tap Share, tap View More, then tap Add to Home Screen." />
+
 ## React
 
 In an app using React 18 or 19:
