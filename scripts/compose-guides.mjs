@@ -21,22 +21,31 @@ function markdownTitle(step) {
 /** The same emphasis on a template title, where the control is still its first `{label:id}` placeholder. */
 const markdownTemplateTitle = step => step.title.replace(/\{label:[a-z0-9-]+\}/, placeholder => `*${placeholder}*`);
 
-function styleTitle(doc, node, step, fit) {
+function styleTitle(doc, node, step, fit, width) {
   const offset = step.uiLabel ? step.title.indexOf(step.uiLabel) : -1;
+  // The control inside the title is tagged with its label id, and the title keeps how it is fitted, so the runtime can
+  // redraw it with the browser's label (artwork.ts). Both are removed from the published SVGs.
+  const label = offset < 0 ? undefined : /\{label:([a-z0-9-]+)\}/.exec(step.template?.title ?? '')?.[1];
+  if (label) {
+    node.setAttribute('data-max-width', String(width));
+    node.setAttribute('data-lines', '2');
+    node.setAttribute('data-line-height', '26');
+  }
   if (fit) {
     // Localized titles may be longer than the artwork: wrap to two lines, else squeeze.
     const segments = offset < 0 ? [{ text: step.title }] : [{ text: step.title.slice(0, offset) },
-      { text: step.uiLabel, italic: true }, { text: step.title.slice(offset + step.uiLabel.length) }];
+      { text: step.uiLabel, italic: true, label }, { text: step.title.slice(offset + step.uiLabel.length) }];
     fillText(doc, node, segments.filter(item => item.text), { max: fit, lines: 2, lineHeight: 26 });
     return;
   }
   node.textContent = "";
   if (offset < 0) { node.textContent = step.title; return; }
   node.appendChild(doc.createTextNode(step.title.slice(0, offset)));
-  const label = doc.createElementNS(ns, 'tspan');
-  label.setAttribute('font-style', 'italic');
-  label.textContent = step.uiLabel;
-  node.appendChild(label);
+  const span = doc.createElementNS(ns, 'tspan');
+  span.setAttribute('font-style', 'italic');
+  if (label) span.setAttribute('data-i18n', `label:${label}`);
+  span.textContent = step.uiLabel;
+  node.appendChild(span);
   node.appendChild(doc.createTextNode(step.title.slice(offset + step.uiLabel.length)));
 }
 
@@ -153,7 +162,7 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
       panel.setAttribute('aria-labelledby', `step-${index + 1}-title`);
       const title = children(panel).find(item => item.tagName === 'text' && (item.getAttribute('id') ?? '').endsWith('-title'));
       const number = children(panel).find(item => item.tagName === 'text' && item.getAttribute('text-anchor') === 'middle');
-      if (title) { title.setAttribute('id', `step-${index + 1}-title`); styleTitle(doc, title, step, english ? 0 : viewBoxWidth - 76); }
+      if (title) { title.setAttribute('id', `step-${index + 1}-title`); styleTitle(doc, title, step, english ? 0 : viewBoxWidth - 76, viewBoxWidth - 76); }
       if (number) number.textContent = String(index + 1);
       const { reuse, transitionBefore, transitionId, ...plainStep } = step;
       rawSteps.push({ ...plainStep, illustrationFragment: `step-${index + 1}` });

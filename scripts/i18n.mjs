@@ -165,10 +165,11 @@ export const fontOf = node => fontClass(node.getAttribute('class') ?? '');
 export function fillText(doc, node, segments, { max, lines = 1, lineHeight = 0 } = {}) {
   const fit = fitText(segments, { ...fontOf(node), max, lines });
   node.textContent = '';
-  const append = (parent, items) => items.forEach(({ text, italic }) => {
+  const append = (parent, items) => items.forEach(({ text, italic, label }) => {
     if (!italic) { parent.appendChild(doc.createTextNode(text)); return; }
     const span = doc.createElementNS(ns, 'tspan');
     span.setAttribute('font-style', 'italic');
+    if (label) span.setAttribute('data-i18n', `label:${label}`);
     span.textContent = text;
     parent.appendChild(span);
   });
@@ -224,11 +225,13 @@ export function checkLabelTags(doc, resolver, guideId) {
 
 /**
  * Remove the build-only attributes so the published SVG carries no localization markup. `keepLabels` leaves them on the
- * `label:*` nodes, which is what the runtime needs to swap in the browser's control names (src/core/artwork.ts).
+ * `label:*` nodes and on the step titles that name a control, which is what the runtime needs to swap in the browser's control names (src/core/artwork.ts).
  */
 export function stripLocalization(doc, { keepLabels = false } = {}) {
   for (const node of Array.from(doc.getElementsByTagName('*'))) {
-    if (keepLabels && (node.getAttribute('data-i18n') ?? '').startsWith('label:')) continue;
+    const key = node.getAttribute('data-i18n') ?? '';
+    // A step title that names a control is kept whole: the runtime redraws it with the browser's label (artwork.ts).
+    if (keepLabels && (key.startsWith('label:') || (key === 'step' && node.hasAttribute('data-max-width')))) continue;
     for (const name of DATA_ATTRIBUTES) node.removeAttribute(name);
   }
 }

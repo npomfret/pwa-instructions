@@ -2,7 +2,7 @@
 // (artwork.ts fills tagged nodes in an SVG string). Both call fitText, so they cannot disagree about when a line wraps
 // or is squeezed. Pure functions with no DOM and no font metrics.
 
-/** @typedef {{ text: string, italic?: boolean }} Segment */
+/** @typedef {{ text: string, italic?: boolean, label?: string }} Segment `label` is the id of the control an italic segment names. */
 
 const CLASS_SIZES = { heading: 28, "step-title": 23, label: 16, subtitle: 16, small: 14 };
 const BOLD_CLASSES = ["heading", "step-title"];
@@ -57,7 +57,15 @@ function wrap(tokens, size, bold, max, lines) {
 }
 
 /** @param {Segment[]} segments */
-const tokenize = segments => segments.flatMap(({ text, italic }) => text.split(/(?<=\s)|(?<=[⺀-￿])/).filter(Boolean).map(part => ({ text: part, italic })));
+const tokenize = segments => segments.flatMap(({ text, italic, label }) => text.split(/(?<=\s)|(?<=[⺀-￿])/).filter(Boolean).map(part => ({ text: part, italic, label })));
+
+/** Join neighbours that share a style, so a label broken across a wrap is one span per line and not one per word. */
+const merge = line => line.reduce((/** @type {Segment[]} */ items, item) => {
+  const last = items[items.length - 1];
+  if (last && Boolean(last.italic) === Boolean(item.italic) && last.label === item.label) items[items.length - 1] = { ...last, text: last.text + item.text };
+  else items.push(item);
+  return items;
+}, []);
 
 /**
  * Decide how `segments` sit in `max` user units: unchanged when they fit, wrapped onto up to `lines` lines when they do
@@ -69,5 +77,19 @@ const tokenize = segments => segments.flatMap(({ text, italic }) => text.split(/
 export function fitText(segments, { size, bold, max = 0, lines = 1 }) {
   if (!max || estimateWidth(segments.map(item => item.text).join(""), size, bold) <= max) return { lines: [segments], squeeze: false };
   const wrapped = lines > 1 ? wrap(tokenize(segments), size, bold, max, lines) : null;
-  return wrapped ? { lines: wrapped, squeeze: false } : { lines: [segments], squeeze: true };
+  return wrapped ? { lines: wrapped.map(merge), squeeze: false } : { lines: [segments], squeeze: true };
+}
+
+/**
+ * The inside of a `<text>` as markup, for the fit `fitText` returned: one `<tspan x dy>` per line when it wrapped, and an
+ * italic `<tspan>` (tagged `data-i18n="label:id"` when it names a control) for each italic segment. The runtime writes
+ * its `<text>` nodes with this, so a title it redraws has the shape the build draws with scripts/i18n.mjs.
+ * @param {{ lines: Segment[][] }} fit
+ * @param {{ x: string, lineHeight: number, escape: (text: string) => string }} options
+ */
+export function fitMarkup({ lines }, { x, lineHeight, escape }) {
+  const item = ({ text, italic, label }) => italic ? `<tspan font-style="italic"${label ? ` data-i18n="label:${label}"` : ""}>${escape(text)}</tspan>` : escape(text);
+  return lines.length > 1
+    ? lines.map((line, index) => `<tspan x="${x}" dy="${index ? lineHeight : 0}">${line.map(item).join("")}</tspan>`).join("")
+    : lines[0].map(item).join("");
 }

@@ -10,7 +10,8 @@ import { getGuideLocales, getIllustration, guides, selectGuide } from 'pwa-instr
 import { InstallGuideView, InstallInstructions } from 'pwa-instructions/react';
 import { composeGuides } from '../scripts/compose-guides.mjs';
 import { localizedGuides } from '../scripts/emit-locales.mjs';
-import { loadLabels, localeUI } from '../scripts/i18n.mjs';
+import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
+import { fillText, loadLabels, localeUI } from '../scripts/i18n.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const catalog = JSON.parse(await readFile(path.join(root, 'catalog.json'), 'utf8'));
@@ -22,7 +23,7 @@ const id = 'ios-safari-iphone-layout-1';
 const guide = guides.find(item => item.id === id);
 const svgOf = illustration => decodeURIComponent(illustration.src.slice(illustration.src.indexOf(',') + 1));
 /** The drawn text of each label node, by label id (wrapped lines joined). */
-const drawn = svg => Object.fromEntries(Array.from(new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document.querySelectorAll('[data-i18n^="label:"]'))
+const drawn = svg => Object.fromEntries(Array.from(new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document.querySelectorAll('text[data-i18n^="label:"]'))
   .map(node => [node.getAttribute('data-i18n').slice('label:'.length), node.textContent.replace(/\s+/g, ' ').trim()]));
 const { 'en-XA': pseudoLabels, en: englishLabels } = xa.guides[id].labels;
 /** Every label node drawn says what `table` says, and there are some. */
@@ -157,7 +158,7 @@ test('getIllustration substitutes labels together with the site URL, without mut
 });
 
 test('a long substituted label is fitted the way the build fits it', () => {
-  const tagged = svg => Array.from(new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document.querySelectorAll('[data-i18n^="label:"]'));
+  const tagged = svg => Array.from(new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document.querySelectorAll('text[data-i18n^="label:"]'));
   // A guide whose artwork has both a one-line label with a width and a label that may take two lines.
   const fitId = Object.keys(en.guides).find(key => tagged(svgOf(en.guides[key].illustration)).some(node => node.getAttribute('data-lines') === '2'));
   const nodes = tagged(svgOf(en.guides[fitId].illustration));
@@ -205,7 +206,7 @@ test('reused Brave artwork and steps follow the browser locale too', () => {
 });
 
 test('runtime substitution fits every label exactly as the build does', () => {
-  const shape = svg => Array.from(new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document.querySelectorAll('[data-i18n^="label:"]')).map(node => ({
+  const shape = svg => Array.from(new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document.querySelectorAll('text[data-i18n^="label:"]')).map(node => ({
     key: node.getAttribute('data-i18n'), text: node.textContent, textLength: node.getAttribute('textLength'), lengthAdjust: node.getAttribute('lengthAdjust'),
     lines: Array.from(node.querySelectorAll('tspan')).map(line => [line.getAttribute('x'), line.getAttribute('dy'), line.textContent]) }));
   for (const { id: guideId } of catalog.guides) {
@@ -214,4 +215,78 @@ test('runtime substitution fits every label exactly as the build does', () => {
     assert.ok(built.length > 0, guideId);
     assert.deepEqual(runtime, built, guideId);
   }
+});
+
+const words = text => text.replace(/\s+/g, ' ').trim();
+/** Each step title that names a control, by step number: the drawn text, and the text of its italic control spans. */
+const titles = svg => Object.fromEntries(Array.from(new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document.querySelectorAll('text[data-i18n="step"][data-max-width]'))
+  .map(node => [Number(/step-(\d+)-title/.exec(node.id)[1]), { text: words(node.textContent),
+    italic: words(Array.from(node.querySelectorAll('tspan[font-style="italic"]')).map(span => span.textContent).join('')),
+    ids: [...new Set(Array.from(node.querySelectorAll('tspan[data-i18n]')).map(span => span.getAttribute('data-i18n')))] }]));
+
+test('step titles in the artwork follow the browser locale, and the words around the control stay in the page language', () => {
+  const english = xa.guides[id].labels.en;
+  const pseudo = xa.guides[id].labels['en-XA'];
+  const steps = guide.steps.map((step, index) => [index + 1, step]).filter(([, step]) => step.uiLabel);
+  assert.ok(steps.length > 0);
+  // The page is en-XA and the browser English: [Åböút...] words with the English control in the italic span.
+  const a = selectGuide(null, { guideId: id, locale: 'en-XA', browserLocale: 'en', localeData }).guide;
+  const plain = titles(svgOf(selectGuide(null, { guideId: id, locale: 'en-XA', localeData }).guide.illustration));
+  const drawnA = titles(svgOf(a.illustration));
+  assert.deepEqual(Object.keys(drawnA), Object.keys(plain));
+  for (const [number, step] of steps) {
+    assert.equal(drawnA[number].italic, step.uiLabel, `step ${number}`);
+    assert.equal(drawnA[number].text, words(a.steps[number - 1].title), `step ${number}`);
+    assert.ok(drawnA[number].text.startsWith('[') || drawnA[number].text.includes('['), `step ${number}`);
+    assert.equal(drawnA[number].ids.length, 1);
+    assert.ok(Object.values(english).includes(drawnA[number].italic));
+    assert.notEqual(drawnA[number].italic, plain[number].italic);
+  }
+  // The page is English and the browser en-XA: English words around a pseudo-localized control.
+  const b = selectGuide(null, { guideId: id, browserLocale: 'en-XA', localeData }).guide;
+  const drawnB = titles(svgOf(b.illustration));
+  for (const [number, step] of steps) {
+    assert.equal(drawnB[number].italic, b.steps[number - 1].uiLabel, `step ${number}`);
+    assert.ok(drawnB[number].italic.startsWith('['));
+    assert.equal(drawnB[number].text, words(step.title.replace(step.uiLabel, b.steps[number - 1].uiLabel)), `step ${number}`);
+    assert.ok(Object.values(pseudo).includes(drawnB[number].italic));
+  }
+  // Substituting again, or with the page's own locale, changes nothing.
+  assert.equal(svgOf(getIllustration(a, { browserLocale: 'en', localeData })), svgOf(a.illustration));
+  assert.equal(svgOf(getIllustration(b, { browserLocale: 'en-XA', localeData })), svgOf(b.illustration));
+});
+
+test('a long control name in a step title wraps or squeezes the way the build does', () => {
+  const [stepId, template] = Object.entries(xa.guides[id].templates.steps).find(([, item]) => /\{label:/.test(item.title));
+  const labelId = /\{label:([a-z0-9-]+)\}/.exec(template.title)[1];
+  const number = xa.guides[id].steps.findIndex(item => item.id === stepId) + 1;
+  // The English labels come from the locales/en module first.
+  const withLabel = text => ({ ...localeData, en: { guides: { ...en.guides, [id]: { ...en.guides[id], labels: { en: { ...en.guides[id].labels.en, [labelId]: text } } } } } });
+  const [before, after] = template.title.split(/\{label:[a-z0-9-]+\}/);
+  const shape = svg => Array.from(new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document.querySelectorAll('text[data-i18n="step"][data-max-width]'))
+    .filter(node => node.id === `step-${number}-title`).map(node => ({ textLength: node.getAttribute('textLength'), lengthAdjust: node.getAttribute('lengthAdjust'),
+      lines: Array.from(node.querySelectorAll('tspan:not([font-style])')).map(line => [line.getAttribute('x'), line.getAttribute('dy')]),
+      parts: Array.from(node.querySelectorAll('tspan[font-style]')).map(span => [span.getAttribute('data-i18n'), span.textContent]), text: node.textContent }));
+  // What the build draws for the same title: fillText over a node with the title's own attributes.
+  const built = (svg, label) => {
+    const node = new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document.getElementById(`step-${number}-title`);
+    const doc = new DOMParser().parseFromString(`<svg xmlns="http://www.w3.org/2000/svg"><text id="t" class="${node.getAttribute('class')}" x="${node.getAttribute('x')}"/></svg>`, 'image/svg+xml');
+    fillText(doc, doc.getElementById('t'), [{ text: before }, { text: label, italic: true, label: labelId }, { text: after }].filter(item => item.text),
+      { max: Number(node.getAttribute('data-max-width')), lines: 2, lineHeight: Number(node.getAttribute('data-line-height')) });
+    return new XMLSerializer().serializeToString(doc.documentElement);
+  };
+  const base = svgOf(selectGuide(null, { guideId: id, locale: 'en-XA', localeData }).guide.illustration);
+  for (const label of ['Short', 'Abrir el menú de la página', 'Un nombre de control extraordinariamente largo para este botón', 'x'.repeat(80)]) {
+    const runtime = svgOf(selectGuide(null, { guideId: id, locale: 'en-XA', browserLocale: 'en', localeData: withLabel(label) }).guide.illustration);
+    const [drawnTitle] = shape(runtime);
+    const [expected] = shape(built(base, label).replace('<svg ', '<svg id="s" ').replace('id="t"', `id="step-${number}-title" data-i18n="step" data-max-width="324"`));
+    assert.equal(drawnTitle.text, expected.text, label);
+    assert.deepEqual({ ...drawnTitle, parts: drawnTitle.parts.map(part => part[1]) }, { ...expected, parts: expected.parts.map(part => part[1]) }, label);
+    assert.ok(drawnTitle.parts.every(part => part[0] === `label:${labelId}`));
+  }
+  // The long ones really did wrap or squeeze.
+  const wrapped = shape(svgOf(selectGuide(null, { guideId: id, locale: 'en-XA', browserLocale: 'en', localeData: withLabel('Abrir el menú de la página') }).guide.illustration))[0];
+  assert.equal(wrapped.lines.length, 2);
+  const long = shape(svgOf(selectGuide(null, { guideId: id, locale: 'en-XA', browserLocale: 'en', localeData: withLabel('x'.repeat(80)) }).guide.illustration))[0];
+  assert.equal(long.textLength, '324');
 });
