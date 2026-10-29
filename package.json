@@ -18,6 +18,8 @@
     "check:labels": "node scripts/check-labels.mjs",
     "test": "node --test --test-concurrency=1 tests/*.test.mjs",
     "check": "npm run build && npm run typecheck --workspace @pwa-instructions/example-react && npm test",
+    "check:static": "npm run build && npm run typecheck --workspace @pwa-instructions/example-react && git diff --exit-code -- 'guides/**/install.svg' 'guides/**/instructions.md'",
+    "test:ci": "npm run build:packages && mkdir -p test-reports && { node --test --test-concurrency=1 --test-reporter=spec --test-reporter-destination=stdout --test-reporter=junit --test-reporter-destination=test-reports/junit.xml tests/*.test.mjs; s=$?; node scripts/junit-wrap.mjs test-reports/junit.xml unit || exit $?; exit $s; }",
     "pack:package": "npm run build:packages && npm pack --workspace pwa-instructions",
     "release": "cd packages/pwa-instructions && release-it"
   },

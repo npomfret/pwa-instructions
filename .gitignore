@@ -10,3 +10,8 @@ coverage/
 packages/*/src/core/generated/
 *.tsbuildinfo
 *.tgz
+.gitnexus/
+tmp/
+.codex/config.toml
+test-reports/
+examples/*/src/generated/

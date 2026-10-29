@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Bash(*)",
+      "WebSearch",
+      "WebFetch",
+      "mcp__gitnexus",
+      "mcp__webstorm"
+    ],
+    "deny": [
+      "mcp__webstorm__execute_terminal_command",
+      "mcp__webstorm__execute_run_configuration",
+      "mcp__webstorm__execute_tool",
+      "mcp__webstorm__run_inspection_kts",
+      "mcp__webstorm__build_project",
+      "mcp__webstorm__apply_patch",
+      "mcp__webstorm__create_new_file",
+      "mcp__webstorm__reformat_file",
+      "Bash(git push:*)"
+    ]
+  },
+  "sandbox": {
+    "enabled": false
+  },
+  "env": {
+    "NODE_USE_ENV_PROXY": "1"
+  },
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
+  "enabledPlugins": {
+    "task-files@npomfret": true,
+    "webstorm@npomfret": true,
+    "web-factoring@npomfret": true,
+    "frontend-design@claude-plugins-official": true,
+    "auditing@npomfret": true,
+    "scripting@npomfret": true,
+    "typesafe@typesafe-ai": true,
+    "browser-testing@npomfret": true,
+    "security-audit@npomfret": true,
+    "teamcity@npomfret": true
+  },
+  "enabledMcpjsonServers": ["gitnexus", "webstorm"],
+  "hooks": {}
+}
