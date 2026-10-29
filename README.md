@@ -24,7 +24,7 @@ import { InstallInstructions } from 'pwa-instructions/react';
 | [`pwa-instructions/react`](packages/pwa-instructions/src/react) | Unstyled React components using the core. |
 | [`examples/react`](examples/react) | A client-only demo with guide selection, a domain preview and image/text choices. |
 
-One npm package contains both entry points. React is an optional peer dependency; plain JavaScript users do not need to install it. Future framework adapters can live beside `src/react` in the same package and consume the shared core. Available on [npm](https://www.npmjs.com/package/pwa-instructions).
+One npm package contains both entry points, and it has no runtime dependencies. React is an optional peer dependency; plain JavaScript users do not need to install it. Future framework adapters can live beside `src/react` in the same package and consume the shared core. Available on [npm](https://www.npmjs.com/package/pwa-instructions).
 
 Leave `guideId` out for automatic browser detection. Use `guideId="ios-safari-iphone-layout-1"` for explicit selection. For your own interface, call `selectGuide(detectBrowserEnvironment())` from the core and use the returned steps and illustration URL. The [API reference](docs/api.md) describes the props, defaults and selection results.
 

@@ -39,7 +39,7 @@ if (selection.guide) {
 }
 ```
 
-The main entry point has no React dependency. React is an optional peer dependency used only by `pwa-instructions/react`. Future framework adapters can have their own entry points in the same package.
+The package has no runtime dependencies. The main entry point has no React dependency. React is an optional peer dependency used only by `pwa-instructions/react`. Future framework adapters can have their own entry points in the same package.
 
 Detection is a best-effort hint, so retain a manual choice where practical. Automatic matching stays within the same platform, browser and device. Android Chrome and Windows guides are documentation drafts with unverified version coverage; their selection result uses `match: "documentation"`.
 
