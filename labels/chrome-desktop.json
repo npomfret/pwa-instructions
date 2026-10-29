@@ -3,57 +3,226 @@
     "en": "More"
   },
   "new-tab": {
-    "en": "New tab"
+    "en": "New tab",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "4200983522494130825",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "history": {
-    "en": "History"
+    "en": "History",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "4756388243121344051",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "downloads": {
-    "en": "Downloads"
+    "en": "Downloads",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "7861215335140947162",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "print": {
-    "en": "Print…"
+    "en": "Print…",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "1175364870820465910",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "find-and-edit": {
-    "en": "Find and edit"
+    "en": "Find and edit",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "5340787663756381836",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "cast-save-and-share": {
-    "en": "Cast, save and share"
+    "en": "Cast, save and share",
+    "en-US": "Cast, save, and share",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "1913749768968678106",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      },
+      "en-US": {
+        "method": "grd",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/generated_resources.grd",
+        "messageId": "IDS_CAST_SAVE_AND_SHARE_MENU",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "save-page-as": {
-    "en": "Save page as…"
+    "en": "Save page as…",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "3712897371525859903",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "install-website": {
     "en": "Install Website…"
   },
   "create-shortcut": {
-    "en": "Create shortcut…"
+    "en": "Create shortcut…",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "4895799941222633551",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "copy-link": {
-    "en": "Copy link"
+    "en": "Copy link",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "2436385001956947090",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "install-app": {
-    "en": "Install app"
+    "en": "Install app",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "6540174167103635041",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "install": {
-    "en": "Install"
+    "en": "Install",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "3789841737615482174",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "next": {
-    "en": "Next"
+    "en": "Next",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "1201402288615127009",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "cancel": {
     "en": "Cancel"
   },
   "chrome-apps": {
-    "en": "Chrome Apps"
+    "en": "Chrome Apps",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "3149510190863420837",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "successfully-installed": {
-    "en": "Successfully installed"
+    "en": "Successfully installed",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "3576324189521867626",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "show-in-finder": {
-    "en": "Show in Finder"
+    "en": "Show in Finder",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "1581962803218266616",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "open-tab-in-app": {
-    "en": "Open tab in app"
+    "en": "Open tab in app",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/chrome/app/resources/generated_resources_en-GB.xtb",
+        "messageId": "157005186601751931",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   }
 }

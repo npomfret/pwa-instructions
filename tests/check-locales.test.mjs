@@ -232,3 +232,37 @@ test('staleLabels lists labels verified more than a year ago, oldest first', asy
   assert.deepEqual(stale.map(item => `${item.id}/${item.tag}`), ['old/fr', 'old/es']);
   assert.deepEqual(staleLabels(await loadLabels(root), new Date('2026-10-28')), []);
 });
+
+test('en-US is a label-only variant: no prose, status or catalog entry is needed, and it is never an orphan', async () => {
+  const { errors, warnings } = await checkLocales(root);
+  const labels = await loadLabels(root);
+  assert.equal(labels.get('ios-safari').summarise['en-US'], 'Summarize');
+  assert.ok(!('en-US' in (await readJSON(path.join(root, 'catalog.json'))).locales));
+  assert.ok(!has(errors, 'en-US') && !has(warnings, 'en-US'));
+});
+
+test('an en-US label value must have a complete source record, as an error', async t => {
+  const dir = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ios-safari.json'), entries => {
+    entries['show-reader']['en-US'] = 'Show Reader View';
+    delete entries.summarise._src['en-US'];
+    entries['page-menu']['en-US'] = 'Page menu';
+    entries['page-menu']._src = { 'en-US': { method: 'support-page', verified: '2026-10-29', version: 'iOS 27' } };
+  }) });
+  const { errors } = await checkLocales(dir);
+  assert.ok(has(errors, 'labels/ios-safari.json', 'show-reader._src.en-US', '[en-US]', 'has no source record'));
+  assert.ok(has(errors, 'summarise._src.en-US', '[en-US]', 'has no source record'));
+  assert.ok(has(errors, 'page-menu._src.en-US', 'lacks source'));
+});
+
+test('en-US values are checked for empty text and TODO markers, and one equal to the en text only warns', async t => {
+  const dir = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ios-safari.json'), entries => {
+    entries['show-reader']['en-US'] = '  ';
+    entries['page-menu']['en-US'] = 'TODO Page Menu';
+    entries.summarise['en-US'] = 'Summarise';
+  }) });
+  const { errors, warnings } = await checkLocales(dir);
+  assert.ok(has(errors, 'show-reader.en-US', 'is an empty string'));
+  assert.ok(has(errors, 'page-menu.en-US', 'contains a TODO marker'));
+  assert.ok(has(warnings, 'summarise.en-US', 'identical to the en text'));
+  assert.ok(!has(errors, 'summarise.en-US'));
+});

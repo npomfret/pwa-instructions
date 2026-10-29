@@ -17,6 +17,12 @@ import { estimateWidth, fitText, fontOf as fontClass } from '../packages/pwa-ins
 export const DEFAULT_LOCALE = 'en';
 /** Pseudo-locale for tests: accented, about 35% longer, bracketed, and generated from English. Never published. */
 export const PSEUDO_LOCALE = 'en-XA';
+/**
+ * Label-only variants: a tag that overrides the labels whose text differs and inherits every other label (and all prose)
+ * from its base. `en` is the British capture, so `en-US` lists only what a US browser shows differently. A variant is not
+ * a catalog locale: it has no prose files, no status, and is never composed; the English build emits its label table.
+ */
+export const LABEL_VARIANTS = { 'en-US': DEFAULT_LOCALE };
 const DATA_ATTRIBUTES = ['data-i18n', 'data-max-width', 'data-lines', 'data-line-height'];
 const PLACEHOLDER = /\{label:([a-z0-9-]+)\}/g;
 const ns = 'http://www.w3.org/2000/svg';
@@ -78,6 +84,7 @@ export function labelResolver(labels, surfaces, tag) {
     const found = index.get(id);
     if (!found) throw new Error(`Unknown label ${id} (surfaces: ${surfaces.join(', ')})`);
     if (tag === DEFAULT_LOCALE || found.entry[tag] !== undefined) return found.entry[tag];
+    if (LABEL_VARIANTS[tag]) return found.entry[LABEL_VARIANTS[tag]];
     if (tag === PSEUDO_LOCALE) return pseudoLocalize(found.entry.en);
     throw new Error(`Label ${id} (${found.surface}) has no ${tag} text`);
   };

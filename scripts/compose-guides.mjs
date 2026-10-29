@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
-import { DEFAULT_LOCALE, loadLabels, labelResolver, labelled, loadGuideLocale, localizeDocument, checkLabelTags,
+import { DEFAULT_LOCALE, LABEL_VARIANTS, loadLabels, labelResolver, labelled, loadGuideLocale, localizeDocument, checkLabelTags,
   stripLocalization, fillText, usedLabelIds } from './i18n.mjs';
 
 const ns = 'http://www.w3.org/2000/svg';
@@ -64,8 +64,8 @@ function scope(node, prefix) {
  * Writes nothing. A guide's artwork is `artworkSource`, or `install.source.svg` when it is not composed from panels;
  * `install.svg` is always generated output. Each result also carries what the runtime needs to swap in another locale's
  * control names: `templates` (the prose strings that name a label, with `{label:id}` kept), `labels` (the text of every
- * label the templates and artwork use, by locale tag, this one and English) and `taggedSvg` (the artwork with its
- * `label:*` tags kept).
+ * label the templates and artwork use, by locale tag: this one, English, and any label-only variant that differs from
+ * English) and `taggedSvg` (the artwork with its `label:*` tags kept).
  */
 export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
   const english = locale === DEFAULT_LOCALE;
@@ -89,7 +89,8 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
     const svg = doc.documentElement;
     // Labels, tagged text and prose all resolve here, in this guide's own surfaces, before any panel is imported elsewhere.
     const resolver = labelResolver(labels, surfaces, locale);
-    const lookups = [{ locale: resolver, english: labelResolver(labels, surfaces, DEFAULT_LOCALE) }];
+    const lookups = [{ locale: resolver, english: labelResolver(labels, surfaces, DEFAULT_LOCALE),
+      variants: Object.fromEntries(Object.keys(LABEL_VARIANTS).map(tag => [tag, labelResolver(labels, surfaces, tag)])) }];
     checkLabelTags(doc, labelResolver(labels, surfaces, DEFAULT_LOCALE), id);
     const strings = english ? null : await loadGuideLocale({ folder, data, tag: locale, resolver: labelResolver(labels, surfaces, DEFAULT_LOCALE), document: doc });
     if (strings) localizeDocument(doc, { tag: locale, resolver, locale: strings, guideId: id });
@@ -212,6 +213,14 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
       return [id, found.get(id)];
     }));
     const labelTable = { ...(english ? {} : { [locale]: table(item => item.locale) }), [DEFAULT_LOCALE]: table(item => item.english) };
+    // English also carries each label-only variant (en-US), complete so it can stand in for the page's labels, but only
+    // for a guide where it differs: an identical table would just be size, and en-US resolves to en without it.
+    if (english) {
+      for (const tag of Object.keys(LABEL_VARIANTS)) {
+        const variant = table(item => item.variants[tag]);
+        if (ids.some(id => variant[id] !== labelTable[DEFAULT_LOCALE][id])) labelTable[tag] = variant;
+      }
+    }
     const result = { ...record, steps, rawSteps, lookups, document: doc, svg: svgText, taggedSvg, text, locale, localized, templates: sparse, labels: labelTable };
     visiting.delete(id);
     resolved.set(id, result);

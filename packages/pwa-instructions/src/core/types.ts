@@ -129,8 +129,10 @@ export interface LocaleOptions {
    * The language of the browser or OS interface, for the control names: `uiLabel`, the menu items quoted in the text and
    * the labels drawn in the artwork. The prose stays in `locale`. Defaults to `locale`. It needs the browser locale's
    * labels (any `locales/<tag>` module with data for the guide) and, for an English page, the `locales/en` module.
+   * Tags are tried in order. `en` is British English and `en-GB` resolves to it; `en-US` has the US labels, which ship in
+   * the `locales/en` module, and `locale: "en-US"` on its own shows them too.
    */
-  readonly browserLocale?: string;
+  readonly browserLocale?: string | readonly string[];
   /** Locale data by tag, used in addition to locales added with registerLocale. These win over registered data. */
   readonly localeData?: Readonly<Record<string, LocaleData>>;
 }

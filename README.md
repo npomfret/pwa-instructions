@@ -45,6 +45,8 @@ A locale that is not registered, or lacks a guide, gives that whole guide in Eng
 
 The prose follows `locale`, but control names such as "Share" must match the user's browser. Pass `browserLocale: detectUILocale()` (after mounting) to take `uiLabel`, the quoted menu items and the artwork's labels from the browser's language; it defaults to `locale`. An English page with a non-English browser also needs `import en from 'pwa-instructions/locales/en'`. See [Localization](docs/api.md#localization).
 
+British and US English: the English labels are the British ones (`en` is `en-GB`). `browserLocale: 'en-US'`, or `locale: 'en-US'` on its own, shows the US labels such as "Cast, save, and share" and "Summarize" with the same English prose; register `pwa-instructions/locales/en` to get them. See [Localization](docs/api.md#localization).
+
 ## Development
 
 Requires Node.js 22.12 or newer.

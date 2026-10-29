@@ -6,6 +6,17 @@
     "en": "Show Reader"
   },
   "summarise": {
-    "en": "Summarise"
+    "en": "Summarise",
+    "en-US": "Summarize",
+    "_src": {
+      "en-US": {
+        "method": "support-page",
+        "source": "https://support.apple.com/en-us/guide/iphone/iph1fbef4daa/ios",
+        "quote": "Tap, then tap Summarize.",
+        "verified": "2026-10-29",
+        "version": "iOS 27 (iPhone User Guide)",
+        "deviceChecked": false
+      }
+    }
   }
 }

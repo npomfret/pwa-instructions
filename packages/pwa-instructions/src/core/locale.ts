@@ -88,20 +88,30 @@ function mark(guide: InstallGuide, { requested, fallback }: LocaleResolution): I
   return guide.localeFallback === undefined && guide.requestedLocale === undefined ? guide : withoutFallback(guide);
 }
 
-const firstTag = (locale: LocaleOptions["locale"]): string | null => {
-  const raw = (typeof locale === "string" ? [locale] : locale ?? []).map(tag => tag.trim()).find(Boolean);
-  return raw ? canonical(raw) ?? raw : null;
-};
+/** The canonical tags of a locale option, in order, with blanks dropped. */
+const tagsOf = (locale: string | readonly string[] | undefined): string[] =>
+  (typeof locale === "string" ? [locale] : locale ?? []).map(tag => tag.trim()).filter(Boolean).map(tag => canonical(tag) ?? tag);
 
 /**
- * The canonical `browserLocale` when one was passed and names another locale than the page's `locale`; otherwise null.
- * An omitted `locale` means the language `guide` is in, which is English for a bundled guide.
+ * Label-only variants, by tag, with the locale whose prose they share. A variant has its own control names but no prose
+ * or templates, so its labels ship in the base locale's module (`locales/en` carries `en-US`) and its text is the base's.
  */
-export function browserRequest({ locale, browserLocale }: LocaleOptions, guide?: InstallGuide): string | null {
-  const raw = browserLocale?.trim();
-  if (!raw) return null;
-  const tag = canonical(raw) ?? raw;
-  return tag === (firstTag(locale) ?? guide?.language ?? DEFAULT) ? null : tag;
+const LABEL_VARIANTS: Readonly<Record<string, string>> = { "en-US": "en" };
+const variantBase = (tag: string): string | undefined => (Object.hasOwn(LABEL_VARIANTS, tag) ? LABEL_VARIANTS[tag] : undefined);
+
+/**
+ * The canonical `browserLocale` tags when one was passed and names another locale than the page's `locale`; otherwise
+ * null. An omitted `locale` means the language `guide` is in, which is English for a bundled guide. A label-only variant
+ * is always requested, even when it is the page's own locale, because `locale: "en-US"` has English prose and US labels.
+ */
+export function browserRequest({ locale, browserLocale }: LocaleOptions, guide?: InstallGuide): string[] | null {
+  const browser = tagsOf(browserLocale);
+  const page = tagsOf(locale)[0] ?? guide?.language ?? DEFAULT;
+  // Without a browserLocale the page's locale names the labels too, which only matters for a variant.
+  const tags = browser.length ? browser : tagsOf(locale).slice(0, 1);
+  if (!tags.length) return null;
+  if (variantBase(tags[0])) return tags;
+  return browser.length && tags[0] !== page ? tags : null;
 }
 
 const PLACEHOLDER = /\{label:([a-z0-9-]+)\}/g;
@@ -139,7 +149,7 @@ function withBrowserLabels(page: InstallGuide, data: LocalizedGuide, labels: Rea
  */
 export function localizeGuide(guide: InstallGuide, given: LocaleOptions = {}): { guide: InstallGuide; locale: GuideLocaleResolution } {
   // With only a browser locale, the page is the language the guide is already in.
-  const options = given.locale === undefined && given.browserLocale && guide.language !== DEFAULT ? { ...given, locale: guide.language } : given;
+  const options = given.locale === undefined && tagsOf(given.browserLocale).length && guide.language !== DEFAULT ? { ...given, locale: guide.language } : given;
   const all = merged(options.localeData);
   const locale: GuideLocaleResolution = resolveLocale(options.locale, [...all].filter(([, data]) => carries(data, guide)).map(([tag]) => tag));
   const { resolved } = locale;
@@ -162,17 +172,24 @@ export function localizeGuide(guide: InstallGuide, given: LocaleOptions = {}): {
   const requested = browserRequest(options, guide);
   if (!requested) return { guide: mark(page, locale), locale };
   // The browser locale may use any registered locale's labels for this guide, and the page's module also carries English.
+  // A label-only variant (en-US) is found in its base locale's module, whatever the page locale is.
   const pageData = all.get(resolved)?.guides[guide.id];
-  const labelsOf = (tag: string) => all.get(tag)?.guides[guide.id]?.labels?.[tag] ?? pageData?.labels?.[tag];
-  const tags = new Set([...all.keys(), ...Object.keys(pageData?.labels ?? {})]);
+  const labelsOf = (tag: string) => [all.get(tag)?.guides[guide.id], pageData, ...[...all.values()].map(data => data.guides[guide.id])]
+    .map(item => item?.labels?.[tag]).find(Boolean);
+  const tags = new Set([...all.keys(), ...[pageData, ...[...all.values()].map(data => data.guides[guide.id])].flatMap(item => Object.keys(item?.labels ?? {}))]);
   const found = resolveLocale(requested, [...tags].filter(tag => labelsOf(tag)));
+  // A variant cannot be served without its base locale's module. A browserLocale that asked for it says so; a page
+  // `locale` that only implies it (`en-US`, as 0.1.0 callers pass) is left exactly as it was.
+  const base = variantBase(found.requested ?? "");
+  const unserved = base !== undefined && !all.get(base)?.guides[guide.id];
+  if (unserved && tagsOf(options.browserLocale).length === 0) return { guide: mark(page, locale), locale };
   // Already the page's labels: nothing to substitute.
-  if (!found.fallback && found.resolved === resolved) return { guide: mark(page, locale), locale: { ...locale, browser: found } };
-  const labels = found.fallback ? undefined : labelsOf(found.resolved);
+  if (!unserved && !found.fallback && found.resolved === resolved) return { guide: mark(page, locale), locale: { ...locale, browser: found } };
+  const labels = found.fallback || unserved ? undefined : labelsOf(found.resolved);
   if (!labels || !pageData) {
     // No labels to use, or no page templates to put them in: the page keeps its own, and the resolution says so.
     const browser = { requested: found.requested, resolved, fallback: true };
-    return { guide: { ...mark(page, locale), browserLocaleFallback: true, requestedBrowserLocale: requested }, locale: { ...locale, browser } };
+    return { guide: { ...mark(page, locale), browserLocaleFallback: true, requestedBrowserLocale: found.requested! }, locale: { ...locale, browser } };
   }
   const substituted = withBrowserLabels(page, pageData, labels, labelsOf(resolved));
   return { guide: { ...mark(substituted, locale), browserLanguage: found.resolved }, locale: { ...locale, browser: found } };

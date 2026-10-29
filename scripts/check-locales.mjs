@@ -2,7 +2,7 @@ import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { DOMParser } from '@xmldom/xmldom';
-import { DEFAULT_LOCALE, PSEUDO_LOCALE, estimateWidth, fontOf, labelResolver, labelled, loadGuideLocale, loadLabels } from './i18n.mjs';
+import { DEFAULT_LOCALE, LABEL_VARIANTS, PSEUDO_LOCALE, estimateWidth, fontOf, labelResolver, labelled, loadGuideLocale, loadLabels } from './i18n.mjs';
 
 /*
  * Completeness checks for locale data, run by the build (so `npm run check` fails on any error) and on their own:
@@ -25,6 +25,10 @@ import { DEFAULT_LOCALE, PSEUDO_LOCALE, estimateWidth, fontOf, labelResolver, la
  *  7. Estimated width against data-max-width: warn at OVERFLOW_WARN, fail at OVERFLOW_FAIL.
  *  8. The catalog `locales` list and the locale files present agree; an unlisted file is an orphan.
  *  9. Tags are canonical and each file name is its tag.
+ *
+ * Label-only variants (LABEL_VARIANTS, `en-US`) are not catalog locales: no prose, status or completeness rules apply, and
+ * they are never orphans. Their label values still get rules 2 and 6, and rule 5 as an error: a value that differs from
+ * its base is a claim about what another browser shows, so it needs a source. Labels without a value inherit the base.
  */
 
 export const OVERFLOW_WARN = 1.0;
@@ -100,6 +104,7 @@ export async function checkLocales(root) {
     for (const [id, entry] of Object.entries(entries)) {
       for (const tag of new Set([...Object.keys(entry), ...Object.keys(entry._src ?? {})].filter(key => key !== DEFAULT_LOCALE && key !== '_src'))) {
         if (!canonical(tag)) report(errors, 9, file, id, tag, 'is not a canonical locale tag');
+        else if (tag in LABEL_VARIANTS) continue;
         else if (!(tag in statuses)) report(errors, 8, file, id, tag, 'is an orphan: catalog.json "locales" does not list it');
         listed.add(tag);
       }
@@ -139,6 +144,26 @@ export async function checkLocales(root) {
       if (text && !tagged(node) && !UNTAGGED_TEXT.some(pattern => pattern.test(text))) report(errors, 4, source, `<${node.tagName}> "${text}"`, DEFAULT_LOCALE, 'is visible text with no data-i18n tag');
     }
     record.viewBoxWidth = Number(document.documentElement.getAttribute('viewBox')?.split(/\s+/)[2]) || 400;
+  }
+
+  // --- Label-only variants: rules 2, 5 and 6 on the values they override ---------------------------------------------
+  for (const [tag, base] of Object.entries(LABEL_VARIANTS)) {
+    for (const [surface, entries] of labels) {
+      const file = path.join(root, 'labels', `${surface}.json`);
+      for (const [id, entry] of Object.entries(entries)) {
+        const text = entry[tag];
+        if (text === undefined) continue;
+        if (typeof text !== 'string' || !text.trim()) { report(errors, 6, file, `${id}.${tag}`, tag, 'is an empty string'); continue; }
+        if (/TODO/.test(text)) report(errors, 6, file, `${id}.${tag}`, tag, 'contains a TODO marker');
+        if (tokens(entry[base]).sort().join() !== tokens(text).sort().join()) report(errors, 2, file, `${id}.${tag}`, tag, `has placeholders ${tokens(text).join(' ') || 'none'}, ${base} has ${tokens(entry[base]).join(' ') || 'none'}`);
+        if (text === entry[base]) report(warnings, 6, file, `${id}.${tag}`, tag, `is identical to the ${base} text, so it should be omitted`);
+        const source = entry._src?.[tag];
+        const missing = source ? SOURCE_FIELDS.filter(field => typeof source[field] !== 'string' || !source[field].trim()) : SOURCE_FIELDS;
+        if (!source) report(errors, 5, file, `${id}._src.${tag}`, tag, `has no source record (needs ${SOURCE_FIELDS.join(', ')})`);
+        else if (missing.length) report(errors, 5, file, `${id}._src.${tag}`, tag, `source record lacks ${missing.join(', ')}`);
+        else if (!(Date.parse(source.verified) <= Date.now()) || !/^\d{4}-\d{2}-\d{2}$/.test(source.verified)) report(errors, 5, file, `${id}._src.${tag}`, tag, `has verified date "${source.verified}", expected a past YYYY-MM-DD`);
+      }
+    }
   }
 
   // --- Per locale ------------------------------------------------------------------------------------------------

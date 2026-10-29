@@ -1,14 +1,81 @@
 {
   "add-to-bookmarks": {
-    "en": "Add to bookmarks"
+    "en": "Add to bookmarks",
+    "en-US": "Add to Bookmarks",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/ios/chrome/app/strings/resources/ios_strings_en-GB.xtb",
+        "messageId": "6321526113093607004",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      },
+      "en-US": {
+        "method": "grd",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/ios/chrome/app/strings/ios_strings.grd",
+        "messageId": "IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "create-a-qr-code": {
-    "en": "Create a QR code"
+    "en": "Create a QR code",
+    "en-US": "Create a QR Code",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/ios/chrome/app/strings/resources/ios_strings_en-GB.xtb",
+        "messageId": "2223461067862937305",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      },
+      "en-US": {
+        "method": "grd",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/ios/chrome/app/strings/ios_strings.grd",
+        "messageId": "IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "find-in-page": {
-    "en": "Find in Page"
+    "en": "Find in Page",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/ios/chrome/app/strings/resources/ios_strings_en-GB.xtb",
+        "messageId": "4042870976416480368",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "request-desktop-site": {
-    "en": "Request desktop site"
+    "en": "Request desktop site",
+    "en-US": "Request Desktop Site",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/ios/chrome/app/strings/resources/ios_strings_en-GB.xtb",
+        "messageId": "2783161812871838616",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      },
+      "en-US": {
+        "method": "grd",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/ios/chrome/app/strings/ios_strings.grd",
+        "messageId": "IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   }
 }

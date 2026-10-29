@@ -55,6 +55,23 @@ A guide lists the surfaces whose controls appear in its artwork as `labelSurface
 
 **Label tables.** Each published `pwa-instructions/locales/<tag>` module carries, per guide, a label table: the text in that locale and in English of every label the guide's prose templates (`{label:id}`) and its artwork tags (`data-i18n="label:id"`) use, including the labels of panels reused from another guide. At runtime `browserLocale` fills the page locale's templates from the browser locale's table and swaps the artwork's label nodes, which keep their `data-i18n`, `data-max-width` and `data-lines` in the module's SVG (the SVG written to `dist/assets` stays untagged). A label that is missing from a locale therefore breaks the guide for browsers in that language; rule 3 below covers it. English has its own opt-in `locales/en` module, built from the same tables.
 
+**English variants.** The `en` labels are the British capture: `en` means `en-GB` for labels, and `en-GB` resolves to `en`. `en-US` is a label-only variant of `en` (`LABEL_VARIANTS` in `scripts/i18n.mjs`). It is not a catalog locale: it has no prose file, no status and no `catalog.json` entry, and the US build uses the `en` prose and templates. Add an `en-US` value to a label only where a US browser shows different text; every other label inherits `en`:
+
+```json
+{
+  "cast-save-and-share": {
+    "en": "Cast, save and share",
+    "en-US": "Cast, save, and share",
+    "_src": {
+      "en": { "method": "xtb", "source": "<en-GB .xtb URL>", "messageId": "1913749768968678106", "verified": "2026-10-29", "version": "Chromium main 159.0.8131.0", "deviceChecked": false },
+      "en-US": { "method": "grd", "source": "<.grd URL>", "messageId": "IDS_CAST_SAVE_AND_SHARE_MENU", "verified": "2026-10-29", "version": "Chromium main 159.0.8131.0", "deviceChecked": false }
+    }
+  }
+}
+```
+
+Source an `en-US` value from the product's own US text: Chromium's `.grd` or `.grdp` source strings (those are en-US; the en-GB `.xtb` confirms the British `en`), Apple's US support pages and user guides, Microsoft's US docs, or AOSP and Google's US help. If you cannot confirm a label's US text, leave the variant out; never guess. `_src.en` may record where the British value was confirmed (rule 5 does not require it). The English build writes the `en-US` label table into the `locales/en` module, for the guides where at least one label differs.
+
 **Prose.** `locales/<tag>.json` holds `title`, `label`, `completion`, `alt` and, when the English has one, `intro`; `steps` keyed by step `id` with `title` and `description`; `transitions` keyed by `transitionId`; and the SVG's `heading`, `subtitle`, `svgTitle` and `svgDesc`. Use `{label:id}` for a control name and `{step:n}` for a step number, so sentences can be reordered. The build derives each step's `uiLabel` from its title's first `{label:*}`, so the italics survive. A reused step takes its translation from its source guide in the same locale; the reusing guide lists only the steps it authors.
 
 ```json
@@ -102,10 +119,10 @@ A guide lists the surfaces whose controls appear in its artwork as `labelSurface
 | 2. Placeholders | A translation keeps every `{step:n}` of the English, names the label the English quotes as `uiLabel` (`{label:id}`), and uses only label ids in the guide's `labelSurfaces`. Nothing else in braces is allowed, and a label value keeps the placeholders of its English (`{host}`). |
 | 3. Labels resolve (complete only) | Every label a guide uses has text in the locale itself; there is no fallback to English. This includes the labels drawn in panels reused from another guide, so the locale module's label table is complete. |
 | 4. SVG tags | Every `data-i18n` key in `install.source.svg` and `artwork.svg` has English text (a `label:*` key an English label equal to the node text) and, in a complete locale, a translation. Visible `text`, `title` and `desc` with no tag fail, except digits, the clock, `example.com`, `Safari` (the macOS app menu) and `data-pwa-domain` nodes. |
-| 5. Label sources (complete only) | Each non-English label value has `_src.<tag>` with `method`, `source`, `verified` (a past date) and `version`. English labels and the `ui` and `document` surfaces are exempt: English is the source text, and the others are this package's own strings, not browser strings. |
-| 6. Content | No empty strings or `TODO`. A string identical to English is a warning, unless it is a brand name. |
+| 5. Label sources (complete only) | Each non-English label value has `_src.<tag>` with `method`, `source`, `verified` (a past date) and `version`. English labels and the `ui` and `document` surfaces are exempt: English is the source text, and the others are this package's own strings, not browser strings. An `en-US` value always needs its source, as an error, because it is a claim about what a US browser shows. |
+| 6. Content | No empty strings or `TODO`. A string identical to English is a warning, unless it is a brand name; so is an `en-US` value equal to `en`, which should be left out. |
 | 7. Overflow | The estimated width of each tagged node against its `data-max-width` (times `data-lines`): a warning at 100%, an error at 130% (`OVERFLOW_WARN`, `OVERFLOW_FAIL`). `en-XA` is 35% longer by design, so it only warns. |
-| 8. Catalog agrees with files | A `locales/<tag>.json` or label locale that the catalog does not list is an orphan. A listed locale with no files fails when complete. |
+| 8. Catalog agrees with files | A `locales/<tag>.json` or label locale that the catalog does not list is an orphan, except a label-only variant such as `en-US`. A listed locale with no files fails when complete. |
 | 9. Tags | Tags in the catalog, file names and label files are canonical (`Intl.getCanonicalLocales`), and a file's optional `locale` field matches its name. |
 
 **Reading a failure.** Each line is `file: key [locale] message (rule N)`, for example `guides/ios/safari/iphone/layout-1/locales/es.json: steps.tap-share.title [es] lacks {label:share}, which the English has (rule 2)`. Open the file, find the key, and fix it for that locale. Warnings print one summary line (`Locale warnings: 27 (27 rule 7)`) with the full list in `tmp/check-locales.log`. For a width warning, shorten the text, or give the node more room (`data-max-width`, `data-lines`) and inspect the SVG.

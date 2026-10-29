@@ -3,12 +3,42 @@
     "en": "More"
   },
   "install-and-create-shortcut": {
-    "en": "Install and create shortcut"
+    "en": "Install and create shortcut",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/components/webapps/browser/android/translations/android_webapps_strings_en-GB.xtb",
+        "messageId": "6923899737874692938",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "install": {
-    "en": "Install"
+    "en": "Install",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/components/webapps/browser/android/translations/android_webapps_strings_en-GB.xtb",
+        "messageId": "3789841737615482174",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   },
   "create-shortcut": {
-    "en": "Create shortcut"
+    "en": "Create shortcut",
+    "_src": {
+      "en": {
+        "method": "xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/36a6763ea295da2a53ca0e76c5793c92b55b3caa/components/webapps/browser/android/translations/android_webapps_strings_en-GB.xtb",
+        "messageId": "204914487372604757",
+        "verified": "2026-10-29",
+        "version": "Chromium main 159.0.8131.0 (36a6763ea295)",
+        "deviceChecked": false
+      }
+    }
   }
 }
