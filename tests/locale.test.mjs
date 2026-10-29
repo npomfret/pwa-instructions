@@ -61,6 +61,11 @@ test('resolveLocale canonicalizes, trims and falls back from region to language 
   assert.deepEqual(resolveLocale('fr-CA', available), { requested: 'fr-CA', resolved: 'en', fallback: true });
   assert.deepEqual(resolveLocale('en-GB', available), { requested: 'en-GB', resolved: 'en', fallback: false });
   assert.deepEqual(resolveLocale('en-XA', available), { requested: 'en-XA', resolved: 'en-XA', fallback: false });
+  // Norwegian reported as the macrolanguage `no` gets the Bokmål data.
+  assert.deepEqual(resolveLocale('no', ['nb']), { requested: 'no', resolved: 'nb', fallback: false });
+  assert.deepEqual(resolveLocale('no-NO', ['nb']), { requested: 'no-NO', resolved: 'nb', fallback: false });
+  assert.deepEqual(resolveLocale('nb-NO', ['nb']), { requested: 'nb-NO', resolved: 'nb', fallback: false });
+  assert.deepEqual(resolveLocale('nn', ['nb']), { requested: 'nn', resolved: 'en', fallback: true });
   assert.deepEqual(resolveLocale('not a tag!', available), { requested: 'not a tag!', resolved: 'en', fallback: true });
   for (const none of [undefined, null, '', '  ', []]) assert.deepEqual(resolveLocale(none, available), { requested: null, resolved: 'en', fallback: false });
 });

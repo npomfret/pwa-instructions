@@ -22,8 +22,15 @@ function chain(tag: string): string[] {
   const locale = new Intl.Locale(tag);
   const scripted = locale.script ? null : `${locale.language}-${locale.maximize().script}`;
   if (scripted) tags.splice(tags.length - 1, 0, scripted);
-  return tags;
+  // Browsers often report Norwegian as the macrolanguage `no`; the guides are written in Bokmål, `nb`.
+  return tags.flatMap(candidate => {
+    const alias = MACROLANGUAGES[candidate.split("-")[0]];
+    return alias ? [candidate, [alias, ...candidate.split("-").slice(1)].join("-")] : [candidate];
+  });
 }
+
+/** A macrolanguage tag and the individual language the locale data is written in. */
+const MACROLANGUAGES: Readonly<Record<string, string>> = { no: "nb" };
 
 /**
  * Pick the best available tag for `requested`. Tags are canonicalized, `pt-BR` falls back to `pt` and then to `en`, and

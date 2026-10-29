@@ -112,6 +112,7 @@ You can skip registration and pass the same data per call: `{ locale: 'es', loca
 - Tags are trimmed, `_` becomes `-`, and they are canonicalized with `Intl.getCanonicalLocales`, so `pt_br` and `PT-br` are `pt-BR`. An invalid tag is skipped.
 - A tag falls back by trimming: `pt-BR`, then `pt`, then `en`. English is always available. An array is tried in order.
 - A script is never crossed. `zh-Hans` never serves `zh-Hant`; `zh-TW` finds `zh-Hant` but not a bare `zh`.
+- Norwegian reported as the macrolanguage `no` (or `no-NO`) finds the Bokmål `nb` data. Nynorsk, `nn`, does not.
 - `requested` is the first tag asked for, in canonical form, or `null` when none was. `fallback` is `false` when the text is in the language asked for (`pt-BR` served by `pt` counts), and `true` when it is not, including when a later tag in an array was used.
 
 **Fallback is per guide.** A guide is either fully in the locale or fully English, never mixed. A locale serves a guide only if it has that guide and every one of its steps. When a locale is requested and a guide comes back in English, it has `localeFallback: true` and `requestedLocale`, so you can tell even if you keep only the guide. `GuideSelection.locale` and `reasonCode` appear only when `locale` is passed (or a `browserLocale` for another locale than the page's); this keeps calls without it identical to 0.1.0. `getGuideLocales(guide)` lists what can serve a guide, for building a language picker.
