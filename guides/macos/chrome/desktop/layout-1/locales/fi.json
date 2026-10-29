@@ -1,0 +1,38 @@
+{
+  "title": "Sovelluksen asentaminen Chromessa",
+  "label": "Mac · Chrome · Asenna sovellus",
+  "intro": "Tämä ohje seuraa Chrome-valikon kautta kulkevaa reittiä, joka näkyy esimerkkikuvakaappauksissa. Joillakin verkkosivustoilla osoitepalkissa on myös asennuskuvake.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Avaa {label:more}-valikko",
+      "description": "Avaa verkkosivusto Chromessa. Avaa {label:more}-valikko klikkaamalla Chrome-ikkunan oikeassa yläkulmassa olevia kolmea pystysuuntaista pistettä."
+    },
+    "cast-save-and-share": {
+      "title": "Valitse {label:cast-save-and-share}",
+      "description": "Valitse {label:more}-valikosta {label:cast-save-and-share}, niin sen alivalikko avautuu."
+    },
+    "choose-install": {
+      "title": "Valitse {label:install}",
+      "description": "Klikkaa alivalikossa kohtaa {label:install}, jonka perässä on verkkosivuston tai sovelluksen nimi. Joissakin Chromen versioissa tämän kohdan nimi on Asenna sivu sovelluksena. Valitse asennustoiminto, joka on kohdan {label:create-shortcut} yläpuolella; {label:create-shortcut} on erillinen komento."
+    },
+    "continue-install": {
+      "title": "Klikkaa {label:next}",
+      "description": "Tarkista asennusikkunassa verkkosivuston nimi ja verkkotunnus ja klikkaa sitten {label:next}. Jos Chrome-versiosi siirtyy suoraan asennuksen vahvistukseen, jatka vaiheeseen {step:5}."
+    },
+    "confirm-install": {
+      "title": "Klikkaa {label:install}",
+      "description": "Seuraavassa ikkunassa sovellus lisätään kohtaan {label:chrome-apps}. Vahvista klikkaamalla {label:install}."
+    },
+    "show-in-finder": {
+      "title": "Klikkaa {label:show-in-finder}",
+      "description": "Kun Chrome ilmoittaa asennuksen onnistuneen, klikkaa {label:show-in-finder}, niin löydät asennetun sovelluksen. Voit myös valita {label:open-tab-in-app}, jolloin verkkosivusto avautuu heti omaan sovellusikkunaansa."
+    }
+  },
+  "completion": "Avaa sovellus kaksoisklikkaamalla sitä Finderissa. Voit avata sen myöhemmin uudelleen Chromesta kirjoittamalla osoitepalkkiin chrome://apps, painamalla rivinvaihtonäppäintä ja klikkaamalla sovellusta. Asennus ei edellytä pikakuvaketta Dockissa.",
+  "alt": "Kuusi Chrome-vaihetta Macissa: avaa kolmen pisteen Lisää-valikko, valitse Striimaa, tallenna ja jaa, valitse Asenna, klikkaa Seuraava, klikkaa Asenna ja klikkaa sitten Näytä Finderissä.",
+  "transitions": {},
+  "heading": "Asenna sovellus",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Sovelluksen asentaminen Chromessa Macilla",
+  "svgDesc": "Kuusi vaihetta: avaa Lisää, valitse Striimaa, tallenna ja jaa, valitse Asenna, klikkaa Seuraava, klikkaa Asenna ja valitse sitten Näytä Finderissä. Siniset ääriviivat korostavat säätimiä."
+}

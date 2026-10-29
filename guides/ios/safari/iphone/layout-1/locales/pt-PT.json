@@ -1,0 +1,29 @@
+{
+  "title": "Adicionar ao ecrã principal",
+  "label": "iPhone · Safari · Adicionar ao ecrã principal",
+  "steps": {
+    "open-page-menu": {
+      "title": "Abra o {label:page-menu}",
+      "description": "Toque no botão {label:page-menu}, no lado esquerdo da barra de endereço do site. O ícone tem três linhas horizontais, com a linha inferior mais curta."
+    },
+    "tap-share": {
+      "title": "Toque em {label:share}",
+      "description": "No {label:page-menu}, toque em {label:share}. O ícone é um quadrado com uma seta a apontar para cima."
+    },
+    "view-more": {
+      "title": "Toque em {label:view-more}",
+      "description": "Se a folha de partilha estiver reduzida, toque em {label:view-more}, indicado por uma seta para baixo, para mostrar as restantes ações. Se a lista de ações já estiver visível, continue no passo {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Toque em {label:add-to-home-screen}",
+      "description": "Na lista de ações expandida, localize e toque em {label:add-to-home-screen}. O ícone é um quadrado de cantos arredondados com um sinal de mais."
+    }
+  },
+  "completion": "Siga o ecrã de confirmação para concluir a adição da app.",
+  "alt": "Quatro passos: toque em Menu página junto ao endereço, toque em Partilhar, toque em Ver mais, se necessário, e depois toque em Adicionar ao ecrã principal.",
+  "transitions": {},
+  "heading": "Adicionar ao ecrã principal",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Adicionar ao ecrã principal no Safari do iPhone: quatro passos",
+  "svgDesc": "Quatro passos numerados no Safari do iPhone: abra o Menu página, toque em Partilhar, toque em Ver mais e depois toque em Adicionar ao ecrã principal. Os contornos azuis identificam os controlos em que tocar. As instruções completas em texto são fornecidas em separado."
+}

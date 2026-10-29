@@ -1,0 +1,22 @@
+{
+  "title": "הוספה למסך הבית מ-Brave",
+  "label": "iPhone · Brave → Safari · הוספה למסך הבית",
+  "intro": "מתחילים ב-Brave. שלב {step:3} פותח את אותו אתר ב-Safari; שלבים {step:4}–{step:7} מתבצעים ב-Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "הקישו על {label:share}",
+      "description": "ב-Brave, הקישו על {label:share} בסרגל הכלים התחתון. הסמל שלו הוא ריבוע עם חץ כלפי מעלה. אם סרגל הכלים מוסתר, הקישו על כתובת האתר כדי להציג אותו."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "בגיליון השיתוף המורחב, גללו מטה והקישו על {label:open-in-safari}. האתר ייפתח ב-Safari; בצעו שם את כל השלבים הנותרים."
+    }
+  },
+  "transitions": {
+    "continue-in-safari": "המשיכו ב-Safari"
+  },
+  "completion": "פעלו לפי מסך האישור כדי לסיים את הוספת היישום.",
+  "alt": "שבעה שלבים ממוספרים: שיתוף, הצגת עוד ופתיחה ב-Safari ב-Brave, ואחריהם ארבעת שלבי ההתקנה ב-Safari.",
+  "heading": "הוספה למסך הבית",
+  "subtitle": "iPhone · Brave → Safari"
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Přidání na plochu z prohlížeče Brave",
+  "label": "iPhone · Brave → Safari · Přidání na plochu",
+  "intro": "Začněte v prohlížeči Brave. Krok {step:3} otevře stejný web v Safari. Kroky {step:4}–{step:7} probíhají v Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Klepněte na {label:share}",
+      "description": "V Brave klepněte na {label:share} na dolním panelu nástrojů. Jeho symbolem je čtverec se šipkou nahoru. Pokud je panel nástrojů skrytý, zobrazíte ho klepnutím na adresu webu."
+    },
+    "open-in-safari": {
+      "title": "Vyberte {label:open-in-safari}",
+      "description": "V rozbaleném listu sdílení přejděte dolů a klepněte na {label:open-in-safari}. Web se otevře v Safari. Všechny zbývající kroky proveďte tam."
+    }
+  },
+  "completion": "Přidání aplikace dokončete podle pokynů na potvrzovací obrazovce.",
+  "alt": "Sedm číslovaných kroků: Sdílet, Zobrazit více a Otevřít v Safari v prohlížeči Brave a poté čtyři kroky instalace v Safari.",
+  "transitions": {
+    "continue-in-safari": "Pokračujte v Safari"
+  },
+  "heading": "Přidání na plochu",
+  "subtitle": "iPhone · Brave → Safari"
+}

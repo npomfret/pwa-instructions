@@ -1,0 +1,25 @@
+{
+  "title": "Instal app di Chrome Android",
+  "label": "Android · Chrome · Instal app",
+  "intro": "Gunakan Chrome untuk Android. Label menu yang diilustrasikan mengikuti bantuan Android Google saat ini, bukan artikel lamanya tentang Tambahkan ke layar utama. Draf dokumentasi: belum diverifikasi di perangkat; tata letak menu dan perintah konfirmasi dapat berbeda.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Buka menu {label:more}",
+      "description": "Buka situs web di Chrome. Ketuk tiga titik vertikal di samping kolom URL."
+    },
+    "install-and-create-shortcut": {
+      "title": "Ketuk {label:install-and-create-shortcut}",
+      "description": "Pilih {label:install-and-create-shortcut} dari menu. Tata letak Chrome yang lebih lama mungkin menamai opsi ini Tambahkan ke layar utama."
+    },
+    "install-app": {
+      "title": "Ketuk {label:install}",
+      "description": "Pilih {label:install}. Selesaikan perintah yang ditampilkan Chrome untuk menginstal app. {label:create-shortcut} adalah opsi terpisah yang hanya menyimpan tautan."
+    }
+  },
+  "completion": "Setelah instalasi selesai, buka app dari peluncur Android Anda. Penempatan di layar utama bergantung pada peluncur dan setelannya.",
+  "alt": "Tiga langkah instalasi Chrome Android yang diilustrasikan; garis tepi biru menandai kontrol yang didokumentasikan.",
+  "heading": "Instal app",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Menginstal app di Chrome Android",
+  "svgDesc": "Draf dokumentasi. Tiga langkah: buka Lainnya, ketuk Instal dan buat pintasan, lalu ketuk Instal. Selesaikan perintah lainnya di perangkat Anda."
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Afegeix a la pantalla d’inici des del Brave",
+  "label": "iPhone · Brave → Safari · Afegeix a la pantalla d’inici",
+  "intro": "Comença al Brave. El pas {step:3} obre el mateix lloc web al Safari; els passos {step:4}–{step:7} es fan al Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Toca {label:share}",
+      "description": "Al Brave, toca {label:share} a la barra d’eines inferior. La seva icona és un quadrat amb una fletxa cap amunt. Si la barra d’eines està amagada, toca l’adreça del lloc web per mostrar-la."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Al full per compartir desplegat, desplaça’t cap avall i toca {label:open-in-safari}. El lloc web s’obre al Safari; fes-hi tots els passos restants."
+    }
+  },
+  "transitions": {
+    "continue-in-safari": "Continua al Safari"
+  },
+  "completion": "Segueix la pantalla de confirmació per acabar d’afegir l’app.",
+  "alt": "Set passos numerats: Comparteix, Mostra’n més i Obre al Safari al Brave, seguits dels quatre passos d’instal·lació al Safari.",
+  "heading": "Afegeix a la pantalla d’inici",
+  "subtitle": "iPhone · Brave → Safari"
+}

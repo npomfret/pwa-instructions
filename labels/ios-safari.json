@@ -66,8 +66,262 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/nl-nl/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 guide (nl-nl)",
+        "deviceChecked": false,
+        "note": "Apple writes it lowercase in running text (\"het paginamenu\", \"de paginamenuknop\"); no capitalised menu title found."
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pl-pl/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple's Polish guide calls the menu \"menu Strona\" (\"Dostosowywanie menu Strona\", \"Do menu Strona można dodać...\"); there is no capitalised on-screen label in the text, so this is the guide's name for it, copied with its capitalisation."
+      },
+      "sv": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/sv-se/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple uses the lowercase definite form in running text (\"sidmenyn\", \"sidmenyknappen\"); copied as written."
+      },
+      "da": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/da-dk/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple writes \"knappen Sidemenu\" and elsewhere \"menuen Side\"."
+      },
+      "nb": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/no-no/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple writes \"Sidemeny-knappen\" (the Page Menu button)."
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fi-fi/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple writes \"Sivu-valikko\" (and \"Sivuvalikko-painikkeella\" in running text)."
+      },
+      "ru": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ru-ru/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/uk-ua/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/tr-tr/guide/iphone/iph7778f2888/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 guide (tr-tr)",
+        "deviceChecked": false,
+        "note": "Apple names the button \"Sayfa Menüsü düğmesi\" (alt text) and writes \"Sayfa Menüsü düğmesini\" in the text."
+      },
+      "cs": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/cs-cz/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple's Czech guide calls it \"nabídka Stránka\" (the menu named Stránka) and does not give the button a separate name; verify on a device."
+      },
+      "sk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/sk-sk/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS (current Slovak user guide)",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/hu-hu/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple writes both \"Oldal menü\" and \"Oldalmenü\" (as in \"Oldalmenü gomb\"); the single-word form is used."
+      },
+      "ro": {
+        "method": "model-translation",
+        "source": "model knowledge of the ro UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "model-translation",
+        "source": "model knowledge of the hr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/el-gr/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-pt/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-mx/guide/iphone/iph42ab2f3a7/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 (iPhone User Guide, es-mx)",
+        "deviceChecked": false,
+        "note": "Taken from the accessibility description \"el botón Menú de página\" of the button image; one page also writes \"menú Página\"."
+      },
+      "fr-CA": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-ca/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide (fr-ca)",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-tw/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Page quotes it as 「頁面選單」按鈕 (corner brackets are Apple's quotation marks)."
+      },
+      "zh-HK": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-hk/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple writes 「頁面選單」按鈕 and, for the menu itself, 「頁面」選單."
+      },
+      "id": {
+        "method": "model-translation",
+        "source": "model knowledge of the id UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ms-my/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27 (Panduan Pengguna iPhone)",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "model-translation",
+        "source": "model knowledge of the th UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "iOS 27 \"Page Menu\"; Apple Thai guide shows only the icon, not a name."
+      },
+      "vi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/vi-vn/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple writes \"menu Trang\" / \"nút Menu trang\" in running text."
+      },
+      "hi": {
+        "method": "model-translation",
+        "source": "model knowledge of the hi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "model-translation",
+        "source": "model knowledge of the ca UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/he-il/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "model-translation",
+        "source": "model knowledge of the ar UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/bg-bg/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 User Guide (bg)",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "paginamenu",
+    "pl": "menu Strona",
+    "sv": "sidmenyn",
+    "da": "Sidemenu",
+    "nb": "Sidemeny",
+    "fi": "Sivu-valikko",
+    "ru": "Меню страницы",
+    "uk": "Меню сторінки",
+    "tr": "Sayfa Menüsü",
+    "cs": "Nabídka Stránka",
+    "sk": "Menu stránky",
+    "hu": "Oldalmenü",
+    "ro": "Meniu Pagină",
+    "hr": "Izbornik stranice",
+    "el": "Μενού σελίδας",
+    "pt-PT": "Menu página",
+    "es-419": "Menú de página",
+    "fr-CA": "Menu de la page",
+    "zh-Hant": "頁面選單",
+    "zh-HK": "頁面選單",
+    "id": "Menu Halaman",
+    "ms": "Menu Halaman",
+    "th": "เมนูหน้า",
+    "vi": "Menu Trang",
+    "hi": "पृष्ठ मेनू",
+    "ca": "Menú de la pàgina",
+    "he": "תפריט העמוד",
+    "ar": "قائمة الصفحة",
+    "bg": "Меню на страницата",
+    "sl": "Meni strani"
   },
   "show-reader": {
     "en": "Show Reader",
@@ -136,8 +390,251 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/nl-nl/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 guide (nl-nl)",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pl-pl/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "sv": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/sv-se/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/da-dk/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/no-no/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fi-fi/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "model-translation",
+        "source": "model knowledge of the ru UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "The source had mismatched quotation marks. Replaced \"Показать режим “Для чтения“\"."
+      },
+      "uk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/uk-ua/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide",
+        "deviceChecked": false,
+        "note": "Apple's Ukrainian name for Reader is \"Зручне читання\"."
+      },
+      "tr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/tr-tr/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 guide (tr-tr)",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/cs-cz/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/sk-sk/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS (current Slovak user guide)",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/hu-hu/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ro-ro/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 (iPhone User Guide, ro-ro)",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "model-translation",
+        "source": "model knowledge of the hr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/el-gr/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-pt/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-mx/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 (iPhone User Guide, es-mx)",
+        "deviceChecked": false
+      },
+      "fr-CA": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-ca/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide (fr-ca)",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-tw/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "zh-HK": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-hk/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/id-id/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ms-my/guide/iphone/iphdc30e3b86/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27 (Panduan Pengguna iPhone)",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/th-th/guide/iphone/iphdc30e3b86/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/vi-vn/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/hi-in/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ca-es/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 / macOS 27 Catalan user guides",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/he-il/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple writes \"הצגת מצב קריאה\" (Show Reader mode); the English label is \"Show Reader\"."
+      },
+      "ar": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ar-ae/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "Apple support page (ar-ae), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/bg-bg/guide/iphone/iphdc30e3b86/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 User Guide (bg)",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Toon Reader",
+    "pl": "Pokaż Readera",
+    "sv": "Visa läsare",
+    "da": "Vis læser",
+    "nb": "Vis leser",
+    "fi": "Näytä lukija",
+    "ru": "Показать режим «Для чтения»",
+    "uk": "Показати Зручне читання",
+    "tr": "Okuyucu’yu Göster",
+    "cs": "Zobrazit čtečku",
+    "sk": "Zobraziť čítačku",
+    "hu": "Olvasó megjelenítése",
+    "ro": "Afișați Cititorul",
+    "hr": "Prikaži Čitač",
+    "el": "Εμφάνιση της Προβολής ανάγνωσης",
+    "pt-PT": "Mostrar leitor",
+    "es-419": "Mostrar lector",
+    "fr-CA": "Afficher le lecteur",
+    "zh-Hant": "顯示閱讀器",
+    "zh-HK": "顯示閲讀器",
+    "id": "Tampilkan Pembaca",
+    "ms": "Tunjukkan Pembaca",
+    "th": "แสดงตัวอ่าน",
+    "vi": "Hiển thị trình đọc",
+    "hi": "रीडर दिखाएँ",
+    "ca": "Mostra el lector",
+    "he": "הצגת מצב קריאה",
+    "ar": "إظهار القارئ",
+    "bg": "Покажи четец",
+    "sl": "Pokaži bralnik"
   },
   "summarise": {
     "en": "Summarise",
@@ -215,7 +712,257 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/nl-nl/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 guide (nl-nl)",
+        "deviceChecked": false,
+        "note": "Apple's Dutch menu item for Safari's summary action (Apple Intelligence)."
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pl-pl/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "English source is \"Summarise\" (Apple Intelligence)."
+      },
+      "sv": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/sv-se/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/da-dk/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/no-no/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fi-fi/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "English source is \"Summarise\" (Apple Intelligence)."
+      },
+      "ru": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ru-ru/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Russian: \"Create summary\"."
+      },
+      "uk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/uk-ua/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/tr-tr/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 guide (tr-tr)",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/cs-cz/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "English source is \"Summarise\" (Apple Intelligence)."
+      },
+      "sk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/sk-sk/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS (current Slovak user guide)",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/hu-hu/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "model-translation",
+        "source": "model knowledge of the ro UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "model-translation",
+        "source": "model knowledge of the hr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/el-gr/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-pt/guide/iphone/iphb3100d149/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-mx/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 (iPhone User Guide, es-mx)",
+        "deviceChecked": false
+      },
+      "fr-CA": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-ca/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS current guide (fr-ca)",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-tw/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Page text: 點一下「摘要」 (requires Apple Intelligence). English label is \"Summarise\"."
+      },
+      "zh-HK": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-hk/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/id-id/guide/iphone/iph6f08da1d2/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple's Indonesian Writing Tools action \"Rangkum\" (summarise); the Safari Summarise button is assumed to use the same word."
+      },
+      "ms": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ms-my/guide/iphone/iph1fbef4daa/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27 (Panduan Pengguna iPhone)",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/th-th/guide/iphone/iph1fbef4daa/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/vi-vn/guide/iphone/iph1fbef4daa/27/ios/27",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "English source is \"Summarise\" (Apple Intelligence)."
+      },
+      "hi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/hi-in/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27",
+        "deviceChecked": false,
+        "note": "Apple's Hindi settings page writes \"सारांश बनाएँ\" in one place and the menu item \"सारांशित करें\" in another; the menu step is used."
+      },
+      "ca": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ca-es/guide/iphone/iph1fbef4daa/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 / macOS 27 Catalan user guides",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "model-translation",
+        "source": "model knowledge of the he UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "model-translation",
+        "source": "model knowledge of the ar UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/bg-bg/guide/iphone/iphb3100d149/ios",
+        "verified": "2026-10-29",
+        "version": "iOS 27 User Guide (bg)",
+        "deviceChecked": false,
+        "note": "Apple writes \"Елементът от менюто Обобщи\"; some steps say \"Обобщение\"."
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Maak samenvatting",
+    "pl": "Streść",
+    "sv": "Sammanfatta",
+    "da": "Opsummer",
+    "nb": "Oppsummer",
+    "fi": "Tee yhteenveto",
+    "ru": "Создать конспект",
+    "uk": "Підсумувати",
+    "tr": "Özetle",
+    "cs": "Shrnout",
+    "sk": "Zhrnúť",
+    "hu": "Összegzés",
+    "ro": "Rezumați",
+    "hr": "Sažmi",
+    "el": "Σύνοψη",
+    "pt-PT": "Resumir",
+    "es-419": "Resumir",
+    "fr-CA": "Résumer",
+    "zh-Hant": "摘要",
+    "zh-HK": "摘要",
+    "id": "Rangkum",
+    "ms": "Ringkaskan",
+    "th": "สรุป",
+    "vi": "Tóm tắt",
+    "hi": "सारांशित करें",
+    "ca": "Resumeix",
+    "he": "סיכום",
+    "ar": "تلخيص",
+    "bg": "Обобщи",
+    "sl": "Povzemi"
   }
 }

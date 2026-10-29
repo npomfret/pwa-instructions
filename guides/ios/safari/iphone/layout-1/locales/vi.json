@@ -1,0 +1,28 @@
+{
+  "title": "Thêm vào Màn hình chính",
+  "label": "iPhone · Safari · Thêm vào Màn hình chính",
+  "steps": {
+    "open-page-menu": {
+      "title": "Mở {label:page-menu}",
+      "description": "Chạm vào nút {label:page-menu} ở bên trái thanh địa chỉ trang web. Biểu tượng của nút có ba đường ngang, trong đó đường dưới cùng ngắn hơn."
+    },
+    "tap-share": {
+      "title": "Chạm vào {label:share}",
+      "description": "Trong {label:page-menu}, chạm vào {label:share}. Biểu tượng của mục này là một hình vuông có mũi tên hướng lên."
+    },
+    "view-more": {
+      "title": "Chạm vào {label:view-more}",
+      "description": "Nếu bảng chia sẻ đang được thu gọn, hãy chạm vào {label:view-more} (hiển thị bằng một mũi tên hướng xuống) để hiện các tác vụ còn lại. Nếu danh sách tác vụ đã hiển thị, hãy tiếp tục ở bước {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Chạm vào {label:add-to-home-screen}",
+      "description": "Trong danh sách tác vụ đã mở rộng, hãy tìm và chạm vào {label:add-to-home-screen}. Biểu tượng của mục này là một hình vuông bo tròn có dấu cộng."
+    }
+  },
+  "completion": "Làm theo màn hình xác nhận để hoàn tất việc thêm ứng dụng.",
+  "alt": "Bốn bước: chạm vào Menu Trang bên cạnh thanh địa chỉ, chạm vào Chia sẻ, chạm vào Xem thêm nếu cần, rồi chạm vào Thêm vào Màn hình chính.",
+  "heading": "Thêm vào Màn hình chính",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Thêm vào Màn hình chính trong Safari trên iPhone: bốn bước",
+  "svgDesc": "Bốn bước được đánh số cho Safari trên iPhone: mở Menu Trang, chạm vào Chia sẻ, chạm vào Xem thêm, rồi chạm vào Thêm vào Màn hình chính. Các đường viền màu xanh dương đánh dấu những mục cần chạm. Hướng dẫn đầy đủ dạng văn bản được cung cấp riêng."
+}

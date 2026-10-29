@@ -1,0 +1,22 @@
+{
+  "title": "Hozzáadás a Főképernyőhöz a Braveből",
+  "label": "iPhone · Brave → Safari · Hozzáadás a Főképernyőhöz",
+  "intro": "Kezdje a Braveben. A {step:3}. lépésben ugyanaz a webhely megnyílik a Safariban; a {step:4}–{step:7}. lépést a Safariban kell végrehajtani.",
+  "steps": {
+    "tap-share": {
+      "title": "Koppintson a {label:share} elemre",
+      "description": "A Braveben koppintson a {label:share} elemre az alsó eszköztáron. Az ikonja egy négyzet, amelyből felfelé mutató nyíl indul ki. Ha az eszköztár el van rejtve, koppintson a webhely címére a megjelenítéséhez."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "A kibontott megosztási menüben görgessen lefelé, majd koppintson a {label:open-in-safari} elemre. A webhely megnyílik a Safariban; a további lépéseket ott hajtsa végre."
+    }
+  },
+  "completion": "A hozzáadás befejezéséhez kövesse a megerősítő képernyőn megjelenő utasításokat.",
+  "alt": "Hét számozott lépés: Megosztás, Továbbiak megtekintése és Megnyitás a Safariban a Braveben, majd a Safari négy telepítési lépése.",
+  "transitions": {
+    "continue-in-safari": "Folytatás a Safariban"
+  },
+  "heading": "Hozzáadás a Főképernyőhöz",
+  "subtitle": "iPhone · Brave → Safari"
+}

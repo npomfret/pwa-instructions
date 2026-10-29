@@ -1,0 +1,26 @@
+{
+  "title": "Adăugare în Dock din Safari",
+  "label": "Mac · Safari · Adăugare în Dock",
+  "heading": "Adăugare în Dock",
+  "subtitle": "Mac · Safari",
+  "intro": "Necesită macOS Sonoma 14 sau o versiune ulterioară. Ilustrațiile arată calea prin meniul Fișier; Safari oferă opțiunea Adăugați în Dock și în meniul Partajați.",
+  "steps": {
+    "open-file-menu": {
+      "title": "Deschideți meniul {label:file}",
+      "description": "Deschideți site-ul web în Safari. În bara de meniu din partea de sus a ecranului Mac-ului, faceți clic pe {label:file}."
+    },
+    "add-to-dock": {
+      "title": "Alegeți {label:add-to-dock}",
+      "description": "În meniul {label:file}, faceți clic pe {label:add-to-dock}. Safari deschide o casetă de dialog de confirmare pentru acest site web."
+    },
+    "confirm-add": {
+      "title": "Faceți clic pe {label:add}",
+      "description": "Păstrați sau modificați numele aplicației, apoi faceți clic pe {label:add}. O aplicație web este salvată în dosarul Aplicații și adăugată în Dock."
+    }
+  },
+  "completion": "Deschideți noua aplicație din Dock.",
+  "alt": "Trei pași în Safari pe Mac: deschideți meniul Fișier, alegeți Adăugați în Dock, apoi faceți clic pe Adaugă.",
+  "svgTitle": "Adăugare în Dock din Safari pe Mac: trei pași",
+  "svgDesc": "Trei pași numerotați în Safari pe Mac: deschideți meniul Fișier, alegeți Adăugați în Dock, apoi faceți clic pe Adaugă. Contururile albastre marchează comenzile pe care trebuie să le alegeți.",
+  "transitions": {}
+}

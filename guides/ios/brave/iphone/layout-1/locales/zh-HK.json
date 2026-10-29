@@ -1,0 +1,22 @@
+{
+  "title": "從 Brave 加至主畫面",
+  "label": "iPhone · Brave → Safari · 加至主畫面",
+  "intro": "從 Brave 開始。步驟 {step:3} 會在 Safari 中開啟同一個網站；步驟 {step:4}–{step:7} 在 Safari 中進行。",
+  "steps": {
+    "tap-share": {
+      "title": "點一下「{label:share}」",
+      "description": "在 Brave 中，點一下底部工具列中的「{label:share}」。圖像為一個帶有向上箭咀的方形。如果工具列已隱藏，請點一下網站網址來顯示。"
+    },
+    "open-in-safari": {
+      "title": "點一下「{label:open-in-safari}」",
+      "description": "在展開的分享列表中，向下捲動並點一下「{label:open-in-safari}」。網站會在 Safari 中開啟；其餘所有步驟都在 Safari 中進行。"
+    }
+  },
+  "completion": "按照確認畫面上的指示完成新增應用程式。",
+  "alt": "七個編號步驟：在 Brave 中點一下「分享」、點一下「顯示更多」，然後點一下「在 Safari 開啟」，接著在 Safari 中進行四個安裝步驟。",
+  "transitions": {
+    "continue-in-safari": "在 Safari 中繼續"
+  },
+  "heading": "加至主畫面",
+  "subtitle": "iPhone · Brave → Safari"
+}

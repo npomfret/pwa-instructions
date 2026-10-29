@@ -1,0 +1,18 @@
+{
+  "title": "Zainstaluj aplikację w Chrome w systemie Windows",
+  "label": "Windows · Chrome · Zainstaluj aplikację",
+  "intro": "Skorzystaj z drogi przez menu Chrome lub z ikony instalacji na pasku adresu, jeśli witryna ją oferuje. Wersja robocza oparta na dokumentacji: nie sprawdzono jej jeszcze na urządzeniu; układ menu i komunikaty potwierdzenia mogą się różnić.",
+  "steps": {
+    "confirm-install": {
+      "title": "Kliknij {label:install}",
+      "description": "Sprawdź nazwę aplikacji i adres witryny, a następnie kliknij {label:install}. Postępuj zgodnie z ewentualnymi dalszymi komunikatami potwierdzenia."
+    }
+  },
+  "completion": "Aby ponownie otworzyć zainstalowaną aplikację, wpisz chrome://apps na pasku adresu Chrome i wybierz aplikację.",
+  "alt": "4 ilustrowane kroki instalacji w Chrome w systemie Windows; niebieskie obwódki wskazują opisane elementy sterujące.",
+  "transitions": {},
+  "heading": "Zainstaluj aplikację",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Instalowanie aplikacji w Chrome w systemie Windows",
+  "svgDesc": "Wersja robocza oparta na dokumentacji: schematyczne elementy sterujące zgodne z aktualnymi instrukcjami producenta, a nie zweryfikowane nagranie z urządzenia. Niebieskie obwódki wskazują elementy sterujące."
+}

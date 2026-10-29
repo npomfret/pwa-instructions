@@ -40,7 +40,7 @@ test('pseudo-localization lengthens text by about 35% and keeps placeholders', (
 });
 
 test('a locale with no translation files is rejected', async () => {
-  await assert.rejects(composeGuides(root, catalog, 'nl'), /no nl translation/);
+  await assert.rejects(composeGuides(root, catalog, 'af'), /no af translation/);
 });
 
 test('reused Brave steps take Safari\'s en-XA text, renumbered', () => {
@@ -89,7 +89,8 @@ test('no untagged English text remains in a localized SVG', () => {
 test('long text wraps, squeezes or wraps onto two lines instead of overflowing', () => {
   const android = parse(pseudo.get('android-chrome-android-layout-1').svg);
   const texts = Array.from(android.getElementsByTagName('text'));
-  assert.ok(texts.some(node => node.getAttribute('textLength') && node.getAttribute('lengthAdjust') === 'spacingAndGlyphs'));
+  const squeezed = node => node.getAttribute('textLength') && node.getAttribute('lengthAdjust') === 'spacingAndGlyphs';
+  assert.ok([...pseudo.values()].some(guide => Array.from(parse(guide.svg).getElementsByTagName('text')).some(squeezed)));
   const wrapped = texts.find(node => node.getElementsByTagName('tspan').length && node.getAttribute('class') === 'label');
   assert.equal(Array.from(wrapped.childNodes).filter(node => node.nodeType === 1).length, 2);
   assert.ok(texts.some(node => node.getAttribute('class') === 'step-title' && Array.from(node.getElementsByTagName('tspan')).some(span => span.getAttribute('dy') === '26')));
@@ -104,7 +105,7 @@ test('English output carries no localization markup, which stays in the working 
 });
 
 test('the catalog locales are published and the pseudo-locale is not', async () => {
-  assert.deepEqual(catalog.locales, ['es', 'fr', 'de', 'pt-BR', 'it', 'ja', 'ko', 'zh-Hans']);
+  assert.deepEqual(catalog.locales, ['es', 'fr', 'de', 'pt-BR', 'it', 'ja', 'ko', 'zh-Hans', 'nl', 'pl', 'sv', 'da', 'nb', 'fi', 'ru', 'uk', 'tr', 'cs', 'sk', 'hu', 'ro', 'hr', 'el', 'pt-PT', 'es-419', 'fr-CA', 'zh-Hant', 'zh-HK', 'id', 'ms', 'th', 'vi', 'hi', 'ca', 'he', 'ar', 'bg', 'sl']);
   const temporary = await mkdtemp(path.join(tmpdir(), 'pwa-instructions-locales-'));
   try {
     // Only what the build passes in is written; with no locale passed, nothing is.
@@ -125,4 +126,30 @@ test('the catalog locales are published and the pseudo-locale is not', async () 
   assert.deepEqual((await readdir(path.join(dist, 'core/generated/locales'))).sort(),
     ['en', ...catalog.locales].sort().flatMap(tag => [`${tag}.d.ts`, `${tag}.js`]).sort());
   for (const tag of catalog.locales) for (const { id } of catalog.guides) assert.deepEqual((await readdir(path.join(dist, 'assets', id, tag))).sort(), ['install.svg', 'instructions.md'], `${id} ${tag}`);
+});
+
+test('Hebrew and Arabic text runs right to left in artwork that is not mirrored', async () => {
+  const { fitMarkup, rtlAnchor } = await import('../packages/pwa-instructions/src/core/fit.js');
+  assert.deepEqual(['start', 'end', 'middle', undefined].map(rtlAnchor), ['end', 'start', 'middle', 'end']);
+  for (const tag of ['he', 'ar']) {
+    const composed = await composeGuides(root, catalog, tag);
+    for (const [id, guide] of composed) {
+      const all = Array.from(parse(guide.svg).getElementsByTagName('text'));
+      const texts = all.filter(node => /[֐-ۿ]/.test(node.textContent));
+      assert.ok(texts.length > 5, `${tag} ${id}`);
+      for (const node of texts) {
+        assert.equal(node.getAttribute('direction'), 'rtl', `${tag} ${id}: ${node.textContent}`);
+        // Left-aligned text keeps its x with `end`; centered text stays centered. Nothing is mirrored.
+        assert.ok(['end', 'middle'].includes(node.getAttribute('text-anchor')), `${tag} ${id}: ${node.textContent}`);
+      }
+      // Digits, the domain and the clock stay as drawn.
+      for (const node of all.filter(item => untranslated.test(item.textContent.trim()))) assert.equal(node.getAttribute('direction'), null);
+    }
+  }
+  for (const guide of english.values()) assert.ok(!/direction=/.test(guide.svg));
+  // A wrapped label with data-center-lines is lifted by half its extra height, so it stays centered on the one-line baseline.
+  const fit = { lines: [[{ text: 'a' }], [{ text: 'b' }]] };
+  const options = { x: '10', lineHeight: 12, escape: text => text };
+  assert.ok(fitMarkup(fit, { ...options, center: true }).startsWith('<tspan x="10" dy="-6">'));
+  assert.ok(fitMarkup(fit, options).startsWith('<tspan x="10" dy="0">'));
 });

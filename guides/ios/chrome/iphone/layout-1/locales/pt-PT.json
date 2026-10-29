@@ -1,0 +1,16 @@
+{
+  "title": "Adicionar ao ecrã principal a partir do Chrome",
+  "label": "iPhone · Chrome · Adicionar ao ecrã principal",
+  "steps": {
+    "tap-share": {
+      "title": "Toque em {label:share}",
+      "description": "No Chrome, toque em {label:share} na extremidade direita da barra de endereço, na parte superior do ecrã. O ícone é um quadrado com uma seta a apontar para cima."
+    }
+  },
+  "intro": "Utilize o Chrome no seu iPhone. Estes passos instalam diretamente a partir da respetiva folha de partilha.",
+  "completion": "Siga o ecrã de confirmação para concluir a adição da app.",
+  "alt": "Três passos no Chrome do iPhone: Partilhar, no canto superior direito da barra de endereço, Ver mais e, por fim, Adicionar ao ecrã principal.",
+  "transitions": {},
+  "heading": "Adicionar ao ecrã principal",
+  "subtitle": "iPhone · Chrome"
+}

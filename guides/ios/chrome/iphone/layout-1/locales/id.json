@@ -1,0 +1,15 @@
+{
+  "title": "Tambah ke Layar Utama dari Chrome",
+  "label": "iPhone · Chrome · Tambah ke Layar Utama",
+  "intro": "Gunakan Chrome di iPhone Anda. Langkah-langkah ini menambahkan app langsung dari lembar bagikannya.",
+  "steps": {
+    "tap-share": {
+      "title": "Ketuk {label:share}",
+      "description": "Di Chrome, ketuk {label:share} di ujung kanan bilah alamat di bagian atas layar. Ikonnya berupa kotak dengan panah mengarah ke atas."
+    }
+  },
+  "completion": "Ikuti layar konfirmasi untuk menyelesaikan penambahan app.",
+  "alt": "Tiga langkah di Chrome iPhone: Bagikan di kanan atas bilah alamat, Tampilkan Lainnya, lalu Tambah ke Layar Utama.",
+  "heading": "Tambah ke Layar Utama",
+  "subtitle": "iPhone · Chrome"
+}

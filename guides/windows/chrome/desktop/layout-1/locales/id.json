@@ -1,0 +1,17 @@
+{
+  "title": "Instal app di Chrome Windows",
+  "label": "Windows · Chrome · Instal app",
+  "intro": "Gunakan jalur menu Chrome, atau ikon instal di kolom URL jika situs web menawarkannya. Draf dokumentasi: belum diverifikasi di perangkat; tata letak menu dan perintah konfirmasi dapat berbeda.",
+  "steps": {
+    "confirm-install": {
+      "title": "Klik {label:install}",
+      "description": "Periksa nama app dan alamat situs web, lalu klik {label:install}. Ikuti perintah konfirmasi lainnya yang muncul."
+    }
+  },
+  "completion": "Untuk membuka kembali app yang sudah terinstal, masukkan chrome://apps di kolom URL Chrome lalu pilih app tersebut.",
+  "alt": "Empat langkah instalasi Chrome Windows yang diilustrasikan; garis tepi biru menandai kontrol yang didokumentasikan.",
+  "heading": "Instal app",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Menginstal app di Chrome Windows",
+  "svgDesc": "Draf dokumentasi: kontrol skematis dari petunjuk vendor saat ini, bukan tangkapan perangkat yang telah diverifikasi. Garis tepi biru menandai kontrolnya."
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Installeer een app in Chrome op Windows",
+  "label": "Windows · Chrome · App installeren",
+  "intro": "Gebruik de route via het Chrome-menu of het installatiesymbool in de adresbalk als de website dat toont. Conceptdocumentatie: nog niet gecontroleerd op een apparaat; de indeling van het menu en de bevestigingsvensters kunnen afwijken.",
+  "steps": {
+    "confirm-install": {
+      "title": "Klik op {label:install}",
+      "description": "Controleer de naam van de app en het adres van de website en klik op {label:install}. Volg eventuele verdere bevestigingsvensters."
+    }
+  },
+  "completion": "Om een geïnstalleerde app opnieuw te openen, voer je chrome://apps in de adresbalk van Chrome in en selecteer je de app.",
+  "alt": "4 geïllustreerde stappen voor het installeren in Chrome op Windows; blauwe omlijningen markeren de beschreven opties.",
+  "heading": "App installeren",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "App installeren in Chrome op Windows: vier stappen",
+  "svgDesc": "Vier genummerde stappen voor Chrome op Windows: open het menu Meer, kies Casten, opslaan en delen, kies Installeren en klik op Installeren. De blauwe omlijning markeert de opties waarop je moet klikken. De volledige instructies in tekst worden apart aangeboden."
+}

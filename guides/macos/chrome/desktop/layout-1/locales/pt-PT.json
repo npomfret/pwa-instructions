@@ -1,0 +1,38 @@
+{
+  "title": "Instalar uma app no Chrome",
+  "label": "Mac · Chrome · Instalar app",
+  "steps": {
+    "open-more-menu": {
+      "title": "Abra o menu {label:more}",
+      "description": "Abra o site no Chrome. Clique nos três pontos verticais no canto superior direito da janela do Chrome para abrir o menu {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Escolha {label:cast-save-and-share}",
+      "description": "No menu {label:more}, escolha {label:cast-save-and-share} para abrir o submenu."
+    },
+    "choose-install": {
+      "title": "Escolha {label:install}",
+      "description": "No submenu, clique em {label:install} seguido do nome do site ou da app. Algumas versões do Chrome chamam a este item Instalar página como app. Escolha a ação de instalação acima de {label:create-shortcut}; {label:create-shortcut} é um comando separado."
+    },
+    "continue-install": {
+      "title": "Clique em {label:next}",
+      "description": "Na caixa de diálogo {label:install-app}, verifique o nome e o domínio do site e clique em {label:next}. Se a sua versão do Chrome avançar diretamente para a confirmação da instalação, continue no passo {step:5}."
+    },
+    "confirm-install": {
+      "title": "Clique em {label:install}",
+      "description": "A caixa de diálogo seguinte mostra a app a ser adicionada a {label:chrome-apps}. Clique em {label:install} para confirmar."
+    },
+    "show-in-finder": {
+      "title": "Clique em {label:show-in-finder}",
+      "description": "Quando o Chrome mostrar {label:successfully-installed}, clique em {label:show-in-finder} para localizar a app instalada. Também pode escolher {label:open-tab-in-app} para abrir imediatamente o site na janela da app."
+    }
+  },
+  "intro": "Este guia segue o caminho pelo menu do Chrome mostrado nas capturas de ecrã de referência. Alguns sites também oferecem um ícone de instalação na barra de endereço.",
+  "completion": "No Finder, faça duplo clique na app para a abrir. Para a reabrir mais tarde a partir do Chrome, escreva chrome://apps na barra de endereço, prima Return e clique na app. A instalação não requer um atalho na Dock.",
+  "alt": "Seis passos no Chrome do Mac: abra o menu Mais (três pontos), escolha Transmitir, guardar e partilhar, escolha Instalar, clique em Seguinte, clique em Instalar e, por fim, clique em Mostrar no Finder.",
+  "transitions": {},
+  "heading": "Instalar app",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Instalar uma app no Chrome do Mac",
+  "svgDesc": "Seis passos: abra Mais, escolha Transmitir, guardar e partilhar, escolha Instalar, clique em Seguinte, clique em Instalar e, por fim, em Mostrar no Finder. Os contornos azuis identificam os controlos."
+}

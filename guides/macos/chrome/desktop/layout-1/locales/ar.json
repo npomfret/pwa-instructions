@@ -1,0 +1,38 @@
+{
+  "title": "تثبيت تطبيق في Chrome",
+  "label": "Mac · Chrome · تثبيت تطبيق",
+  "intro": "يتبع هذا الدليل مسار قائمة Chrome الظاهر في لقطات الشاشة المرجعية. كما توفّر بعض المواقع الإلكترونية رمز تثبيت في شريط العنوان.",
+  "steps": {
+    "open-more-menu": {
+      "title": "افتح قائمة \"{label:more}\"",
+      "description": "افتح الموقع الإلكتروني في Chrome. انقر على النقاط الثلاث الرأسية في أعلى نافذة Chrome لفتح قائمة \"{label:more}\"."
+    },
+    "cast-save-and-share": {
+      "title": "اختر {label:cast-save-and-share}",
+      "description": "في قائمة \"{label:more}\"، اختر {label:cast-save-and-share} لفتح قائمتها الفرعية."
+    },
+    "choose-install": {
+      "title": "اختر {label:install}",
+      "description": "في القائمة الفرعية، انقر على {label:install} متبوعًا باسم الموقع الإلكتروني أو التطبيق. تسمّي بعض إصدارات Chrome هذا الخيار \"تثبيت الصفحة كتطبيق\". اختر إجراء التثبيت الموجود أعلى \"{label:create-shortcut}\"؛ فالأمر \"{label:create-shortcut}\" أمر منفصل."
+    },
+    "continue-install": {
+      "title": "انقر على {label:next}",
+      "description": "في مربع حوار \"{label:install-app}\"، تحقّق من اسم الموقع الإلكتروني ونطاقه، ثم انقر على {label:next}. إذا انتقل إصدار Chrome لديك مباشرةً إلى تأكيد التثبيت، فتابع من الخطوة {step:5}."
+    },
+    "confirm-install": {
+      "title": "انقر على {label:install}",
+      "description": "يعرض مربع الحوار التالي إضافة التطبيق إلى \"{label:chrome-apps}\". انقر على {label:install} للتأكيد."
+    },
+    "show-in-finder": {
+      "title": "انقر على {label:show-in-finder}",
+      "description": "عندما يعرض Chrome الرسالة \"{label:successfully-installed}\"، انقر على {label:show-in-finder} للعثور على التطبيق المثبّت. يمكنك أيضًا اختيار {label:open-tab-in-app} لفتح الموقع الإلكتروني في نافذة التطبيق فورًا."
+    }
+  },
+  "completion": "في الباحث، انقر نقرًا مزدوجًا على التطبيق لفتحه. ولإعادة فتحه لاحقًا من Chrome، اكتب chrome://apps في شريط العنوان، ثم اضغط على Return، ثم انقر على التطبيق. لا يتطلب التثبيت وجود اختصار في شريط الأيقونات.",
+  "alt": "ست خطوات في Chrome على Mac: افتح قائمة المزيد ذات النقاط الثلاث، ثم اختر البثّ والحفظ والمشاركة، ثم اختر تثبيت، ثم انقر على التالي، ثم انقر على تثبيت، ثم انقر على إظهار في الباحث.",
+  "transitions": {},
+  "heading": "تثبيت تطبيق",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "تثبيت تطبيق في Chrome على Mac",
+  "svgDesc": "ست خطوات: افتح المزيد، ثم اختر البثّ والحفظ والمشاركة، ثم اختر تثبيت، ثم انقر على التالي، ثم انقر على تثبيت، ثم إظهار في الباحث. تحدّد الإطارات الزرقاء عناصر التحكم."
+}

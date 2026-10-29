@@ -1,0 +1,38 @@
+{
+  "title": "在 Chrome 中安裝應用程式",
+  "label": "Mac · Chrome · 安裝應用程式",
+  "intro": "本指南依照參考截圖中的 Chrome 選單操作。部分網站亦會在網址列顯示安裝圖像。",
+  "steps": {
+    "open-more-menu": {
+      "title": "開啟「{label:more}」選單",
+      "description": "在 Chrome 中開啟網站。按一下 Chrome 視窗右上角的三個垂直圓點，開啟「{label:more}」選單。"
+    },
+    "cast-save-and-share": {
+      "title": "選擇「{label:cast-save-and-share}」",
+      "description": "在「{label:more}」選單中，選擇「{label:cast-save-and-share}」以開啟其子選單。"
+    },
+    "choose-install": {
+      "title": "選擇「{label:install}」",
+      "description": "在子選單中，按一下「{label:install}」加上網站或應用程式名稱的項目。部分 Chrome 版本會將此項目稱為「將此網頁安裝為應用程式」。請選擇「{label:create-shortcut}」上方的安裝動作；「{label:create-shortcut}」是另一個指令。"
+    },
+    "continue-install": {
+      "title": "按一下「{label:next}」",
+      "description": "在「{label:install-app}」對話框中，檢查網站名稱和網域，然後按一下「{label:next}」。如果你的 Chrome 版本直接顯示「{label:install}」確認畫面，請前往步驟 {step:5}。"
+    },
+    "confirm-install": {
+      "title": "按一下「{label:install}」",
+      "description": "下一個對話框會顯示應用程式將加入「{label:chrome-apps}」。按一下「{label:install}」確認。"
+    },
+    "show-in-finder": {
+      "title": "按一下「{label:show-in-finder}」",
+      "description": "當 Chrome 顯示「{label:successfully-installed}」時，按一下「{label:show-in-finder}」以找到已安裝的應用程式。你亦可選擇「{label:open-tab-in-app}」，立即在應用程式視窗中開啟網站。"
+    }
+  },
+  "completion": "在 Finder 中按兩下應用程式即可開啟。日後如要從 Chrome 重新開啟，請在網址列輸入 chrome://apps，按下 Return 鍵，然後按一下該應用程式。安裝時不需要 Dock 捷徑。",
+  "alt": "Mac 上 Chrome 的六個步驟：開啟三點的「更多選項」選單，選擇「投放、儲存和分享」，選擇「安裝」，按一下「下一個」，按一下「安裝」，然後按一下「在 Finder 中顯示」。",
+  "heading": "安裝應用程式",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "在 Mac 的 Chrome 中安裝應用程式",
+  "svgDesc": "六個步驟：開啟「更多選項」，選擇「投放、儲存和分享」，選擇「安裝」，按一下「下一個」，按一下「安裝」，然後按一下「在 Finder 中顯示」。藍色外框標示控制項目。",
+  "transitions": {}
+}

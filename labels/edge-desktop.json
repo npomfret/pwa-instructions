@@ -66,8 +66,266 @@
         "version": "Edge help (current)",
         "deviceChecked": false,
         "note": "Another Microsoft zh-cn page writes 设置和更多; this page is the cleaner quote."
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/nl-nl/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, nl-nl)",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/pl-pl/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, pl-pl)",
+        "deviceChecked": false
+      },
+      "sv": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/sv-se/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false,
+        "note": "Microsoft writes \"Inställningar och mer ...\" where \"...\" stands for the three-dot icon."
+      },
+      "da": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/da-dk/microsoft-edge/installere-administrere-eller-afinstallere-apps-i-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false,
+        "note": "Page writes \"Indstillinger og mere ...\"; the label is copied without the spaced ellipsis."
+      },
+      "nb": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/nb-no/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Edge (current help)",
+        "deviceChecked": false,
+        "note": "Copied from Microsoft's Norwegian Edge help page; the page writes \"Innstillinger og mer ...\" where \"...\" stands for the three-dot button, so it is left out here."
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/fi-fi/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, fi-fi)",
+        "deviceChecked": false,
+        "note": "Page writes \"Asetukset ja muuta ...\" where the dots stand for the three-dot icon."
+      },
+      "ru": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ru-ru/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, ru-ru)",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/uk-ua/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false,
+        "note": "The page writes \"Настройки та інше ...\" (the trailing dots stand for the menu icon)."
+      },
+      "tr": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/tr-tr/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false,
+        "note": "The page writes \"Ayarlar ve daha fazlası...\"; the trailing dots stand for the menu's ellipsis icon and are omitted."
+      },
+      "cs": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/cs-cz/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Edge help (cs-cz), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/sk-sk/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge help (sk-sk), read 2026-10-29",
+        "deviceChecked": false,
+        "note": "The page writes it in lower case inside a menu path (\"nastavenia a ďalšie\"); capitalised here as a menu name."
+      },
+      "hu": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/hu-hu/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, hu-hu)",
+        "deviceChecked": false,
+        "note": "The page writes \"Beállítások és egyebek ...\" where the trailing \" ...\" stands for the three-dot icon; it is not part of the label."
+      },
+      "ro": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ro-ro/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false,
+        "note": "Page text: \"Setări și multe altele ...\" (the dots are the menu icon)."
+      },
+      "hr": {
+        "method": "model-translation",
+        "source": "model knowledge of the hr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/el-gr/microsoft-edge/%CE%B5%CE%B3%CE%BA%CE%B1%CF%84%CE%AC%CF%83%CF%84%CE%B1%CF%83%CE%B7-%CF%83%CF%8D%CE%BD%CF%84%CE%B1%CE%BE%CE%B7-%CE%AE-%CE%B1%CF%80%CE%B5%CE%B3%CE%BA%CE%B1%CF%84%CE%AC%CF%83%CF%84%CE%B1%CF%83%CE%B7-%CE%B5%CF%86%CE%B1%CF%81%CE%BC%CE%BF%CE%B3%CF%8E%CE%BD-%CF%83%CF%84%CE%BF-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false,
+        "note": "Microsoft writes \"Ρυθμίσεις και πολλά άλλα ...\" where the trailing dots stand for the menu icon; the dots are left out here."
+      },
+      "pt-PT": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-PT UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page text carried a stray ellipsis. Replaced \"Definições e muito mais...\"."
+      },
+      "es-419": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/es-mx/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge support (es-mx), read 2026-10-29",
+        "deviceChecked": false,
+        "note": "The page writes the last step as an imperative, \"Instala este sitio como una aplicación\"."
+      },
+      "fr-CA": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr-CA UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-tw/microsoft-edge/view-and-delete-browser-history-in-microsoft-edge-00cf7943-a9e1-975a-a33d-ac10ce454ca4",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current)",
+        "deviceChecked": false,
+        "note": "Page quotes it as \"[設定及其他]\"; brackets removed."
+      },
+      "zh-HK": {
+        "method": "model-translation",
+        "source": "model knowledge of the zh-HK UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/id-id/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "model-translation",
+        "source": "model knowledge of the ms UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "No Malay Edge support page exists (support.microsoft.com/ms-my/ serves English); wording follows Microsoft Malay UI style."
+      },
+      "th": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/th-th/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current)",
+        "deviceChecked": false,
+        "note": "The Thai support page writes \"การตั้งค่าและอื่น ๆ\" with a space before ๆ; copied as shown."
+      },
+      "vi": {
+        "method": "model-translation",
+        "source": "model knowledge of the vi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page used a different phrasing from the Edge menu item. Replaced \"Cài đặt và nhiều hơn nữa\"."
+      },
+      "hi": {
+        "method": "model-translation",
+        "source": "model knowledge of the hi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "model-translation",
+        "source": "model knowledge of the ca UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/he-il/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge current help",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ar-sa/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge help (ar-sa), read 2026-10-29",
+        "deviceChecked": false,
+        "note": "The page writes \"الإعدادات والمزيد ...\" where the dots stand for the menu icon; the label is kept without them."
+      },
+      "bg": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/bg-bg/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Edge help (bg), read 2026-10-29",
+        "deviceChecked": false,
+        "note": "The page writes \"Настройки и още ...\" with trailing dots (the menu icon); the label text is copied without them."
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Instellingen en meer",
+    "pl": "Ustawienia i nie tylko",
+    "sv": "Inställningar och mer",
+    "da": "Indstillinger og mere",
+    "nb": "Innstillinger og mer",
+    "fi": "Asetukset ja muuta",
+    "ru": "Параметры и многое другое",
+    "uk": "Настройки та інше",
+    "tr": "Ayarlar ve daha fazlası",
+    "cs": "Nastavení a další",
+    "sk": "Nastavenia a ďalšie",
+    "hu": "Beállítások és egyebek",
+    "ro": "Setări și multe altele",
+    "hr": "Postavke i ostalo",
+    "el": "Ρυθμίσεις και πολλά άλλα",
+    "pt-PT": "Definições e muito mais",
+    "es-419": "Configuración y más",
+    "fr-CA": "Paramètres et plus encore",
+    "zh-Hant": "設定及其他",
+    "zh-HK": "設定及更多",
+    "id": "Pengaturan dan lainnya",
+    "ms": "Tetapan dan lain-lain",
+    "th": "การตั้งค่าและอื่น ๆ",
+    "vi": "Cài đặt và nhiều tùy chọn khác",
+    "hi": "सेटिंग और अन्य",
+    "ca": "Configuració i més",
+    "he": "הגדרות ועוד",
+    "ar": "الإعدادات والمزيد",
+    "bg": "Настройки и още",
+    "sl": "Nastavitve in drugo"
   },
   "more-tools": {
     "en": "More tools",
@@ -135,8 +393,253 @@
         "verified": "2026-10-29",
         "version": "Edge help (current)",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/nl-nl/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, nl-nl)",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/pl-pl/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, pl-pl)",
+        "deviceChecked": false
+      },
+      "sv": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/sv-se/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/da-dk/microsoft-edge/installere-administrere-eller-afinstallere-apps-i-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/nb-no/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Edge (current help)",
+        "deviceChecked": false
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/fi-fi/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, fi-fi)",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ru-ru/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, ru-ru)",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/uk-ua/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/tr-tr/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/cs-cz/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Edge help (cs-cz), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/sk-sk/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge help (sk-sk), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/hu-hu/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, hu-hu)",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ro-ro/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "model-translation",
+        "source": "model knowledge of the hr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/el-gr/microsoft-edge/%CE%B5%CE%B3%CE%BA%CE%B1%CF%84%CE%AC%CF%83%CF%84%CE%B1%CF%83%CE%B7-%CF%83%CF%8D%CE%BD%CF%84%CE%B1%CE%BE%CE%B7-%CE%AE-%CE%B1%CF%80%CE%B5%CE%B3%CE%BA%CE%B1%CF%84%CE%AC%CF%83%CF%84%CE%B1%CF%83%CE%B7-%CE%B5%CF%86%CE%B1%CF%81%CE%BC%CE%BF%CE%B3%CF%8E%CE%BD-%CF%83%CF%84%CE%BF-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/pt-pt/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current help page)",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/es-mx/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge support (es-mx), read 2026-10-29",
+        "deviceChecked": false,
+        "note": "The page writes the last step as an imperative, \"Instala este sitio como una aplicación\"."
+      },
+      "fr-CA": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr-CA UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-tw/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current)",
+        "deviceChecked": false,
+        "note": "Microsoft page may be machine-translated; the Edge UI wording may differ slightly."
+      },
+      "zh-HK": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-HK/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current Edge help",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/id-id/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "model-translation",
+        "source": "model knowledge of the ms UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "The earlier value was a literal word order (\"Lagi alat\"). Replaced \"Lagi alat\"."
+      },
+      "th": {
+        "method": "model-translation",
+        "source": "model knowledge of the th UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "The Thai support page renders this item garbled (\"เครื่องมือ >เพิ่มเติม\"), so the standard Thai term is used."
+      },
+      "vi": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/vi-vn/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current Edge help",
+        "deviceChecked": false,
+        "note": "Microsoft help page wording (machine-translated); verify against a real vi Edge."
+      },
+      "hi": {
+        "method": "model-translation",
+        "source": "model knowledge of the hi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "model-translation",
+        "source": "model knowledge of the ca UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/he-il/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge current help",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ar-sa/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge help (ar-sa), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/bg-bg/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Edge help (bg), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Meer hulpprogramma's",
+    "pl": "Więcej narzędzi",
+    "sv": "Fler verktyg",
+    "da": "Flere værktøjer",
+    "nb": "Flere verktøy",
+    "fi": "Lisää työkaluja",
+    "ru": "Другие инструменты",
+    "uk": "Додаткові засоби",
+    "tr": "Diğer araçlar",
+    "cs": "Další nástroje",
+    "sk": "Ďalšie nástroje",
+    "hu": "További eszközök",
+    "ro": "Mai multe instrumente",
+    "hr": "Dodatni alati",
+    "el": "Περισσότερα εργαλεία",
+    "pt-PT": "Mais ferramentas",
+    "es-419": "Más herramientas",
+    "fr-CA": "Autres outils",
+    "zh-Hant": "更多工具",
+    "zh-HK": "更多工具",
+    "id": "Alat lainnya",
+    "ms": "Alat lain",
+    "th": "เครื่องมือเพิ่มเติม",
+    "vi": "Các công cụ khác",
+    "hi": "अधिक टूल",
+    "ca": "Més eines",
+    "he": "כלים נוספים",
+    "ar": "المزيد من الأدوات",
+    "bg": "Още инструменти",
+    "sl": "Več orodij"
   },
   "apps": {
     "en": "Apps",
@@ -206,8 +709,257 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/nl-nl/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, nl-nl)",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/pl-pl/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, pl-pl)",
+        "deviceChecked": false
+      },
+      "sv": {
+        "method": "model-translation",
+        "source": "model knowledge of the sv UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Swedish form of the Edge menu item; the help page left \"Apps\". Replaced \"Apps\"."
+      },
+      "da": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/da-dk/microsoft-edge/installere-administrere-eller-afinstallere-apps-i-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "model-translation",
+        "source": "model knowledge of the nb UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Norwegian form of the Edge menu item; the help page left \"Apps\". Replaced \"Apps\"."
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/fi-fi/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, fi-fi)",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ru-ru/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, ru-ru)",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/uk-ua/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "model-translation",
+        "source": "model knowledge of the tr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's Turkish page leaves this item in English (\"Apps\"); the Turkish Edge menu shows \"Uygulamalar\"."
+      },
+      "cs": {
+        "method": "model-translation",
+        "source": "model knowledge of the cs UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/sk-sk/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge help (sk-sk), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "model-translation",
+        "source": "model knowledge of the hu UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "The hu-hu Edge support page leaves this menu item as English 'Apps'; 'Alkalmazások' is the expected Hungarian Edge UI string."
+      },
+      "ro": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ro-ro/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "model-translation",
+        "source": "model knowledge of the hr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/el-gr/microsoft-edge/%CE%B5%CE%B3%CE%BA%CE%B1%CF%84%CE%AC%CF%83%CF%84%CE%B1%CF%83%CE%B7-%CF%83%CF%8D%CE%BD%CF%84%CE%B1%CE%BE%CE%B7-%CE%AE-%CE%B1%CF%80%CE%B5%CE%B3%CE%BA%CE%B1%CF%84%CE%AC%CF%83%CF%84%CE%B1%CF%83%CE%B7-%CE%B5%CF%86%CE%B1%CF%81%CE%BC%CE%BF%CE%B3%CF%8E%CE%BD-%CF%83%CF%84%CE%BF-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/pt-pt/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current help page)",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/es-mx/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge support (es-mx), read 2026-10-29",
+        "deviceChecked": false,
+        "note": "The page writes the last step as an imperative, \"Instala este sitio como una aplicación\"."
+      },
+      "fr-CA": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr-CA UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-tw/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current)",
+        "deviceChecked": false,
+        "note": "Microsoft page may be machine-translated; the Edge UI wording may differ slightly."
+      },
+      "zh-HK": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-HK/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current Edge help",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "model-translation",
+        "source": "model knowledge of the id UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's Indonesian docs left \"Apps\" in English. Replaced \"Apps\"."
+      },
+      "ms": {
+        "method": "model-translation",
+        "source": "model knowledge of the ms UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "No Malay Edge support page exists; wording follows Microsoft Malay UI style."
+      },
+      "th": {
+        "method": "model-translation",
+        "source": "model knowledge of the th UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "The Thai support page renders this item garbled (\"ปพลิ เค ชัน\"); Edge Thai UI uses \"แอป\"."
+      },
+      "vi": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/vi-vn/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current Edge help",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "model-translation",
+        "source": "model knowledge of the hi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "model-translation",
+        "source": "model knowledge of the ca UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/he-il/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge current help",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ar-sa/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge help (ar-sa), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/bg-bg/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Edge help (bg), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Apps",
+    "pl": "Aplikacje",
+    "sv": "Appar",
+    "da": "Apps",
+    "nb": "Apper",
+    "fi": "Sovellukset",
+    "ru": "Приложения",
+    "uk": "Програми",
+    "tr": "Uygulamalar",
+    "cs": "Aplikace",
+    "sk": "Aplikácie",
+    "hu": "Alkalmazások",
+    "ro": "Aplicații",
+    "hr": "Aplikacije",
+    "el": "Εφαρμογές",
+    "pt-PT": "Aplicações",
+    "es-419": "Aplicaciones",
+    "fr-CA": "Applications",
+    "zh-Hant": "應用程式",
+    "zh-HK": "應用程式",
+    "id": "Aplikasi",
+    "ms": "Apl",
+    "th": "แอป",
+    "vi": "Ứng dụng",
+    "hi": "ऐप्स",
+    "ca": "Aplicacions",
+    "he": "יישומים",
+    "ar": "تطبيقات",
+    "bg": "Приложения",
+    "sl": "Aplikacije"
   },
   "install-this-site-as-an-app": {
     "en": "Install this site as an app",
@@ -277,8 +1029,265 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "model-translation",
+        "source": "model knowledge of the nl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Installeer deze site als een app\"."
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/pl-pl/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, pl-pl)",
+        "deviceChecked": false
+      },
+      "sv": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/sv-se/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/da-dk/microsoft-edge/installere-administrere-eller-afinstallere-apps-i-microsoft-edge-0c156575-a94a-45e4-a54f-3a84846f6113",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge, current help",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "model-translation",
+        "source": "model knowledge of the nb UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Installer dette området som en app\"."
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/fi-fi/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current, fi-fi)",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "model-translation",
+        "source": "model knowledge of the ru UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Установите этот сайт как приложение\"."
+      },
+      "uk": {
+        "method": "model-translation",
+        "source": "model knowledge of the uk UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Інсталюйте цей сайт як програму\"."
+      },
+      "tr": {
+        "method": "model-translation",
+        "source": "model knowledge of the tr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Bu siteyi uygulama olarak yükleyin\"."
+      },
+      "cs": {
+        "method": "model-translation",
+        "source": "model knowledge of the cs UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Nainstalujte tento web jako aplikaci\"."
+      },
+      "sk": {
+        "method": "model-translation",
+        "source": "model knowledge of the sk UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Nainštalujte túto lokalitu ako aplikáciu\"."
+      },
+      "hu": {
+        "method": "model-translation",
+        "source": "model knowledge of the hu UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Telepítse ezt a webhelyet alkalmazásként\"."
+      },
+      "ro": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/ro-ro/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current (web page, 2026-10-29)",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "model-translation",
+        "source": "model knowledge of the hr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "model-translation",
+        "source": "model knowledge of the el UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Εγκαταστήστε αυτήν την τοποθεσία ως εφαρμογή\"."
+      },
+      "pt-PT": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-PT UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Instale este site como uma aplicação\"."
+      },
+      "es-419": {
+        "method": "model-translation",
+        "source": "model knowledge of the es-419 UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Instala este sitio como una aplicación\"."
+      },
+      "fr-CA": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr-CA UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-tw/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current)",
+        "deviceChecked": false,
+        "note": "Microsoft page may be machine-translated; the Edge UI wording may differ slightly."
+      },
+      "zh-HK": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/zh-HK/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current Edge help",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/id-id/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "model-translation",
+        "source": "model knowledge of the ms UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "No Malay Edge support page exists; wording follows Microsoft Malay UI style."
+      },
+      "th": {
+        "method": "vendor-docs",
+        "source": "https://support.microsoft.com/th-th/edge/install-manage-or-uninstall-apps-in-microsoft-edge",
+        "verified": "2026-10-29",
+        "version": "Microsoft Edge (current)",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "model-translation",
+        "source": "model knowledge of the vi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Cài đặt site này dưới dạng ứng dụng\"."
+      },
+      "hi": {
+        "method": "model-translation",
+        "source": "model knowledge of the hi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "model-translation",
+        "source": "model knowledge of the ca UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "model-translation",
+        "source": "model knowledge of the he UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"התקן אתר זה כיישום\"."
+      },
+      "ar": {
+        "method": "model-translation",
+        "source": "model knowledge of the ar UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"قم بتثبيت هذا الموقع كتطبيق\"."
+      },
+      "bg": {
+        "method": "model-translation",
+        "source": "model knowledge of the bg UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's help page uses a sentence form; the Edge menu item uses the form below. Replaced \"Инсталирайте този сайт като приложение\"."
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Deze site installeren als app",
+    "pl": "Zainstaluj tę witrynę jako aplikację",
+    "sv": "Installera den här webbplatsen som en app",
+    "da": "Installér dette websted som en app",
+    "nb": "Installer dette nettstedet som en app",
+    "fi": "Asenna tämä sivusto sovelluksena",
+    "ru": "Установить этот сайт как приложение",
+    "uk": "Установити цей сайт як програму",
+    "tr": "Bu siteyi uygulama olarak yükle",
+    "cs": "Nainstalovat tento web jako aplikaci",
+    "sk": "Nainštalovať túto lokalitu ako aplikáciu",
+    "hu": "Webhely telepítése alkalmazásként",
+    "ro": "Instalați acest site ca aplicație",
+    "hr": "Instaliraj ovu web-lokaciju kao aplikaciju",
+    "el": "Εγκατάσταση αυτής της τοποθεσίας ως εφαρμογής",
+    "pt-PT": "Instalar este site como uma aplicação",
+    "es-419": "Instalar este sitio como una aplicación",
+    "fr-CA": "Installer ce site en tant qu’application",
+    "zh-Hant": "將本網站安裝為應用程式",
+    "zh-HK": "將本網站安裝為應用程式",
+    "id": "Instal situs ini sebagai aplikasi",
+    "ms": "Pasang tapak ini sebagai apl",
+    "th": "ติดตั้งไซต์นี้เป็นแอป",
+    "vi": "Cài đặt trang web này dưới dạng ứng dụng",
+    "hi": "इस साइट को ऐप के रूप में इंस्टॉल करें",
+    "ca": "Instal·la aquest lloc com a aplicació",
+    "he": "התקנת אתר זה כיישום",
+    "ar": "تثبيت هذا الموقع كتطبيق",
+    "bg": "Инсталиране на този сайт като приложение",
+    "sl": "Namesti to spletno mesto kot aplikacijo"
   },
   "install-app": {
     "en": "Install app",
@@ -349,8 +1358,261 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_nl.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pl.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; Edge's install dialog is Chromium-based but not confirmed in Edge."
+      },
+      "sv": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sv.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; the Chromium string is used because no Microsoft Swedish page quotes this dialog."
+      },
+      "da": {
+        "method": "model-translation",
+        "source": "model knowledge of the da UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's Danish spelling uses \"Installér\"."
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_no.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fi.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; Edge's install dialog is Chromium-based but not confirmed in Edge."
+      },
+      "ru": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ru.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_uk.xtb (message id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_tr.xtb (message id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based and shares this string with Chrome."
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_cs.xtb (message IDS_INSTALL_PWA_DIALOG_TITLE, id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; Edge's install dialog is Chromium-based but not confirmed in Edge."
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sk.xtb (message IDS_INSTALL_PWA_DIALOG_TITLE, id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_hu.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ro.xtb (message IDS_INSTALL_PWA_DIALOG_TITLE, id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_hr.xtb (message id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; same string as Chromium."
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_el.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-PT UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es-419.xtb (message id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string shared by Edge"
+      },
+      "fr-CA": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr-CA.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-TW.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; Edge shares the Chromium install dialog but this was not read from Edge itself."
+      },
+      "zh-HK": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-HK.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_id.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; not confirmed in Edge."
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ms.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; same message as Chrome."
+      },
+      "th": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_th.xtb (message id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_vi.xtb (message IDS_INSTALL_PWA_DIALOG_TITLE, id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_hi.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string, which Edge shares."
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ca.xtb (message id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_iw.xtb (message IDS_INSTALL_PWA_DIALOG_TITLE, id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ar.xtb (message IDS_INSTALL_PWA_DIALOG_TITLE, id 6540174167103635041)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_bg.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; Chromium string used. Not an exact label on the Microsoft bg page."
+      },
+      "sl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sl.xtb (message id 6540174167103635041, IDS_INSTALL_PWA_DIALOG_TITLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "App installeren",
+    "pl": "Zainstaluj aplikację",
+    "sv": "Installera appen",
+    "da": "Installér app",
+    "nb": "Installer appen",
+    "fi": "Sovelluksen asennus",
+    "ru": "Установить приложение",
+    "uk": "Установити додаток",
+    "tr": "Uygulamayı yükle",
+    "cs": "Instalovat aplikaci",
+    "sk": "Inštalácia aplikácie",
+    "hu": "Alkalmazás telepítése",
+    "ro": "Instalează aplicația",
+    "hr": "Instaliranje aplikacije",
+    "el": "Εγκατάσταση εφαρμογής",
+    "pt-PT": "Instalar aplicação",
+    "es-419": "Instalar la app",
+    "fr-CA": "Installer l'appli",
+    "zh-Hant": "安裝應用程式",
+    "zh-HK": "安裝應用程式",
+    "id": "Instal aplikasi",
+    "ms": "Pasang apl",
+    "th": "ติดตั้งแอป",
+    "vi": "Cài đặt ứng dụng",
+    "hi": "ऐप्लिकेशन इंस्टॉल करें",
+    "ca": "Instal·la l'aplicació",
+    "he": "התקנת האפליקציה",
+    "ar": "تثبيت التطبيق",
+    "bg": "Инсталиране на приложение",
+    "sl": "Namestitev aplikacije"
   },
   "cancel": {
     "en": "Cancel",
@@ -421,8 +1683,260 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_nl.xtb (message id 7658239707568436148, IDS_CONTENT_CONTEXT_SPELLING_BUBBLE_DISABLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pl.xtb (message id 7658239707568436148, IDS_CONTENT_CONTEXT_SPELLING_BUBBLE_DISABLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Generic Chromium Cancel; not confirmed in Edge."
+      },
+      "sv": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sv.xtb (message id 7658239707568436148, IDS_DOWNLOAD_LINK_CANCEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; the Chromium string is used because no Microsoft Swedish page quotes this dialog."
+      },
+      "da": {
+        "method": "model-translation",
+        "source": "model knowledge of the da UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_no.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fi.xtb (message id 7658239707568436148, IDS_CONTENT_CONTEXT_SPELLING_BUBBLE_DISABLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Generic Chromium Cancel; not confirmed in Edge."
+      },
+      "ru": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ru.xtb (message id 7658239707568436148, IDS_CONTENT_CONTEXT_SPELLING_BUBBLE_DISABLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_uk.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_tr.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Shared Chromium string."
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_cs.xtb (message IDS_DOWNLOAD_LINK_CANCEL, id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; Edge's install dialog is Chromium-based but not confirmed in Edge."
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sk.xtb (message IDS_CONTENT_CONTEXT_SPELLING_BUBBLE_DISABLE, id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_hu.xtb (message id 7658239707568436148, IDS_CONTENT_CONTEXT_SPELLING_BUBBLE_DISABLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Generic Chromium Cancel; not confirmed in Edge."
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ro.xtb (message IDS_DOWNLOAD_LINK_CANCEL, id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_hr.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; same string as Chromium."
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_el.xtb (message id 7658239707568436148, IDS_CONTENT_CONTEXT_SPELLING_BUBBLE_DISABLE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-PT UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es-419.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string shared by Edge"
+      },
+      "fr-CA": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr-CA.xtb (message id 7658239707568436148, IDS_DOWNLOAD_LINK_CANCEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-TW.xtb (message id 7658239707568436148, IDS_DOWNLOAD_LINK_CANCEL and others)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; not read from Edge itself."
+      },
+      "zh-HK": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-HK.xtb (message id 7658239707568436148, IDS_DOWNLOAD_LINK_CANCEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_id.xtb (message id 7658239707568436148, IDS_DOWNLOAD_LINK_CANCEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; not confirmed in Edge."
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ms.xtb (message id 7658239707568436148, IDS_DOWNLOAD_LINK_CANCEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; same message as Chrome."
+      },
+      "th": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_th.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_vi.xtb (message IDS_DOWNLOAD_LINK_CANCEL, id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "model-translation",
+        "source": "model knowledge of the hi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Chromium's string was \"अभी नहीं\" (Not now), the wrong message for Cancel. Replaced \"अभी नहीं\"."
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ca.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_iw.xtb (message IDS_DOWNLOAD_LINK_CANCEL, id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ar.xtb (message IDS_DOWNLOAD_LINK_CANCEL, id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_bg.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sl.xtb (message id 7658239707568436148)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Annuleren",
+    "pl": "Anuluj",
+    "sv": "Avbryt",
+    "da": "Annuller",
+    "nb": "Avbryt",
+    "fi": "Peru",
+    "ru": "Отмена",
+    "uk": "Скасувати",
+    "tr": "İptal",
+    "cs": "Zrušit",
+    "sk": "Zrušiť",
+    "hu": "Mégse",
+    "ro": "Anulează",
+    "hr": "Odustani",
+    "el": "Ακύρωση",
+    "pt-PT": "Cancelar",
+    "es-419": "Cancelar",
+    "fr-CA": "Annuler",
+    "zh-Hant": "取消",
+    "zh-HK": "取消",
+    "id": "Batal",
+    "ms": "Batal",
+    "th": "ยกเลิก",
+    "vi": "Huỷ",
+    "hi": "रद्द करें",
+    "ca": "Cancel·la",
+    "he": "ביטול",
+    "ar": "إلغاء",
+    "bg": "Отказ",
+    "sl": "Prekliči"
   },
   "install": {
     "en": "Install",
@@ -493,7 +2007,259 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_nl.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pl.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; not confirmed in Edge."
+      },
+      "sv": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sv.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; the Chromium string is used because no Microsoft Swedish page quotes this dialog."
+      },
+      "da": {
+        "method": "model-translation",
+        "source": "model knowledge of the da UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Microsoft's Danish spelling uses \"Installér\"."
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_no.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fi.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; not confirmed in Edge."
+      },
+      "ru": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ru.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_uk.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_tr.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Shared Chromium string."
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_cs.xtb (message IDS_INSTALL_PWA_BUTTON_LABEL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; Edge's install dialog is Chromium-based but not confirmed in Edge."
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sk.xtb (message IDS_INSTALL_PWA_BUTTON_LABEL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_hu.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ro.xtb (message IDS_INSTALL_PWA_BUTTON_LABEL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_hr.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; same string as Chromium."
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_el.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-PT UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es-419.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string shared by Edge"
+      },
+      "fr-CA": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr-CA.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-TW.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; not read from Edge itself."
+      },
+      "zh-HK": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-HK.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_id.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string; not confirmed in Edge."
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ms.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Edge is Chromium-based; same message as Chrome."
+      },
+      "th": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_th.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_vi.xtb (message IDS_INSTALL_PWA_BUTTON_LABEL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_hi.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium string, which Edge shares."
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ca.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_iw.xtb (message IDS_INSTALL_PWA_BUTTON_LABEL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ar.xtb (message IDS_INSTALL_PWA_BUTTON_LABEL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_bg.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sl.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Installeren",
+    "pl": "Zainstaluj",
+    "sv": "Installera",
+    "da": "Installér",
+    "nb": "Installer",
+    "fi": "Asenna",
+    "ru": "Установить",
+    "uk": "Установити",
+    "tr": "Yükle",
+    "cs": "Instalovat",
+    "sk": "Inštalovať",
+    "hu": "Telepítés",
+    "ro": "Instalează",
+    "hr": "Instaliraj",
+    "el": "Εγκατάσταση",
+    "pt-PT": "Instalar",
+    "es-419": "Instalar",
+    "fr-CA": "Installer",
+    "zh-Hant": "安裝",
+    "zh-HK": "安裝",
+    "id": "Instal",
+    "ms": "Pasang",
+    "th": "ติดตั้ง",
+    "vi": "Cài đặt",
+    "hi": "इंस्‍टॉल करें",
+    "ca": "Instal·la",
+    "he": "התקנה",
+    "ar": "تثبيت",
+    "bg": "Инсталиране",
+    "sl": "Namesti"
   }
 }

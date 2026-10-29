@@ -1,0 +1,29 @@
+{
+  "title": "Přidání na plochu",
+  "label": "iPhone · Safari · Přidání na plochu",
+  "steps": {
+    "open-page-menu": {
+      "title": "Otevřete {label:page-menu}",
+      "description": "Klepněte na tlačítko „{label:page-menu}“ na levé straně adresního řádku webové stránky. Jeho ikona má tři vodorovné čáry, z nichž spodní je kratší."
+    },
+    "tap-share": {
+      "title": "Klepněte na {label:share}",
+      "description": "V nabídce Stránka klepněte na volbu {label:share}. Jejím symbolem je čtverec se šipkou směřující nahoru."
+    },
+    "view-more": {
+      "title": "Klepněte na {label:view-more}",
+      "description": "Pokud je list sdílení sbalený, klepnutím na {label:view-more} (zobrazeno šipkou dolů) zobrazíte zbývající akce. Pokud je seznam akcí už viditelný, pokračujte krokem {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Klepněte na {label:add-to-home-screen}",
+      "description": "V rozbaleném seznamu akcí vyhledejte volbu {label:add-to-home-screen} a klepněte na ni. Její symbol je zaoblený čtverec se znaménkem plus."
+    }
+  },
+  "completion": "Přidání aplikace dokončete podle pokynů na potvrzovací obrazovce.",
+  "alt": "Čtyři kroky: klepněte na „Nabídka Stránka“ vedle adresy, klepněte na „Sdílet“, v případě potřeby klepněte na „Zobrazit více“ a potom klepněte na „Přidat na plochu“.",
+  "transitions": {},
+  "heading": "Přidání na plochu",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Přidání na plochu v Safari na iPhonu: čtyři kroky",
+  "svgDesc": "Čtyři číslované kroky pro Safari na iPhonu: otevřete nabídku Stránka, klepněte na „Sdílet“, klepněte na „Zobrazit více“ a potom klepněte na „Přidat na plochu“. Modré obrysy označují ovládací prvky, na které máte klepnout. Úplné textové pokyny jsou k dispozici samostatně."
+}

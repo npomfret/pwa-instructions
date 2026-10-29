@@ -1,0 +1,37 @@
+{
+  "title": "Instal·la una app al Chrome",
+  "label": "Mac · Chrome · Instal·la l’app",
+  "intro": "Aquesta guia segueix la ruta pel menú del Chrome que mostren les captures de pantalla de referència. Alguns llocs web també ofereixen una icona d’instal·lació a la barra d’adreces.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Obre el menú {label:more}",
+      "description": "Obre el lloc web al Chrome. Fes clic als tres punts verticals de l’extrem superior dret de la finestra del Chrome per obrir el menú {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Tria {label:cast-save-and-share}",
+      "description": "Al menú {label:more}, tria {label:cast-save-and-share} per obrir-ne el submenú."
+    },
+    "choose-install": {
+      "title": "Tria {label:install}",
+      "description": "Al submenú, fes clic a {label:install} seguit del nom del lloc web o de l’app. Algunes versions de Chrome anomenen aquest element «Instal·la la pàgina com a aplicació». Tria l’acció d’instal·lació que apareix damunt de {label:create-shortcut}; {label:create-shortcut} és una ordre diferent."
+    },
+    "continue-install": {
+      "title": "Fes clic a {label:next}",
+      "description": "Al diàleg {label:install-app}, comprova el nom i el domini del lloc web i fes clic a {label:next}. Si la teva versió del Chrome passa directament a la confirmació d’instal·lació, continua al pas {step:5}."
+    },
+    "confirm-install": {
+      "title": "Fes clic a {label:install}",
+      "description": "El diàleg següent indica que l’app s’afegirà a {label:chrome-apps}. Fes clic a {label:install} per confirmar-ho."
+    },
+    "show-in-finder": {
+      "title": "Fes clic a {label:show-in-finder}",
+      "description": "Quan el Chrome mostri {label:successfully-installed}, fes clic a {label:show-in-finder} per localitzar l’app instal·lada. També pots triar {label:open-tab-in-app} per obrir de seguida el lloc web a la seva pròpia finestra."
+    }
+  },
+  "completion": "Al Finder, fes doble clic a l’app per obrir-la. Per tornar-la a obrir més endavant des del Chrome, escriu chrome://apps a la barra d’adreces, prem Retorn i fes clic a l’app. Per instal·lar-la no cal una drecera al Dock.",
+  "alt": "Sis passos al Chrome del Mac: obre el menú Més dels tres punts, tria Emet, desa i comparteix, tria Instal·la, fes clic a Següent, fes clic a Instal·la i, finalment, fes clic a Mostra a Finder.",
+  "heading": "Instal·la l’app",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Instal·la una app al Chrome del Mac",
+  "svgDesc": "Sis passos: obre Més, tria Emet, desa i comparteix, tria Instal·la, fes clic a Següent, fes clic a Instal·la i, finalment, a Mostra a Finder. Els contorns blaus assenyalen els controls."
+}

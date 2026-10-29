@@ -1,0 +1,22 @@
+{
+  "title": "Thêm vào Màn hình chính từ Brave",
+  "label": "iPhone · Brave → Safari · Thêm vào Màn hình chính",
+  "intro": "Bắt đầu trong Brave. Bước {step:3} mở cùng trang web đó trong Safari; các bước {step:4}–{step:7} được thực hiện trong Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Chạm vào {label:share}",
+      "description": "Trong Brave, chạm vào {label:share} trên thanh công cụ dưới cùng. Biểu tượng của mục này là một hình vuông có mũi tên hướng lên. Nếu thanh công cụ bị ẩn, hãy chạm vào địa chỉ trang web để hiện thanh này."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Trong bảng chia sẻ đã mở rộng, cuộn xuống và chạm vào {label:open-in-safari}. Trang web sẽ mở trong Safari; hãy thực hiện tất cả các bước còn lại tại đó."
+    }
+  },
+  "transitions": {
+    "continue-in-safari": "Tiếp tục trong Safari"
+  },
+  "completion": "Làm theo màn hình xác nhận để hoàn tất việc thêm ứng dụng.",
+  "alt": "Bảy bước được đánh số: Chia sẻ, Xem thêm và Mở trong Safari trong Brave, tiếp theo là bốn bước cài đặt trong Safari.",
+  "heading": "Thêm vào Màn hình chính",
+  "subtitle": "iPhone · Brave → Safari"
+}

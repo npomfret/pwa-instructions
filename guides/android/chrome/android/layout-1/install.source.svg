@@ -52,7 +52,7 @@
     <text x="48" y="25" class="step-title" id="step-3-title" data-i18n="step">Tap <tspan font-style="italic">Install</tspan></text>
     <use href="#phone"/>
     <rect x="18" y="254" width="264" height="167" rx="14" fill="white" stroke="#d7dadd"/>
-    <text x="36" y="285" class="label muted" data-i18n="label:install-and-create-shortcut" data-max-width="236">Install and create shortcut</text>
+    <text x="36" y="285" class="label muted" data-i18n="label:install-and-create-shortcut" data-max-width="236" data-lines="2" data-line-height="19" data-center-lines="1">Install and create shortcut</text>
     <rect x="28" y="305" width="244" height="44" rx="8" class="target"/>
     <text x="46" y="333" class="label" data-i18n="label:install" data-max-width="226">Install</text>
     <text x="46" y="385" class="label muted" data-i18n="label:create-shortcut" data-max-width="226">Create shortcut</text>

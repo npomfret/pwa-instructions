@@ -1,0 +1,17 @@
+{
+  "title": "Instal·la una app al Chrome per a Windows",
+  "label": "Windows · Chrome · Instal·la l’app",
+  "intro": "Fes servir la ruta pel menú del Chrome o la icona d’instal·lació de la barra d’adreces quan el lloc web l’ofereixi. Esborrany de documentació: encara no s’ha verificat en un dispositiu; el disseny del menú i els missatges de confirmació poden variar.",
+  "steps": {
+    "confirm-install": {
+      "title": "Fes clic a {label:install}",
+      "description": "Comprova el nom de l’app i l’adreça del lloc web i fes clic a {label:install}. Segueix els altres missatges de confirmació que apareguin."
+    }
+  },
+  "completion": "Per tornar a obrir una app instal·lada, escriu chrome://apps a la barra d’adreces del Chrome i selecciona l’app.",
+  "alt": "Quatre passos il·lustrats per instal·lar al Chrome per a Windows; els contorns blaus assenyalen els controls documentats.",
+  "heading": "Instal·la l’app",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Instal·la una app al Chrome per a Windows",
+  "svgDesc": "Esborrany de documentació: controls esquemàtics a partir de les instruccions actuals del fabricant, no una captura verificada d’un dispositiu. Els contorns blaus assenyalen els controls."
+}

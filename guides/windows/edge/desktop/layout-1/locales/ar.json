@@ -1,0 +1,30 @@
+{
+  "title": "تثبيت تطبيق في Edge لنظام Windows",
+  "label": "Windows · Edge · تثبيت تطبيق",
+  "intro": "يتبع مسار القوائم مساعدة Edge الحالية من Microsoft. وقد تضع إصدارات Edge الأخرى \"{label:apps}\" مباشرةً ضمن \"{label:settings-and-more}\". مسودة توثيق: لم يتم التحقق منها على جهاز بعد؛ وقد يختلف تخطيط القوائم ومطالبات التأكيد.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "افتح {label:settings-and-more}",
+      "description": "افتح الموقع الإلكتروني في Microsoft Edge. انقر على النقاط الثلاث الأفقية في أعلى المتصفح."
+    },
+    "more-tools": {
+      "title": "اختر {label:more-tools}",
+      "description": "اختر {label:more-tools} من القائمة."
+    },
+    "apps": {
+      "title": "اختر {label:apps}",
+      "description": "في \"{label:more-tools}\"، اختر {label:apps}."
+    },
+    "install-site": {
+      "title": "اختر {label:install-this-site-as-an-app}",
+      "description": "اختر {label:install-this-site-as-an-app}. وبالنسبة إلى تطبيق PWA القابل للتثبيت، قد يعرض Edge بدلاً من ذلك \"{label:install-app}\" أو رمز تثبيت في شريط العنوان."
+    }
+  },
+  "completion": "لإعادة فتحه، أدخل edge://apps وانقر على \"فتح\" في بطاقة التطبيق. يوفّر \"تفاصيل\" الخيارات \"تثبيت بشريط المهام\" و\"تثبيت بشاشة البدء\" و\"إنشاء اختصار سطح المكتب\".",
+  "alt": "5 خطوات توضيحية لتثبيت التطبيق في Edge لنظام Windows؛ تحدّد الإطارات الزرقاء عناصر التحكم الموثّقة.",
+  "transitions": {},
+  "heading": "تثبيت تطبيق",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "تثبيت تطبيق في Edge لنظام Windows",
+  "svgDesc": "مسودة توثيق: عناصر تحكم تخطيطية مأخوذة من إرشادات الجهة المصنِّعة الحالية، وليست لقطة تم التحقق منها على جهاز. تحدّد الإطارات الزرقاء عناصر التحكم."
+}

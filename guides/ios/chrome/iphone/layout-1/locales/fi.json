@@ -1,0 +1,16 @@
+{
+  "title": "Lisää Koti-valikkoon Chromesta",
+  "label": "iPhone · Chrome · Lisää Koti-valikkoon",
+  "intro": "Käytä Chromea iPhonella. Näillä vaiheilla appi asennetaan suoraan selaimen jakovalikosta.",
+  "steps": {
+    "tap-share": {
+      "title": "Napauta {label:share}",
+      "description": "Napauta Chromessa näytön yläreunassa olevan osoitepalkin oikeassa päässä olevaa {label:share}-painiketta. Sen kuvake on neliö, josta osoittaa nuoli ylöspäin."
+    }
+  },
+  "completion": "Viimeistele apin lisääminen noudattamalla vahvistusnäytön ohjeita.",
+  "alt": "Kolme vaihetta iPhonen Chromessa: Jaa osoitepalkin oikeassa yläkulmassa, Näytä lisää ja sitten Lisää Koti-valikkoon.",
+  "transitions": {},
+  "heading": "Lisää Koti-valikkoon",
+  "subtitle": "iPhone · Chrome"
+}

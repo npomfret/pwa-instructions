@@ -1,0 +1,18 @@
+{
+  "title": "Cài đặt ứng dụng trong Chrome trên Windows",
+  "label": "Windows · Chrome · Cài đặt ứng dụng",
+  "heading": "Cài đặt ứng dụng",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Cài đặt ứng dụng trong Chrome trên Windows",
+  "svgDesc": "Bản nháp tài liệu: các mục điều khiển mang tính sơ đồ lấy từ hướng dẫn hiện tại của nhà cung cấp, không phải ảnh chụp từ một thiết bị đã được xác minh. Các đường viền màu xanh dương đánh dấu các mục điều khiển.",
+  "intro": "Hãy dùng menu Chrome hoặc biểu tượng cài đặt trên thanh địa chỉ khi trang web có cung cấp. Bản nháp tài liệu: chưa được xác minh trên thiết bị; bố cục menu và lời nhắc xác nhận có thể khác.",
+  "steps": {
+    "confirm-install": {
+      "title": "Nhấp vào {label:install}",
+      "description": "Hãy kiểm tra tên ứng dụng và địa chỉ trang web, rồi nhấp vào {label:install}. Làm theo mọi lời nhắc xác nhận tiếp theo."
+    }
+  },
+  "completion": "Để mở lại ứng dụng đã cài đặt, hãy nhập chrome://apps vào thanh địa chỉ của Chrome, rồi chọn ứng dụng.",
+  "alt": "4 bước minh họa cài đặt trong Chrome trên Windows; các đường viền màu xanh dương đánh dấu những mục điều khiển được nêu trong tài liệu.",
+  "transitions": {}
+}

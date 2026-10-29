@@ -1,0 +1,30 @@
+{
+  "title": "Installer une appli dans Edge sur Windows",
+  "label": "Windows · Edge · Installer l’appli",
+  "heading": "Installer l’appli",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Installer une appli dans Edge sur Windows",
+  "svgDesc": "Brouillon de documentation : commandes schématiques tirées des instructions actuelles de l’éditeur, et non d’une capture sur un appareil vérifié. Des contours bleus signalent les commandes.",
+  "intro": "Le chemin par le menu suit l’aide actuelle de Microsoft Edge. Dans d’autres versions d’Edge, {label:apps} peut figurer directement dans {label:settings-and-more}. Brouillon de documentation : non vérifié sur un appareil ; la disposition du menu et les invites de confirmation peuvent varier.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Ouvrez {label:settings-and-more}",
+      "description": "Ouvrez le site web dans Microsoft Edge. Cliquez sur les trois points horizontaux, en haut à droite du navigateur."
+    },
+    "more-tools": {
+      "title": "Choisissez {label:more-tools}",
+      "description": "Dans le menu, choisissez {label:more-tools}."
+    },
+    "apps": {
+      "title": "Choisissez {label:apps}",
+      "description": "Dans {label:more-tools}, choisissez {label:apps}."
+    },
+    "install-site": {
+      "title": "Choisissez {label:install-this-site-as-an-app}",
+      "description": "Choisissez {label:install-this-site-as-an-app}. Pour une PWA installable, Edge peut proposer à la place {label:install-app} ou une icône d’installation dans la barre d’adresse."
+    }
+  },
+  "completion": "Pour la rouvrir, saisissez edge://apps, puis cliquez sur Ouvrir dans la carte de l’appli. Détails propose Épingler à la barre des tâches, Épingler à l’écran de démarrage et Créer un raccourci sur le Bureau.",
+  "alt": "5 étapes illustrées d’installation dans Edge sur Windows ; des contours bleus signalent les commandes décrites dans la documentation.",
+  "transitions": {}
+}

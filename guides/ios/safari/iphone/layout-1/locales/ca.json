@@ -1,0 +1,28 @@
+{
+  "title": "Afegeix a la pantalla d’inici",
+  "label": "iPhone · Safari · Afegeix a la pantalla d’inici",
+  "steps": {
+    "open-page-menu": {
+      "title": "Obre el {label:page-menu}",
+      "description": "Toca el botó {label:page-menu}, situat a l’esquerra de l’adreça del lloc web. La seva icona té tres línies horitzontals, amb la inferior més curta."
+    },
+    "tap-share": {
+      "title": "Toca {label:share}",
+      "description": "Al {label:page-menu}, toca {label:share}. La seva icona és un quadrat amb una fletxa cap amunt."
+    },
+    "view-more": {
+      "title": "Toca {label:view-more}",
+      "description": "Si el full per compartir està replegat, toca {label:view-more}, que apareix amb un xevró cap avall, per mostrar la resta d’accions. Si la llista d’accions ja és visible, continua al pas {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Toca {label:add-to-home-screen}",
+      "description": "A la llista d’accions desplegada, cerca i toca {label:add-to-home-screen}. La seva icona és un quadrat arrodonit amb un signe més."
+    }
+  },
+  "completion": "Segueix la pantalla de confirmació per acabar d’afegir l’app.",
+  "alt": "Quatre passos: toca el menú de la pàgina al costat de l’adreça, toca Comparteix, toca Mostra’n més si cal i, finalment, toca Afegeix a la pantalla d’inici.",
+  "heading": "Afegeix a la pantalla d’inici",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Afegeix a la pantalla d’inici des del Safari de l’iPhone: quatre passos",
+  "svgDesc": "Quatre passos numerats per al Safari de l’iPhone: obre el menú de la pàgina, toca Comparteix, toca Mostra’n més i, finalment, toca Afegeix a la pantalla d’inici. Els contorns blaus assenyalen els controls que has de tocar. Les instruccions completes en text s’ofereixen per separat."
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Instalacija aplikacije u pregledniku Chrome za Android",
+  "label": "Android · Chrome · Instalacija aplikacije",
+  "intro": "Koristite Chrome za Android. Prikazani nazivi izbornika slijede Googleovu aktualnu pomoć za Android, a ne stariji članak o dodavanju na početni zaslon. Nacrt dokumentacije: još nije provjereno na uređaju; izgled izbornika i upiti za potvrdu mogu se razlikovati.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Otvorite izbornik „{label:more}”",
+      "description": "Otvorite web-lokaciju u pregledniku Chrome. Dodirnite tri okomite točke pokraj adresne trake."
+    },
+    "install-and-create-shortcut": {
+      "title": "Dodirnite „{label:install-and-create-shortcut}”",
+      "description": "U izborniku odaberite „{label:install-and-create-shortcut}”. Starije verzije preglednika Chrome mogu ovu stavku nazivati „Dodaj na početni zaslon”."
+    },
+    "install-app": {
+      "title": "Dodirnite „{label:install}”",
+      "description": "Odaberite „{label:install}”. Slijedite upite koje Chrome prikazuje da biste instalirali aplikaciju. „{label:create-shortcut}” zasebna je opcija koja samo sprema poveznicu."
+    }
+  },
+  "completion": "Nakon dovršetka instalacije otvorite aplikaciju iz pokretača na Androidu. Mjesto na početnom zaslonu ovisi o vašem pokretaču i njegovim postavkama.",
+  "alt": "Tri ilustrirana koraka instalacije u pregledniku Chrome za Android; plavi okviri označavaju opisane kontrole.",
+  "transitions": {},
+  "heading": "Instalacija aplikacije",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Instalacija aplikacije u pregledniku Chrome za Android",
+  "svgDesc": "Nacrt dokumentacije. Tri koraka: otvorite izbornik „Više”, dodirnite „Instaliraj i izradi prečac”, a zatim dodirnite „Instaliraj”. Slijedite sve dodatne upute na svom uređaju."
+}

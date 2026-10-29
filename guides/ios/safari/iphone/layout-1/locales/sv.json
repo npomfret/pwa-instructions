@@ -1,0 +1,29 @@
+{
+  "title": "Lägg till på hemskärmen",
+  "label": "iPhone · Safari · Lägg till på hemskärmen",
+  "steps": {
+    "open-page-menu": {
+      "title": "Öppna {label:page-menu}",
+      "description": "Tryck på knappen {label:page-menu} till vänster om webbplatsens adressfält. Symbolen består av tre vågräta streck, där det nedersta är kortare."
+    },
+    "tap-share": {
+      "title": "Tryck på {label:share}",
+      "description": "Tryck på {label:share} i sidmenyn. Symbolen är en kvadrat med en pil som pekar uppåt."
+    },
+    "view-more": {
+      "title": "Tryck på {label:view-more}",
+      "description": "Om delningsmenyn är hopfälld trycker du på {label:view-more}, som visas med en nedåtriktad vinkel, för att visa de återstående åtgärderna. Om åtgärdslistan redan syns går du vidare till steg {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Tryck på {label:add-to-home-screen}",
+      "description": "Leta upp {label:add-to-home-screen} i den utökade åtgärdslistan och tryck på den. Symbolen är en rundad kvadrat med ett plustecken."
+    }
+  },
+  "completion": "Följ anvisningarna på bekräftelseskärmen för att slutföra tillägget av appen.",
+  "alt": "Fyra steg: tryck på sidmenyn bredvid adressen, tryck på Dela, tryck på Visa mer vid behov och tryck sedan på Lägg till på hemskärmen.",
+  "transitions": {},
+  "heading": "Lägg till på hemskärmen",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Lägg till på hemskärmen i Safari på iPhone: fyra steg",
+  "svgDesc": "Fyra numrerade steg för Safari på iPhone: öppna sidmenyn, tryck på Dela, tryck på Visa mer och tryck sedan på Lägg till på hemskärmen. Blå konturer markerar de reglage du ska trycka på. De fullständiga textanvisningarna finns separat."
+}

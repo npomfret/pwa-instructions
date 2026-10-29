@@ -1,0 +1,25 @@
+{
+  "title": "Cài đặt ứng dụng trong Chrome trên Android",
+  "label": "Android · Chrome · Cài đặt ứng dụng",
+  "intro": "Hãy dùng Chrome cho Android. Các nhãn menu trong hình minh họa theo trang trợ giúp Android hiện tại của Google, thay vì bài viết cũ về Thêm vào màn hình chính. Bản nháp tài liệu: chưa được xác minh trên thiết bị; bố cục menu và lời nhắc xác nhận có thể khác.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Mở menu {label:more}",
+      "description": "Mở trang web trong Chrome. Nhấn vào ba dấu chấm dọc bên cạnh thanh địa chỉ."
+    },
+    "install-and-create-shortcut": {
+      "title": "Nhấn vào {label:install-and-create-shortcut}",
+      "description": "Chọn {label:install-and-create-shortcut} trong menu. Ở các bố cục Chrome cũ hơn, mục này có thể có tên là Thêm vào màn hình chính."
+    },
+    "install-app": {
+      "title": "Nhấn vào {label:install}",
+      "description": "Chọn {label:install}. Hãy hoàn tất các lời nhắc mà Chrome hiển thị để cài đặt ứng dụng. {label:create-shortcut} là một tùy chọn riêng chỉ lưu một đường liên kết."
+    }
+  },
+  "completion": "Sau khi cài đặt xong, hãy mở ứng dụng từ trình chạy trên Android. Vị trí trên màn hình chính phụ thuộc vào trình chạy và các chế độ cài đặt của trình chạy.",
+  "alt": "3 bước minh họa cài đặt trong Chrome trên Android; các đường viền màu xanh dương đánh dấu những mục điều khiển được nêu trong tài liệu.",
+  "heading": "Cài đặt ứng dụng",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Cài đặt ứng dụng trong Chrome trên Android",
+  "svgDesc": "Bản nháp tài liệu. Ba bước: mở Xem thêm, nhấn vào Cài đặt và tạo lối tắt, rồi nhấn vào Cài đặt. Hãy hoàn tất mọi lời nhắc tiếp theo trên thiết bị của bạn."
+}

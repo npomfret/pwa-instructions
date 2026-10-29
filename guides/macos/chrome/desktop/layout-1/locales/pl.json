@@ -1,0 +1,38 @@
+{
+  "title": "Zainstaluj aplikację w Chrome",
+  "label": "Mac · Chrome · Zainstaluj aplikację",
+  "intro": "Ten przewodnik opisuje drogę przez menu Chrome pokazaną na referencyjnych zrzutach ekranu. Niektóre witryny oferują też ikonę instalacji na pasku adresu.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Otwórz menu {label:more}",
+      "description": "Otwórz witrynę w Chrome. Kliknij trzy pionowe kropki w prawym górnym rogu okna Chrome, aby otworzyć menu {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Wybierz {label:cast-save-and-share}",
+      "description": "W menu Więcej wybierz {label:cast-save-and-share}, aby otworzyć jego podmenu."
+    },
+    "choose-install": {
+      "title": "Wybierz {label:install}",
+      "description": "W podmenu kliknij {label:install}, a po nim nazwę witryny lub aplikacji. W niektórych wersjach Chrome ta opcja nazywa się „Zainstaluj stronę jako aplikację”. Wybierz polecenie instalacji znajdujące się nad opcją „Utwórz skrót”; „Utwórz skrót” to osobne polecenie."
+    },
+    "continue-install": {
+      "title": "Kliknij {label:next}",
+      "description": "W oknie „Zainstaluj aplikację” sprawdź nazwę i domenę witryny, a następnie kliknij {label:next}. Jeśli Twoja wersja Chrome od razu wyświetla potwierdzenie instalacji, przejdź do kroku {step:5}."
+    },
+    "confirm-install": {
+      "title": "Kliknij {label:install}",
+      "description": "W następnym oknie widać, że aplikacja jest dodawana do sekcji Aplikacje Chrome. Kliknij {label:install}, aby potwierdzić."
+    },
+    "show-in-finder": {
+      "title": "Kliknij {label:show-in-finder}",
+      "description": "Gdy Chrome wyświetli komunikat „Zainstalowano”, kliknij {label:show-in-finder}, aby znaleźć zainstalowaną aplikację. Możesz też wybrać {label:open-tab-in-app}, aby od razu otworzyć witrynę w oknie aplikacji."
+    }
+  },
+  "completion": "W Finderze kliknij aplikację dwukrotnie, aby ją otworzyć. Aby później ponownie otworzyć ją z poziomu Chrome, wpisz chrome://apps na pasku adresu, naciśnij Return, a następnie kliknij aplikację. Instalacja nie wymaga skrótu w Docku.",
+  "alt": "Sześć kroków w Chrome na Macu: otwórz menu „Więcej” (trzy kropki), wybierz „Przesyłaj, zapisuj i udostępniaj”, wybierz „Zainstaluj”, kliknij „Dalej”, kliknij „Zainstaluj”, a następnie kliknij „Pokaż w Finderze”.",
+  "transitions": {},
+  "heading": "Zainstaluj aplikację",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Instalowanie aplikacji w Chrome na Macu",
+  "svgDesc": "Sześć kroków: otwórz „Więcej”, wybierz „Przesyłaj, zapisuj i udostępniaj”, wybierz „Zainstaluj”, kliknij „Dalej”, kliknij „Zainstaluj”, a następnie wybierz „Pokaż w Finderze”. Niebieskie obwódki wskazują elementy sterujące."
+}

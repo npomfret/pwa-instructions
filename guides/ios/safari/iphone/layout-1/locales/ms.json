@@ -1,0 +1,29 @@
+{
+  "title": "Tambah ke Skrin Utama",
+  "label": "iPhone · Safari · Tambah ke Skrin Utama",
+  "steps": {
+    "open-page-menu": {
+      "title": "Buka {label:page-menu}",
+      "description": "Ketik butang {label:page-menu} di sebelah kiri medan alamat tapak web. Ikonnya mempunyai tiga garisan mendatar, dengan garisan bawah yang lebih pendek."
+    },
+    "tap-share": {
+      "title": "Ketik {label:share}",
+      "description": "Dalam {label:page-menu}, ketik {label:share}. Ikonnya ialah segi empat sama dengan anak panah menghala ke atas."
+    },
+    "view-more": {
+      "title": "Ketik {label:view-more}",
+      "description": "Jika helaian kongsi diruntuhkan, ketik {label:view-more}, yang ditunjukkan dengan cevron menghala ke bawah, untuk mendedahkan tindakan yang lain. Jika senarai tindakan sudah kelihatan, teruskan ke langkah {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Ketik {label:add-to-home-screen}",
+      "description": "Dalam senarai tindakan yang dikembangkan, cari dan ketik {label:add-to-home-screen}. Ikonnya ialah segi empat sama bulat yang mengandungi tanda tambah."
+    }
+  },
+  "completion": "Ikut skrin pengesahan untuk menyelesaikan penambahan app.",
+  "alt": "Empat langkah: ketik Menu Halaman di sebelah alamat, ketik Kongsi, ketik Lihat Lagi jika perlu, kemudian ketik Tambah ke Skrin Utama.",
+  "heading": "Tambah ke Skrin Utama",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Tambah ke Skrin Utama dalam Safari pada iPhone: empat langkah",
+  "svgDesc": "Empat langkah bernombor untuk Safari pada iPhone: buka Menu Halaman, ketik Kongsi, ketik Lihat Lagi, kemudian ketik Tambah ke Skrin Utama. Garis besar biru menandakan kawalan yang perlu diketik. Arahan teks lengkap disediakan secara berasingan.",
+  "transitions": {}
+}

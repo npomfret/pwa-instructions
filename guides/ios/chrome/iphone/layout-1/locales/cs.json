@@ -1,0 +1,16 @@
+{
+  "title": "Přidání na plochu z prohlížeče Chrome",
+  "label": "iPhone · Chrome · Přidání na plochu",
+  "intro": "Použijte Chrome na iPhonu. Tyto kroky provádějí instalaci přímo z listu sdílení.",
+  "steps": {
+    "tap-share": {
+      "title": "Klepněte na {label:share}",
+      "description": "V Chromu klepněte na {label:share} na pravém konci adresního řádku v horní části obrazovky. Jeho symbolem je čtverec se šipkou nahoru."
+    }
+  },
+  "completion": "Přidání aplikace dokončete podle pokynů na potvrzovací obrazovce.",
+  "alt": "Tři kroky v Chromu na iPhonu: Sdílet vpravo nahoře v adresním řádku, Zobrazit více a poté Přidat na plochu.",
+  "transitions": {},
+  "heading": "Přidání na plochu",
+  "subtitle": "iPhone · Chrome"
+}

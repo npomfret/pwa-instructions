@@ -1,0 +1,38 @@
+{
+  "title": "Pasang apl dalam Chrome",
+  "label": "Mac · Chrome · Pasang apl",
+  "intro": "Panduan ini mengikut laluan menu Chrome yang ditunjukkan dalam tangkapan skrin rujukan. Sesetengah laman web juga menawarkan ikon pasang dalam bar alamat.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Buka menu {label:more}",
+      "description": "Buka laman web dalam Chrome. Klik tiga titik menegak di penjuru kanan atas tetingkap Chrome untuk membuka menu {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Pilih {label:cast-save-and-share}",
+      "description": "Dalam menu {label:more}, pilih {label:cast-save-and-share} untuk membuka submenunya."
+    },
+    "choose-install": {
+      "title": "Pilih {label:install}",
+      "description": "Dalam submenu, klik {label:install} diikuti nama laman web atau apl. Sesetengah versi Chrome menamakan item ini Pasang halaman sebagai apl. Pilih tindakan pemasangan di atas {label:create-shortcut}; {label:create-shortcut} ialah arahan yang berasingan."
+    },
+    "continue-install": {
+      "title": "Klik {label:next}",
+      "description": "Dalam dialog {label:install-app}, semak nama dan domain laman web, kemudian klik {label:next}. Jika versi Chrome anda terus ke pengesahan pemasangan, teruskan ke langkah {step:5}."
+    },
+    "confirm-install": {
+      "title": "Klik {label:install}",
+      "description": "Dialog seterusnya menunjukkan apl sedang ditambahkan ke {label:chrome-apps}. Klik {label:install} untuk mengesahkan."
+    },
+    "show-in-finder": {
+      "title": "Klik {label:show-in-finder}",
+      "description": "Apabila Chrome menunjukkan {label:successfully-installed}, klik {label:show-in-finder} untuk mengesan apl yang dipasang. Anda juga boleh memilih {label:open-tab-in-app} untuk membuka laman web dalam tetingkap apnya dengan serta-merta."
+    }
+  },
+  "transitions": {},
+  "completion": "Dalam Finder, klik dua kali apl untuk membukanya. Untuk membukanya semula kemudian daripada Chrome, taipkan chrome://apps dalam bar alamat, tekan Return, kemudian klik apl. Pemasangan tidak memerlukan pintasan Dock.",
+  "alt": "Enam langkah Chrome pada Mac: buka menu Lagi tiga titik, pilih Hantar, simpan dan kongsi, pilih Pasang, klik Seterusnya, klik Pasang, kemudian klik Tunjukkan dalam Finder.",
+  "heading": "Pasang apl",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Pasang apl dalam Chrome pada Mac",
+  "svgDesc": "Enam langkah: buka Lagi, pilih Hantar, simpan dan kongsi, pilih Pasang, klik Seterusnya, klik Pasang, kemudian Tunjukkan dalam Finder. Garis besar biru menandakan kawalan."
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Instalace aplikace v Chromu",
+  "label": "Mac · Chrome · Instalace aplikace",
+  "intro": "Tento návod vychází z postupu přes nabídku Chromu zobrazeného na referenčních snímcích obrazovky. Některé weby nabízejí také ikonu instalace v adresním řádku.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Otevřete nabídku {label:more}",
+      "description": "Otevřete web v Chromu. Kliknutím na tři svislé tečky v pravé horní části okna Chromu otevřete nabídku „{label:more}“."
+    },
+    "cast-save-and-share": {
+      "title": "Vyberte {label:cast-save-and-share}",
+      "description": "V nabídce Více vyberte {label:cast-save-and-share}. Otevře se její podnabídka."
+    },
+    "choose-install": {
+      "title": "Vyberte {label:install}",
+      "description": "V podnabídce klikněte na {label:install} a za ním název webu nebo aplikace. Některé verze Chromu tuto položku nazývají Instalovat stránku jako aplikaci. Vyberte akci instalace nad položkou „{label:create-shortcut}“. Položka „{label:create-shortcut}“ je samostatný příkaz."
+    },
+    "continue-install": {
+      "title": "Klikněte na {label:next}",
+      "description": "V dialogu „{label:install-app}“ zkontrolujte název a doménu webu a potom klikněte na {label:next}. Pokud vaše verze Chromu přejde rovnou k potvrzení instalace, pokračujte krokem {step:5}."
+    },
+    "confirm-install": {
+      "title": "Klikněte na {label:install}",
+      "description": "V dalším dialogu se zobrazí, že se aplikace přidává do aplikací pro Chrome. Kliknutím na {label:install} instalaci potvrďte."
+    },
+    "show-in-finder": {
+      "title": "Klikněte na {label:show-in-finder}",
+      "description": "Jakmile Chrome zobrazí zprávu „{label:successfully-installed}“, kliknutím na {label:show-in-finder} nainstalovanou aplikaci vyhledáte. Můžete také vybrat {label:open-tab-in-app} a web se okamžitě otevře v okně aplikace."
+    }
+  },
+  "completion": "Aplikaci otevřete ve Finderu dvojitým kliknutím. Chcete-li ji později znovu otevřít z Chromu, zadejte do adresního řádku chrome://apps, stiskněte Return a klikněte na aplikaci. K instalaci není nutný zástupce v Docku.",
+  "alt": "Šest kroků v Chromu na Macu: otevřete nabídku Více se třemi tečkami, vyberte Odeslat, uložit a sdílet, vyberte Instalovat, klikněte na Další, klikněte na Instalovat a potom klikněte na Zobrazit ve službě Finder.",
+  "transitions": {},
+  "heading": "Instalace aplikace",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Instalace aplikace v Chromu na Macu",
+  "svgDesc": "Šest kroků: otevřete nabídku Více, vyberte Odeslat, uložit a sdílet, vyberte Instalovat, klikněte na Další, klikněte na Instalovat a potom vyberte Zobrazit ve službě Finder. Modré obrysy označují ovládací prvky."
+}

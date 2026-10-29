@@ -1,0 +1,26 @@
+{
+  "title": "Instalarea unei aplicații în Chrome pentru Android",
+  "label": "Android · Chrome · Instalare aplicație",
+  "heading": "Instalare aplicație",
+  "subtitle": "Android · Chrome",
+  "intro": "Folosiți Chrome pentru Android. Denumirile din meniu ilustrate urmează ajutorul actual Google pentru Android, nu articolul mai vechi despre Adăugarea pe ecranul principal. Ciornă de documentație: neverificată încă pe un dispozitiv; aspectul meniului și mesajele de confirmare pot varia.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Deschideți meniul {label:more}",
+      "description": "Deschideți site-ul web în Chrome. Apăsați cele trei puncte verticale de lângă bara de adrese."
+    },
+    "install-and-create-shortcut": {
+      "title": "Apăsați {label:install-and-create-shortcut}",
+      "description": "Alegeți {label:install-and-create-shortcut} din meniu. În aspectele mai vechi ale Chrome, această opțiune poate fi denumită „Adăugați la ecranul de pornire”."
+    },
+    "install-app": {
+      "title": "Apăsați {label:install}",
+      "description": "Alegeți {label:install}. Parcurgeți mesajele afișate de Chrome pentru a instala aplicația. {label:create-shortcut} este o opțiune separată, care salvează un link."
+    }
+  },
+  "completion": "După ce instalarea se termină, deschideți aplicația din ecranul principal sau lista de aplicații Android. Plasarea pe ecranul principal depinde de dispozitivul Android și de setările acestuia.",
+  "alt": "3 pași ilustrați de instalare în Chrome pentru Android; contururile albastre marchează comenzile documentate.",
+  "svgTitle": "Instalarea unei aplicații în Chrome pentru Android: trei pași",
+  "svgDesc": "Ciornă de documentație: comenzi schematice preluate din instrucțiunile actuale ale producătorului, nu dintr-o captură de ecran de pe un dispozitiv verificat. Contururile albastre marchează comenzile.",
+  "transitions": {}
+}

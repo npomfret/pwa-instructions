@@ -13,7 +13,7 @@
     },
     "choose-install": {
       "title": "{label:install} auswählen",
-      "description": "Klicke im Untermenü auf {label:install}, gefolgt vom Namen der Website oder App. Bei manchen Websites lautet der Eintrag „Seite als App installieren“. Wähle die Installationsaktion oberhalb von „Verknüpfung erstellen“; „Verknüpfung erstellen“ ist ein eigener Befehl."
+      "description": "Klicke im Untermenü auf {label:install}, gefolgt vom Namen der Website oder App. In manchen Chrome-Versionen heißt dieser Eintrag „Seite als App installieren“. Wähle die Installationsaktion oberhalb von „Verknüpfung erstellen“; „Verknüpfung erstellen“ ist ein eigener Befehl."
     },
     "continue-install": {
       "title": "Auf {label:next} klicken",

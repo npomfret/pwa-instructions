@@ -1,0 +1,30 @@
+{
+  "title": "ติดตั้งแอปใน Edge บน Windows",
+  "label": "Windows · Edge · ติดตั้งแอป",
+  "intro": "วิธีผ่านเมนูนี้ตามความช่วยเหลือ Edge ฉบับปัจจุบันของ Microsoft ใน Edge เวอร์ชันอื่น รายการ {label:apps} อาจอยู่ภายใต้ {label:settings-and-more} โดยตรง ฉบับร่างจากเอกสาร: ยังไม่ได้ตรวจสอบบนอุปกรณ์ เค้าโครงเมนูและข้อความยืนยันอาจแตกต่างกัน",
+  "steps": {
+    "open-settings-menu": {
+      "title": "เปิด {label:settings-and-more}",
+      "description": "เปิดเว็บไซต์ใน Microsoft Edge แล้วคลิกจุดแนวนอนสามจุดที่ด้านขวาบนของเบราว์เซอร์"
+    },
+    "more-tools": {
+      "title": "เลือก {label:more-tools}",
+      "description": "เลือก {label:more-tools} จากเมนู"
+    },
+    "apps": {
+      "title": "เลือก {label:apps}",
+      "description": "ใน {label:more-tools} ให้เลือก {label:apps}"
+    },
+    "install-site": {
+      "title": "เลือก {label:install-this-site-as-an-app}",
+      "description": "เลือก {label:install-this-site-as-an-app} สำหรับ PWA ที่ติดตั้งได้ Edge อาจแสดง {label:install-app} หรือไอคอนติดตั้งในแถบที่อยู่แทน"
+    }
+  },
+  "completion": "หากต้องการเปิดแอปอีกครั้ง ให้ป้อน edge://apps แล้วคลิกเปิดบนการ์ดของแอป ในรายละเอียดมีตัวเลือกปักหมุดไปยังแถบงาน ปักหมุดไปยังเริ่ม และสร้างทางลัดบนเดสก์ท็อป",
+  "alt": "ขั้นตอนการติดตั้ง Edge บน Windows 5 ขั้นตอนพร้อมภาพประกอบ เส้นขอบสีน้ำเงินแสดงตัวควบคุมที่ระบุไว้ในเอกสาร",
+  "transitions": {},
+  "heading": "ติดตั้งแอป",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "ติดตั้งแอปใน Edge บน Windows",
+  "svgDesc": "ฉบับร่างจากเอกสาร: ตัวควบคุมแบบแผนภาพตามคำแนะนำฉบับปัจจุบันของผู้พัฒนา ไม่ใช่ภาพที่ถ่ายจากอุปกรณ์ที่ตรวจสอบแล้ว เส้นขอบสีน้ำเงินแสดงตำแหน่งของตัวควบคุม"
+}

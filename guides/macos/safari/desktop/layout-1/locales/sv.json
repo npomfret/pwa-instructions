@@ -1,0 +1,26 @@
+{
+  "title": "Lägg till i Dock i Safari",
+  "label": "Mac · Safari · Lägg till i Dock",
+  "intro": "Kräver macOS Sonoma 14 eller senare. Illustrationerna visar vägen via menyn {label:file}. Safari erbjuder även {label:add-to-dock} i delningsmenyn.",
+  "steps": {
+    "open-file-menu": {
+      "title": "Öppna menyn {label:file}",
+      "description": "Öppna webbplatsen i Safari. Klicka på {label:file} i menyraden högst upp på Mac-skärmen."
+    },
+    "add-to-dock": {
+      "title": "Välj {label:add-to-dock}",
+      "description": "Klicka på {label:add-to-dock} i menyn Arkiv. Safari öppnar en bekräftelsedialogruta för webbplatsen."
+    },
+    "confirm-add": {
+      "title": "Klicka på {label:add}",
+      "description": "Behåll eller redigera appnamnet och klicka sedan på {label:add}. Webbappen sparas i mappen Program och läggs till i Dock."
+    }
+  },
+  "completion": "Öppna den nya appen från Dock.",
+  "alt": "Tre steg i Safari på Mac: öppna Arkiv, välj Lägg till i Dock och klicka sedan på Lägg till.",
+  "transitions": {},
+  "heading": "Lägg till i Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Lägg till en webbplats i Dock i Safari på Mac",
+  "svgDesc": "Tre steg: öppna menyn Arkiv, välj Lägg till i Dock och klicka sedan på Lägg till. Blå konturer markerar reglagen."
+}

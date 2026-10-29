@@ -1,0 +1,30 @@
+{
+  "title": "Sovelluksen asentaminen Windowsin Edgessä",
+  "label": "Windows · Edge · Asenna sovellus",
+  "intro": "Valikkoreitti noudattaa Microsoftin nykyistä Edge-ohjetta. Muissa Edge-versioissa {label:apps} voi olla suoraan kohdassa {label:settings-and-more}. Dokumentaatioluonnos: ei vielä varmennettu laitteella; valikon asettelu ja vahvistuskehotteet voivat vaihdella.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Avaa {label:settings-and-more}",
+      "description": "Avaa verkkosivusto Microsoft Edgessä. Klikkaa selaimen oikeassa yläkulmassa olevia kolmea vaakasuuntaista pistettä."
+    },
+    "more-tools": {
+      "title": "Valitse {label:more-tools}",
+      "description": "Valitse valikosta {label:more-tools}."
+    },
+    "apps": {
+      "title": "Valitse {label:apps}",
+      "description": "Valitse kohdassa {label:more-tools} vaihtoehto {label:apps}."
+    },
+    "install-site": {
+      "title": "Valitse {label:install-this-site-as-an-app}",
+      "description": "Valitse {label:install-this-site-as-an-app}. Asennettavissa olevalle PWA-sovellukselle Edge voi sen sijaan tarjota vaihtoehtoa Asenna sovellus tai osoitepalkin asennuskuvaketta."
+    }
+  },
+  "completion": "Voit avata sovelluksen uudelleen kirjoittamalla edge://apps ja klikkaamalla sovelluskortin kohtaa Avaa. Kohdassa Tiedot on vaihtoehdot Kiinnitä tehtäväpalkkiin, Kiinnitä aloitusnäyttöön ja Luo työpöydän pikakuvake.",
+  "alt": "5 kuvitettua asennusvaihetta Windowsin Edgessä; siniset ääriviivat korostavat ohjeessa kuvattuja säätimiä.",
+  "transitions": {},
+  "heading": "Asenna sovellus",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Sovelluksen asentaminen Windowsin Edgessä",
+  "svgDesc": "Dokumentaatioluonnos: kaaviomaiset säätimet valmistajan nykyisen ohjeen mukaan, ei varmennettu laitekaappaus. Siniset ääriviivat korostavat säätimiä."
+}

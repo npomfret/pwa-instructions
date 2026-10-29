@@ -1,0 +1,29 @@
+{
+  "title": "Dodavanje na početni zaslon",
+  "label": "iPhone · Safari · Dodavanje na početni zaslon",
+  "steps": {
+    "open-page-menu": {
+      "title": "Otvorite „{label:page-menu}”",
+      "description": "Dodirnite tipku „{label:page-menu}” na lijevoj strani adresne trake web-lokacije. Njezina ikona ima tri vodoravne crte, od kojih je donja kraća."
+    },
+    "tap-share": {
+      "title": "Dodirnite „{label:share}”",
+      "description": "U izborniku stranice dodirnite „{label:share}”. Ikona je kvadrat sa strelicom usmjerenom prema gore."
+    },
+    "view-more": {
+      "title": "Dodirnite „{label:view-more}”",
+      "description": "Ako je list za dijeljenje sažet, dodirnite „{label:view-more}” (prikazano strelicom prema dolje) kako biste prikazali preostale radnje. Ako je popis radnji već vidljiv, nastavite s korakom {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Dodirnite „{label:add-to-home-screen}”",
+      "description": "Na proširenom popisu radnji pronađite i dodirnite „{label:add-to-home-screen}”. Ikona je zaobljeni kvadrat s plusom."
+    }
+  },
+  "completion": "Slijedite upute na zaslonu za potvrdu kako biste dovršili dodavanje aplikacije.",
+  "alt": "Četiri koraka: dodirnite „Izbornik stranice” pokraj adrese, dodirnite „Dijeli”, po potrebi dodirnite „Prikaži više”, a zatim dodirnite „Dodaj na početni zaslon”.",
+  "transitions": {},
+  "heading": "Dodavanje na početni zaslon",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Dodavanje na početni zaslon u Safariju na iPhoneu: četiri koraka",
+  "svgDesc": "Četiri numerirana koraka za Safari na iPhoneu: otvorite „Izbornik stranice”, dodirnite „Dijeli”, dodirnite „Prikaži više”, a zatim dodirnite „Dodaj na početni zaslon”. Plavi okviri označavaju kontrole koje trebate dodirnuti. Potpune tekstualne upute navedene su zasebno."
+}

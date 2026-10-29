@@ -1,0 +1,30 @@
+{
+  "title": "Alkalmazás telepítése a Windows Edge-ben",
+  "label": "Windows · Edge · Alkalmazás telepítése",
+  "intro": "A menüút a Microsoft aktuális Edge-súgóját követi. Az Edge más verzióiban az Alkalmazások elem közvetlenül a „{label:settings-and-more}” menüben lehet. Dokumentációs tervezet: eszközön még nem ellenőrizték; a menü felépítése és a megerősítő üzenetek eltérhetnek.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "A „{label:settings-and-more}” menü megnyitása",
+      "description": "Nyissa meg a webhelyet a Microsoft Edge-ben. Kattintson a böngésző jobb felső sarkában lévő három vízszintes pontra."
+    },
+    "more-tools": {
+      "title": "Válassza a {label:more-tools} lehetőséget",
+      "description": "Válassza a {label:more-tools} lehetőséget a menüből."
+    },
+    "apps": {
+      "title": "Válassza az {label:apps} lehetőséget",
+      "description": "A „{label:more-tools}” menüben válassza az {label:apps} lehetőséget."
+    },
+    "install-site": {
+      "title": "Válassza a „{label:install-this-site-as-an-app}” lehetőséget",
+      "description": "Válassza a „{label:install-this-site-as-an-app}” lehetőséget. Telepíthető PWA esetén az Edge ehelyett az „{label:install-app}” lehetőséget vagy a címsávban egy telepítési ikont is kínálhat."
+    }
+  },
+  "completion": "Az alkalmazás újbóli megnyitásához írja be az edge://apps címet, majd kattintson a Megnyitás gombra az alkalmazás kártyáján. A Részletek menüben a Rögzítés a tálcán, a Rögzítés a kezdőképernyőre és az Asztali parancsikon létrehozása lehetőségek érhetők el.",
+  "alt": "5 szemléltető lépés az Edge Windowson történő telepítéséhez; a kék keretek a dokumentált vezérlőelemeket jelölik.",
+  "transitions": {},
+  "heading": "Alkalmazás telepítése",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Alkalmazás telepítése az Edge-ben Windowson",
+  "svgDesc": "Dokumentációs tervezet: sematikus vezérlőelemek a gyártó aktuális útmutatója alapján, nem eszközön ellenőrzött felvétel. A kék keretek jelölik a vezérlőelemeket."
+}

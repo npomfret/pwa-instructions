@@ -1,0 +1,26 @@
+{
+  "title": "Legg til i Dock i Safari",
+  "label": "Mac · Safari · Legg til i Dock",
+  "intro": "Krever macOS Sonoma 14 eller nyere. Illustrasjonene viser veien via {label:file}-menyen. Safari tilbyr også «{label:add-to-dock}» i Del-menyen.",
+  "steps": {
+    "open-file-menu": {
+      "title": "Åpne {label:file}-menyen",
+      "description": "Åpne nettstedet i Safari. Klikk på {label:file} på menylinjen øverst på Mac-skjermen."
+    },
+    "add-to-dock": {
+      "title": "Velg {label:add-to-dock}",
+      "description": "Klikk på {label:add-to-dock} i {label:file}-menyen. Safari åpner en bekreftelsesdialog for dette nettstedet."
+    },
+    "confirm-add": {
+      "title": "Klikk på {label:add}",
+      "description": "Behold eller endre appnavnet, og klikk deretter på {label:add}. Nettappen lagres i Apper-mappen og legges til i Dock."
+    }
+  },
+  "completion": "Åpne den nye appen fra Dock.",
+  "alt": "Tre trinn i Safari på Mac: åpne Fil, velg Legg til i Dock, og klikk deretter på Legg til.",
+  "transitions": {},
+  "heading": "Legg til i Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Legg til i Dock i Safari på Mac: tre trinn",
+  "svgDesc": "Tre nummererte trinn for Safari på Mac: åpne Fil-menyen, velg «Legg til i Dock», og klikk deretter på «Legg til». Blå omrisser markerer kontrollene du skal bruke. Den fullstendige tekstveiledningen finnes separat."
+}

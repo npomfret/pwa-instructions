@@ -1,0 +1,15 @@
+{
+  "title": "Afegeix a la pantalla d’inici des del Chrome",
+  "label": "iPhone · Chrome · Afegeix a la pantalla d’inici",
+  "intro": "Fes servir el Chrome a l’iPhone. Aquests passos instal·len l’app directament des del seu full per compartir.",
+  "steps": {
+    "tap-share": {
+      "title": "Toca {label:share}",
+      "description": "Al Chrome, toca {label:share} a l’extrem dret de la barra d’adreces, a la part superior de la pantalla. La seva icona és un quadrat amb una fletxa cap amunt."
+    }
+  },
+  "completion": "Segueix la pantalla de confirmació per acabar d’afegir l’app.",
+  "alt": "Tres passos al Chrome de l’iPhone: Comparteix a la part superior dreta de la barra d’adreces, Mostra’n més i, finalment, Afegeix a la pantalla d’inici.",
+  "heading": "Afegeix a la pantalla d’inici",
+  "subtitle": "iPhone · Chrome"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Windows’ta Chrome ile uygulama yükleme",
+  "label": "Windows · Chrome · Uygulama yükleme",
+  "intro": "Chrome menüsü yolunu veya web sitesi sunuyorsa adres çubuğundaki yükleme simgesini kullanın. Belgeleme taslağı: henüz bir cihazda doğrulanmadı; menü düzeni ve onay istemleri farklılık gösterebilir.",
+  "steps": {
+    "confirm-install": {
+      "title": "“{label:install}” düğmesini tıklayın",
+      "description": "Uygulama adını ve web sitesi adresini kontrol edin, sonra “{label:install}” düğmesini tıklayın. Gösterilen diğer onay istemlerini izleyin."
+    }
+  },
+  "completion": "Yüklenen bir uygulamayı yeniden açmak için Chrome’un adres çubuğuna chrome://apps yazın ve uygulamayı seçin.",
+  "alt": "Windows’ta Chrome ile 4 resimli yükleme adımı; mavi çerçeveler belgelenen denetimleri işaretler.",
+  "transitions": {},
+  "heading": "Uygulama yükleme",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Windows’ta Chrome ile uygulama yükleme",
+  "svgDesc": "Belgeleme taslağı. Dört adım: “Daha fazla” menüsünü açın, “Yayınla, kaydet ve paylaş” öğesini seçin, “Yükle” öğesini seçin, sonra “Yükle” düğmesini tıklayın. Mavi çerçeveler denetimleri işaretler."
+}

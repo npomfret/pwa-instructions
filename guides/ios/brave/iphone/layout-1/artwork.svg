@@ -67,7 +67,7 @@
       <rect x="94" y="311" width="228" height="143" rx="15" fill="#f1f2f3" />
       <text x="108" y="334" class="small" style="fill:#687078" data-i18n="label:markup" data-max-width="210">Markup</text>
       <text x="108" y="360" class="small" style="fill:#687078" data-i18n="label:print" data-max-width="210">Print</text>
-      <text x="108" y="386" class="small" style="fill:#687078" data-i18n="label:add-to-new-quick-note" data-max-width="210">Add to New Quick Note</text>
+      <text x="108" y="386" class="small" style="fill:#687078" data-i18n="label:add-to-new-quick-note" data-max-width="210" data-lines="2" data-line-height="13" data-center-lines="1">Add to New Quick Note</text>
       <rect x="91" y="399" width="234" height="45" rx="10" class="target" />
       <circle cx="113" cy="421" r="10" class="icon" />
       <path d="m110 424 5-8-1 10-4-2" class="icon" />

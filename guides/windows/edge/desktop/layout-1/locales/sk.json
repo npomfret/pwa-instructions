@@ -1,0 +1,30 @@
+{
+  "title": "Inštalácia aplikácie v prehliadači Edge vo Windowse",
+  "label": "Windows · Edge · Inštalácia aplikácie",
+  "intro": "Postup cez ponuky sleduje aktuálneho pomocníka Microsoftu pre Edge. V iných verziách prehliadača Edge sa môže možnosť {label:apps} nachádzať priamo v ponuke {label:settings-and-more}. Návrh dokumentácie: zatiaľ neoverené na zariadení; rozloženie ponúk a potvrdzovacie výzvy sa môžu líšiť.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Otvorte {label:settings-and-more}",
+      "description": "Otvorte webovú stránku v prehliadači Microsoft Edge. Kliknite na tri vodorovné bodky v pravej hornej časti prehliadača."
+    },
+    "more-tools": {
+      "title": "Vyberte {label:more-tools}",
+      "description": "V ponuke vyberte {label:more-tools}."
+    },
+    "apps": {
+      "title": "Vyberte {label:apps}",
+      "description": "V ponuke Ďalšie nástroje vyberte {label:apps}."
+    },
+    "install-site": {
+      "title": "Vyberte {label:install-this-site-as-an-app}",
+      "description": "Vyberte {label:install-this-site-as-an-app}. Pri inštalovateľnej PWA môže Edge namiesto toho ponúknuť možnosť „{label:install-app}“ alebo ikonu inštalácie v adresnom riadku."
+    }
+  },
+  "completion": "Ak ju chcete znova otvoriť, zadajte edge://apps a kliknite na kartu aplikácie na možnosť Otvoriť. V sekcii Podrobnosti nájdete možnosti Pripnúť na panel úloh, Pripnúť na úvodnú obrazovku a Vytvoriť odkaz na pracovnej ploche.",
+  "alt": "5 ilustrovaných krokov inštalácie v prehliadači Edge vo Windowse; modré orámovanie označuje opísané ovládacie prvky.",
+  "transitions": {},
+  "heading": "Inštalácia aplikácie",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Inštalácia aplikácie v prehliadači Edge vo Windowse",
+  "svgDesc": "Návrh dokumentácie: schematické ovládacie prvky podľa aktuálneho návodu výrobcu, nie overená snímka zo zariadenia. Modré orámovanie označuje ovládacie prvky."
+}

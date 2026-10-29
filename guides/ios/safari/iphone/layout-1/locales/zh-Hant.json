@@ -1,0 +1,29 @@
+{
+  "title": "加入主畫面",
+  "label": "iPhone · Safari · 加入主畫面",
+  "completion": "按照確認畫面上的指示完成 App 的加入。",
+  "alt": "共四個步驟：點一下搜尋欄位旁的「頁面選單」，點一下「分享」，必要時點一下「顯示更多」，然後點一下「加入主畫面」。",
+  "steps": {
+    "open-page-menu": {
+      "title": "開啟「{label:page-menu}」",
+      "description": "點一下網站搜尋欄位左側的「{label:page-menu}」按鈕。其圖示為三條橫線，最下方的一條較短。"
+    },
+    "tap-share": {
+      "title": "點一下「{label:share}」",
+      "description": "在「{label:page-menu}」中，點一下「{label:share}」。其圖示為內有向上箭頭的方形。"
+    },
+    "view-more": {
+      "title": "點一下「{label:view-more}」",
+      "description": "如果分享選單已收合，請點一下「{label:view-more}」（以向下的 V 形符號表示）來顯示其餘動作。若動作列表已經顯示，請直接繼續步驟 {step:4}。"
+    },
+    "add-to-home-screen": {
+      "title": "點一下「{label:add-to-home-screen}」",
+      "description": "在展開的動作列表中，找到並點一下「{label:add-to-home-screen}」。其圖示為內有加號的圓角方形。"
+    }
+  },
+  "transitions": {},
+  "heading": "加入主畫面",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "在 iPhone 的 Safari 中加入主畫面：四個步驟",
+  "svgDesc": "iPhone 上 Safari 的四個編號步驟：開啟「頁面選單」，點一下「分享」，點一下「顯示更多」，然後點一下「加入主畫面」。藍色外框標示需要點一下的控制項目。完整的文字說明另行提供。"
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Dodaj do ekranu głównego",
+  "label": "iPhone · Safari · Dodaj do ekranu głównego",
+  "steps": {
+    "open-page-menu": {
+      "title": "Otwórz {label:page-menu}",
+      "description": "Stuknij w przycisk {label:page-menu} po lewej stronie paska adresu witryny. Jego ikona składa się z trzech poziomych linii, z których dolna jest krótsza."
+    },
+    "tap-share": {
+      "title": "Stuknij w {label:share}",
+      "description": "W menu Strona stuknij w {label:share}. Ikona to kwadrat ze strzałką skierowaną w górę."
+    },
+    "view-more": {
+      "title": "Stuknij w {label:view-more}",
+      "description": "Jeśli arkusz udostępniania jest zwinięty, stuknij w {label:view-more} (z szewronem skierowanym w dół), aby wyświetlić pozostałe działania. Jeśli lista działań jest już widoczna, przejdź do kroku {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Stuknij w {label:add-to-home-screen}",
+      "description": "Na rozwiniętej liście działań znajdź i stuknij w {label:add-to-home-screen}. Ikona to zaokrąglony kwadrat ze znakiem plus."
+    }
+  },
+  "completion": "Postępuj zgodnie z instrukcjami na ekranie potwierdzenia, aby zakończyć dodawanie aplikacji.",
+  "alt": "Cztery kroki: stuknij w menu Strona obok adresu, stuknij w „Udostępnij”, w razie potrzeby rozwiń pozostałe działania, a następnie stuknij w „Do ekranu głównego”.",
+  "transitions": {},
+  "heading": "Dodaj do ekranu głównego",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Dodawanie do ekranu głównego w Safari na iPhonie: cztery kroki",
+  "svgDesc": "Cztery ponumerowane kroki dla Safari na iPhonie: otwórz menu Strona, stuknij w „Udostępnij”, w razie potrzeby rozwiń pozostałe działania, a następnie stuknij w „Do ekranu głównego”. Niebieskie obwódki wskazują elementy, w które masz stuknąć. Pełne instrukcje tekstowe są udostępnione osobno."
+}

@@ -1,0 +1,25 @@
+{
+  "title": "הוספה ל-Dock ב-Safari",
+  "label": "Mac · Safari · הוספה ל-Dock",
+  "intro": "נדרש macOS Sonoma 14 ואילך. האיורים מציגים את המסלול דרך תפריט {label:file}; Safari מציע את האפשרות {label:add-to-dock} גם בתפריט השיתוף.",
+  "steps": {
+    "open-file-menu": {
+      "title": "פתחו את תפריט {label:file}",
+      "description": "פתחו את האתר ב-Safari. בשורת התפריטים בראש מסך ה-Mac, לחצו על {label:file}."
+    },
+    "add-to-dock": {
+      "title": "בחרו באפשרות {label:add-to-dock}",
+      "description": "בתפריט {label:file}, לחצו על {label:add-to-dock}. Safari יציג תיבת דו-שיח לאישור עבור האתר הזה."
+    },
+    "confirm-add": {
+      "title": "לחצו על {label:add}",
+      "description": "השאירו את שם היישום או ערכו אותו, ואז לחצו על {label:add}. יישום אינטרנט נשמר בתיקיית היישומים ונוסף ל-Dock."
+    }
+  },
+  "completion": "פתחו את היישום החדש מה-Dock.",
+  "alt": "שלושה שלבים ב-Safari ב-Mac: פתחו את התפריט קובץ, בחרו הוספה ל-Dock ולחצו על הוסף.",
+  "heading": "הוספה ל-Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "הוספת אתר ל-Dock ב-Safari ב-Mac",
+  "svgDesc": "שלושה שלבים: פתחו את התפריט קובץ, בחרו הוספה ל-Dock ולחצו על הוסף. המסגרות הכחולות מסמנות את הפקדים."
+}

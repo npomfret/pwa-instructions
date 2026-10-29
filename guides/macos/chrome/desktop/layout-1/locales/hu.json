@@ -1,0 +1,38 @@
+{
+  "title": "Alkalmazás telepítése a Chrome-ban",
+  "label": "Mac · Chrome · Alkalmazás telepítése",
+  "intro": "Ez az útmutató a referencia-képernyőképeken látható Chrome-menüs módszert követi. Egyes webhelyek a címsávban telepítési ikont is kínálnak.",
+  "steps": {
+    "open-more-menu": {
+      "title": "A {label:more} menü megnyitása",
+      "description": "Nyissa meg a webhelyet a Chrome-ban. Kattintson a Chrome-ablak jobb felső sarkában lévő három függőleges pontra a „{label:more}” menü megnyitásához."
+    },
+    "cast-save-and-share": {
+      "title": "Válassza az {label:cast-save-and-share} lehetőséget",
+      "description": "A „{label:more}” menüben válassza az {label:cast-save-and-share} lehetőséget az almenü megnyitásához."
+    },
+    "choose-install": {
+      "title": "Válassza a {label:install} lehetőséget",
+      "description": "Az almenüben kattintson a {label:install} lehetőségre, amelyet a webhely vagy az alkalmazás neve követ. A Chrome egyes verzióiban ez az elem „Oldal telepítése alkalmazásként” néven szerepel. A „{label:create-shortcut}” felett található telepítési műveletet válassza; a „{label:create-shortcut}” külön parancs."
+    },
+    "continue-install": {
+      "title": "Kattintson a {label:next} gombra",
+      "description": "Az „{label:install-app}” párbeszédpanelen ellenőrizze a webhely nevét és tartományát, majd kattintson a {label:next} gombra. Ha a Chrome-verziója közvetlenül a telepítés megerősítéséhez lép, folytassa az {step:5}. lépéssel."
+    },
+    "confirm-install": {
+      "title": "Kattintson a {label:install} gombra",
+      "description": "A következő párbeszédpanel azt mutatja, hogy az alkalmazás bekerül a „{label:chrome-apps}” közé. A megerősítéshez kattintson a {label:install} gombra."
+    },
+    "show-in-finder": {
+      "title": "Kattintson a {label:show-in-finder} gombra",
+      "description": "Amikor a Chrome a „{label:successfully-installed}” üzenetet jeleníti meg, kattintson a {label:show-in-finder} gombra a telepített alkalmazás megkereséséhez. Az „{label:open-tab-in-app}” lehetőséget is választhatja, hogy a webhelyet azonnal az alkalmazásablakban nyissa meg."
+    }
+  },
+  "completion": "A Finderben kattintson duplán az alkalmazásra a megnyitásához. Ha később a Chrome-ból szeretné újra megnyitni, írja be a chrome://apps címet a címsávba, nyomja meg a Return billentyűt, majd kattintson az alkalmazásra. A telepítéshez nincs szükség Dock-parancsikonra.",
+  "alt": "Hat lépés a Mac Chrome böngészőjében: nyissa meg a három pontos Továbbiak menüt, válassza az Átküldés, mentés és megosztás lehetőséget, válassza a Telepítés lehetőséget, kattintson a Tovább gombra, kattintson a Telepítés gombra, majd kattintson a Megjelenítés a Finderben gombra.",
+  "transitions": {},
+  "heading": "Alkalmazás telepítése",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Alkalmazás telepítése a Chrome-ban Macen",
+  "svgDesc": "Hat lépés: nyissa meg a Továbbiak menüt, válassza az Átküldés, mentés és megosztás lehetőséget, válassza a Telepítés lehetőséget, kattintson a Tovább gombra, kattintson a Telepítés gombra, majd válassza a Megjelenítés a Finderben lehetőséget. A kék keretek jelölik a vezérlőelemeket."
+}

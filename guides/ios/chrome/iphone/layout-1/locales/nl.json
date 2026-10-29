@@ -1,0 +1,15 @@
+{
+  "title": "Zet op beginscherm vanuit Chrome",
+  "label": "iPhone · Chrome · Zet op beginscherm",
+  "intro": "Gebruik Chrome op je iPhone. Met deze stappen installeer je de app rechtstreeks via het deelvenster van Chrome.",
+  "steps": {
+    "tap-share": {
+      "title": "Tik op {label:share}",
+      "description": "Tik in Chrome op {label:share} aan het rechteruiteinde van de adresbalk boven in het scherm. Het symbool is een vierkant met een pijl omhoog."
+    }
+  },
+  "completion": "Volg het bevestigingsscherm om het toevoegen van de app af te ronden.",
+  "alt": "Drie stappen in Chrome op de iPhone: Deel rechtsboven naast de adresbalk, Toon meer en daarna Zet op beginscherm.",
+  "heading": "Zet op beginscherm",
+  "subtitle": "iPhone · Chrome"
+}

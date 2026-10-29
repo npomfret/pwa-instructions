@@ -1,0 +1,22 @@
+{
+  "title": "Lägg till på hemskärmen från Brave",
+  "label": "iPhone · Brave → Safari · Lägg till på hemskärmen",
+  "intro": "Börja i Brave. I steg {step:3} öppnas samma webbplats i Safari. Steg {step:4}–{step:7} utförs i Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Tryck på {label:share}",
+      "description": "Tryck på {label:share} i verktygsfältet längst ned i Brave. Symbolen är en kvadrat med en uppåtriktad pil. Om verktygsfältet är dolt trycker du på webbplatsens adress för att visa det."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Rulla nedåt i den utökade delningsmenyn och tryck på {label:open-in-safari}. Webbplatsen öppnas i Safari. Utför alla återstående steg där."
+    }
+  },
+  "completion": "Följ anvisningarna på bekräftelseskärmen för att slutföra tillägget av appen.",
+  "alt": "Sju numrerade steg: Dela, Visa mer och Öppna i Safari i Brave, följt av de fyra installationsstegen i Safari.",
+  "transitions": {
+    "continue-in-safari": "Fortsätt i Safari"
+  },
+  "heading": "Lägg till på hemskärmen",
+  "subtitle": "iPhone · Brave → Safari"
+}

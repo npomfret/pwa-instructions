@@ -30,7 +30,7 @@ Leave `guideId` out for automatic browser detection. Use `guideId="ios-safari-ip
 
 ## Localization
 
-Guides are English unless you ask for a locale. Eight complete translations are published: `es`, `fr`, `de`, `pt-BR`, `it`, `ja`, `ko` and `zh-Hans`, covering every guide, the artwork and the control names. Locale data is opt-in, so you only bundle what you use:
+Guides are English unless you ask for a locale. 38 complete translations are published: `es`, `fr`, `de`, `pt-BR`, `it`, `ja`, `ko`, `zh-Hans`, `nl`, `pl`, `sv`, `da`, `nb`, `fi`, `ru`, `uk`, `tr`, `cs`, `sk`, `hu`, `ro`, `hr`, `el`, `pt-PT`, `es-419`, `fr-CA`, `zh-Hant`, `zh-HK`, `id`, `ms`, `th`, `vi`, `hi`, `ca`, `he`, `ar`, `bg` and `sl`, covering every guide, the artwork and the control names. Locale data is opt-in, so you only bundle what you use:
 
 ```js
 import { registerLocale, selectGuide, detectBrowserEnvironment } from 'pwa-instructions';

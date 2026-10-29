@@ -1,0 +1,26 @@
+{
+  "title": "Zainstaluj aplikację w Chrome na Androidzie",
+  "label": "Android · Chrome · Zainstaluj aplikację",
+  "intro": "Użyj Chrome na Androidzie. Nazwy opcji menu na ilustracjach pochodzą z aktualnej pomocy Google dla Androida, a nie ze starszego artykułu o dodawaniu do ekranu głównego. Wersja robocza oparta na dokumentacji: nie sprawdzono jej jeszcze na urządzeniu; układ menu i komunikaty potwierdzenia mogą się różnić.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Otwórz menu {label:more}",
+      "description": "Otwórz witrynę w Chrome. Kliknij trzy pionowe kropki obok paska adresu."
+    },
+    "install-and-create-shortcut": {
+      "title": "Kliknij {label:install-and-create-shortcut}",
+      "description": "Wybierz w menu opcję {label:install-and-create-shortcut}. W starszych wersjach Chrome może ona nazywać się „Dodaj do ekranu głównego”."
+    },
+    "install-app": {
+      "title": "Kliknij {label:install}",
+      "description": "Wybierz {label:install}. Postępuj zgodnie z komunikatami wyświetlanymi przez Chrome, aby zainstalować aplikację. {label:create-shortcut} to osobna opcja, która zapisuje tylko link."
+    }
+  },
+  "completion": "Po zakończeniu instalacji otwórz aplikację z poziomu launchera Androida. Miejsce, w którym aplikacja pojawi się na ekranie głównym, zależy od launchera i jego ustawień.",
+  "alt": "3 ilustrowane kroki instalacji w Chrome na Androidzie; niebieskie obwódki wskazują opisane elementy sterujące.",
+  "transitions": {},
+  "heading": "Zainstaluj aplikację",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Instalowanie aplikacji w Chrome na Androidzie",
+  "svgDesc": "Wersja robocza oparta na dokumentacji. Trzy kroki: otwórz menu „Więcej”, kliknij „Zainstaluj i utwórz skrót”, a następnie kliknij „Zainstaluj”. Wszystkie dalsze instrukcje wykonaj na swoim urządzeniu."
+}

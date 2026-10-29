@@ -1,0 +1,38 @@
+{
+  "title": "Installera en app i Chrome",
+  "label": "Mac · Chrome · Installera app",
+  "intro": "Den här guiden följer Chrome-menyn som visas i referensskärmbilderna. Vissa webbplatser erbjuder även en installationssymbol i adressfältet.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Öppna menyn {label:more}",
+      "description": "Öppna webbplatsen i Chrome. Klicka på de tre lodräta punkterna uppe till höger i Chrome-fönstret för att öppna menyn {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Välj {label:cast-save-and-share}",
+      "description": "Välj {label:cast-save-and-share} i menyn Mer för att öppna undermenyn."
+    },
+    "choose-install": {
+      "title": "Välj {label:install}",
+      "description": "Klicka på {label:install} följt av webbplatsens eller appens namn i undermenyn. I vissa versioner av Chrome heter alternativet ”Installera sidan som app”. Välj installationsåtgärden ovanför Skapa genväg. Skapa genväg är ett separat kommando."
+    },
+    "continue-install": {
+      "title": "Klicka på {label:next}",
+      "description": "Kontrollera webbplatsens namn och domän i dialogrutan Installera appen och klicka sedan på {label:next}. Om din version av Chrome går direkt till installationsbekräftelsen fortsätter du med steg {step:5}."
+    },
+    "confirm-install": {
+      "title": "Klicka på {label:install}",
+      "description": "I nästa dialogruta visas att appen läggs till i {label:chrome-apps}. Klicka på {label:install} för att bekräfta."
+    },
+    "show-in-finder": {
+      "title": "Klicka på {label:show-in-finder}",
+      "description": "När Chrome visar {label:successfully-installed} klickar du på {label:show-in-finder} för att hitta den installerade appen. Du kan också välja {label:open-tab-in-app} för att öppna webbplatsen direkt i appfönstret."
+    }
+  },
+  "completion": "Dubbelklicka på appen i Finder för att öppna den. Om du vill öppna den igen senare via Chrome skriver du chrome://apps i adressfältet, trycker på returtangenten och klickar på appen. Du behöver ingen genväg i Dock för att installera.",
+  "alt": "Sex steg i Chrome på Mac: öppna menyn Mer med de tre punkterna, välj Casta, spara och dela, välj Installera, klicka på Nästa, klicka på Installera och klicka sedan på Visa i Finder.",
+  "transitions": {},
+  "heading": "Installera app",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Installera en app i Chrome på Mac",
+  "svgDesc": "Sex steg: öppna Mer, välj Casta, spara och dela, välj Installera, klicka på Nästa, klicka på Installera och välj sedan Visa i Finder. Blå konturer markerar reglagen."
+}

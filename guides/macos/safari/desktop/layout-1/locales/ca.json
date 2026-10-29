@@ -1,0 +1,25 @@
+{
+  "title": "Afegeix al Dock des del Safari",
+  "label": "Mac · Safari · Afegeix al Dock",
+  "intro": "Cal el macOS Sonoma 14 o posterior. Aquestes il·lustracions mostren la ruta pel menú {label:file}; el Safari també ofereix {label:add-to-dock} al menú Comparteix.",
+  "steps": {
+    "open-file-menu": {
+      "title": "Obre el menú {label:file}",
+      "description": "Obre el lloc web al Safari. A la barra de menús de la part superior de la pantalla del Mac, fes clic a {label:file}."
+    },
+    "add-to-dock": {
+      "title": "Tria {label:add-to-dock}",
+      "description": "Al menú {label:file}, fes clic a {label:add-to-dock}. El Safari obre un diàleg de confirmació per a aquest lloc web."
+    },
+    "confirm-add": {
+      "title": "Fes clic a {label:add}",
+      "description": "Conserva o edita el nom de l’app i fes clic a {label:add}. L’app web es desa a la carpeta Aplicacions i s’afegeix al Dock."
+    }
+  },
+  "completion": "Obre la nova app des del Dock.",
+  "alt": "Tres passos al Safari del Mac: obre Arxiu, tria Afegeix al Dock i fes clic a Afegeix.",
+  "heading": "Afegeix al Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Afegeix un lloc web al Dock des del Safari del Mac",
+  "svgDesc": "Tres passos: obre el menú Arxiu, tria Afegeix al Dock i fes clic a Afegeix. Els contorns blaus assenyalen els controls."
+}

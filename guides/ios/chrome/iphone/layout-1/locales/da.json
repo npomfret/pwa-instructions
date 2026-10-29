@@ -1,0 +1,16 @@
+{
+  "title": "Føj til hjemmeskærm fra Chrome",
+  "label": "iPhone · Chrome · Føj til hjemmeskærm",
+  "intro": "Brug Chrome på din iPhone. Disse trin installerer appen direkte fra Chromes delingsark.",
+  "steps": {
+    "tap-share": {
+      "title": "Tryk på {label:share}",
+      "description": "Tryk på {label:share} yderst til højre i adresselinjen øverst på skærmen i Chrome. Symbolet er en firkant med en pil, der peger opad."
+    }
+  },
+  "completion": "Følg anvisningerne på bekræftelsesskærmen for at færdiggøre tilføjelsen af appen.",
+  "alt": "Tre trin i Chrome på iPhone: Del øverst til højre i adresselinjen, Vis mere og derefter Føj til hjemmeskærm.",
+  "transitions": {},
+  "heading": "Føj til hjemmeskærm",
+  "subtitle": "iPhone · Chrome"
+}

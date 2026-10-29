@@ -15,7 +15,7 @@
     },
     "choose-install": {
       "title": "Scegli {label:install}",
-      "description": "Nel sottomenu, fai clic su {label:install} seguito dal nome del sito web o dell’app. Alcuni siti chiamano questa voce Installa pagina come app. Scegli l’azione di installazione sopra {label:create-shortcut}, che è un comando separato."
+      "description": "Nel sottomenu, fai clic su {label:install} seguito dal nome del sito web o dell’app. Alcune versioni di Chrome chiamano questa voce Installa pagina come app. Scegli l’azione di installazione sopra {label:create-shortcut}, che è un comando separato."
     },
     "continue-install": {
       "title": "Fai clic su {label:next}",

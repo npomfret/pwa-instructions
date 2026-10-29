@@ -1,0 +1,29 @@
+{
+  "title": "Installeer een app in Edge op Windows",
+  "label": "Windows · Edge · App installeren",
+  "intro": "De menuroute volgt de huidige Edge-hulp van Microsoft. In andere versies van Edge staat {label:apps} mogelijk direct in {label:settings-and-more}. Conceptdocumentatie: nog niet gecontroleerd op een apparaat; de indeling van het menu en de bevestigingsvensters kunnen afwijken.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Open {label:settings-and-more}",
+      "description": "Open de website in Microsoft Edge. Klik rechtsboven in de browser op de drie horizontale puntjes."
+    },
+    "more-tools": {
+      "title": "Kies {label:more-tools}",
+      "description": "Kies {label:more-tools} in het menu."
+    },
+    "apps": {
+      "title": "Kies {label:apps}",
+      "description": "Kies in {label:more-tools} de optie {label:apps}."
+    },
+    "install-site": {
+      "title": "Kies {label:install-this-site-as-an-app}",
+      "description": "Kies {label:install-this-site-as-an-app}. Voor een installeerbare PWA kan Edge in plaats daarvan {label:install-app} of een installatiesymbool in de adresbalk aanbieden."
+    }
+  },
+  "completion": "Om de app opnieuw te openen, voer je edge://apps in en klik je op Openen op de kaart van de app. Bij Details vind je Vastmaken aan taakbalk, Vastmaken aan Start en Bureaubladsnelkoppeling maken.",
+  "alt": "5 geïllustreerde stappen voor het installeren in Edge op Windows; blauwe omlijningen markeren de beschreven opties.",
+  "heading": "App installeren",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "App installeren in Edge op Windows: vijf stappen",
+  "svgDesc": "Vijf genummerde stappen voor Edge op Windows: open Instellingen en meer, kies Meer hulpprogramma's, kies Apps, kies Installeer deze site als een app en klik op Installeren. De blauwe omlijning markeert de opties waarop je moet klikken. De volledige instructies in tekst worden apart aangeboden."
+}

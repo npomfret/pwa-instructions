@@ -1,0 +1,29 @@
+{
+  "title": "Ajouter à l’écran d’accueil",
+  "label": "iPhone · Safari · Ajouter à l’écran d’accueil",
+  "heading": "Ajouter à l’écran d’accueil",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Ajouter à l’écran d’accueil dans Safari sur iPhone : quatre étapes",
+  "svgDesc": "Quatre étapes numérotées pour Safari sur iPhone : ouvrez le Menu de la page, touchez Partager, touchez Afficher plus, puis touchez Sur l’écran d’accueil. Des contours bleus signalent les commandes à toucher. Les instructions écrites sont fournies séparément.",
+  "steps": {
+    "open-page-menu": {
+      "title": "Ouvrez le {label:page-menu}",
+      "description": "Touchez le bouton {label:page-menu} situé à gauche de la barre d’adresse du site web. Son icône comporte trois lignes horizontales, la dernière étant plus courte."
+    },
+    "tap-share": {
+      "title": "Touchez {label:share}",
+      "description": "Dans le {label:page-menu}, touchez {label:share}. Son icône est un carré surmonté d’une flèche pointant vers le haut."
+    },
+    "view-more": {
+      "title": "Touchez {label:view-more}",
+      "description": "Si la feuille de partage est réduite, touchez {label:view-more}, représenté par un chevron orienté vers le bas, pour afficher les autres actions. Si la liste des actions est déjà visible, passez à l’étape {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Touchez {label:add-to-home-screen}",
+      "description": "Dans la liste d’actions développée, repérez {label:add-to-home-screen} et touchez-le. Son icône est un carré arrondi contenant un signe plus."
+    }
+  },
+  "completion": "Suivez l’écran de confirmation pour terminer l’ajout de l’app.",
+  "alt": "Quatre étapes : touchez le menu de la page à côté de l’adresse, touchez Partager, touchez Afficher plus si nécessaire, puis touchez Sur l’écran d’accueil.",
+  "transitions": {}
+}

@@ -1,0 +1,37 @@
+{
+  "title": "התקנת אפליקציה ב-Chrome",
+  "label": "Mac · Chrome · התקנת אפליקציה",
+  "intro": "מדריך זה מציג את המסלול דרך תפריט Chrome כפי שמופיע בצילומי המסך שבהתייחסות. חלק מהאתרים מציעים גם סמל התקנה בשורת הכתובת.",
+  "steps": {
+    "open-more-menu": {
+      "title": "פתחו את התפריט {label:more}",
+      "description": "פתחו את האתר ב-Chrome. לחצו על שלוש הנקודות האנכיות בפינה הימנית העליונה של חלון Chrome כדי לפתוח את התפריט {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "בחרו באפשרות {label:cast-save-and-share}",
+      "description": "בתפריט {label:more}, בחרו באפשרות {label:cast-save-and-share} כדי לפתוח את תת-התפריט שלה."
+    },
+    "choose-install": {
+      "title": "בחרו באפשרות {label:install}",
+      "description": "בתת-התפריט, לחצו על {label:install} ואחריו שם האתר או האפליקציה. בחלק מגרסאות Chrome האפשרות הזו נקראת ״התקנת הדף כאפליקציה״. בחרו בפעולת ההתקנה שמעל {label:create-shortcut}; {label:create-shortcut} היא פקודה נפרדת."
+    },
+    "continue-install": {
+      "title": "לחצו על {label:next}",
+      "description": "בתיבת הדו-שיח {label:install-app}, בדקו את שם האתר והדומיין ולחצו על {label:next}. אם גרסת Chrome שלכם עוברת ישירות לאישור ההתקנה, המשיכו לשלב {step:5}."
+    },
+    "confirm-install": {
+      "title": "לחצו על {label:install}",
+      "description": "בתיבת הדו-שיח הבאה מוצג שהאפליקציה נוספת אל {label:chrome-apps}. לחצו על {label:install} כדי לאשר."
+    },
+    "show-in-finder": {
+      "title": "לחצו על {label:show-in-finder}",
+      "description": "כאשר Chrome מציג את ההודעה {label:successfully-installed}, לחצו על {label:show-in-finder} כדי לאתר את האפליקציה שהותקנה. אפשר גם לבחור באפשרות {label:open-tab-in-app} כדי לפתוח מיד את האתר בחלון האפליקציה שלו."
+    }
+  },
+  "completion": "ב-Finder, לחצו פעמיים על האפליקציה כדי לפתוח אותה. כדי לפתוח אותה שוב מאוחר יותר מ-Chrome, הקלידו chrome://apps בשורת הכתובת, הקישו Return ולחצו על האפליקציה. ההתקנה אינה מחייבת קיצור דרך ב-Dock.",
+  "alt": "שישה שלבים ב-Chrome ב-Mac: פתחו את התפריט עוד (שלוש הנקודות), בחרו הפעלת Cast, שמירה ושיתוף, בחרו התקנה, לחצו על הבא, לחצו על התקנה ולבסוף לחצו על הצגה ב-Finder.",
+  "heading": "התקנת אפליקציה",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "התקנת אפליקציה ב-Chrome ב-Mac",
+  "svgDesc": "שישה שלבים: פתחו את עוד, בחרו הפעלת Cast, שמירה ושיתוף, בחרו התקנה, לחצו על הבא, לחצו על התקנה ולבסוף על הצגה ב-Finder. המסגרות הכחולות מסמנות את הפקדים."
+}

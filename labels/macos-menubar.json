@@ -65,8 +65,251 @@
         "verified": "2026-10-29",
         "version": "macOS (current Apple guide)",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/nl-nl/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14+ (page for Sonoma and later)",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pl-pl/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14+ (page for Sonoma and later)",
+        "deviceChecked": false
+      },
+      "sv": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/sv-se/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/da-dk/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/no-no/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fi-fi/guide/mac-help/mchla4695cce/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current, fi-fi)",
+        "deviceChecked": false,
+        "note": "Apple's Finnish Mac and Safari guides write \"Arkisto > ...\" for the File menu (also https://support.apple.com/fi-fi/guide/safari/ibrw1069/27.0/mac/27). The Add to Dock article https://support.apple.com/fi-fi/104996 writes \"Tiedosto\", which looks like an inconsistency; Arkisto is the standard Finnish macOS menu name. Verify on a device."
+      },
+      "ru": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ru-ru/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14+ (page for Sonoma and later)",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/uk-ua/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/tr-tr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/cs-cz/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/sk-sk/guide/safari/ibrwf3a9e7d6/mac",
+        "verified": "2026-10-29",
+        "version": "Safari 27 / macOS (current Slovak guide)",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/hu-hu/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ro-ro/guide/safari/ibrw1069/mac",
+        "verified": "2026-10-29",
+        "version": "Safari guide, current (ro-ro)",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/hr-hr/104996",
+        "verified": "2026-10-29",
+        "version": "iOS/macOS 27 (Apple support, hr-hr), current",
+        "deviceChecked": false,
+        "note": "Apple: \"Na traci izbornika odaberite Datoteka > Dodaj u Dock.\""
+      },
+      "el": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/el-gr/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later (web apps guide)",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-pt/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-mx/guide/safari/ibrwf3a9e7d6/mac",
+        "verified": "2026-10-29",
+        "version": "Safari User Guide for Mac (es-mx), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "fr-CA": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-ca/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later (fr-ca)",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-tw/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "zh-HK": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-hk/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 14 or later",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/id-id/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ms-my/guide/mac-help/mchl971293e1/27/mac/27",
+        "verified": "2026-10-29",
+        "version": "macOS 27 (Panduan Pengguna Mac)",
+        "deviceChecked": false,
+        "note": "Quoted as \"Fail > Buka\"."
+      },
+      "th": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/th-th/104996",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/vi-vn/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 or later",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/hi-in/guide/safari/ibrw1069/mac",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ca-es/guide/mac-help/mchle9f0a1b2/mac",
+        "verified": "2026-10-29",
+        "version": "iOS 27 / macOS 27 Catalan user guides",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/he-il/104996",
+        "verified": "2026-10-29",
+        "version": "macOS Sonoma 14 and later",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ar-ae/104996",
+        "verified": "2026-10-29",
+        "version": "Apple support page (ar-ae), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "model-translation",
+        "source": "model knowledge of the bg UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Archief",
+    "pl": "Plik",
+    "sv": "Arkiv",
+    "da": "Arkiv",
+    "nb": "Fil",
+    "fi": "Arkisto",
+    "ru": "Файл",
+    "uk": "Файл",
+    "tr": "Dosya",
+    "cs": "Soubor",
+    "sk": "Súbor",
+    "hu": "Fájl",
+    "ro": "Fișier",
+    "hr": "Datoteka",
+    "el": "Αρχείο",
+    "pt-PT": "Ficheiro",
+    "es-419": "Archivo",
+    "fr-CA": "Fichier",
+    "zh-Hant": "檔案",
+    "zh-HK": "檔案",
+    "id": "File",
+    "ms": "Fail",
+    "th": "ไฟล์",
+    "vi": "Tệp",
+    "hi": "फ़ाइल",
+    "ca": "Arxiu",
+    "he": "קובץ",
+    "ar": "ملف",
+    "bg": "Файл",
+    "sl": "Datoteka"
   },
   "edit": {
     "en": "Edit",
@@ -134,8 +377,252 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "model-translation",
+        "source": "model knowledge of the nl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "model-translation",
+        "source": "model knowledge of the pl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "sv": {
+        "method": "model-translation",
+        "source": "model knowledge of the sv UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "model-translation",
+        "source": "model knowledge of the da UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "model-translation",
+        "source": "model knowledge of the nb UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fi": {
+        "method": "model-translation",
+        "source": "model knowledge of the fi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "model-translation",
+        "source": "model knowledge of the ru UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "model-translation",
+        "source": "model knowledge of the uk UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/tr-tr/guide/mac-help/mchl70368996/mac",
+        "verified": "2026-10-29",
+        "version": "current guide",
+        "deviceChecked": false,
+        "note": "Another Apple Turkish page (102553) writes \"Düzenle\"; the current Mac guide uses \"Düzen\"."
+      },
+      "cs": {
+        "method": "model-translation",
+        "source": "model knowledge of the cs UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/sk-sk/guide/mac-help/mchl5252f3de/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current Slovak guide)",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "model-translation",
+        "source": "model knowledge of the hu UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "model-translation",
+        "source": "model knowledge of the ro UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "model-translation",
+        "source": "model knowledge of the hr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "model-translation",
+        "source": "model knowledge of the el UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-PT UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "model-translation",
+        "source": "model knowledge of the es-419 UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "fr-CA": {
+        "method": "model-translation",
+        "source": "model knowledge of the fr-CA UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-tw/guide/mac-help/mchl5252f3de/mac",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false,
+        "note": "Menu bar \"編輯\" menu, quoted from Apple's copy-and-paste page."
+      },
+      "zh-HK": {
+        "method": "model-translation",
+        "source": "model knowledge of the zh-HK UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "model-translation",
+        "source": "model knowledge of the id UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "macOS in this language shows \"Edit\" for the Edit menu; the same word is the English, so tests/no-english.test.mjs allow-lists it for id."
+      },
+      "ms": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ms-my/guide/mac-help/mchl70368996/27/mac/27",
+        "verified": "2026-10-29",
+        "version": "macOS 27 (Panduan Pengguna Mac)",
+        "deviceChecked": false,
+        "note": "Quoted as \"Edit > Salin\". macOS in this language shows \"Edit\" for the Edit menu; the same word is the English, so tests/no-english.test.mjs allow-lists it for ms."
+      },
+      "th": {
+        "method": "model-translation",
+        "source": "model knowledge of the th UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "model-translation",
+        "source": "model knowledge of the vi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "model-translation",
+        "source": "model knowledge of the hi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ca-es/guide/mac-help/mchlws12345m2/mac",
+        "verified": "2026-10-29",
+        "version": "iOS 27 / macOS 27 Catalan user guides",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "model-translation",
+        "source": "model knowledge of the he UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "model-translation",
+        "source": "model knowledge of the ar UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "model-translation",
+        "source": "model knowledge of the bg UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Wijzig",
+    "pl": "Edycja",
+    "sv": "Redigera",
+    "da": "Redigér",
+    "nb": "Rediger",
+    "fi": "Muokkaa",
+    "ru": "Правка",
+    "uk": "Редагувати",
+    "tr": "Düzen",
+    "cs": "Úpravy",
+    "sk": "Upraviť",
+    "hu": "Szerkesztés",
+    "ro": "Editare",
+    "hr": "Uredi",
+    "el": "Επεξεργασία",
+    "pt-PT": "Editar",
+    "es-419": "Edición",
+    "fr-CA": "Édition",
+    "zh-Hant": "編輯",
+    "zh-HK": "編輯",
+    "id": "Edit",
+    "ms": "Edit",
+    "th": "แก้ไข",
+    "vi": "Sửa",
+    "hi": "संपादित करें",
+    "ca": "Edita",
+    "he": "עריכה",
+    "ar": "تحرير",
+    "bg": "Редактиране",
+    "sl": "Urejanje"
   },
   "view": {
     "en": "View",
@@ -203,7 +690,253 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/nl-nl/guide/safari/cpsh003/mac",
+        "verified": "2026-10-29",
+        "version": "Safari (current, nl-nl)",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pl-pl/guide/safari/cpsh003/mac",
+        "verified": "2026-10-29",
+        "version": "Safari / macOS (current, pl-pl)",
+        "deviceChecked": false,
+        "note": "Menu path \"Widok > Większa czcionka\" in the shortcuts guide."
+      },
+      "sv": {
+        "method": "model-translation",
+        "source": "model knowledge of the sv UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "The source \"Innehåll\" means Contents; Swedish macOS shows \"Visa\" for the View menu. Replaced \"Innehåll\"."
+      },
+      "da": {
+        "method": "model-translation",
+        "source": "model knowledge of the da UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/no-no/guide/safari/ibrw1069/mac",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fi-fi/guide/mac-help/mchla4695cce/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current, fi-fi)",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ru-ru/guide/safari/cpsh003/mac",
+        "verified": "2026-10-29",
+        "version": "Safari / macOS (current, ru-ru)",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/uk-ua/guide/safari/ibrw1012/mac",
+        "verified": "2026-10-29",
+        "version": "Safari guide, current",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/tr-tr/guide/safari/ibrw1012/mac",
+        "verified": "2026-10-29",
+        "version": "Safari 27 guide (tr-tr)",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/cs-cz/guide/mac-help/mchla4695cce/mac",
+        "verified": "2026-10-29",
+        "version": "macOS",
+        "deviceChecked": false,
+        "note": "Menu bar item named in \"Zobrazení > Zobrazit řádek panelů\"."
+      },
+      "sk": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/sk-sk/guide/mac-help/mchla4695cce/mac",
+        "verified": "2026-10-29",
+        "version": "macOS (current Slovak guide)",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/hu-hu/guide/safari/cpsh003/27.0/mac/27",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ro-ro/guide/safari/cpsh003/mac",
+        "verified": "2026-10-29",
+        "version": "Safari guide, current (ro-ro)",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "model-translation",
+        "source": "model knowledge of the hr UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/el-gr/guide/safari/cpsh003/mac",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/pt-pt/guide/safari/ibrw1012/27.0/mac/27",
+        "verified": "2026-10-29",
+        "version": "macOS 27 / Safari 27.0",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/es-mx/guide/safari/ibrw1012/mac",
+        "verified": "2026-10-29",
+        "version": "Safari User Guide for Mac (es-mx), read 2026-10-29",
+        "deviceChecked": false
+      },
+      "fr-CA": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/fr-ca/guide/mac-help/mchla4695cce/mac",
+        "verified": "2026-10-29",
+        "version": "macOS current (fr-ca)",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-tw/guide/safari/cpsh003/mac",
+        "verified": "2026-10-29",
+        "version": "macOS 27 / Safari 27",
+        "deviceChecked": false,
+        "note": "The Taiwan macOS View menu is named 顯示方式 (「顯示方式」>「放大文字」)."
+      },
+      "zh-HK": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/zh-hk/guide/safari/ibrw1069/mac",
+        "verified": "2026-10-29",
+        "version": "macOS current",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/id-id/guide/safari/ibrw1012/mac",
+        "verified": "2026-10-29",
+        "version": "Safari guide, current",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ms-my/guide/mac-help/mchlgtd_prev01/27/mac/27",
+        "verified": "2026-10-29",
+        "version": "macOS 27 (Panduan Pengguna Mac)",
+        "deviceChecked": false,
+        "note": "Quoted as \"Paparan > Lakaran Kecil\"."
+      },
+      "th": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/th-th/guide/safari/ibrw1069/27.0/mac/27",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/vi-vn/guide/mac-help/mchla4695cce/mac",
+        "verified": "2026-10-29",
+        "version": "macOS current guide",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/hi-in/guide/safari/cpsh003/mac",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/ca-es/guide/mac-help/mchle9f0a1b2/mac",
+        "verified": "2026-10-29",
+        "version": "iOS 27 / macOS 27 Catalan user guides",
+        "deviceChecked": false,
+        "note": "Menu path \"Mostra > Mostra les opcions de visualització\"."
+      },
+      "he": {
+        "method": "vendor-docs",
+        "source": "https://support.apple.com/he-il/guide/safari/cpsh003/mac",
+        "verified": "2026-10-29",
+        "version": "macOS 27",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "model-translation",
+        "source": "model knowledge of the ar UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "model-translation",
+        "source": "model knowledge of the bg UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Weergave",
+    "pl": "Widok",
+    "sv": "Visa",
+    "da": "Vis",
+    "nb": "Vis",
+    "fi": "Näytä",
+    "ru": "Вид",
+    "uk": "Перегляд",
+    "tr": "Görüntü",
+    "cs": "Zobrazení",
+    "sk": "Zobraziť",
+    "hu": "Nézet",
+    "ro": "Vizualizare",
+    "hr": "Prikaz",
+    "el": "Προβολή",
+    "pt-PT": "Visualização",
+    "es-419": "Visualización",
+    "fr-CA": "Présentation",
+    "zh-Hant": "顯示方式",
+    "zh-HK": "顯示方式",
+    "id": "Lihat",
+    "ms": "Paparan",
+    "th": "มุมมอง",
+    "vi": "Xem",
+    "hi": "देखें",
+    "ca": "Mostra",
+    "he": "תצוגה",
+    "ar": "عرض",
+    "bg": "Изглед",
+    "sl": "Pogled"
   }
 }

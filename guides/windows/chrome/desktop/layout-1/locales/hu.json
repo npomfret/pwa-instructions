@@ -1,0 +1,18 @@
+{
+  "title": "Alkalmazás telepítése a Windows Chrome-ban",
+  "label": "Windows · Chrome · Alkalmazás telepítése",
+  "intro": "Használja a Chrome menüjét, vagy a címsávban megjelenő telepítési ikont, ha a webhely kínál ilyet. Dokumentációs tervezet: eszközön még nem ellenőrizték; a menü felépítése és a megerősítő üzenetek eltérhetnek.",
+  "steps": {
+    "confirm-install": {
+      "title": "Kattintson a {label:install} gombra",
+      "description": "Ellenőrizze az alkalmazás nevét és a webhely címét, majd kattintson a {label:install} gombra. Kövesse az esetleges további megerősítő üzeneteket."
+    }
+  },
+  "completion": "Telepített alkalmazás újbóli megnyitásához írja be a chrome://apps címet a Chrome címsávjába, majd válassza ki az alkalmazást.",
+  "alt": "4 szemléltető lépés a Windows Chrome telepítéséhez; a kék keretek a dokumentált vezérlőelemeket jelölik.",
+  "transitions": {},
+  "heading": "Alkalmazás telepítése",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Alkalmazás telepítése a Chrome-ban Windowson",
+  "svgDesc": "Dokumentációs tervezet: sematikus vezérlőelemek a gyártó aktuális útmutatója alapján, nem eszközön ellenőrzött felvétel. A kék keretek jelölik a vezérlőelemeket."
+}

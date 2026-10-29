@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises';
 import path from 'node:path';
 import { DOMParser, XMLSerializer } from '@xmldom/xmldom';
 import { DEFAULT_LOCALE, LABEL_VARIANTS, loadLabels, labelResolver, labelled, loadGuideLocale, localizeDocument, checkLabelTags,
-  stripLocalization, fillText, usedLabelIds } from './i18n.mjs';
+  stripLocalization, fillText, usedLabelIds, markRtl } from './i18n.mjs';
 
 const ns = 'http://www.w3.org/2000/svg';
 const children = node => Array.from(node.childNodes).filter(child => child.nodeType === 1);
@@ -212,6 +212,7 @@ export async function composeGuides(root, catalog, locale = DEFAULT_LOCALE) {
       byId(doc, 'title').textContent = english ? data.title : strings.title;
       byId(doc, 'description').textContent = english ? data.illustration.alt : strings.alt;
     }
+    if (!english) markRtl(doc);
     // The tagged document stays intact for guides that import its panels; the output copies have the markup removed, or
     // for `taggedSvg` only the `label:*` tags kept.
     const serialized = new XMLSerializer().serializeToString(doc);

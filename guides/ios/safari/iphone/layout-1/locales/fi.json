@@ -1,0 +1,29 @@
+{
+  "title": "Lisää Koti-valikkoon",
+  "label": "iPhone · Safari · Lisää Koti-valikkoon",
+  "steps": {
+    "open-page-menu": {
+      "title": "Avaa {label:page-menu}",
+      "description": "Napauta Safarin osoiterivin vasemmalla puolella olevaa {label:page-menu}-painiketta. Sen kuvakkeessa on kolme vaakaviivaa, joista alin on lyhyempi."
+    },
+    "tap-share": {
+      "title": "Napauta {label:share}",
+      "description": "Napauta valikossa kohtaa {label:share}. Sen kuvake on neliö, josta osoittaa nuoli ylöspäin."
+    },
+    "view-more": {
+      "title": "Napauta {label:view-more}",
+      "description": "Jos jakovalikko on suppeassa näkymässä, napauta {label:view-more} (alaspäin osoittava kulmanuoli), niin loput toiminnot tulevat näkyviin. Jos toimintoluettelo on jo näkyvissä, jatka vaiheeseen {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Napauta {label:add-to-home-screen}",
+      "description": "Etsi laajennetusta toimintoluettelosta {label:add-to-home-screen} ja napauta sitä. Sen kuvake on pyöristetty neliö, jonka sisällä on plusmerkki."
+    }
+  },
+  "completion": "Viimeistele apin lisääminen noudattamalla vahvistusnäytön ohjeita.",
+  "alt": "Neljä vaihetta: napauta osoitteen vieressä olevaa Sivu-valikkoa, napauta Jaa, napauta tarvittaessa Näytä lisää ja napauta sitten Lisää Koti-valikkoon.",
+  "transitions": {},
+  "heading": "Lisää Koti-valikkoon",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Lisää Koti-valikkoon Safarissa iPhonella: neljä vaihetta",
+  "svgDesc": "Neljä numeroitua vaihetta iPhonen Safarille: avaa Sivu-valikko, napauta Jaa, napauta tarvittaessa Näytä lisää ja napauta sitten Lisää Koti-valikkoon. Siniset ääriviivat korostavat napautettavia säätimiä. Täydelliset tekstiohjeet ovat erikseen."
+}

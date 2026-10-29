@@ -1,0 +1,26 @@
+{
+  "title": "Pridanie do Docku v Safari",
+  "label": "Mac · Safari · Pridať do Docku",
+  "intro": "Vyžaduje macOS Sonoma 14 alebo novší. Ilustrácie zobrazujú postup cez menu {label:file}; Safari ponúka možnosť {label:add-to-dock} aj v menu Zdieľať.",
+  "steps": {
+    "open-file-menu": {
+      "title": "Otvorte menu {label:file}",
+      "description": "Otvorte webovú stránku v Safari. Na lište v hornej časti obrazovky Macu kliknite na {label:file}."
+    },
+    "add-to-dock": {
+      "title": "Vyberte {label:add-to-dock}",
+      "description": "V menu Súbor kliknite na {label:add-to-dock}. Safari zobrazí potvrdzovacie dialógové okno pre túto webovú stránku."
+    },
+    "confirm-add": {
+      "title": "Kliknite na {label:add}",
+      "description": "Ponechajte alebo upravte názov apky a potom kliknite na {label:add}. Webová apka sa uloží do priečinka Aplikácie a pridá sa do Docku."
+    }
+  },
+  "completion": "Novú apku otvorte z Docku.",
+  "alt": "Tri kroky v Safari na Macu: otvorte menu Súbor, vyberte Pridať do Docku a potom kliknite na Pridať.",
+  "transitions": {},
+  "heading": "Pridanie do Docku",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Pridanie webovej stránky do Docku v Safari na Macu",
+  "svgDesc": "Tri kroky: otvorte menu Súbor, vyberte Pridať do Docku a potom kliknite na Pridať. Modré orámovanie označuje ovládacie prvky."
+}

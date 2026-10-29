@@ -1,0 +1,18 @@
+{
+  "title": "Namestitev aplikacije v Chromu v sistemu Windows",
+  "label": "Windows · Chrome · Namesti aplikacijo",
+  "intro": "Uporabite pot prek menija Chroma ali ikono za namestitev v naslovni vrstici, kadar jo spletno mesto ponuja. Osnutek iz dokumentacije: še ni preverjen v napravi; postavitev menija in potrditvena sporočila se lahko razlikujejo.",
+  "completion": "Če želite znova odpreti nameščeno aplikacijo, v naslovno vrstico Chroma vnesite chrome://apps in izberite aplikacijo.",
+  "alt": "4 ilustrirani koraki namestitve v Chromu v sistemu Windows; modri obrisi označujejo dokumentirane kontrolnike.",
+  "steps": {
+    "confirm-install": {
+      "title": "Kliknite {label:install}",
+      "description": "Preverite ime aplikacije in naslov spletnega mesta, nato kliknite {label:install}. Sledite morebitnim nadaljnjim potrditvenim pozivom."
+    }
+  },
+  "transitions": {},
+  "heading": "Namesti aplikacijo",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Namestitev aplikacije v Chromu v sistemu Windows",
+  "svgDesc": "Osnutek iz dokumentacije: shematski kontrolniki iz trenutnih navodil proizvajalca, ne iz preverjene naprave. Modri obrisi označujejo kontrolnike."
+}

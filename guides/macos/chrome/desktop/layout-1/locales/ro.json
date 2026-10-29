@@ -1,0 +1,38 @@
+{
+  "title": "Instalarea unei aplicații în Chrome",
+  "label": "Mac · Chrome · Instalare aplicație",
+  "heading": "Instalare aplicație",
+  "subtitle": "Mac · Chrome",
+  "intro": "Acest ghid urmează calea prin meniul Chrome prezentată în capturile de ecran de referință. Unele site-uri web oferă și o pictogramă de instalare în bara de adrese.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Deschideți meniul {label:more}",
+      "description": "Deschideți site-ul web în Chrome. Faceți clic pe cele trei puncte verticale din colțul din dreapta sus al ferestrei Chrome pentru a deschide meniul {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Alegeți {label:cast-save-and-share}",
+      "description": "În meniul {label:more}, alegeți {label:cast-save-and-share} pentru a deschide submeniul."
+    },
+    "choose-install": {
+      "title": "Alegeți {label:install}",
+      "description": "În submeniu, faceți clic pe {label:install}, urmat de numele site-ului web sau al aplicației. Unele versiuni de Chrome numesc această opțiune „Instalează pagina ca aplicație”. Alegeți acțiunea de instalare situată deasupra opțiunii {label:create-shortcut}; {label:create-shortcut} este o comandă separată."
+    },
+    "continue-install": {
+      "title": "Faceți clic pe {label:next}",
+      "description": "În caseta de dialog {label:install-app}, verificați numele și domeniul site-ului web, apoi faceți clic pe {label:next}. Dacă versiunea dvs. de Chrome trece direct la confirmarea instalării, continuați cu pasul {step:5}."
+    },
+    "confirm-install": {
+      "title": "Faceți clic pe {label:install}",
+      "description": "Următoarea casetă de dialog arată că aplicația este adăugată în {label:chrome-apps}. Faceți clic pe {label:install} pentru a confirma."
+    },
+    "show-in-finder": {
+      "title": "Faceți clic pe {label:show-in-finder}",
+      "description": "Când Chrome afișează „{label:successfully-installed}”, faceți clic pe {label:show-in-finder} pentru a localiza aplicația instalată. Puteți alege și {label:open-tab-in-app} pentru a deschide imediat site-ul web în fereastra aplicației sale."
+    }
+  },
+  "completion": "În Finder, faceți dublu clic pe aplicație pentru a o deschide. Pentru a o redeschide ulterior din Chrome, tastați chrome://apps în bara de adrese, apăsați Return, apoi faceți clic pe aplicație. Instalarea nu necesită o comandă rapidă în Dock.",
+  "alt": "Șase pași în Chrome pe Mac: deschideți meniul Mai multe (trei puncte), alegeți Proiectează, salvează și trimite, alegeți Instalează, faceți clic pe Înainte, faceți clic pe Instalează, apoi pe Afișează în Finder.",
+  "svgTitle": "Instalarea unei aplicații în Chrome pe Mac",
+  "svgDesc": "Șase pași: deschideți meniul Mai multe, alegeți Proiectează, salvează și trimite, alegeți Instalează, faceți clic pe Înainte, faceți clic pe Instalează, apoi pe Afișează în Finder. Contururile albastre marchează comenzile.",
+  "transitions": {}
+}

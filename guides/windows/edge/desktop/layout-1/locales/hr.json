@@ -1,0 +1,30 @@
+{
+  "title": "Instalacija aplikacije u pregledniku Edge na Windowsima",
+  "label": "Windows · Edge · Instalacija aplikacije",
+  "intro": "Put preko izbornika slijedi aktualnu Microsoftovu pomoć za Edge. U drugim verzijama preglednika Edge stavka „{label:apps}” može se nalaziti izravno u izborniku „{label:settings-and-more}”. Nacrt dokumentacije: još nije provjereno na uređaju; izgled izbornika i upiti za potvrdu mogu se razlikovati.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Otvorite „{label:settings-and-more}”",
+      "description": "Otvorite web-lokaciju u pregledniku Microsoft Edge. Kliknite tri vodoravne točke u gornjem desnom kutu preglednika."
+    },
+    "more-tools": {
+      "title": "Odaberite „{label:more-tools}”",
+      "description": "U izborniku odaberite „{label:more-tools}”."
+    },
+    "apps": {
+      "title": "Odaberite „{label:apps}”",
+      "description": "U izborniku „Dodatni alati” odaberite „{label:apps}”."
+    },
+    "install-site": {
+      "title": "Odaberite „{label:install-this-site-as-an-app}”",
+      "description": "Odaberite „{label:install-this-site-as-an-app}”. Za PWA koji se može instalirati Edge umjesto toga može ponuditi „Instaliraj aplikaciju” ili ikonu za instalaciju u adresnoj traci."
+    }
+  },
+  "completion": "Da biste je ponovno otvorili, unesite edge://apps i kliknite „Otvori” na kartici aplikacije. U odjeljku „Pojedinosti” nalaze se „Prikvači na programsku traku”, „Prikvači na Start” i „Izradi prečac na radnoj površini”.",
+  "alt": "Pet ilustriranih koraka instalacije u pregledniku Edge na Windowsima; plavi okviri označavaju opisane kontrole.",
+  "transitions": {},
+  "heading": "Instalacija aplikacije",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Instalacija aplikacije u pregledniku Edge na Windowsima",
+  "svgDesc": "Nacrt dokumentacije: shematske kontrole prema aktualnim uputama proizvođača, a ne provjerena snimka uređaja. Plavi okviri označavaju kontrole."
+}

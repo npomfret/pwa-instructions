@@ -1,0 +1,26 @@
+{
+  "title": "Alkalmazás telepítése az Android Chrome-ban",
+  "label": "Android · Chrome · Alkalmazás telepítése",
+  "intro": "Használja a Chrome-ot Androidon. Az ábrákon szereplő menüelemek a Google aktuális Androidos súgóját követik, nem a régebbi „Hozzáadás a kezdőképernyőhöz” cikket. Dokumentációs tervezet: eszközön még nem ellenőrizték; a menü felépítése és a megerősítő üzenetek eltérhetnek.",
+  "steps": {
+    "open-more-menu": {
+      "title": "A {label:more} menü megnyitása",
+      "description": "Nyissa meg a webhelyet a Chrome-ban. Koppintson a címsáv melletti három függőleges pontra."
+    },
+    "install-and-create-shortcut": {
+      "title": "Koppintson a {label:install-and-create-shortcut} elemre",
+      "description": "Válassza a {label:install-and-create-shortcut} lehetőséget a menüből. A régebbi Chrome-elrendezésekben ez „Hozzáadás a kezdőképernyőhöz” néven szerepelhet."
+    },
+    "install-app": {
+      "title": "Koppintson a {label:install} elemre",
+      "description": "Válassza a {label:install} lehetőséget. Az alkalmazás telepítéséhez hajtsa végre a Chrome által megjelenített lépéseket. A {label:create-shortcut} külön lehetőség, amely csak egy hivatkozást ment."
+    }
+  },
+  "completion": "A telepítés befejezése után nyissa meg az alkalmazást az Android alkalmazásindítójából. A kezdőképernyőn való elhelyezés az indítótól és annak beállításaitól függ.",
+  "alt": "3 szemléltető lépés az Android Chrome telepítéséhez; a kék keretek a dokumentált vezérlőelemeket jelölik.",
+  "transitions": {},
+  "heading": "Alkalmazás telepítése",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Alkalmazás telepítése a Chrome-ban Androidon",
+  "svgDesc": "Dokumentációs tervezet. Három lépés: nyissa meg a Továbbiak menüt, koppintson a Telepítés és parancsikon elemre, majd koppintson a Telepítés elemre. A további utasításokat az eszközén hajtsa végre."
+}

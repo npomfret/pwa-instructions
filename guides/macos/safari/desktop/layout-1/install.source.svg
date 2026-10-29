@@ -53,9 +53,9 @@
       <text x="103" y="127" class="label" style="fill:#687078" data-i18n="label:new-window" data-max-width="213">New Window</text>
       <text x="103" y="159" class="label" style="fill:#687078" data-i18n="label:new-tab" data-max-width="213">New Tab</text>
       <path d="M101 180h210" class="line"/>
-      <text x="103" y="211" class="label" style="fill:#687078" data-i18n="label:open-location" data-max-width="213">Open Location…</text>
+      <text x="103" y="211" class="label" style="fill:#687078" data-i18n="label:open-location" data-max-width="213" data-lines="2" data-line-height="17" data-center-lines="1">Open Location…</text>
       <rect x="92" y="244" width="229" height="42" rx="8" class="target"/>
-      <text x="108" y="271" class="label" data-i18n="label:add-to-dock-item" data-max-width="208">Add to Dock…</text>
+      <text x="108" y="271" class="label" data-i18n="label:add-to-dock-item" data-max-width="208" data-lines="2" data-line-height="17" data-center-lines="1">Add to Dock…</text>
     </g>
   </g>
   <g id="step-3" transform="translate(28 900)" role="group" aria-labelledby="step-3-title">

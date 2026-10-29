@@ -13,7 +13,7 @@
     },
     "choose-install": {
       "title": "「{label:install}」を選択",
-      "description": "サブメニューで、「{label:install}」にウェブサイト名またはアプリ名が続く項目をクリックします。サイトによっては、この項目が「ページをアプリとしてインストール」と表示されます。「{label:create-shortcut}」の上にあるインストール用の項目を選択してください。「{label:create-shortcut}」は別のコマンドです。"
+      "description": "サブメニューで、「{label:install}」にウェブサイト名またはアプリ名が続く項目をクリックします。Chrome のバージョンによっては、この項目が「ページをアプリとしてインストール」と表示されます。「{label:create-shortcut}」の上にあるインストール用の項目を選択してください。「{label:create-shortcut}」は別のコマンドです。"
     },
     "continue-install": {
       "title": "「{label:next}」をクリック",

@@ -76,6 +76,222 @@
         "version": "main",
         "deviceChecked": false,
         "note": "IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS; English there is \"Add to Bookmarks\"."
+      },
+      "nl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_nl.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_pl.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "English source is \"Add to Bookmarks\"."
+      },
+      "sv": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sv.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_da.xtb (message id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_no.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium names the locale \"no\" (Norwegian), not \"nb\"; the file is Bokmål."
+      },
+      "fi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_fi.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "English source is \"Add to Bookmarks\"."
+      },
+      "ru": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ru.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_uk.xtb (message id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_tr.xtb (message id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_cs.xtb (message IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS, id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "English source is \"Add to Bookmarks\"."
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sk.xtb (message IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS, id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_hu.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ro.xtb (message IDS_IOS_CONTENT_CONTEXT_ADDTOBOOKMARKS, id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_hr.xtb (message id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_el.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_pt-PT.xtb#6321526113093607004",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_es-419.xtb (message id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr-CA": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_fr-CA.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_zh-TW.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "English there is \"Add to Bookmarks\"."
+      },
+      "zh-HK": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_zh-HK.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_id.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ms.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_th.xtb (message id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_vi.xtb (message IDS_IOS_CONTENT_CONTEXT_ADDTOBOOKMARKS, id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "model-translation",
+        "source": "model knowledge of the hi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "The source left \"Bookmarks\" in English. Replaced \"Bookmarks में जोड़ें\"."
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ca.xtb (message id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_iw.xtb (message IDS_IOS_CONTENT_CONTEXT_ADDTOBOOKMARKS, id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ar.xtb (message IDS_IOS_CONTENT_CONTEXT_ADDTOBOOKMARKS, id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_bg.xtb (message id 6321526113093607004)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sl.xtb (message id 6321526113093607004, IDS_IOS_TOOLS_MENU_ADD_TO_BOOKMARKS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
       }
     },
     "es": "Añadir a marcadores",
@@ -85,7 +301,37 @@
     "it": "Aggiungi ai preferiti",
     "ja": "ブックマークに追加",
     "ko": "북마크에 추가",
-    "zh-Hans": "添加到书签"
+    "zh-Hans": "添加到书签",
+    "nl": "Toevoegen aan bookmarks",
+    "pl": "Dodaj do Zakładek",
+    "sv": "Lägg till i bokmärken",
+    "da": "Føj til Bogmærker",
+    "nb": "Legg til i bokmerker",
+    "fi": "Lisää kirjanmerkkeihin",
+    "ru": "Добавить в закладки",
+    "uk": "Додати в закладки",
+    "tr": "Yer İşaretlerine Ekle",
+    "cs": "Přidat do záložek",
+    "sk": "Pridať medzi záložky",
+    "hu": "Hozzáadás a könyvjelzőkhöz",
+    "ro": "Adaugă în Marcaje",
+    "hr": "Dodaj u Oznake",
+    "el": "Προσθήκη στους σελιδοδείκτες",
+    "pt-PT": "Adicionar aos Marcadores",
+    "es-419": "Agregar a Favoritos",
+    "fr-CA": "Ajouter aux favoris",
+    "zh-Hant": "加入書籤",
+    "zh-HK": "新增至「書籤」",
+    "id": "Tambahkan ke Bookmark",
+    "ms": "Tambahkan pada Penanda Halaman",
+    "th": "เพิ่มลงในบุ๊กมาร์ก",
+    "vi": "Thêm vào Dấu trang",
+    "hi": "बुकमार्क में जोड़ें",
+    "ca": "Afegeix a Adreces d'interès",
+    "he": "הוספה לסימניות",
+    "ar": "الإضافة إلى الإشارات المرجعية",
+    "bg": "Добавяне към отметките",
+    "sl": "Dodaj med zaznamke"
   },
   "create-a-qr-code": {
     "en": "Create a QR code",
@@ -165,6 +411,219 @@
         "version": "main",
         "deviceChecked": false,
         "note": "IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION; English there is \"Create a QR Code\"."
+      },
+      "nl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_nl.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_pl.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sv": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sv.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_da.xtb (message id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_no.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium names the locale \"no\" (Norwegian), not \"nb\"; the file is Bokmål."
+      },
+      "fi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_fi.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ru.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_uk.xtb (message id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_tr.xtb (message id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_cs.xtb (message IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION, id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sk.xtb (message IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION, id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_hu.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ro.xtb (message IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION, id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_hr.xtb (message id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_el.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_pt-PT.xtb#2223461067862937305",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_es-419.xtb (message id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr-CA": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_fr-CA.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_zh-TW.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "English there is \"Create a QR Code\"."
+      },
+      "zh-HK": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_zh-HK.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_id.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ms.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_th.xtb (message id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_vi.xtb (message IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION, id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_hi.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ca.xtb (message id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_iw.xtb (message IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION, id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium text begins with a right-to-left mark (U+200F), kept as shipped."
+      },
+      "ar": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ar.xtb (message IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION, id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_bg.xtb (message id 2223461067862937305)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sl.xtb (message id 2223461067862937305, IDS_IOS_SHARE_MENU_GENERATE_QR_CODE_ACTION)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
       }
     },
     "es": "Crear un código QR",
@@ -174,7 +633,37 @@
     "it": "Crea un codice QR",
     "ja": "QR コードを作成",
     "ko": "QR 코드 만들기",
-    "zh-Hans": "生成二维码"
+    "zh-Hans": "生成二维码",
+    "nl": "Een QR-code maken",
+    "pl": "Utwórz kod QR",
+    "sv": "Skapa en QR-kod",
+    "da": "Opret en QR-kode",
+    "nb": "Lag en QR-kode",
+    "fi": "Luo QR-koodi",
+    "ru": "Создать QR-код",
+    "uk": "Створити QR-код",
+    "tr": "QR Kodu Oluştur",
+    "cs": "Vytvořit QR kód",
+    "sk": "Vytvoriť QR kód",
+    "hu": "QR-kód létrehozása",
+    "ro": "Creează un cod QR",
+    "hr": "Izradi QR kôd",
+    "el": "Δημιουργία κωδικού QR",
+    "pt-PT": "Criar código QR",
+    "es-419": "Crear un código QR",
+    "fr-CA": "Créer un code QR",
+    "zh-Hant": "建立 QR code",
+    "zh-HK": "建立 QR 碼",
+    "id": "Buat Kode QR",
+    "ms": "Buat Kod QR",
+    "th": "สร้างคิวอาร์โค้ด",
+    "vi": "Tạo mã QR",
+    "hi": "क्यूआर कोड बनाएं",
+    "ca": "Crea un codi QR",
+    "he": "‏יצירת קוד QR",
+    "ar": "إنشاء رمز استجابة سريعة",
+    "bg": "Създаване на QR код",
+    "sl": "Ustvari kodo QR"
   },
   "find-in-page": {
     "en": "Find in Page",
@@ -243,6 +732,218 @@
         "version": "main",
         "deviceChecked": false,
         "note": "IDS_IOS_SHARE_MENU_FIND_IN_PAGE"
+      },
+      "nl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_nl.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_pl.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sv": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sv.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_da.xtb (message id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_no.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium names the locale \"no\" (Norwegian), not \"nb\"; the file is Bokmål."
+      },
+      "fi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_fi.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ru.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_uk.xtb (message id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_tr.xtb (message id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_cs.xtb (message IDS_IOS_SHARE_MENU_FIND_IN_PAGE, id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sk.xtb (message IDS_IOS_SHARE_MENU_FIND_IN_PAGE, id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_hu.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ro.xtb (message IDS_IOS_SHARE_MENU_FIND_IN_PAGE, id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_hr.xtb (message id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_el.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_pt-PT.xtb#4042870976416480368",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_es-419.xtb (message id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr-CA": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_fr-CA.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_zh-TW.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-HK": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_zh-HK.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_id.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ms.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_th.xtb (message id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_vi.xtb (message IDS_IOS_SHARE_MENU_FIND_IN_PAGE, id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "model-translation",
+        "source": "model knowledge of the hi UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "The source carried stray quotation marks. Replaced \"'पेज में ढूंढें'\"."
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ca.xtb (message id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_iw.xtb (message IDS_IOS_SHARE_MENU_FIND_IN_PAGE, id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ar.xtb (message IDS_IOS_SHARE_MENU_FIND_IN_PAGE, id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_bg.xtb (message id 4042870976416480368)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sl.xtb (message id 4042870976416480368, IDS_IOS_SHARE_MENU_FIND_IN_PAGE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
       }
     },
     "es": "Buscar en página",
@@ -252,7 +953,37 @@
     "it": "Trova nella pagina",
     "ja": "ページ内を検索",
     "ko": "페이지에서 찾기",
-    "zh-Hans": "在网页中查找"
+    "zh-Hans": "在网页中查找",
+    "nl": "Zoeken op pagina",
+    "pl": "Znajdź na stronie",
+    "sv": "Sök på sidan",
+    "da": "Find på siden",
+    "nb": "Finn på siden",
+    "fi": "Hae sivulta",
+    "ru": "Найти на странице",
+    "uk": "Знайти на сторінці",
+    "tr": "Sayfada Bul",
+    "cs": "Najít na stránce",
+    "sk": "Nájsť na stránke",
+    "hu": "Keresés az oldalon",
+    "ro": "Găsește în pagină",
+    "hr": "Traži na stranici",
+    "el": "Εύρεση στη σελίδα",
+    "pt-PT": "Localizar na página",
+    "es-419": "Buscar en la página",
+    "fr-CA": "Rechercher dans la page",
+    "zh-Hant": "在網頁中查找",
+    "zh-HK": "在網頁中搜尋",
+    "id": "Cari di Halaman",
+    "ms": "Cari dalam Halaman",
+    "th": "ค้นหาในหน้าเว็บ",
+    "vi": "Tìm trong trang",
+    "hi": "पेज में ढूंढें",
+    "ca": "Cerca a la pàgina",
+    "he": "חיפוש בדף",
+    "ar": "البحث في الصفحة",
+    "bg": "Търсене в страницата",
+    "sl": "Najdi na strani"
   },
   "request-desktop-site": {
     "en": "Request desktop site",
@@ -330,6 +1061,220 @@
         "version": "main",
         "deviceChecked": false,
         "note": "IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE; English there is \"Request Desktop Site\"."
+      },
+      "nl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_nl.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_pl.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sv": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sv.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_da.xtb (message id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_no.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium names the locale \"no\" (Norwegian), not \"nb\"; the file is Bokmål."
+      },
+      "fi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_fi.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ru.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Russian: \"Desktop version\", not \"Request desktop site\"."
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_uk.xtb (message id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_tr.xtb (message id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_cs.xtb (message IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE, id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Contains a no-break space exactly as in the xtb."
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sk.xtb (message IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE, id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_hu.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ro.xtb (message IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE, id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_hr.xtb (message id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_el.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_pt-PT.xtb#2783161812871838616",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_es-419.xtb (message id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "fr-CA": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_fr-CA.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_zh-TW.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "English there is \"Request Desktop Site\"."
+      },
+      "zh-HK": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_zh-HK.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_id.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ms.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_th.xtb (message id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_vi.xtb (message IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE, id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_hi.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ca.xtb (message id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_iw.xtb (message IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE, id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_ar.xtb (message IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE, id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_bg.xtb (message id 2783161812871838616)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/ios/chrome/app/strings/resources/ios_strings_sl.xtb (message id 2783161812871838616, IDS_IOS_SHARE_MENU_REQUEST_DESKTOP_SITE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
       }
     },
     "es": "Solicitar sitio para ordenadores",
@@ -339,6 +1284,36 @@
     "it": "Richiedi sito desktop",
     "ja": "PC 版サイトを見る",
     "ko": "데스크톱 사이트 요청",
-    "zh-Hans": "请求切换到桌面版网站"
+    "zh-Hans": "请求切换到桌面版网站",
+    "nl": "Desktopsite opvragen",
+    "pl": "Wersja na komputer",
+    "sv": "Använd webbplats för dator",
+    "da": "Anmod om computerwebsite",
+    "nb": "Be om datamaskinversjonen av nettstedet",
+    "fi": "Käytä tietokoneversiota",
+    "ru": "Версия для ПК",
+    "uk": "Версія сайту для комп’ютера",
+    "tr": "Masaüstü Sitesi İste",
+    "cs": "Požádat o web pro počítače",
+    "sk": "Vyžiadať web pre počítače",
+    "hu": "Asztali webhely kérése",
+    "ro": "Solicită o versiune a site-ului pentru computer",
+    "hr": "Zatraži web-lokaciju za stolno računalo",
+    "el": "Αίτημα ιστοτόπου για υπολογιστή",
+    "pt-PT": "Pedir site para computador",
+    "es-419": "Solicitar sitio para computadoras",
+    "fr-CA": "Voir le site pour ordinateurs",
+    "zh-Hant": "切換為電腦版網站",
+    "zh-HK": "切換至桌面版網站",
+    "id": "Minta Situs Desktop",
+    "ms": "Minta Laman Desktop",
+    "th": "ขอเว็บไซต์เวอร์ชันเดสก์ท็อป",
+    "vi": "Yêu cầu trang web dành cho máy tính",
+    "hi": "डेस्कटॉप साइट का अनुरोध करें",
+    "ca": "Sol·licita el lloc web per a ordinadors",
+    "he": "בקשת אתר שמותאם למחשב",
+    "ar": "طلب موقع إلكتروني متوافق مع أجهزة الكمبيوتر المكتبي",
+    "bg": "Заявка за настолния сайт",
+    "sl": "Zahtevaj spletno mesto za namizni računalnik"
   }
 }

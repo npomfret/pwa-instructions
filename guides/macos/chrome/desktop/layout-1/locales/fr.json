@@ -17,7 +17,7 @@
     },
     "choose-install": {
       "title": "Choisissez {label:install}",
-      "description": "Dans le sous-menu, cliquez sur {label:install} suivi du nom du site web ou de l’appli. Certains sites affichent « Installer la page en tant qu’appli ». Choisissez l’action d’installation située au-dessus de {label:create-shortcut} ; la commande {label:create-shortcut} est distincte."
+      "description": "Dans le sous-menu, cliquez sur {label:install} suivi du nom du site web ou de l’appli. Certaines versions de Chrome appellent cet élément « Installer la page en tant qu’appli ». Choisissez l’action d’installation située au-dessus de {label:create-shortcut} ; la commande {label:create-shortcut} est distincte."
     },
     "continue-install": {
       "title": "Cliquez sur {label:next}",

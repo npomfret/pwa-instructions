@@ -1,0 +1,26 @@
+{
+  "title": "Instalar uma app no Chrome para Android",
+  "label": "Android · Chrome · Instalar app",
+  "steps": {
+    "open-more-menu": {
+      "title": "Abra o menu {label:more}",
+      "description": "Abra o site no Chrome. Toque nos três pontos verticais junto à barra de endereço."
+    },
+    "install-and-create-shortcut": {
+      "title": "Toque em {label:install-and-create-shortcut}",
+      "description": "Escolha {label:install-and-create-shortcut} no menu. Nos esquemas mais antigos do Chrome, esta opção pode chamar-se Adicionar ao ecrã principal."
+    },
+    "install-app": {
+      "title": "Toque em {label:install}",
+      "description": "Escolha {label:install}. Conclua as indicações que o Chrome apresentar para instalar a app. {label:create-shortcut} é uma opção separada que guarda uma ligação."
+    }
+  },
+  "intro": "Utilize o Chrome para Android. Os nomes dos menus ilustrados seguem a ajuda atual do Android da Google, e não o artigo mais antigo sobre Adicionar ao ecrã principal. Rascunho de documentação: ainda não verificado num dispositivo; o esquema do menu e as indicações de confirmação podem variar.",
+  "completion": "Depois de a instalação terminar, abra a app a partir do iniciador do Android. A colocação no ecrã principal depende do iniciador e das respetivas definições.",
+  "alt": "3 passos ilustrados de instalação no Chrome para Android; os contornos azuis marcam os controlos documentados.",
+  "transitions": {},
+  "heading": "Instalar app",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Instalar uma app no Chrome para Android",
+  "svgDesc": "Rascunho de documentação: controlos esquemáticos a partir das instruções atuais do fornecedor, e não uma captura de ecrã verificada de um dispositivo. Os contornos azuis identificam os controlos."
+}

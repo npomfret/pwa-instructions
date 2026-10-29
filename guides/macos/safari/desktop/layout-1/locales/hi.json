@@ -1,0 +1,26 @@
+{
+  "title": "Safari में Dock में जोड़ें",
+  "label": "Mac · Safari · Dock में जोड़ें",
+  "intro": "इसके लिए macOS Sonoma 14 या उसके बाद का संस्करण ज़रूरी है। ये चित्र {label:file} मेनू वाला तरीक़ा दिखाते हैं; Safari अपने शेयर मेनू में भी {label:add-to-dock} का विकल्प देता है।",
+  "steps": {
+    "open-file-menu": {
+      "title": "{label:file} मेनू खोलें",
+      "description": "Safari में वेबसाइट खोलें। अपने Mac की स्क्रीन के ऊपर मेन्यू बार में {label:file} पर क्लिक करें।"
+    },
+    "add-to-dock": {
+      "title": "{label:add-to-dock} चुनें",
+      "description": "{label:file} मेनू में {label:add-to-dock} पर क्लिक करें। Safari इस वेबसाइट के लिए पुष्टि वाला डायलॉग खोलता है।"
+    },
+    "confirm-add": {
+      "title": "{label:add} पर क्लिक करें",
+      "description": "ऐप का नाम वैसा ही रखें या बदलें, फिर {label:add} पर क्लिक करें। वेब ऐप आपके ऐप्लिकेशन फ़ोल्डर में सेव हो जाता है और Dock में जुड़ जाता है।"
+    }
+  },
+  "completion": "नया ऐप अपने Dock से खोलें।",
+  "alt": "Mac पर Safari के तीन चरण: “फ़ाइल” खोलें, “Dock में जोड़ें” चुनें, फिर “जोड़ें” पर क्लिक करें।",
+  "transitions": {},
+  "heading": "Dock में जोड़ें",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Mac पर Safari में किसी वेबसाइट को Dock में जोड़ें",
+  "svgDesc": "तीन चरण: “फ़ाइल” मेनू खोलें, “Dock में जोड़ें” चुनें, फिर “जोड़ें” पर क्लिक करें। नीले आउटलाइन कंट्रोल को दर्शाते हैं।"
+}

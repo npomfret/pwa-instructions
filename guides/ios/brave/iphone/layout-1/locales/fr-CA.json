@@ -1,0 +1,22 @@
+{
+  "title": "Ajouter à l’écran d’accueil depuis Brave",
+  "label": "iPhone · Brave → Safari · Ajouter à l’écran d’accueil",
+  "heading": "Ajouter à l’écran d’accueil",
+  "subtitle": "iPhone · Brave → Safari",
+  "intro": "Commencez dans Brave. L’étape {step:3} ouvre le même site web dans Safari ; les étapes {step:4} à {step:7} se déroulent dans Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Touchez {label:share}",
+      "description": "Dans Brave, touchez {label:share} dans la barre d’outils en bas de l’écran. Son icône est un carré surmonté d’une flèche pointant vers le haut. Si la barre d’outils est masquée, touchez l’adresse du site web pour la faire apparaître."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Dans la feuille de partage développée, faites défiler vers le bas et touchez {label:open-in-safari}. Le site web s’ouvre dans Safari ; effectuez toutes les étapes suivantes dans cette app."
+    }
+  },
+  "completion": "Suivez l’écran de confirmation pour terminer l’ajout de l’app.",
+  "alt": "Sept étapes numérotées : Partager, Afficher plus et Ouvrir dans Safari dans Brave, suivies des quatre étapes d’installation dans Safari.",
+  "transitions": {
+    "continue-in-safari": "Continuez dans Safari"
+  }
+}

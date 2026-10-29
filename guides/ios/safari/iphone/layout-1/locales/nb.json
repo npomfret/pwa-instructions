@@ -1,0 +1,29 @@
+{
+  "title": "Legg til på Hjem-skjermen",
+  "label": "iPhone · Safari · Legg til på Hjem-skjermen",
+  "steps": {
+    "open-page-menu": {
+      "title": "Åpne {label:page-menu}",
+      "description": "Trykk på {label:page-menu}-knappen til venstre i adressefeltet for nettstedet. Symbolet har tre vannrette streker, der den nederste er kortere."
+    },
+    "tap-share": {
+      "title": "Trykk på {label:share}",
+      "description": "Trykk på {label:share} i sidemenyen. Symbolet er en firkant med en pil som peker oppover."
+    },
+    "view-more": {
+      "title": "Trykk på {label:view-more}",
+      "description": "Hvis delingsmenyen er skjult, trykker du på {label:view-more}, som vises med en pil som peker nedover, for å se de andre handlingene. Hvis handlingslisten allerede vises, fortsetter du til trinn {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Trykk på {label:add-to-home-screen}",
+      "description": "Finn {label:add-to-home-screen} i den utvidede handlingslisten, og trykk på det. Symbolet er en firkant med avrundede hjørner og et plusstegn."
+    }
+  },
+  "completion": "Følg instruksjonene på bekreftelsesskjermen for å fullføre tilleggingen av appen.",
+  "alt": "Fire trinn: Trykk på «Sidemeny» ved siden av adressen, trykk på «Del», trykk på «Vis mer» om nødvendig, og trykk deretter på «Legg til på Hjem-skjermen».",
+  "transitions": {},
+  "heading": "Legg til på Hjem-skjermen",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Legg til på Hjem-skjermen i Safari på iPhone: fire trinn",
+  "svgDesc": "Fire nummererte trinn for Safari på iPhone: åpne sidemenyen, trykk på «Del», trykk på «Vis mer», og trykk deretter på «Legg til på Hjem-skjermen». Blå omrisser markerer kontrollene du skal trykke på. Den fullstendige tekstveiledningen finnes separat."
+}

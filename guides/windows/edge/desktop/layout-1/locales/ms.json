@@ -1,0 +1,30 @@
+{
+  "title": "Pasang apl dalam Edge untuk Windows",
+  "label": "Windows · Edge · Pasang apl",
+  "intro": "Laluan menu mengikut bantuan Edge semasa Microsoft. Versi Edge yang lain mungkin meletakkan {label:apps} terus dalam {label:settings-and-more}. Draf dokumentasi: belum disahkan pada peranti; reka letak menu dan gesaan pengesahan mungkin berbeza.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Buka {label:settings-and-more}",
+      "description": "Buka laman web dalam Microsoft Edge. Klik tiga titik mendatar di penjuru kanan atas penyemak imbas."
+    },
+    "more-tools": {
+      "title": "Pilih {label:more-tools}",
+      "description": "Pilih {label:more-tools} daripada menu."
+    },
+    "apps": {
+      "title": "Pilih {label:apps}",
+      "description": "Dalam {label:more-tools}, pilih {label:apps}."
+    },
+    "install-site": {
+      "title": "Pilih {label:install-this-site-as-an-app}",
+      "description": "Pilih {label:install-this-site-as-an-app}. Untuk PWA yang boleh dipasang, Edge mungkin menawarkan {label:install-app} atau ikon pasang dalam bar alamat sebagai ganti."
+    }
+  },
+  "transitions": {},
+  "completion": "Untuk membukanya semula, masukkan edge://apps dan klik Buka pada kad apl. Butiran menawarkan Semat ke bar tugas, Semat ke Mula dan Cipta pintasan desktop.",
+  "alt": "Lima langkah pemasangan Edge pada Windows yang diilustrasikan; garis besar biru menandakan kawalan yang didokumenkan.",
+  "heading": "Pasang apl",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Pasang apl dalam Edge untuk Windows",
+  "svgDesc": "Draf dokumentasi: kawalan skematik daripada arahan vendor semasa, bukan tangkapan peranti yang disahkan. Garis besar biru menandakan kawalan."
+}

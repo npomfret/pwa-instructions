@@ -1,0 +1,16 @@
+{
+  "title": "Legg til på Hjem-skjermen fra Chrome",
+  "label": "iPhone · Chrome · Legg til på Hjem-skjermen",
+  "intro": "Bruk Chrome på iPhone. Disse trinnene installerer appen direkte fra nettleserens delingsark.",
+  "steps": {
+    "tap-share": {
+      "title": "Trykk på {label:share}",
+      "description": "Trykk på {label:share} helt til høyre i adressefeltet øverst på skjermen i Chrome. Symbolet er en firkant med en pil som peker oppover."
+    }
+  },
+  "completion": "Følg instruksjonene på bekreftelsesskjermen for å fullføre tilleggingen av appen.",
+  "alt": "Tre trinn i Chrome på iPhone: Del øverst til høyre i adressefeltet, Vis mer og deretter Legg til på Hjem-skjermen.",
+  "transitions": {},
+  "heading": "Legg til på Hjem-skjermen",
+  "subtitle": "iPhone · Chrome"
+}

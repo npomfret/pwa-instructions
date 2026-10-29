@@ -22,10 +22,40 @@ const loaders: Record<string, Loader> = {
   ja: () => import("pwa-instructions/locales/ja"),
   ko: () => import("pwa-instructions/locales/ko"),
   "zh-Hans": () => import("pwa-instructions/locales/zh-Hans"),
+  nl: () => import("pwa-instructions/locales/nl"),
+  pl: () => import("pwa-instructions/locales/pl"),
+  sv: () => import("pwa-instructions/locales/sv"),
+  da: () => import("pwa-instructions/locales/da"),
+  nb: () => import("pwa-instructions/locales/nb"),
+  fi: () => import("pwa-instructions/locales/fi"),
+  ru: () => import("pwa-instructions/locales/ru"),
+  uk: () => import("pwa-instructions/locales/uk"),
+  tr: () => import("pwa-instructions/locales/tr"),
+  cs: () => import("pwa-instructions/locales/cs"),
+  sk: () => import("pwa-instructions/locales/sk"),
+  hu: () => import("pwa-instructions/locales/hu"),
+  ro: () => import("pwa-instructions/locales/ro"),
+  hr: () => import("pwa-instructions/locales/hr"),
+  el: () => import("pwa-instructions/locales/el"),
+  "pt-PT": () => import("pwa-instructions/locales/pt-PT"),
+  "es-419": () => import("pwa-instructions/locales/es-419"),
+  "fr-CA": () => import("pwa-instructions/locales/fr-CA"),
+  "zh-Hant": () => import("pwa-instructions/locales/zh-Hant"),
+  "zh-HK": () => import("pwa-instructions/locales/zh-HK"),
+  id: () => import("pwa-instructions/locales/id"),
+  ms: () => import("pwa-instructions/locales/ms"),
+  th: () => import("pwa-instructions/locales/th"),
+  vi: () => import("pwa-instructions/locales/vi"),
+  hi: () => import("pwa-instructions/locales/hi"),
+  ca: () => import("pwa-instructions/locales/ca"),
+  he: () => import("pwa-instructions/locales/he"),
+  ar: () => import("pwa-instructions/locales/ar"),
+  bg: () => import("pwa-instructions/locales/bg"),
+  sl: () => import("pwa-instructions/locales/sl"),
 };
 for (const [file, load] of Object.entries(pseudo)) loaders[/([^/]+)\.ts$/.exec(file)![1]] = load;
 
-const TAGS = ["en", "en-US", "es", "fr", "de", "pt-BR", "it", "ja", "ko", "zh-Hans", "en-XA"];
+const TAGS = ["en", "en-US", "es", "fr", "de", "pt-BR", "it", "ja", "ko", "zh-Hans", "nl", "pl", "sv", "da", "nb", "fi", "ru", "uk", "tr", "cs", "sk", "hu", "ro", "hr", "el", "pt-PT", "es-419", "fr-CA", "zh-Hant", "zh-HK", "id", "ms", "th", "vi", "hi", "ca", "he", "ar", "bg", "sl", "en-XA"];
 const SPECIAL: Record<string, string> = { en: "English (British, the default)", "en-US": "English (US labels)", "en-XA": "Pseudo-locale (en-XA, for testing)" };
 const nameOf = (tag: string) => SPECIAL[tag] ?? `${new Intl.DisplayNames(["en"], { type: "language" }).of(tag) ?? tag}`;
 

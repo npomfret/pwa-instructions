@@ -1,0 +1,22 @@
+{
+  "title": "Dodavanje na početni zaslon iz preglednika Brave",
+  "label": "iPhone · Brave → Safari · Dodavanje na početni zaslon",
+  "intro": "Započnite u pregledniku Brave. U koraku {step:3} ista se web-lokacija otvara u Safariju; koraci od {step:4} do {step:7} odvijaju se u Safariju.",
+  "steps": {
+    "tap-share": {
+      "title": "Dodirnite „{label:share}”",
+      "description": "U pregledniku Brave dodirnite „{label:share}” na donjoj alatnoj traci. Ikona je kvadrat sa strelicom usmjerenom prema gore. Ako je alatna traka skrivena, dodirnite adresu web-lokacije da se prikaže."
+    },
+    "open-in-safari": {
+      "title": "„{label:open-in-safari}”",
+      "description": "Na proširenom listu za dijeljenje listajte prema dolje i dodirnite „{label:open-in-safari}”. Web-lokacija se otvara u Safariju; sve preostale korake izvedite ondje."
+    }
+  },
+  "completion": "Slijedite upute na zaslonu za potvrdu kako biste dovršili dodavanje aplikacije.",
+  "alt": "Sedam numeriranih koraka: „Dijeli”, „Prikaži više” i „Otvori u Safariju” u pregledniku Brave, a zatim četiri koraka instalacije u Safariju.",
+  "transitions": {
+    "continue-in-safari": "Nastavite u Safariju"
+  },
+  "heading": "Dodavanje na početni zaslon",
+  "subtitle": "iPhone · Brave → Safari"
+}

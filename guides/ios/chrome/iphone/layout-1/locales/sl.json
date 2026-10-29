@@ -1,0 +1,16 @@
+{
+  "title": "Dodajanje na začetni zaslon iz Chroma",
+  "label": "iPhone · Chrome · Dodaj na začetni zaslon",
+  "intro": "Uporabite Chrome v iPhonu. Ti koraki namestijo aplikacijo neposredno prek njegovega lista za deljenje.",
+  "completion": "Za dokončanje dodajanja aplikacije sledite potrditvenemu zaslonu.",
+  "alt": "Trije koraki v Chromu na iPhonu: Deli na desnem koncu naslovne vrstice, Prikaži več, nato Dodaj na začetni zaslon.",
+  "steps": {
+    "tap-share": {
+      "title": "Tapnite {label:share}",
+      "description": "V Chromu tapnite {label:share} na desnem koncu naslovne vrstice na vrhu zaslona. Njegova ikona je kvadrat s puščico, usmerjeno navzgor."
+    }
+  },
+  "transitions": {},
+  "heading": "Dodaj na začetni zaslon",
+  "subtitle": "iPhone · Chrome"
+}

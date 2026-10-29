@@ -1,0 +1,28 @@
+{
+  "title": "Agregar a la pantalla de inicio",
+  "label": "iPhone · Safari · Agregar a la pantalla de inicio",
+  "steps": {
+    "open-page-menu": {
+      "title": "Abre el {label:page-menu}",
+      "description": "Toca el botón {label:page-menu}, a la izquierda de la dirección del sitio web. Su ícono tiene tres líneas horizontales, con la inferior más corta."
+    },
+    "tap-share": {
+      "title": "Toca {label:share}",
+      "description": "En el {label:page-menu}, toca {label:share}. Su ícono es un cuadrado con una flecha hacia arriba."
+    },
+    "view-more": {
+      "title": "Toca {label:view-more}",
+      "description": "Si la hoja para compartir está contraída, toca {label:view-more}, que aparece con una flecha hacia abajo, para mostrar el resto de las acciones. Si la lista de acciones ya está visible, continúa en el paso {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Toca {label:add-to-home-screen}",
+      "description": "En la lista de acciones expandida, busca y toca {label:add-to-home-screen}. Su ícono es un cuadrado de esquinas redondeadas con un signo más."
+    }
+  },
+  "completion": "Sigue la pantalla de confirmación para terminar de agregar la app.",
+  "alt": "Cuatro pasos: toca Menú de página junto a la dirección, toca Compartir, toca Ver más si hace falta y, por último, toca Agregar a Inicio.",
+  "heading": "Agregar a la pantalla de inicio",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Agregar a la pantalla de inicio en Safari del iPhone: cuatro pasos",
+  "svgDesc": "Cuatro pasos numerados para Safari del iPhone: abre el Menú de página, toca Compartir, toca Ver más y, por último, toca Agregar a Inicio. Los contornos azules señalan los controles que debes tocar. Las instrucciones completas en texto se ofrecen por separado."
+}

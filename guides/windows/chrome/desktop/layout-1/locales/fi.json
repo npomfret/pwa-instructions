@@ -1,0 +1,18 @@
+{
+  "title": "Sovelluksen asentaminen Windowsin Chromessa",
+  "label": "Windows · Chrome · Asenna sovellus",
+  "intro": "Käytä Chrome-valikon kautta kulkevaa reittiä tai osoitepalkin asennuskuvaketta, jos verkkosivusto tarjoaa sellaisen. Dokumentaatioluonnos: ei vielä varmennettu laitteella; valikon asettelu ja vahvistuskehotteet voivat vaihdella.",
+  "steps": {
+    "confirm-install": {
+      "title": "Klikkaa {label:install}",
+      "description": "Tarkista sovelluksen nimi ja verkkosivuston osoite ja klikkaa sitten {label:install}. Seuraa mahdollisia muita vahvistuskehotteita."
+    }
+  },
+  "completion": "Voit avata asennetun sovelluksen uudelleen kirjoittamalla Chromen osoitepalkkiin chrome://apps ja valitsemalla sovelluksen.",
+  "alt": "4 kuvitettua asennusvaihetta Windowsin Chromessa; siniset ääriviivat korostavat ohjeessa kuvattuja säätimiä.",
+  "transitions": {},
+  "heading": "Asenna sovellus",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Sovelluksen asentaminen Windowsin Chromessa",
+  "svgDesc": "Dokumentaatioluonnos: kaaviomaiset säätimet valmistajan nykyisen ohjeen mukaan, ei varmennettu laitekaappaus. Siniset ääriviivat korostavat säätimiä."
+}

@@ -1,0 +1,18 @@
+{
+  "title": "在 Windows 版 Chrome 中安裝應用程式",
+  "label": "Windows · Chrome · 安裝應用程式",
+  "intro": "請使用 Chrome 選單路徑；若網站有提供，也可以使用網址列中的安裝圖示。文件草稿：尚未在裝置上驗證；選單配置和確認提示可能有所不同。",
+  "completion": "如要重新開啟已安裝的應用程式，請在 Chrome 的網址列輸入 chrome://apps，然後選取該應用程式。",
+  "alt": "共 4 個 Windows 版 Chrome 安裝步驟的圖示；藍色外框標示文件中提到的控制項目。",
+  "steps": {
+    "confirm-install": {
+      "title": "按一下「{label:install}」",
+      "description": "確認應用程式名稱和網站位址，然後按一下「{label:install}」。請依照後續出現的確認提示操作。"
+    }
+  },
+  "transitions": {},
+  "heading": "安裝應用程式",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "在 Windows 版 Chrome 中安裝應用程式",
+  "svgDesc": "文件草稿：示意控制項目來自目前的廠商說明，並非經過驗證的裝置螢幕截圖。藍色外框標示相應的控制項目。"
+}

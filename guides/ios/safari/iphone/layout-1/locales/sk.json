@@ -1,0 +1,29 @@
+{
+  "title": "Pridanie na plochu",
+  "label": "iPhone · Safari · Pridať na plochu",
+  "steps": {
+    "open-page-menu": {
+      "title": "Otvorte {label:page-menu}",
+      "description": "Klepnite na tlačidlo {label:page-menu} na ľavej strane adresného riadka webovej stránky. Jeho ikona má tri vodorovné čiary, pričom spodná je kratšia."
+    },
+    "tap-share": {
+      "title": "Klepnite na {label:share}",
+      "description": "V menu stránky klepnite na {label:share}. Ikona je štvorec so šípkou smerujúcou nahor."
+    },
+    "view-more": {
+      "title": "Klepnite na {label:view-more}",
+      "description": "Ak je ponuka zdieľania zbalená, klepnutím na {label:view-more} (zobrazené so šípkou nadol) zobrazíte zvyšné akcie. Ak je zoznam akcií už viditeľný, pokračujte krokom {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Klepnite na {label:add-to-home-screen}",
+      "description": "V rozbalenom zozname akcií nájdite a klepnite na {label:add-to-home-screen}. Ikona je zaoblený štvorec so znamienkom plus."
+    }
+  },
+  "completion": "Podľa pokynov na potvrdzovacej obrazovke dokončite pridanie apky.",
+  "alt": "Štyri kroky: klepnite na Menu stránky vedľa adresy, klepnite na Zdieľať, v prípade potreby klepnite na Zobraziť viac a potom klepnite na Pridať na plochu.",
+  "transitions": {},
+  "heading": "Pridanie na plochu",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Pridanie na plochu v Safari na iPhone: štyri kroky",
+  "svgDesc": "Štyri očíslované kroky pre Safari na iPhone: otvorte Menu stránky, klepnite na Zdieľať, klepnite na Zobraziť viac a potom klepnite na Pridať na plochu. Modré orámovanie označuje ovládacie prvky, na ktoré treba klepnúť. Úplný textový návod je k dispozícii samostatne."
+}

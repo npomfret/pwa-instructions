@@ -1,0 +1,30 @@
+{
+  "title": "Zainstaluj aplikację w Edge w systemie Windows",
+  "label": "Windows · Edge · Zainstaluj aplikację",
+  "intro": "Droga przez menu jest zgodna z aktualną pomocą Microsoft dla przeglądarki Edge. W innych wersjach Edge opcja {label:apps} może znajdować się bezpośrednio w menu {label:settings-and-more}. Wersja robocza oparta na dokumentacji: nie sprawdzono jej jeszcze na urządzeniu; układ menu i komunikaty potwierdzenia mogą się różnić.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Otwórz {label:settings-and-more}",
+      "description": "Otwórz witrynę w przeglądarce Microsoft Edge. Kliknij trzy poziome kropki w prawym górnym rogu przeglądarki."
+    },
+    "more-tools": {
+      "title": "Wybierz {label:more-tools}",
+      "description": "Wybierz z menu opcję {label:more-tools}."
+    },
+    "apps": {
+      "title": "Wybierz {label:apps}",
+      "description": "W menu Więcej narzędzi wybierz opcję {label:apps}."
+    },
+    "install-site": {
+      "title": "Wybierz {label:install-this-site-as-an-app}",
+      "description": "Wybierz {label:install-this-site-as-an-app}. W przypadku PWA, którą można zainstalować, Edge może zamiast tego zaproponować opcję „Zainstaluj aplikację” lub ikonę instalacji na pasku adresu."
+    }
+  },
+  "completion": "Aby ponownie ją otworzyć, wpisz edge://apps i kliknij „Otwórz” na karcie aplikacji. W sekcji „Szczegóły” dostępne są opcje „Przypnij do paska zadań”, „Przypnij do ekranu startowego” i „Utwórz skrót do pulpitu”.",
+  "alt": "5 ilustrowanych kroków instalacji w Edge w systemie Windows; niebieskie obwódki wskazują opisane elementy sterujące.",
+  "transitions": {},
+  "heading": "Zainstaluj aplikację",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Instalowanie aplikacji w Edge w systemie Windows",
+  "svgDesc": "Wersja robocza oparta na dokumentacji: schematyczne elementy sterujące zgodne z aktualnymi instrukcjami producenta, a nie zweryfikowane nagranie z urządzenia. Niebieskie obwódki wskazują elementy sterujące."
+}

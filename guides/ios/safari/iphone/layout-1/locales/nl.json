@@ -1,0 +1,28 @@
+{
+  "title": "Zet op beginscherm",
+  "label": "iPhone · Safari · Zet op beginscherm",
+  "steps": {
+    "open-page-menu": {
+      "title": "Open het {label:page-menu}",
+      "description": "Tik op de knop voor het {label:page-menu} links in het adresveld van de website. Het symbool bestaat uit drie horizontale streepjes, waarvan de onderste korter is."
+    },
+    "tap-share": {
+      "title": "Tik op {label:share}",
+      "description": "Tik in het {label:page-menu} op {label:share}. Het symbool is een vierkant met een pijl omhoog."
+    },
+    "view-more": {
+      "title": "Tik op {label:view-more}",
+      "description": "Als het deelvenster is samengevouwen, tik je op {label:view-more} (met een pijl-omlaag) om de overige acties te tonen. Is de lijst met acties al zichtbaar, ga dan verder met stap {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Tik op {label:add-to-home-screen}",
+      "description": "Zoek in de uitgebreide lijst met acties naar {label:add-to-home-screen} en tik erop. Het symbool is een vierkant met afgeronde hoeken en een plusteken."
+    }
+  },
+  "completion": "Volg het bevestigingsscherm om het toevoegen van de app af te ronden.",
+  "alt": "Vier stappen: tik naast het adres op het paginamenu, tik op Deel, tik indien nodig op Toon meer en tik ten slotte op Zet op beginscherm.",
+  "heading": "Zet op beginscherm",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Zet op beginscherm in Safari op de iPhone: vier stappen",
+  "svgDesc": "Vier genummerde stappen voor Safari op de iPhone: open het paginamenu, tik op Deel, tik op Toon meer en tik ten slotte op Zet op beginscherm. De blauwe omlijning markeert de knoppen waarop je moet tikken. De volledige instructies in tekst worden apart aangeboden."
+}

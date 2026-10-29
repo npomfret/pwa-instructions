@@ -1,0 +1,38 @@
+{
+  "title": "Instalacija aplikacije u pregledniku Chrome",
+  "label": "Mac · Chrome · Instalacija aplikacije",
+  "intro": "Ovaj vodič slijedi put preko izbornika preglednika Chrome prikazan na referentnim snimkama zaslona. Neke web-lokacije nude i ikonu za instalaciju u adresnoj traci.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Otvorite izbornik „{label:more}”",
+      "description": "Otvorite web-lokaciju u pregledniku Chrome. Kliknite tri okomite točke u gornjem desnom kutu prozora preglednika Chrome da biste otvorili izbornik „{label:more}”."
+    },
+    "cast-save-and-share": {
+      "title": "Odaberite „{label:cast-save-and-share}”",
+      "description": "U izborniku „Više” odaberite „{label:cast-save-and-share}” da biste otvorili njegov podizbornik."
+    },
+    "choose-install": {
+      "title": "Odaberite „{label:install}”",
+      "description": "U podizborniku kliknite „{label:install}”, a zatim naziv web-lokacije ili aplikacije. Neke verzije Chromea ovu naredbu nazivaju „Instaliraj stranicu kao aplikaciju”. Odaberite radnju instalacije iznad naredbe „Izradi prečac”; „Izradi prečac” zasebna je naredba."
+    },
+    "continue-install": {
+      "title": "Kliknite „{label:next}”",
+      "description": "U dijaloškom okviru „Instaliranje aplikacije” provjerite naziv i domenu web-lokacije, a zatim kliknite „{label:next}”. Ako vaša verzija preglednika Chrome odmah prelazi na potvrdu instalacije, nastavite s korakom {step:5}."
+    },
+    "confirm-install": {
+      "title": "Kliknite „{label:install}”",
+      "description": "Sljedeći dijaloški okvir prikazuje dodavanje aplikacije u Chromeove aplikacije. Kliknite „{label:install}” za potvrdu."
+    },
+    "show-in-finder": {
+      "title": "Kliknite „{label:show-in-finder}”",
+      "description": "Kad Chrome prikaže poruku „{label:successfully-installed}”, kliknite „{label:show-in-finder}” da biste pronašli instaliranu aplikaciju. Možete odabrati i „{label:open-tab-in-app}” da biste web-lokaciju odmah otvorili u prozoru aplikacije."
+    }
+  },
+  "completion": "U programu Finder dvaput kliknite aplikaciju da biste je otvorili. Da biste je kasnije ponovno otvorili iz preglednika Chrome, upišite chrome://apps u adresnu traku, pritisnite Return, a zatim kliknite aplikaciju. Za instalaciju nije potreban prečac u Docku.",
+  "alt": "Šest koraka u pregledniku Chrome na Macu: otvorite izbornik „Više” s tri točke, odaberite „Emitiranje, spremanje i dijeljenje”, odaberite „Instaliraj”, kliknite „Dalje”, kliknite „Instaliraj”, a zatim kliknite „Prikaži u programu Finder”.",
+  "transitions": {},
+  "heading": "Instalacija aplikacije",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Instalacija aplikacije u pregledniku Chrome na Macu",
+  "svgDesc": "Šest koraka: otvorite „Više”, odaberite „Emitiranje, spremanje i dijeljenje”, odaberite „Instaliraj”, kliknite „Dalje”, kliknite „Instaliraj”, a zatim odaberite „Prikaži u programu Finder”. Plavi okviri označavaju kontrole."
+}

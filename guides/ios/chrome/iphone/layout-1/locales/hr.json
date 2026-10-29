@@ -1,0 +1,16 @@
+{
+  "title": "Dodavanje na početni zaslon iz preglednika Chrome",
+  "label": "iPhone · Chrome · Dodavanje na početni zaslon",
+  "intro": "Koristite Chrome na iPhoneu. Ovi koraci instaliraju aplikaciju izravno s lista za dijeljenje.",
+  "steps": {
+    "tap-share": {
+      "title": "Dodirnite „{label:share}”",
+      "description": "U pregledniku Chrome dodirnite „{label:share}” na desnom kraju adresne trake pri vrhu zaslona. Ikona je kvadrat sa strelicom usmjerenom prema gore."
+    }
+  },
+  "completion": "Slijedite upute na zaslonu za potvrdu kako biste dovršili dodavanje aplikacije.",
+  "alt": "Tri koraka u pregledniku Chrome na iPhoneu: „Dijeli” gore desno u adresnoj traci, „Prikaži više”, a zatim „Dodaj na početni zaslon”.",
+  "transitions": {},
+  "heading": "Dodavanje na početni zaslon",
+  "subtitle": "iPhone · Chrome"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Adăugare la ecranul principal din Chrome",
+  "label": "iPhone · Chrome · Adăugare la ecranul principal",
+  "heading": "Adăugare la ecranul principal",
+  "subtitle": "iPhone · Chrome",
+  "intro": "Folosiți Chrome pe iPhone. Acești pași instalează aplicația direct din foaia de partajare a browserului.",
+  "steps": {
+    "tap-share": {
+      "title": "Apăsați {label:share}",
+      "description": "În Chrome, apăsați {label:share} la capătul din dreapta al barei de adrese din partea de sus a ecranului. Pictograma este un pătrat cu o săgeată orientată în sus."
+    }
+  },
+  "completion": "Urmați ecranul de confirmare pentru a termina adăugarea aplicației.",
+  "alt": "Trei pași în Chrome pe iPhone: Partajați în dreapta sus, în bara de adrese, apoi Afișați mai multe și Adăugați la ecranul principal.",
+  "svgTitle": "Adăugare la ecranul principal din Chrome pe iPhone: trei pași",
+  "svgDesc": "Trei pași numerotați în Chrome pe iPhone: apăsați Partajați în bara de adrese, apăsați Afișați mai multe, apoi apăsați Adăugați la ecranul principal. Contururile albastre marchează comenzile pe care trebuie să le apăsați.",
+  "transitions": {}
+}

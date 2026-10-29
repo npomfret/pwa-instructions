@@ -1,0 +1,25 @@
+{
+  "title": "Instal·la una app al Chrome per a Android",
+  "label": "Android · Chrome · Instal·la l’app",
+  "intro": "Fes servir el Chrome per a Android. Les etiquetes de menú il·lustrades segueixen l’ajuda actual d’Android de Google, i no el seu antic article sobre Afegeix a la pantalla d’inici. Esborrany de documentació: encara no s’ha verificat en un dispositiu; el disseny del menú i els missatges de confirmació poden variar.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Obre el menú {label:more}",
+      "description": "Obre el lloc web al Chrome. Toca els tres punts verticals situats al costat de la barra d’adreces."
+    },
+    "install-and-create-shortcut": {
+      "title": "Toca {label:install-and-create-shortcut}",
+      "description": "Tria {label:install-and-create-shortcut} al menú. En dissenys més antics del Chrome, aquesta opció pot dir-se Afegeix a la pantalla d’inici."
+    },
+    "install-app": {
+      "title": "Toca {label:install}",
+      "description": "Tria {label:install}. Completa els missatges que mostri el Chrome per instal·lar l’app. {label:create-shortcut} és una opció a part que només desa un enllaç."
+    }
+  },
+  "completion": "Quan acabi la instal·lació, obre l’app des del llançador d’Android. La ubicació a la pantalla d’inici depèn del llançador i de la seva configuració.",
+  "alt": "Tres passos il·lustrats per instal·lar al Chrome per a Android; els contorns blaus assenyalen els controls documentats.",
+  "heading": "Instal·la l’app",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Instal·la una app al Chrome per a Android",
+  "svgDesc": "Esborrany de documentació. Tres passos: obre Més, toca Instal·la i crea una drecera i, finalment, toca Instal·la. Completa els altres missatges al dispositiu."
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Hozzáadás a Főképernyőhöz a Chrome-ból",
+  "label": "iPhone · Chrome · Hozzáadás a Főképernyőhöz",
+  "intro": "Használja a Chrome-ot az iPhone-ján. Ezekkel a lépésekkel közvetlenül a megosztási menüből telepíthet.",
+  "steps": {
+    "tap-share": {
+      "title": "Koppintson a {label:share} elemre",
+      "description": "A Chrome-ban koppintson a {label:share} elemre a képernyő tetején lévő címsáv jobb szélén. Az ikonja egy négyzet, amelyből felfelé mutató nyíl indul ki."
+    }
+  },
+  "completion": "A hozzáadás befejezéséhez kövesse a megerősítő képernyőn megjelenő utasításokat.",
+  "alt": "Három lépés az iPhone Chrome böngészőjében: Megosztás a címsáv jobb felső részén, Továbbiak megtekintése, majd Hozzáadás a Főképernyőhöz.",
+  "transitions": {},
+  "heading": "Hozzáadás a Főképernyőhöz",
+  "subtitle": "iPhone · Chrome"
+}

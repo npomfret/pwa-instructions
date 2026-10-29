@@ -15,7 +15,7 @@
     },
     "choose-install": {
       "title": "选择“{label:install}”",
-      "description": "在子菜单中，点击“{label:install}”及其后的网站或应用名称。某些网站会将此项标为“将网页作为应用安装”。请选择“{label:create-shortcut}”上方的安装操作；“{label:create-shortcut}”是另一项独立命令。"
+      "description": "在子菜单中，点击“{label:install}”及其后的网站或应用名称。某些版本的 Chrome 会将此项称为“将网页作为应用安装”。请选择“{label:create-shortcut}”上方的安装操作；“{label:create-shortcut}”是另一项独立命令。"
     },
     "continue-install": {
       "title": "点击“{label:next}”",

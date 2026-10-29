@@ -1,0 +1,22 @@
+{
+  "title": "Dodaj do ekranu głównego z przeglądarki Brave",
+  "label": "iPhone · Brave → Safari · Dodaj do ekranu głównego",
+  "intro": "Zacznij w przeglądarce Brave. W kroku {step:3} ta sama witryna zostanie otwarta w Safari; kroki {step:4}–{step:7} wykonasz w Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Stuknij w {label:share}",
+      "description": "W przeglądarce Brave stuknij w {label:share} na dolnym pasku narzędzi. Ikona to kwadrat ze strzałką skierowaną w górę. Jeśli pasek narzędzi jest ukryty, stuknij w adres witryny, aby go wyświetlić."
+    },
+    "open-in-safari": {
+      "title": "Stuknij w {label:open-in-safari}",
+      "description": "Na rozwiniętym arkuszu udostępniania przewiń w dół i stuknij w {label:open-in-safari}. Witryna otworzy się w Safari; wszystkie pozostałe kroki wykonaj tam."
+    }
+  },
+  "completion": "Postępuj zgodnie z instrukcjami na ekranie potwierdzenia, aby zakończyć dodawanie aplikacji.",
+  "alt": "Siedem ponumerowanych kroków: „Udostępnij”, rozwinięcie pozostałych działań i „Otwórz w Safari” w przeglądarce Brave, a następnie cztery kroki dodawania w Safari.",
+  "transitions": {
+    "continue-in-safari": "Kontynuuj w Safari"
+  },
+  "heading": "Dodaj do ekranu głównego",
+  "subtitle": "iPhone · Brave → Safari"
+}

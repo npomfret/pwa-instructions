@@ -1,0 +1,18 @@
+{
+  "title": "Instalarea unei aplicații în Chrome pe Windows",
+  "label": "Windows · Chrome · Instalare aplicație",
+  "heading": "Instalare aplicație",
+  "subtitle": "Windows · Chrome",
+  "intro": "Folosiți calea prin meniul Chrome sau pictograma de instalare din bara de adrese, atunci când site-ul web o oferă. Ciornă de documentație: neverificată pe un dispozitiv; aspectul meniului și mesajele de confirmare pot varia.",
+  "steps": {
+    "confirm-install": {
+      "title": "Faceți clic pe {label:install}",
+      "description": "Verificați numele aplicației și adresa site-ului web, apoi faceți clic pe {label:install}. Urmați eventualele alte mesaje de confirmare."
+    }
+  },
+  "completion": "Pentru a redeschide o aplicație instalată, introduceți chrome://apps în bara de adrese din Chrome și selectați aplicația.",
+  "alt": "4 pași ilustrați de instalare în Chrome pe Windows; contururile albastre marchează comenzile documentate.",
+  "svgTitle": "Instalarea unei aplicații în Chrome pe Windows",
+  "svgDesc": "Ciornă de documentație: comenzi schematice preluate din instrucțiunile actuale ale producătorului, nu dintr-o captură de ecran de pe un dispozitiv verificat. Contururile albastre marchează comenzile.",
+  "transitions": {}
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Legg til på Hjem-skjermen fra Brave",
+  "label": "iPhone · Brave → Safari · Legg til på Hjem-skjermen",
+  "intro": "Start i Brave. Trinn {step:3} åpner det samme nettstedet i Safari, og trinn {step:4}–{step:7} utføres i Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Trykk på {label:share}",
+      "description": "Trykk på {label:share} i verktøylinjen nederst i Brave. Symbolet er en firkant med en pil som peker oppover. Hvis verktøylinjen er skjult, trykker du på nettadressen for å vise den."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Bla nedover i det utvidede delingsarket, og trykk på {label:open-in-safari}. Nettstedet åpnes i Safari. Utfør alle de resterende trinnene der."
+    }
+  },
+  "completion": "Følg instruksjonene på bekreftelsesskjermen for å fullføre tilleggingen av appen.",
+  "alt": "Sju nummererte trinn: Del, Vis mer og Åpne i Safari i Brave, etterfulgt av de fire installasjonstrinnene i Safari.",
+  "transitions": {
+    "continue-in-safari": "Fortsett i Safari"
+  },
+  "heading": "Legg til på Hjem-skjermen",
+  "subtitle": "iPhone · Brave → Safari"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Dodajanje v Dock v Safariju",
+  "label": "Mac · Safari · Dodaj v Dock",
+  "intro": "Zahteva macOS Sonoma 14 ali novejši. Ti prikazi kažejo pot prek menija Datoteka; Safari ponuja Dodaj v Dock tudi v meniju za deljenje.",
+  "completion": "Novo aplikacijo odprite iz Docka.",
+  "alt": "Trije koraki v Safariju na Macu: odprite Datoteka, izberite Dodaj v Dock, nato kliknite Dodaj.",
+  "steps": {
+    "open-file-menu": {
+      "title": "Odprite meni {label:file}",
+      "description": "Odprite spletno mesto v Safariju. V menijski vrstici na vrhu zaslona Maca kliknite {label:file}."
+    },
+    "add-to-dock": {
+      "title": "Izberite {label:add-to-dock}",
+      "description": "V meniju {label:file} kliknite {label:add-to-dock}. Safari odpre pogovorno okno za potrditev za to spletno mesto."
+    },
+    "confirm-add": {
+      "title": "Kliknite {label:add}",
+      "description": "Obdržite ali uredite ime aplikacije, nato kliknite {label:add}. Spletna aplikacija se shrani v mapo Aplikacije in doda v Dock."
+    }
+  },
+  "transitions": {},
+  "heading": "Dodaj v Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Dodajanje spletnega mesta v Dock v Safariju na Macu",
+  "svgDesc": "Trije koraki: odprite meni Datoteka, izberite Dodaj v Dock, nato kliknite Dodaj. Modri obrisi označujejo kontrolnike."
+}

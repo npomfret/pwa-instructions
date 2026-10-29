@@ -1,0 +1,37 @@
+{
+  "title": "Installeer een app in Chrome",
+  "label": "Mac · Chrome · App installeren",
+  "intro": "In deze handleiding volg je de route via het Chrome-menu uit de schermafbeeldingen. Sommige websites tonen ook een installatiesymbool in de adresbalk.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Open het menu {label:more}",
+      "description": "Open de website in Chrome. Klik rechtsboven in het Chrome-venster op de drie verticale puntjes om het menu {label:more} te openen."
+    },
+    "cast-save-and-share": {
+      "title": "Kies {label:cast-save-and-share}",
+      "description": "Kies in het menu {label:more} de optie {label:cast-save-and-share} om het submenu te openen."
+    },
+    "choose-install": {
+      "title": "Kies {label:install}",
+      "description": "Klik in het submenu op {label:install}, gevolgd door de naam van de website of app. In sommige versies van Chrome heet dit item 'Pagina als app installeren'. Kies de installatieoptie boven {label:create-shortcut}; {label:create-shortcut} is een apart commando."
+    },
+    "continue-install": {
+      "title": "Klik op {label:next}",
+      "description": "Controleer in het dialoogvenster {label:install-app} de naam en het domein van de website en klik op {label:next}. Gaat je versie van Chrome direct naar de installatiebevestiging, ga dan verder met stap {step:5}."
+    },
+    "confirm-install": {
+      "title": "Klik op {label:install}",
+      "description": "In het volgende dialoogvenster zie je dat de app wordt toegevoegd aan {label:chrome-apps}. Klik op {label:install} om te bevestigen."
+    },
+    "show-in-finder": {
+      "title": "Klik op {label:show-in-finder}",
+      "description": "Wanneer Chrome meldt: {label:successfully-installed}, klik je op {label:show-in-finder} om de geïnstalleerde app te zoeken. Je kunt ook {label:open-tab-in-app} kiezen om de website meteen in het eigen appvenster te openen."
+    }
+  },
+  "completion": "Dubbelklik in de Finder op de app om deze te openen. Om de app later opnieuw vanuit Chrome te openen, typ je chrome://apps in de adresbalk, druk je op Return en klik je op de app. Voor het installeren is geen snelkoppeling in het Dock nodig.",
+  "alt": "Zes stappen in Chrome op de Mac: open het menu Meer met de drie puntjes, kies Casten, opslaan en delen, kies Installeren, klik op Volgende, klik op Installeren en klik vervolgens op Toon in Finder.",
+  "heading": "App installeren",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "App installeren in Chrome op de Mac: zes stappen",
+  "svgDesc": "Zes genummerde stappen voor Chrome op de Mac: open het menu Meer, kies Casten, opslaan en delen, kies Installeren, klik op Volgende, klik op Installeren en klik op Toon in Finder. De blauwe omlijning markeert de opties waarop je moet klikken. De volledige instructies in tekst worden apart aangeboden."
+}

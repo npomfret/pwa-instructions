@@ -1,0 +1,30 @@
+{
+  "title": "Windows Edge में ऐप इंस्टॉल करें",
+  "label": "Windows · Edge · ऐप इंस्टॉल करें",
+  "intro": "यह मेनू वाला तरीक़ा Microsoft की मौजूदा Edge सहायता के अनुसार है। Edge के दूसरे संस्करणों में {label:apps} सीधे {label:settings-and-more} में हो सकता है। दस्तावेज़ीकरण का ड्राफ़्ट: अभी किसी डिवाइस पर जाँचा नहीं गया है; मेनू का लेआउट और पुष्टि वाले प्रॉम्प्ट अलग हो सकते हैं।",
+  "steps": {
+    "open-settings-menu": {
+      "title": "{label:settings-and-more} खोलें",
+      "description": "Microsoft Edge में वेबसाइट खोलें। ब्राउज़र के ऊपरी दाएँ कोने में तीन क्षैतिज बिंदुओं पर क्लिक करें।"
+    },
+    "more-tools": {
+      "title": "{label:more-tools} चुनें",
+      "description": "मेनू से {label:more-tools} चुनें।"
+    },
+    "apps": {
+      "title": "{label:apps} चुनें",
+      "description": "{label:more-tools} में {label:apps} चुनें।"
+    },
+    "install-site": {
+      "title": "{label:install-this-site-as-an-app} चुनें",
+      "description": "{label:install-this-site-as-an-app} चुनें। इंस्टॉल किए जा सकने वाले PWA के लिए Edge इसके बजाय {label:install-app} या पता बार में इंस्टॉल आइकॉन दे सकता है।"
+    }
+  },
+  "completion": "इसे दोबारा खोलने के लिए edge://apps दर्ज करें और ऐप के कार्ड पर “खोलें” पर क्लिक करें। “विवरण” में “टास्कबार पर पिन करें”, “प्रारंभ पर पिन करें” और “डेस्कटॉप शॉर्टकट बनाएँ” के विकल्प मिलते हैं।",
+  "alt": "Windows Edge में इंस्टॉल करने के 5 चित्रित चरण; नीले आउटलाइन दस्तावेज़ में बताए गए कंट्रोल को दर्शाते हैं।",
+  "transitions": {},
+  "heading": "ऐप इंस्टॉल करें",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Windows Edge में ऐप इंस्टॉल करें",
+  "svgDesc": "दस्तावेज़ीकरण का ड्राफ़्ट: निर्माता के मौजूदा निर्देशों पर आधारित योजनाबद्ध कंट्रोल, किसी जाँचे गए डिवाइस का कैप्चर नहीं। नीले आउटलाइन कंट्रोल को दर्शाते हैं।"
+}

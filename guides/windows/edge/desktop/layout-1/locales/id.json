@@ -1,0 +1,29 @@
+{
+  "title": "Instal app di Edge Windows",
+  "label": "Windows · Edge · Instal app",
+  "intro": "Jalur menu mengikuti bantuan Edge Microsoft saat ini. Versi Edge lain mungkin menempatkan {label:apps} langsung di {label:settings-and-more}. Draf dokumentasi: belum diverifikasi di perangkat; tata letak menu dan perintah konfirmasi dapat berbeda.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Buka {label:settings-and-more}",
+      "description": "Buka situs web di Microsoft Edge. Klik tiga titik horizontal di kanan atas browser."
+    },
+    "more-tools": {
+      "title": "Pilih {label:more-tools}",
+      "description": "Pilih {label:more-tools} dari menu."
+    },
+    "apps": {
+      "title": "Pilih {label:apps}",
+      "description": "Di {label:more-tools}, pilih {label:apps}."
+    },
+    "install-site": {
+      "title": "Pilih {label:install-this-site-as-an-app}",
+      "description": "Pilih {label:install-this-site-as-an-app}. Untuk PWA yang dapat diinstal, Edge mungkin menawarkan {label:install-app} atau ikon instal di kolom URL."
+    }
+  },
+  "completion": "Untuk membukanya kembali, masukkan edge://apps lalu klik Buka pada kartu app. Detail menawarkan opsi untuk menyematkan ke bilah tugas, menyematkan ke Mulai, dan membuat pintasan desktop.",
+  "alt": "Lima langkah instalasi Edge Windows yang diilustrasikan; garis tepi biru menandai kontrol yang didokumentasikan.",
+  "heading": "Instal app",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Menginstal app di Edge Windows",
+  "svgDesc": "Draf dokumentasi: kontrol skematis dari petunjuk vendor saat ini, bukan tangkapan perangkat yang telah diverifikasi. Garis tepi biru menandai kontrolnya."
+}

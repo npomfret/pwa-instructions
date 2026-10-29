@@ -1,0 +1,16 @@
+{
+  "title": "Dodaj do ekranu głównego z przeglądarki Chrome",
+  "label": "iPhone · Chrome · Dodaj do ekranu głównego",
+  "intro": "Użyj Chrome na iPhonie. Te kroki pozwalają zainstalować aplikację bezpośrednio z arkusza udostępniania.",
+  "steps": {
+    "tap-share": {
+      "title": "Stuknij w {label:share}",
+      "description": "W Chrome stuknij w {label:share} na prawym końcu paska adresu u góry ekranu. Ikona to kwadrat ze strzałką skierowaną w górę."
+    }
+  },
+  "completion": "Postępuj zgodnie z instrukcjami na ekranie potwierdzenia, aby zakończyć dodawanie aplikacji.",
+  "alt": "Trzy kroki w Chrome na iPhonie: „Udostępnij” po prawej stronie paska adresu u góry, rozwinięcie pozostałych działań, a następnie „Do ekranu głównego”.",
+  "transitions": {},
+  "heading": "Dodaj do ekranu głównego",
+  "subtitle": "iPhone · Chrome"
+}

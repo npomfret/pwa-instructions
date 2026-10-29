@@ -1,0 +1,26 @@
+{
+  "title": "Installer une appli dans Chrome sur Android",
+  "label": "Android · Chrome · Installer l’appli",
+  "heading": "Installer l’appli",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Installer une appli dans Chrome sur Android",
+  "svgDesc": "Brouillon de documentation. Trois étapes : ouvrez Plus, appuyez sur Installer et créer un raccourci, puis appuyez sur Installer. Suivez les éventuelles autres instructions affichées sur votre appareil.",
+  "intro": "Utilisez Chrome pour Android. Les libellés de menu illustrés suivent l’aide Google actuelle pour Android, et non son ancien article « Ajouter à l’écran d’accueil ». Brouillon de documentation : non vérifié sur un appareil ; la disposition du menu et les invites de confirmation peuvent varier.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Ouvrez le menu {label:more}",
+      "description": "Ouvrez le site web dans Chrome. Appuyez sur les trois points verticaux à côté de la barre d’adresse."
+    },
+    "install-and-create-shortcut": {
+      "title": "Appuyez sur {label:install-and-create-shortcut}",
+      "description": "Dans le menu, choisissez {label:install-and-create-shortcut}. Dans les anciennes versions de Chrome, cette option peut s’appeler « Ajouter à l’écran d’accueil »."
+    },
+    "install-app": {
+      "title": "Appuyez sur {label:install}",
+      "description": "Choisissez {label:install}. Suivez les invites affichées par Chrome pour installer l’appli. {label:create-shortcut} est une option distincte, qui enregistre un simple lien."
+    }
+  },
+  "completion": "Une fois l’installation terminée, ouvrez l’appli depuis le lanceur de votre appareil Android. L’emplacement sur l’écran d’accueil dépend de votre lanceur et de ses paramètres.",
+  "alt": "3 étapes illustrées d’installation dans Chrome sur Android ; des contours bleus signalent les commandes décrites dans la documentation.",
+  "transitions": {}
+}

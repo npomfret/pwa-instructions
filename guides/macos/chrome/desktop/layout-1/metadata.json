@@ -40,7 +40,7 @@
       "id": "choose-install",
       "title": "Choose Install",
       "uiLabel": "Install",
-      "description": "In the submenu, click Install followed by the website or app name. Some sites label this Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.",
+      "description": "In the submenu, click Install followed by the website or app name. Some versions of Chrome call this item Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.",
       "illustrationFragment": "step-3"
     },
     {

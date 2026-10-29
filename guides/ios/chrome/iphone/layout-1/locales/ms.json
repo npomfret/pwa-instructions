@@ -1,0 +1,16 @@
+{
+  "title": "Tambah ke Skrin Utama daripada Chrome",
+  "label": "iPhone · Chrome · Tambah ke Skrin Utama",
+  "intro": "Gunakan Chrome pada iPhone anda. Langkah ini memasang terus daripada helaian kongsinya.",
+  "steps": {
+    "tap-share": {
+      "title": "Ketik {label:share}",
+      "description": "Dalam Chrome, ketik {label:share} di hujung kanan bar alamat di bahagian atas skrin. Ikonnya ialah segi empat sama dengan anak panah menghala ke atas."
+    }
+  },
+  "transitions": {},
+  "completion": "Ikut skrin pengesahan untuk menyelesaikan penambahan app.",
+  "alt": "Tiga langkah dalam Chrome pada iPhone: Kongsi di bahagian atas kanan bar alamat, Lihat Lagi, kemudian Tambah ke Skrin Utama.",
+  "heading": "Tambah ke Skrin Utama",
+  "subtitle": "iPhone · Chrome"
+}

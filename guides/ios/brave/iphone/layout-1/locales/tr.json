@@ -1,0 +1,22 @@
+{
+  "title": "Brave’den Ana Ekrana Ekle",
+  "label": "iPhone · Brave → Safari · Ana Ekrana Ekle",
+  "intro": "Brave ile başlayın. {step:3}. adım aynı web sitesini Safari’de açar; {step:4}–{step:7}. adımlar Safari’de gerçekleşir.",
+  "steps": {
+    "tap-share": {
+      "title": "“{label:share}” öğesine dokunun",
+      "description": "Brave’de alt araç çubuğundaki “{label:share}” öğesine dokunun. Simgesi, yukarı bakan oku olan bir karedir. Araç çubuğu gizliyse göstermek için web sitesinin adresine dokunun."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Genişletilmiş paylaşım sayfasında aşağı kaydırın ve “{label:open-in-safari}” öğesine dokunun. Web sitesi Safari’de açılır; kalan tüm adımları orada uygulayın."
+    }
+  },
+  "completion": "Uygulamayı eklemeyi tamamlamak için onay ekranındaki adımları izleyin.",
+  "alt": "Yedi numaralı adım: Brave’de “Paylaş”, “Daha Fazla Gör” ve “Safari’de Aç”; ardından Safari’deki dört yükleme adımı.",
+  "transitions": {
+    "continue-in-safari": "Safari’de devam edin"
+  },
+  "heading": "Ana Ekrana Ekle",
+  "subtitle": "iPhone · Brave → Safari"
+}

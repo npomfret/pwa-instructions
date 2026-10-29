@@ -1,0 +1,24 @@
+{
+  "title": "Adăugare la ecranul principal din Brave",
+  "label": "iPhone · Brave → Safari · Adăugare la ecranul principal",
+  "heading": "Adăugare la ecranul principal",
+  "subtitle": "iPhone · Brave → Safari",
+  "intro": "Începeți în Brave. Pasul {step:3} deschide același site web în Safari; pașii {step:4}–{step:7} au loc în Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Apăsați {label:share}",
+      "description": "În Brave, apăsați {label:share} în bara de instrumente de jos. Pictograma este un pătrat cu o săgeată orientată în sus. Dacă bara de instrumente este ascunsă, apăsați adresa site-ului web pentru a o afișa."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "În foaia de partajare extinsă, derulați în jos și apăsați {label:open-in-safari}. Site-ul web se deschide în Safari; efectuați toți pașii rămași acolo."
+    }
+  },
+  "completion": "Urmați ecranul de confirmare pentru a termina adăugarea aplicației.",
+  "alt": "Șapte pași numerotați: Partajați, Afișați mai multe și Deschideți în Safari în Brave, urmați de cei patru pași de instalare din Safari.",
+  "svgTitle": "Adăugare la ecranul principal din Brave pe iPhone: șapte pași",
+  "svgDesc": "Șapte pași numerotați: trei în Brave (Partajați, Afișați mai multe, Deschideți în Safari), apoi patru în Safari (Meniu Pagină, Partajați, Afișați mai multe, Adăugați la ecranul principal). Contururile albastre marchează comenzile pe care trebuie să le apăsați.",
+  "transitions": {
+    "continue-in-safari": "Continuați în Safari"
+  }
+}

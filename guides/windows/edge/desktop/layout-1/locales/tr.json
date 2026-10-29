@@ -1,0 +1,30 @@
+{
+  "title": "Windows’ta Edge ile uygulama yükleme",
+  "label": "Windows · Edge · Uygulama yükleme",
+  "intro": "Menü yolu, Microsoft’un güncel Edge yardımını izler. Diğer Edge sürümleri “{label:apps}” öğesini doğrudan “{label:settings-and-more}” altına yerleştirebilir. Belgeleme taslağı: henüz bir cihazda doğrulanmadı; menü düzeni ve onay istemleri farklılık gösterebilir.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "“{label:settings-and-more}” menüsünü açın",
+      "description": "Web sitesini Microsoft Edge’de açın. Tarayıcının sağ üst köşesindeki üç yatay noktayı seçin."
+    },
+    "more-tools": {
+      "title": "“{label:more-tools}” öğesini seçin",
+      "description": "Menüden “{label:more-tools}” öğesini seçin."
+    },
+    "apps": {
+      "title": "“{label:apps}” öğesini seçin",
+      "description": "“{label:more-tools}” altında “{label:apps}” öğesini seçin."
+    },
+    "install-site": {
+      "title": "“{label:install-this-site-as-an-app}” öğesini seçin",
+      "description": "“{label:install-this-site-as-an-app}” öğesini seçin. Yüklenebilir bir PWA için Edge bunun yerine “{label:install-app}” öğesini veya adres çubuğunda bir yükleme simgesini sunabilir."
+    }
+  },
+  "completion": "Uygulamayı yeniden açmak için edge://apps yazın ve uygulamanın kartında Aç’ı seçin. Ayrıntılar bölümünde Görev çubuğuna sabitle, Başlangıç Ekranına Sabitle ve Masaüstü kısayolu oluşturun seçenekleri bulunur.",
+  "alt": "Windows’ta Edge ile 5 resimli yükleme adımı; mavi çerçeveler belgelenen denetimleri işaretler.",
+  "transitions": {},
+  "heading": "Uygulama yükleme",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Windows’ta Edge ile uygulama yükleme",
+  "svgDesc": "Belgeleme taslağı: üreticinin güncel yönergesine göre şematik denetimler; doğrulanmış bir cihaz görüntüsü değildir. Adımlar: “Ayarlar ve daha fazlası”, “Diğer araçlar”, “Uygulamalar”, “Bu siteyi uygulama olarak yükleyin”, sonra “Yükle”. Mavi çerçeveler denetimleri işaretler."
+}

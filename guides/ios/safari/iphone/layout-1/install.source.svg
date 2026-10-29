@@ -52,13 +52,13 @@
     <g transform="translate(-72 -30)">
       <use href="#phone"/>
       <rect x="105" y="199" width="206" height="249" rx="20" fill="white" stroke="#d7dadd"/>
-      <text x="125" y="233" class="label" style="fill:#687078" data-i18n="label:show-reader" data-max-width="193">Show Reader</text>
+      <text x="125" y="233" class="label" style="fill:#687078" data-i18n="label:show-reader" data-max-width="193" data-lines="2" data-line-height="17" data-center-lines="1">Show Reader</text>
       <path d="M121 250h174" class="line"/>
       <text x="125" y="280" class="label" style="fill:#687078" data-i18n="label:summarise" data-max-width="193">Summarise</text>
       <rect x="115" y="299" width="186" height="50" rx="10" class="target"/>
       <use href="#share-icon" x="130" y="308"/>
       <text x="164" y="330" class="label" data-i18n="label:share" data-max-width="154">Share</text>
-      <text x="125" y="381" class="small" style="fill:#687078" data-i18n="label:add-to-reading-list" data-max-width="193">Add to Reading List</text>
+      <text x="125" y="381" class="small" style="fill:#687078" data-i18n="label:add-to-reading-list" data-max-width="193" data-lines="2" data-line-height="13" data-center-lines="1">Add to Reading List</text>
       <path d="M125 410h152 M125 427h124" class="line"/>
     </g>
   </g>
@@ -81,7 +81,7 @@
       <circle cx="178" cy="416" r="17" fill="#e9ecef"/>
       <rect x="219" y="397" width="101" height="58" rx="10" class="target"/>
       <path d="m260 411 10 10 10-10" class="icon"/>
-      <text x="270" y="444" text-anchor="middle" class="small" data-i18n="label:view-more" data-max-width="100">View More</text>
+      <text x="270" y="444" text-anchor="middle" class="small" data-i18n="label:view-more" data-max-width="100" data-lines="2" data-line-height="12" data-center-lines="1">View More</text>
     </g>
   </g>
   <g id="step-4" transform="translate(28 1570)" role="group" aria-labelledby="step-4-title">
@@ -97,15 +97,15 @@
       <rect x="105" y="220" width="35" height="35" rx="10" fill="#e9ecef"/>
       <rect x="163" y="220" width="35" height="35" rx="10" fill="#e9ecef"/>
       <path d="m274 240 9-9 9 9" class="icon"/>
-      <text x="283" y="270" text-anchor="middle" class="small" style="fill:#687078" data-i18n="label:view-less" data-bounds="210 316" data-max-width="106">View Less</text>
+      <text x="283" y="270" text-anchor="middle" class="small" style="fill:#687078" data-i18n="label:view-less" data-bounds="210 316" data-max-width="106" data-lines="2" data-line-height="12" data-center-lines="1">View Less</text>
       <rect x="94" y="287" width="228" height="157" rx="15" fill="#f1f2f3"/>
-      <text x="108" y="316" class="small" style="fill:#687078" data-i18n="label:add-bookmark-to" data-max-width="210">Add Bookmark to…</text>
+      <text x="108" y="316" class="small" style="fill:#687078" data-i18n="label:add-bookmark-to" data-max-width="210" data-lines="2" data-line-height="13" data-center-lines="1">Add Bookmark to…</text>
       <path d="M108 333h200" class="line"/>
       <text x="108" y="361" class="small" style="fill:#687078" data-i18n="label:find-on-page" data-max-width="210">Find on Page</text>
       <rect x="91" y="384" width="234" height="52" rx="10" class="target"/>
       <rect x="102" y="400" width="18" height="21" rx="4" class="icon"/>
       <path d="M106 410h10 M111 405v10" class="icon"/>
-      <text x="130" y="415" class="label" data-i18n="label:add-to-home-screen" data-max-width="188">Add to Home Screen</text>
+      <text x="130" y="415" class="label" data-i18n="label:add-to-home-screen" data-max-width="188" data-lines="2" data-line-height="17" data-center-lines="1">Add to Home Screen</text>
     </g>
   </g>
 </svg>

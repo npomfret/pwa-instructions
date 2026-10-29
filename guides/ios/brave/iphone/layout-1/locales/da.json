@@ -1,0 +1,22 @@
+{
+  "title": "Føj til hjemmeskærm fra Brave",
+  "label": "iPhone · Brave → Safari · Føj til hjemmeskærm",
+  "intro": "Start i Brave. I trin {step:3} åbnes det samme websted i Safari, og trin {step:4}–{step:7} foregår i Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Tryk på {label:share}",
+      "description": "Tryk på {label:share} i værktøjslinjen nederst i Brave. Symbolet er en firkant med en pil, der peger opad. Hvis værktøjslinjen er skjult, skal du trykke på webstedets adresse for at få den frem."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Rul ned i det udvidede delingsark, og tryk på {label:open-in-safari}. Webstedet åbnes i Safari. Udfør alle de resterende trin der."
+    }
+  },
+  "completion": "Følg anvisningerne på bekræftelsesskærmen for at færdiggøre tilføjelsen af appen.",
+  "alt": "Syv nummererede trin: Del, Vis mere og Åbn i Safari i Brave efterfulgt af de fire installationstrin i Safari.",
+  "transitions": {
+    "continue-in-safari": "Fortsæt i Safari"
+  },
+  "heading": "Føj til hjemmeskærm",
+  "subtitle": "iPhone · Brave → Safari"
+}

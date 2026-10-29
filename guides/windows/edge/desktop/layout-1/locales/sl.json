@@ -1,0 +1,30 @@
+{
+  "title": "Namestitev aplikacije v Edgeu v sistemu Windows",
+  "label": "Windows · Edge · Namesti aplikacijo",
+  "intro": "Pot prek menija sledi trenutni Microsoftovi pomoči za Edge. V drugih različicah Edgea je lahko {label:apps} neposredno v meniju {label:settings-and-more}. Osnutek iz dokumentacije: še ni preverjen v napravi; postavitev menija in potrditvena sporočila se lahko razlikujejo.",
+  "completion": "Če jo želite znova odpreti, vnesite edge://apps in kliknite Odpri na kartici aplikacije. Podrobnosti ponujajo Pripni v opravilno vrstico, Pripni v meni Start in Ustvari bližnjico na namizju.",
+  "alt": "5 ilustriranih korakov namestitve v Edgeu v sistemu Windows; modri obrisi označujejo dokumentirane kontrolnike.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Odprite {label:settings-and-more}",
+      "description": "Odprite spletno mesto v Microsoft Edgeu. Kliknite tri vodoravne pike v zgornjem desnem kotu brskalnika."
+    },
+    "more-tools": {
+      "title": "Izberite {label:more-tools}",
+      "description": "V meniju izberite {label:more-tools}."
+    },
+    "apps": {
+      "title": "Izberite {label:apps}",
+      "description": "V razdelku Več orodij izberite {label:apps}."
+    },
+    "install-site": {
+      "title": "Izberite {label:install-this-site-as-an-app}",
+      "description": "Izberite {label:install-this-site-as-an-app}. Za namestljivo PWA lahko Edge namesto tega ponudi {label:install-app} ali ikono za namestitev v naslovni vrstici."
+    }
+  },
+  "transitions": {},
+  "heading": "Namesti aplikacijo",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Namestitev aplikacije v Edgeu v sistemu Windows",
+  "svgDesc": "Osnutek iz dokumentacije: shematski kontrolniki iz trenutnih navodil proizvajalca, ne iz preverjene naprave. Modri obrisi označujejo kontrolnike."
+}

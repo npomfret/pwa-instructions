@@ -1,0 +1,38 @@
+{
+  "title": "Chrome’da uygulama yükleme",
+  "label": "Mac · Chrome · Uygulama yükleme",
+  "intro": "Bu kılavuz, başvuru ekran görüntülerinde gösterilen Chrome menüsü yolunu izler. Bazı web siteleri ayrıca adres çubuğunda bir yükleme simgesi sunar.",
+  "steps": {
+    "open-more-menu": {
+      "title": "“{label:more}” menüsünü açın",
+      "description": "Web sitesini Chrome’da açın. “{label:more}” menüsünü açmak için Chrome penceresinin sağ üst köşesindeki üç dikey noktayı tıklayın."
+    },
+    "cast-save-and-share": {
+      "title": "“{label:cast-save-and-share}” öğesini seçin",
+      "description": "“{label:more}” menüsünde alt menüyü açmak için “{label:cast-save-and-share}” öğesini seçin."
+    },
+    "choose-install": {
+      "title": "“{label:install}” öğesini seçin",
+      "description": "Alt menüde “{label:install}” öğesini ve ardından gelen web sitesi veya uygulama adını tıklayın. Chrome’un bazı sürümlerinde bu öğe “Sayfayı uygulama olarak yükle” olarak adlandırılır. “{label:create-shortcut}” öğesinin üstündeki yükleme eylemini seçin; “{label:create-shortcut}” ayrı bir komuttur."
+    },
+    "continue-install": {
+      "title": "“{label:next}” düğmesini tıklayın",
+      "description": "“{label:install-app}” iletişim kutusunda web sitesinin adını ve alan adını kontrol edin, sonra “{label:next}” düğmesini tıklayın. Chrome sürümünüz doğrudan “{label:install}” onayına geçiyorsa {step:5}. adıma geçin."
+    },
+    "confirm-install": {
+      "title": "“{label:install}” düğmesini tıklayın",
+      "description": "Sonraki iletişim kutusunda uygulamanın “{label:chrome-apps}” bölümüne eklendiği görülür. Onaylamak için “{label:install}” düğmesini tıklayın."
+    },
+    "show-in-finder": {
+      "title": "“{label:show-in-finder}” düğmesini tıklayın",
+      "description": "Chrome “{label:successfully-installed}” mesajını gösterdiğinde, yüklenen uygulamayı bulmak için “{label:show-in-finder}” düğmesini tıklayın. Web sitesini hemen uygulama penceresinde açmak için “{label:open-tab-in-app}” öğesini de seçebilirsiniz."
+    }
+  },
+  "completion": "Finder’da uygulamaya çift tıklayarak açın. Daha sonra Chrome üzerinden yeniden açmak için adres çubuğuna chrome://apps yazın, Return tuşuna basın, sonra uygulamayı tıklayın. Yükleme için Dock kısayolu gerekmez.",
+  "alt": "Mac’te Chrome ile altı adım: üç noktalı “Daha fazla” menüsünü açın, “Yayınla, kaydet ve paylaş” öğesini seçin, “Yükle” öğesini seçin, “İleri” düğmesini tıklayın, “Yükle” düğmesini tıklayın, sonra “Finder'da Göster” düğmesini tıklayın.",
+  "transitions": {},
+  "heading": "Uygulama yükleme",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Mac’te Chrome ile uygulama yükleme",
+  "svgDesc": "Altı adım: “Daha fazla” menüsünü açın, “Yayınla, kaydet ve paylaş” öğesini seçin, “Yükle” öğesini seçin, “İleri” düğmesini tıklayın, “Yükle” düğmesini tıklayın, sonra “Finder'da Göster” öğesini seçin. Mavi çerçeveler denetimleri işaretler."
+}

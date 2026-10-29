@@ -1,0 +1,29 @@
+{
+  "title": "Ana Ekrana Ekle",
+  "label": "iPhone · Safari · Ana Ekrana Ekle",
+  "steps": {
+    "open-page-menu": {
+      "title": "“{label:page-menu}” öğesini açın",
+      "description": "Web sitesi adres çubuğunun sol tarafındaki “{label:page-menu}” düğmesine dokunun. Simgesi, alttaki çizgisi daha kısa olan üç yatay çizgiden oluşur."
+    },
+    "tap-share": {
+      "title": "“{label:share}” öğesine dokunun",
+      "description": "“{label:page-menu}” içinde “{label:share}” öğesine dokunun. Simgesi, yukarı bakan oku olan bir karedir."
+    },
+    "view-more": {
+      "title": "“{label:view-more}” öğesine dokunun",
+      "description": "Paylaşım sayfası daraltılmışsa, kalan eylemleri göstermek için aşağı bakan ok işaretiyle gösterilen “{label:view-more}” öğesine dokunun. Eylem listesi zaten görünüyorsa {step:4}. adıma geçin."
+    },
+    "add-to-home-screen": {
+      "title": "“{label:add-to-home-screen}” öğesine dokunun",
+      "description": "Genişletilmiş eylem listesinde “{label:add-to-home-screen}” öğesini bulup dokunun. Simgesi, içinde artı işareti olan yuvarlak köşeli bir karedir."
+    }
+  },
+  "completion": "Uygulamayı eklemeyi tamamlamak için onay ekranındaki adımları izleyin.",
+  "alt": "Dört adım: adresin yanındaki “Sayfa Menüsü” öğesine dokunun, “Paylaş” öğesine dokunun, gerekirse “Daha Fazla Gör” öğesine dokunun, sonra “Ana Ekrana Ekle” öğesine dokunun.",
+  "transitions": {},
+  "heading": "Ana Ekrana Ekle",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "iPhone’da Safari ile Ana Ekrana Ekle: dört adım",
+  "svgDesc": "iPhone’daki Safari için dört numaralı adım: “Sayfa Menüsü” öğesini açın, “Paylaş” öğesine dokunun, “Daha Fazla Gör” öğesine dokunun, sonra “Ana Ekrana Ekle” öğesine dokunun. Mavi çerçeveler dokunulacak denetimleri işaretler. Metin olarak tam anlatım ayrıca verilmiştir."
+}

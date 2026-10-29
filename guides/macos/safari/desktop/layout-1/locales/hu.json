@@ -1,0 +1,26 @@
+{
+  "title": "Hozzáadás a Dockhoz a Safariban",
+  "label": "Mac · Safari · Hozzáadás a Dockhoz",
+  "intro": "macOS Sonoma 14 vagy újabb rendszer szükséges. Az ábrák a Fájl menüs módszert mutatják; a Safari a Megosztás menüben is kínálja a Hozzáadás a Dockhoz lehetőséget.",
+  "steps": {
+    "open-file-menu": {
+      "title": "A {label:file} menü megnyitása",
+      "description": "Nyissa meg a webhelyet a Safariban. A Mac képernyőjének tetején lévő menüsávon kattintson a {label:file} menüre."
+    },
+    "add-to-dock": {
+      "title": "Válassza a {label:add-to-dock} lehetőséget",
+      "description": "A {label:file} menüben kattintson a {label:add-to-dock} lehetőségre. A Safari megerősítő párbeszédpanelt nyit meg ehhez a webhelyhez."
+    },
+    "confirm-add": {
+      "title": "Kattintson a {label:add} gombra",
+      "description": "Tartsa meg vagy módosítsa az alkalmazás nevét, majd kattintson a {label:add} gombra. A webapp a Saját mappa Alkalmazások mappájába kerül, és hozzáadódik a Dockhoz."
+    }
+  },
+  "completion": "Nyissa meg az új appot a Dockról.",
+  "alt": "Három lépés a Mac Safari böngészőjében: nyissa meg a Fájl menüt, válassza a Hozzáadás a Dockhoz lehetőséget, majd kattintson a Hozzáadás gombra.",
+  "transitions": {},
+  "heading": "Hozzáadás a Dockhoz",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Webhely hozzáadása a Dockhoz a Mac Safari böngészőjében",
+  "svgDesc": "Három lépés: nyissa meg a Fájl menüt, válassza a Hozzáadás a Dockhoz lehetőséget, majd kattintson a Hozzáadás gombra. A kék keretek jelölik a vezérlőelemeket."
+}

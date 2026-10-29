@@ -1,0 +1,25 @@
+{
+  "title": "Thêm vào Dock trong Safari",
+  "label": "Mac · Safari · Thêm vào Dock",
+  "intro": "Yêu cầu macOS Sonoma 14 trở lên. Các hình minh họa này cho thấy cách dùng menu {label:file}; Safari cũng có {label:add-to-dock} trong menu Chia sẻ.",
+  "steps": {
+    "open-file-menu": {
+      "title": "Mở menu {label:file}",
+      "description": "Mở trang web trong Safari. Trên thanh menu ở đầu màn hình máy Mac, bấm vào {label:file}."
+    },
+    "add-to-dock": {
+      "title": "Chọn {label:add-to-dock}",
+      "description": "Trong menu {label:file}, bấm vào {label:add-to-dock}. Safari sẽ mở hộp thoại xác nhận cho trang web này."
+    },
+    "confirm-add": {
+      "title": "Bấm vào {label:add}",
+      "description": "Giữ nguyên hoặc sửa tên ứng dụng, rồi bấm vào {label:add}. Ứng dụng web sẽ được lưu vào thư mục Ứng dụng và thêm vào Dock."
+    }
+  },
+  "completion": "Mở ứng dụng mới từ Dock của bạn.",
+  "alt": "Ba bước trong Safari trên máy Mac: mở Tệp, chọn Thêm vào Dock, rồi bấm vào Thêm.",
+  "heading": "Thêm vào Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Thêm trang web vào Dock trong Safari trên máy Mac",
+  "svgDesc": "Ba bước: mở menu Tệp, chọn Thêm vào Dock, rồi bấm vào Thêm. Các đường viền màu xanh dương đánh dấu các mục điều khiển."
+}

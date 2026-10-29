@@ -4,6 +4,15 @@
 
 /** @typedef {{ text: string, italic?: boolean, label?: string }} Segment `label` is the id of the control an italic segment names. */
 
+/** Hebrew, Arabic and their presentation forms: text that runs right to left. */
+export const RTL_TEXT = /[\u0590-\u08FF\uFB1D-\uFDFF\uFE70-\uFEFF]/;
+/**
+ * The `text-anchor` that keeps a node where it was once it is `direction="rtl"`: in SVG `start` and `end` follow the text
+ * direction, so a left-aligned node (`start`, the default) becomes `end` to stay anchored at the same x, and `middle` stays.
+ * @param {string | undefined} anchor
+ */
+export const rtlAnchor = anchor => (anchor === "middle" ? "middle" : anchor === "end" ? "start" : "end");
+
 const CLASS_SIZES = { heading: 28, "step-title": 23, label: 16, subtitle: 16, small: 14 };
 const BOLD_CLASSES = ["heading", "step-title"];
 
@@ -85,11 +94,11 @@ export function fitText(segments, { size, bold, max = 0, lines = 1 }) {
  * italic `<tspan>` (tagged `data-i18n="label:id"` when it names a control) for each italic segment. The runtime writes
  * its `<text>` nodes with this, so a title it redraws has the shape the build draws with scripts/i18n.mjs.
  * @param {{ lines: Segment[][] }} fit
- * @param {{ x: string, lineHeight: number, escape: (text: string) => string }} options
+ * @param {{ x: string, lineHeight: number, escape: (text: string) => string, center?: boolean }} options `center` lifts the first line by half the extra height, so a wrapped label stays centered on its single-line baseline.
  */
-export function fitMarkup({ lines }, { x, lineHeight, escape }) {
+export function fitMarkup({ lines }, { x, lineHeight, escape, center = false }) {
   const item = ({ text, italic, label }) => italic ? `<tspan font-style="italic"${label ? ` data-i18n="label:${label}"` : ""}>${escape(text)}</tspan>` : escape(text);
   return lines.length > 1
-    ? lines.map((line, index) => `<tspan x="${x}" dy="${index ? lineHeight : 0}">${line.map(item).join("")}</tspan>`).join("")
+    ? lines.map((line, index) => `<tspan x="${x}" dy="${index ? lineHeight : center ? -(lines.length - 1) * lineHeight / 2 : 0}">${line.map(item).join("")}</tspan>`).join("")
     : lines[0].map(item).join("");
 }

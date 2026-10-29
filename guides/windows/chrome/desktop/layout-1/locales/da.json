@@ -1,0 +1,18 @@
+{
+  "title": "Installer en app i Chrome til Windows",
+  "label": "Windows · Chrome · Installer app",
+  "intro": "Brug Chrome-menuen, eller brug installationssymbolet i adresselinjen, hvis webstedet tilbyder et. Dokumentationsudkast: Ikke endnu kontrolleret på en enhed. Menuopbygning og bekræftelsesdialoger kan afvige.",
+  "steps": {
+    "confirm-install": {
+      "title": "Klik på {label:install}",
+      "description": "Kontrollér appens navn og webstedets adresse, og klik derefter på {label:install}. Følg eventuelle yderligere bekræftelsesanvisninger."
+    }
+  },
+  "completion": "Hvis du vil åbne en installeret app igen, skal du skrive chrome://apps i Chromes adresselinje og vælge appen.",
+  "alt": "4 illustrerede trin til installation i Chrome til Windows. Blå markeringer viser de beskrevne betjeningselementer.",
+  "transitions": {},
+  "heading": "Installer app",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Installer en app i Chrome til Windows",
+  "svgDesc": "Dokumentationsudkast: skematiske betjeningselementer baseret på producentens aktuelle vejledning, ikke en kontrolleret enhedsoptagelse. Blå markeringer viser betjeningselementerne."
+}

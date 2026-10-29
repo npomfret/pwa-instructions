@@ -1,0 +1,26 @@
+{
+  "title": "在 Safari 中加至 Dock",
+  "label": "Mac · Safari · 加至 Dock",
+  "intro": "需要 macOS Sonoma 14 或較新版本。這些圖示說明使用「{label:file}」選單的方式；Safari 亦可在「分享」選單中使用「{label:add-to-dock}」。",
+  "steps": {
+    "open-file-menu": {
+      "title": "開啟「{label:file}」選單",
+      "description": "在 Safari 中開啟網站。在 Mac 螢幕頂部的選單列中，按一下「{label:file}」。"
+    },
+    "add-to-dock": {
+      "title": "選擇「{label:add-to-dock}」",
+      "description": "在「{label:file}」選單中，按一下「{label:add-to-dock}」。Safari 會為此網站開啟確認對話框。"
+    },
+    "confirm-add": {
+      "title": "按一下「{label:add}」",
+      "description": "保留或編輯 app 名稱，然後按一下「{label:add}」。網頁 app 會儲存到「應用程式」文件夾，並加至 Dock。"
+    }
+  },
+  "completion": "從 Dock 開啟新的 app。",
+  "alt": "Mac 上 Safari 的三個步驟：開啟「檔案」，選擇「加至 Dock」，然後按一下「加入」。",
+  "heading": "加至 Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "在 Mac 的 Safari 中將網站加至 Dock",
+  "svgDesc": "三個步驟：開啟「檔案」選單，選擇「加至 Dock」，然後按一下「加入」。藍色外框標示控制項目。",
+  "transitions": {}
+}

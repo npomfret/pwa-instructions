@@ -1,0 +1,38 @@
+{
+  "title": "Namestitev aplikacije v Chromu",
+  "label": "Mac · Chrome · Namesti aplikacijo",
+  "intro": "Ta vodnik sledi poti prek menija Chroma, prikazani na referenčnih posnetkih zaslona. Nekatera spletna mesta ponujajo tudi ikono za namestitev v naslovni vrstici.",
+  "completion": "V Finderju dvokliknite aplikacijo, da jo odprete. Če jo želite pozneje znova odpreti iz Chroma, v naslovno vrstico vnesite chrome://apps, pritisnite Return in kliknite aplikacijo. Za namestitev bližnjica v Docku ni potrebna.",
+  "alt": "Šest korakov v Chromu na Macu: odprite meni Več s tremi pikami, izberite Predvajanje, shranjevanje in deljenje, izberite Namesti, kliknite Naprej, kliknite Namesti, nato kliknite Pokaži v Finderju.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Odprite meni {label:more}",
+      "description": "Odprite spletno mesto v Chromu. Kliknite tri navpične pike v zgornjem desnem kotu okna Chroma, da odprete meni {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Izberite {label:cast-save-and-share}",
+      "description": "V meniju Več izberite {label:cast-save-and-share}, da odprete njegov podmeni."
+    },
+    "choose-install": {
+      "title": "Izberite {label:install}",
+      "description": "V podmeniju kliknite {label:install}, ki mu sledi ime spletnega mesta ali aplikacije. V nekaterih različicah Chroma se ta ukaz imenuje Namesti stran kot aplikacijo. Izberite dejanje namestitve nad ukazom {label:create-shortcut}; ta je ločen ukaz."
+    },
+    "continue-install": {
+      "title": "Kliknite {label:next}",
+      "description": "V pogovornem oknu Namestitev aplikacije preverite ime in domeno spletnega mesta, nato kliknite {label:next}. Če vaša različica Chroma preskoči neposredno na potrditev namestitve, nadaljujte s korakom {step:5}."
+    },
+    "confirm-install": {
+      "title": "Kliknite {label:install}",
+      "description": "V naslednjem pogovornem oknu je prikazano, da se aplikacija dodaja med {label:chrome-apps}. Kliknite {label:install} za potrditev."
+    },
+    "show-in-finder": {
+      "title": "Kliknite {label:show-in-finder}",
+      "description": "Ko Chrome prikaže {label:successfully-installed}, kliknite {label:show-in-finder}, da poiščete nameščeno aplikacijo. Izberete lahko tudi {label:open-tab-in-app}, da se spletno mesto takoj odpre v oknu aplikacije."
+    }
+  },
+  "transitions": {},
+  "heading": "Namesti aplikacijo",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Namestitev aplikacije v Chromu na Macu",
+  "svgDesc": "Šest korakov: odprite Več, izberite Predvajanje, shranjevanje in deljenje, izberite Namesti, kliknite Naprej, kliknite Namesti, nato kliknite Pokaži v Finderju. Modri obrisi označujejo kontrolnike."
+}

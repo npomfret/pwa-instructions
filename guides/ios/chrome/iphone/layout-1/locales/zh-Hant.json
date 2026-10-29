@@ -1,0 +1,16 @@
+{
+  "title": "從 Chrome 加入主畫面",
+  "label": "iPhone · Chrome · 加入主畫面",
+  "intro": "在 iPhone 上使用 Chrome。以下步驟會直接透過其分享選單進行安裝。",
+  "completion": "按照確認畫面上的指示完成 App 的加入。",
+  "alt": "iPhone 上 Chrome 的三個步驟：點一下位址列右上方的「分享」，點一下「顯示更多」，然後點一下「加入主畫面」。",
+  "steps": {
+    "tap-share": {
+      "title": "點一下「{label:share}」",
+      "description": "在 Chrome 中，點一下畫面頂端位址列右端的「{label:share}」。其圖示為內有向上箭頭的方形。"
+    }
+  },
+  "transitions": {},
+  "heading": "加入主畫面",
+  "subtitle": "iPhone · Chrome"
+}

@@ -1,0 +1,29 @@
+{
+  "title": "Cài đặt ứng dụng trong Edge trên Windows",
+  "label": "Windows · Edge · Cài đặt ứng dụng",
+  "intro": "Cách dùng menu theo trang trợ giúp Edge hiện tại của Microsoft. Các phiên bản Edge khác có thể đặt {label:apps} trực tiếp trong {label:settings-and-more}. Bản nháp tài liệu: chưa được xác minh trên thiết bị; bố cục menu và lời nhắc xác nhận có thể khác.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Mở {label:settings-and-more}",
+      "description": "Mở trang web trong Microsoft Edge. Nhấp vào ba dấu chấm ngang ở góc trên bên phải của trình duyệt."
+    },
+    "more-tools": {
+      "title": "Chọn {label:more-tools}",
+      "description": "Chọn {label:more-tools} từ menu."
+    },
+    "apps": {
+      "title": "Chọn {label:apps}",
+      "description": "Trong {label:more-tools}, chọn {label:apps}."
+    },
+    "install-site": {
+      "title": "Chọn {label:install-this-site-as-an-app}",
+      "description": "Chọn {label:install-this-site-as-an-app}. Với một PWA có thể cài đặt, Edge có thể cung cấp {label:install-app} hoặc một biểu tượng cài đặt trên thanh địa chỉ."
+    }
+  },
+  "completion": "Để mở lại ứng dụng, hãy nhập edge://apps rồi nhấp vào Mở trên thẻ của ứng dụng. Mục Chi tiết cung cấp Ghim vào thanh tác vụ, Ghim vào Màn hình Bắt đầu và Tạo Lối tắt màn hình nền.",
+  "alt": "5 bước minh họa cài đặt trong Edge trên Windows; các đường viền màu xanh dương đánh dấu những mục điều khiển được nêu trong tài liệu.",
+  "heading": "Cài đặt ứng dụng",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Cài đặt ứng dụng trong Edge trên Windows",
+  "svgDesc": "Bản nháp tài liệu: các mục điều khiển mang tính sơ đồ lấy từ hướng dẫn hiện tại của nhà cung cấp, không phải ảnh chụp từ một thiết bị đã được xác minh. Các đường viền màu xanh dương đánh dấu các mục điều khiển."
+}

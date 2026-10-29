@@ -1,0 +1,28 @@
+{
+  "title": "Tambah ke Layar Utama",
+  "label": "iPhone · Safari · Tambah ke Layar Utama",
+  "steps": {
+    "open-page-menu": {
+      "title": "Buka {label:page-menu}",
+      "description": "Ketuk tombol {label:page-menu} di sisi kiri bilah alamat situs web. Ikonnya berupa tiga garis horizontal, dengan garis paling bawah lebih pendek."
+    },
+    "tap-share": {
+      "title": "Ketuk {label:share}",
+      "description": "Di {label:page-menu}, ketuk {label:share}. Ikonnya berupa kotak dengan panah mengarah ke atas."
+    },
+    "view-more": {
+      "title": "Ketuk {label:view-more}",
+      "description": "Jika lembar bagikan terlipat, ketuk {label:view-more}, yang ditampilkan dengan tanda panah mengarah ke bawah, untuk menampilkan tindakan lainnya. Jika daftar tindakan sudah terlihat, lanjutkan ke langkah {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Ketuk {label:add-to-home-screen}",
+      "description": "Di daftar tindakan yang diperluas, cari dan ketuk {label:add-to-home-screen}. Ikonnya berupa persegi bersudut membulat yang berisi tanda plus."
+    }
+  },
+  "completion": "Ikuti layar konfirmasi untuk menyelesaikan penambahan app.",
+  "alt": "Empat langkah: ketuk Menu Halaman di samping alamat, ketuk Bagikan, ketuk Tampilkan Lainnya jika perlu, lalu ketuk Tambah ke Layar Utama.",
+  "heading": "Tambah ke Layar Utama",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Tambah ke Layar Utama di Safari iPhone: empat langkah",
+  "svgDesc": "Empat langkah bernomor untuk Safari iPhone: buka Menu Halaman, ketuk Bagikan, ketuk Tampilkan Lainnya, lalu ketuk Tambah ke Layar Utama. Garis tepi biru menandai kontrol yang harus diketuk. Petunjuk teks lengkap disediakan secara terpisah."
+}

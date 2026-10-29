@@ -1,0 +1,16 @@
+{
+  "title": "Chrome’dan Ana Ekrana Ekle",
+  "label": "iPhone · Chrome · Ana Ekrana Ekle",
+  "intro": "iPhone’unuzda Chrome’u kullanın. Bu adımlar uygulamayı doğrudan paylaşım sayfasından yükler.",
+  "steps": {
+    "tap-share": {
+      "title": "“{label:share}” öğesine dokunun",
+      "description": "Chrome’da ekranın üst kısmındaki adres çubuğunun sağ ucunda bulunan “{label:share}” öğesine dokunun. Simgesi, yukarı bakan oku olan bir karedir."
+    }
+  },
+  "completion": "Uygulamayı eklemeyi tamamlamak için onay ekranındaki adımları izleyin.",
+  "alt": "iPhone’daki Chrome’da üç adım: adres çubuğunun sağ üstündeki “Paylaş”, “Daha Fazla Gör”, ardından “Ana Ekrana Ekle”.",
+  "transitions": {},
+  "heading": "Ana Ekrana Ekle",
+  "subtitle": "iPhone · Chrome"
+}

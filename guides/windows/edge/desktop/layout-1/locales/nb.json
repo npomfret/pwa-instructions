@@ -1,0 +1,30 @@
+{
+  "title": "Installer en app i Edge på Windows",
+  "label": "Windows · Edge · Installer app",
+  "intro": "Menyveien følger Microsofts gjeldende Edge-hjelp. I andre Edge-versjoner kan «{label:apps}» ligge direkte under «{label:settings-and-more}». Dokumentasjonsutkast: ikke verifisert på en enhet ennå. Menyoppsett og bekreftelsesmeldinger kan variere.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Åpne {label:settings-and-more}",
+      "description": "Åpne nettstedet i Microsoft Edge. Klikk på de tre vannrette prikkene øverst til høyre i nettleseren."
+    },
+    "more-tools": {
+      "title": "Velg {label:more-tools}",
+      "description": "Velg {label:more-tools} i menyen."
+    },
+    "apps": {
+      "title": "Velg {label:apps}",
+      "description": "Velg {label:apps} under «{label:more-tools}»."
+    },
+    "install-site": {
+      "title": "Velg {label:install-this-site-as-an-app}",
+      "description": "Velg {label:install-this-site-as-an-app}. For en installerbar PWA kan Edge i stedet tilby {label:install-app} eller et installeringssymbol i adressefeltet."
+    }
+  },
+  "completion": "Hvis du vil åpne appen på nytt, skriver du edge://apps og klikker på Åpne på appens kort. Under Detaljer finner du «Fest på oppgavelinjen», «Fest på Start» og «Opprett skrivebordssnarvei».",
+  "alt": "Fem illustrerte installasjonstrinn i Edge på Windows. Blå omrisser markerer de dokumenterte kontrollene.",
+  "transitions": {},
+  "heading": "Installer en app",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Installer en app i Edge på Windows: fem trinn",
+  "svgDesc": "Fem nummererte trinn for Edge på Windows: åpne «Innstillinger og mer», velg «Flere verktøy», velg «Apps», velg «Installer dette området som en app», og klikk deretter på «Installer». Blå omrisser markerer de dokumenterte kontrollene. Den fullstendige tekstveiledningen finnes separat."
+}

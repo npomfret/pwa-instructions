@@ -1,0 +1,15 @@
+{
+  "title": "Thêm vào Màn hình chính từ Chrome",
+  "label": "iPhone · Chrome · Thêm vào Màn hình chính",
+  "intro": "Hãy dùng Chrome trên iPhone của bạn. Các bước này cài đặt trực tiếp từ bảng chia sẻ của Chrome.",
+  "steps": {
+    "tap-share": {
+      "title": "Chạm vào {label:share}",
+      "description": "Trong Chrome, chạm vào {label:share} ở đầu bên phải của thanh địa chỉ ở trên cùng màn hình. Biểu tượng của mục này là một hình vuông có mũi tên hướng lên."
+    }
+  },
+  "completion": "Làm theo màn hình xác nhận để hoàn tất việc thêm ứng dụng.",
+  "alt": "Ba bước trong Chrome trên iPhone: Chia sẻ ở phía trên bên phải thanh địa chỉ, Xem thêm, rồi Thêm vào Màn hình chính.",
+  "heading": "Thêm vào Màn hình chính",
+  "subtitle": "iPhone · Chrome"
+}

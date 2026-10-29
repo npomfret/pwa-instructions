@@ -1,0 +1,30 @@
+{
+  "title": "Installera en app i Edge för Windows",
+  "label": "Windows · Edge · Installera app",
+  "intro": "Menyvägen följer Microsofts aktuella Edge-hjälp. I andra Edge-versioner kan {label:apps} ligga direkt under {label:settings-and-more}. Dokumentationsutkast: ännu inte verifierat på en enhet. Menylayout och bekräftelsedialoger kan variera.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Öppna {label:settings-and-more}",
+      "description": "Öppna webbplatsen i Microsoft Edge. Klicka på de tre vågräta punkterna uppe till höger i webbläsaren."
+    },
+    "more-tools": {
+      "title": "Välj {label:more-tools}",
+      "description": "Välj {label:more-tools} i menyn."
+    },
+    "apps": {
+      "title": "Välj {label:apps}",
+      "description": "Välj {label:apps} under Fler verktyg."
+    },
+    "install-site": {
+      "title": "Välj {label:install-this-site-as-an-app}",
+      "description": "Välj {label:install-this-site-as-an-app}. För en installerbar PWA kan Edge i stället erbjuda Installera appen eller en installationssymbol i adressfältet."
+    }
+  },
+  "completion": "Om du vill öppna appen igen skriver du edge://apps och klickar på Öppna på appens kort. Under Information finns Fäst i Aktivitetsfältet, Fäst på Start och Skapa skrivbordsgenväg.",
+  "alt": "Fem illustrerade installationssteg i Edge för Windows. Blå konturer markerar de dokumenterade reglagen.",
+  "transitions": {},
+  "heading": "Installera app",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Installera en app i Edge för Windows",
+  "svgDesc": "Dokumentationsutkast: schematiska reglage enligt tillverkarens aktuella anvisningar, inte en verifierad enhetsinspelning. Blå konturer markerar reglagen."
+}

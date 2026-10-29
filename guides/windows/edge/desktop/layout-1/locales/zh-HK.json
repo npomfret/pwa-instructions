@@ -1,0 +1,30 @@
+{
+  "title": "在 Windows 版 Edge 中安裝應用程式",
+  "label": "Windows · Edge · 安裝應用程式",
+  "intro": "選單操作依據 Microsoft 最新的 Edge 說明。其他版本的 Edge 可能會將「{label:apps}」直接放在「{label:settings-and-more}」中。此為僅依文件撰寫的草稿：尚未在裝置上驗證，選單配置和確認提示可能有所不同。",
+  "steps": {
+    "open-settings-menu": {
+      "title": "開啟「{label:settings-and-more}」",
+      "description": "在 Microsoft Edge 中開啟網站。按一下瀏覽器右上角的三個水平圓點。"
+    },
+    "more-tools": {
+      "title": "選取「{label:more-tools}」",
+      "description": "從選單中選取「{label:more-tools}」。"
+    },
+    "apps": {
+      "title": "選取「{label:apps}」",
+      "description": "在「{label:more-tools}」中，選取「{label:apps}」。"
+    },
+    "install-site": {
+      "title": "選取「{label:install-this-site-as-an-app}」",
+      "description": "選取「{label:install-this-site-as-an-app}」。如果是可安裝的 PWA，Edge 可能會改為提供「{label:install-app}」或網址列中的安裝圖像。"
+    }
+  },
+  "completion": "如要重新開啟，請輸入 edge://apps，然後在應用程式的卡片上按一下「開啟」。「詳細資料」提供「釘選到工作列」、「釘選到開始」和「建立桌面捷徑」。",
+  "alt": "Windows 版 Edge 的五個安裝步驟圖示（由「設定及更多」開始）。藍色外框標示文件中記載的控制項目。",
+  "heading": "安裝應用程式",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "在 Windows 版 Edge 中安裝應用程式",
+  "svgDesc": "僅依文件撰寫的草稿。此為依據官方步驟繪製的示意控制項目圖，並非在裝置上驗證的截圖。藍色外框標示控制項目。",
+  "transitions": {}
+}

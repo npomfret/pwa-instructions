@@ -1,0 +1,25 @@
+{
+  "title": "Tambahkan ke Dock di Safari",
+  "label": "Mac · Safari · Tambahkan ke Dock",
+  "intro": "Memerlukan macOS Sonoma 14 atau lebih baru. Ilustrasi ini menunjukkan jalur melalui menu {label:file}; Safari juga menawarkan {label:add-to-dock} di tombol Bagikan.",
+  "steps": {
+    "open-file-menu": {
+      "title": "Buka menu {label:file}",
+      "description": "Buka situs web di Safari. Di bar menu di bagian atas layar Mac Anda, klik {label:file}."
+    },
+    "add-to-dock": {
+      "title": "Pilih {label:add-to-dock}",
+      "description": "Di menu {label:file}, klik {label:add-to-dock}. Safari membuka dialog konfirmasi untuk situs web ini."
+    },
+    "confirm-add": {
+      "title": "Klik {label:add}",
+      "description": "Pertahankan atau ubah nama app, lalu klik {label:add}. App web disimpan ke folder Aplikasi Anda dan ditambahkan ke Dock."
+    }
+  },
+  "completion": "Buka app baru dari Dock Anda.",
+  "alt": "Tiga langkah di Safari Mac: buka File, pilih Tambahkan ke Dock, lalu klik Tambahkan.",
+  "heading": "Tambahkan ke Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Menambahkan situs web ke Dock di Safari Mac",
+  "svgDesc": "Tiga langkah: buka menu File, pilih Tambahkan ke Dock, lalu klik Tambahkan. Garis tepi biru menandai kontrolnya."
+}

@@ -1,6 +1,6 @@
 import { readFile, readdir } from 'node:fs/promises';
 import path from 'node:path';
-import { estimateWidth, fitText, fontOf as fontClass } from '../packages/pwa-instructions/src/core/fit.js';
+import { RTL_TEXT, estimateWidth, fitText, fontOf as fontClass, rtlAnchor } from '../packages/pwa-instructions/src/core/fit.js';
 
 /*
  * Locale data lives next to the English source:
@@ -22,7 +22,7 @@ export const PSEUDO_LOCALE = 'en-XA';
  * a catalog locale: it has no prose files, no status, and is never composed; the English build emits its label table.
  */
 export const LABEL_VARIANTS = { 'en-US': DEFAULT_LOCALE };
-const DATA_ATTRIBUTES = ['data-i18n', 'data-max-width', 'data-lines', 'data-line-height'];
+const DATA_ATTRIBUTES = ['data-i18n', 'data-max-width', 'data-lines', 'data-line-height', 'data-center-lines'];
 /** Layout hints for localized text (see flowLayout). Build-only: English output ignores them, and no published SVG keeps them. */
 const FLOW_ATTRIBUTES = ['data-flow', 'data-flow-box', 'data-pill', 'data-bounds', 'data-before-pill'];
 const PLACEHOLDER = /\{label:([a-z0-9-]+)\}/g;
@@ -161,7 +161,7 @@ export const fontOf = node => fontClass(node.getAttribute('class') ?? '');
  * Fill `node` with `segments` ([{text, italic}]). A line that would overflow `max` wraps onto up to `lines` lines, one
  * `<tspan>` per line; failing that it is squeezed with `textLength`, which is the fallback for any single line.
  */
-export function fillText(doc, node, segments, { max, lines = 1, lineHeight = 0 } = {}) {
+export function fillText(doc, node, segments, { max, lines = 1, lineHeight = 0, center = false } = {}) {
   const fit = fitText(segments, { ...fontOf(node), max, lines });
   node.textContent = '';
   const append = (parent, items) => items.forEach(({ text, italic, label }) => {
@@ -176,7 +176,7 @@ export function fillText(doc, node, segments, { max, lines = 1, lineHeight = 0 }
     fit.lines.forEach((line, index) => {
       const span = doc.createElementNS(ns, 'tspan');
       span.setAttribute('x', node.getAttribute('x') ?? '0');
-      span.setAttribute('dy', index ? String(lineHeight) : '0');
+      span.setAttribute('dy', String(index ? lineHeight : center ? -(fit.lines.length - 1) * lineHeight / 2 : 0));
       append(span, line);
       node.appendChild(span);
     });
@@ -209,9 +209,25 @@ export function localizeDocument(doc, { tag, resolver, locale, guideId }) {
     const text = kind === 'label' ? resolver.get(name) : locale[name];
     if (typeof text !== 'string') throw new Error(`${guideId} ${tag}: no text for ${key}`);
     fillText(doc, node, [{ text }], { max: Number(node.getAttribute('data-max-width')) || 0,
-      lines: Number(node.getAttribute('data-lines')) || 1, lineHeight: Number(node.getAttribute('data-line-height')) || 0 });
+      lines: Number(node.getAttribute('data-lines')) || 1, lineHeight: Number(node.getAttribute('data-line-height')) || 0, center: node.hasAttribute('data-center-lines') });
   }
   flowLayout(doc);
+}
+
+// --- Right-to-left text -------------------------------------------------------------------------------------------
+
+/**
+ * Hebrew and Arabic text keeps the artwork exactly as drawn (it is not mirrored, so "left" and "right" in the prose still
+ * match the picture), but its glyphs must run right to left, with punctuation and Latin names (Chrome, Finder) in the
+ * right places. Each `<text>` with such letters gets `direction="rtl"`; `text-anchor` follows the direction in SVG, so a
+ * left-aligned node switches to `end` to stay anchored at the same x, and a centered one is unchanged.
+ */
+export function markRtl(doc) {
+  for (const node of Array.from(doc.getElementsByTagName('text'))) {
+    if (node.hasAttribute('direction') || !RTL_TEXT.test(node.textContent)) continue;
+    node.setAttribute('direction', 'rtl');
+    node.setAttribute('text-anchor', rtlAnchor(node.getAttribute('text-anchor') ?? undefined));
+  }
 }
 
 // --- Layout that follows the localized text ----------------------------------------------------------------------

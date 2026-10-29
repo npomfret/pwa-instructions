@@ -1,0 +1,29 @@
+{
+  "title": "Føj til hjemmeskærm",
+  "label": "iPhone · Safari · Føj til hjemmeskærm",
+  "steps": {
+    "open-page-menu": {
+      "title": "Åbn {label:page-menu}",
+      "description": "Tryk på knappen {label:page-menu} i venstre side af webstedets adresselinje. Dens symbol består af tre vandrette streger, hvor den nederste er kortere."
+    },
+    "tap-share": {
+      "title": "Tryk på {label:share}",
+      "description": "Tryk på {label:share} i sidemenuen. Symbolet er en firkant med en pil, der peger opad."
+    },
+    "view-more": {
+      "title": "Tryk på {label:view-more}",
+      "description": "Hvis delingsarket er skjult, skal du trykke på {label:view-more} (vist med en pil nedad) for at få vist de øvrige handlinger. Hvis handlingslisten allerede er synlig, skal du fortsætte med trin {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Tryk på {label:add-to-home-screen}",
+      "description": "Find {label:add-to-home-screen} på den udvidede handlingsliste, og tryk på den. Symbolet er en afrundet firkant med et plustegn."
+    }
+  },
+  "completion": "Følg anvisningerne på bekræftelsesskærmen for at færdiggøre tilføjelsen af appen.",
+  "alt": "Fire trin: Tryk på Sidemenu ved siden af adressen, tryk på Del, tryk om nødvendigt på Vis mere, og tryk derefter på Føj til hjemmeskærm.",
+  "transitions": {},
+  "heading": "Føj til hjemmeskærm",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Føj til hjemmeskærm i Safari på iPhone: fire trin",
+  "svgDesc": "Fire nummererede trin til Safari på iPhone: Åbn Sidemenu, tryk på Del, tryk på Vis mere, og tryk derefter på Føj til hjemmeskærm. Blå markeringer viser, hvilke knapper du skal trykke på. Den fulde tekstvejledning findes separat."
+}

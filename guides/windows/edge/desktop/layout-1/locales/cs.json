@@ -1,0 +1,30 @@
+{
+  "title": "Instalace aplikace v Edgi ve Windows",
+  "label": "Windows · Edge · Instalace aplikace",
+  "intro": "Postup přes nabídku vychází z aktuální nápovědy Microsoftu pro Edge. V jiných verzích Edgi může být položka Aplikace přímo v nabídce Nastavení a další. Koncept dokumentace: dosud neověřeno na zařízení, rozložení nabídky a potvrzovací výzvy se mohou lišit.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Otevřete nabídku {label:settings-and-more}",
+      "description": "Otevřete web v Microsoft Edgi. Klikněte na tři vodorovné tečky v pravé horní části prohlížeče."
+    },
+    "more-tools": {
+      "title": "Vyberte {label:more-tools}",
+      "description": "V nabídce vyberte {label:more-tools}."
+    },
+    "apps": {
+      "title": "Vyberte {label:apps}",
+      "description": "V nabídce Další nástroje vyberte {label:apps}."
+    },
+    "install-site": {
+      "title": "Vyberte {label:install-this-site-as-an-app}",
+      "description": "Vyberte {label:install-this-site-as-an-app}. U instalovatelné aplikace PWA může Edge místo toho nabídnout položku „{label:install-app}“ nebo ikonu instalace v adresním řádku."
+    }
+  },
+  "completion": "Chcete-li aplikaci znovu otevřít, zadejte edge://apps a na kartě aplikace klikněte na Otevřít. Podrobnosti nabízejí možnosti Připnout na hlavní panel, Připnout na Start a Vytvořit zástupce na ploše.",
+  "alt": "5 ilustrovaných kroků instalace v Edgi ve Windows; modré obrysy označují zdokumentované ovládací prvky.",
+  "transitions": {},
+  "heading": "Instalace aplikace",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Instalace aplikace v Edgi ve Windows",
+  "svgDesc": "Koncept dokumentace: schematické ovládací prvky podle aktuálních pokynů výrobce, nikoli ověřený snímek zařízení. Modré obrysy označují ovládací prvky."
+}

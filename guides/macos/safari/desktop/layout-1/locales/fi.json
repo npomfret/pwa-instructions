@@ -1,0 +1,26 @@
+{
+  "title": "Lisää Dockiin Safarissa",
+  "label": "Mac · Safari · Lisää Dockiin",
+  "intro": "Edellyttää macOS Sonoma 14:ää tai uudempaa. Kuvissa näkyy {label:file}-valikon kautta kulkeva reitti; Safarin Jaa-valikosta löytyy myös {label:add-to-dock}.",
+  "steps": {
+    "open-file-menu": {
+      "title": "Avaa {label:file}-valikko",
+      "description": "Avaa verkkosivusto Safarissa. Klikkaa Macin näytön yläreunan valikkorivillä kohtaa {label:file}."
+    },
+    "add-to-dock": {
+      "title": "Valitse {label:add-to-dock}",
+      "description": "Klikkaa {label:file}-valikossa kohtaa {label:add-to-dock}. Safari avaa tälle verkkosivustolle vahvistusikkunan."
+    },
+    "confirm-add": {
+      "title": "Klikkaa {label:add}",
+      "description": "Säilytä apin nimi tai muokkaa sitä ja klikkaa sitten {label:add}. Verkkoappi tallennetaan Apit-kansioon ja lisätään Dockiin."
+    }
+  },
+  "completion": "Avaa uusi appi Dockista.",
+  "alt": "Kolme Safari-vaihetta Macissa: avaa Arkisto-valikko, valitse Lisää Dockiin ja klikkaa sitten Lisää.",
+  "transitions": {},
+  "heading": "Lisää Dockiin",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Verkkosivuston lisääminen Dockiin Safarissa Macilla",
+  "svgDesc": "Kolme vaihetta: avaa Arkisto-valikko, valitse Lisää Dockiin ja klikkaa sitten Lisää. Siniset ääriviivat korostavat säätimiä."
+}

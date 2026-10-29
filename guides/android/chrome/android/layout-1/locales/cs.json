@@ -1,0 +1,26 @@
+{
+  "title": "Instalace aplikace v Chromu pro Android",
+  "label": "Android · Chrome · Instalace aplikace",
+  "intro": "Použijte Chrome pro Android. Zobrazené popisky nabídky odpovídají aktuální nápovědě Googlu pro Android, nikoli staršímu článku o přidání na plochu. Koncept dokumentace: dosud neověřeno na zařízení, rozložení nabídky a potvrzovací výzvy se mohou lišit.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Otevřete nabídku {label:more}",
+      "description": "Otevřete web v Chromu. Klepněte na tři svislé tečky vedle adresního řádku."
+    },
+    "install-and-create-shortcut": {
+      "title": "Klepněte na {label:install-and-create-shortcut}",
+      "description": "V nabídce vyberte {label:install-and-create-shortcut}. Ve starších rozloženích Chromu se může tato položka jmenovat Přidat na plochu."
+    },
+    "install-app": {
+      "title": "Klepněte na {label:install}",
+      "description": "Vyberte {label:install}. Dokončete výzvy, které Chrome zobrazí k instalaci aplikace. Položka „{label:create-shortcut}“ je samostatná volba, která uloží pouze odkaz."
+    }
+  },
+  "completion": "Po dokončení instalace aplikaci otevřete ze spouštěče Androidu. Umístění na ploše závisí na vašem spouštěči a jeho nastavení.",
+  "alt": "3 ilustrované kroky instalace v Chromu pro Android; modré obrysy označují zdokumentované ovládací prvky.",
+  "transitions": {},
+  "heading": "Instalace aplikace",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Instalace aplikace v Chromu pro Android",
+  "svgDesc": "Koncept dokumentace. Tři kroky: otevřete nabídku Více, klepněte na Nainstalovat a vytvořit zástupce a potom klepněte na Instalovat. Případné další výzvy dokončete na svém zařízení."
+}

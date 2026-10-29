@@ -1,0 +1,28 @@
+{
+  "title": "Dodajanje na začetni zaslon",
+  "label": "iPhone · Safari · Dodaj na začetni zaslon",
+  "completion": "Za dokončanje dodajanja aplikacije sledite potrditvenemu zaslonu.",
+  "alt": "Štirje koraki: tapnite meni strani ob naslovu, tapnite Deli, po potrebi tapnite Prikaži več, nato tapnite Dodaj na začetni zaslon.",
+  "steps": {
+    "open-page-menu": {
+      "title": "Odprite {label:page-menu}",
+      "description": "Tapnite gumb {label:page-menu} na levi strani naslovne vrstice spletnega mesta. Njegova ikona ima tri vodoravne črte, od katerih je spodnja krajša."
+    },
+    "tap-share": {
+      "title": "Tapnite {label:share}",
+      "description": "V meniju strani tapnite {label:share}. Njegova ikona je kvadrat s puščico, usmerjeno navzgor."
+    },
+    "view-more": {
+      "title": "Tapnite {label:view-more}",
+      "description": "Če je list za deljenje strnjen, tapnite {label:view-more}, ki je prikazan s puščico navzdol, da se prikažejo preostala dejanja. Če je seznam dejanj že viden, nadaljujte s korakom {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Tapnite {label:add-to-home-screen}",
+      "description": "Na razširjenem seznamu dejanj poiščite in tapnite {label:add-to-home-screen}. Njegova ikona je zaobljen kvadrat s znakom plus."
+    }
+  },
+  "heading": "Dodaj na začetni zaslon",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Dodajanje na začetni zaslon v Safariju na iPhonu: štirje koraki",
+  "svgDesc": "Štirje oštevilčeni koraki za Safari na iPhonu: odprite meni strani, tapnite Deli, tapnite Prikaži več, nato tapnite Dodaj na začetni zaslon. Modri obrisi označujejo kontrolnike, ki jih tapnete. Celotna navodila v obliki besedila so na voljo ločeno."
+}

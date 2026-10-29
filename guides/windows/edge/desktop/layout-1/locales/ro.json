@@ -1,0 +1,30 @@
+{
+  "title": "Instalarea unei aplicații în Edge pe Windows",
+  "label": "Windows · Edge · Instalare aplicație",
+  "heading": "Instalare aplicație",
+  "subtitle": "Windows · Edge",
+  "intro": "Calea prin meniu urmează ajutorul actual Microsoft pentru Edge. În alte versiuni de Edge, Aplicații poate fi direct în Setări și multe altele. Ciornă de documentație: neverificată pe un dispozitiv; aspectul meniului și mesajele de confirmare pot varia.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Deschideți {label:settings-and-more}",
+      "description": "Deschideți site-ul web în Microsoft Edge. Faceți clic pe cele trei puncte orizontale din colțul din dreapta sus al browserului."
+    },
+    "more-tools": {
+      "title": "Alegeți {label:more-tools}",
+      "description": "Alegeți {label:more-tools} din meniu."
+    },
+    "apps": {
+      "title": "Alegeți {label:apps}",
+      "description": "În {label:more-tools}, alegeți {label:apps}."
+    },
+    "install-site": {
+      "title": "Alegeți {label:install-this-site-as-an-app}",
+      "description": "Alegeți {label:install-this-site-as-an-app}. Pentru un PWA care poate fi instalat, Edge poate oferi în schimb {label:install-app} sau o pictogramă de instalare în bara de adrese."
+    }
+  },
+  "completion": "Pentru a o redeschide, introduceți edge://apps și faceți clic pe Deschide pe cardul aplicației. Detalii oferă Fixare în bara de activități, Fixare la Start și Creare comandă rapidă pe desktop.",
+  "alt": "5 pași ilustrați de instalare în Edge pe Windows; contururile albastre marchează comenzile documentate.",
+  "svgTitle": "Instalarea unei aplicații în Edge pe Windows",
+  "svgDesc": "Ciornă de documentație: comenzi schematice preluate din instrucțiunile actuale ale producătorului, nu dintr-o captură de ecran de pe un dispozitiv verificat. Contururile albastre marchează comenzile.",
+  "transitions": {}
+}

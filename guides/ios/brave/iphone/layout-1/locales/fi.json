@@ -1,0 +1,22 @@
+{
+  "title": "Lisää Koti-valikkoon Bravesta",
+  "label": "iPhone · Brave → Safari · Lisää Koti-valikkoon",
+  "intro": "Aloita Bravesta. Vaiheessa {step:3} sama verkkosivusto avautuu Safarissa, ja vaiheet {step:4}–{step:7} tehdään Safarissa.",
+  "steps": {
+    "tap-share": {
+      "title": "Napauta {label:share}",
+      "description": "Napauta Bravessa alatyökalupalkin kohtaa {label:share}. Sen kuvake on neliö, josta osoittaa nuoli ylöspäin. Jos työkalupalkki on piilossa, tuo se näkyviin napauttamalla verkkosivuston osoitetta."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Selaa laajennetussa jakovalikossa alas ja napauta {label:open-in-safari}. Verkkosivusto avautuu Safarissa. Tee kaikki loput vaiheet siellä."
+    }
+  },
+  "completion": "Viimeistele apin lisääminen noudattamalla vahvistusnäytön ohjeita.",
+  "alt": "Seitsemän numeroitua vaihetta: Bravessa napautetaan Jaa, Näytä lisää ja Avaa Safarissa, minkä jälkeen Safarissa tehdään neljä asennusvaihetta.",
+  "transitions": {
+    "continue-in-safari": "Jatka Safarissa"
+  },
+  "heading": "Lisää Koti-valikkoon",
+  "subtitle": "iPhone · Brave → Safari"
+}

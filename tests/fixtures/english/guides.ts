@@ -304,7 +304,7 @@ export const guides: readonly InstallGuide[] = [
         "id": "choose-install",
         "title": "Choose Install",
         "uiLabel": "Install",
-        "description": "In the submenu, click Install followed by the website or app name. Some sites label this Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.",
+        "description": "In the submenu, click Install followed by the website or app name. Some versions of Chrome call this item Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.",
         "illustrationFragment": "step-3"
       },
       {
@@ -330,7 +330,7 @@ export const guides: readonly InstallGuide[] = [
       }
     ],
     "completion": "In Finder, double-click the app to open it. To reopen it later from Chrome, type chrome://apps in the address bar, press Return, then click the app. Installing does not require a Dock shortcut.",
-    "text": "# Install an app in Chrome\n\nThis guide follows the Chrome menu route shown in the reference screenshots. Some websites also offer an install icon in the address bar.\n\n1. **Open the *More* menu.** Open the website in Chrome. Click the three vertical dots at the top-right of the Chrome window to open the More menu.\n2. **Choose *Cast, save and share*.** In the More menu, choose Cast, save and share to open its submenu.\n3. **Choose *Install*.** In the submenu, click Install followed by the website or app name. Some sites label this Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.\n4. **Click *Next*.** In the Install app dialog, check the website name and domain, then click Next. If your Chrome version goes straight to the Install confirmation, continue to step 5.\n5. **Click *Install*.** The next dialog shows the app being added to Chrome Apps. Click Install to confirm.\n6. **Click *Show in Finder*.** When Chrome says Successfully installed, click Show in Finder to locate the installed app. You can also choose Open tab in app to open the website in its app window immediately.\n"
+    "text": "# Install an app in Chrome\n\nThis guide follows the Chrome menu route shown in the reference screenshots. Some websites also offer an install icon in the address bar.\n\n1. **Open the *More* menu.** Open the website in Chrome. Click the three vertical dots at the top-right of the Chrome window to open the More menu.\n2. **Choose *Cast, save and share*.** In the More menu, choose Cast, save and share to open its submenu.\n3. **Choose *Install*.** In the submenu, click Install followed by the website or app name. Some versions of Chrome call this item Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.\n4. **Click *Next*.** In the Install app dialog, check the website name and domain, then click Next. If your Chrome version goes straight to the Install confirmation, continue to step 5.\n5. **Click *Install*.** The next dialog shows the app being added to Chrome Apps. Click Install to confirm.\n6. **Click *Show in Finder*.** When Chrome says Successfully installed, click Show in Finder to locate the installed app. You can also choose Open tab in app to open the website in its app window immediately.\n"
   },
   {
     "id": "android-chrome-android-layout-1",
@@ -421,7 +421,7 @@ export const guides: readonly InstallGuide[] = [
         "id": "macos-chrome-desktop-layout-1-choose-install",
         "title": "Choose Install",
         "uiLabel": "Install",
-        "description": "In the submenu, click Install followed by the website or app name. Some sites label this Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.",
+        "description": "In the submenu, click Install followed by the website or app name. Some versions of Chrome call this item Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.",
         "illustrationFragment": "step-3"
       },
       {
@@ -433,7 +433,7 @@ export const guides: readonly InstallGuide[] = [
       }
     ],
     "completion": "To reopen an installed app, enter chrome://apps in Chrome’s address bar and select the app.",
-    "text": "# Install an app in Windows Chrome\n\nUse the Chrome menu route, or the install icon in the address bar when the website offers one. Documentation draft: not yet verified on a device; menu layout and confirmation prompts may vary.\n\n1. **Open the *More* menu.** Open the website in Chrome. Click the three vertical dots at the top-right of the Chrome window to open the More menu.\n2. **Choose *Cast, save and share*.** In the More menu, choose Cast, save and share to open its submenu.\n3. **Choose *Install*.** In the submenu, click Install followed by the website or app name. Some sites label this Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.\n4. **Click *Install*.** Check the app name and website address, then click Install. Follow any further confirmation prompts.\n"
+    "text": "# Install an app in Windows Chrome\n\nUse the Chrome menu route, or the install icon in the address bar when the website offers one. Documentation draft: not yet verified on a device; menu layout and confirmation prompts may vary.\n\n1. **Open the *More* menu.** Open the website in Chrome. Click the three vertical dots at the top-right of the Chrome window to open the More menu.\n2. **Choose *Cast, save and share*.** In the More menu, choose Cast, save and share to open its submenu.\n3. **Choose *Install*.** In the submenu, click Install followed by the website or app name. Some versions of Chrome call this item Install page as app. Choose the installation action above Create shortcut; Create shortcut is a separate command.\n4. **Click *Install*.** Check the app name and website address, then click Install. Follow any further confirmation prompts.\n"
   },
   {
     "id": "windows-edge-desktop-layout-1",

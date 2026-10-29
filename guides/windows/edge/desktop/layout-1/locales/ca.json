@@ -1,0 +1,29 @@
+{
+  "title": "Instal·la una app a l’Edge per a Windows",
+  "label": "Windows · Edge · Instal·la l’app",
+  "intro": "La ruta pel menú segueix l’ajuda actual de Microsoft per a l’Edge. Altres versions de l’Edge poden col·locar {label:apps} directament a {label:settings-and-more}. Esborrany de documentació: encara no s’ha verificat en un dispositiu; el disseny del menú i els missatges de confirmació poden variar.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "Obre {label:settings-and-more}",
+      "description": "Obre el lloc web al Microsoft Edge. Fes clic als tres punts horitzontals de l’extrem superior dret del navegador."
+    },
+    "more-tools": {
+      "title": "Tria {label:more-tools}",
+      "description": "Tria {label:more-tools} al menú."
+    },
+    "apps": {
+      "title": "Tria {label:apps}",
+      "description": "A {label:more-tools}, tria {label:apps}."
+    },
+    "install-site": {
+      "title": "Tria {label:install-this-site-as-an-app}",
+      "description": "Tria {label:install-this-site-as-an-app}. Si és una PWA instal·lable, l’Edge pot oferir en lloc seu {label:install-app} o una icona d’instal·lació a la barra d’adreces."
+    }
+  },
+  "completion": "Per tornar-la a obrir, escriu edge://apps i fes clic a Obre a la targeta de l’app. A Detalls pots fixar-la a la barra de tasques o al menú Inici i crear-ne una drecera a l’escriptori.",
+  "alt": "Cinc passos il·lustrats per instal·lar a l’Edge per a Windows; els contorns blaus assenyalen els controls documentats.",
+  "heading": "Instal·la l’app",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "Instal·la una app a l’Edge per a Windows",
+  "svgDesc": "Esborrany de documentació: controls esquemàtics a partir de les instruccions actuals del fabricant, no una captura verificada d’un dispositiu. Els contorns blaus assenyalen els controls."
+}

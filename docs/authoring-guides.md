@@ -97,10 +97,11 @@ Source an `en-US` value from the product's own US text: Chromium's `.grd` or `.g
 | `data-i18n="follow"` | English-only text, removed in other locales. |
 | `data-max-width="N"` | Width in user units. Longer text wraps (see `data-lines`) or is squeezed with `textLength`. |
 | `data-lines`, `data-line-height` | Allow that many lines, spaced by that many units. |
+| `data-center-lines` | With `data-lines`: when the label wraps, lift the first line by half the extra height so the block stays centered on the one-line baseline. Use it on labels in a fixed-height row or button. |
 
 `data-pwa-domain` and `data-domain-width` are separate: they mark the address-bar domain that `siteUrl` replaces. The `data-i18n`, `data-max-width`, `data-lines` and `data-line-height` attributes are removed from the published SVG; imported panels keep their tags through the id and class scoping.
 
-**Which locales ship.** `catalog.json` `locales` is the list of tags (`es`, `fr`, `de`, `pt-BR`, `it`, `ja`, `ko`, `zh-Hans`). Every listed locale is checked strictly, built into `pwa-instructions/locales/<tag>` and `dist/assets/<id>/<tag>/`, and published. `en-XA` is not in the catalog: it is a test-only pseudo-locale (accented, about 35% longer, bracketed) that the tests compose in memory to exercise the pipeline, and that the build writes for the demo only. It is never published.
+**Which locales ship.** `catalog.json` `locales` is the list of tags (`es`, `fr`, `de`, `pt-BR`, `it`, `ja`, `ko`, `zh-Hans`, `nl`, `pl`, `sv`, `da`, `nb`, `fi`, `ru`, `uk`, `tr`, `cs`, `sk`, `hu`, `ro`, `hr`, `el`, `pt-PT`, `es-419`, `fr-CA`, `zh-Hant`, `zh-HK`, `id`, `ms`, `th`, `vi`, `hi`, `ca`, `he`, `ar`, `bg` and `sl`). Every listed locale is checked strictly, built into `pwa-instructions/locales/<tag>` and `dist/assets/<id>/<tag>/`, and published. `en-XA` is not in the catalog: it is a test-only pseudo-locale (accented, about 35% longer, bracketed) that the tests compose in memory to exercise the pipeline, and that the build writes for the demo only. It is never published.
 
 **Room for localized text.** The English artwork spaces some items by their English text. The localization path re-spaces them (the English output is untouched), driven by hints in the source SVG that no published SVG keeps:
 
@@ -113,6 +114,8 @@ Source an `en-US` value from the product's own US text: Chromium's `.grd` or `.g
 | `data-bounds="L R"` | Centered text that must stay within `L` to `R`. |
 
 `data-max-width` on these nodes is the room the layout really has, so it is larger than the English text needs.
+
+**Right-to-left locales** (`he`, `ar`). The artwork is not mirrored: the prose still says "left" and "right" as drawn. Every `<text>` with Hebrew or Arabic letters gets `direction="rtl"` (`markRtl` in `scripts/i18n.mjs`, and the same for a label swapped in at runtime, `artwork.ts`). In SVG `text-anchor` follows the text direction, so a left-aligned node (`start`) is switched to `end` and stays anchored at the same x, and a centered one is unchanged. Glyph order, punctuation and embedded Latin names (Chrome, Finder) then come out right without moving anything.
 
 **Adding a locale.**
 

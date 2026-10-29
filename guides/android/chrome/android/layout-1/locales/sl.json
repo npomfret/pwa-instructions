@@ -1,0 +1,26 @@
+{
+  "title": "Namestitev aplikacije v Chromu za Android",
+  "label": "Android · Chrome · Namesti aplikacijo",
+  "intro": "Uporabite Chrome za Android. Prikazane oznake menija sledijo trenutni Googlovi pomoči za Android in ne starejšemu članku Dodaj na začetni zaslon. Osnutek iz dokumentacije: še ni preverjen v napravi; postavitev menija in potrditvena sporočila se lahko razlikujejo.",
+  "completion": "Ko se namestitev konča, aplikacijo odprite iz zaganjalnika Android. Umestitev na začetni zaslon je odvisna od vašega zaganjalnika in njegovih nastavitev.",
+  "alt": "3 ilustrirani koraki namestitve v Chromu za Android; modri obrisi označujejo dokumentirane kontrolnike.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Odprite meni {label:more}",
+      "description": "Odprite spletno mesto v Chromu. Tapnite tri navpične pike ob naslovni vrstici."
+    },
+    "install-and-create-shortcut": {
+      "title": "Tapnite {label:install-and-create-shortcut}",
+      "description": "V meniju izberite {label:install-and-create-shortcut}. Starejše postavitve Chroma imajo lahko to možnost poimenovano Dodaj na začetni zaslon."
+    },
+    "install-app": {
+      "title": "Tapnite {label:install}",
+      "description": "Izberite {label:install}. Dokončajte pozive, ki jih prikaže Chrome, da namestite aplikacijo. {label:create-shortcut} je ločena možnost, ki shrani povezavo."
+    }
+  },
+  "transitions": {},
+  "heading": "Namesti aplikacijo",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Namestitev aplikacije v Chromu za Android",
+  "svgDesc": "Osnutek iz dokumentacije. Trije koraki: odprite Več, tapnite Namesti in ustvari bližnjico, nato tapnite Namesti. Dokončajte morebitne nadaljnje pozive v napravi."
+}

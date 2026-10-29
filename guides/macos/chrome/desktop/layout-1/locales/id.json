@@ -1,0 +1,37 @@
+{
+  "title": "Instal app di Chrome",
+  "label": "Mac · Chrome · Instal app",
+  "intro": "Panduan ini mengikuti jalur menu Chrome yang ditampilkan di tangkapan layar referensi. Beberapa situs web juga menawarkan ikon instal di kolom URL.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Buka menu {label:more}",
+      "description": "Buka situs web di Chrome. Klik tiga titik vertikal di kanan atas jendela Chrome untuk membuka menu {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Pilih {label:cast-save-and-share}",
+      "description": "Di menu {label:more}, pilih {label:cast-save-and-share} untuk membuka submenunya."
+    },
+    "choose-install": {
+      "title": "Pilih {label:install}",
+      "description": "Di submenu, klik {label:install} yang diikuti nama situs web atau app. Beberapa versi Chrome menamai item ini Instal halaman sebagai app. Pilih tindakan instal yang berada di atas {label:create-shortcut}; {label:create-shortcut} adalah perintah terpisah."
+    },
+    "continue-install": {
+      "title": "Klik {label:next}",
+      "description": "Di dialog {label:install-app}, periksa nama dan domain situs web, lalu klik {label:next}. Jika versi Chrome Anda langsung menampilkan konfirmasi Instal, lanjutkan ke langkah {step:5}."
+    },
+    "confirm-install": {
+      "title": "Klik {label:install}",
+      "description": "Dialog berikutnya menunjukkan app yang ditambahkan ke {label:chrome-apps}. Klik {label:install} untuk mengonfirmasi."
+    },
+    "show-in-finder": {
+      "title": "Klik {label:show-in-finder}",
+      "description": "Saat Chrome menampilkan {label:successfully-installed}, klik {label:show-in-finder} untuk menemukan app yang terinstal. Anda juga dapat memilih {label:open-tab-in-app} untuk langsung membuka situs web di jendela app-nya."
+    }
+  },
+  "completion": "Di Finder, klik dua kali app untuk membukanya. Untuk membukanya kembali nanti dari Chrome, ketik chrome://apps di kolom URL, tekan Return, lalu klik app tersebut. Proses instal tidak memerlukan pintasan Dock.",
+  "alt": "Enam langkah di Chrome Mac: buka menu Lainnya (tiga titik), pilih Transmisikan, simpan, dan bagikan, pilih Instal, klik Berikutnya, klik Instal, lalu klik Tampilkan di Penemu.",
+  "heading": "Instal app",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Menginstal app di Chrome Mac",
+  "svgDesc": "Enam langkah: buka Lainnya, pilih Transmisikan, simpan, dan bagikan, pilih Instal, klik Berikutnya, klik Instal, lalu Tampilkan di Penemu. Garis tepi biru menandai kontrolnya."
+}

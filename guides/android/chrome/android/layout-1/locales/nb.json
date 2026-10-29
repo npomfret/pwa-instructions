@@ -1,0 +1,26 @@
+{
+  "title": "Installer en app i Chrome på Android",
+  "label": "Android · Chrome · Installer app",
+  "intro": "Bruk Chrome for Android. Menynavnene i illustrasjonene følger Googles gjeldende Android-hjelp, og ikke den eldre artikkelen om å legge til på startskjermen. Dokumentasjonsutkast: ikke verifisert på en enhet ennå. Menyoppsett og bekreftelsesmeldinger kan variere.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Åpne {label:more}-menyen",
+      "description": "Åpne nettstedet i Chrome. Trykk på de tre loddrette prikkene ved siden av adressefeltet."
+    },
+    "install-and-create-shortcut": {
+      "title": "Trykk på {label:install-and-create-shortcut}",
+      "description": "Velg {label:install-and-create-shortcut} i menyen. Eldre Chrome-oppsett kan kalle dette «Legg til på startskjermen»."
+    },
+    "install-app": {
+      "title": "Trykk på {label:install}",
+      "description": "Velg {label:install}. Fullfør meldingene Chrome viser for å installere appen. {label:create-shortcut} er et eget valg som bare lagrer en lenke."
+    }
+  },
+  "completion": "Når installasjonen er fullført, åpner du appen fra Android-startskjermen. Hvor appen plasseres på startskjermen, avhenger av startskjermen din og innstillingene for den.",
+  "alt": "Tre illustrerte installasjonstrinn i Chrome på Android. Blå omrisser markerer de dokumenterte kontrollene.",
+  "transitions": {},
+  "heading": "Installer en app",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Installer en app i Chrome på Android: tre trinn",
+  "svgDesc": "Tre nummererte trinn for Chrome på Android: åpne Mer-menyen, trykk på «Installer og lag en snarvei», og trykk deretter på «Installer». Blå omrisser markerer de dokumenterte kontrollene. Den fullstendige tekstveiledningen finnes separat."
+}

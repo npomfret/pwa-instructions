@@ -1,0 +1,18 @@
+{
+  "title": "Instalace aplikace v Chromu ve Windows",
+  "label": "Windows · Chrome · Instalace aplikace",
+  "intro": "Použijte postup přes nabídku Chromu, nebo ikonu instalace v adresním řádku, pokud ji web nabízí. Koncept dokumentace: dosud neověřeno na zařízení, rozložení nabídky a potvrzovací výzvy se mohou lišit.",
+  "steps": {
+    "confirm-install": {
+      "title": "Klikněte na {label:install}",
+      "description": "Zkontrolujte název aplikace a adresu webu a potom klikněte na {label:install}. Postupujte podle dalších potvrzovacích výzev."
+    }
+  },
+  "completion": "Nainstalovanou aplikaci znovu otevřete zadáním chrome://apps do adresního řádku Chromu a výběrem aplikace.",
+  "alt": "4 ilustrované kroky instalace v Chromu ve Windows; modré obrysy označují zdokumentované ovládací prvky.",
+  "transitions": {},
+  "heading": "Instalace aplikace",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Instalace aplikace v Chromu ve Windows",
+  "svgDesc": "Koncept dokumentace: schematické ovládací prvky podle aktuálních pokynů výrobce, nikoli ověřený snímek zařízení. Modré obrysy označují ovládací prvky."
+}

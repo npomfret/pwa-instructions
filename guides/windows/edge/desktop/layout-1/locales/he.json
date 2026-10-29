@@ -1,0 +1,29 @@
+{
+  "title": "התקנת אפליקציה ב-Edge ל-Windows",
+  "label": "Windows · Edge · התקנת אפליקציה",
+  "intro": "המסלול בתפריט מבוסס על העזרה העדכנית של Microsoft ל-Edge. בגרסאות אחרות של Edge ייתכן שהאפשרות {label:apps} נמצאת ישירות בתוך {label:settings-and-more}. טיוטת תיעוד: טרם אומת במכשיר; פריסת התפריט והודעות האישור עשויות להשתנות.",
+  "steps": {
+    "open-settings-menu": {
+      "title": "פתחו את {label:settings-and-more}",
+      "description": "פתחו את האתר ב-Microsoft Edge. לחצו על שלוש הנקודות האופקיות בפינה הימנית העליונה של הדפדפן."
+    },
+    "more-tools": {
+      "title": "בחרו באפשרות {label:more-tools}",
+      "description": "בחרו באפשרות {label:more-tools} בתפריט."
+    },
+    "apps": {
+      "title": "בחרו באפשרות {label:apps}",
+      "description": "בתוך {label:more-tools}, בחרו באפשרות {label:apps}."
+    },
+    "install-site": {
+      "title": "בחרו באפשרות {label:install-this-site-as-an-app}",
+      "description": "בחרו באפשרות {label:install-this-site-as-an-app}. עבור PWA הניתן להתקנה, ייתכן ש-Edge יציע במקום זאת את {label:install-app} או סמל התקנה בשורת הכתובת."
+    }
+  },
+  "completion": "כדי לפתוח אותה שוב, הזינו edge://apps ולחצו על ״פתח״ בכרטיס האפליקציה. תחת ״פרטים״ אפשר לבחור ״הצמד לשורת המשימות״, ״הצמד ל׳התחל׳״ ו״צור קיצור דרך בשולחן העבודה״.",
+  "alt": "5 שלבים מאוירים של התקנה ב-Edge ל-Windows; מסגרות כחולות מסמנות את הפקדים המתועדים.",
+  "heading": "התקנת אפליקציה",
+  "subtitle": "Windows · Edge",
+  "svgTitle": "התקנת אפליקציה ב-Edge ל-Windows",
+  "svgDesc": "טיוטת תיעוד: פקדים סכמטיים מתוך ההוראות העדכניות של היצרן, ולא צילום מסך מאומת ממכשיר. המסגרות הכחולות מסמנות את הפקדים."
+}

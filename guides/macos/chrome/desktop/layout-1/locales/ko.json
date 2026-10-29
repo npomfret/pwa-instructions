@@ -12,7 +12,7 @@
     },
     "choose-install": {
       "title": "{label:install} 선택하기",
-      "description": "하위 메뉴에서 {label:install} 뒤에 웹사이트 또는 앱 이름이 표시된 항목을 클릭하세요. 일부 사이트에서는 이 항목이 페이지를 앱으로 설치로 표시됩니다. {label:create-shortcut} 위에 있는 설치 항목을 선택하세요. {label:create-shortcut} 항목은 링크를 저장하는 별도의 명령입니다."
+      "description": "하위 메뉴에서 {label:install} 뒤에 웹사이트 또는 앱 이름이 표시된 항목을 클릭하세요. 일부 Chrome 버전에서는 이 항목이 ‘페이지를 앱으로 설치’라고 표시됩니다. {label:create-shortcut} 위에 있는 설치 항목을 선택하세요. {label:create-shortcut} 항목은 별도의 명령입니다."
     },
     "continue-install": {
       "title": "{label:next} 클릭하기",

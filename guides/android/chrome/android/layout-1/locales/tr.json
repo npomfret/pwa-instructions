@@ -1,0 +1,26 @@
+{
+  "title": "Android’de Chrome ile uygulama yükleme",
+  "label": "Android · Chrome · Uygulama yükleme",
+  "intro": "Android için Chrome’u kullanın. Gösterilen menü etiketleri, eski “Ana ekrana ekle” makalesini değil, Google’ın güncel Android yardımını izler. Belgeleme taslağı: henüz bir cihazda doğrulanmadı; menü düzeni ve onay istemleri farklılık gösterebilir.",
+  "steps": {
+    "open-more-menu": {
+      "title": "“{label:more}” menüsünü açın",
+      "description": "Web sitesini Chrome’da açın. Adres çubuğunun yanındaki üç dikey noktaya dokunun."
+    },
+    "install-and-create-shortcut": {
+      "title": "“{label:install-and-create-shortcut}” öğesine dokunun",
+      "description": "Menüden “{label:install-and-create-shortcut}” öğesini seçin. Eski Chrome düzenlerinde bu öğe “Ana ekrana ekle” olarak adlandırılabilir."
+    },
+    "install-app": {
+      "title": "“{label:install}” öğesine dokunun",
+      "description": "“{label:install}” öğesini seçin. Uygulamayı yüklemek için Chrome’un gösterdiği istemleri tamamlayın. “{label:create-shortcut}” yalnızca bir bağlantı kaydeden ayrı bir seçenektir."
+    }
+  },
+  "completion": "Yükleme tamamlandıktan sonra uygulamayı Android başlatıcınızdan açın. Ana ekrandaki yeri, başlatıcınıza ve ayarlarına bağlıdır.",
+  "alt": "Android’de Chrome ile 3 resimli yükleme adımı; mavi çerçeveler belgelenen denetimleri işaretler.",
+  "transitions": {},
+  "heading": "Uygulama yükleme",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Android’de Chrome ile uygulama yükleme",
+  "svgDesc": "Belgeleme taslağı. Üç adım: “Daha fazla” menüsünü açın, “Yükle ve kısayol oluştur” öğesine dokunun, sonra “Yükle” öğesine dokunun. Cihazınızda gösterilen diğer istemleri tamamlayın."
+}

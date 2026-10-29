@@ -13,7 +13,7 @@
     },
     "choose-install": {
       "title": "Elige {label:install}",
-      "description": "En el submenú, haz clic en {label:install} seguido del nombre del sitio web o de la app. Elige la acción de instalación que aparece encima de {label:create-shortcut}; {label:create-shortcut} es otro comando distinto."
+      "description": "En el submenú, haz clic en {label:install} seguido del nombre del sitio web o de la app. Algunas versiones de Chrome llaman a este elemento «Instalar página como aplicación». Elige la acción de instalación que aparece encima de {label:create-shortcut}; {label:create-shortcut} es otro comando distinto."
     },
     "continue-install": {
       "title": "Haz clic en {label:next}",

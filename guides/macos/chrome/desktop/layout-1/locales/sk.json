@@ -1,0 +1,38 @@
+{
+  "title": "Inštalácia aplikácie v prehliadači Chrome",
+  "label": "Mac · Chrome · Inštalácia aplikácie",
+  "intro": "Tento návod sleduje postup cez ponuku prehliadača Chrome zobrazený na referenčných snímkach obrazovky. Niektoré webové stránky ponúkajú aj ikonu inštalácie v adresnom riadku.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Otvorte menu {label:more}",
+      "description": "Otvorte webovú stránku v prehliadači Chrome. Kliknutím na tri zvislé bodky v pravej hornej časti okna prehliadača Chrome otvorte menu {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Vyberte {label:cast-save-and-share}",
+      "description": "V menu Viac vyberte {label:cast-save-and-share}, čím otvoríte jeho podmenu."
+    },
+    "choose-install": {
+      "title": "Vyberte {label:install}",
+      "description": "V podmenu kliknite na {label:install} nasledované názvom webovej stránky alebo aplikácie. V niektorých verziách Chromu sa táto položka volá „Nainštalovať stránku ako aplikáciu“. Vyberte inštalačnú akciu nad možnosťou „Vytvoriť odkaz“; „Vytvoriť odkaz“ je samostatný príkaz."
+    },
+    "continue-install": {
+      "title": "Kliknite na {label:next}",
+      "description": "V dialógovom okne Inštalácia aplikácie skontrolujte názov a doménu webovej stránky a potom kliknite na {label:next}. Ak vaša verzia prehliadača Chrome prejde rovno na potvrdenie inštalácie, pokračujte krokom {step:5}."
+    },
+    "confirm-install": {
+      "title": "Kliknite na {label:install}",
+      "description": "V ďalšom dialógovom okne sa zobrazí, že aplikácia sa pridáva do sekcie {label:chrome-apps}. Kliknutím na {label:install} to potvrďte."
+    },
+    "show-in-finder": {
+      "title": "Kliknite na {label:show-in-finder}",
+      "description": "Keď Chrome zobrazí hlásenie „{label:successfully-installed}“, kliknutím na {label:show-in-finder} vyhľadáte nainštalovanú aplikáciu. Môžete tiež vybrať {label:open-tab-in-app} a webovú stránku okamžite otvoriť v okne aplikácie."
+    }
+  },
+  "completion": "Aplikáciu otvorte dvojitým kliknutím vo Finderi. Ak ju chcete neskôr znova otvoriť z prehliadača Chrome, zadajte do adresného riadka chrome://apps, stlačte kláves Return a kliknite na aplikáciu. Inštalácia nevyžaduje odkaz v Docku.",
+  "alt": "Šesť krokov v prehliadači Chrome na Macu: otvorte menu Viac s tromi bodkami, vyberte Preniesť, uložiť a zdieľať, vyberte Inštalovať, kliknite na Ďalej, kliknite na Inštalovať a potom kliknite na Zobraziť v aplikácii Finder.",
+  "transitions": {},
+  "heading": "Inštalácia aplikácie",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Inštalácia aplikácie v prehliadači Chrome na Macu",
+  "svgDesc": "Šesť krokov: otvorte menu Viac, vyberte Preniesť, uložiť a zdieľať, vyberte Inštalovať, kliknite na Ďalej, kliknite na Inštalovať a potom vyberte Zobraziť v aplikácii Finder. Modré orámovanie označuje ovládacie prvky."
+}

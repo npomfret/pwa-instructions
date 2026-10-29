@@ -1,0 +1,26 @@
+{
+  "title": "在 Android 版 Chrome 中安裝應用程式",
+  "label": "Android · Chrome · 安裝應用程式",
+  "intro": "請使用 Android 版 Chrome。圖中的選單標籤依據 Google 目前的 Android 說明，而非較舊的「新增至主畫面」文章。文件草稿：尚未在裝置上驗證；選單配置和確認提示可能有所不同。",
+  "completion": "安裝完成後，請從 Android 啟動器開啟該應用程式。主畫面上的放置位置取決於你的啟動器及其設定。",
+  "alt": "共 3 個 Android 版 Chrome 安裝步驟的圖示；藍色外框標示文件中提到的控制項目。",
+  "steps": {
+    "open-more-menu": {
+      "title": "開啟「{label:more}」選單",
+      "description": "在 Chrome 中開啟網站。輕觸網址列旁的三個垂直圓點。"
+    },
+    "install-and-create-shortcut": {
+      "title": "輕觸「{label:install-and-create-shortcut}」",
+      "description": "從選單中選擇「{label:install-and-create-shortcut}」。較舊的 Chrome 版面可能將此項稱為「新增至主畫面」。"
+    },
+    "install-app": {
+      "title": "輕觸「{label:install}」",
+      "description": "選擇「{label:install}」。請依照 Chrome 顯示的提示完成應用程式安裝。「{label:create-shortcut}」是另一個選項，只會儲存連結。"
+    }
+  },
+  "transitions": {},
+  "heading": "安裝應用程式",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "在 Android 版 Chrome 中安裝應用程式",
+  "svgDesc": "文件草稿。共三個步驟：開啟「更多」，輕觸「安裝並建立捷徑」，然後輕觸「安裝」。請依照裝置上的提示完成後續操作。"
+}

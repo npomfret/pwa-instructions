@@ -1,0 +1,26 @@
+{
+  "title": "Sovelluksen asentaminen Androidin Chromessa",
+  "label": "Android · Chrome · Asenna sovellus",
+  "intro": "Käytä Androidin Chromea. Kuvien valikkonimet noudattavat Googlen nykyistä Android-ohjetta, eivät vanhempaa, aloitusnäytölle lisäämistä koskevaa artikkelia. Dokumentaatioluonnos: ei vielä varmennettu laitteella; valikon asettelu ja vahvistuskehotteet voivat vaihdella.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Avaa {label:more}-valikko",
+      "description": "Avaa verkkosivusto Chromessa. Napauta osoitepalkin vieressä olevia kolmea pystysuuntaista pistettä."
+    },
+    "install-and-create-shortcut": {
+      "title": "Napauta {label:install-and-create-shortcut}",
+      "description": "Valitse valikosta {label:install-and-create-shortcut}. Vanhemmissa Chrome-versioissa toiminnolla voi olla eri nimi, joka viittaa aloitusnäytölle lisäämiseen."
+    },
+    "install-app": {
+      "title": "Napauta {label:install}",
+      "description": "Valitse {label:install}. Suorita Chromen näyttämät kehotteet loppuun, niin sovellus asennetaan. {label:create-shortcut} on erillinen vaihtoehto, joka tallentaa vain linkin."
+    }
+  },
+  "completion": "Kun asennus on valmis, avaa sovellus Androidin käynnistysohjelmasta. Aloitusnäytölle sijoittuminen riippuu käynnistysohjelmasta ja sen asetuksista.",
+  "alt": "3 kuvitettua asennusvaihetta Androidin Chromessa; siniset ääriviivat korostavat ohjeessa kuvattuja säätimiä.",
+  "transitions": {},
+  "heading": "Asenna sovellus",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Sovelluksen asentaminen Androidin Chromessa",
+  "svgDesc": "Dokumentaatioluonnos. Kolme vaihetta: avaa Lisää-valikko, napauta Asenna ja luo pikakuvake ja napauta sitten Asenna. Noudata laitteellasi muita näytön ohjeita."
+}

@@ -47,7 +47,7 @@
     <rect x="254" y="134" width="274" height="238" rx="10" fill="white" stroke="#d7dadd"/>
     <text x="274" y="161" class="label muted" data-i18n="label:new-tab" data-max-width="226">New tab</text><text x="274" y="193" class="label muted" data-i18n="label:history" data-max-width="226">History</text><text x="274" y="225" class="label muted" data-i18n="label:downloads" data-max-width="226">Downloads</text><text x="274" y="257" class="label muted" data-i18n="label:print" data-max-width="226">Print…</text><text x="274" y="289" class="label muted" data-i18n="label:find-and-edit" data-max-width="226">Find and edit</text>
     <rect x="262" y="314" width="258" height="42" rx="8" class="target"/>
-    <text x="274" y="341" class="label" data-i18n="label:cast-save-and-share" data-max-width="226">Cast, save and share</text><path d="m500 329 5 6-5 6" class="icon"/>
+    <text x="274" y="341" class="label" data-i18n="label:cast-save-and-share" data-max-width="226" data-lines="2" data-line-height="17" data-center-lines="1">Cast, save and share</text><path d="m500 329 5 6-5 6" class="icon"/>
   </g>
   <g id="step-3" transform="translate(28 980)" role="group" aria-labelledby="step-3-title">
     <circle cx="18" cy="18" r="18" fill="#2463eb"/><text x="18" y="24" text-anchor="middle" style="font-size:19px;font-weight:650;fill:white">3</text>

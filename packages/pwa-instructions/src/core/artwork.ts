@@ -1,4 +1,4 @@
-import { fitMarkup, fitText, fontOf } from "./fit.js";
+import { RTL_TEXT, fitMarkup, fitText, fontOf, rtlAnchor } from "./fit.js";
 import type { Segment } from "./fit.js";
 
 export const escapeXML = (value: string) => value.replaceAll("&", "&amp;").replaceAll("<", "&lt;")
@@ -17,15 +17,27 @@ const attribute = (attributes: string, name: string) => new RegExp(`\\s${name}="
 const unescapeXML = (value: string) => value.replaceAll("&lt;", "<").replaceAll("&gt;", ">").replaceAll("&quot;", '"')
   .replaceAll("&apos;", "'").replaceAll("&amp;", "&");
 
+/**
+ * Hebrew or Arabic text read right to left, so the node takes `direction="rtl"` with the anchor that keeps it where the
+ * English was drawn (the build does the same, scripts/i18n.mjs markRtl). A node the build already marked is left alone.
+ */
+function rightToLeft(attributes: string, segments: Segment[]): string {
+  if (!RTL_TEXT.test(segments.map(item => item.text).join("")) || /\sdirection="rtl"/.test(attributes)) return attributes;
+  const anchor = attribute(attributes, "text-anchor");
+  const rest = attributes.replace(/\s(?:direction|text-anchor)="[^"]*"/g, "");
+  return `${rest} direction="rtl" text-anchor="${rtlAnchor(anchor)}"`;
+}
+
 /** `<text>` with `segments` fitted the way the build fits them (src/core/fit.js): wrapped onto `data-lines` lines, else squeezed to `data-max-width`. */
 function drawText(attributes: string, segments: Segment[]): string {
   const clean = attributes.replace(/\s(?:textLength|lengthAdjust)="[^"]*"/g, "");
   const max = Number(attribute(clean, "data-max-width")) || 0;
   const lines = Number(attribute(clean, "data-lines")) || 1;
   const fit = fitText(segments, { ...fontOf(attribute(clean, "class") ?? ""), max, lines });
-  const body = fitMarkup(fit, { x: attribute(clean, "x") ?? "0", lineHeight: Number(attribute(clean, "data-line-height")) || 0, escape: escapeXML });
+  const body = fitMarkup(fit, { x: attribute(clean, "x") ?? "0", lineHeight: Number(attribute(clean, "data-line-height")) || 0, escape: escapeXML,
+    center: attribute(clean, "data-center-lines") !== undefined });
   const squeeze = fit.squeeze ? ` textLength="${max}" lengthAdjust="spacingAndGlyphs"` : "";
-  return `<text${clean}${squeeze}>${body}</text>`;
+  return `<text${rightToLeft(clean, segments)}${squeeze}>${body}</text>`;
 }
 
 /**

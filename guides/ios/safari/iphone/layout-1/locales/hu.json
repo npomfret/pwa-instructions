@@ -1,0 +1,29 @@
+{
+  "title": "Hozzáadás a Főképernyőhöz",
+  "label": "iPhone · Safari · Hozzáadás a Főképernyőhöz",
+  "steps": {
+    "open-page-menu": {
+      "title": "Az {label:page-menu} megnyitása",
+      "description": "Koppintson az {label:page-menu} gombra a webhely címsávjának bal oldalán. A gomb ikonján három vízszintes vonal látható, az alsó vonal rövidebb."
+    },
+    "tap-share": {
+      "title": "Koppintson a {label:share} elemre",
+      "description": "Az Oldalmenüben koppintson a {label:share} elemre. Az ikonja egy négyzet, amelyből felfelé mutató nyíl indul ki."
+    },
+    "view-more": {
+      "title": "Koppintson a {label:view-more} elemre",
+      "description": "Ha a megosztási menü össze van csukva, koppintson a lefelé mutató szögletes nyíllal jelölt {label:view-more} elemre a további műveletek megjelenítéséhez. Ha a műveletek listája már látható, folytassa a {step:4}. lépéssel."
+    },
+    "add-to-home-screen": {
+      "title": "Koppintson a {label:add-to-home-screen} elemre",
+      "description": "A kibontott műveletlistában keresse meg, majd koppintson a {label:add-to-home-screen} elemre. Az ikonja egy lekerekített négyzet, amelyben pluszjel látható."
+    }
+  },
+  "completion": "A hozzáadás befejezéséhez kövesse a megerősítő képernyőn megjelenő utasításokat.",
+  "alt": "Négy lépés: koppintson az Oldalmenüre a cím mellett, koppintson a Megosztásra, szükség esetén koppintson a Továbbiak megtekintése elemre, majd koppintson a Hozzáadás a Főképernyőhöz elemre.",
+  "transitions": {},
+  "heading": "Hozzáadás a Főképernyőhöz",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Hozzáadás a Főképernyőhöz az iPhone Safari böngészőjében: négy lépés",
+  "svgDesc": "Négy számozott lépés az iPhone Safari böngészőjéhez: nyissa meg az Oldalmenüt, koppintson a Megosztás elemre, koppintson a Továbbiak megtekintése elemre, majd koppintson a Hozzáadás a Főképernyőhöz elemre. A kék keretek jelölik azokat a vezérlőelemeket, amelyekre koppintania kell. A teljes szöveges útmutató külön érhető el."
+}

@@ -1,0 +1,25 @@
+{
+  "title": "התקנת אפליקציה ב-Chrome ל-Android",
+  "label": "Android · Chrome · התקנת אפליקציה",
+  "intro": "השתמשו ב-Chrome ל-Android. תוויות התפריט באיורים מבוססות על העזרה העדכנית של Google ל-Android, ולא על המאמר הישן בנושא ״הוספה למסך הבית״. טיוטת תיעוד: טרם אומת במכשיר; פריסת התפריט והודעות האישור עשויות להשתנות.",
+  "steps": {
+    "open-more-menu": {
+      "title": "פתחו את התפריט {label:more}",
+      "description": "פתחו את האתר ב-Chrome. הקישו על שלוש הנקודות האנכיות שלצד שורת הכתובת."
+    },
+    "install-and-create-shortcut": {
+      "title": "הקישו על {label:install-and-create-shortcut}",
+      "description": "בחרו באפשרות {label:install-and-create-shortcut} בתפריט. בפריסות ישנות יותר של Chrome היא עשויה להופיע בשם ״הוספה למסך הבית״."
+    },
+    "install-app": {
+      "title": "הקישו על {label:install}",
+      "description": "בחרו באפשרות {label:install}. השלימו את ההנחיות ש-Chrome מציג כדי להתקין את האפליקציה. {label:create-shortcut} היא אפשרות נפרדת ששומרת קישור."
+    }
+  },
+  "completion": "בסיום ההתקנה, פתחו את האפליקציה ממפעיל האפליקציות של Android. מיקום הסמל במסך הבית תלוי במפעיל האפליקציות ובהגדרותיו.",
+  "alt": "3 שלבים מאוירים של התקנה ב-Chrome ל-Android; מסגרות כחולות מסמנות את הפקדים המתועדים.",
+  "heading": "התקנת אפליקציה",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "התקנת אפליקציה ב-Chrome ל-Android",
+  "svgDesc": "טיוטת תיעוד. שלושה שלבים: פתחו את עוד, הקישו על התקנה ויצירת קיצור דרך ולבסוף הקישו על התקנה. השלימו את שאר ההנחיות במכשיר."
+}

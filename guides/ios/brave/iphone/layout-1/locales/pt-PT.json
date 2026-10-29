@@ -1,0 +1,22 @@
+{
+  "title": "Adicionar ao ecrã principal a partir do Brave",
+  "label": "iPhone · Brave → Safari · Adicionar ao ecrã principal",
+  "steps": {
+    "tap-share": {
+      "title": "Toque em {label:share}",
+      "description": "No Brave, toque em {label:share} na barra de ferramentas inferior. O ícone é um quadrado com uma seta a apontar para cima. Se a barra de ferramentas estiver oculta, toque no endereço do site para a mostrar."
+    },
+    "open-in-safari": {
+      "title": "Toque em {label:open-in-safari}",
+      "description": "Na folha de partilha expandida, desloque-se para baixo e toque em {label:open-in-safari}. O site abre no Safari; efetue todos os restantes passos aí."
+    }
+  },
+  "intro": "Comece no Brave. O passo {step:3} abre o mesmo site no Safari; os passos {step:4} a {step:7} são feitos no Safari.",
+  "completion": "Siga o ecrã de confirmação para concluir a adição da app.",
+  "alt": "Sete passos numerados: Partilhar, Ver mais e Abrir no Safari no Brave, seguidos dos quatro passos de instalação no Safari.",
+  "transitions": {
+    "continue-in-safari": "Continuar no Safari"
+  },
+  "heading": "Adicionar ao ecrã principal",
+  "subtitle": "iPhone · Brave → Safari"
+}

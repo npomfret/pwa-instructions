@@ -1,0 +1,25 @@
+{
+  "title": "Voeg toe aan Dock in Safari",
+  "label": "Mac · Safari · Voeg toe aan Dock",
+  "intro": "Vereist macOS Sonoma 14 of nieuwer. In deze afbeeldingen zie je de route via het menu {label:file}; Safari biedt Voeg toe aan Dock ook aan in het menu Deel.",
+  "steps": {
+    "open-file-menu": {
+      "title": "Open het menu {label:file}",
+      "description": "Open de website in Safari. Klik in de menubalk boven aan het scherm van je Mac op {label:file}."
+    },
+    "add-to-dock": {
+      "title": "Kies {label:add-to-dock}",
+      "description": "Klik in het menu {label:file} op {label:add-to-dock}. Safari opent een bevestigingsvenster voor deze website."
+    },
+    "confirm-add": {
+      "title": "Klik op {label:add}",
+      "description": "Behoud de naam van de app of pas die aan en klik vervolgens op {label:add}. De webapp wordt bewaard in je map Apps en toegevoegd aan het Dock."
+    }
+  },
+  "completion": "Open de nieuwe app vanuit het Dock.",
+  "alt": "Drie stappen in Safari op de Mac: open Archief, kies Voeg toe aan Dock en klik op Voeg toe.",
+  "heading": "Voeg toe aan Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Voeg toe aan Dock in Safari op de Mac: drie stappen",
+  "svgDesc": "Drie genummerde stappen voor Safari op de Mac: open het menu Archief, kies Voeg toe aan Dock en klik op Voeg toe. De blauwe omlijning markeert de opties waarop je moet klikken. De volledige instructies in tekst worden apart aangeboden."
+}

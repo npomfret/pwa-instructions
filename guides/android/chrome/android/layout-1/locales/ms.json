@@ -1,0 +1,26 @@
+{
+  "title": "Pasang apl dalam Chrome untuk Android",
+  "label": "Android · Chrome · Pasang apl",
+  "intro": "Gunakan Chrome untuk Android. Label menu yang diilustrasikan mengikut bantuan Android semasa Google, bukannya artikel Tambah ke skrin utama yang lebih lama. Draf dokumentasi: belum disahkan pada peranti; reka letak menu dan gesaan pengesahan mungkin berbeza.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Buka menu {label:more}",
+      "description": "Buka laman web dalam Chrome. Ketik tiga titik menegak di sebelah bar alamat."
+    },
+    "install-and-create-shortcut": {
+      "title": "Ketik {label:install-and-create-shortcut}",
+      "description": "Pilih {label:install-and-create-shortcut} daripada menu. Reka letak Chrome yang lebih lama mungkin menamakannya Tambah ke skrin utama."
+    },
+    "install-app": {
+      "title": "Ketik {label:install}",
+      "description": "Pilih {label:install}. Lengkapkan gesaan yang dipaparkan oleh Chrome untuk memasang apl. {label:create-shortcut} ialah pilihan berasingan yang menyimpan pautan."
+    }
+  },
+  "transitions": {},
+  "completion": "Selepas pemasangan selesai, buka apl daripada pelancar Android anda. Penempatan pada skrin utama bergantung pada pelancar anda dan tetapannya.",
+  "alt": "Tiga langkah pemasangan Chrome pada Android yang diilustrasikan; garis besar biru menandakan kawalan yang didokumenkan.",
+  "heading": "Pasang apl",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "Pasang apl dalam Chrome untuk Android",
+  "svgDesc": "Draf dokumentasi. Tiga langkah: buka Lagi, ketik Pasang dan buat pintasan, kemudian ketik Pasang. Lengkapkan sebarang gesaan lanjut pada peranti anda."
+}

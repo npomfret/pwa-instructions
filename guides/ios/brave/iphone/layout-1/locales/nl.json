@@ -1,0 +1,22 @@
+{
+  "title": "Zet op beginscherm vanuit Brave",
+  "label": "iPhone · Brave → Safari · Zet op beginscherm",
+  "intro": "Begin in Brave. In stap {step:3} open je dezelfde website in Safari; stap {step:4} tot en met {step:7} voer je uit in Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Tik op {label:share}",
+      "description": "Tik in Brave op {label:share} in de werkbalk onderaan. Het symbool is een vierkant met een pijl omhoog. Als de werkbalk verborgen is, tik je op het adres van de website om de werkbalk weer te tonen."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Scrol in het uitgebreide deelvenster omlaag en tik op {label:open-in-safari}. De website wordt geopend in Safari; voer alle resterende stappen daar uit."
+    }
+  },
+  "transitions": {
+    "continue-in-safari": "Ga verder in Safari"
+  },
+  "completion": "Volg het bevestigingsscherm om het toevoegen van de app af te ronden.",
+  "alt": "Zeven genummerde stappen: Deel, Toon meer en Open in Safari in Brave, gevolgd door de vier installatiestappen in Safari.",
+  "heading": "Zet op beginscherm",
+  "subtitle": "iPhone · Brave → Safari"
+}

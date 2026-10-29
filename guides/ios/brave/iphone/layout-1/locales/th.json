@@ -1,0 +1,22 @@
+{
+  "title": "เพิ่มไปยังหน้าจอโฮมจาก Brave",
+  "label": "iPhone · Brave → Safari · เพิ่มไปยังหน้าจอโฮม",
+  "intro": "เริ่มต้นใน Brave ขั้นตอนที่ {step:3} จะเปิดเว็บไซต์เดียวกันใน Safari ส่วนขั้นตอนที่ {step:4}–{step:7} ทำใน Safari",
+  "steps": {
+    "tap-share": {
+      "title": "แตะ {label:share}",
+      "description": "ใน Brave ให้แตะ {label:share} ในแถบเครื่องมือด้านล่าง ไอคอนเป็นสี่เหลี่ยมที่มีลูกศรชี้ขึ้น หากแถบเครื่องมือถูกซ่อน ให้แตะที่อยู่เว็บไซต์เพื่อแสดงแถบเครื่องมือ"
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "ในแผ่นแชร์ที่ขยายออก ให้เลื่อนลงแล้วแตะ {label:open-in-safari} เว็บไซต์จะเปิดใน Safari ให้ทำขั้นตอนที่เหลือทั้งหมดที่นั่น"
+    }
+  },
+  "completion": "ทำตามหน้าจอยืนยันเพื่อเพิ่มแอปให้เสร็จสมบูรณ์",
+  "alt": "เจ็ดขั้นตอนตามลำดับ: แชร์ ดูเพิ่มเติม และเปิดใน Safari ใน Brave ตามด้วยสี่ขั้นตอนการติดตั้งใน Safari",
+  "transitions": {
+    "continue-in-safari": "ทำต่อใน Safari"
+  },
+  "heading": "เพิ่มไปยังหน้าจอโฮม",
+  "subtitle": "iPhone · Brave → Safari"
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Додавання в Dock у Safari",
+  "label": "Mac · Safari · Додати в Dock",
+  "intro": "Потрібна macOS Sonoma 14 або новішої версії. На цих ілюстраціях показано шлях через меню «{label:file}»; Safari також пропонує «{label:add-to-dock}» у меню «Поширити».",
+  "steps": {
+    "open-file-menu": {
+      "title": "Відкрийте меню «{label:file}»",
+      "description": "Відкрийте вебсайт у Safari. У смузі меню вгорі екрана Mac клацніть «{label:file}»."
+    },
+    "add-to-dock": {
+      "title": "Виберіть «{label:add-to-dock}»",
+      "description": "У меню «{label:file}» клацніть «{label:add-to-dock}». Safari відкриє діалогове вікно підтвердження для цього вебсайту."
+    },
+    "confirm-add": {
+      "title": "Клацніть «{label:add}»",
+      "description": "Залиште або змініть назву програми, а потім клацніть «{label:add}». Вебпрограму буде збережено в папці «Програми» та додано до Dock."
+    }
+  },
+  "completion": "Відкрийте нову програму з панелі Dock.",
+  "alt": "Три кроки в Safari на Mac: відкрийте «Файл», виберіть «Додати в Dock», а потім клацніть «Додати».",
+  "transitions": {},
+  "heading": "Додати в Dock",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Додавання вебсайту в Dock у Safari на Mac",
+  "svgDesc": "Три кроки: відкрийте меню «Файл», виберіть «Додати в Dock», а потім клацніть «Додати». Сині контури позначають елементи керування."
+}

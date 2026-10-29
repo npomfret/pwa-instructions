@@ -66,8 +66,254 @@
         "verified": "2026-10-29",
         "version": "Chrome help (current)",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_nl.xtb (message id 6042308850641462728, IDS_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_pl.xtb (message id 6042308850641462728, IDS_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Same string as Więcej in Google's Polish Chrome help (https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=pl)."
+      },
+      "sv": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=sv",
+        "verified": "2026-10-29",
+        "version": "Chrome for Android, current help",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_da.xtb (message id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_no.xtb (message id 6042308850641462728, IDS_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium names the locale \"no\" (Norwegian), not \"nb\"; the file is Bokmål."
+      },
+      "fi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_fi.xtb (message id 6042308850641462728, IDS_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Same string as Lisää in Google's Finnish Chrome help: https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=fi"
+      },
+      "ru": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_ru.xtb (message id 6042308850641462728, IDS_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_uk.xtb (message id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_tr.xtb (message id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chrome menu label (IDS_CONTENT_CONTEXT_MORE_APPS); same text as the desktop menu."
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_cs.xtb (message IDS_MORE, id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_sk.xtb (message IDS_MORE, id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_hu.xtb (message id 6042308850641462728, IDS_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ro.xtb (message IDS_CONTENT_CONTEXT_MORE_APPS, id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_hr.xtb (message id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_el.xtb (message id 6042308850641462728, IDS_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/browser/ui/android/strings/translations/android_chrome_strings_pt-PT.xtb#6042308850641462728",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_es-419.xtb (message id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_CONTENT_CONTEXT_MORE_APPS-shared string with the Chrome menu \"More\""
+      },
+      "fr-CA": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr-CA.xtb (message id 6042308850641462728, IDS_BOOKMARKS_EDIT_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?hl=zh-Hant&co=GENIE.Platform%3DAndroid",
+        "verified": "2026-10-29",
+        "version": "Chrome (Android), current help",
+        "deviceChecked": false
+      },
+      "zh-HK": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-HK.xtb (message id 6042308850641462728, IDS_BOOKMARKS_EDIT_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_id.xtb (message id 6042308850641462728, IDS_BOOKMARKS_EDIT_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ms.xtb (message id 6042308850641462728, IDS_BOOKMARKS_EDIT_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=th",
+        "verified": "2026-10-29",
+        "version": "Chrome for Android (current help)",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_vi.xtb (message IDS_CONTENT_CONTEXT_MORE_APPS, id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_hi.xtb (message id 6042308850641462728, IDS_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_ca.xtb (message id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_iw.xtb (message IDS_CONTENT_CONTEXT_MORE_APPS, id 6042308850641462728)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?hl=ar&co=GENIE.Platform%3DAndroid",
+        "verified": "2026-10-29",
+        "version": "Chrome help (ar), read 2026-10-29",
+        "deviceChecked": false,
+        "note": "Chromium message 6042308850641462728 (IDS_MORE) is \"عرض المزيد\" in ar; Google's Arabic Chrome help names the three-dot menu \"المزيد\", so the help text is used."
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_bg.xtb (message id 6042308850641462728, IDS_CONTENT_CONTEXT_MORE_APPS)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/browser_ui/strings/android/translations/browser_ui_strings_sl.xtb (message id 6042308850641462728, IDS_MORE)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Meer",
+    "pl": "Więcej",
+    "sv": "Mer",
+    "da": "Mere",
+    "nb": "Mer",
+    "fi": "Lisää",
+    "ru": "Ещё",
+    "uk": "Більше",
+    "tr": "Daha fazla",
+    "cs": "Více",
+    "sk": "Viac",
+    "hu": "Továbbiak",
+    "ro": "Mai multe",
+    "hr": "Više",
+    "el": "Περισσότερα",
+    "pt-PT": "Mais",
+    "es-419": "Más",
+    "fr-CA": "Plus",
+    "zh-Hant": "更多",
+    "zh-HK": "更多選項",
+    "id": "Lainnya",
+    "ms": "Lagi",
+    "th": "เพิ่มเติม",
+    "vi": "Xem thêm",
+    "hi": "और ज़्यादा",
+    "ca": "Més",
+    "he": "עוד",
+    "ar": "المزيد",
+    "bg": "Още",
+    "sl": "Več"
   },
   "install-and-create-shortcut": {
     "en": "Install and create shortcut",
@@ -143,8 +389,254 @@
         "verified": "2026-10-29",
         "version": "Chrome help (current)",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=nl",
+        "verified": "2026-10-29",
+        "version": "Google Chrome Help (nl), Android",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=pl",
+        "verified": "2026-10-29",
+        "version": "Google Chrome help (pl), Android",
+        "deviceChecked": false,
+        "note": "Page footer says it may contain AI-assisted translation."
+      },
+      "sv": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=sv",
+        "verified": "2026-10-29",
+        "version": "Chrome for Android, current help",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_da.xtb (message id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_no.xtb (message id 6923899737874692938, IDS_MENU_INSTALL_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium names the locale \"no\" (Norwegian), not \"nb\"; the file is Bokmål."
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=fi",
+        "verified": "2026-10-29",
+        "version": "Google Chrome-ohje (fi), Android",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=ru",
+        "verified": "2026-10-29",
+        "version": "Справка Google Chrome (ru), Android",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_uk.xtb (message id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_tr.xtb (message id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_cs.xtb (message IDS_MENU_INSTALL_CREATE_SHORTCUT, id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Contains a no-break space exactly as in the xtb."
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_sk.xtb (message IDS_MENU_INSTALL_CREATE_SHORTCUT, id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_hu.xtb (message id 6923899737874692938, IDS_MENU_INSTALL_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Hungarian Chrome shows the shorter \"Telepítés és parancsikon\" (CHAR_LIMIT=27); Google's hu help page writes \"Telepítés és parancsikon létrehozása\" (https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=hu). The xtb is the product string."
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ro.xtb (message IDS_MENU_INSTALL_CREATE_SHORTCUT, id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_hr.xtb (message id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_el.xtb (message id 6923899737874692938, IDS_MENU_INSTALL_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "model-translation",
+        "source": "model knowledge of the pt-PT UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_es-419.xtb (message id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_MENU_INSTALL_CREATE_SHORTCUT"
+      },
+      "fr-CA": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=fr-CA",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?hl=zh-Hant&co=GENIE.Platform%3DAndroid",
+        "verified": "2026-10-29",
+        "version": "Chrome (Android), current help",
+        "deviceChecked": false
+      },
+      "zh-HK": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=zh-HK",
+        "verified": "2026-10-29",
+        "version": "Chrome for Android (current help)",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=id",
+        "verified": "2026-10-29",
+        "version": "current page",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ms.xtb (message id 6923899737874692938, IDS_MENU_INSTALL_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=th",
+        "verified": "2026-10-29",
+        "version": "Chrome for Android (current help)",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_vi.xtb (message IDS_MENU_INSTALL_CREATE_SHORTCUT, id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_hi.xtb (message id 6923899737874692938, IDS_MENU_INSTALL_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ca.xtb (message id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_iw.xtb (message IDS_MENU_INSTALL_CREATE_SHORTCUT, id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ar.xtb (message IDS_MENU_INSTALL_CREATE_SHORTCUT, id 6923899737874692938)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_bg.xtb (message id 6923899737874692938, IDS_MENU_INSTALL_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "model-translation",
+        "source": "model knowledge of the sl UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Google's Slovenian Android help (support.google.com/chrome/answer/9658361?hl=sl) names this control only in the phrase \"ikone za namestitev in ustvarjanje bližnjice\"; composed from the sourced Namesti and Ustvari bližnjico."
       }
-    }
+    },
+    "nl": "Installeren en snelkoppeling maken",
+    "pl": "Zainstaluj i utwórz skrót",
+    "sv": "Installera och skapa genväg",
+    "da": "Installer og opret genvej",
+    "nb": "Installer og lag en snarvei",
+    "fi": "Asenna ja luo pikakuvake",
+    "ru": "Установить и создать ярлык",
+    "uk": "Установити й створити ярлик",
+    "tr": "Yükle ve kısayol oluştur",
+    "cs": "Nainstalovat a vytvořit zástupce",
+    "sk": "Inštalácia a vytvorenie odkazu",
+    "hu": "Telepítés és parancsikon",
+    "ro": "Instalează și creează o comandă rapidă",
+    "hr": "Instaliraj i izradi prečac",
+    "el": "Εγκατάσταση και δημιουργία συντόμευσης",
+    "pt-PT": "Instalar e criar atalho",
+    "es-419": "Instalar y crear acceso directo",
+    "fr-CA": "Installer et créer un raccourci",
+    "zh-Hant": "安裝並建立捷徑",
+    "zh-HK": "安裝並建立捷徑",
+    "id": "Instal dan buat pintasan",
+    "ms": "Pasang dan buat pintasan",
+    "th": "ติดตั้งและสร้างทางลัด",
+    "vi": "Cài đặt và tạo lối tắt",
+    "hi": "इंस्टॉल करें और शॉर्टकट बनाएं",
+    "ca": "Instal·la i crea una drecera",
+    "he": "התקנה ויצירת קיצור דרך",
+    "ar": "التثبيت وإنشاء اختصار",
+    "bg": "Инсталиране и създаване на пряк път",
+    "sl": "Namesti in ustvari bližnjico"
   },
   "install": {
     "en": "Install",
@@ -220,8 +712,252 @@
         "verified": "2026-10-29",
         "version": "Chrome help (current)",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=nl",
+        "verified": "2026-10-29",
+        "version": "Google Chrome Help (nl), Android",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=pl",
+        "verified": "2026-10-29",
+        "version": "Google Chrome help (pl), Android",
+        "deviceChecked": false,
+        "note": "Page footer says it may contain AI-assisted translation."
+      },
+      "sv": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sv.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_da.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_no.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium names the locale \"no\" (Norwegian), not \"nb\"; the file is Bokmål."
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=fi",
+        "verified": "2026-10-29",
+        "version": "Google Chrome-ohje (fi), Android",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=ru",
+        "verified": "2026-10-29",
+        "version": "Справка Google Chrome (ru), Android",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_uk.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_tr.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_cs.xtb (message IDS_APP_BANNER_INSTALL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_sk.xtb (message IDS_APP_BANNER_INSTALL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_hu.xtb (message id 3789841737615482174, IDS_APP_BANNER_INSTALL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ro.xtb (message IDS_APP_BANNER_INSTALL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_hr.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_el.xtb (message id 3789841737615482174, IDS_APP_BANNER_INSTALL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-PT.xtb#3789841737615482174",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Generic Chromium Install string; not confirmed as the Android menu item."
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_es-419.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_APP_BANNER_INSTALL"
+      },
+      "fr-CA": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr-CA.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?hl=zh-Hant&co=GENIE.Platform%3DAndroid",
+        "verified": "2026-10-29",
+        "version": "Chrome (Android), current help",
+        "deviceChecked": false
+      },
+      "zh-HK": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-HK.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_id.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ms.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/9658361?co=GENIE.Platform%3DAndroid&hl=th",
+        "verified": "2026-10-29",
+        "version": "Chrome for Android (current help)",
+        "deviceChecked": false
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_vi.xtb (message IDS_APP_BANNER_INSTALL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_hi.xtb (message id 3789841737615482174, IDS_APP_BANNER_INSTALL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ca.xtb (message id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_iw.xtb (message IDS_APP_BANNER_INSTALL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ar.xtb (message IDS_APP_BANNER_INSTALL, id 3789841737615482174)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_bg.xtb (message id 3789841737615482174, IDS_APP_BANNER_INSTALL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sl.xtb (message id 3789841737615482174, IDS_INSTALL_PWA_BUTTON_LABEL)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Installeren",
+    "pl": "Zainstaluj",
+    "sv": "Installera",
+    "da": "Installer",
+    "nb": "Installer",
+    "fi": "Asenna",
+    "ru": "Установить",
+    "uk": "Установити",
+    "tr": "Yükle",
+    "cs": "Instalovat",
+    "sk": "Inštalovať",
+    "hu": "Telepítés",
+    "ro": "Instalează",
+    "hr": "Instaliraj",
+    "el": "Εγκατάσταση",
+    "pt-PT": "Instalar",
+    "es-419": "Instalar",
+    "fr-CA": "Installer",
+    "zh-Hant": "安裝",
+    "zh-HK": "安裝",
+    "id": "Instal",
+    "ms": "Pasang",
+    "th": "ติดตั้ง",
+    "vi": "Cài đặt",
+    "hi": "इंस्‍टॉल करें",
+    "ca": "Instal·la",
+    "he": "התקנה",
+    "ar": "تثبيت",
+    "bg": "Инсталиране",
+    "sl": "Namesti"
   },
   "create-shortcut": {
     "en": "Create shortcut",
@@ -298,7 +1034,253 @@
         "verified": "2026-10-29",
         "version": "n/a",
         "deviceChecked": false
+      },
+      "nl": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/15085120?co=GENIE.Platform%3DAndroid&hl=nl",
+        "verified": "2026-10-29",
+        "version": "Google Chrome Help (nl), Android",
+        "deviceChecked": false
+      },
+      "pl": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/15085120?co=GENIE.Platform%3DAndroid&hl=pl",
+        "verified": "2026-10-29",
+        "version": "Google Chrome help (pl), Android",
+        "deviceChecked": false,
+        "note": "Page footer says it may contain AI-assisted translation."
+      },
+      "sv": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sv.xtb (message id 204914487372604757, IDS_APP_HOME_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "da": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_da.xtb (message id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "nb": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_no.xtb (message id 204914487372604757, IDS_APP_HOME_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Chromium names the locale \"no\" (Norwegian), not \"nb\"; the file is Bokmål."
+      },
+      "fi": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/15085120?co=GENIE.Platform%3DAndroid&hl=fi",
+        "verified": "2026-10-29",
+        "version": "Google Chrome-ohje (fi), Android",
+        "deviceChecked": false
+      },
+      "ru": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/15085120?co=GENIE.Platform%3DAndroid&hl=ru",
+        "verified": "2026-10-29",
+        "version": "Справка Google Chrome (ru), Android",
+        "deviceChecked": false
+      },
+      "uk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_uk.xtb (message id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "tr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_tr.xtb (message id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "Source text has a trailing space, trimmed."
+      },
+      "cs": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_cs.xtb (message IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT, id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sk": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_sk.xtb (message IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT, id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hu": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_hu.xtb (message id 204914487372604757, IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ro": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ro.xtb (message IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT, id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hr": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_hr.xtb (message id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "el": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_el.xtb (message id 204914487372604757, IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "pt-PT": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_pt-PT.xtb#204914487372604757",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_APP_HOME_CREATE_SHORTCUT (desktop app home); not confirmed as the Android menu string."
+      },
+      "es-419": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_es-419.xtb (message id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false,
+        "note": "IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT"
+      },
+      "fr-CA": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_fr-CA.xtb (message id 204914487372604757, IDS_APP_HOME_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "zh-Hant": {
+        "method": "vendor-docs",
+        "source": "https://support.google.com/chrome/answer/15085120?hl=zh-Hant&co=GENIE.Platform%3DAndroid",
+        "verified": "2026-10-29",
+        "version": "Chrome (Android), current help",
+        "deviceChecked": false
+      },
+      "zh-HK": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_zh-HK.xtb (message id 204914487372604757, IDS_APP_HOME_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "id": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_id.xtb (message id 204914487372604757, IDS_APP_HOME_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ms": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_ms.xtb (message id 204914487372604757, IDS_APP_HOME_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "th": {
+        "method": "model-translation",
+        "source": "model knowledge of the th UI string",
+        "verified": "2026-10-29",
+        "version": "n/a",
+        "deviceChecked": false,
+        "note": "Chromium desktop shows \"สร้างทางลัด...\" (message 4895799941222633551); the Android menu item has no ellipsis and appears in the Thai help page only in a related-article title."
+      },
+      "vi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_vi.xtb (message IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT, id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "hi": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_hi.xtb (message id 204914487372604757, IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ca": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ca.xtb (message id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "he": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_iw.xtb (message IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT, id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "ar": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_ar.xtb (message IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT, id 204914487372604757)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "bg": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/components/webapps/browser/android/translations/android_webapps_strings_bg.xtb (message id 204914487372604757, IDS_PWA_UNI_INSTALL_OPTION_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
+      },
+      "sl": {
+        "method": "chromium-xtb",
+        "source": "https://raw.githubusercontent.com/chromium/chromium/main/chrome/app/resources/generated_resources_sl.xtb (message id 204914487372604757, IDS_APP_HOME_CREATE_SHORTCUT)",
+        "verified": "2026-10-29",
+        "version": "main",
+        "deviceChecked": false
       }
-    }
+    },
+    "nl": "Snelkoppeling maken",
+    "pl": "Utwórz skrót",
+    "sv": "Skapa genväg",
+    "da": "Opret genvej",
+    "nb": "Opprett snarvei",
+    "fi": "Luo pikakuvake",
+    "ru": "Создать ярлык",
+    "uk": "Створити ярлик",
+    "tr": "Kısayol oluştur",
+    "cs": "Vytvořit zástupce",
+    "sk": "Vytvoriť odkaz",
+    "hu": "Parancsikon létrehozása",
+    "ro": "Creează o comandă rapidă",
+    "hr": "Stvori prečac",
+    "el": "Δημιουργία συντόμευσης",
+    "pt-PT": "Criar atalho",
+    "es-419": "Crear acceso directo",
+    "fr-CA": "Créer un raccourci",
+    "zh-Hant": "建立捷徑",
+    "zh-HK": "建立捷徑",
+    "id": "Buat pintasan",
+    "ms": "Cipta pintasan",
+    "th": "สร้างทางลัด",
+    "vi": "Tạo lối tắt",
+    "hi": "शॉर्टकट बनाएं",
+    "ca": "Crea la drecera",
+    "he": "יצירת קיצור דרך",
+    "ar": "إنشاء اختصار",
+    "bg": "Създаване на пряк път",
+    "sl": "Ustvari bližnjico"
   }
 }

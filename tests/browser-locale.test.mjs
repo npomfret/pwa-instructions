@@ -160,12 +160,12 @@ test('getIllustration substitutes labels together with the site URL, without mut
 test('a long substituted label is fitted the way the build fits it', () => {
   const tagged = svg => Array.from(new JSDOM(svg, { contentType: 'image/svg+xml' }).window.document.querySelectorAll('text[data-i18n^="label:"]'));
   // A guide whose artwork has both a one-line label with a width and a label that may take two lines.
-  const fitId = Object.keys(en.guides).find(key => tagged(svgOf(en.guides[key].illustration)).some(node => node.getAttribute('data-lines') === '2'));
+  const fitId = Object.keys(en.guides).find(key => tagged(svgOf(en.guides[key].illustration)).some(node => node.getAttribute('data-lines') === '2' && !node.hasAttribute('data-center-lines')));
   const nodes = tagged(svgOf(en.guides[fitId].illustration));
   // A label id may be drawn more than once; take the first node of an id so the comparison below is with the node found by id.
   const firsts = new Set(nodes.map(node => node.getAttribute('data-i18n')).map(key => nodes.find(item => item.getAttribute('data-i18n') === key)));
   const single = nodes.find(node => firsts.has(node) && node.hasAttribute('data-max-width') && !node.hasAttribute('data-lines'));
-  const double = nodes.find(node => node.getAttribute('data-lines') === '2');
+  const double = nodes.find(node => node.getAttribute('data-lines') === '2' && !node.hasAttribute('data-center-lines'));
   const [singleId, doubleId] = [single, double].map(node => node.getAttribute('data-i18n').slice('label:'.length));
   const labels = xa.guides[fitId].labels;
   const withLabels = table => ({ ...localeData, 'en-XA': { ...xa, guides: { ...xa.guides, [fitId]: { ...xa.guides[fitId], labels: { ...labels, 'en-XA': { ...labels['en-XA'], ...table } } } } } });

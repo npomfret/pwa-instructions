@@ -1,0 +1,25 @@
+{
+  "title": "Installeer een app in Chrome op Android",
+  "label": "Android · Chrome · App installeren",
+  "intro": "Gebruik Chrome voor Android. De getoonde menulabels volgen de huidige Android-hulp van Google in plaats van het oudere artikel over Toevoegen aan startscherm. Conceptdocumentatie: nog niet gecontroleerd op een apparaat; de indeling van het menu en de bevestigingsvensters kunnen afwijken.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Open het menu {label:more}",
+      "description": "Open de website in Chrome. Tik op de drie verticale puntjes naast de adresbalk."
+    },
+    "install-and-create-shortcut": {
+      "title": "Tik op {label:install-and-create-shortcut}",
+      "description": "Kies {label:install-and-create-shortcut} in het menu. In oudere versies van Chrome heet deze optie mogelijk 'Toevoegen aan startscherm'."
+    },
+    "install-app": {
+      "title": "Tik op {label:install}",
+      "description": "Kies {label:install}. Volg de aanwijzingen van Chrome om de app te installeren. {label:create-shortcut} is een aparte optie waarmee alleen een link wordt bewaard."
+    }
+  },
+  "completion": "Open de app na de installatie vanuit het startscherm of het app-overzicht van je Android-apparaat. Waar de app op het startscherm komt te staan, hangt af van je Android-apparaat en de instellingen ervan.",
+  "alt": "3 geïllustreerde stappen voor het installeren in Chrome op Android; blauwe omlijningen markeren de beschreven opties.",
+  "heading": "App installeren",
+  "subtitle": "Android · Chrome",
+  "svgTitle": "App installeren in Chrome op Android: drie stappen",
+  "svgDesc": "Drie genummerde stappen voor Chrome op Android: open het menu Meer, tik op Installeren en snelkoppeling maken en tik op Installeren. De blauwe omlijning markeert de opties waarop je moet tikken. De volledige instructies in tekst worden apart aangeboden."
+}

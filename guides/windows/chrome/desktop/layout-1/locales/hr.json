@@ -1,0 +1,18 @@
+{
+  "title": "Instalacija aplikacije u pregledniku Chrome na Windowsima",
+  "label": "Windows · Chrome · Instalacija aplikacije",
+  "intro": "Koristite put preko izbornika preglednika Chrome ili ikonu za instalaciju u adresnoj traci ako je web-lokacija nudi. Nacrt dokumentacije: još nije provjereno na uređaju; izgled izbornika i upiti za potvrdu mogu se razlikovati.",
+  "steps": {
+    "confirm-install": {
+      "title": "Kliknite „{label:install}”",
+      "description": "Provjerite naziv aplikacije i adresu web-lokacije, a zatim kliknite „{label:install}”. Slijedite sve daljnje upite za potvrdu."
+    }
+  },
+  "completion": "Da biste ponovno otvorili instaliranu aplikaciju, upišite chrome://apps u adresnu traku preglednika Chrome i odaberite aplikaciju.",
+  "alt": "Četiri ilustrirana koraka instalacije u pregledniku Chrome na Windowsima; plavi okviri označavaju opisane kontrole.",
+  "transitions": {},
+  "heading": "Instalacija aplikacije",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Instalacija aplikacije u pregledniku Chrome na Windowsima",
+  "svgDesc": "Nacrt dokumentacije: shematske kontrole prema aktualnim uputama proizvođača, a ne provjerena snimka uređaja. Plavi okviri označavaju kontrole."
+}

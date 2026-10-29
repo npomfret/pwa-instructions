@@ -1,0 +1,26 @@
+{
+  "title": "Safari’de Dock’a Ekle",
+  "label": "Mac · Safari · Dock’a Ekle",
+  "intro": "macOS Sonoma 14 veya sonraki bir sürüm gerekir. Bu çizimlerde Dosya menüsü yöntemi gösterilmektedir; Safari, Paylaş menüsünde de Dock’a Ekle seçeneği sunar.",
+  "steps": {
+    "open-file-menu": {
+      "title": "“{label:file}” menüsünü açın",
+      "description": "Web sitesini Safari’de açın. Mac ekranınızın üst kısmındaki menü çubuğunda “{label:file}” menüsünü tıklayın."
+    },
+    "add-to-dock": {
+      "title": "“{label:add-to-dock}” öğesini seçin",
+      "description": "“{label:file}” menüsünde “{label:add-to-dock}” öğesini tıklayın. Safari, bu web sitesi için bir onay iletişim kutusu açar."
+    },
+    "confirm-add": {
+      "title": "“{label:add}” düğmesini tıklayın",
+      "description": "Uygulama adını olduğu gibi bırakın veya düzenleyin, sonra “{label:add}” düğmesini tıklayın. Web uygulaması Uygulamalar klasörünüze kaydedilir ve Dock’a eklenir."
+    }
+  },
+  "completion": "Yeni uygulamayı Dock’unuzdan açın.",
+  "alt": "Mac’te Safari ile üç adım: “Dosya” menüsünü açın, “Dock'a Ekle” öğesini seçin, sonra “Ekle” düğmesini tıklayın.",
+  "transitions": {},
+  "heading": "Dock’a Ekle",
+  "subtitle": "Mac · Safari",
+  "svgTitle": "Mac’te Safari ile bir web sitesini Dock’a ekleme",
+  "svgDesc": "Üç adım: “Dosya” menüsünü açın, “Dock'a Ekle” öğesini seçin, sonra “Ekle” düğmesini tıklayın. Mavi çerçeveler denetimleri işaretler."
+}

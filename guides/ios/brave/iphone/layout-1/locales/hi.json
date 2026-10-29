@@ -1,0 +1,22 @@
+{
+  "title": "Brave से होम स्क्रीन पर जोड़ें",
+  "label": "iPhone · Brave → Safari · होम स्क्रीन पर जोड़ें",
+  "intro": "Brave से शुरू करें। चरण {step:3} में वही वेबसाइट Safari में खुलती है; चरण {step:4} से {step:7} तक के काम Safari में होते हैं।",
+  "steps": {
+    "tap-share": {
+      "title": "{label:share} पर टैप करें",
+      "description": "Brave में नीचे के टूलबार में {label:share} पर टैप करें। इसका आइकॉन ऊपर की ओर तीर वाला एक वर्ग है। अगर टूलबार छिपा हो, तो उसे दिखाने के लिए वेबसाइट के पते पर टैप करें।"
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "खुली हुई शेयर शीट में नीचे स्क्रोल करें और {label:open-in-safari} पर टैप करें। वेबसाइट Safari में खुल जाती है; बाकी सभी चरण वहीं करें।"
+    }
+  },
+  "completion": "ऐप जोड़ने की प्रक्रिया पूरी करने के लिए पुष्टि वाली स्क्रीन पर दिए गए निर्देशों का पालन करें।",
+  "alt": "सात क्रमांकित चरण: Brave में “शेयर करें”, “और दिखाएँ” और “Safari में खोलें”, इसके बाद Safari में इंस्टॉल करने के चार चरण।",
+  "transitions": {
+    "continue-in-safari": "Safari में जारी रखें"
+  },
+  "heading": "होम स्क्रीन पर जोड़ें",
+  "subtitle": "iPhone · Brave → Safari"
+}

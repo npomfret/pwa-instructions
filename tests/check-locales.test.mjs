@@ -113,17 +113,17 @@ test('a label value whose placeholders differ from English fails', async t => {
 
 test('an orphan locale file fails, as does a label locale the catalog does not list', async t => {
   const dir = await withFixture(t, { mutate: async dir => {
-    await writeJSON(path.join(dir, SAFARI, 'locales/nl.json'), {});
-    await edit(path.join(dir, 'labels/ios-safari.json'), entries => { entries['page-menu'].sv = 'Sidmeny'; });
+    await writeJSON(path.join(dir, SAFARI, 'locales/af.json'), {});
+    await edit(path.join(dir, 'labels/ios-safari.json'), entries => { entries['page-menu'].af = 'Bladsy-kieslys'; });
   } });
   const { errors } = await checkLocales(dir);
-  assert.ok(has(errors, `${SAFARI}/locales/nl.json`, '[nl]', 'orphan'));
-  assert.ok(has(errors, 'labels/ios-safari.json', 'page-menu', '[sv]', 'orphan'));
+  assert.ok(has(errors, `${SAFARI}/locales/af.json`, '[af]', 'orphan'));
+  assert.ok(has(errors, 'labels/ios-safari.json', 'page-menu', '[af]', 'orphan'));
 });
 
 test('a listed locale with no files fails', async t => {
-  const dir = await withFixture(t, { mutate: async dir => edit(path.join(dir, 'catalog.json'), catalog => { catalog.locales.push('nl'); }) });
-  assert.ok(has((await checkLocales(dir)).errors, 'catalog.json', 'locales.nl', 'no locale file or label exists'));
+  const dir = await withFixture(t, { mutate: async dir => edit(path.join(dir, 'catalog.json'), catalog => { catalog.locales.push('af'); }) });
+  assert.ok(has((await checkLocales(dir)).errors, 'catalog.json', 'locales.af', 'no locale file or label exists'));
 });
 
 test('tags must be canonical and file names must be the tag', async t => {
@@ -199,13 +199,13 @@ test('brand names identical to English do not warn', async t => {
 test('an overflowing label warns at 100% and fails at 130% of its data-max-width', async t => {
   assert.equal(OVERFLOW_WARN, 1);
   assert.equal(OVERFLOW_FAIL, 1.3);
-  // "View More" sits in a 100-unit node: a few extra letters land between the limits, a long phrase beyond them.
-  const warn = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ios-share-sheet.json'), entries => { entries['view-more'].es = 'Ver más opciones'; }) });
-  const fail = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ios-share-sheet.json'), entries => { entries['view-more'].es = 'Ver muchas más opciones disponibles'; }) });
+  // "Share" sits in a one-line, 154-unit node: a few extra letters land between the limits, a long phrase beyond them.
+  const warn = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ios-share-sheet.json'), entries => { entries.share.es = 'Compartir con alguien'; }) });
+  const fail = await withFixture(t, { mutate: dir => edit(path.join(dir, 'labels/ios-share-sheet.json'), entries => { entries.share.es = 'Compartir con muchas otras personas hoy'; }) });
   const warned = await checkLocales(warn);
-  assert.ok(has(warned.warnings, 'install.source.svg', 'label:view-more', '[es]', 'of its 100-unit width', 'warn threshold 100%'));
-  assert.ok(!has(warned.errors, 'label:view-more'));
-  assert.ok(has((await checkLocales(fail)).errors, 'install.source.svg', 'label:view-more', '[es]', 'fails at 130%'));
+  assert.ok(has(warned.warnings, 'install.source.svg', 'label:share', '[es]', 'of its 154-unit width', 'warn threshold 100%'));
+  assert.ok(!has(warned.errors, 'label:share'));
+  assert.ok(has((await checkLocales(fail)).errors, 'install.source.svg', 'label:share', '[es]', 'fails at 130%'));
 });
 
 test('staleLabels lists labels verified more than a year ago, oldest first', async () => {

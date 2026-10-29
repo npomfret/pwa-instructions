@@ -1,0 +1,18 @@
+{
+  "title": "Pasang apl dalam Chrome untuk Windows",
+  "label": "Windows · Chrome · Pasang apl",
+  "intro": "Gunakan laluan menu Chrome, atau ikon pasang dalam bar alamat apabila laman web menawarkannya. Draf dokumentasi: belum disahkan pada peranti; reka letak menu dan gesaan pengesahan mungkin berbeza.",
+  "steps": {
+    "confirm-install": {
+      "title": "Klik {label:install}",
+      "description": "Semak nama apl dan alamat laman web, kemudian klik {label:install}. Ikut sebarang gesaan pengesahan lanjut."
+    }
+  },
+  "transitions": {},
+  "completion": "Untuk membuka semula apl yang dipasang, masukkan chrome://apps dalam bar alamat Chrome dan pilih apl.",
+  "alt": "Empat langkah pemasangan Chrome pada Windows yang diilustrasikan; garis besar biru menandakan kawalan yang didokumenkan.",
+  "heading": "Pasang apl",
+  "subtitle": "Windows · Chrome",
+  "svgTitle": "Pasang apl dalam Chrome untuk Windows",
+  "svgDesc": "Draf dokumentasi: kawalan skematik daripada arahan vendor semasa, bukan tangkapan peranti yang disahkan. Garis besar biru menandakan kawalan."
+}

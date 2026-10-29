@@ -1,0 +1,38 @@
+{
+  "title": "Installer en app i Chrome",
+  "label": "Mac · Chrome · Installer app",
+  "intro": "Denne veiledningen følger Chrome-menyen slik den vises i referanseskjermbildene. Enkelte nettsteder tilbyr også et installeringssymbol i adressefeltet.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Åpne {label:more}-menyen",
+      "description": "Åpne nettstedet i Chrome. Klikk på de tre loddrette prikkene øverst til høyre i Chrome-vinduet for å åpne {label:more}-menyen."
+    },
+    "cast-save-and-share": {
+      "title": "Velg {label:cast-save-and-share}",
+      "description": "Velg {label:cast-save-and-share} i Mer-menyen for å åpne undermenyen."
+    },
+    "choose-install": {
+      "title": "Velg {label:install}",
+      "description": "Klikk på {label:install} i undermenyen, etterfulgt av navnet på nettstedet eller appen. Enkelte versjoner av Chrome kaller dette elementet «Installer siden som app». Velg installeringshandlingen over {label:create-shortcut}. {label:create-shortcut} er en egen kommando."
+    },
+    "continue-install": {
+      "title": "Klikk på {label:next}",
+      "description": "Kontroller navnet og domenet til nettstedet i dialogboksen «Installer appen», og klikk deretter på {label:next}. Hvis Chrome-versjonen din går rett til installeringsbekreftelsen, fortsetter du til trinn {step:5}."
+    },
+    "confirm-install": {
+      "title": "Klikk på {label:install}",
+      "description": "Den neste dialogboksen viser at appen legges til i {label:chrome-apps}. Klikk på {label:install} for å bekrefte."
+    },
+    "show-in-finder": {
+      "title": "Klikk på {label:show-in-finder}",
+      "description": "Når Chrome viser «{label:successfully-installed}», klikker du på {label:show-in-finder} for å finne den installerte appen. Du kan også velge {label:open-tab-in-app} for å åpne nettstedet i appvinduet med en gang."
+    }
+  },
+  "completion": "Dobbeltklikk på appen i Finder for å åpne den. Hvis du senere vil åpne den på nytt fra Chrome, skriver du chrome://apps i adressefeltet, trykker på Retur og klikker på appen. Du trenger ikke en snarvei i Dock for å installere.",
+  "alt": "Seks trinn i Chrome på Mac: åpne Mer-menyen med de tre prikkene, velg Cast, lagre og del, velg Installer, klikk på Neste, klikk på Installer, og klikk deretter på Vis i Finder.",
+  "transitions": {},
+  "heading": "Installer en app",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Installer en app i Chrome på Mac: seks trinn",
+  "svgDesc": "Seks nummererte trinn for Chrome på Mac: åpne Mer-menyen, velg «Cast, lagre og del», velg «Installer», klikk på «Neste», klikk på «Installer», og klikk deretter på «Vis i Finder». Blå omrisser markerer kontrollene du skal bruke. Den fullstendige tekstveiledningen finnes separat."
+}

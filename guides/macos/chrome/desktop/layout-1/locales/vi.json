@@ -1,0 +1,37 @@
+{
+  "title": "Cài đặt ứng dụng trong Chrome",
+  "label": "Mac · Chrome · Cài đặt ứng dụng",
+  "intro": "Hướng dẫn này làm theo cách dùng menu Chrome được thể hiện trong ảnh chụp màn hình tham chiếu. Một số trang web còn có biểu tượng cài đặt ngay trên thanh địa chỉ.",
+  "steps": {
+    "open-more-menu": {
+      "title": "Mở menu {label:more}",
+      "description": "Mở trang web trong Chrome. Nhấp vào ba dấu chấm dọc ở góc trên bên phải cửa sổ Chrome để mở menu {label:more}."
+    },
+    "cast-save-and-share": {
+      "title": "Chọn {label:cast-save-and-share}",
+      "description": "Trong menu {label:more}, chọn {label:cast-save-and-share} để mở menu con của mục này."
+    },
+    "choose-install": {
+      "title": "Chọn {label:install}",
+      "description": "Trong menu con, nhấp vào {label:install} kèm theo tên trang web hoặc ứng dụng. Một số phiên bản Chrome gọi mục này là Cài đặt trang dưới dạng ứng dụng. Hãy chọn thao tác cài đặt nằm phía trên {label:create-shortcut}; {label:create-shortcut} là một lệnh riêng."
+    },
+    "continue-install": {
+      "title": "Nhấp vào {label:next}",
+      "description": "Trong hộp thoại {label:install-app}, hãy kiểm tra tên và miền của trang web, rồi nhấp vào {label:next}. Nếu phiên bản Chrome của bạn chuyển thẳng đến phần xác nhận cài đặt, hãy tiếp tục ở bước {step:5}."
+    },
+    "confirm-install": {
+      "title": "Nhấp vào {label:install}",
+      "description": "Hộp thoại tiếp theo cho biết ứng dụng đang được thêm vào {label:chrome-apps}. Nhấp vào {label:install} để xác nhận."
+    },
+    "show-in-finder": {
+      "title": "Nhấp vào {label:show-in-finder}",
+      "description": "Khi Chrome hiển thị {label:successfully-installed}, hãy nhấp vào {label:show-in-finder} để tìm ứng dụng đã cài đặt. Bạn cũng có thể chọn {label:open-tab-in-app} để mở ngay trang web trong cửa sổ ứng dụng của nó."
+    }
+  },
+  "completion": "Trong Finder, nhấp đúp vào ứng dụng để mở. Để mở lại ứng dụng từ Chrome sau này, hãy nhập chrome://apps vào thanh địa chỉ, nhấn phím Return, rồi nhấp vào ứng dụng. Việc cài đặt không yêu cầu lối tắt trên Dock.",
+  "alt": "Sáu bước trong Chrome trên máy Mac: mở menu Xem thêm có ba dấu chấm, chọn Truyền, lưu và chia sẻ, chọn Cài đặt, nhấp vào Tiếp theo, nhấp vào Cài đặt, rồi nhấp vào Hiển thị trong Trình tìm kiếm.",
+  "heading": "Cài đặt ứng dụng",
+  "subtitle": "Mac · Chrome",
+  "svgTitle": "Cài đặt ứng dụng trong Chrome trên máy Mac",
+  "svgDesc": "Sáu bước: mở Xem thêm, chọn Truyền, lưu và chia sẻ, chọn Cài đặt, nhấp vào Tiếp theo, nhấp vào Cài đặt, rồi Hiển thị trong Trình tìm kiếm. Các đường viền màu xanh dương đánh dấu các mục điều khiển."
+}

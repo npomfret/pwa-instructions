@@ -1,0 +1,22 @@
+{
+  "title": "Tambah ke Skrin Utama daripada Brave",
+  "label": "iPhone · Brave → Safari · Tambah ke Skrin Utama",
+  "intro": "Mulakan dalam Brave. Langkah {step:3} membuka tapak web yang sama dalam Safari; langkah {step:4}–{step:7} berlaku dalam Safari.",
+  "steps": {
+    "tap-share": {
+      "title": "Ketik {label:share}",
+      "description": "Dalam Brave, ketik {label:share} pada bar alat bawah. Ikonnya ialah segi empat sama dengan anak panah menghala ke atas. Jika bar alat tersembunyi, ketik alamat tapak web untuk mendedahkannya."
+    },
+    "open-in-safari": {
+      "title": "{label:open-in-safari}",
+      "description": "Dalam helaian kongsi yang dikembangkan, skrol ke bawah dan ketik {label:open-in-safari}. Tapak web dibuka dalam Safari; lakukan semua langkah yang tinggal di sana."
+    }
+  },
+  "transitions": {
+    "continue-in-safari": "Teruskan dalam Safari"
+  },
+  "completion": "Ikut skrin pengesahan untuk menyelesaikan penambahan app.",
+  "alt": "Tujuh langkah bernombor: Kongsi, Lihat Lagi dan Buka dalam Safari dalam Brave, diikuti empat langkah pemasangan dalam Safari.",
+  "heading": "Tambah ke Skrin Utama",
+  "subtitle": "iPhone · Brave → Safari"
+}

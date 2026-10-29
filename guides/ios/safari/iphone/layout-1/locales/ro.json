@@ -1,0 +1,29 @@
+{
+  "title": "Adăugare la ecranul principal",
+  "label": "iPhone · Safari · Adăugare la ecranul principal",
+  "steps": {
+    "open-page-menu": {
+      "title": "Deschideți {label:page-menu}",
+      "description": "Apăsați butonul {label:page-menu} din partea stângă a barei de adrese a site-ului web. Pictograma lui are trei linii orizontale, cea de jos fiind mai scurtă."
+    },
+    "tap-share": {
+      "title": "Apăsați {label:share}",
+      "description": "În {label:page-menu}, apăsați {label:share}. Pictograma este un pătrat cu o săgeată orientată în sus."
+    },
+    "view-more": {
+      "title": "Apăsați {label:view-more}",
+      "description": "Dacă foaia de partajare este restrânsă, apăsați {label:view-more}, afișat cu un chevron orientat în jos, pentru a dezvălui celelalte acțiuni. Dacă lista de acțiuni este deja vizibilă, continuați cu pasul {step:4}."
+    },
+    "add-to-home-screen": {
+      "title": "Apăsați {label:add-to-home-screen}",
+      "description": "În lista extinsă de acțiuni, găsiți și apăsați {label:add-to-home-screen}. Pictograma este un pătrat cu colțuri rotunjite care conține semnul plus."
+    }
+  },
+  "completion": "Urmați ecranul de confirmare pentru a termina adăugarea aplicației.",
+  "alt": "Patru pași: apăsați Meniu Pagină de lângă adresă, apăsați Partajați, apăsați Afișați mai multe dacă este necesar, apoi apăsați Adăugați la ecranul principal.",
+  "heading": "Adăugare la ecranul principal",
+  "subtitle": "iPhone · Safari",
+  "svgTitle": "Adăugare la ecranul principal în Safari pe iPhone: patru pași",
+  "svgDesc": "Patru pași numerotați pentru Safari pe iPhone: deschideți Meniu Pagină, apăsați Partajați, apăsați Afișați mai multe și, în final, apăsați Adăugați la ecranul principal. Contururile albastre marchează comenzile pe care trebuie să le apăsați. Instrucțiunile complete sub formă de text sunt oferite separat.",
+  "transitions": {}
+}
