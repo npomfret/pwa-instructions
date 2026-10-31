@@ -39,9 +39,16 @@ in the background while the agent is idle, so re-check a survivor before calling
 it a failure.
 
 - [x] Inventory every CI build/leg and its checkout and output directories.
-- [ ] Apply clean checkout isolation and explicit cache/artifact handling.
-  Written in `.teamcity/settings.kts`; not applied until it reaches `main`.
+- [x] Apply clean checkout isolation and explicit cache/artifact handling.
+  Live from `9b226f3`: the server reports `cleanBuild = true`, the named
+  directories, `publishArtifactCondition = ALWAYS` and `expireHours = 0`.
+  `Static Checks` #7 (id 20914) and `Unit Tests` #7 (id 20915, 170 tests) passed
+  there, and #7 published `test-reports/junit.xml`.
 - [ ] Verify freshness and cleanup serially; record build IDs and evidence.
+  Blocked: the probes were queued for `macstudio-3` (ids 21112 to 21114) and had
+  not started by 17:49 on 31 October, because `super-funmax-music` held all three
+  agents. Read their logs for `PROBE` lines. Once the evidence is here, remove
+  them from `.teamcity/settings.kts`; they run every 3 minutes until then.
 - [ ] Record each justified exception with its build/path, reason, retained
   state and freshness/isolation controls, or record why no exception is needed.
 
