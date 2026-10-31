@@ -45,10 +45,11 @@ it a failure.
   `Static Checks` #7 (id 20914) and `Unit Tests` #7 (id 20915, 170 tests) passed
   there, and #7 published `test-reports/junit.xml`.
 - [ ] Verify freshness and cleanup serially; record build IDs and evidence.
-  Blocked: the probes were queued for `macstudio-3` (ids 21112 to 21114) and had
-  not started by 17:49 on 31 October, because `super-funmax-music` held all three
-  agents. Read their logs for `PROBE` lines. Once the evidence is here, remove
-  them from `.teamcity/settings.kts`; they run every 3 minutes until then.
+  The probes never ran on `macstudio-3`: its agent policy is `selected`, and no
+  configuration of this project is on its list, so they had no compatible agent.
+  They are now pinned to `macstudio-1`, whose policy is `any`. Read their logs
+  for `PROBE` lines. Once the evidence is here, remove them from
+  `.teamcity/settings.kts`; they run every 3 minutes until then.
 - [ ] Record each justified exception with its build/path, reason, retained
   state and freshness/isolation controls, or record why no exception is needed.
 

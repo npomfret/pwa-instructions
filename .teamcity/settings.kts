@@ -200,7 +200,7 @@ fun workspaceProbe(
         param("system.teamcity.build.checkoutDir.expireHours", expireHours)
     }
     requirements {
-        equals("teamcity.agent.name", "macstudio-3")
+        equals("teamcity.agent.name", "macstudio-1")
     }
     val ending = if (endsBadly) {
         "case %build.counter% in " +
