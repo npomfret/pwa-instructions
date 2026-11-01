@@ -1,6 +1,6 @@
 # CI builds must start from a clean, empty checkout
 
-Project: `pwa-instructions`. Requested by Nick on 31 October 2026. Status: open.
+Project: `pwa-instructions`. Requested by Nick on 31 October 2026. Status: complete.
 
 Ensure every CI build starts from an empty source directory before checking out
 the exact requested revision, unless a specific, justified exception is recorded.
@@ -30,28 +30,36 @@ keyed by commit), npm's download cache on the agents (content-addressed, and
 `setup-node` (keyed by the lockfile hash). None can supply a generated file or a
 test result. There are no artifact dependencies between builds.
 
-Temporary configurations `ProbeControl`, `ProbeCleanCheckout` and
-`ProbeBuildCleanup` exist only to produce the evidence for this task and are
-removed once it is recorded. `ProbeBuildCleanup` run 2 counts only if its log
-shows `PROBE controlled failure`, and run 3 only if it shows the timeout: an
-earlier `PROBE UNEXPECTED` exits before those lines, and `expireHours = 0` deletes
-in the background while the agent is idle, so re-check a survivor before calling
-it a failure.
-
 - [x] Inventory every CI build/leg and its checkout and output directories.
 - [x] Apply clean checkout isolation and explicit cache/artifact handling.
   Live from `9b226f3`: the server reports `cleanBuild = true`, the named
   directories, `publishArtifactCondition = ALWAYS` and `expireHours = 0`.
   `Static Checks` #7 (id 20914) and `Unit Tests` #7 (id 20915, 170 tests) passed
   there, and #7 published `test-reports/junit.xml`.
-- [ ] Verify freshness and cleanup serially; record build IDs and evidence.
-  The probes never ran on `macstudio-3`: its agent policy is `selected`, and no
-  configuration of this project is on its list, so they had no compatible agent.
-  They are now pinned to `macstudio-1`, whose policy is `any`. Read their logs
-  for `PROBE` lines. Once the evidence is here, remove them from
-  `.teamcity/settings.kts`; they run every 3 minutes until then.
-- [ ] Record each justified exception with its build/path, reason, retained
+- [x] Verify freshness and cleanup serially; record build IDs and evidence.
+- [x] Record each justified exception with its build/path, reason, retained
   state and freshness/isolation controls, or record why no exception is needed.
+  No exception is needed: the retained state above sits outside the checkouts.
+
+## Evidence
+
+Temporary probes on `macstudio-1` at `98cd4c75`, one agent so that later runs
+saw what earlier runs left. Each confirmed the exact revision, then seeded six
+paths: `.git/probe-sentinel`, `probe-sentinel.txt`, `dist/stale.js`,
+`node_modules/.stale`, `test-reports/junit.xml` and `tmp/stale.log`.
+
+| Probe | Builds | Result |
+|---|---|---|
+| `ProbeControl`: nothing cleans | 22402, 22547, 22578, 22581 | Runs 2 to 4 found all six seeds, so a survivor is detectable |
+| `ProbeCleanCheckout`: emptying only | 22403, 22549, 22583 | Runs 2 and 3 found none, including the `.git` seed, so the directory is emptied, not `git clean`ed |
+| `ProbeBuildCleanup`: removal only | 22401 success, 22548 controlled failure, 22579 execution timeout, 22582 success | Runs 2, 3 and 4 found none, so the directory goes after success, failure and timeout. All four published `probe-evidence/junit.xml` |
+
+Real legs at `98cd4c75`: `All Checks` #9 (22336), `Static Checks` #9 (22334) and
+`Unit Tests` #9 (22335, 170 tests). GitHub Actions run 41250505911 passed there.
+
+Not covered: a cancellation by hand. The execution timeout stands in for it.
+Whether the kept probe directories on `macstudio-1` have gone was not checked;
+`expireHours = 1` applied to them while the probes existed.
 
 Keep paused builds paused. Creating this task does not change CI settings,
 delete build data or claim the requirement is already satisfied.
