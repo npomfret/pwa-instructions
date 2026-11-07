@@ -173,7 +173,7 @@ project {
     // The server's default keeps everything forever on a disk shared with the public sites.
     cleanup {
         baseRule {
-            artifacts(days = 7)
+            artifacts(days = 1)
             history(days = 30)
         }
     }
