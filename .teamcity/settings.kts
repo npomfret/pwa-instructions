@@ -51,6 +51,19 @@ val onlyWhatCanChangeTheVerdict = """
 // reach a build, and removed once the build ends, however it ends. `PublishMode.ALWAYS` because the
 // default skips stopped builds, whose reports would then go with the directory.
 // Nothing here is a cache: node_modules comes from `npm ci` on every run.
+//
+// Every step after the toolchain check keeps its whole console in ci-logs/<step>.log, and npm
+// writes its debug logs beside them, so a failure can be read from the artifacts after the build
+// log has gone. The clean checkout means a previous build's logs cannot be published.
+val logRules = "ci-logs => logs"
+
+fun logged(log: String, command: String) = """
+    set -eu
+    set -o pipefail
+    mkdir -p ci-logs
+    $command 2>&1 | tee ci-logs/$log.log
+""".trimIndent()
+
 fun BuildType.checkoutAndInstall(workspace: String) {
     maxRunningBuilds = 1
     publishArtifacts = PublishMode.ALWAYS
@@ -58,6 +71,7 @@ fun BuildType.checkoutAndInstall(workspace: String) {
         // The shared Mac's account-wide temp dir is used by every project on it.
         param("env.TMPDIR", "%system.teamcity.build.tempDir%")
         param("system.teamcity.build.checkoutDir.expireHours", "0")
+        param("env.npm_config_logs_dir", "%teamcity.build.checkoutDir%/ci-logs/npm")
     }
     vcs {
         root(DslContext.settingsRoot)
@@ -77,7 +91,7 @@ fun BuildType.checkoutAndInstall(workspace: String) {
         script {
             name = "install"
             // `npm ci`: exactly the lockfile, and fails if it disagrees with package.json.
-            scriptContent = "npm ci"
+            scriptContent = logged("install", "npm ci")
         }
     }
 }
@@ -91,9 +105,14 @@ val staticChecks = BuildType {
     steps {
         script {
             name = "static checks"
-            scriptContent = "npm run check:static"
+            scriptContent = logged("static-checks", "npm run check:static")
         }
     }
+    // The console holds the build, typecheck and guide diff; the locale warnings are only in the file.
+    artifactRules = """
+        $logRules
+        tmp/check-locales.log => logs
+    """.trimIndent()
     failureConditions {
         executionTimeoutMin = 5
     }
@@ -107,12 +126,15 @@ val unitTests = BuildType {
     steps {
         script {
             name = "unit tests"
-            scriptContent = "npm run test:ci"
+            scriptContent = logged("unit-tests", "npm run test:ci")
         }
     }
     // The raw report outlives the console log, and is what to read when the Tests tab and the
     // runner's own totals disagree.
-    artifactRules = "test-reports/junit.xml => test-reports"
+    artifactRules = """
+        test-reports/junit.xml => test-reports
+        $logRules
+    """.trimIndent()
     features {
         // `node --test` writes bare <testcase> elements; scripts/junit-wrap.mjs nests them so
         // this records them. Check the log's `report processed: N suites, M tests` against the
