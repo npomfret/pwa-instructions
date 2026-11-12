@@ -20,8 +20,7 @@
       "mcp__webstorm__create_new_file",
       "mcp__webstorm__reformat_file",
       "mcp__xcode__RunCodeSnippet",
-      "mcp__xcode__InvokeDebuggerCommand",
-      "Bash(git push:*)"
+      "mcp__xcode__InvokeDebuggerCommand"
     ]
   },
   "sandbox": {
@@ -48,5 +47,14 @@
     "teamcity@npomfret": true
   },
   "enabledMcpjsonServers": ["gitnexus", "webstorm"],
+  "extraKnownMarketplaces": {
+    "npomfret": {
+      "source": {
+        "source": "github",
+        "repo": "npomfret/agent-standards"
+      },
+      "autoUpdate": true
+    }
+  },
   "hooks": {}
 }
