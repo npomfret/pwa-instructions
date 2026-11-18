@@ -289,42 +289,6 @@
       "link": false,
       "executable": false
     },
-    ".codex/agent-standards/plugins/typesafe/.claude-plugin/marketplace.json": {
-      "source": "plugin:typesafe@typesafe-ai/.claude-plugin/marketplace.json",
-      "sha256": "7040ea575b7549d7db06cce21ebe479471930953eaede01d8cd9ed81511abd11",
-      "link": false,
-      "executable": false
-    },
-    ".codex/agent-standards/plugins/typesafe/.claude-plugin/plugin.json": {
-      "source": "plugin:typesafe@typesafe-ai/.claude-plugin/plugin.json",
-      "sha256": "3d4e3433dc040fde349deaf773a4a4b070b3aa5ce34b3f321b170d2409a9fa5a",
-      "link": false,
-      "executable": false
-    },
-    ".codex/agent-standards/plugins/typesafe/LICENSE": {
-      "source": "plugin:typesafe@typesafe-ai/LICENSE",
-      "sha256": "835f233f1d6ed84a9b9a351aba0689b47644a4137d6316911fc7957bde523b02",
-      "link": false,
-      "executable": false
-    },
-    ".codex/agent-standards/plugins/typesafe/README.md": {
-      "source": "plugin:typesafe@typesafe-ai/README.md",
-      "sha256": "799ce1dc39dc1cb98977f930610bf693a26d1a78e5912b860014447d97390282",
-      "link": false,
-      "executable": false
-    },
-    ".codex/agent-standards/plugins/typesafe/skills/typesafe-ai/LICENSE": {
-      "source": "plugin:typesafe@typesafe-ai/skills/typesafe-ai/LICENSE",
-      "sha256": "835f233f1d6ed84a9b9a351aba0689b47644a4137d6316911fc7957bde523b02",
-      "link": false,
-      "executable": false
-    },
-    ".codex/agent-standards/plugins/typesafe/skills/typesafe-ai/SKILL.md": {
-      "source": "plugin:typesafe@typesafe-ai/skills/typesafe-ai/SKILL.md",
-      "sha256": "9891385feaa8377113a1c432e5eb712915828c3b5ada31daa619e2c626b076a8",
-      "link": false,
-      "executable": false
-    },
     ".codex/agent-standards/plugins/web-factoring/.claude-plugin/plugin.json": {
       "source": "plugin:web-factoring@npomfret/.claude-plugin/plugin.json",
       "sha256": "b21004de0213e9eb80ea42c0e1f8211d93ebfa9a6517bcb72a215de6ccff3f23",
@@ -369,13 +333,13 @@
     },
     ".codex/agent-standards/runtime.json": {
       "source": "project and enabled-plugin configuration",
-      "sha256": "67c2db0cd39418511ba541ee301c5b76b39ef929503a49226de419f6d452af9f",
+      "sha256": "4b7680c5c6807febd0d1463c665403f5d311be6522861a9efe5f7fed91234697",
       "link": false,
       "executable": false
     },
     ".codex/hooks.json": {
       "source": "templates/codex-hooks.py",
-      "sha256": "34cc7e7a06acbfc8e7553dc9f4e2305d71694ad7b6cc041f9854d5edcfa8be3c",
+      "sha256": "03a9cd38545dc695c87e87219340eb2d21410fc285d2d0fbb4f3abb98bbf6f54",
       "link": false,
       "executable": false
     },
@@ -401,18 +365,6 @@
       "source": "plugin:security-audit@npomfret/skills/security-audit/SKILL.md",
       "sha256": "0b69e965abd523fc11670e0c26cc12b2fbb51dca48b9abc9d37ddcbba0642225",
       "link": true,
-      "executable": false
-    },
-    ".codex/skills/typesafe-ai": {
-      "source": "plugin:typesafe@typesafe-ai/skills/typesafe-ai/SKILL.md",
-      "sha256": "f9c985d8a897cb445bcd442d888462de945e8a0eeebad2044d34a61d7e45b8f1",
-      "link": true,
-      "executable": false
-    },
-    "AGENTS.override.md": {
-      "source": "AGENTS.md and unconditional .claude/rules",
-      "sha256": "3ade567a4798d4c67354cf703e866bcf699a3e7cb2d5d936a27715e01b9b151c",
-      "link": false,
       "executable": false
     }
   }

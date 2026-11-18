@@ -7,7 +7,6 @@
     "security-audit@npomfret": ".codex/agent-standards/plugins/security-audit",
     "task-files@npomfret": ".codex/agent-standards/plugins/task-files",
     "teamcity@npomfret": ".codex/agent-standards/plugins/teamcity",
-    "typesafe@typesafe-ai": ".codex/agent-standards/plugins/typesafe",
     "web-factoring@npomfret": ".codex/agent-standards/plugins/web-factoring",
     "webstorm@npomfret": ".codex/agent-standards/plugins/webstorm"
   },

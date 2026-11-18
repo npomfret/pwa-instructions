@@ -41,10 +41,16 @@
     "frontend-design@claude-plugins-official": true,
     "auditing@npomfret": true,
     "scripting@npomfret": true,
-    "typesafe@typesafe-ai": true,
+    "typesafe@typesafe-ai": false,
     "browser-testing@npomfret": true,
     "security-audit@npomfret": true,
-    "teamcity@npomfret": true
+    "teamcity@npomfret": true,
+    "ios-ui-testing@npomfret": false,
+    "database@npomfret": false,
+    "apple-hig@npomfret": false,
+    "typescript-lsp@claude-plugins-official": false,
+    "playwright@claude-plugins-official": false,
+    "browser@npomfret": false
   },
   "enabledMcpjsonServers": ["gitnexus", "webstorm"],
   "extraKnownMarketplaces": {
