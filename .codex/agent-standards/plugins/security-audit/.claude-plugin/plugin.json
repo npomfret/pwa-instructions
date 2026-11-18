@@ -1,0 +1,10 @@
+{
+  "name": "security-audit",
+  "description": "Cloudflare's security-audit skill, copied unchanged from cloudflare/security-audit-skill at c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+  "version": "1.0.0",
+  "author": {
+    "name": "Cloudflare"
+  },
+  "homepage": "https://github.com/cloudflare/security-audit-skill",
+  "license": "MIT"
+}

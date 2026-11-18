@@ -12,7 +12,6 @@ packages/*/src/core/generated/
 *.tgz
 .gitnexus/
 tmp/
-.codex/config.toml
 test-reports/
 examples/*/src/generated/
 .claude/worktrees/
