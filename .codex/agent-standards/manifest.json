@@ -135,13 +135,13 @@
     },
     ".codex/agent-standards/plugins/localization/.claude-plugin/plugin.json": {
       "source": "plugin:localization@npomfret/.claude-plugin/plugin.json",
-      "sha256": "4e364c51c45e3b50fa5f7534fb2f7128d5653e66f2b6f3767d0b88112a11cff4",
+      "sha256": "6e9ec2fc922685c8083635ab9e4ad142b93656e14124b45d95a6ff06a4953bd9",
       "link": false,
       "executable": false
     },
     ".codex/agent-standards/plugins/localization/skills/localization/SKILL.md": {
       "source": "plugin:localization@npomfret/skills/localization/SKILL.md",
-      "sha256": "68e9c1da0f7a457c06594f4ac0cd83366cedc8b58da960f932d81e3530ce08a2",
+      "sha256": "0ad611a2864f9b15dd4dd9a808b288b8ba63a7c8594d206ef2a0122950a9be37",
       "link": false,
       "executable": false
     },
@@ -489,7 +489,7 @@
     },
     ".codex/hooks.json": {
       "source": "templates/codex-hooks.py",
-      "sha256": "3e9b3e1146ebd300c833d466d0031dd26acca82e03316ec8bcf408d88154af00",
+      "sha256": "011ebce7e4889d7b76f889f5f67281f3cb988e9e452fd167d8fc698774af5899",
       "link": false,
       "executable": false
     },
