@@ -369,7 +369,7 @@
     },
     ".codex/hooks.json": {
       "source": "templates/codex-hooks.py",
-      "sha256": "0754d8e386b25950e31de166737c091b09549541c2ae41b7353ad221d632d79e",
+      "sha256": "d72e3eb2707efa1d2bb72d438148f58097ab225eb3eedb16922e0321861ec587",
       "link": false,
       "executable": false
     },
@@ -381,7 +381,7 @@
     },
     ".codex/hooks/rpc_client.py": {
       "source": "scripts/codex_runtime.py",
-      "sha256": "527a7c956b35b342d4415adfcd0d5a0508c5591b6c118114c10ae797c32c9912",
+      "sha256": "6909f65d7b0b05124ecb199a80db720f26932e083a8564f1180655e4f5bf87ba",
       "link": false,
       "executable": false
     },
