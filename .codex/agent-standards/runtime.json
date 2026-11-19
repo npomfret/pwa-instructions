@@ -5,6 +5,7 @@
     "browser@npomfret": ".codex/agent-standards/plugins/browser",
     "coding@npomfret": ".codex/agent-standards/plugins/coding",
     "frontend-design@claude-plugins-official": ".codex/agent-standards/plugins/frontend-design",
+    "localization@npomfret": ".codex/agent-standards/plugins/localization",
     "playwright@claude-plugins-official": ".codex/agent-standards/plugins/playwright",
     "scripting@npomfret": ".codex/agent-standards/plugins/scripting",
     "security-audit@npomfret": ".codex/agent-standards/plugins/security-audit",

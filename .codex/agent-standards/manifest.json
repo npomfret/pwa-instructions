@@ -145,6 +145,18 @@
       "link": false,
       "executable": false
     },
+    ".codex/agent-standards/plugins/localization/.claude-plugin/plugin.json": {
+      "source": "plugin:localization@npomfret/.claude-plugin/plugin.json",
+      "sha256": "ff08fd9502a71f49c8c3bf16ac3c467793364c2e53f38fc26e86b450cabbbafc",
+      "link": false,
+      "executable": false
+    },
+    ".codex/agent-standards/plugins/localization/skills/localization/SKILL.md": {
+      "source": "plugin:localization@npomfret/skills/localization/SKILL.md",
+      "sha256": "4fd73dd486ae43b4ec9e451c08f2d617648a47572092b4c3c8fb712ee795cd34",
+      "link": false,
+      "executable": false
+    },
     ".codex/agent-standards/plugins/playwright/.claude-plugin/plugin.json": {
       "source": "plugin:playwright@claude-plugins-official/.claude-plugin/plugin.json",
       "sha256": "f2d7c0f611b93287ebb07454255d0cccf3a343d7095b7f8f763ff21d1995c096",
@@ -363,19 +375,19 @@
     },
     ".codex/agent-standards/plugins/testing/.claude-plugin/plugin.json": {
       "source": "plugin:testing@npomfret/.claude-plugin/plugin.json",
-      "sha256": "6806b7cd2088b8a2963c8d341da8df75ed38f16a0febf0295afaf4103002948d",
+      "sha256": "f5e3575f9f134a82ee5bdb3ebafddf48e3e371dff43b8d29bfbc9b836e90fc56",
       "link": false,
       "executable": false
     },
     ".codex/agent-standards/plugins/testing/skills/test-design/SKILL.md": {
       "source": "plugin:testing@npomfret/skills/test-design/SKILL.md",
-      "sha256": "55d82544517143c7e165ba4d2fc20ba9de50ffebea26156dcf6cd2dcdf006a2f",
+      "sha256": "14deb09d18dc33d8a2f3361266616213522ac0d03059ad870a819d078b683280",
       "link": false,
       "executable": false
     },
     ".codex/agent-standards/plugins/ui/.claude-plugin/plugin.json": {
       "source": "plugin:ui@npomfret/.claude-plugin/plugin.json",
-      "sha256": "110a0a7f245647afd0ddf764fd0a7bc2d6ac6f5846989c53273a3b30cf2cd22d",
+      "sha256": "d80ab7070ad31e54dc4ff04f89b421f5ece7c5722c486b052d0824d61606ce9c",
       "link": false,
       "executable": false
     },
@@ -387,13 +399,13 @@
     },
     ".codex/agent-standards/plugins/ui/skills/ui-implementation/SKILL.md": {
       "source": "plugin:ui@npomfret/skills/ui-implementation/SKILL.md",
-      "sha256": "34ef094c697b8bff7b7584a44729c23f3a0fb558792bde63d0885c6eb767059f",
+      "sha256": "2561d022fb2f10567ce79b97e0af52f45080fa62e9f664d641e2e3492cf25c7f",
       "link": false,
       "executable": false
     },
     ".codex/agent-standards/plugins/web-factoring/.claude-plugin/plugin.json": {
       "source": "plugin:web-factoring@npomfret/.claude-plugin/plugin.json",
-      "sha256": "a7bdd974b74093648b7935a77f8f4bdf98e3d2b814527f6d8045a044b0b024e7",
+      "sha256": "831e90ba83f50a210b736f711a78ec25350b7c9a8599d28c00a18463e681f765",
       "link": false,
       "executable": false
     },
@@ -411,7 +423,7 @@
     },
     ".codex/agent-standards/plugins/web-factoring/skills/web-factoring/SKILL.md": {
       "source": "plugin:web-factoring@npomfret/skills/web-factoring/SKILL.md",
-      "sha256": "5a37d298f490f7573a2cd783aa22e07bec06eeb237dbc225aa14f5365a63a756",
+      "sha256": "44958b8a4e5f74d52d19e8cb5092d0e4210db84bba77e0fecb7f75dee4ed36a4",
       "link": false,
       "executable": false
     },
@@ -465,7 +477,7 @@
     },
     ".codex/agent-standards/runtime.json": {
       "source": "project and enabled-plugin configuration",
-      "sha256": "7fca883661becb70ecdbba164175e9127f5ab102ceedac89c4e1966e044795cb",
+      "sha256": "f2174129727e4d739e528baa7d35b315863ff2e8d4ee506785e9d4309f16ab5a",
       "link": false,
       "executable": false
     },
@@ -483,13 +495,13 @@
     },
     ".codex/agents/ui-change-reviewer.toml": {
       "source": "plugin:ui@npomfret/agents/ui-change-reviewer.md",
-      "sha256": "13726505485ce4df1871d63e7f18bccd15f086eccbab81569465a1254beb3e9b",
+      "sha256": "36ffadb9e7783beef05d3b924dac6915a0917606dd8bfbc4e58d4aae24bf0ced",
       "link": false,
       "executable": false
     },
     ".codex/hooks.json": {
       "source": "templates/codex-hooks.py",
-      "sha256": "d37f5f3a3d34a34bb3a19efd35d57478cd65ba740054c8ad4743909f07273730",
+      "sha256": "4f36cfa9f82da517b44caf69e5332996de03014a74b562106851e605b15e47fa",
       "link": false,
       "executable": false
     },
