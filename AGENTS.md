@@ -23,6 +23,8 @@ Lifecycle: published to npm (version 0.2.0, tags `v0.1.0` and `v0.2.0`); the dem
 
 Logs from the build's checks go to `tmp/`.
 
+`labels/` holds the per-surface translated UI strings (one JSON file per platform or browser, plus `ui.json` and `placeholders.json`); `scripts/` holds the build, locale and label checks, guide composer, JUnit wrapper and TeamCity client (`teamcity.py`).
+
 ## CI
 
 - GitHub Actions (`.github/workflows/pages.yml`) runs `npm run check`, checks the committed English guides are current, and deploys the example to GitHub Pages.
