@@ -327,7 +327,7 @@
     },
     ".codex/agent-standards/plugins/teamcity/.claude-plugin/plugin.json": {
       "source": "plugin:teamcity@npomfret/.claude-plugin/plugin.json",
-      "sha256": "324a365051e02296bd166b09c6de15eb1883679dde9df41ebdbfac5bc70dd80a",
+      "sha256": "78891fb0f41bc44498bd4f9b3fe2c1d150214543537bfa29665dcf672c570689",
       "link": false,
       "executable": false
     },
@@ -357,7 +357,7 @@
     },
     ".codex/agent-standards/plugins/teamcity/skills/teamcity/SKILL.md": {
       "source": "plugin:teamcity@npomfret/skills/teamcity/SKILL.md",
-      "sha256": "28271cc07fe9d272cc8746501fb0bd8e2c88827d11cc4be9f6ec1df1cbde913e",
+      "sha256": "6c2d3720a9404b5645731e75268da90b2b52bf5a34d3b11b5f46a6d8f9ea93f2",
       "link": false,
       "executable": false
     },
@@ -489,7 +489,7 @@
     },
     ".codex/hooks.json": {
       "source": "templates/codex-hooks.py",
-      "sha256": "a5a9dd3c5cf8cb28a4f6bf5d43a4dac115ce5adfce6b0b31c415b4c9d137e785",
+      "sha256": "1138f630f32c702633c42948baa2db1b51b899d01d22281a8dd40303e9fdd226",
       "link": false,
       "executable": false
     },

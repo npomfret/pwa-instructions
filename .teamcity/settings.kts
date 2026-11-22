@@ -172,10 +172,10 @@ val allChecks = BuildType {
         }
         schedule {
             // A green build only proves the code passed against that day's world.
-            // Midnight Europe/London, the same time as every project on the server (agent-standards);
+            // 22:00 Europe/London, the same time as every project on the server (agent-standards);
             // builds start as agents and shared locks free up.
             schedulingPolicy = daily {
-                hour = 0
+                hour = 22
                 minute = 0
                 timezone = "Europe/London"
             }
