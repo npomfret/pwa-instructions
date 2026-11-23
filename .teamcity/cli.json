@@ -1,7 +1,14 @@
 {
   "project": "PwaInstructions",
   "composite": "AllChecks",
-  "buildTypes": ["StaticChecks", "UnitTests", "AllChecks"],
-  "testLegs": ["UnitTests"],
+  "buildTypes": [
+    "Compile",
+    "StaticChecks",
+    "UnitTests",
+    "AllChecks"
+  ],
+  "testLegs": [
+    "UnitTests"
+  ],
   "logDir": "tmp/teamcity"
 }

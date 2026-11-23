@@ -96,6 +96,21 @@ fun BuildType.checkoutAndInstall(workspace: String) {
     }
 }
 
+val compile = BuildType {
+    id("Compile")
+    name = "Compile"
+    description = "Generate and compile the published package and type-check and bundle the React example; runs no tests."
+    checkoutAndInstall("pwa-instructions-compile")
+    artifactRules = logRules
+    steps {
+        script {
+            name = "compile"
+            scriptContent = logged("compile", "npm run build && npm run typecheck --workspace @pwa-instructions/example-react")
+        }
+    }
+    failureConditions { executionTimeoutMin = 15 }
+}
+
 val staticChecks = BuildType {
     id("StaticChecks")
     name = "Static Checks"
@@ -161,6 +176,7 @@ val allChecks = BuildType {
         showDependenciesChanges = true
     }
     dependencies {
+        snapshot(compile) { onDependencyFailure = FailureAction.ADD_PROBLEM }
         snapshot(staticChecks) { onDependencyFailure = FailureAction.ADD_PROBLEM }
         snapshot(unitTests) { onDependencyFailure = FailureAction.ADD_PROBLEM }
     }
@@ -202,6 +218,7 @@ project {
         }
     }
 
+    buildType(compile)
     buildType(staticChecks)
     buildType(unitTests)
     buildType(allChecks)
